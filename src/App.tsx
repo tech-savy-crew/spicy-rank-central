@@ -13,6 +13,7 @@ import CategoryPage from "./pages/CategoryPage";
 import CategoriesPage from "./pages/CategoriesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import AdvertisePage from "./pages/AdvertisePage";
 import SearchPage from "./pages/SearchPage";
 import NotFound from "./pages/NotFound";
 
