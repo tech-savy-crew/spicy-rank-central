@@ -5,6 +5,8 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEO, websiteSchema, organizationSchema, itemListSchema } from "@/components/SEO";
 import { useState } from "react";
 import { PlatformRatingsTable } from "@/components/PlatformRatingsTable";
+import { EditorsPicks } from "@/components/EditorsPicks";
+import { LatestNews } from "@/components/LatestNews";
 import {
   ArrowRight,
   Flame,
