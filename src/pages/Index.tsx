@@ -82,7 +82,7 @@ const Index = () => {
         canonical="/"
         jsonLd={[
           websiteSchema(),
-          itemListSchema("Featured Platform Reviews", featured.map((p, i) => ({ name: p.name, url: `/review/${p.slug}`, position: i + 1 }))),
+          itemListSchema("Featured Platform Reviews", featuredCards.map((p, i) => ({ name: p.title, url: `/review/${p.slug}`, position: i + 1 }))),
         ]}
       />
 
