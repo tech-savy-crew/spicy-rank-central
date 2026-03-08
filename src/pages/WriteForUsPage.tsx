@@ -139,12 +139,12 @@ const WriteForUsPage = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-card border border-border/50 rounded-xl p-6">
               <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                <CheckCircle2 className="h-5 w-5 text-green-500" /> What We Accept
+                <CheckCircle2 className="h-5 w-5 text-primary" /> What We Accept
               </h3>
               <ul className="space-y-2">
                 {weAccept.map((item) => (
                   <li key={item} className="text-sm text-muted-foreground flex items-start gap-2">
-                    <span className="text-green-500 mt-0.5 shrink-0">✓</span> {item}
+                    <span className="text-primary mt-0.5 shrink-0">✓</span> {item}
                   </li>
                 ))}
               </ul>
