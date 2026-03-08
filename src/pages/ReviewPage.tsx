@@ -121,14 +121,14 @@ const ReviewPage = () => {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border/50">
         <div className="absolute inset-0 spicy-gradient opacity-5" />
-        <div className="container py-10 md:py-14 relative">
+        <div className="container px-4 sm:px-6 lg:px-8 py-8 md:py-14 relative">
           <div className="flex flex-col md:flex-row md:items-end gap-6">
-            <div className="flex-1">
-              <div className="text-5xl mb-4">{platform.logo}</div>
-              <p className="text-sm text-primary font-medium mb-2">{platform.category} Review</p>
-              <h1 className="text-3xl md:text-5xl font-black mb-3">{platform.name} Review</h1>
-              <p className="text-lg text-muted-foreground mb-3">{platform.verdict}</p>
-              <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
+            <div className="flex-1 min-w-0">
+              <div className="text-4xl md:text-5xl mb-3 md:mb-4">{platform.logo}</div>
+              <p className="text-xs sm:text-sm text-primary font-medium mb-1.5 md:mb-2">{platform.category} Review</p>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-2 md:mb-3 leading-tight">{platform.name} Review</h1>
+              <p className="text-base md:text-lg text-muted-foreground mb-3 leading-relaxed">{platform.verdict}</p>
+              <div className="flex flex-wrap items-center gap-3 md:gap-4 text-xs text-muted-foreground">
                 <span className="inline-flex items-center gap-1.5">
                   <Clock className="h-3.5 w-3.5" /> {readingTime} min read
                 </span>
@@ -136,14 +136,14 @@ const ReviewPage = () => {
                   <Calendar className="h-3.5 w-3.5" /> Updated {platform.lastUpdated}
                 </span>
               </div>
-              <div className="mt-5">
+              <div className="mt-4 md:mt-5">
                 <VisitButton name={platform.name} url={platform.url} />
               </div>
             </div>
-            <div className="text-center bg-card rounded-xl border border-border/50 p-6 min-w-[140px]">
-              <div className="text-xs text-muted-foreground mb-2 uppercase tracking-wider font-medium">Overall</div>
+            <div className="text-center bg-card rounded-xl border border-border/50 p-4 md:p-6 min-w-[120px] md:min-w-[140px] self-start md:self-auto">
+              <div className="text-xs text-muted-foreground mb-1.5 md:mb-2 uppercase tracking-wider font-medium">Overall</div>
               <RatingBadge rating={platform.rating} size="lg" />
-              <div className="text-xs text-muted-foreground mt-2">out of 10</div>
+              <div className="text-xs text-muted-foreground mt-1.5 md:mt-2">out of 10</div>
             </div>
           </div>
         </div>
