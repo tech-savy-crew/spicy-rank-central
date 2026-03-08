@@ -61,7 +61,7 @@ const posts: NewsPost[] = [
     title: "Stripchat Launches VR 2.0: First Look at the New Features",
     date: "February 25, 2026",
     readTime: "5 min read",
-    excerpt: "Stripchat's updated VR experience promises more immersive cam shows. We got early access.",
+    excerpt: "Stripchat's updated VR experience promises more immersive cam shows. We got early access to test the new features.",
     link: "/blog/stripchat-vr-2-features",
   },
 ];
