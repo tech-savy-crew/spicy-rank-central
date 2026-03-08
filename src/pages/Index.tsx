@@ -36,7 +36,7 @@ const homepageCategories = [
 ];
 
 const featuredCards = [
-  { title: "OnlyFans Review 2026", category: "Creator Platform", rating: 8.5, slug: "onlyfans", desc: "The largest creator subscription platform - but is it still the best option?" },
+  { title: "OnlyFans Review 2026", category: "Creator Platform", rating: 8.5, slug: "onlyfans-review", desc: "The largest creator subscription platform - but is it still the best option?" },
   { title: "Fansly Review", category: "Creator Platform", rating: 8.2, slug: "fansly", desc: "Rising OnlyFans competitor with better creator tools and lower fees" },
   { title: "Chaturbate Review", category: "Live Streaming", rating: 7.8, slug: "chaturbate", desc: "The most popular free live streaming platform - complete breakdown" },
   { title: "Stripchat Review", category: "Live Streaming", rating: 7.5, slug: "stripchat", desc: "AI-powered features set this live platform apart from competitors" },

@@ -36,8 +36,9 @@ function VisitButton({ name, url, className = "" }: { name: string; url: string;
     <a
       href={url}
       target="_blank"
-      rel="noopener nofollow noreferrer"
-      className={`inline-flex items-center justify-center gap-2 spicy-gradient text-primary-foreground font-semibold px-6 py-3 rounded-lg text-sm hover:opacity-90 transition-opacity ${className}`}
+      rel="nofollow sponsored noopener noreferrer"
+      style={{ backgroundColor: 'hsl(var(--primary))' }}
+      className="inline-flex items-center justify-center gap-2 text-primary-foreground font-semibold px-6 py-3 rounded-lg text-sm hover:opacity-90 transition-opacity"
     >
       Visit {name} <ExternalLink className="h-4 w-4" />
     </a>

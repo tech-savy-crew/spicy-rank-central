@@ -388,6 +388,99 @@ export const platforms: Platform[] = [
     url: "https://snapchat.com",
     lastUpdated: "January 30, 2026",
   },
+  {
+    id: "9",
+    name: "OnlyFans",
+    slug: "onlyfans-review",
+    category: "Creator Platform",
+    logo: "💎",
+    tagline: "The largest creator subscription platform — but is it still the best option?",
+    rating: 8.5,
+    verdict: "OnlyFans remains the dominant creator subscription platform in 2026, offering unmatched earning potential and audience reach despite growing competition.",
+    summary: "OnlyFans launched in 2016 and quickly became the world's most recognized creator subscription platform. With over 300 million registered users and 3 million creators, it has fundamentally changed how content creators monetize their work. In this comprehensive 2026 review, we evaluate whether OnlyFans still deserves its crown or if newer alternatives have caught up.",
+    pros: [
+      "Largest audience base of any creator subscription platform — over 300M registered users",
+      "Strong brand recognition makes it easier for new creators to attract subscribers",
+      "Reliable weekly payouts with multiple withdrawal options",
+      "Robust messaging and pay-per-view features for direct fan engagement",
+      "Live streaming capabilities with virtual gifting",
+      "Comprehensive analytics dashboard for tracking growth and revenue"
+    ],
+    cons: [
+      "20% platform commission is higher than several competitors",
+      "Limited discovery features — creators must drive their own traffic",
+      "Content organization and search functionality could be improved",
+      "iOS app is restricted in functionality compared to the web experience",
+      "No built-in storefront for selling digital products beyond subscriptions"
+    ],
+    ratings: [
+      { label: "Content Quality", score: 9 },
+      { label: "User Interface", score: 7 },
+      { label: "Value for Money", score: 8 },
+      { label: "Privacy & Safety", score: 8.5 },
+      { label: "Features", score: 9 },
+    ],
+    quickFacts: [
+      { label: "Category", value: "Creator Subscription Platform" },
+      { label: "Founded", value: "2016" },
+      { label: "Registered Users", value: "300M+" },
+      { label: "Active Creators", value: "3M+" },
+    ],
+    reviewSections: [
+      {
+        title: "Platform Overview & First Impressions",
+        content: "OnlyFans has come a long way since its early days. The platform's interface received a significant overhaul in late 2025, introducing a cleaner layout, improved navigation, and faster load times. Signing up is straightforward — fans can browse free profiles and subscribe in minutes using a credit card or wallet balance. For creators, the onboarding process includes identity verification (typically completed within 24–72 hours) and a guided setup wizard for pricing, bio, and content categories. The overall first impression in 2026 is polished and professional, a far cry from the barebones interface of its early years."
+      },
+      {
+        title: "Creator Tools & Monetization",
+        content: "This is where OnlyFans truly shines. Creators have multiple revenue streams at their disposal: monthly subscriptions (customizable from $4.99 to $49.99), pay-per-view messages, tips, live stream virtual gifts, and promotional bundles. The platform takes a 20% commission on all earnings — a rate that has drawn criticism as competitors like Fansly offer lower cuts. However, OnlyFans argues that its massive user base and brand recognition justify the fee. The analytics dashboard provides detailed insights into subscriber growth, top-performing content, revenue trends, and fan engagement metrics. New in 2026 is the 'Creator Insights' AI tool that suggests optimal posting times and pricing strategies based on your niche."
+      },
+      {
+        title: "User Experience & Content Discovery",
+        content: "The biggest criticism of OnlyFans has always been its lack of discovery features, and while improvements have been made, it remains the platform's weakest area. Unlike competitors such as Fansly, there's no robust search or category browsing system for fans. Creators are still largely responsible for driving their own traffic through social media and other external channels. The mobile web experience is solid, though the iOS and Android apps are limited in functionality due to app store policies. The desktop experience is the most complete, with full access to all features including live streaming."
+      },
+      {
+        title: "Privacy, Safety & Content Moderation",
+        content: "OnlyFans has invested heavily in safety infrastructure. All creators must complete identity verification, and the platform uses AI-powered content moderation combined with human review teams. Geo-blocking allows creators to hide their profiles from specific regions, and two-factor authentication is available for all accounts. Payment processing is handled through secure third-party providers, and creator earnings are never publicly visible. The platform also introduced enhanced DMCA takedown tools in 2025, making it easier for creators to protect their content from piracy."
+      },
+      {
+        title: "Pricing & Value Assessment",
+        content: "For fans, subscription costs vary widely by creator — from $4.99 to $49.99 per month, with many creators offering discounted bundles for longer commitments. The platform occasionally runs promotional campaigns where creators offer limited-time discounts. For creators, the 80/20 revenue split means you keep 80% of all earnings. While this is lower than Fansly's 85% or FanVue's 85%, OnlyFans' larger audience base often results in higher gross earnings. The platform pays out weekly with a minimum threshold of $20, supporting direct deposit, international wire transfers, and e-wallets."
+      },
+      {
+        title: "OnlyFans vs The Competition in 2026",
+        content: "The creator platform landscape has become significantly more competitive. Fansly offers better discovery features and a lower commission rate. FanVue brings innovative AI tools and a UK-based alternative for European creators. However, OnlyFans maintains its position through sheer scale — no other platform matches its 300M+ user base or mainstream brand recognition. For creators who can drive their own traffic, OnlyFans still offers the best earning potential. For those who rely on platform discovery, alternatives like Fansly may be worth exploring."
+      }
+    ],
+    faqs: [
+      { question: "Is OnlyFans safe to use?", answer: "Yes, OnlyFans is generally safe to use. The platform requires identity verification for all creators, uses encrypted payment processing through third-party providers, and offers features like two-factor authentication and geo-blocking. Your payment information is not shared with creators. However, as with any online platform, users should practice good security hygiene — use strong passwords and enable 2FA." },
+      { question: "Can you use OnlyFans for free?", answer: "Yes, you can browse OnlyFans and follow creators with free profiles without paying. Many creators offer free accounts with optional pay-per-view content or tips. However, most premium content requires a paid subscription, which ranges from $4.99 to $49.99 per month depending on the creator." },
+      { question: "How much do OnlyFans creators earn?", answer: "Earnings vary enormously. The top 1% of creators earn over $10,000 per month, while the median creator earns between $150–$500 monthly. Success depends heavily on niche, marketing efforts, content consistency, and audience size. Creators keep 80% of all earnings after OnlyFans' 20% commission." },
+      { question: "How does OnlyFans payment work?", answer: "OnlyFans accepts credit cards and debit cards for fan payments. Creator payouts are processed weekly with a minimum threshold of $20. Withdrawal options include direct bank deposit, international wire transfer, and e-wallet services. All transactions appear discreetly on bank statements." },
+      { question: "Is OnlyFans only for adult content?", answer: "No. While OnlyFans is widely associated with adult content, the platform hosts creators across many categories including fitness, cooking, music, education, and more. However, adult content remains the platform's primary revenue driver and most recognized use case." },
+      { question: "Can I remain anonymous on OnlyFans?", answer: "Fans can use the platform with relative anonymity — your profile doesn't need to display your real name, and charges appear discreetly on statements. Creators, however, must complete identity verification with a government-issued ID for payment processing and legal compliance, though this information is not publicly displayed." }
+    ],
+    alternatives: ["fansly", "fanvue"],
+    features: {
+      "Subscriptions": true,
+      "Pay-Per-View": true,
+      "Live Streaming": true,
+      "Direct Messages": true,
+      "Tips & Gifts": true,
+      "Analytics Dashboard": true,
+      "Geo-Blocking": true,
+      "Content Scheduling": true,
+      "Promotional Tools": true,
+      "Desktop App": false
+    },
+    pricing: "Free to browse, Creator subscriptions $4.99-$49.99/month",
+    pricingModel: "Subscription",
+    startingPrice: "$4.99/mo",
+    paymentMethods: "Credit Card, Wallet",
+    contentTypes: "Photos, Videos, Live Streams, Messages",
+    url: "https://onlyfans.com",
+    lastUpdated: "March 2026",
+  },
 ];
 
 export const getPlatformBySlug = (slug: string) => platforms.find((p) => p.slug === slug);
