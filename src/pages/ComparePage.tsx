@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { RatingBadge } from "@/components/RatingBadge";
-import { SEO, breadcrumbSchema } from "@/components/SEO";
+import { SEO, breadcrumbSchema, articleSchema } from "@/components/SEO";
 import { platforms } from "@/data/platforms";
 import { Trophy, ExternalLink, ChevronRight, Check, X } from "lucide-react";
 import {
