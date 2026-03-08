@@ -97,8 +97,8 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="SpicyRanked — Honest Adult Platform Reviews & Rankings"
-        description="Independent reviews, comparisons, and rankings of the top adult creator platforms, cam sites, dating apps, and AI companions. Updated weekly."
+        title="SpicyRanked — Honest Reviews & Rankings of Adult Platforms, Cam Sites & Dating Apps"
+        description="Independent reviews, ratings & comparisons of 150+ adult platforms. OnlyFans, Fansly, Chaturbate, Stripchat & more — ranked by real testing. Updated weekly."
         canonical="/"
         jsonLd={[
           websiteSchema(),
