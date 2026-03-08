@@ -5,6 +5,8 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEO, websiteSchema, organizationSchema, itemListSchema } from "@/components/SEO";
 import { useState } from "react";
 import { PlatformRatingsTable } from "@/components/PlatformRatingsTable";
+import { EditorsPicks } from "@/components/EditorsPicks";
+import { LatestNews } from "@/components/LatestNews";
 import {
   ArrowRight,
   Flame,
@@ -235,6 +237,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ═══ EDITOR'S PICKS ═══ */}
+      <EditorsPicks />
+
       {/* ═══ LATEST COMPARISONS ═══ */}
       <section className="container py-16">
         <AnimatedSection>
@@ -322,6 +327,9 @@ const Index = () => {
           ))}
         </div>
       </section>
+
+      {/* ═══ LATEST NEWS ═══ */}
+      <LatestNews />
 
       {/* ═══ NEWSLETTER ═══ */}
       <section className="container py-16">
