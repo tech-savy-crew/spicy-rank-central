@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { SEO, breadcrumbSchema } from "@/components/SEO";
+import { SEO, breadcrumbSchema, faqSchema } from "@/components/SEO";
 import { useState } from "react";
 import {
   Send, Users, Award, Link2, TrendingUp, CheckCircle2, XCircle,
