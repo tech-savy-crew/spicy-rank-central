@@ -4,7 +4,7 @@ import { RatingBadge } from "@/components/RatingBadge";
 import { PlatformCard } from "@/components/PlatformCard";
 import { RelatedContent } from "@/components/RelatedContent";
 import { ReviewContent } from "@/components/ReviewContent";
-import { SEO, reviewSchema, faqSchema, breadcrumbSchema } from "@/components/SEO";
+import { SEO, reviewSchema as reviewSchemaFn, faqSchema, breadcrumbSchema } from "@/components/SEO";
 import { getPlatformBySlug, platforms } from "@/data/platforms";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle, XCircle, ExternalLink, Star, Clock, Calendar, ChevronRight } from "lucide-react";
