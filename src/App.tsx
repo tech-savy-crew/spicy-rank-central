@@ -16,6 +16,7 @@ import ContactPage from "./pages/ContactPage";
 import AdvertisePage from "./pages/AdvertisePage";
 import WriteForUsPage from "./pages/WriteForUsPage";
 import SearchPage from "./pages/SearchPage";
+import BestListPage from "./pages/BestListPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/advertise" element={<AdvertisePage />} />
             <Route path="/write-for-us" element={<WriteForUsPage />} />
             <Route path="/search" element={<SearchPage />} />
+            <Route path="/best/:slug" element={<BestListPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
