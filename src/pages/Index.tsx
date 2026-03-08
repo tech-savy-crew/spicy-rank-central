@@ -190,7 +190,7 @@ const Index = () => {
               </h2>
               <p className="text-sm text-muted-foreground mt-1">Our most popular and recently updated adult platform reviews</p>
             </div>
-            <Link to="/category/all" className="text-sm text-primary font-medium hover:underline hidden md:block">View all →</Link>
+            <Link to="/reviews" className="text-sm text-primary font-medium hover:underline hidden md:block">View all →</Link>
           </div>
         </AnimatedSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
