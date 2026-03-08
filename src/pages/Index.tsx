@@ -188,7 +188,7 @@ const Index = () => {
                 <Star className="h-6 w-6 text-primary" />
                 Featured Reviews
               </h2>
-              <p className="text-sm text-muted-foreground mt-1">Our most popular and recently updated platform reviews</p>
+              <p className="text-sm text-muted-foreground mt-1">Our most popular and recently updated adult platform reviews</p>
             </div>
             <Link to="/category/all" className="text-sm text-primary font-medium hover:underline hidden md:block">View all →</Link>
           </div>
