@@ -44,11 +44,10 @@ const featuredReviews = [
 const categoryCards = [
   { label: "Creator Platforms", icon: Users, sub: "OnlyFans, Fansly, Patreon & more", count: "25+ reviewed", slug: "creator-platforms" },
   { label: "Live Cam Sites", icon: Camera, sub: "Chaturbate, Stripchat, Cam4 & more", count: "18+ reviewed", slug: "live-cam-sites" },
-  { label: "Dating & Hookup Apps", icon: Heart, sub: "Tinder, Bumble, Hinge & more", count: "20+ reviewed", slug: "dating-apps" },
-  { label: "Tube & Streaming", icon: Play, sub: "Free and premium video platforms", count: "15+ reviewed", slug: "streaming-sites" },
+  { label: "Dating & Hookup Apps", icon: Heart, sub: "Tinder, Bumble, Hinge & more", count: "20+ reviewed", slug: "dating-hookup-apps" },
+  { label: "Tube & Streaming", icon: Play, sub: "Free and premium video platforms", count: "15+ reviewed", slug: "tube-streaming" },
   { label: "AI Companions", icon: Bot, sub: "AI girlfriend, chatbots & companions", count: "12+ reviewed", slug: "ai-companions" },
-  { label: "Sexting & Chat", icon: MessageCircle, sub: "Anonymous chat and messaging platforms", count: "10+ reviewed", slug: "sexting-apps" },
-  { label: "Content Aggregators", icon: Layers, sub: "Multi-platform content access", count: "8+ reviewed", slug: "aggregators" },
+  { label: "Sexting & Chat", icon: MessageCircle, sub: "Anonymous chat and messaging platforms", count: "10+ reviewed", slug: "sexting-chat" },
 ];
 
 const comparisons = [
