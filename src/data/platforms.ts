@@ -17,7 +17,12 @@ export interface Platform {
   alternatives: string[];
   features: Record<string, string | boolean>;
   pricing: string;
+  pricingModel: string;
+  startingPrice: string;
+  paymentMethods: string;
+  contentTypes: string;
   url: string;
+  lastUpdated: string;
 }
 
 export const categories = [
