@@ -20,7 +20,7 @@ import {
   Play,
   Bot,
   MessageCircle,
-  Layers,
+  
   Trophy,
   RefreshCw,
   Ban,
