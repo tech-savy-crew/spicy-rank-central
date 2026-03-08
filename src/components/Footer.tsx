@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import { Flame } from "lucide-react";
 
 const reviewLinks = [
-  { label: "OnlyFans Review", to: "/review/onlyfans-review" },
-  { label: "Fansly Review", to: "/review/fansly-review" },
-  { label: "Chaturbate Review", to: "/review/chaturbate-review" },
-  { label: "Stripchat Review", to: "/review/stripchat-review" },
-  { label: "Bumble Review", to: "/review/bumble-review" },
+  { label: "OnlyFans Review", to: "/reviews/onlyfans" },
+  { label: "Fansly Review", to: "/reviews/fansly" },
+  { label: "Chaturbate Review", to: "/reviews/chaturbate" },
+  { label: "Stripchat Review", to: "/reviews/stripchat" },
+  { label: "Bumble Review", to: "/reviews/bumble" },
 ];
 
 const compareLinks = [
@@ -17,10 +17,10 @@ const compareLinks = [
 ];
 
 const bestLinks = [
-  { label: "Best OnlyFans Alternatives", to: "/best/onlyfans-alternatives" },
-  { label: "Best Cam Sites", to: "/best/free-cam-sites" },
-  { label: "Best Dating Apps", to: "/best/hookup-apps" },
-  { label: "Best AI Companions", to: "/best/ai-girlfriend-apps" },
+  { label: "Best OnlyFans Alternatives", to: "/best-lists/best-onlyfans-alternatives" },
+  { label: "Best Cam Sites", to: "/best-lists/best-free-cam-sites" },
+  { label: "Best Dating Apps", to: "/best-lists/best-hookup-apps" },
+  { label: "Best AI Companions", to: "/best-lists/best-ai-girlfriend-apps" },
 ];
 
 const companyLinks = [

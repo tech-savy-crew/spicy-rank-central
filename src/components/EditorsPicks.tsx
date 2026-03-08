@@ -13,11 +13,11 @@ interface PickCard {
 }
 
 const picks: PickCard[] = [
-  { emoji: "💰", title: "Best for Creator Earnings", winner: "OnlyFans", score: 8.5, reason: "Largest audience base means highest earning potential for established creators", topColor: "#48BB78", link: "/review/onlyfans-review" },
-  { emoji: "🎥", title: "Best Free Cam Experience", winner: "Chaturbate", score: 7.8, reason: "Thousands of free live broadcasts 24/7 with no signup required", topColor: "#E53E3E", link: "/review/chaturbate-review" },
-  { emoji: "⭐", title: "Best OnlyFans Alternative", winner: "Fansly", score: 8.2, reason: "Lower fees, better content organization, rapidly growing community", topColor: "#4299E1", link: "/review/fansly-review" },
-  { emoji: "🤖", title: "Best AI Companion App", winner: "CrushOn AI", score: 7.4, reason: "Most realistic NSFW AI chatbot with uncensored conversations and memory", topColor: "#9F7AEA", link: "/review/crushon-review" },
-  { emoji: "🔒", title: "Best for Anonymous Sexting", winner: "Arousr", score: 7.2, reason: "Verified real people, anonymous by default, pay-per-chat pricing", topColor: "#ED8936", link: "/review/arousr-review" },
+  { emoji: "💰", title: "Best for Creator Earnings", winner: "OnlyFans", score: 8.5, reason: "Largest audience base means highest earning potential for established creators", topColor: "#48BB78", link: "/reviews/onlyfans" },
+  { emoji: "🎥", title: "Best Free Cam Experience", winner: "Chaturbate", score: 7.8, reason: "Thousands of free live broadcasts 24/7 with no signup required", topColor: "#E53E3E", link: "/reviews/chaturbate" },
+  { emoji: "⭐", title: "Best OnlyFans Alternative", winner: "Fansly", score: 8.2, reason: "Lower fees, better content organization, rapidly growing community", topColor: "#4299E1", link: "/reviews/fansly" },
+  { emoji: "🤖", title: "Best AI Companion App", winner: "CrushOn AI", score: 7.4, reason: "Most realistic NSFW AI chatbot with uncensored conversations and memory", topColor: "#9F7AEA", link: "/reviews/crushon-ai" },
+  { emoji: "🔒", title: "Best for Anonymous Sexting", winner: "Arousr", score: 7.2, reason: "Verified real people, anonymous by default, pay-per-chat pricing", topColor: "#ED8936", link: "/reviews/arousr" },
 ];
 
 function scoreBg(s: number) {

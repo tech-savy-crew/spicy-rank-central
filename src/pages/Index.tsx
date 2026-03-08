@@ -20,7 +20,7 @@ import {
   Play,
   Bot,
   MessageCircle,
-  Layers,
+  
   Trophy,
   RefreshCw,
   Ban,
@@ -33,53 +33,53 @@ import {
 /* ── Static Data ── */
 
 const featuredReviews = [
-  { title: "OnlyFans", category: "Creator Platform", rating: 8.5, slug: "onlyfans-review", desc: "Still the biggest name in creator subscriptions — but rising fees and growing competition mean it is no longer the only option. Full breakdown inside." },
+  { title: "OnlyFans", category: "Creator Platform", rating: 8.5, slug: "onlyfans-review", desc: "Still the biggest name in creator subscriptions — but rising fees and growing competition mean it's no longer the only option. Full breakdown inside." },
   { title: "Fansly", category: "Creator Platform", rating: 8.2, slug: "fansly-review", desc: "Lower creator fees, better content organization, and a rapidly growing user base make Fansly the top OnlyFans alternative for both creators and fans." },
-  { title: "Chaturbate", category: "Live Cam Site", rating: 7.8, slug: "chaturbate-review", desc: "The most popular free live cam platform with thousands of broadcasters online 24/7. Great free experience but token system can get expensive." },
-  { title: "Stripchat", category: "Live Cam Site", rating: 7.5, slug: "stripchat-review", desc: "AI-powered cam site with virtual reality support and innovative features. Strong Chaturbate alternative with a modern interface." },
-  { title: "Bumble", category: "Dating App", rating: 8.0, slug: "bumble-review", desc: "Women-make-the-first-move dating app with solid matching algorithm. Premium features worth it if you are serious about dating in 2026." },
-  { title: "FanVue", category: "Creator Platform", rating: 7.6, slug: "fanvue-review", desc: "UK-based OnlyFans competitor with built-in AI tools for creators. Lower fees and better analytics, but smaller audience for now." },
+  { title: "Chaturbate", category: "Live Cam Site", rating: 7.8, slug: "chaturbate-review", desc: "The most popular free live cam platform with thousands of broadcasters online 24/7. Great free experience but the token system can get expensive." },
+  { title: "Stripchat", category: "Live Cam Site", rating: 7.5, slug: "stripchat-review", desc: "AI-powered cam site with virtual reality support and innovative features. Strong Chaturbate alternative with a modern, clean interface." },
+  { title: "Bumble", category: "Dating App", rating: 8.0, slug: "bumble-review", desc: "Women-make-the-first-move dating app with a solid matching algorithm. Premium features are worth it if you're serious about dating in 2026." },
+  { title: "FanVue", category: "Creator Platform", rating: 7.6, slug: "fanvue-review", desc: "UK-based OnlyFans competitor with built-in AI tools for creators. Lower fees and better analytics, but still building its audience." },
 ];
 
 const categoryCards = [
   { label: "Creator Platforms", icon: Users, sub: "OnlyFans, Fansly, Patreon & more", count: "25+ reviewed", slug: "creator-platforms" },
   { label: "Live Cam Sites", icon: Camera, sub: "Chaturbate, Stripchat, Cam4 & more", count: "18+ reviewed", slug: "live-cam-sites" },
-  { label: "Dating & Hookup Apps", icon: Heart, sub: "Tinder, Bumble, Hinge & more", count: "20+ reviewed", slug: "dating-apps" },
-  { label: "Tube & Streaming", icon: Play, sub: "Free and premium video platforms", count: "15+ reviewed", slug: "streaming-sites" },
+  { label: "Dating & Hookup Apps", icon: Heart, sub: "Tinder, Bumble, Hinge & more", count: "20+ reviewed", slug: "dating-hookup-apps" },
+  { label: "Tube & Streaming", icon: Play, sub: "Free and premium video platforms", count: "15+ reviewed", slug: "tube-streaming" },
   { label: "AI Companions", icon: Bot, sub: "AI girlfriend, chatbots & companions", count: "12+ reviewed", slug: "ai-companions" },
-  { label: "Sexting & Chat", icon: MessageCircle, sub: "Anonymous chat and messaging platforms", count: "10+ reviewed", slug: "sexting-apps" },
-  { label: "Content Aggregators", icon: Layers, sub: "Multi-platform content access", count: "8+ reviewed", slug: "aggregators" },
+  { label: "Sexting & Chat", icon: MessageCircle, sub: "Anonymous chat and messaging platforms", count: "10+ reviewed", slug: "sexting-chat" },
 ];
 
 const comparisons = [
-  { title: "OnlyFans vs Fansly — Which Is Better in 2026?", a: { name: "OnlyFans", rating: 8.5 }, b: { name: "Fansly", rating: 8.2 }, winner: "a", teaser: "We compare pricing, features, creator tools, and audience size to find the better platform.", slug: "onlyfans-vs-fansly" },
-  { title: "Chaturbate vs Stripchat — Best Free Cam Site?", a: { name: "Chaturbate", rating: 7.8 }, b: { name: "Stripchat", rating: 7.5 }, winner: "a", teaser: "Two biggest free cam sites compared on model selection, video quality, features, and value.", slug: "chaturbate-vs-stripchat" },
-  { title: "Tinder vs Bumble — Best Dating App?", a: { name: "Tinder", rating: 7.5 }, b: { name: "Bumble", rating: 8.0 }, winner: "b", teaser: "Matching algorithm, user base, premium features, and success rates compared side by side.", slug: "tinder-vs-bumble" },
-  { title: "OnlyFans vs Patreon — Best for Adult Creators?", a: { name: "OnlyFans", rating: 8.5 }, b: { name: "Patreon", rating: 7.0 }, winner: "a", teaser: "Creator earnings, content policies, audience reach, and payout options compared.", slug: "onlyfans-vs-patreon" },
+  { title: "OnlyFans vs Fansly — Which Is Better in 2026?", a: { name: "OnlyFans", rating: 8.5 }, b: { name: "Fansly", rating: 8.2 }, winner: "a", teaser: "We compare pricing, features, creator tools, and audience size to find the better creator platform for fans and creators alike.", slug: "onlyfans-vs-fansly" },
+  { title: "Chaturbate vs Stripchat — Best Free Cam Site?", a: { name: "Chaturbate", rating: 7.8 }, b: { name: "Stripchat", rating: 7.5 }, winner: "a", teaser: "Two biggest free cam sites compared on model selection, video quality, features, and value for viewers and performers.", slug: "chaturbate-vs-stripchat" },
+  { title: "Tinder vs Bumble — Best Dating App?", a: { name: "Tinder", rating: 7.5 }, b: { name: "Bumble", rating: 8.0 }, winner: "b", teaser: "Matching algorithm, user base, premium features, and success rates compared side by side for serious and casual daters.", slug: "tinder-vs-bumble" },
+  { title: "OnlyFans vs Patreon — Best for Adult Creators?", a: { name: "OnlyFans", rating: 8.5 }, b: { name: "Patreon", rating: 7.0 }, winner: "a", teaser: "Creator earnings, content policies, audience reach, and payout options compared for adult and non-adult creators.", slug: "onlyfans-vs-patreon" },
 ];
 
 const topLists = [
-  { title: "10 Best OnlyFans Alternatives (2026)", category: "Creator Platforms", slug: "onlyfans-alternatives" },
-  { title: "Best Free Cam Sites — Top 8 Ranked", category: "Live Cam", slug: "free-cam-sites" },
-  { title: "Best Hookup Apps That Actually Work (2026)", category: "Dating", slug: "hookup-apps" },
-  { title: "Best AI Girlfriend Apps — Top 10 Ranked", category: "AI Companions", slug: "ai-girlfriend-apps" },
-  { title: "Best Chaturbate Alternatives — Top 8", category: "Live Cam", slug: "chaturbate-alternatives" },
-  { title: "Best Creator Platforms for Beginners", category: "Creator Platforms", slug: "creator-platforms-beginners" },
+  { title: "10 Best OnlyFans Alternatives (2026)", category: "Creator Platforms", slug: "best-onlyfans-alternatives" },
+  { title: "Best Free Cam Sites — Top 8 Ranked", category: "Live Cam", slug: "best-free-cam-sites" },
+  { title: "Best Hookup Apps That Actually Work (2026)", category: "Dating", slug: "best-hookup-apps" },
+  { title: "Best AI Girlfriend Apps — Top 10 Ranked", category: "AI Companions", slug: "best-ai-girlfriend-apps" },
+  { title: "Best Chaturbate Alternatives — Top 8", category: "Live Cam", slug: "best-chaturbate-alternatives" },
+  { title: "Best Creator Platforms for Beginners", category: "Creator Platforms", slug: "best-creator-platforms-beginners" },
 ];
 
 const trending = [
   { emoji: "🔥", text: "Fansly surpasses 5M creators", link: "/review/fansly-review" },
-  { emoji: "📊", text: "OnlyFans updates creator payout policy", link: "/review/onlyfans-review" },
-  { emoji: "🆕", text: "New AI companion app CrushOn reviewed", link: "/review/crushon-review" },
-  { emoji: "⚡", text: "Stripchat launches VR 2.0 features", link: "/review/stripchat-review" },
-  { emoji: "📱", text: "Bumble redesigns matching algorithm", link: "/review/bumble-review" },
+  { emoji: "📈", text: "OnlyFans updates creator payout policy", link: "/review/onlyfans-review" },
+  { emoji: "💻", text: "New AI companion app CrushOn reviewed", link: "/review/crushon-review" },
+  { emoji: "✨", text: "Stripchat launches VR 2.0 features", link: "/review/stripchat-review" },
+  { emoji: "💡", text: "Best cam sites list updated for March 2026", link: "/best/free-cam-sites" },
+  { emoji: "⚡", text: "Tinder vs Bumble: latest comparison published", link: "/compare/tinder-vs-bumble" },
 ];
 
 const howWeReview = [
-  { icon: Shield, title: "Independent Testing", desc: "Every platform is tested first-hand by our review team. We sign up, explore features, and evaluate the real user experience." },
-  { icon: BarChart3, title: "Transparent Ratings", desc: "Our 10-point rating system scores platforms across 5 categories: Content, UI, Value, Privacy, and Features." },
-  { icon: RefreshCw, title: "Regular Updates", desc: "Reviews are updated quarterly to reflect platform changes, new features, and pricing updates." },
-  { icon: Ban, title: "No Pay-for-Play", desc: "Platforms cannot pay for higher ratings. Sponsored content is always clearly labeled and separated from editorial." },
+  { icon: Shield, title: "Independent Testing", desc: "Every platform is tested first-hand by our review team. We sign up, explore features, and evaluate the real user experience — no shortcuts." },
+  { icon: BarChart3, title: "Transparent Ratings", desc: "Our 10-point rating system scores platforms across 5 categories: Content, UI, Value, Privacy, and Features. Every score is fully explained." },
+  { icon: RefreshCw, title: "Regular Updates", desc: "Reviews are updated quarterly to reflect platform changes, new features, and pricing updates. You always get the latest information." },
+  { icon: Ban, title: "No Pay-for-Play", desc: "Platforms cannot pay for higher ratings. Sponsored content is always clearly labeled and separated from editorial reviews." },
 ];
 
 /* ── Component ── */
@@ -97,8 +97,8 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="SpicyRanked — Honest Adult Platform Reviews & Rankings"
-        description="Independent reviews, comparisons, and rankings of the top adult creator platforms, cam sites, dating apps, and AI companions. Updated weekly."
+        title="SpicyRanked — Honest Reviews & Rankings of Adult Platforms, Cam Sites & Dating Apps"
+        description="Independent reviews, ratings & comparisons of 150+ adult platforms. OnlyFans, Fansly, Chaturbate, Stripchat & more — ranked by real testing. Updated weekly."
         canonical="/"
         jsonLd={[
           websiteSchema(),
@@ -121,7 +121,7 @@ const Index = () => {
               <span className="spicy-text-gradient">Ranked & Rated</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-              We review, compare, and rank the top creator platforms, live cam sites, adult streaming services, and dating apps so you don't waste your time or money.
+              We review, compare, and rank the top creator platforms, live cam sites, adult streaming services, AI companions, and dating apps — so you don't waste your time or money. Every platform is independently tested and rated on a 10-point scale.
             </p>
 
             {/* Search */}
@@ -188,9 +188,9 @@ const Index = () => {
                 <Star className="h-6 w-6 text-primary" />
                 Featured Reviews
               </h2>
-              <p className="text-sm text-muted-foreground mt-1">Our most popular and recently updated platform reviews</p>
+              <p className="text-sm text-muted-foreground mt-1">Our most popular and recently updated adult platform reviews</p>
             </div>
-            <Link to="/category/all" className="text-sm text-primary font-medium hover:underline hidden md:block">View all →</Link>
+            <Link to="/reviews" className="text-sm text-primary font-medium hover:underline hidden md:block">View all →</Link>
           </div>
         </AnimatedSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -290,13 +290,13 @@ const Index = () => {
               </h2>
               <p className="text-sm text-muted-foreground mt-1">Curated rankings updated monthly</p>
             </div>
-            <Link to="/rankings" className="text-sm text-primary font-medium hover:underline hidden md:block">View all lists →</Link>
+            <Link to="/best-lists" className="text-sm text-primary font-medium hover:underline hidden md:block">View all lists →</Link>
           </div>
         </AnimatedSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {topLists.map((list, i) => (
             <AnimatedSection key={list.slug} delay={i * 80}>
-              <Link to={`/best/${list.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
+              <Link to={`/best-lists/${list.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
                 <span className="text-xs font-medium bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">{list.category}</span>
                 <h3 className="font-bold text-sm mt-3 group-hover:text-primary transition-colors">{list.title}</h3>
                 <span className="inline-flex items-center gap-1 text-xs text-primary font-medium mt-2">

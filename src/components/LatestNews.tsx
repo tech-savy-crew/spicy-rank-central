@@ -49,7 +49,7 @@ const posts: NewsPost[] = [
     title: "Best NSFW AI Chatbots in 2026: Our Full Comparison",
     date: "February 28, 2026",
     readTime: "8 min read",
-    excerpt: "We tested 12 AI companion apps head-to-head. From CrushOn to Candy AI, here's which ones actually deliver.",
+    excerpt: "We tested 12 AI companion apps head-to-head. From CrushOn to Candy AI, here's which ones actually deliver on their promises.",
     link: "/blog/best-nsfw-ai-chatbots-2026",
   },
   {
@@ -61,7 +61,7 @@ const posts: NewsPost[] = [
     title: "Stripchat Launches VR 2.0: First Look at the New Features",
     date: "February 25, 2026",
     readTime: "5 min read",
-    excerpt: "Stripchat's updated VR experience promises more immersive cam shows. We got early access.",
+    excerpt: "Stripchat's updated VR experience promises more immersive cam shows. We got early access to test the new features.",
     link: "/blog/stripchat-vr-2-features",
   },
 ];
