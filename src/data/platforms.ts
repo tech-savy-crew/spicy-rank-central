@@ -73,7 +73,12 @@ export const platforms: Platform[] = [
     alternatives: ["instagram", "youtube", "snapchat"],
     features: { "Short Video": true, "Live Streaming": true, "Stories": true, "E-commerce": true, "Direct Messages": true, "Desktop App": false },
     pricing: "Free",
+    pricingModel: "Free",
+    startingPrice: "Free",
+    paymentMethods: "N/A",
+    contentTypes: "Short Video, Live Streams",
     url: "https://tiktok.com",
+    lastUpdated: "March 1, 2026",
   },
   {
     id: "2",
