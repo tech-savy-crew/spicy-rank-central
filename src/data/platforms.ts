@@ -205,7 +205,12 @@ export const platforms: Platform[] = [
     alternatives: ["apple-music", "youtube", "tidal"],
     features: { "On-Demand": true, "Offline Mode": true, "Podcasts": true, "Lyrics": true, "Social Features": true, "Desktop App": true },
     pricing: "Free / $10.99/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$10.99/mo",
+    paymentMethods: "Credit Card, PayPal, Apple Pay",
+    contentTypes: "Music, Podcasts, Audiobooks",
     url: "https://spotify.com",
+    lastUpdated: "January 28, 2026",
   },
   {
     id: "5",
