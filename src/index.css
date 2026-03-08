@@ -6,6 +6,56 @@
 
 @layer base {
   :root {
+    /* Light mode */
+    --background: 230 25% 95%;
+    --foreground: 235 45% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 235 45% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 235 45% 14%;
+
+    --primary: 10 88% 44%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 20% 90%;
+    --secondary-foreground: 235 45% 14%;
+
+    --muted: 230 15% 88%;
+    --muted-foreground: 230 15% 40%;
+
+    --accent: 10 88% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 15% 85%;
+    --input: 230 15% 85%;
+    --ring: 10 88% 44%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 230 25% 93%;
+    --sidebar-foreground: 235 45% 14%;
+    --sidebar-primary: 10 88% 44%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 20% 88%;
+    --sidebar-accent-foreground: 235 45% 14%;
+    --sidebar-border: 230 15% 85%;
+    --sidebar-ring: 10 88% 44%;
+
+    /* Custom tokens */
+    --surface: 230 20% 92%;
+    --surface-hover: 230 15% 87%;
+    --rating: 45 100% 51%;
+    --rating-foreground: 0 0% 10%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+  }
+
+  .dark {
     --background: 235 45% 14%;
     --foreground: 0 0% 96%;
 
@@ -34,8 +84,6 @@
     --input: 235 25% 25%;
     --ring: 10 88% 44%;
 
-    --radius: 0.75rem;
-
     --sidebar-background: 235 45% 12%;
     --sidebar-foreground: 0 0% 96%;
     --sidebar-primary: 10 88% 44%;
@@ -45,7 +93,6 @@
     --sidebar-border: 235 25% 25%;
     --sidebar-ring: 10 88% 44%;
 
-    /* Custom tokens */
     --surface: 235 40% 16%;
     --surface-hover: 235 35% 20%;
     --rating: 45 100% 51%;
@@ -60,8 +107,12 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-sans antialiased transition-colors duration-300;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -82,11 +133,15 @@
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:translate-y-[-4px] hover:shadow-lg hover:shadow-primary/10;
+    @apply transition-all duration-300 hover:translate-y-[-4px] hover:shadow-lg hover:shadow-primary/10 hover:border-primary/30;
   }
 
   .glass {
     @apply bg-card/80 backdrop-blur-md border border-border/50;
+  }
+
+  .btn-hover {
+    @apply transition-all duration-200 hover:scale-[1.02] active:scale-[0.98];
   }
 }
 
