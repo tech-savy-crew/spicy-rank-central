@@ -87,10 +87,13 @@ const WriteForUsPage = () => {
         title="Write For Us - Guest Posts & Sponsored Content"
         description="Write for SpicyRanked. Submit a free guest post or inquire about sponsored content opportunities. Reach 50K+ monthly readers."
         canonical="/write-for-us"
-        jsonLd={breadcrumbSchema([
-          { name: "Home", url: "/" },
-          { name: "Write For Us", url: "/write-for-us" },
-        ])}
+        jsonLd={[
+          breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: "Write For Us", url: "/write-for-us" },
+          ]),
+          faqSchema(faqs.map((f) => ({ question: f.q, answer: f.a }))),
+        ]}
       />
 
       {/* Hero */}

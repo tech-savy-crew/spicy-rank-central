@@ -88,7 +88,7 @@ const ReviewPage = () => {
   const categorySlug = platform.category.toLowerCase().replace(" ", "-");
 
   const jsonLdData = [
-    reviewSchema(platform),
+    reviewSchemaFn({ ...platform, url: platform.url }),
     breadcrumbSchema([
       { name: "Home", url: "/" },
       { name: platform.category, url: `/category/${categorySlug}` },

@@ -28,7 +28,7 @@ const companyLinks = [
   { label: "Advertise With Us", to: "/advertise" },
   { label: "Write For Us", to: "/write-for-us" },
   { label: "Contact", to: "/contact" },
-  { label: "Privacy Policy", to: "/privacy" },
+  { label: "Privacy Policy", to: "/privacy-policy" },
   { label: "Terms of Service", to: "/terms" },
 ];
 

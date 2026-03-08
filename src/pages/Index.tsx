@@ -351,7 +351,7 @@ const Index = () => {
                   </button>
                 </form>
               )}
-              <p className="text-xs text-muted-foreground mt-4">We respect your privacy. Read our <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link>.</p>
+              <p className="text-xs text-muted-foreground mt-4">We respect your privacy. Read our <Link to="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>.</p>
             </div>
           </div>
         </AnimatedSection>

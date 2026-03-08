@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 
 const SITE_NAME = "SpicyRanked";
 const SITE_URL = "https://spicyranked.com";
-const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.png`;
+const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 interface SEOProps {
   title: string;
@@ -69,11 +69,28 @@ export function websiteSchema() {
     "@type": "WebSite",
     name: SITE_NAME,
     url: SITE_URL,
-    description: "Honest reviews and rankings of digital entertainment and social platforms",
+    description: "Independent reviews and rankings of adult platforms, cam sites, dating apps and AI companions",
     potentialAction: {
       "@type": "SearchAction",
-      target: `${SITE_URL}/rankings?q={search_term_string}`,
+      target: `${SITE_URL}/search?q={search_term_string}`,
       "query-input": "required name=search_term_string",
+    },
+  };
+}
+
+export function organizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo.png`,
+    description: "Independent reviews and rankings of adult platforms",
+    sameAs: [],
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      email: "hello@spicyranked.com",
     },
   };
 }
@@ -84,25 +101,41 @@ export function reviewSchema(platform: {
   rating: number;
   summary: string;
   lastUpdated: string;
+  url?: string;
 }) {
   return {
     "@context": "https://schema.org",
     "@type": "Review",
     itemReviewed: {
-      "@type": "SoftwareApplication",
+      "@type": "WebApplication",
       name: platform.name,
+      applicationCategory: "Entertainment",
+      ...(platform.url ? { url: platform.url } : {}),
     },
     reviewRating: {
       "@type": "Rating",
       ratingValue: platform.rating,
       bestRating: 10,
-      worstRating: 0,
+      worstRating: 1,
     },
-    author: { "@type": "Organization", name: SITE_NAME },
-    publisher: { "@type": "Organization", name: SITE_NAME },
+    author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
     description: platform.summary,
+    datePublished: "2026-03-08",
     dateModified: platform.lastUpdated,
     url: `${SITE_URL}/review/${platform.slug}`,
+  };
+}
+
+export function articleSchema(headline: string, dateModified = "2026-03-08") {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline,
+    author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    datePublished: "2026-03-08",
+    dateModified,
   };
 }
 

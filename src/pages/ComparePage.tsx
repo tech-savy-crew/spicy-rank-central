@@ -217,7 +217,7 @@ const ComparePage = () => {
 
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           {compared.map((p) => (
-            <a key={p.slug} href={p.url} target="_blank" rel="noopener nofollow noreferrer"
+            <a key={p.slug} href={p.url} target="_blank" rel="nofollow sponsored noopener noreferrer"
               className="inline-flex items-center gap-2 spicy-gradient text-primary-foreground px-6 py-3 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity">
               {p.logo} Visit {p.name} <ExternalLink className="h-4 w-4" />
             </a>
