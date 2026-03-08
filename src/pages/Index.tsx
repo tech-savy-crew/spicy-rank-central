@@ -76,10 +76,10 @@ const trending = [
 ];
 
 const howWeReview = [
-  { icon: Shield, title: "Independent Testing", desc: "Every platform is tested first-hand by our review team. We sign up, explore features, and evaluate the real user experience." },
-  { icon: BarChart3, title: "Transparent Ratings", desc: "Our 10-point rating system scores platforms across 5 categories: Content, UI, Value, Privacy, and Features." },
-  { icon: RefreshCw, title: "Regular Updates", desc: "Reviews are updated quarterly to reflect platform changes, new features, and pricing updates." },
-  { icon: Ban, title: "No Pay-for-Play", desc: "Platforms cannot pay for higher ratings. Sponsored content is always clearly labeled and separated from editorial." },
+  { icon: Shield, title: "Independent Testing", desc: "Every platform is tested first-hand by our review team. We sign up, explore features, and evaluate the real user experience — no shortcuts." },
+  { icon: BarChart3, title: "Transparent Ratings", desc: "Our 10-point rating system scores platforms across 5 categories: Content, UI, Value, Privacy, and Features. Every score is fully explained." },
+  { icon: RefreshCw, title: "Regular Updates", desc: "Reviews are updated quarterly to reflect platform changes, new features, and pricing updates. You always get the latest information." },
+  { icon: Ban, title: "No Pay-for-Play", desc: "Platforms cannot pay for higher ratings. Sponsored content is always clearly labeled and separated from editorial reviews." },
 ];
 
 /* ── Component ── */
