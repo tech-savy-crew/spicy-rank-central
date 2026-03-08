@@ -328,6 +328,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ═══ LATEST NEWS ═══ */}
+      <LatestNews />
+
       {/* ═══ NEWSLETTER ═══ */}
       <section className="container py-16">
         <AnimatedSection animation="scale-in">
