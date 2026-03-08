@@ -117,7 +117,12 @@ export const platforms: Platform[] = [
     alternatives: ["tiktok", "twitch", "vimeo"],
     features: { "Long Video": true, "Short Video": true, "Live Streaming": true, "Stories": false, "E-commerce": true, "Desktop App": true },
     pricing: "Free / $13.99/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$13.99/mo",
+    paymentMethods: "Credit Card, PayPal, Google Pay",
+    contentTypes: "Video, Shorts, Live, Podcasts",
     url: "https://youtube.com",
+    lastUpdated: "February 20, 2026",
   },
   {
     id: "3",
