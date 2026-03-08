@@ -337,7 +337,12 @@ export const platforms: Platform[] = [
     alternatives: ["obsidian", "evernote", "coda"],
     features: { "Notes": true, "Databases": true, "Wiki": true, "Projects": true, "AI Assistant": true, "Desktop App": true },
     pricing: "Free / $10/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$10/user/mo",
+    paymentMethods: "Credit Card",
+    contentTypes: "Docs, Databases, Wikis",
     url: "https://notion.so",
+    lastUpdated: "February 12, 2026",
   },
   {
     id: "8",
