@@ -381,7 +381,12 @@ export const platforms: Platform[] = [
     alternatives: ["instagram", "tiktok", "bereal"],
     features: { "Snaps": true, "Stories": true, "Spotlight": true, "AR Filters": true, "Snap Map": true, "Desktop App": false },
     pricing: "Free / $3.99/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$3.99/mo",
+    paymentMethods: "App Store, Google Play",
+    contentTypes: "Snaps, Stories, AR, Video",
     url: "https://snapchat.com",
+    lastUpdated: "January 30, 2026",
   },
 ];
 
