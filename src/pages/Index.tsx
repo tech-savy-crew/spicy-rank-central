@@ -237,6 +237,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ═══ EDITOR'S PICKS ═══ */}
+      <EditorsPicks />
+
       {/* ═══ LATEST COMPARISONS ═══ */}
       <section className="container py-16">
         <AnimatedSection>
