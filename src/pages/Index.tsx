@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { RatingBadge } from "@/components/RatingBadge";
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { SEO, websiteSchema, itemListSchema } from "@/components/SEO";
+import { SEO, websiteSchema, organizationSchema, itemListSchema } from "@/components/SEO";
 import { useState } from "react";
 import {
   ArrowRight,
