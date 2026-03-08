@@ -4,6 +4,7 @@ import { RatingBadge } from "@/components/RatingBadge";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEO, websiteSchema, organizationSchema, itemListSchema } from "@/components/SEO";
 import { useState } from "react";
+import { PlatformRatingsTable } from "@/components/PlatformRatingsTable";
 import {
   ArrowRight,
   Flame,
