@@ -17,7 +17,12 @@ export interface Platform {
   alternatives: string[];
   features: Record<string, string | boolean>;
   pricing: string;
+  pricingModel: string;
+  startingPrice: string;
+  paymentMethods: string;
+  contentTypes: string;
   url: string;
+  lastUpdated: string;
 }
 
 export const categories = [
@@ -68,7 +73,12 @@ export const platforms: Platform[] = [
     alternatives: ["instagram", "youtube", "snapchat"],
     features: { "Short Video": true, "Live Streaming": true, "Stories": true, "E-commerce": true, "Direct Messages": true, "Desktop App": false },
     pricing: "Free",
+    pricingModel: "Free",
+    startingPrice: "Free",
+    paymentMethods: "N/A",
+    contentTypes: "Short Video, Live Streams",
     url: "https://tiktok.com",
+    lastUpdated: "March 1, 2026",
   },
   {
     id: "2",
@@ -107,7 +117,12 @@ export const platforms: Platform[] = [
     alternatives: ["tiktok", "twitch", "vimeo"],
     features: { "Long Video": true, "Short Video": true, "Live Streaming": true, "Stories": false, "E-commerce": true, "Desktop App": true },
     pricing: "Free / $13.99/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$13.99/mo",
+    paymentMethods: "Credit Card, PayPal, Google Pay",
+    contentTypes: "Video, Shorts, Live, Podcasts",
     url: "https://youtube.com",
+    lastUpdated: "February 20, 2026",
   },
   {
     id: "3",
@@ -146,7 +161,12 @@ export const platforms: Platform[] = [
     alternatives: ["slack", "telegram", "teamspeak"],
     features: { "Text Chat": true, "Voice Chat": true, "Video Calls": true, "Screen Share": true, "Bots": true, "Desktop App": true },
     pricing: "Free / $9.99/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$9.99/mo",
+    paymentMethods: "Credit Card, PayPal",
+    contentTypes: "Text, Voice, Video, Streams",
     url: "https://discord.com",
+    lastUpdated: "February 15, 2026",
   },
   {
     id: "4",
@@ -185,7 +205,12 @@ export const platforms: Platform[] = [
     alternatives: ["apple-music", "youtube", "tidal"],
     features: { "On-Demand": true, "Offline Mode": true, "Podcasts": true, "Lyrics": true, "Social Features": true, "Desktop App": true },
     pricing: "Free / $10.99/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$10.99/mo",
+    paymentMethods: "Credit Card, PayPal, Apple Pay",
+    contentTypes: "Music, Podcasts, Audiobooks",
     url: "https://spotify.com",
+    lastUpdated: "January 28, 2026",
   },
   {
     id: "5",
@@ -224,7 +249,12 @@ export const platforms: Platform[] = [
     alternatives: ["youtube", "kick", "facebook-gaming"],
     features: { "Live Streaming": true, "Chat": true, "Clips": true, "VODs": true, "Extensions": true, "Desktop App": false },
     pricing: "Free / $8.99/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$8.99/mo",
+    paymentMethods: "Credit Card, PayPal, Amazon Pay",
+    contentTypes: "Live Streams, VODs, Clips",
     url: "https://twitch.tv",
+    lastUpdated: "February 5, 2026",
   },
   {
     id: "6",
@@ -263,7 +293,12 @@ export const platforms: Platform[] = [
     alternatives: ["tiktok", "snapchat", "pinterest"],
     features: { "Photos": true, "Reels": true, "Stories": true, "Live": true, "Shopping": true, "Desktop App": false },
     pricing: "Free",
+    pricingModel: "Free",
+    startingPrice: "Free",
+    paymentMethods: "N/A",
+    contentTypes: "Photos, Reels, Stories, Live",
     url: "https://instagram.com",
+    lastUpdated: "March 3, 2026",
   },
   {
     id: "7",
@@ -302,7 +337,12 @@ export const platforms: Platform[] = [
     alternatives: ["obsidian", "evernote", "coda"],
     features: { "Notes": true, "Databases": true, "Wiki": true, "Projects": true, "AI Assistant": true, "Desktop App": true },
     pricing: "Free / $10/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$10/user/mo",
+    paymentMethods: "Credit Card",
+    contentTypes: "Docs, Databases, Wikis",
     url: "https://notion.so",
+    lastUpdated: "February 12, 2026",
   },
   {
     id: "8",
@@ -341,7 +381,12 @@ export const platforms: Platform[] = [
     alternatives: ["instagram", "tiktok", "bereal"],
     features: { "Snaps": true, "Stories": true, "Spotlight": true, "AR Filters": true, "Snap Map": true, "Desktop App": false },
     pricing: "Free / $3.99/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$3.99/mo",
+    paymentMethods: "App Store, Google Play",
+    contentTypes: "Snaps, Stories, AR, Video",
     url: "https://snapchat.com",
+    lastUpdated: "January 30, 2026",
   },
 ];
 
