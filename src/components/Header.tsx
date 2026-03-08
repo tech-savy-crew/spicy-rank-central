@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Search, Menu, X, Flame } from "lucide-react";
-import { useState } from "react";
+import { Search, Menu, X, Flame, ChevronDown } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
@@ -10,8 +10,27 @@ const navItems = [
   { label: "Categories", to: "/categories" },
 ];
 
+const moreItems = [
+  { label: "About", to: "/about" },
+  { label: "Contact", to: "/contact" },
+  { label: "Advertise", to: "/advertise" },
+  { label: "Write For Us", to: "/write-for-us" },
+];
+
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
+  const moreRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (moreRef.current && !moreRef.current.contains(e.target as Node)) {
+        setMoreOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 glass border-b border-border/50">
@@ -31,6 +50,30 @@ export function Header() {
               {item.label}
             </Link>
           ))}
+
+          {/* More dropdown */}
+          <div ref={moreRef} className="relative">
+            <button
+              onClick={() => setMoreOpen(!moreOpen)}
+              className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              More <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${moreOpen ? "rotate-180" : ""}`} />
+            </button>
+            {moreOpen && (
+              <div className="absolute right-0 top-full mt-2 w-44 bg-card border border-border/50 rounded-lg shadow-lg py-1 z-50">
+                {moreItems.map((item) => (
+                  <Link
+                    key={item.label}
+                    to={item.to}
+                    className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                    onClick={() => setMoreOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </nav>
 
         <div className="flex items-center gap-1">
@@ -51,10 +94,10 @@ export function Header() {
       {/* Mobile menu */}
       <div
         className={`md:hidden border-t border-border/50 bg-card overflow-hidden transition-all duration-300 ${
-          mobileOpen ? "max-h-60" : "max-h-0"
+          mobileOpen ? "max-h-96" : "max-h-0"
         }`}
       >
-        {navItems.map((item) => (
+        {[...navItems, ...moreItems].map((item) => (
           <Link
             key={item.label}
             to={item.to}
