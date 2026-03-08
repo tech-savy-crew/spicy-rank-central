@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { PlatformCard } from "@/components/PlatformCard";
 import { RatingBadge } from "@/components/RatingBadge";
+import { SEO, websiteSchema, itemListSchema } from "@/components/SEO";
 import { platforms, categories } from "@/data/platforms";
 import { useState } from "react";
 import { ArrowRight, Flame, TrendingUp, Zap } from "lucide-react";
@@ -14,6 +15,19 @@ const Index = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Honest Reviews & Rankings of Digital Platforms"
+        description="In-depth reviews, head-to-head comparisons, and brutally honest rankings of the apps and platforms that shape your digital life."
+        canonical="/"
+        jsonLd={[
+          websiteSchema(),
+          itemListSchema(
+            "Featured Platform Reviews",
+            featured.map((p, i) => ({ name: p.name, url: `/review/${p.slug}`, position: i + 1 }))
+          ),
+        ]}
+      />
+
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 spicy-gradient opacity-5" />

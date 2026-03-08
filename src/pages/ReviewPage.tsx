@@ -2,6 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { RatingBadge } from "@/components/RatingBadge";
 import { PlatformCard } from "@/components/PlatformCard";
+import { RelatedContent } from "@/components/RelatedContent";
+import { SEO, reviewSchema, faqSchema, breadcrumbSchema } from "@/components/SEO";
 import { getPlatformBySlug, platforms } from "@/data/platforms";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle, XCircle, ExternalLink, Star, Clock, Calendar, ChevronRight } from "lucide-react";
@@ -11,7 +13,7 @@ function StarRating({ score, max = 10 }: { score: number; max?: number }) {
   const stars = 5;
   const filled = (score / max) * stars;
   return (
-    <div className="flex items-center gap-0.5">
+    <div className="flex items-center gap-0.5" role="img" aria-label={`${score} out of ${max}`}>
       {Array.from({ length: stars }).map((_, i) => {
         const fill = Math.min(1, Math.max(0, filled - i));
         return (
@@ -69,6 +71,7 @@ const ReviewPage = () => {
   if (!platform) {
     return (
       <Layout>
+        <SEO title="Review Not Found" description="The requested review could not be found." noindex />
         <div className="container py-20 text-center">
           <h1 className="text-3xl font-black mb-4">Review Not Found</h1>
           <Link to="/" className="text-primary hover:underline">← Back to Home</Link>
@@ -83,8 +86,26 @@ const ReviewPage = () => {
 
   const categorySlug = platform.category.toLowerCase().replace(" ", "-");
 
+  const jsonLdData = [
+    reviewSchema(platform),
+    breadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: platform.category, url: `/category/${categorySlug}` },
+      { name: `${platform.name} Review`, url: `/review/${platform.slug}` },
+    ]),
+    ...(platform.faqs.length > 0 ? [faqSchema(platform.faqs)] : []),
+  ];
+
   return (
     <Layout>
+      <SEO
+        title={`${platform.name} Review ${new Date().getFullYear()} — Rating ${platform.rating}/10`}
+        description={platform.verdict}
+        canonical={`/review/${platform.slug}`}
+        ogType="article"
+        jsonLd={jsonLdData}
+      />
+
       {/* Breadcrumb */}
       <nav className="container pt-6 pb-0" aria-label="Breadcrumb">
         <ol className="flex items-center gap-1.5 text-xs text-muted-foreground flex-wrap">
@@ -172,7 +193,7 @@ const ReviewPage = () => {
               </div>
             </div>
 
-            {/* Rating Breakdown with Stars */}
+            {/* Rating Breakdown */}
             <div id="rating-breakdown">
               <h2 className="text-xl font-bold mb-5">Rating Breakdown</h2>
               <div className="space-y-4 bg-card rounded-xl border border-border/50 p-6">
@@ -230,6 +251,9 @@ const ReviewPage = () => {
               <VisitButton name={platform.name} url={platform.url} />
             </div>
 
+            {/* Related Content */}
+            <RelatedContent currentSlug={platform.slug} category={platform.category} title={`More ${platform.category} Reviews`} />
+
             {/* Comments */}
             <div id="comments">
               <h2 className="text-xl font-bold mb-5">Comments</h2>
@@ -251,7 +275,6 @@ const ReviewPage = () => {
           {/* Sticky Sidebar */}
           <div>
             <div className="space-y-5 lg:sticky lg:top-24">
-              {/* Overall Rating Card */}
               <div className="bg-card rounded-xl border border-border/50 p-6 text-center">
                 <div className="text-xs text-muted-foreground mb-2 uppercase tracking-wider font-medium">Our Score</div>
                 <RatingBadge rating={platform.rating} size="lg" />
@@ -259,7 +282,6 @@ const ReviewPage = () => {
                 <VisitButton name={platform.name} url={platform.url} className="w-full" />
               </div>
 
-              {/* Quick Facts */}
               <div className="bg-card rounded-xl border border-border/50 p-6">
                 <h3 className="font-bold mb-4">Quick Facts</h3>
                 <dl className="space-y-3 text-sm">
@@ -279,7 +301,6 @@ const ReviewPage = () => {
                 </dl>
               </div>
 
-              {/* Table of Contents */}
               <div className="bg-card rounded-xl border border-border/50 p-6">
                 <h3 className="font-bold mb-3">Table of Contents</h3>
                 <nav className="space-y-1.5">
@@ -295,7 +316,6 @@ const ReviewPage = () => {
                 </nav>
               </div>
 
-              {/* Alternatives link */}
               <div className="bg-card rounded-xl border border-border/50 p-5 text-center">
                 <Link
                   to={`/alternatives/${platform.slug}`}

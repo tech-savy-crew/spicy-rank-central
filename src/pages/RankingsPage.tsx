@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Layout } from "@/components/Layout";
 import { PlatformCard } from "@/components/PlatformCard";
+import { SEO, itemListSchema, breadcrumbSchema } from "@/components/SEO";
 import { platforms, categories } from "@/data/platforms";
 
 const RankingsPage = () => {
@@ -14,6 +15,22 @@ const RankingsPage = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Platform Rankings — Best Digital Platforms"
+        description="Every digital platform we've reviewed, ranked and sorted by rating. Find the best social media, streaming, gaming, and messaging platforms."
+        canonical="/rankings"
+        jsonLd={[
+          itemListSchema(
+            "Platform Rankings",
+            sorted.map((p, i) => ({ name: p.name, url: `/review/${p.slug}`, position: i + 1 }))
+          ),
+          breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: "Rankings", url: "/rankings" },
+          ]),
+        ]}
+      />
+
       <div className="container py-12">
         <h1 className="text-3xl md:text-4xl font-black mb-2">Platform Rankings</h1>
         <p className="text-muted-foreground mb-8">Every platform we've reviewed, ranked and sorted</p>
