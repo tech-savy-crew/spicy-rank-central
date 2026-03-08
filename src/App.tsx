@@ -14,6 +14,7 @@ import CategoriesPage from "./pages/CategoriesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import AdvertisePage from "./pages/AdvertisePage";
+import WriteForUsPage from "./pages/WriteForUsPage";
 import SearchPage from "./pages/SearchPage";
 import NotFound from "./pages/NotFound";
 
