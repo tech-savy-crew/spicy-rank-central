@@ -293,7 +293,12 @@ export const platforms: Platform[] = [
     alternatives: ["tiktok", "snapchat", "pinterest"],
     features: { "Photos": true, "Reels": true, "Stories": true, "Live": true, "Shopping": true, "Desktop App": false },
     pricing: "Free",
+    pricingModel: "Free",
+    startingPrice: "Free",
+    paymentMethods: "N/A",
+    contentTypes: "Photos, Reels, Stories, Live",
     url: "https://instagram.com",
+    lastUpdated: "March 3, 2026",
   },
   {
     id: "7",
