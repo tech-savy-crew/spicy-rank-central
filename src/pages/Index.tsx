@@ -51,10 +51,10 @@ const categoryCards = [
 ];
 
 const comparisons = [
-  { title: "OnlyFans vs Fansly — Which Is Better in 2026?", a: { name: "OnlyFans", rating: 8.5 }, b: { name: "Fansly", rating: 8.2 }, winner: "a", teaser: "We compare pricing, features, creator tools, and audience size to find the better platform.", slug: "onlyfans-vs-fansly" },
-  { title: "Chaturbate vs Stripchat — Best Free Cam Site?", a: { name: "Chaturbate", rating: 7.8 }, b: { name: "Stripchat", rating: 7.5 }, winner: "a", teaser: "Two biggest free cam sites compared on model selection, video quality, features, and value.", slug: "chaturbate-vs-stripchat" },
-  { title: "Tinder vs Bumble — Best Dating App?", a: { name: "Tinder", rating: 7.5 }, b: { name: "Bumble", rating: 8.0 }, winner: "b", teaser: "Matching algorithm, user base, premium features, and success rates compared side by side.", slug: "tinder-vs-bumble" },
-  { title: "OnlyFans vs Patreon — Best for Adult Creators?", a: { name: "OnlyFans", rating: 8.5 }, b: { name: "Patreon", rating: 7.0 }, winner: "a", teaser: "Creator earnings, content policies, audience reach, and payout options compared.", slug: "onlyfans-vs-patreon" },
+  { title: "OnlyFans vs Fansly — Which Is Better in 2026?", a: { name: "OnlyFans", rating: 8.5 }, b: { name: "Fansly", rating: 8.2 }, winner: "a", teaser: "We compare pricing, features, creator tools, and audience size to find the better creator platform for fans and creators alike.", slug: "onlyfans-vs-fansly" },
+  { title: "Chaturbate vs Stripchat — Best Free Cam Site?", a: { name: "Chaturbate", rating: 7.8 }, b: { name: "Stripchat", rating: 7.5 }, winner: "a", teaser: "Two biggest free cam sites compared on model selection, video quality, features, and value for viewers and performers.", slug: "chaturbate-vs-stripchat" },
+  { title: "Tinder vs Bumble — Best Dating App?", a: { name: "Tinder", rating: 7.5 }, b: { name: "Bumble", rating: 8.0 }, winner: "b", teaser: "Matching algorithm, user base, premium features, and success rates compared side by side for serious and casual daters.", slug: "tinder-vs-bumble" },
+  { title: "OnlyFans vs Patreon — Best for Adult Creators?", a: { name: "OnlyFans", rating: 8.5 }, b: { name: "Patreon", rating: 7.0 }, winner: "a", teaser: "Creator earnings, content policies, audience reach, and payout options compared for adult and non-adult creators.", slug: "onlyfans-vs-patreon" },
 ];
 
 const topLists = [
