@@ -161,7 +161,12 @@ export const platforms: Platform[] = [
     alternatives: ["slack", "telegram", "teamspeak"],
     features: { "Text Chat": true, "Voice Chat": true, "Video Calls": true, "Screen Share": true, "Bots": true, "Desktop App": true },
     pricing: "Free / $9.99/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$9.99/mo",
+    paymentMethods: "Credit Card, PayPal",
+    contentTypes: "Text, Voice, Video, Streams",
     url: "https://discord.com",
+    lastUpdated: "February 15, 2026",
   },
   {
     id: "4",
