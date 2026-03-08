@@ -19,6 +19,8 @@ const AdvertisePage = lazy(() => import("./pages/AdvertisePage"));
 const WriteForUsPage = lazy(() => import("./pages/WriteForUsPage"));
 const SearchPage = lazy(() => import("./pages/SearchPage"));
 const BestListPage = lazy(() => import("./pages/BestListPage"));
+const PrivacyPolicyPage = lazy(() => import("./pages/PrivacyPolicyPage"));
+const TermsPage = lazy(() => import("./pages/TermsPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -51,6 +53,9 @@ const App = () => (
               <Route path="/write-for-us" element={<WriteForUsPage />} />
               <Route path="/search" element={<SearchPage />} />
               <Route path="/best/:slug" element={<BestListPage />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+              <Route path="/privacy" element={<PrivacyPolicyPage />} />
+              <Route path="/terms" element={<TermsPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

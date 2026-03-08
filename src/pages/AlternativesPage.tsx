@@ -67,7 +67,7 @@ const AlternativesPage = () => {
                 <p className="text-xs text-primary font-medium mt-1">{alt.category} · {alt.pricing}</p>
               </div>
               <RatingBadge rating={alt.rating} />
-              <a href={alt.url} target="_blank" rel="noopener nofollow noreferrer"
+              <a href={alt.url} target="_blank" rel="nofollow sponsored noopener noreferrer"
                 className="hidden sm:inline-flex items-center gap-1 text-sm text-primary hover:underline font-medium">
                 Visit <ExternalLink className="h-3.5 w-3.5" />
               </a>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { RatingBadge } from "@/components/RatingBadge";
-import { SEO, breadcrumbSchema } from "@/components/SEO";
+import { SEO, breadcrumbSchema, articleSchema } from "@/components/SEO";
 import { platforms } from "@/data/platforms";
 import { Trophy, ExternalLink, ChevronRight, Check, X } from "lucide-react";
 import {
@@ -120,10 +120,13 @@ const ComparePage = () => {
         title={`${comparedNames} Comparison`}
         description={`Side-by-side comparison of ${comparedNames}. Compare features, pricing, ratings, and more to find the best platform.`}
         canonical="/compare"
-        jsonLd={breadcrumbSchema([
-          { name: "Home", url: "/" },
-          { name: "Compare Platforms", url: "/compare" },
-        ])}
+        jsonLd={[
+          articleSchema(`${comparedNames} — Complete Comparison`),
+          breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: "Compare Platforms", url: "/compare" },
+          ]),
+        ]}
       />
 
       <div className="container py-8">
@@ -214,7 +217,7 @@ const ComparePage = () => {
 
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           {compared.map((p) => (
-            <a key={p.slug} href={p.url} target="_blank" rel="noopener nofollow noreferrer"
+            <a key={p.slug} href={p.url} target="_blank" rel="nofollow sponsored noopener noreferrer"
               className="inline-flex items-center gap-2 spicy-gradient text-primary-foreground px-6 py-3 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity">
               {p.logo} Visit {p.name} <ExternalLink className="h-4 w-4" />
             </a>

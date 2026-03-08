@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { SEO, breadcrumbSchema } from "@/components/SEO";
+import { SEO, breadcrumbSchema, faqSchema } from "@/components/SEO";
 import { useState } from "react";
 import {
   TrendingUp, Clock, FileText, Users, Send, ChevronRight,
@@ -51,10 +51,13 @@ const AdvertisePage = () => {
         title="Advertise With Us - SpicyRanked"
         description="Reach thousands of engaged users researching digital entertainment platforms. Banner ads, sponsored reviews, and custom packages available."
         canonical="/advertise"
-        jsonLd={breadcrumbSchema([
-          { name: "Home", url: "/" },
-          { name: "Advertise", url: "/advertise" },
-        ])}
+        jsonLd={[
+          breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: "Advertise", url: "/advertise" },
+          ]),
+          faqSchema(faqs.map((f) => ({ question: f.q, answer: f.a }))),
+        ]}
       />
 
       {/* Hero */}
