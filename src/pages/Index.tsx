@@ -223,9 +223,16 @@ const Index = () => {
           </div>
         </AnimatedSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featured.map((p, i) => (
-            <AnimatedSection key={p.id} delay={i * 100}>
-              <PlatformCard platform={p} />
+          {featuredCards.map((card, i) => (
+            <AnimatedSection key={card.slug} delay={i * 100}>
+              <Link to={`/review/${card.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs font-medium bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">{card.category}</span>
+                  <RatingBadge rating={card.rating} />
+                </div>
+                <h3 className="font-bold text-base mb-2 group-hover:text-primary transition-colors">{card.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
+              </Link>
             </AnimatedSection>
           ))}
         </div>
