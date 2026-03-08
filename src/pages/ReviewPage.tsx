@@ -276,18 +276,18 @@ const ReviewPage = () => {
           </div>
 
           {/* Sticky Sidebar */}
-          <div>
-            <div className="space-y-5 lg:sticky lg:top-24">
-              <div className="bg-card rounded-xl border border-border/50 p-6 text-center">
-                <div className="text-xs text-muted-foreground mb-2 uppercase tracking-wider font-medium">Our Score</div>
+          <div className="order-first lg:order-last">
+            <div className="space-y-4 md:space-y-5 lg:sticky lg:top-24">
+              <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-6 text-center">
+                <div className="text-xs text-muted-foreground mb-1.5 md:mb-2 uppercase tracking-wider font-medium">Our Score</div>
                 <RatingBadge rating={platform.rating} size="lg" />
-                <div className="text-xs text-muted-foreground mt-2 mb-5">out of 10</div>
+                <div className="text-xs text-muted-foreground mt-1.5 md:mt-2 mb-4 md:mb-5">out of 10</div>
                 <VisitButton name={platform.name} url={platform.url} className="w-full" />
               </div>
 
-              <div className="bg-card rounded-xl border border-border/50 p-6">
-                <h3 className="font-bold mb-4">Quick Facts</h3>
-                <dl className="space-y-3 text-sm">
+              <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-6">
+                <h3 className="font-bold mb-3 md:mb-4 text-base">Quick Facts</h3>
+                <dl className="space-y-2.5 md:space-y-3 text-sm">
                   {[
                     { label: "Category", value: platform.category },
                     ...platform.quickFacts,
@@ -298,14 +298,14 @@ const ReviewPage = () => {
                   ].map((fact) => (
                     <div key={fact.label} className="flex justify-between gap-3">
                       <dt className="text-muted-foreground shrink-0">{fact.label}</dt>
-                      <dd className="font-medium text-right">{fact.value}</dd>
+                      <dd className="font-medium text-right break-words max-w-[55%]">{fact.value}</dd>
                     </div>
                   ))}
                 </dl>
               </div>
 
-              <div className="bg-card rounded-xl border border-border/50 p-6">
-                <h3 className="font-bold mb-3">Table of Contents</h3>
+              <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-6 hidden lg:block">
+                <h3 className="font-bold mb-3 text-base">Table of Contents</h3>
                 <nav className="space-y-1.5">
                   {tocItems.map((item) => (
                     <a
@@ -319,7 +319,7 @@ const ReviewPage = () => {
                 </nav>
               </div>
 
-              <div className="bg-card rounded-xl border border-border/50 p-5 text-center">
+              <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-5 text-center">
                 <Link
                   to={`/alternatives/${platform.slug}`}
                   className="text-sm text-primary hover:underline font-medium"
