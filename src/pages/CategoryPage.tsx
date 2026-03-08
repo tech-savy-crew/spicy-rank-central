@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { PlatformCard } from "@/components/PlatformCard";
+import { SEO, itemListSchema, breadcrumbSchema } from "@/components/SEO";
 import { platforms, categories } from "@/data/platforms";
 import { Link } from "react-router-dom";
 
@@ -17,13 +18,29 @@ const CategoryPage = () => {
 
   return (
     <Layout>
+      <SEO
+        title={`${categoryName} Reviews & Rankings`}
+        description={`Browse ${filtered.length} ${isAll ? "" : categoryName + " "}platform reviews. In-depth ratings, comparisons, and honest editorial opinions.`}
+        canonical={`/category/${category}`}
+        jsonLd={[
+          itemListSchema(
+            `${categoryName} Reviews`,
+            filtered.map((p, i) => ({ name: p.name, url: `/review/${p.slug}`, position: i + 1 }))
+          ),
+          breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: "Categories", url: "/categories" },
+            { name: String(categoryName), url: `/category/${category}` },
+          ]),
+        ]}
+      />
+
       <div className="container py-12">
         <h1 className="text-3xl md:text-4xl font-black mb-2">{categoryName}</h1>
         <p className="text-muted-foreground mb-8">
           {filtered.length} platform{filtered.length !== 1 ? "s" : ""} reviewed
         </p>
 
-        {/* Category tabs */}
         <div className="flex flex-wrap gap-2 mb-8">
           <Link
             to="/category/all"

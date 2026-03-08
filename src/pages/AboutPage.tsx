@@ -1,9 +1,20 @@
 import { Layout } from "@/components/Layout";
+import { SEO, breadcrumbSchema } from "@/components/SEO";
 import { Shield, Eye, Heart } from "lucide-react";
 
 const AboutPage = () => {
   return (
     <Layout>
+      <SEO
+        title="About Us — Editorial Policy"
+        description="SpicyRanked is an independent editorial platform providing honest, in-depth reviews and rankings of digital entertainment and social platforms."
+        canonical="/about"
+        jsonLd={breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: "About", url: "/about" },
+        ])}
+      />
+
       <div className="container py-12 max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-black mb-6">About SpicyRanked</h1>
         <p className="text-lg text-muted-foreground leading-relaxed mb-10">

@@ -1,5 +1,6 @@
 import { Layout } from "@/components/Layout";
 import { Link } from "react-router-dom";
+import { SEO, breadcrumbSchema } from "@/components/SEO";
 import { categories } from "@/data/platforms";
 import { ArrowRight } from "lucide-react";
 
@@ -15,6 +16,16 @@ const categoryIcons: Record<string, string> = {
 const CategoriesPage = () => {
   return (
     <Layout>
+      <SEO
+        title="Browse Categories"
+        description="Explore platform reviews by category — Social Media, Streaming, Gaming, Messaging, Music, and more."
+        canonical="/categories"
+        jsonLd={breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: "Categories", url: "/categories" },
+        ])}
+      />
+
       <div className="container py-12">
         <h1 className="text-3xl md:text-4xl font-black mb-2">Categories</h1>
         <p className="text-muted-foreground mb-10">Browse platforms by category</p>
