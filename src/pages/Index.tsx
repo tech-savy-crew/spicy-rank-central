@@ -121,7 +121,7 @@ const Index = () => {
               <span className="spicy-text-gradient">Ranked & Rated</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-              We review, compare, and rank the top creator platforms, live cam sites, adult streaming services, and dating apps so you don't waste your time or money.
+              We review, compare, and rank the top creator platforms, live cam sites, adult streaming services, AI companions, and dating apps — so you don't waste your time or money. Every platform is independently tested and rated on a 10-point scale.
             </p>
 
             {/* Search */}
