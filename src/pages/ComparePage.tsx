@@ -120,10 +120,13 @@ const ComparePage = () => {
         title={`${comparedNames} Comparison`}
         description={`Side-by-side comparison of ${comparedNames}. Compare features, pricing, ratings, and more to find the best platform.`}
         canonical="/compare"
-        jsonLd={breadcrumbSchema([
-          { name: "Home", url: "/" },
-          { name: "Compare Platforms", url: "/compare" },
-        ])}
+        jsonLd={[
+          articleSchema(`${comparedNames} — Complete Comparison`),
+          breadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: "Compare Platforms", url: "/compare" },
+          ]),
+        ]}
       />
 
       <div className="container py-8">
