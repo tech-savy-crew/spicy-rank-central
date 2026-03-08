@@ -41,6 +41,7 @@ const App = () => (
             <Route path="/advertise" element={<AdvertisePage />} />
             <Route path="/write-for-us" element={<WriteForUsPage />} />
             <Route path="/search" element={<SearchPage />} />
+            <Route path="/best/:slug" element={<BestListPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
