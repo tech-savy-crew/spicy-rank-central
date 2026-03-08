@@ -149,45 +149,45 @@ const ReviewPage = () => {
         </div>
       </section>
 
-      <div className="container py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div className="container px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-10">
           {/* Main Content */}
-          <div className="lg:col-span-2 space-y-10">
+          <div className="lg:col-span-2 space-y-8 md:space-y-10">
             {/* Summary */}
-            <div className="bg-card rounded-xl border border-border/50 p-6">
-              <p className="text-muted-foreground leading-relaxed">{platform.summary}</p>
+            <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-6">
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed md:leading-7">{platform.summary}</p>
             </div>
 
             {/* Review Sections */}
             {platform.reviewSections.map((section) => (
-              <div key={section.title} id={section.title.toLowerCase().replace(/\s+/g, "-")}>
-                <h2 className="text-xl font-bold mb-3">{section.title}</h2>
-                <p className="text-muted-foreground leading-relaxed">{section.content}</p>
-              </div>
+              <article key={section.title} id={section.title.toLowerCase().replace(/\s+/g, "-")} className="scroll-mt-24">
+                <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-4 text-foreground">{section.title}</h2>
+                <ReviewContent content={section.content} />
+              </article>
             ))}
 
             {/* Pros & Cons */}
-            <div id="pros-cons" className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <div className="bg-success/10 border border-success/20 rounded-xl p-6">
-                <h3 className="font-bold text-success mb-4 flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5" /> Pros
+            <div id="pros-cons" className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
+              <div className="bg-success/10 border border-success/20 rounded-xl p-4 sm:p-6">
+                <h3 className="font-bold text-success mb-3 md:mb-4 flex items-center gap-2 text-base md:text-lg">
+                  <CheckCircle className="h-5 w-5 shrink-0" /> Pros
                 </h3>
-                <ul className="space-y-2">
+                <ul className="space-y-2.5">
                   {platform.pros.map((pro) => (
-                    <li key={pro} className="text-sm text-muted-foreground flex items-start gap-2">
-                      <span className="text-success mt-0.5">✓</span> {pro}
+                    <li key={pro} className="text-sm md:text-base text-muted-foreground flex items-start gap-2.5 leading-relaxed">
+                      <span className="text-success mt-1 shrink-0">✓</span> {pro}
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-6">
-                <h3 className="font-bold text-destructive mb-4 flex items-center gap-2">
-                  <XCircle className="h-5 w-5" /> Cons
+              <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-4 sm:p-6">
+                <h3 className="font-bold text-destructive mb-3 md:mb-4 flex items-center gap-2 text-base md:text-lg">
+                  <XCircle className="h-5 w-5 shrink-0" /> Cons
                 </h3>
-                <ul className="space-y-2">
+                <ul className="space-y-2.5">
                   {platform.cons.map((con) => (
-                    <li key={con} className="text-sm text-muted-foreground flex items-start gap-2">
-                      <span className="text-destructive mt-0.5">✗</span> {con}
+                    <li key={con} className="text-sm md:text-base text-muted-foreground flex items-start gap-2.5 leading-relaxed">
+                      <span className="text-destructive mt-1 shrink-0">✗</span> {con}
                     </li>
                   ))}
                 </ul>
@@ -195,20 +195,22 @@ const ReviewPage = () => {
             </div>
 
             {/* Rating Breakdown */}
-            <div id="rating-breakdown">
-              <h2 className="text-xl font-bold mb-5">Rating Breakdown</h2>
-              <div className="space-y-4 bg-card rounded-xl border border-border/50 p-6">
+            <div id="rating-breakdown" className="scroll-mt-24">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 md:mb-5">Rating Breakdown</h2>
+              <div className="space-y-3 md:space-y-4 bg-card rounded-xl border border-border/50 p-4 sm:p-6">
                 {platform.ratings.map((r) => (
-                  <div key={r.label} className="flex items-center gap-4">
-                    <span className="text-sm font-medium w-36 shrink-0">{r.label}</span>
-                    <StarRating score={r.score} />
-                    <div className="flex-1 bg-secondary rounded-full h-2.5 overflow-hidden">
-                      <div
-                        className="h-full spicy-gradient rounded-full transition-all duration-700"
-                        style={{ width: `${r.score * 10}%` }}
-                      />
+                  <div key={r.label} className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+                    <span className="text-sm font-medium sm:w-36 shrink-0">{r.label}</span>
+                    <div className="flex items-center gap-3 flex-1">
+                      <StarRating score={r.score} />
+                      <div className="flex-1 bg-secondary rounded-full h-2 md:h-2.5 overflow-hidden">
+                        <div
+                          className="h-full spicy-gradient rounded-full transition-all duration-700"
+                          style={{ width: `${r.score * 10}%` }}
+                        />
+                      </div>
+                      <span className="text-sm font-bold w-10 text-right">{r.score}/10</span>
                     </div>
-                    <span className="text-sm font-bold w-10 text-right">{r.score}/10</span>
                   </div>
                 ))}
               </div>
