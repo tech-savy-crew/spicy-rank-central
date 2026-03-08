@@ -249,7 +249,12 @@ export const platforms: Platform[] = [
     alternatives: ["youtube", "kick", "facebook-gaming"],
     features: { "Live Streaming": true, "Chat": true, "Clips": true, "VODs": true, "Extensions": true, "Desktop App": false },
     pricing: "Free / $8.99/mo",
+    pricingModel: "Freemium",
+    startingPrice: "$8.99/mo",
+    paymentMethods: "Credit Card, PayPal, Amazon Pay",
+    contentTypes: "Live Streams, VODs, Clips",
     url: "https://twitch.tv",
+    lastUpdated: "February 5, 2026",
   },
   {
     id: "6",
