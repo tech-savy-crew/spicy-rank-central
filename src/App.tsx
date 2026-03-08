@@ -16,6 +16,7 @@ import ContactPage from "./pages/ContactPage";
 import AdvertisePage from "./pages/AdvertisePage";
 import WriteForUsPage from "./pages/WriteForUsPage";
 import SearchPage from "./pages/SearchPage";
+import BestListPage from "./pages/BestListPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
