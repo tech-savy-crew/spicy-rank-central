@@ -35,6 +35,15 @@ const homepageCategories = [
   { label: "Aggregators", icon: Layers, slug: "productivity", desc: "Content aggregation hubs" },
 ];
 
+const featuredCards = [
+  { title: "OnlyFans Review 2026", category: "Creator Platform", rating: 8.5, slug: "onlyfans", desc: "The largest creator subscription platform - but is it still the best option?" },
+  { title: "Fansly Review", category: "Creator Platform", rating: 8.2, slug: "fansly", desc: "Rising OnlyFans competitor with better creator tools and lower fees" },
+  { title: "Chaturbate Review", category: "Live Streaming", rating: 7.8, slug: "chaturbate", desc: "The most popular free live streaming platform - complete breakdown" },
+  { title: "Stripchat Review", category: "Live Streaming", rating: 7.5, slug: "stripchat", desc: "AI-powered features set this live platform apart from competitors" },
+  { title: "Bumble Review", category: "Dating App", rating: 8.0, slug: "bumble", desc: "Women-first dating app - worth it in 2026?" },
+  { title: "FanVue Review", category: "Creator Platform", rating: 7.6, slug: "fanvue", desc: "UK-based OnlyFans alternative with unique AI features" },
+];
+
 const Index = () => {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState("All");
@@ -43,7 +52,6 @@ const Index = () => {
   const [subscribed, setSubscribed] = useState(false);
 
   const filtered = activeCategory === "All" ? platforms : platforms.filter((p) => p.category === activeCategory);
-  const featured = platforms.slice(0, 6);
   const trending = [...platforms].sort((a, b) => b.rating - a.rating).slice(0, 5);
   const latest = [...platforms].sort((a, b) => b.rating - a.rating).slice(0, 4);
 
