@@ -218,9 +218,9 @@ const ReviewPage = () => {
 
             {/* Alternatives */}
             {altPlatforms.length > 0 && (
-              <div id="alternatives">
-                <h2 className="text-xl font-bold mb-5">Alternatives to {platform.name}</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div id="alternatives" className="scroll-mt-24">
+                <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 md:mb-5">Alternatives to {platform.name}</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   {altPlatforms.map((alt) => alt && <PlatformCard key={alt.id} platform={alt} />)}
                 </div>
               </div>
@@ -228,15 +228,15 @@ const ReviewPage = () => {
 
             {/* FAQ */}
             {platform.faqs.length > 0 && (
-              <div id="faq">
-                <h2 className="text-xl font-bold mb-5">FAQ</h2>
-                <Accordion type="single" collapsible className="space-y-2">
+              <div id="faq" className="scroll-mt-24">
+                <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 md:mb-5">Frequently Asked Questions</h2>
+                <Accordion type="single" collapsible className="space-y-2.5">
                   {platform.faqs.map((faq, i) => (
-                    <AccordionItem key={i} value={`faq-${i}`} className="bg-card rounded-xl border border-border/50 px-5">
-                      <AccordionTrigger className="text-sm font-medium hover:no-underline">
+                    <AccordionItem key={i} value={`faq-${i}`} className="bg-card rounded-xl border border-border/50 px-4 sm:px-5">
+                      <AccordionTrigger className="text-sm md:text-base font-medium hover:no-underline text-left py-4">
                         {faq.question}
                       </AccordionTrigger>
-                      <AccordionContent className="text-sm text-muted-foreground">
+                      <AccordionContent className="text-sm md:text-base text-muted-foreground leading-relaxed md:leading-7">
                         {faq.answer}
                       </AccordionContent>
                     </AccordionItem>
@@ -246,28 +246,28 @@ const ReviewPage = () => {
             )}
 
             {/* Bottom CTA */}
-            <div className="bg-card rounded-xl border border-border/50 p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
-                <h3 className="font-bold">Ready to try {platform.name}?</h3>
-                <p className="text-sm text-muted-foreground">Start using it today — {platform.pricingModel}.</p>
+                <h3 className="font-bold text-base md:text-lg">Ready to try {platform.name}?</h3>
+                <p className="text-sm text-muted-foreground mt-1">Start using it today — {platform.pricingModel}.</p>
               </div>
-              <VisitButton name={platform.name} url={platform.url} />
+              <VisitButton name={platform.name} url={platform.url} className="w-full sm:w-auto" />
             </div>
 
             {/* Related Content */}
             <RelatedContent currentSlug={platform.slug} category={platform.category} title={`More ${platform.category} Reviews`} />
 
             {/* Comments */}
-            <div id="comments">
-              <h2 className="text-xl font-bold mb-5">Comments</h2>
-              <div className="bg-card rounded-xl border border-border/50 p-5">
+            <div id="comments" className="scroll-mt-24">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 md:mb-5">Comments</h2>
+              <div className="bg-card rounded-xl border border-border/50 p-4 sm:p-5">
                 <textarea
                   value={comment}
                   onChange={(e) => setComment(e.target.value)}
                   placeholder="Share your thoughts on this platform..."
-                  className="w-full bg-secondary rounded-lg p-4 text-sm text-foreground placeholder:text-muted-foreground resize-none h-24 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  className="w-full bg-secondary rounded-lg p-3 sm:p-4 text-sm md:text-base text-foreground placeholder:text-muted-foreground resize-none h-24 focus:outline-none focus:ring-2 focus:ring-primary/50"
                 />
-                <button className="mt-3 spicy-gradient text-primary-foreground font-semibold px-5 py-2 rounded-lg text-sm hover:opacity-90 transition-opacity">
+                <button className="mt-3 spicy-gradient text-primary-foreground font-semibold px-5 py-2.5 rounded-lg text-sm hover:opacity-90 transition-opacity">
                   Post Comment
                 </button>
                 <p className="text-xs text-muted-foreground mt-4">No comments yet. Be the first to share your opinion!</p>
