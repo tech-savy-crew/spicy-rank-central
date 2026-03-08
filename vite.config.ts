@@ -52,9 +52,6 @@ export default defineConfig(({ mode }) => ({
     mode === "production" &&
       vitePrerender({
         routes: prerenderRoutes,
-        rendererOptions: {
-          renderAfterTime: 3000,
-        },
       }),
   ].filter(Boolean),
   resolve: {
