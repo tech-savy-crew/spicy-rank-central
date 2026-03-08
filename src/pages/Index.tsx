@@ -1,92 +1,109 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
-import { PlatformCard } from "@/components/PlatformCard";
 import { RatingBadge } from "@/components/RatingBadge";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEO, websiteSchema, itemListSchema } from "@/components/SEO";
-import { platforms, categories } from "@/data/platforms";
 import { useState } from "react";
 import {
   ArrowRight,
   Flame,
-  TrendingUp,
-  Zap,
   Search,
   Shield,
-  Clock,
   BarChart3,
   Mail,
-  Sparkles,
-  Tv,
-  Heart,
   Users,
-  Bot,
   Camera,
+  Heart,
+  Play,
+  Bot,
+  MessageCircle,
   Layers,
+  Trophy,
+  RefreshCw,
+  Ban,
+  Star,
+  TrendingUp,
+  Zap,
+  Crown,
 } from "lucide-react";
 
-const homepageCategories = [
-  { label: "Creators", icon: Sparkles, slug: "social-media", desc: "Platforms for content creators" },
-  { label: "Streaming", icon: Tv, slug: "streaming", desc: "Video & live streaming" },
-  { label: "Dating", icon: Heart, slug: "social-media", desc: "Meeting new people" },
-  { label: "Social", icon: Users, slug: "social-media", desc: "Social networks & communities" },
-  { label: "AI", icon: Bot, slug: "productivity", desc: "AI-powered platforms" },
-  { label: "Cam", icon: Camera, slug: "streaming", desc: "Live cam & video chat" },
-  { label: "Aggregators", icon: Layers, slug: "productivity", desc: "Content aggregation hubs" },
+/* ── Static Data ── */
+
+const featuredReviews = [
+  { title: "OnlyFans", category: "Creator Platform", rating: 8.5, slug: "onlyfans-review", desc: "Still the biggest name in creator subscriptions — but rising fees and growing competition mean it is no longer the only option. Full breakdown inside." },
+  { title: "Fansly", category: "Creator Platform", rating: 8.2, slug: "fansly-review", desc: "Lower creator fees, better content organization, and a rapidly growing user base make Fansly the top OnlyFans alternative for both creators and fans." },
+  { title: "Chaturbate", category: "Live Cam Site", rating: 7.8, slug: "chaturbate-review", desc: "The most popular free live cam platform with thousands of broadcasters online 24/7. Great free experience but token system can get expensive." },
+  { title: "Stripchat", category: "Live Cam Site", rating: 7.5, slug: "stripchat-review", desc: "AI-powered cam site with virtual reality support and innovative features. Strong Chaturbate alternative with a modern interface." },
+  { title: "Bumble", category: "Dating App", rating: 8.0, slug: "bumble-review", desc: "Women-make-the-first-move dating app with solid matching algorithm. Premium features worth it if you are serious about dating in 2026." },
+  { title: "FanVue", category: "Creator Platform", rating: 7.6, slug: "fanvue-review", desc: "UK-based OnlyFans competitor with built-in AI tools for creators. Lower fees and better analytics, but smaller audience for now." },
 ];
 
-const featuredCards = [
-  { title: "OnlyFans Review 2026", category: "Creator Platform", rating: 8.5, slug: "onlyfans-review", desc: "The largest creator subscription platform - but is it still the best option?" },
-  { title: "Fansly Review", category: "Creator Platform", rating: 8.2, slug: "fansly", desc: "Rising OnlyFans competitor with better creator tools and lower fees" },
-  { title: "Chaturbate Review", category: "Live Streaming", rating: 7.8, slug: "chaturbate", desc: "The most popular free live streaming platform - complete breakdown" },
-  { title: "Stripchat Review", category: "Live Streaming", rating: 7.5, slug: "stripchat", desc: "AI-powered features set this live platform apart from competitors" },
-  { title: "Bumble Review", category: "Dating App", rating: 8.0, slug: "bumble", desc: "Women-first dating app - worth it in 2026?" },
-  { title: "FanVue Review", category: "Creator Platform", rating: 7.6, slug: "fanvue", desc: "UK-based OnlyFans alternative with unique AI features" },
+const categoryCards = [
+  { label: "Creator Platforms", icon: Users, sub: "OnlyFans, Fansly, Patreon & more", count: "25+ reviewed", slug: "creator-platforms" },
+  { label: "Live Cam Sites", icon: Camera, sub: "Chaturbate, Stripchat, Cam4 & more", count: "18+ reviewed", slug: "live-cam-sites" },
+  { label: "Dating & Hookup Apps", icon: Heart, sub: "Tinder, Bumble, Hinge & more", count: "20+ reviewed", slug: "dating-apps" },
+  { label: "Tube & Streaming", icon: Play, sub: "Free and premium video platforms", count: "15+ reviewed", slug: "streaming-sites" },
+  { label: "AI Companions", icon: Bot, sub: "AI girlfriend, chatbots & companions", count: "12+ reviewed", slug: "ai-companions" },
+  { label: "Sexting & Chat", icon: MessageCircle, sub: "Anonymous chat and messaging platforms", count: "10+ reviewed", slug: "sexting-apps" },
+  { label: "Content Aggregators", icon: Layers, sub: "Multi-platform content access", count: "8+ reviewed", slug: "aggregators" },
 ];
+
+const comparisons = [
+  { title: "OnlyFans vs Fansly — Which Is Better in 2026?", a: { name: "OnlyFans", rating: 8.5 }, b: { name: "Fansly", rating: 8.2 }, winner: "a", teaser: "We compare pricing, features, creator tools, and audience size to find the better platform.", slug: "onlyfans-vs-fansly" },
+  { title: "Chaturbate vs Stripchat — Best Free Cam Site?", a: { name: "Chaturbate", rating: 7.8 }, b: { name: "Stripchat", rating: 7.5 }, winner: "a", teaser: "Two biggest free cam sites compared on model selection, video quality, features, and value.", slug: "chaturbate-vs-stripchat" },
+  { title: "Tinder vs Bumble — Best Dating App?", a: { name: "Tinder", rating: 7.5 }, b: { name: "Bumble", rating: 8.0 }, winner: "b", teaser: "Matching algorithm, user base, premium features, and success rates compared side by side.", slug: "tinder-vs-bumble" },
+  { title: "OnlyFans vs Patreon — Best for Adult Creators?", a: { name: "OnlyFans", rating: 8.5 }, b: { name: "Patreon", rating: 7.0 }, winner: "a", teaser: "Creator earnings, content policies, audience reach, and payout options compared.", slug: "onlyfans-vs-patreon" },
+];
+
+const topLists = [
+  { title: "10 Best OnlyFans Alternatives (2026)", category: "Creator Platforms", slug: "onlyfans-alternatives" },
+  { title: "Best Free Cam Sites — Top 8 Ranked", category: "Live Cam", slug: "free-cam-sites" },
+  { title: "Best Hookup Apps That Actually Work (2026)", category: "Dating", slug: "hookup-apps" },
+  { title: "Best AI Girlfriend Apps — Top 10 Ranked", category: "AI Companions", slug: "ai-girlfriend-apps" },
+  { title: "Best Chaturbate Alternatives — Top 8", category: "Live Cam", slug: "chaturbate-alternatives" },
+  { title: "Best Creator Platforms for Beginners", category: "Creator Platforms", slug: "creator-platforms-beginners" },
+];
+
+const trending = [
+  { emoji: "🔥", text: "Fansly surpasses 5M creators", link: "/review/fansly-review" },
+  { emoji: "📊", text: "OnlyFans updates creator payout policy", link: "/review/onlyfans-review" },
+  { emoji: "🆕", text: "New AI companion app CrushOn reviewed", link: "/review/crushon-review" },
+  { emoji: "⚡", text: "Stripchat launches VR 2.0 features", link: "/review/stripchat-review" },
+  { emoji: "📱", text: "Bumble redesigns matching algorithm", link: "/review/bumble-review" },
+];
+
+const howWeReview = [
+  { icon: Shield, title: "Independent Testing", desc: "Every platform is tested first-hand by our review team. We sign up, explore features, and evaluate the real user experience." },
+  { icon: BarChart3, title: "Transparent Ratings", desc: "Our 10-point rating system scores platforms across 5 categories: Content, UI, Value, Privacy, and Features." },
+  { icon: RefreshCw, title: "Regular Updates", desc: "Reviews are updated quarterly to reflect platform changes, new features, and pricing updates." },
+  { icon: Ban, title: "No Pay-for-Play", desc: "Platforms cannot pay for higher ratings. Sponsored content is always clearly labeled and separated from editorial." },
+];
+
+/* ── Component ── */
 
 const Index = () => {
-  const navigate = useNavigate();
-  const [activeCategory, setActiveCategory] = useState("All");
-  const [searchQuery, setSearchQuery] = useState("");
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
-
-  const filtered = activeCategory === "All" ? platforms : platforms.filter((p) => p.category === activeCategory);
-  const trending = [...platforms].sort((a, b) => b.rating - a.rating).slice(0, 5);
-  const latest = [...platforms].sort((a, b) => b.rating - a.rating).slice(0, 4);
-
-  const comparisonPairs = [
-    { a: platforms[0], b: platforms[1] },
-    { a: platforms[2], b: platforms[3] },
-    { a: platforms[4], b: platforms[5] },
-    { a: platforms[6], b: platforms[7] },
-  ].filter((c) => c.a && c.b);
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (searchQuery.trim()) navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
-  };
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleNewsletter = (e: React.FormEvent) => {
     e.preventDefault();
     if (email.trim()) setSubscribed(true);
   };
 
-  const lastSiteUpdate = platforms.reduce((latest, p) => (p.lastUpdated > latest ? p.lastUpdated : latest), platforms[0]?.lastUpdated || "");
-
   return (
     <Layout>
       <SEO
-        title="Honest Reviews & Rankings of Digital Platforms"
-        description="In-depth reviews, head-to-head comparisons, and brutally honest rankings of the apps and platforms that shape your digital life."
+        title="SpicyRanked — Honest Adult Platform Reviews & Rankings"
+        description="Independent reviews, comparisons, and rankings of the top adult creator platforms, cam sites, dating apps, and AI companions. Updated weekly."
         canonical="/"
         jsonLd={[
           websiteSchema(),
-          itemListSchema("Featured Platform Reviews", featuredCards.map((p, i) => ({ name: p.title, url: `/review/${p.slug}`, position: i + 1 }))),
+          itemListSchema("Featured Platform Reviews", featuredReviews.map((p, i) => ({ name: p.title, url: `/review/${p.slug}`, position: i + 1 }))),
         ]}
       />
 
-      {/* Hero */}
+      {/* ═══ HERO ═══ */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 spicy-gradient opacity-5" />
         <div className="container py-20 md:py-28 relative">
@@ -96,14 +113,21 @@ const Index = () => {
               Honest reviews, spicy takes
             </div>
             <h1 className="text-4xl md:text-6xl font-black leading-tight mb-6 text-balance">
-              The hottest takes on{" "}
-              <span className="spicy-text-gradient">digital platforms</span>
+              Honest Reviews of Adult Platforms —{" "}
+              <span className="spicy-text-gradient">Ranked & Rated</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-              In-depth reviews, head-to-head comparisons, and brutally honest rankings of the apps and platforms that shape your digital life.
+              We review, compare, and rank the top creator platforms, live cam sites, adult streaming services, and dating apps so you don't waste your time or money.
             </p>
 
-            <form onSubmit={handleSearch} className="relative max-w-xl mb-8">
+            {/* Search */}
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                if (searchQuery.trim()) window.location.href = `/search?q=${encodeURIComponent(searchQuery.trim())}`;
+              }}
+              className="relative max-w-xl mb-8"
+            >
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
               <input
                 type="search"
@@ -117,221 +141,197 @@ const Index = () => {
               </button>
             </form>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 mb-6">
               <Link to="/category/all" className="inline-flex items-center gap-2 spicy-gradient text-primary-foreground font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity btn-hover">
-                Browse Reviews <ArrowRight className="h-4 w-4" />
+                Browse All Reviews <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link to="/compare" className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground font-semibold px-6 py-3 rounded-lg hover:bg-surface-hover transition-colors btn-hover">
-                Compare Platforms
+              <Link to="/rankings" className="inline-flex items-center gap-2 border border-primary text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary/10 transition-colors btn-hover">
+                <Trophy className="h-4 w-4" /> Top 10 Lists
               </Link>
             </div>
+
+            <p className="text-xs text-muted-foreground">
+              150+ platforms reviewed · Updated weekly · Independent & unbiased
+            </p>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* Trust Signals */}
+      {/* ═══ TRENDING ═══ */}
       <AnimatedSection animation="fade-in">
-        <section className="border-y border-border/50 bg-card/30">
-          <div className="container py-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div>
-                <div className="text-2xl md:text-3xl font-black spicy-text-gradient">{platforms.length}+</div>
-                <div className="text-xs text-muted-foreground mt-1">Platforms Reviewed</div>
-              </div>
-              <div>
-                <div className="text-2xl md:text-3xl font-black spicy-text-gradient">5</div>
-                <div className="text-xs text-muted-foreground mt-1">Rating Categories</div>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="flex items-center gap-1.5 text-2xl md:text-3xl font-black spicy-text-gradient">
-                  <Shield className="h-5 w-5 md:h-6 md:w-6 text-primary" />
-                  100%
-                </div>
-                <div className="text-xs text-muted-foreground mt-1">Editorially Independent</div>
-              </div>
-              <div>
-                <div className="flex items-center justify-center gap-1.5 text-sm font-bold text-foreground">
-                  <Clock className="h-4 w-4 text-primary" />
-                  {lastSiteUpdate}
-                </div>
-                <div className="text-xs text-muted-foreground mt-1">Last Updated</div>
-              </div>
+        <section className="border-y border-border/50 bg-card/30 overflow-hidden">
+          <div className="container py-3">
+            <div className="flex items-center gap-6 overflow-x-auto scrollbar-hide">
+              <span className="text-xs font-bold text-primary uppercase tracking-wider shrink-0 flex items-center gap-1.5">
+                <TrendingUp className="h-3.5 w-3.5" /> Trending
+              </span>
+              {trending.map((t, i) => (
+                <Link key={i} to={t.link} className="text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap shrink-0">
+                  {t.emoji} {t.text}
+                </Link>
+              ))}
             </div>
           </div>
         </section>
       </AnimatedSection>
 
-      {/* Trending */}
+      {/* ═══ FEATURED REVIEWS ═══ */}
       <section className="container py-16">
         <AnimatedSection>
           <div className="flex items-center justify-between mb-8">
             <div>
               <h2 className="text-2xl md:text-3xl font-black flex items-center gap-2">
-                <Flame className="h-6 w-6 text-primary" />
-                Trending Reviews
-              </h2>
-              <p className="text-sm text-muted-foreground mt-1">Most popular platform breakdowns right now</p>
-            </div>
-            <Link to="/rankings" className="text-sm text-primary font-medium hover:underline hidden md:block">View all →</Link>
-          </div>
-        </AnimatedSection>
-        <div className="space-y-3">
-          {trending.map((p, i) => (
-            <AnimatedSection key={p.id} delay={i * 80}>
-              <Link to={`/review/${p.slug}`} className="flex items-center gap-4 sm:gap-5 bg-card rounded-xl border border-border/50 p-4 sm:p-5 card-hover">
-                <span className="text-xl sm:text-2xl font-black text-primary w-7 sm:w-8 shrink-0">#{i + 1}</span>
-                <span className="text-2xl sm:text-3xl shrink-0">{p.logo}</span>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-sm sm:text-base">{p.name}</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground truncate">{p.tagline}</p>
-                </div>
-                <div className="hidden sm:block">
-                  <span className="text-xs bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full font-medium">{p.category}</span>
-                </div>
-                <RatingBadge rating={p.rating} />
-              </Link>
-            </AnimatedSection>
-          ))}
-        </div>
-      </section>
-
-      {/* Category Cards */}
-      <section className="container py-16">
-        <AnimatedSection>
-          <h2 className="text-2xl md:text-3xl font-black mb-2">Browse by Category</h2>
-          <p className="text-sm text-muted-foreground mb-8">Find the perfect platform for your needs</p>
-        </AnimatedSection>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3 sm:gap-4">
-          {homepageCategories.map((cat, i) => (
-            <AnimatedSection key={cat.label} delay={i * 60} animation="scale-in">
-              <Link to={`/category/${cat.slug}`} className="group bg-card rounded-xl border border-border/50 p-4 sm:p-5 card-hover flex flex-col items-center text-center">
-                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl spicy-gradient flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <cat.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary-foreground" />
-                </div>
-                <h3 className="font-bold text-xs sm:text-sm group-hover:text-primary transition-colors">{cat.label}</h3>
-                <p className="text-xs text-muted-foreground mt-1 hidden sm:block">{cat.desc}</p>
-              </Link>
-            </AnimatedSection>
-          ))}
-        </div>
-      </section>
-
-      {/* Featured Reviews */}
-      <section className="container py-16">
-        <AnimatedSection>
-          <div className="flex items-center justify-between mb-8">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-black flex items-center gap-2">
-                <TrendingUp className="h-6 w-6 text-primary" />
+                <Star className="h-6 w-6 text-primary" />
                 Featured Reviews
               </h2>
-              <p className="text-sm text-muted-foreground mt-1">Our latest in-depth platform analyses</p>
+              <p className="text-sm text-muted-foreground mt-1">Our most popular and recently updated platform reviews</p>
             </div>
             <Link to="/category/all" className="text-sm text-primary font-medium hover:underline hidden md:block">View all →</Link>
           </div>
         </AnimatedSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featuredCards.map((card, i) => (
+          {featuredReviews.map((card, i) => (
             <AnimatedSection key={card.slug} delay={i * 100}>
-              <Link to={`/review/${card.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
+              <Link to={`/review/${card.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group flex flex-col h-full">
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-xs font-medium bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">{card.category}</span>
                   <RatingBadge rating={card.rating} />
                 </div>
-                <h3 className="font-bold text-base mb-2 group-hover:text-primary transition-colors">{card.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
+                <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors">{card.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed flex-1">{card.desc}</p>
+                <span className="inline-flex items-center gap-1 text-sm text-primary font-medium mt-4 group-hover:underline">
+                  Read Review <ArrowRight className="h-3.5 w-3.5" />
+                </span>
               </Link>
             </AnimatedSection>
           ))}
         </div>
       </section>
 
-      {/* Latest Comparisons */}
+      {/* ═══ CATEGORIES ═══ */}
+      <section className="container py-16">
+        <AnimatedSection>
+          <h2 className="text-2xl md:text-3xl font-black mb-2">Browse by Category</h2>
+          <p className="text-sm text-muted-foreground mb-8">Find exactly what you are looking for</p>
+        </AnimatedSection>
+        <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x">
+          {categoryCards.map((cat, i) => (
+            <AnimatedSection key={cat.slug} delay={i * 60} animation="scale-in">
+              <Link to={`/category/${cat.slug}`} className="group bg-card rounded-xl border border-border/50 p-5 card-hover flex flex-col min-w-[200px] snap-start">
+                <div className="w-12 h-12 rounded-xl spicy-gradient flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <cat.icon className="h-6 w-6 text-primary-foreground" />
+                </div>
+                <h3 className="font-bold text-sm group-hover:text-primary transition-colors">{cat.label}</h3>
+                <p className="text-xs text-muted-foreground mt-1">{cat.sub}</p>
+                <span className="text-xs text-primary font-medium mt-2">{cat.count}</span>
+              </Link>
+            </AnimatedSection>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ LATEST COMPARISONS ═══ */}
       <section className="container py-16">
         <AnimatedSection>
           <div className="flex items-center justify-between mb-8">
             <div>
               <h2 className="text-2xl md:text-3xl font-black flex items-center gap-2">
-                <BarChart3 className="h-6 w-6 text-primary" />
+                <Zap className="h-6 w-6 text-primary" />
                 Latest Comparisons
               </h2>
-              <p className="text-sm text-muted-foreground mt-1">Head-to-head platform showdowns</p>
+              <p className="text-sm text-muted-foreground mt-1">Head-to-head platform battles</p>
             </div>
             <Link to="/compare" className="text-sm text-primary font-medium hover:underline hidden md:block">Compare more →</Link>
           </div>
         </AnimatedSection>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {comparisonPairs.map((pair, i) => (
-            <AnimatedSection key={`${pair.a.slug}-${pair.b.slug}`} delay={i * 100} animation="scale-in">
-              <Link to={`/compare?a=${pair.a.slug}&b=${pair.b.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover group block">
-                <div className="flex items-center justify-center gap-3 mb-4">
-                  <div className="text-center">
-                    <span className="text-3xl block">{pair.a.logo}</span>
-                    <span className="text-xs font-medium mt-1 block">{pair.a.name}</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {comparisons.map((c, i) => (
+            <AnimatedSection key={c.slug} delay={i * 100}>
+              <Link to={`/compare/${c.slug}`} className="bg-card rounded-xl border border-border/50 p-6 card-hover block group">
+                <h3 className="font-bold text-base mb-4 group-hover:text-primary transition-colors">{c.title}</h3>
+                <div className="flex items-center justify-center gap-6 mb-4">
+                  <div className="text-center flex-1">
+                    {c.winner === "a" && <Crown className="h-4 w-4 text-primary mx-auto mb-1" />}
+                    <span className="font-bold text-sm block">{c.a.name}</span>
+                    <span className="text-xs text-muted-foreground">{c.a.rating}/10</span>
                   </div>
                   <span className="text-muted-foreground font-black text-lg">vs</span>
-                  <div className="text-center">
-                    <span className="text-3xl block">{pair.b.logo}</span>
-                    <span className="text-xs font-medium mt-1 block">{pair.b.name}</span>
+                  <div className="text-center flex-1">
+                    {c.winner === "b" && <Crown className="h-4 w-4 text-primary mx-auto mb-1" />}
+                    <span className="font-bold text-sm block">{c.b.name}</span>
+                    <span className="text-xs text-muted-foreground">{c.b.rating}/10</span>
                   </div>
                 </div>
-                <div className="flex items-center justify-between text-xs text-muted-foreground">
-                  <span>{pair.a.rating}/10</span>
-                  <span className="text-primary font-medium group-hover:underline">Compare →</span>
-                  <span>{pair.b.rating}/10</span>
-                </div>
+                <p className="text-sm text-muted-foreground">{c.teaser}</p>
               </Link>
             </AnimatedSection>
           ))}
         </div>
       </section>
 
-      {/* Category Filter */}
+      {/* ═══ TOP LISTS ═══ */}
       <section className="container py-16">
         <AnimatedSection>
-          <h2 className="text-2xl md:text-3xl font-black mb-6 flex items-center gap-2">
-            <Zap className="h-6 w-6 text-primary" />
-            All Reviews
-          </h2>
-          <div className="flex flex-wrap gap-2 mb-8">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all btn-hover ${
-                  activeCategory === cat
-                    ? "spicy-gradient text-primary-foreground"
-                    : "bg-secondary text-secondary-foreground hover:bg-surface-hover"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-black flex items-center gap-2">
+                <Trophy className="h-6 w-6 text-primary" />
+                Top Ranked Lists
+              </h2>
+              <p className="text-sm text-muted-foreground mt-1">Curated rankings updated monthly</p>
+            </div>
+            <Link to="/rankings" className="text-sm text-primary font-medium hover:underline hidden md:block">View all lists →</Link>
           </div>
         </AnimatedSection>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {filtered.map((p, i) => (
-            <AnimatedSection key={p.id} delay={i * 60}>
-              <PlatformCard platform={p} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {topLists.map((list, i) => (
+            <AnimatedSection key={list.slug} delay={i * 80}>
+              <Link to={`/best/${list.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
+                <span className="text-xs font-medium bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">{list.category}</span>
+                <h3 className="font-bold text-sm mt-3 group-hover:text-primary transition-colors">{list.title}</h3>
+                <span className="inline-flex items-center gap-1 text-xs text-primary font-medium mt-2">
+                  View list <ArrowRight className="h-3 w-3" />
+                </span>
+              </Link>
             </AnimatedSection>
           ))}
         </div>
       </section>
 
-      {/* Newsletter */}
+      {/* ═══ HOW WE REVIEW ═══ */}
+      <section className="container py-16">
+        <AnimatedSection>
+          <h2 className="text-2xl md:text-3xl font-black text-center mb-10">How SpicyRanked Reviews Work</h2>
+        </AnimatedSection>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {howWeReview.map((item, i) => (
+            <AnimatedSection key={item.title} delay={i * 80} animation="scale-in">
+              <div className="bg-card rounded-xl border border-border/50 p-6 text-center card-hover h-full">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-bold text-sm mb-2">{item.title}</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+              </div>
+            </AnimatedSection>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ NEWSLETTER ═══ */}
       <section className="container py-16">
         <AnimatedSection animation="scale-in">
           <div className="relative overflow-hidden rounded-2xl border border-border/50">
             <div className="absolute inset-0 spicy-gradient opacity-10" />
             <div className="relative p-8 md:p-12 text-center max-w-2xl mx-auto">
               <Mail className="h-10 w-10 text-primary mx-auto mb-4" />
-              <h2 className="text-2xl md:text-3xl font-black mb-3">Stay in the loop</h2>
+              <h2 className="text-2xl md:text-3xl font-black mb-3">Get Weekly Platform Updates</h2>
               <p className="text-muted-foreground mb-6">
-                Get our latest reviews, comparisons, and spicy takes delivered straight to your inbox. No spam, ever.
+                New reviews, comparisons, and exclusive deals delivered to your inbox every Friday. No spam, unsubscribe anytime.
               </p>
               {subscribed ? (
-                <div className="bg-success/10 border border-success/20 rounded-xl p-5">
-                  <p className="text-success font-bold">You're in! 🎉</p>
+                <div className="bg-primary/10 border border-primary/20 rounded-xl p-5">
+                  <p className="text-primary font-bold">You're in! 🎉</p>
                   <p className="text-sm text-muted-foreground mt-1">Check your inbox for a confirmation email.</p>
                 </div>
               ) : (
@@ -342,7 +342,7 @@ const Index = () => {
                     maxLength={255}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="your@email.com"
+                    placeholder="Enter your email"
                     className="flex-1 bg-card border border-border/50 rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                   <button type="submit" className="spicy-gradient text-primary-foreground font-semibold px-6 py-3 rounded-lg text-sm hover:opacity-90 transition-opacity btn-hover whitespace-nowrap">
@@ -350,31 +350,10 @@ const Index = () => {
                   </button>
                 </form>
               )}
+              <p className="text-xs text-muted-foreground mt-4">We respect your privacy. Read our <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link>.</p>
             </div>
           </div>
         </AnimatedSection>
-      </section>
-
-      {/* Top Rated */}
-      <section className="container py-16">
-        <AnimatedSection>
-          <h2 className="text-2xl md:text-3xl font-black mb-8">Top Rated</h2>
-        </AnimatedSection>
-        <div className="space-y-4">
-          {latest.map((p, i) => (
-            <AnimatedSection key={p.id} delay={i * 80}>
-              <Link to={`/review/${p.slug}`} className="flex items-center gap-4 sm:gap-5 bg-card rounded-xl border border-border/50 p-4 sm:p-5 card-hover">
-                <span className="text-xl sm:text-2xl font-black text-muted-foreground w-7 sm:w-8">#{i + 1}</span>
-                <span className="text-2xl sm:text-3xl">{p.logo}</span>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-sm sm:text-base">{p.name}</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground truncate">{p.tagline}</p>
-                </div>
-                <RatingBadge rating={p.rating} />
-              </Link>
-            </AnimatedSection>
-          ))}
-        </div>
       </section>
     </Layout>
   );
