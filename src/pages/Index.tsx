@@ -35,6 +35,15 @@ const homepageCategories = [
   { label: "Aggregators", icon: Layers, slug: "productivity", desc: "Content aggregation hubs" },
 ];
 
+const featuredCards = [
+  { title: "OnlyFans Review 2026", category: "Creator Platform", rating: 8.5, slug: "onlyfans", desc: "The largest creator subscription platform - but is it still the best option?" },
+  { title: "Fansly Review", category: "Creator Platform", rating: 8.2, slug: "fansly", desc: "Rising OnlyFans competitor with better creator tools and lower fees" },
+  { title: "Chaturbate Review", category: "Live Streaming", rating: 7.8, slug: "chaturbate", desc: "The most popular free live streaming platform - complete breakdown" },
+  { title: "Stripchat Review", category: "Live Streaming", rating: 7.5, slug: "stripchat", desc: "AI-powered features set this live platform apart from competitors" },
+  { title: "Bumble Review", category: "Dating App", rating: 8.0, slug: "bumble", desc: "Women-first dating app - worth it in 2026?" },
+  { title: "FanVue Review", category: "Creator Platform", rating: 7.6, slug: "fanvue", desc: "UK-based OnlyFans alternative with unique AI features" },
+];
+
 const Index = () => {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState("All");
@@ -43,7 +52,6 @@ const Index = () => {
   const [subscribed, setSubscribed] = useState(false);
 
   const filtered = activeCategory === "All" ? platforms : platforms.filter((p) => p.category === activeCategory);
-  const featured = platforms.slice(0, 6);
   const trending = [...platforms].sort((a, b) => b.rating - a.rating).slice(0, 5);
   const latest = [...platforms].sort((a, b) => b.rating - a.rating).slice(0, 4);
 
@@ -74,7 +82,7 @@ const Index = () => {
         canonical="/"
         jsonLd={[
           websiteSchema(),
-          itemListSchema("Featured Platform Reviews", featured.map((p, i) => ({ name: p.name, url: `/review/${p.slug}`, position: i + 1 }))),
+          itemListSchema("Featured Platform Reviews", featuredCards.map((p, i) => ({ name: p.title, url: `/review/${p.slug}`, position: i + 1 }))),
         ]}
       />
 
@@ -223,9 +231,16 @@ const Index = () => {
           </div>
         </AnimatedSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featured.map((p, i) => (
-            <AnimatedSection key={p.id} delay={i * 100}>
-              <PlatformCard platform={p} />
+          {featuredCards.map((card, i) => (
+            <AnimatedSection key={card.slug} delay={i * 100}>
+              <Link to={`/review/${card.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs font-medium bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">{card.category}</span>
+                  <RatingBadge rating={card.rating} />
+                </div>
+                <h3 className="font-bold text-base mb-2 group-hover:text-primary transition-colors">{card.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
+              </Link>
             </AnimatedSection>
           ))}
         </div>
