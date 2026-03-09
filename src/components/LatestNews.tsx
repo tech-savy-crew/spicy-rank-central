@@ -50,7 +50,7 @@ const posts: NewsPost[] = [
     date: "February 28, 2026",
     readTime: "8 min read",
     excerpt: "We tested 12 AI companion apps head-to-head. From CrushOn to Candy AI, here's which ones actually deliver on their promises.",
-    link: "/blog/best-nsfw-ai-chatbots-2026",
+    link: "/reviews/crushon-ai",
   },
   {
     category: "Live Cam",
