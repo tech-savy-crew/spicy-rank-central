@@ -112,6 +112,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Age Verification", description: "Government ID required for all performers before broadcasting. Ensures age compliance and reduces fake accounts." },
     { icon: "eye-off", title: "Anonymous Viewing", description: "No account required for basic viewing. Free browsing without providing personal information." },
   ],
+  "stripchat": [
+    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all connections including streams, chat, and payments." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. Stripchat name not visible." },
+    { icon: "shield-check", title: "Performer Verification", description: "Age and identity verification for all performers. Standard compliance measures." },
+    { icon: "eye-off", title: "Account Privacy", description: "Anonymous browsing available. Invisible mode for Ultimate members. Account deletion available." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
