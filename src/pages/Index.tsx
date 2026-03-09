@@ -67,11 +67,11 @@ const topLists = [
 ];
 
 const trending = [
-  { emoji: "🔥", text: "Fansly surpasses 5M creators", link: "/review/fansly-review" },
-  { emoji: "📈", text: "OnlyFans updates creator payout policy", link: "/review/onlyfans-review" },
-  { emoji: "💻", text: "New AI companion app CrushOn reviewed", link: "/review/crushon-review" },
-  { emoji: "✨", text: "Stripchat launches VR 2.0 features", link: "/review/stripchat-review" },
-  { emoji: "💡", text: "Best cam sites list updated for March 2026", link: "/best/free-cam-sites" },
+  { emoji: "🔥", text: "Fansly surpasses 5M creators", link: "/reviews/fansly" },
+  { emoji: "📈", text: "OnlyFans updates creator payout policy", link: "/reviews/onlyfans" },
+  { emoji: "💻", text: "New AI companion app CrushOn reviewed", link: "/reviews/crushon-ai" },
+  { emoji: "✨", text: "Stripchat launches VR 2.0 features", link: "/reviews/stripchat" },
+  { emoji: "💡", text: "Best cam sites list updated for March 2026", link: "/best/best-free-cam-sites" },
   { emoji: "⚡", text: "Tinder vs Bumble: latest comparison published", link: "/compare/tinder-vs-bumble" },
 ];
 
