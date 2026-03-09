@@ -32,6 +32,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "The interface is clean, modern, and built around conversations. A left sidebar lets you switch between companions, access settings, and browse your image gallery. Message input feels responsive, and AI replies typically arrive within two to three seconds on premium. The image generation feature is integrated directly into the chat flow — you request visuals without ever leaving the conversation window. Settings are well-organized and nothing feels buried behind unnecessary menus.",
     mobileExperience: "The Candy.ai app is available for both Android and iOS, and the mobile experience closely mirrors what you get on desktop. Scrolling is smooth, load times are fast, and the interface adapts well to smaller screens with thumb-friendly navigation. If you primarily use your phone, you will not feel like you are getting a compromised experience.",
   },
+  "feetfinder": {
+    gettingStarted: "Setting up a seller account on FeetFinder takes about ten minutes. You will need a valid email, government-issued ID for age and identity verification, and a payment method for the subscription. The verification process typically completes within 24 to 48 hours. Once approved, your FeetFinder login gives you access to the seller dashboard where you can start uploading content immediately.",
+    interfaceNavigation: "The seller dashboard is functional but not flashy. You can manage uploads, view messages, track earnings, and update your profile from a central hub. Content uploading is straightforward — drag and drop files, add descriptions and pricing, and choose categories. The buyer-side interface is a grid-based discovery system where users browse seller profiles filtered by categories, popularity, and price. Navigation works but feels dated compared to newer platforms like Footly.",
+    mobileExperience: "The FeetFinder app is available for download on both Android and iOS devices. The mobile experience covers all essential functions — uploading, messaging, and managing sales. However, the app download has occasionally been flagged or removed from app stores due to content policies, so many users access the platform through mobile browsers instead. The responsive web version works well on phones.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
@@ -41,10 +46,17 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Content Moderation", description: "Candy.ai enforces content policies in line with industry standards, including DMCA compliance and age verification for adult content access. All users must confirm they are 18 or older." },
     { icon: "eye-off", title: "Account Privacy", description: "You can use Candy.ai with minimal personal information. No social media linking is required, and account deletion is available upon request. Personal information is not sold to third parties." },
   ],
+  "feetfinder": [
+    { icon: "lock", title: "Data Encryption", description: "FeetFinder uses SSL/TLS encryption across the entire platform. All data transfers between your browser and their servers are secured, including payment information and uploaded content." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Charges appear on bank and credit card statements under a generic billing descriptor. The FeetFinder name does not show up on financial statements." },
+    { icon: "shield-check", title: "Content Protection", description: "All uploaded content is watermarked and protected against unauthorized downloading. FeetFinder actively enforces DMCA takedown requests when content is stolen." },
+    { icon: "eye-off", title: "Identity Verification", description: "Both sellers and buyers must verify their identity. Sellers provide government ID for age verification. This dramatically reduces fake accounts and scam attempts." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
   "candy-ai": "So, is Candy.ai a scam? Based on our 30+ days of testing: absolutely not. It is a legitimate, well-built platform with a clear business model. Is Candy.ai safe? Yes, with reasonable privacy protections that meet what we would expect for this category. Is Candy.ai legit? The company operates transparently, processes refund requests, and has a growing presence on review platforms like Trustpilot. We found no red flags during our extended testing period.",
+  "feetfinder": "So, is FeetFinder legit? Absolutely. After testing the platform extensively from both sides, FeetFinder is a legitimate, well-established marketplace with a real business model, genuine buyer traffic, and functioning payout systems. Is FeetFinder safe? Yes — the combination of identity verification, encryption, content protection, and discreet billing makes it one of the safest options available. Is FeetFinder a scam? No. There are legitimate criticisms around pricing and competition levels, but the platform itself operates transparently and has been doing so since 2019.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -54,6 +66,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Use Voice Messages for Deeper Immersion", description: "The voice feature adds a layer of realism that text alone simply cannot replicate. Enable it in settings and try sending voice-based requests — the responses feel surprisingly natural and emotionally appropriate." },
     { title: "Reference Past Conversations", description: "Candy.ai's memory feature works best when you actively build on previous interactions. Mention things you discussed earlier, reference inside jokes, and the AI will pick up continuity that makes the experience feel like an evolving relationship." },
     { title: "Experiment with Multiple Companions", description: "Do not limit yourself to a single character. Different personality configurations produce completely different experiences. Try creating two or three AI girlfriends with contrasting traits to discover what you enjoy most." },
+  ],
+  "feetfinder": [
+    { title: "Invest Time in Your FeetFinder Bio", description: "Your bio is the first thing buyers see. Write a clear, engaging description that explains your content style, upload schedule, and specialties. A strong FeetFinder bio converts browsers into buyers." },
+    { title: "Choose a Memorable Username", description: "Spend time on FeetFinder username ideas before committing. Avoid generic names and pick something catchy, easy to remember, and relevant to feet content. Good FeetFinder names create instant brand recognition." },
+    { title: "Post Consistently and Build Volume", description: "Sellers with larger content libraries get more visibility. Aim for three to five new uploads per week. Consistency signals to both the algorithm and buyers that you are active and reliable." },
+    { title: "Use Social Media to Drive External Traffic", description: "Do not rely solely on internal discovery. Promote your profile on Twitter/X, Reddit, TikTok, and Instagram. The most successful sellers combine platform presence with external marketing." },
+    { title: "Respond to Messages Quickly", description: "Buyer interest has a short lifespan. Sellers who respond within a few hours consistently outsell those who take days. Custom content requests are where the real money is." },
   ],
 };
 
