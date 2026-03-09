@@ -60,7 +60,7 @@ const AlternativesPage = () => {
               <span className="text-2xl font-black text-primary w-8">#{i + 1}</span>
               <span className="text-3xl">{alt.logo}</span>
               <div className="flex-1 min-w-0">
-                <Link to={`/review/${alt.slug}`} className="font-bold hover:text-primary transition-colors">
+                <Link to={`/reviews/${alt.slug}`} className="font-bold hover:text-primary transition-colors">
                   {alt.name}
                 </Link>
                 <p className="text-sm text-muted-foreground truncate">{alt.tagline}</p>

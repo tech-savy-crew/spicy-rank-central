@@ -527,7 +527,7 @@ const BestListPage = () => {
                   Visit {p.name} <ExternalLink className="h-4 w-4" />
                 </a>
                 <Link
-                  to={`/review/${p.slug}`}
+                  to={`/reviews/${p.slug}`}
                   className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline font-medium"
                 >
                   Read full review <ArrowRight className="h-3.5 w-3.5" />
