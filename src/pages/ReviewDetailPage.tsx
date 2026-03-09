@@ -112,6 +112,7 @@ const ReviewDetailPage = () => {
 
   const isCandyAi = review.slug === "candy-ai";
   const isFeetFinder = review.slug === "feetfinder";
+  const isOnlyFans = review.slug === "onlyfans";
 
   const candyJsonLd = isCandyAi ? [
     {"@context":"https://schema.org","@type":"Review","name":"Candy.ai Review 2026","description":"In-depth review of Candy.ai AI girlfriend platform covering features, pricing, safety, and user experience. Tested for 30+ days.","datePublished":"2026-03-01","dateModified":"2026-03-09","author":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"publisher":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"itemReviewed":{"@type":"SoftwareApplication","name":"Candy.ai","applicationCategory":"EntertainmentApplication","operatingSystem":"Web, Android, iOS","url":"https://candy.ai","offers":{"@type":"AggregateOffer","lowPrice":"0","highPrice":"12.99","priceCurrency":"USD","offerCount":"3"}},"reviewRating":{"@type":"Rating","ratingValue":"8.3","bestRating":"10","worstRating":"0"},"positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Most realistic AI conversations in the market"},{"@type":"ListItem","position":2,"name":"Excellent AI image generation quality"},{"@type":"ListItem","position":3,"name":"Deep personality customization options"},{"@type":"ListItem","position":4,"name":"Strong conversation memory and continuity"},{"@type":"ListItem","position":5,"name":"Clean interface on desktop and mobile"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium pricing higher than some competitors"},{"@type":"ListItem","position":2,"name":"Free tier is very limited"},{"@type":"ListItem","position":3,"name":"No video generation yet"}]}},
@@ -127,13 +128,19 @@ const ReviewDetailPage = () => {
     {"@context":"https://schema.org","@type":"SoftwareApplication","name":"FeetFinder","applicationCategory":"LifestyleApplication","operatingSystem":"Web, Android, iOS","url":"https://feetfinder.com","description":"The largest dedicated marketplace for buying and selling feet content online.","offers":[{"@type":"Offer","name":"Buyer","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Seller Basic","price":"4.99","priceCurrency":"USD"},{"@type":"Offer","name":"Seller Premium","price":"14.99","priceCurrency":"USD"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"8.0","bestRating":"10","worstRating":"0","ratingCount":"1","reviewCount":"1"}}
   ] : undefined;
 
-  const customJsonLd = candyJsonLd || feetFinderJsonLd;
+  const onlyFansJsonLd = isOnlyFans ? [
+    {"@context":"https://schema.org","@type":"Review","name":"OnlyFans Review 2026","description":"Honest OnlyFans review covering pricing, creator earnings, safety, features, and alternatives. Tested as both creator and subscriber for 60+ days.","datePublished":"2026-03-01","dateModified":"2026-03-09","author":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"publisher":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"itemReviewed":{"@type":"SoftwareApplication","name":"OnlyFans","applicationCategory":"EntertainmentApplication","operatingSystem":"Web","url":"https://onlyfans.com","offers":{"@type":"AggregateOffer","lowPrice":"0","highPrice":"49.99","priceCurrency":"USD","offerCount":"3"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"8.5","bestRating":"10","worstRating":"0","ratingCount":"1","reviewCount":"1"}},"reviewRating":{"@type":"Rating","ratingValue":"8.5","bestRating":"10","worstRating":"0"},"positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Largest audience — 300M+ registered users"},{"@type":"ListItem","position":2,"name":"Highest brand recognition in creator economy"},{"@type":"ListItem","position":3,"name":"Multiple monetization methods"},{"@type":"ListItem","position":4,"name":"Strong privacy with no public discovery"},{"@type":"ListItem","position":5,"name":"80% creator payout rate"},{"@type":"ListItem","position":6,"name":"Reliable payment processing"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"No content discovery or recommendation"},{"@type":"ListItem","position":2,"name":"20% commission higher than some competitors"},{"@type":"ListItem","position":3,"name":"No native mobile app"}]}},
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":allFaqs.map(f => ({"@type":"Question","name":f.question,"acceptedAnswer":{"@type":"Answer","text":f.answer}}))},
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spicyranked.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://spicyranked.com/reviews"},{"@type":"ListItem","position":3,"name":"OnlyFans Review","item":"https://spicyranked.com/reviews/onlyfans"}]}
+  ] : undefined;
+
+  const customJsonLd = candyJsonLd || feetFinderJsonLd || onlyFansJsonLd;
 
   return (
     <Layout>
       <SEO
-        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : isFeetFinder ? "FeetFinder Review 2026: Is It Legit? Honest Seller & Buyer Rating" : `${review.name} Review 2026: ${review.verdict}`}
-        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : isFeetFinder ? "Our honest FeetFinder review covers pricing, seller income, safety, and whether FeetFinder is legit. Tested from both seller and buyer sides. 8.0/10 rating." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
+        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : isFeetFinder ? "FeetFinder Review 2026: Is It Legit? Honest Seller & Buyer Rating" : isOnlyFans ? "OnlyFans Review 2026: Is It Still Worth It for Creators & Fans?" : `${review.name} Review 2026: ${review.verdict}`}
+        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : isFeetFinder ? "Our honest FeetFinder review covers pricing, seller income, safety, and whether FeetFinder is legit. Tested from both seller and buyer sides. 8.0/10 rating." : isOnlyFans ? "Honest OnlyFans review for both creators and subscribers. We cover pricing, creator earnings, safety, features, and whether OnlyFans is still worth it in 2026. Rated 8.5/10." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
         canonical={`/reviews/${review.slug}`}
         ogType="article"
         extraMeta={isCandyAi ? [
@@ -149,6 +156,14 @@ const ReviewDetailPage = () => {
           { name: "author", content: "SpicyRanked" },
           { property: "og:title", content: "FeetFinder Review 2026 — Is This Feet Pic Marketplace Legit?" },
           { property: "og:description", content: "We tested FeetFinder as both a buyer and seller. Full review of fees, income potential, safety, and alternatives. Rated 8.0/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Creator Platforms" },
+        ] : isOnlyFans ? [
+          { name: "keywords", content: "onlyfans review, onlyfans reviews, is onlyfans worth it, how does onlyfans work, onlyfans pricing, onlyfans app, onlyfans free, is onlyfans safe, onlyfans creator, onlyfans alternatives, onlyfans earnings, onlyfans subscription, onlyfans cost, onlyfans payout, is onlyfans legit, onlyfans tips" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "OnlyFans Review 2026 — Still the Best Creator Platform?" },
+          { property: "og:description", content: "We tested OnlyFans for 60+ days as both creator and subscriber. Full review of earnings, pricing, features, and alternatives. Rated 8.5/10." },
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "Creator Platforms" },
@@ -199,6 +214,8 @@ const ReviewDetailPage = () => {
                     ? "Candy.ai is the best AI girlfriend platform we tested in 2026. Realistic conversations, excellent image generation, and deep personality customization earn it our top rating of 8.3/10 — though premium pricing may not suit every budget."
                     : isFeetFinder
                     ? "FeetFinder is the most established feet content marketplace with a massive buyer base, verified profiles, and strong safety features. At 8.0/10, it earns our recommendation for serious sellers — though the subscription fees and high competition mean beginners need a solid strategy to succeed."
+                    : isOnlyFans
+                    ? "OnlyFans remains the most recognized creator platform in 2026, with the largest audience and highest earning potential for established creators. At 8.5/10, we rate it as the best overall creator platform — but the 20% commission, increasing competition, and lack of content discovery mean newer creators may struggle without an existing audience."
                     : review.verdict}
                 </p>
               </div>

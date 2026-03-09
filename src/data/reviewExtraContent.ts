@@ -37,6 +37,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "The seller dashboard is functional but not flashy. You can manage uploads, view messages, track earnings, and update your profile from a central hub. Content uploading is straightforward — drag and drop files, add descriptions and pricing, and choose categories. The buyer-side interface is a grid-based discovery system where users browse seller profiles filtered by categories, popularity, and price. Navigation works but feels dated compared to newer platforms like Footly.",
     mobileExperience: "The FeetFinder app is available for download on both Android and iOS devices. The mobile experience covers all essential functions — uploading, messaging, and managing sales. However, the app download has occasionally been flagged or removed from app stores due to content policies, so many users access the platform through mobile browsers instead. The responsive web version works well on phones.",
   },
+  "onlyfans": {
+    gettingStarted: "Creating an account is straightforward. Login works via email or social sign-in. Subscribers can browse and subscribe within minutes. Creators need ID verification (24-72 hours). Once verified, set subscription price, upload content, start accepting subscribers immediately.",
+    interfaceNavigation: "Functional but noticeably basic compared to social media. Home feed shows content chronologically. Navigation includes feed, notifications, messages, bookmarks, and search. Search is intentionally limited — no content discovery system. Subscribers find creators only through direct links or external promotion. This is simultaneously the biggest weakness for new creators and the strongest privacy feature.",
+    mobileExperience: "No dedicated OnlyFans app on iOS or Android app stores due to content restrictions. OnlyFans offers a progressive web app (PWA) that works in mobile browsers and can be added to home screen. Mobile web version is fully functional for both creators and subscribers. Absence of native app is a frequent complaint but PWA works well enough.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
@@ -52,11 +57,18 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Content Protection", description: "All uploaded content is watermarked and protected against unauthorized downloading. FeetFinder actively enforces DMCA takedown requests when content is stolen." },
     { icon: "eye-off", title: "Identity Verification", description: "Both sellers and buyers must verify their identity. Sellers provide government ID for age verification. This dramatically reduces fake accounts and scam attempts." },
   ],
+  "onlyfans": [
+    { icon: "lock", title: "Data Encryption", description: "Bank-grade SSL/TLS encryption across the entire platform. No major data breaches despite high profile and sensitive user data." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Charges appear under 'OnlyFans' or 'Fenix International'. Does not indicate content type purchased." },
+    { icon: "shield-check", title: "Age Verification", description: "Government-issued ID required for all creators. Subscribers must confirm 18+. Strengthened over the years in response to regulatory pressure." },
+    { icon: "eye-off", title: "Content Protection", description: "DMCA takedown enforcement, watermarking, and screenshot detection. Subscriber activity is private and not publicly visible. Creator anonymity possible with stage name but real ID is tied to the platform." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
   "candy-ai": "So, is Candy.ai a scam? Based on our 30+ days of testing: absolutely not. It is a legitimate, well-built platform with a clear business model. Is Candy.ai safe? Yes, with reasonable privacy protections that meet what we would expect for this category. Is Candy.ai legit? The company operates transparently, processes refund requests, and has a growing presence on review platforms like Trustpilot. We found no red flags during our extended testing period.",
   "feetfinder": "So, is FeetFinder legit? Absolutely. After testing the platform extensively from both sides, FeetFinder is a legitimate, well-established marketplace with a real business model, genuine buyer traffic, and functioning payout systems. Is FeetFinder safe? Yes — the combination of identity verification, encryption, content protection, and discreet billing makes it one of the safest options available. Is FeetFinder a scam? No. There are legitimate criticisms around pricing and competition levels, but the platform itself operates transparently and has been doing so since 2019.",
+  "onlyfans": "Is OnlyFans legit? Without question. Operated by Fenix International Limited, a UK-based company processing billions in creator payouts annually. Is OnlyFans safe? Yes, with strong privacy protections and reliable security. Is OnlyFans a scam? Absolutely not — individual creator quality varies but the platform itself is entirely legitimate and one of the most established names in the creator economy.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -73,6 +85,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Post Consistently and Build Volume", description: "Sellers with larger content libraries get more visibility. Aim for three to five new uploads per week. Consistency signals to both the algorithm and buyers that you are active and reliable." },
     { title: "Use Social Media to Drive External Traffic", description: "Do not rely solely on internal discovery. Promote your profile on Twitter/X, Reddit, TikTok, and Instagram. The most successful sellers combine platform presence with external marketing." },
     { title: "Respond to Messages Quickly", description: "Buyer interest has a short lifespan. Sellers who respond within a few hours consistently outsell those who take days. Custom content requests are where the real money is." },
+  ],
+  "onlyfans": [
+    { title: "Build Your Audience Before You Launch", description: "Spend 1-2 months building followers on Twitter/X, TikTok, Instagram, or Reddit before launching OnlyFans. Even 500-1,000 engaged followers is enough for a strong start." },
+    { title: "Use a Free Page as a Funnel", description: "Create a free OnlyFans alongside your paid one. Post teaser content on free page to convert fans toward paid subscription. Consistently outperforms paid-only approaches." },
+    { title: "Prioritize PPV and Custom Content", description: "Highest earners make the majority from pay-per-view messages and custom requests. Send regular PPV drops and be responsive to custom inquiries." },
+    { title: "Post Consistently and Engage Daily", description: "Post 3-5 times per week minimum, respond to messages daily, go live weekly. Consistency is the single strongest predictor of earnings growth." },
+    { title: "Diversify Across Platforms", description: "Use Fansly or FanVue as backups, maintain active social media, consider FeetFinder or Snifffr for physical items. Platform diversification protects your income." },
   ],
 };
 

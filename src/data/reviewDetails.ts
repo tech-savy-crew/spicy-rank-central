@@ -855,6 +855,84 @@ export const detailedReviews: DetailedReview[] = [
 function generateCreatorPlatformReviews(): DetailedReview[] {
   return [
     {
+      name: "OnlyFans", slug: "onlyfans", category: "Creator Platforms", score: 8.5,
+      verdict: "The biggest name in creator subscriptions — but rising fees and growing competition mean it may no longer be the only option",
+      pricing: "Free to join / 20% commission", bestFor: "The #1 creator subscription platform",
+      url: "https://onlyfans.com", lastUpdated: "March 2026",
+      readingTime: 11,
+      overview: [
+        "OnlyFans is the world's largest subscription-based content platform, where creators share exclusive photos, videos, live streams, and messages directly with paying subscribers. Launched in 2016, it has grown into a cultural phenomenon with over 300 million registered users and more than 3 million creators globally. If you are wondering how does OnlyFans work, the model is straightforward: creators set a monthly subscription price, fans pay to access their content, and OnlyFans takes a 20% cut of all earnings.",
+        "While OnlyFans is overwhelmingly associated with adult content, the platform technically supports any type of creator — fitness coaches, musicians, cooking instructors, and educators all use it. However, the vast majority of successful OnlyFans creators produce adult or semi-adult content, and that is the context in which most people encounter the platform.",
+        "What makes OnlyFans uniquely powerful is its direct creator-to-fan relationship model. Unlike tube sites or social media platforms where content is free and monetization is indirect, every OnlyFans subscription creates a direct financial connection between the creator and their audience. Creators control their pricing, their content, and their relationship with subscribers. This level of autonomy, combined with the platform's massive name recognition, is why OnlyFans continues to dominate despite growing competition from platforms like Fansly, FanVue, and LoyalFans."
+      ],
+      keyFeatures: [
+        { title: "Subscription Model", description: "Creators set their own monthly OnlyFans subscription price, typically $4.99 to $49.99 per month. Subscribers get access to all posted content for the duration of their subscription with discounted bundle options." },
+        { title: "Pay-Per-View Messages", description: "Creators send locked content directly to subscribers' inboxes with a custom price tag. PPV messages are one of the highest-earning features, allowing monetization of premium content beyond the base subscription." },
+        { title: "Tips & Donations", description: "Fans can tip creators any amount on posts, during live streams, or in DMs. Many top creators report tips make up 20-40% of total earnings." },
+        { title: "Live Streaming", description: "Real-time streaming with integrated tipping that encourages audience participation. Creates urgency and exclusivity driving higher engagement and spending." },
+        { title: "Direct Messaging", description: "One-on-one messaging with text, photos, videos, and voice notes. Supports mass messaging for sending content to all subscribers at once." },
+        { title: "Free & Paid Accounts", description: "Run a free page alongside a paid one. Free pages attract a wider audience, monetized through PPV and tips rather than subscriptions." }
+      ],
+      pricingIntro: "Understanding OnlyFans pricing requires looking at it from both the creator and subscriber perspective.",
+      pricingDetails: [
+        { plan: "Creator Account", price: "Free", features: ["Zero cost to create and start posting", "Valid ID and bank account required", "20% flat commission on all earnings", "Minimum $20 withdrawal, 3-5 business days processing"] },
+        { plan: "Subscriber (Avg)", price: "$7-$15/mo", features: ["Creator-set pricing from $4.99-$49.99/month", "Access to all posted content", "Direct messaging with creator", "Additional PPV and tip costs possible"] },
+        { plan: "Free Pages", price: "Free", features: ["Many creators offer free pages", "Limited content, monetized through PPV", "Tips and custom content requests", "Good entry point for subscribers"] }
+      ],
+      pricingOutro: "FOR CREATORS: Signing up is free. OnlyFans takes a 20% flat commission on all earnings — subscriptions, tips, PPV, everything. Minimum $20 withdrawal with 3-5 business day processing. Earnings reality: average creator earns roughly $150-$180/month (heavily skewed by inactive accounts). Active creators with small following: $500-$3,000. Established creators with large audience: $10,000-$100,000+.\n\nFOR SUBSCRIBERS: Subscription cost is creator-set, typically $4.99-$49.99/month with average around $7-$15. Many creators offer free OnlyFans pages with limited content. Additional costs include PPV messages ($3-$50+), tips, and custom content requests on top of base subscription.",
+      scores: [
+        { label: "Content Quality", score: 9.0, description: "Creator-controlled model means quality varies, but top creators produce genuinely premium content. Supports photos, 60-min videos, live streaming, and rich messaging." },
+        { label: "User Interface", score: 7.5, description: "Functional but dated. No content discovery, recommendation algorithms, or search functionality. If you don't know which creator to follow, OnlyFans gives you no way to find them." },
+        { label: "Value for Money", score: 8.5, description: "Strong value for subscribers at $7-$15 average subscription. For creators, keeping 80% of earnings is competitive and massive audience justifies the fee." },
+        { label: "Privacy & Safety", score: 9.0, description: "Bank-grade encryption, DMCA enforcement, watermarking, discreet billing, and no public discovery system. Takes privacy extremely seriously for both sides." },
+        { label: "Features", score: 8.5, description: "Subscriptions, PPV, tips, live streaming, mass messaging, free/paid accounts, referral programs. Main gap is lack of content discovery and algorithmic promotion." }
+      ],
+      pros: [
+        "Largest audience — over 300 million registered users",
+        "Highest brand recognition drives organic signups",
+        "Multiple monetization methods: subscriptions, PPV, tips, live, custom",
+        "Strong privacy protections with no public discovery",
+        "80% creator payout competitive with industry",
+        "Reliable payment processing with consistent payouts"
+      ],
+      cons: [
+        "No content discovery or recommendation algorithm",
+        "20% fee higher than some newer competitors",
+        "No native mobile app — only PWA",
+        "Interface feels dated",
+        "Extremely competitive among 3M+ creators",
+        "Past policy controversies created uncertainty"
+      ],
+      prosConsNote: "Is OnlyFans worth it? For creators with an existing social media audience, absolutely — the platform's scale is unmatched and the monetization tools are comprehensive. For completely new creators with no following, the lack of discovery makes it significantly harder. In that case, combining OnlyFans with a discovery-focused platform like Fansly or building on social media first may be a better strategy.",
+      privacyIntro: "Given the sensitive nature of OnlyFans content, questions about whether OnlyFans is safe and whether OnlyFans is legit are among the most common concerns.",
+      whoShouldUse: [
+        { persona: "Creators with existing social media following", reason: "Most effective monetization of an existing audience", ideal: true },
+        { persona: "Established adult content creators", reason: "Largest potential subscriber base and most complete monetization toolkit", ideal: true },
+        { persona: "Subscribers wanting direct creator access", reason: "More personal than any tube site or social platform", ideal: true },
+        { persona: "New creators with no existing audience", reason: "Zero content discovery means you must bring your own traffic", ideal: false },
+        { persona: "Creators wanting lowest possible fees", reason: "FanVue charges 15% vs OnlyFans' 20%", ideal: false }
+      ],
+      alternatives: ["fansly", "fanvue", "loyalfans", "manyvids"],
+      comparisons: [
+        { slug: "onlyfans-vs-fansly", title: "OnlyFans vs Fansly" },
+        { slug: "onlyfans-vs-patreon", title: "OnlyFans vs Patreon" },
+        { slug: "onlyfans-vs-fanvue", title: "OnlyFans vs FanVue" }
+      ],
+      faqs: [
+        { question: "Is OnlyFans free to use?", answer: "For creators, signing up and posting is completely free. OnlyFans earns through 20% commission on earnings. For subscribers, many creators offer free pages, but premium content requires paid subscription ($4.99-$49.99/month)." },
+        { question: "Is OnlyFans safe and private?", answer: "Yes. SSL encryption, identity verification for creators, DMCA takedowns, and discreet billing. Subscriber activity is completely private and not visible to other users or publicly searchable." },
+        { question: "How does OnlyFans work for creators?", answer: "Sign up, verify identity, set subscription price, post content. Earn from subscriptions, PPV messages, tips, and custom content. OnlyFans takes 20%, you keep 80%." },
+        { question: "How much can you earn on OnlyFans?", answer: "Average is $150-$180/month (skewed by inactive accounts). Active creators: $500-$3,000. Established creators with large audiences: $10,000-$100,000+." },
+        { question: "Can I use OnlyFans on my phone?", answer: "No native app due to content restrictions. OnlyFans offers a progressive web app (PWA) that works in mobile browsers and can be added to home screen. Fully functional for both creators and subscribers." },
+        { question: "Is OnlyFans anonymous?", answer: "For subscribers, yes — activity is private and invisible to others. For creators, partial — stage names possible but real ID required for verification. Billing appears discreetly on statements." },
+        { question: "Is OnlyFans worth it in 2026?", answer: "For creators with an existing audience, yes — unmatched subscriber base and comprehensive tools. For new creators without following, pair with social media marketing or discovery-focused alternatives like Fansly." },
+        { question: "How do I cancel or delete my OnlyFans account?", answer: "Cancel specific subscriptions via creator profile. Delete account via Settings > Account > Delete Account. Withdraw remaining balance first. May take up to 30 days for full data removal." },
+        { question: "What are the best OnlyFans alternatives?", answer: "Fansly for better discovery, FanVue for lower fees, LoyalFans for live streaming, ManyVids for clip sales, Patreon for mixed content. Many creators use multiple platforms simultaneously." },
+        { question: "Does OnlyFans work internationally?", answer: "Yes. Operates globally with international payment processing. Some countries have restrictions on adult platforms. Processing times may vary by region." }
+      ],
+      finalVerdict: "OnlyFans is still the gold standard for creator platforms in 2026. Nothing else matches its audience scale, brand recognition, or comprehensive monetization tools. After testing extensively as both creator and subscriber, it delivers on its core promise: a direct, profitable connection between creators and their fans. The weaknesses are real but manageable — no content discovery, 20% commission, dated interface, no native app. But none outweigh the fundamental advantage: the largest paying audience in the creator economy. For creators with an audience and willingness to treat it as a business, emphatically recommended. For subscribers seeking exclusive direct access, the value is clear. For new creators with zero following, build your audience first, then bring them to OnlyFans."
+    },
+    {
       name: "FeetFinder", slug: "feetfinder", category: "Creator Platforms", score: 8.0,
       verdict: "The largest marketplace for selling and buying feet content — but is FeetFinder actually worth the subscription fee?",
       pricing: "Seller: $4.99/mo / Buyer: Free", bestFor: "The #1 feet content marketplace",
