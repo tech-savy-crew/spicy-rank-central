@@ -251,7 +251,7 @@ export const detailedReviews: DetailedReview[] = [
     score: 7.0,
     verdict: "The original AI companion app — great for emotional connection but limited adult features",
     pricing: "Free / $19.99/mo Pro",
-    bestFor: "Emotional AI companionship",
+    bestFor: "Emotional AI companionship focused on mental wellness",
     url: "https://replika.ai",
     lastUpdated: "March 2026",
     overview: [
