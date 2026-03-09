@@ -337,6 +337,9 @@ const ReviewDetailPage = () => {
                 <h2 className="text-xl md:text-2xl font-bold mb-5 flex items-center gap-2">
                   <ShieldCheck className="h-5 w-5 text-primary" /> Privacy, Safety & Trust
                 </h2>
+                {review.privacyIntro && (
+                  <p className="text-[15px] text-muted-foreground leading-7 mb-5">{review.privacyIntro}</p>
+                )}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   {privacy.cards.map((card) => {
                     const TrustIcon = trustIcons[card.icon];
