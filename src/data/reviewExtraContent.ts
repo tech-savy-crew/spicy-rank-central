@@ -103,6 +103,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Reference Past Conversations", description: "Candy.ai's memory feature works best when you actively build on previous interactions. Mention things you discussed earlier, reference inside jokes, and the AI will pick up continuity that makes the experience feel like an evolving relationship." },
     { title: "Experiment with Multiple Companions", description: "Do not limit yourself to a single character. Different personality configurations produce completely different experiences. Try creating two or three AI girlfriends with contrasting traits to discover what you enjoy most." },
   ],
+  "dreamgf-ai": [
+    { title: "Start Free to Test the Builder", description: "Explore creation tools before paying. Free tier shows builder quality and sample images." },
+    { title: "Invest Time in Character Customization", description: "More specific character creation = better results across all future generations." },
+    { title: "Use Silver Tier for Best Value", description: "Bronze is fine for exploring but Silver at $19.99 unlocks genuine quality. Skip Gold unless generating daily." },
+    { title: "Build a Gallery Over Time", description: "Save favorites and learn what prompts/scenarios produce best results." },
+    { title: "Pair with a Chat-Focused Platform", description: "Use DreamGF for visuals and Candy.ai or CrushOn.ai for conversation. Best of both worlds." },
+  ],
   "feetfinder": [
     { title: "Invest Time in Your FeetFinder Bio", description: "Your bio is the first thing buyers see. Write a clear, engaging description that explains your content style, upload schedule, and specialties. A strong FeetFinder bio converts browsers into buyers." },
     { title: "Choose a Memorable Username", description: "Spend time on FeetFinder username ideas before committing. Avoid generic names and pick something catchy, easy to remember, and relevant to feet content. Good FeetFinder names create instant brand recognition." },
