@@ -57,6 +57,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "One of the cleanest dating app interfaces. Uncluttered swiping screen, large photos, clear text. Bottom tab navigation. Modern and pleasant to use. Settings logically organized.",
     mobileExperience: "Mobile-first app available on iOS and Android. Web version exists but limited. Push notifications reliable. App runs smoothly on all devices. Polished, stable, best-in-class.",
   },
+  "chaturbate": {
+    gettingStarted: "Creating an account takes two minutes. Viewers need only an email. Performers require age verification with government ID, typically processed within 24-48 hours. Broadcasting begins immediately after verification.",
+    interfaceNavigation: "Chaturbate's interface is its weakest point. The design looks like it has not been significantly updated since launch. The homepage displays a grid of live thumbnails sorted by viewer count. Navigation is basic with category tabs and a search bar. It works, but it feels dated compared to Stripchat's modern design or LiveJasmin's polished interface.",
+    mobileExperience: "The Chaturbate app is not available on app stores, but the mobile website works adequately. Browsing, watching, and tipping all function on mobile. The experience is serviceable but not optimized for touch interaction in the way that Stripchat's mobile experience is.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
@@ -96,6 +101,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "eye-off", title: "Block & Report", description: "Comprehensive reporting for fake profiles and inappropriate behavior. Moderation team reviews reports. Instant blocking available." },
     { icon: "credit-card", title: "Incognito Mode", description: "Premium feature — profile visible only to people you swiped right on. Essential for users needing discretion." },
   ],
+  "chaturbate": [
+    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including streams, chat, and payment information." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Token purchases appear under a generic billing descriptor. Chaturbate name not visible on statements." },
+    { icon: "shield-check", title: "Age Verification", description: "Government ID required for all performers before broadcasting. Ensures age compliance and reduces fake accounts." },
+    { icon: "eye-off", title: "Anonymous Viewing", description: "No account required for basic viewing. Free browsing without providing personal information." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
@@ -105,6 +116,7 @@ const privacyOverrides: Record<string, string> = {
   "onlyfans": "Is OnlyFans legit? Without question. Operated by Fenix International Limited, a UK-based company processing billions in creator payouts annually. Is OnlyFans safe? Yes, with strong privacy protections and reliable security. Is OnlyFans a scam? Absolutely not — individual creator quality varies but the platform itself is entirely legitimate and one of the most established names in the creator economy.",
   "fansly": "Is Fansly legit? Yes — legitimate platform with functioning payments, real payouts, growing user base. Is Fansly safe? Yes, with standard security meeting industry norms. Is Fansly a scam? No — platform is legitimate though some Trustpilot reviewers report support issues worth noting.",
   "bumble": "Is Bumble safe? Yes — among the safest mainstream dating apps. Is Bumble legit? Absolutely — publicly traded company (NASDAQ: BMBL). Is Bumble a scam? No — genuine dating experience with real users. Some frustration around pricing, but platform is legitimate.",
+  "chaturbate": "Is Chaturbate safe? Yes, with standard security protections. SSL encryption, age verification for performers, and discreet billing for token purchases. Is Chaturbate legit? Absolutely — one of the longest-running and most established cam platforms globally. Is Chaturbate a scam? No — legitimate platform with millions of daily users. Is Chaturbate free? Yes, public broadcasts are completely free to watch. Tokens are only needed for interacting with performers.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -149,6 +161,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Answer Bio Prompts Thoughtfully", description: "Specific answers always outperform generic ones. Invite conversation." },
     { title: "Be Active During Peak Hours", description: "Sunday-Thursday evenings 7-10 PM. Consistent daily usage beats binge-swiping." },
     { title: "Women: Send Engaging First Messages", description: "Reference something specific from their profile. Personalized messages convert 3-5x better than generic greetings." },
+  ],
+  "chaturbate": [
+    { title: "Create a Free Account", description: "Viewers: Create a free account to access chat, follow favorites, and get notifications when performers go live." },
+    { title: "Buy Tokens in Larger Bundles", description: "Viewers: Buy tokens in larger bundles for better per-token value. The 500-token bundle offers the best balance." },
+    { title: "Invest in a Lovense Toy", description: "Performers: Interactive tip-activated shows earn 2-3x more than standard broadcasting." },
+    { title: "Set Clear Tip Menus and Room Goals", description: "Performers: Viewers tip more when they know exactly what each amount unlocks." },
+    { title: "Broadcast Consistently at Set Times", description: "Performers: Regular scheduling builds a loyal viewer base." },
   ],
 };
 

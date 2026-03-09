@@ -857,6 +857,85 @@ export const detailedReviews: DetailedReview[] = [
   ...generateCreatorPlatformReviews(),
 
   // ─── LIVE CAM SITES ───
+  {
+    name: "Chaturbate",
+    slug: "chaturbate",
+    category: "Live Cam Sites",
+    score: 7.8,
+    verdict: "The original free cam site with 4M+ daily visitors — still the biggest, but is the free model sustainable for performers?",
+    pricing: "Free / Tokens from $10.99",
+    bestFor: "Free live cam watching",
+    url: "https://chaturbate.com",
+    lastUpdated: "March 2026",
+    readingTime: 10,
+    overview: [
+      "Chaturbate is the world's largest free live cam platform, where performers broadcast live video streams that anyone can watch without paying a subscription. Launched in 2011, Chaturbate pioneered the freemium cam model — viewers watch for free, and performers earn money through token tips sent by viewers during shows. This model attracted massive audiences and made Chaturbate a household name in the adult cam space.",
+      "How does Chaturbate work? Performers go live, viewers browse and watch for free, and those who want to interact — request specific actions, activate connected toys, or show appreciation — purchase Chaturbate tokens and tip. Performers can also offer private shows, sell recorded content, and receive tips for reaching goals during broadcasts. The result is an ecosystem where casual viewers get free entertainment and engaged fans fund the performers they enjoy.",
+      "With over 4 million daily visitors and thousands of live performers at any given time, Chaturbate has more simultaneous live streams than any competing cam site. The sheer scale means you can find virtually any niche, body type, or performance style. Whether you are a viewer looking for free live entertainment or a performer evaluating which cam platform to broadcast on, Chaturbate's dominance in the market makes it an unavoidable part of the conversation."
+    ],
+    keyFeatures: [
+      { title: "Free Viewing", description: "Watch any public broadcast without creating an account or spending money. This zero-barrier model is Chaturbate's core advantage. No subscriptions, no mandatory payments. Free viewers make up the majority of Chaturbate's massive traffic." },
+      { title: "Token System", description: "Chaturbate tokens are the platform currency. Viewers purchase tokens in bundles starting at $10.99 for 100 tokens. Performers set their own tip menus — specific actions or interactions at set token prices. Chaturbate takes approximately 40-50% of token value." },
+      { title: "Interactive Toys", description: "Chaturbate supports Lovense and other connected toys that respond to token tips in real-time. Viewers can trigger vibrations by tipping specific amounts. This interactive element adds a physical dimension that pre-recorded content cannot replicate." },
+      { title: "Private Shows", description: "Performers can offer one-on-one private shows at per-minute rates they set. Private shows are the highest-earning feature for many Chaturbate performers, offering a premium experience beyond public broadcasts." },
+      { title: "Room Goals & Games", description: "Performers set tip goals that unlock specific content or actions when reached. Tip-activated games like spin wheels and countdowns create gamified engagement that keeps viewers tipping and participating." },
+      { title: "Broadcasting Tools", description: "OBS integration, multi-camera support, chat bots, and customizable tip menus give performers professional broadcasting capabilities. Chaturbate's open broadcasting approach allows more technical customization than most competitors." }
+    ],
+    pricingDetails: [
+      { plan: "Free Viewing", price: "Free", features: ["Watch all public broadcasts", "No account required", "Browse all categories"] },
+      { plan: "Token Bundles", price: "From $10.99", features: ["100 tokens = $10.99", "200 tokens = $20.99", "500 tokens = $44.99", "750 tokens = $62.99", "1000 tokens = $79.99"] },
+      { plan: "Supporter Membership", price: "$19.95/mo", features: ["Ad-free viewing", "Private messaging", "Custom username color", "Custom emoticons"] }
+    ],
+    pricingIntro: "Chaturbate pricing is unique in the cam site space — viewing is completely free, and spending is entirely optional through a token-based tipping system.",
+    pricingOutro: "**For Performers:** Free to broadcast. Chaturbate pays approximately 5 cents per token received. Since viewers pay roughly 8-11 cents per token, Chaturbate retains approximately 40-50% of the revenue. The payout minimum is $50, processed bi-weekly.",
+    scores: [
+      { label: "Content Quality", score: 8.5, description: "Unmatched variety with thousands of simultaneous streams. Every niche, body type, and performance style is represented. The free model attracts both professional and amateur performers." },
+      { label: "User Interface", score: 6, description: "Functional but visually outdated. The grid-based homepage works but lacks modern refinement. Search and filtering could be significantly improved." },
+      { label: "Value for Money", score: 8.5, description: "The free viewing model is unbeatable for budget-conscious viewers. Token pricing is reasonable compared to per-minute rates on premium cam sites." },
+      { label: "Privacy & Safety", score: 7.5, description: "Age verification for performers, basic account security. Discreet billing for token purchases. However, the open broadcasting model means less content control than premium sites." },
+      { label: "Features", score: 8, description: "Free viewing, tokens, interactive toys, private shows, goals, games, broadcasting tools. Comprehensive feature set despite the dated interface." }
+    ],
+    pros: [
+      "Largest free cam site — unmatched daily traffic and performer variety",
+      "Completely free viewing — no subscription required",
+      "Interactive toy integration creates unique engagement",
+      "Open broadcasting model welcomes all performer types",
+      "Comprehensive tip menus and room goal systems"
+    ],
+    cons: [
+      "Interface is visually outdated and needs modern redesign",
+      "40-50% platform cut is high compared to some competitors",
+      "Income is unpredictable for performers relying on tips",
+      "No native mobile app",
+      "Content moderation can be inconsistent in free rooms"
+    ],
+    privacyIntro: "Is Chaturbate safe? Yes, with standard security protections. SSL encryption, age verification for performers, and discreet billing for token purchases. Is Chaturbate legit? Absolutely — one of the longest-running and most established cam platforms globally. Is Chaturbate free? Yes, public broadcasts are completely free to watch. Tokens are only needed for interacting with performers.",
+    whoShouldUse: [
+      { persona: "Viewers who want free live cam content", reason: "Without subscription commitments", ideal: true },
+      { persona: "Performers who thrive in high-traffic environments", reason: "Tip-based with large audiences", ideal: true },
+      { persona: "Performers who prefer guaranteed per-minute income", reason: "Stripchat or LiveJasmin may suit better", ideal: false },
+      { persona: "Users who value modern, polished interface design", reason: "Interface is dated", ideal: false }
+    ],
+    alternatives: ["stripchat", "bongacams", "livejasmin", "camsoda"],
+    comparisons: [
+      { slug: "chaturbate-vs-stripchat", title: "Chaturbate vs Stripchat" },
+      { slug: "chaturbate-vs-livejasmin", title: "Chaturbate vs LiveJasmin" },
+      { slug: "chaturbate-vs-bongacams", title: "Chaturbate vs BongaCams" }
+    ],
+    faqs: [
+      { question: "Is Chaturbate free?", answer: "Yes. Public broadcasts are free. Tokens needed only for interaction." },
+      { question: "Is Chaturbate safe?", answer: "Yes. SSL encryption, age verification, discreet billing." },
+      { question: "How do Chaturbate tokens work?", answer: "Buy tokens in bundles ($10.99-$79.99), tip performers during shows." },
+      { question: "How much do tokens cost?", answer: "100 tokens = $10.99 up to 1000 tokens = $79.99." },
+      { question: "Can performers earn good money on Chaturbate?", answer: "Yes, but income is tip-dependent. Top performers earn $5,000-$20,000+/month. Average is much lower." },
+      { question: "Is there a Chaturbate app?", answer: "No native app. Mobile website works for browsing and watching." },
+      { question: "Chaturbate vs Stripchat?", answer: "Chaturbate has more traffic. Stripchat has better design and VR. Both free models." },
+      { question: "How to delete Chaturbate account?", answer: "Settings > Disable Account. Contact support for full deletion." },
+      { question: "What are the best Chaturbate alternatives?", answer: "Stripchat for modern design, LiveJasmin for premium quality, BongaCams for European focus." },
+      { question: "Does Chaturbate work internationally?", answer: "Yes. Available globally with some regional restrictions." }
+    ],
+    finalVerdict: "Chaturbate is the undisputed king of free live cams. Nothing else matches its traffic, performer variety, or the pure volume of live content available at any given moment. The free viewing model is genuinely revolutionary and remains the reason millions visit daily. The weaknesses are real — the interface is overdue for a complete redesign, the platform cut is high, and performer income is unpredictable. But for viewers who want the most content for the least money, Chaturbate delivers an experience no competitor can match."
+  },
   ...generateLiveCamReviews(),
 
   // ─── DATING & HOOKUP APPS ───
