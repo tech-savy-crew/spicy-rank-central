@@ -300,6 +300,8 @@ const ReviewDetailPage = () => {
                     ? "Bumble remains one of the best dating apps in 2026 thanks to its women-first messaging model, clean design, and strong safety features. At 8.0/10, we recommend it for anyone serious about finding real connections — though Bumble Premium pricing has gotten expensive and the free experience is increasingly limited."
                     : isChaturbate
                     ? "Chaturbate remains the world's largest free cam site with 4M+ daily visitors and unmatched performer variety. At 7.8/10, the free viewing model is unbeatable — but the dated interface and high platform cut hold it back from a higher score."
+                    : isStripchat
+                    ? "Stripchat is the most technically advanced free cam site with VR support, AI recommendations, and a modern interface. At 7.5/10, it's the best choice for viewers who value design and innovation — but Chaturbate's larger traffic base still provides more variety."
                     : review.verdict}
                 </p>
               </div>
