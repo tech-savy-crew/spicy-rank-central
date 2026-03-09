@@ -57,11 +57,18 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Content Protection", description: "All uploaded content is watermarked and protected against unauthorized downloading. FeetFinder actively enforces DMCA takedown requests when content is stolen." },
     { icon: "eye-off", title: "Identity Verification", description: "Both sellers and buyers must verify their identity. Sellers provide government ID for age verification. This dramatically reduces fake accounts and scam attempts." },
   ],
+  "onlyfans": [
+    { icon: "lock", title: "Data Encryption", description: "Bank-grade SSL/TLS encryption across the entire platform. No major data breaches despite high profile and sensitive user data." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Charges appear under 'OnlyFans' or 'Fenix International'. Does not indicate content type purchased." },
+    { icon: "shield-check", title: "Age Verification", description: "Government-issued ID required for all creators. Subscribers must confirm 18+. Strengthened over the years in response to regulatory pressure." },
+    { icon: "eye-off", title: "Content Protection", description: "DMCA takedown enforcement, watermarking, and screenshot detection. Subscriber activity is private and not publicly visible. Creator anonymity possible with stage name but real ID is tied to the platform." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
   "candy-ai": "So, is Candy.ai a scam? Based on our 30+ days of testing: absolutely not. It is a legitimate, well-built platform with a clear business model. Is Candy.ai safe? Yes, with reasonable privacy protections that meet what we would expect for this category. Is Candy.ai legit? The company operates transparently, processes refund requests, and has a growing presence on review platforms like Trustpilot. We found no red flags during our extended testing period.",
   "feetfinder": "So, is FeetFinder legit? Absolutely. After testing the platform extensively from both sides, FeetFinder is a legitimate, well-established marketplace with a real business model, genuine buyer traffic, and functioning payout systems. Is FeetFinder safe? Yes — the combination of identity verification, encryption, content protection, and discreet billing makes it one of the safest options available. Is FeetFinder a scam? No. There are legitimate criticisms around pricing and competition levels, but the platform itself operates transparently and has been doing so since 2019.",
+  "onlyfans": "Is OnlyFans legit? Without question. Operated by Fenix International Limited, a UK-based company processing billions in creator payouts annually. Is OnlyFans safe? Yes, with strong privacy protections and reliable security. Is OnlyFans a scam? Absolutely not — individual creator quality varies but the platform itself is entirely legitimate and one of the most established names in the creator economy.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
