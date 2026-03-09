@@ -111,6 +111,7 @@ const ReviewDetailPage = () => {
   const categorySlug = review.category.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-");
 
   const isCandyAi = review.slug === "candy-ai";
+  const isFeetFinder = review.slug === "feetfinder";
 
   const candyJsonLd = isCandyAi ? [
     {"@context":"https://schema.org","@type":"Review","name":"Candy.ai Review 2026","description":"In-depth review of Candy.ai AI girlfriend platform covering features, pricing, safety, and user experience. Tested for 30+ days.","datePublished":"2026-03-01","dateModified":"2026-03-09","author":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"publisher":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"itemReviewed":{"@type":"SoftwareApplication","name":"Candy.ai","applicationCategory":"EntertainmentApplication","operatingSystem":"Web, Android, iOS","url":"https://candy.ai","offers":{"@type":"AggregateOffer","lowPrice":"0","highPrice":"12.99","priceCurrency":"USD","offerCount":"3"}},"reviewRating":{"@type":"Rating","ratingValue":"8.3","bestRating":"10","worstRating":"0"},"positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Most realistic AI conversations in the market"},{"@type":"ListItem","position":2,"name":"Excellent AI image generation quality"},{"@type":"ListItem","position":3,"name":"Deep personality customization options"},{"@type":"ListItem","position":4,"name":"Strong conversation memory and continuity"},{"@type":"ListItem","position":5,"name":"Clean interface on desktop and mobile"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium pricing higher than some competitors"},{"@type":"ListItem","position":2,"name":"Free tier is very limited"},{"@type":"ListItem","position":3,"name":"No video generation yet"}]}},
@@ -119,11 +120,19 @@ const ReviewDetailPage = () => {
     {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Candy.ai","applicationCategory":"EntertainmentApplication","operatingSystem":"Web, Android, iOS","url":"https://candy.ai","description":"AI girlfriend platform with deep customization, realistic conversations, AI image generation, and voice messages.","offers":[{"@type":"Offer","name":"Free Trial","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Premium Monthly","price":"12.99","priceCurrency":"USD"},{"@type":"Offer","name":"Annual Plan","price":"71.88","priceCurrency":"USD"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"8.3","bestRating":"10","ratingCount":"1","reviewCount":"1"}}
   ] : undefined;
 
+  const feetFinderJsonLd = isFeetFinder ? [
+    {"@context":"https://schema.org","@type":"Review","name":"FeetFinder Review 2026","description":"Honest review of FeetFinder feet content marketplace covering pricing, seller income, safety, and alternatives. Tested from both buyer and seller sides.","datePublished":"2026-03-01","dateModified":"2026-03-09","author":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"publisher":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"itemReviewed":{"@type":"WebSite","name":"FeetFinder","url":"https://feetfinder.com"},"reviewRating":{"@type":"Rating","ratingValue":"8.0","bestRating":"10","worstRating":"0"},"positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Largest buyer base in feet content niche"},{"@type":"ListItem","position":2,"name":"Strong identity verification for all users"},{"@type":"ListItem","position":3,"name":"Reliable payment processing"},{"@type":"ListItem","position":4,"name":"Content protection via watermarking and DMCA"},{"@type":"ListItem","position":5,"name":"Established reputation and brand recognition"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Subscription fee required for sellers"},{"@type":"ListItem","position":2,"name":"20% commission on top of subscription"},{"@type":"ListItem","position":3,"name":"High seller competition"}]}},
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":allFaqs.map(f => ({"@type":"Question","name":f.question,"acceptedAnswer":{"@type":"Answer","text":f.answer}}))},
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spicyranked.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://spicyranked.com/reviews"},{"@type":"ListItem","position":3,"name":"FeetFinder Review","item":"https://spicyranked.com/reviews/feetfinder"}]}
+  ] : undefined;
+
+  const customJsonLd = candyJsonLd || feetFinderJsonLd;
+
   return (
     <Layout>
       <SEO
-        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : `${review.name} Review 2026: ${review.verdict}`}
-        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
+        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : isFeetFinder ? "FeetFinder Review 2026: Is It Legit? Honest Seller & Buyer Rating" : `${review.name} Review 2026: ${review.verdict}`}
+        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : isFeetFinder ? "Our honest FeetFinder review covers pricing, seller income, safety, and whether FeetFinder is legit. Tested from both seller and buyer sides. 8.0/10 rating." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
         canonical={`/reviews/${review.slug}`}
         ogType="article"
         extraMeta={isCandyAi ? [
@@ -134,8 +143,16 @@ const ReviewDetailPage = () => {
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "AI Companions" },
           { property: "article:tag", content: "candy ai, ai girlfriend, ai companion, nsfw ai" },
+        ] : isFeetFinder ? [
+          { name: "keywords", content: "feetfinder review, feetfinder reviews, is feetfinder legit, feetfinder income, feetfinder pricing, feetfinder fees, feetfinder app, feetfinder seller reviews, is feetfinder safe, feetfinder alternatives, feetfinder bio, feetfinder names, how to sell on feetfinder, feetfinder salary, feetfinder pay" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "FeetFinder Review 2026 — Is This Feet Pic Marketplace Legit?" },
+          { property: "og:description", content: "We tested FeetFinder as both a buyer and seller. Full review of fees, income potential, safety, and alternatives. Rated 8.0/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Creator Platforms" },
         ] : undefined}
-        jsonLd={candyJsonLd || [
+        jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
           breadcrumbSchema([
             { name: "Home", url: "/" },
