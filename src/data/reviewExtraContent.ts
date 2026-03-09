@@ -128,6 +128,7 @@ const privacyOverrides: Record<string, string> = {
   "fansly": "Is Fansly legit? Yes — legitimate platform with functioning payments, real payouts, growing user base. Is Fansly safe? Yes, with standard security meeting industry norms. Is Fansly a scam? No — platform is legitimate though some Trustpilot reviewers report support issues worth noting.",
   "bumble": "Is Bumble safe? Yes — among the safest mainstream dating apps. Is Bumble legit? Absolutely — publicly traded company (NASDAQ: BMBL). Is Bumble a scam? No — genuine dating experience with real users. Some frustration around pricing, but platform is legitimate.",
   "chaturbate": "Is Chaturbate safe? Yes, with standard security protections. SSL encryption, age verification for performers, and discreet billing for token purchases. Is Chaturbate legit? Absolutely — one of the longest-running and most established cam platforms globally. Is Chaturbate a scam? No — legitimate platform with millions of daily users. Is Chaturbate free? Yes, public broadcasts are completely free to watch. Tokens are only needed for interacting with performers.",
+  "stripchat": "Is Stripchat safe? Yes. SSL encryption, performer verification, discreet billing, and standard account security. Is Stripchat legit? Yes — operated by a legitimate company with millions of daily users. Is Stripchat free? Yes, public broadcasts are completely free to watch. Tokens are only needed for tipping and private shows.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
