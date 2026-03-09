@@ -101,6 +101,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "eye-off", title: "Block & Report", description: "Comprehensive reporting for fake profiles and inappropriate behavior. Moderation team reviews reports. Instant blocking available." },
     { icon: "credit-card", title: "Incognito Mode", description: "Premium feature — profile visible only to people you swiped right on. Essential for users needing discretion." },
   ],
+  "chaturbate": [
+    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including streams, chat, and payment information." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Token purchases appear under a generic billing descriptor. Chaturbate name not visible on statements." },
+    { icon: "shield-check", title: "Age Verification", description: "Government ID required for all performers before broadcasting. Ensures age compliance and reduces fake accounts." },
+    { icon: "eye-off", title: "Anonymous Viewing", description: "No account required for basic viewing. Free browsing without providing personal information." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
