@@ -264,6 +264,30 @@ const ReviewDetailPage = () => {
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "Live Cam Sites" },
+        ] : isTinder ? [
+          { name: "keywords", content: "tinder review, tinder app review, tinder dating app, is tinder worth it, tinder gold, tinder platinum, tinder cost, tinder pricing, tinder vs bumble, tinder features, is tinder safe, tinder subscription, tinder alternatives, tinder tips, how does tinder work, tinder boost, tinder super like" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "Tinder Review 2026 — Still the Best Dating App?" },
+          { property: "og:description", content: "Honest Tinder review covering pricing, Gold vs Platinum, safety, Bumble comparison. 7.5/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Dating & Hookup Apps" },
+        ] : isFanVue ? [
+          { name: "keywords", content: "fanvue review, fanvue fees, fanvue commission, fanvue vs onlyfans, is fanvue legit, fanvue ai, fanvue pricing, fanvue creator, fanvue alternatives, fanvue app, fanvue payout, is fanvue worth it, fanvue safe" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "FanVue Review 2026 — 15% Fee OnlyFans Alternative Worth It?" },
+          { property: "og:description", content: "FanVue review covering 15% commission, AI tools, creator features, OnlyFans comparison. 7.6/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Creator Platforms" },
+        ] : isPatreon ? [
+          { name: "keywords", content: "patreon review, patreon fees, how does patreon work, patreon pricing, patreon cost, patreon vs onlyfans, is patreon worth it, patreon app, patreon alternatives, patreon creator, patreon commission, patreon subscription" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "Patreon Review 2026 — Best for Non-Adult Creators?" },
+          { property: "og:description", content: "Patreon review covering pricing tiers, creator fees, features, OnlyFans comparison. 7.0/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Creator Platforms" },
         ] : undefined}
         jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
