@@ -1,78 +1,57 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Award } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { RatingBadge } from "@/components/RatingBadge";
 
 interface PickCard {
-  emoji: string;
   title: string;
   winner: string;
   score: number;
   reason: string;
-  topColor: string;
   link: string;
 }
 
 const picks: PickCard[] = [
-  { emoji: "💰", title: "Best for Creator Earnings", winner: "OnlyFans", score: 8.5, reason: "Largest audience base means highest earning potential for established creators", topColor: "#48BB78", link: "/reviews/onlyfans" },
-  { emoji: "🎥", title: "Best Free Cam Experience", winner: "Chaturbate", score: 7.8, reason: "Thousands of free live broadcasts 24/7 with no signup required", topColor: "#E53E3E", link: "/reviews/chaturbate" },
-  { emoji: "⭐", title: "Best OnlyFans Alternative", winner: "Fansly", score: 8.2, reason: "Lower fees, better content organization, rapidly growing community", topColor: "#4299E1", link: "/reviews/fansly" },
-  { emoji: "🤖", title: "Best AI Companion App", winner: "CrushOn AI", score: 7.4, reason: "Most realistic NSFW AI chatbot with uncensored conversations and memory", topColor: "#9F7AEA", link: "/reviews/crushon-ai" },
-  { emoji: "🔒", title: "Best for Anonymous Sexting", winner: "Arousr", score: 7.2, reason: "Verified real people, anonymous by default, pay-per-chat pricing", topColor: "#ED8936", link: "/reviews/arousr" },
+  { title: "Best for Creator Earnings", winner: "OnlyFans", score: 8.5, reason: "Largest audience base means highest earning potential for established creators", link: "/reviews/onlyfans" },
+  { title: "Best Free Cam Experience", winner: "Chaturbate", score: 7.8, reason: "Thousands of free live broadcasts 24/7 with no signup required", link: "/reviews/chaturbate" },
+  { title: "Best OnlyFans Alternative", winner: "Fansly", score: 8.2, reason: "Lower fees, better content organization, rapidly growing community", link: "/reviews/fansly" },
+  { title: "Best AI Companion App", winner: "Candy.ai", score: 8.3, reason: "Most polished AI girlfriend experience with deep customization and realistic conversations", link: "/reviews/candy-ai" },
+  { title: "Best for Anonymous Sexting", winner: "Arousr", score: 7.2, reason: "Verified real people, anonymous by default, pay-per-chat pricing", link: "/reviews/arousr" },
 ];
-
-function scoreBg(s: number) {
-  if (s >= 8) return "bg-[hsl(145,45%,51%)]";
-  if (s >= 7) return "bg-[hsl(44,74%,55%)]";
-  return "bg-[hsl(0,87%,67%)]";
-}
 
 export function EditorsPicks() {
   return (
-    <section className="bg-white">
-      <div className="max-w-[1200px] mx-auto py-16 px-4">
+    <section className="border-y border-border/50 bg-card/50">
+      <div className="container py-16">
         <AnimatedSection>
-          <h2 className="text-[28px] font-bold flex items-center gap-2" style={{ color: "#1A202C" }}>
-            <Award className="h-6 w-6" style={{ color: "#E53E3E" }} />
+          <h2 className="text-2xl md:text-3xl font-black flex items-center gap-2">
+            <Award className="h-6 w-6 text-primary" />
             Editor's Picks: Best Platforms by Use Case
           </h2>
-          <p className="text-base mt-1 mb-8" style={{ color: "#718096" }}>
+          <p className="text-sm text-muted-foreground mt-1 mb-8">
             Our top recommendation for every type of user
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {picks.map((card, i) => (
             <AnimatedSection key={card.title} delay={i * 80} animation="scale-in">
-              <div
-                className="bg-white rounded-2xl p-6 transition-all duration-200 hover:shadow-lg hover:scale-[1.02] h-full flex flex-col"
-                style={{
-                  border: "2px solid #E2E8F0",
-                  borderTopWidth: "4px",
-                  borderTopColor: card.topColor,
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#E53E3E", e.currentTarget.style.borderTopColor = card.topColor)}
-                onMouseLeave={(e) => (e.currentTarget.style.borderColor = "#E2E8F0", e.currentTarget.style.borderTopColor = card.topColor)}
+              <Link
+                to={card.link}
+                className="group bg-card rounded-xl border border-border/50 p-6 card-hover flex flex-col h-full"
               >
-                <span className="text-5xl mb-3">{card.emoji}</span>
-                <h3 className="font-bold text-lg mb-3" style={{ color: "#1A202C" }}>{card.title}</h3>
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="w-8 h-8 rounded bg-gray-200 shrink-0" />
-                  <span className="font-bold" style={{ color: "#1A202C" }}>{card.winner}</span>
-                  <span className={`text-xs font-bold text-white px-2 py-0.5 rounded-full ${scoreBg(card.score)}`}>
-                    {card.score}/10
-                  </span>
+                <h3 className="font-bold text-base mb-3 group-hover:text-primary transition-colors">{card.title}</h3>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="font-bold text-foreground">{card.winner}</span>
+                  <RatingBadge rating={card.score} size="sm" />
                 </div>
-                <p className="text-sm leading-relaxed flex-1 line-clamp-2" style={{ color: "#4A5568" }}>
+                <p className="text-sm text-muted-foreground leading-relaxed flex-1 line-clamp-2">
                   {card.reason}
                 </p>
-                <Link
-                  to={card.link}
-                  className="inline-flex items-center gap-1 text-sm font-medium mt-4 hover:underline"
-                  style={{ color: "#E53E3E" }}
-                >
+                <span className="inline-flex items-center gap-1 text-sm font-medium text-primary mt-4 group-hover:underline">
                   Read Full Review <ArrowRight className="h-3.5 w-3.5" />
-                </Link>
-              </div>
+                </span>
+              </Link>
             </AnimatedSection>
           ))}
         </div>
