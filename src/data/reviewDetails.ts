@@ -855,6 +855,84 @@ export const detailedReviews: DetailedReview[] = [
 function generateCreatorPlatformReviews(): DetailedReview[] {
   return [
     {
+      name: "Fansly", slug: "fansly", category: "Creator Platforms", score: 8.2,
+      verdict: "The best OnlyFans alternative with superior content discovery, flexible tier pricing, and a rapidly growing creator community",
+      pricing: "Free to join / 20% commission", bestFor: "The best OnlyFans alternative for creators",
+      url: "https://fansly.com", lastUpdated: "March 2026",
+      readingTime: 10,
+      overview: [
+        "Fansly is a subscription-based content platform that has rapidly grown into the most credible OnlyFans alternative for adult content creators and their fans. Launched in 2020, it gained massive momentum in August 2021 when OnlyFans briefly announced a ban on explicit content — and millions of creators scrambled for an alternative. That wave of migration established Fansly as a serious player, and the platform has been building on that momentum ever since.",
+        "So what is Fansly exactly? At its core, it works similarly to OnlyFans: creators post exclusive content, set subscription prices, and fans pay to access it. The platform takes a 20% commission — the same as OnlyFans. But where Fansly genuinely differentiates itself is in the features that matter most to creators: content discovery, flexible tier pricing, and content organization tools that go well beyond what OnlyFans offers.",
+        "Unlike OnlyFans, which has zero content discovery, Fansly offers a built-in explore page where subscribers can browse and discover new creators without needing an external link. For any Fansly creator trying to grow from scratch, this is a game-changer. You are not entirely dependent on social media marketing to drive every single subscriber — the platform itself helps people find you. Add in multiple subscription tiers, content labels and categorization, and a more modern interface, and it becomes clear why Fansly is growing while many creators feel increasingly frustrated with OnlyFans' stagnation."
+      ],
+      keyFeatures: [
+        { title: "Content Discovery & Explore Page", description: "Built-in search and explore page where subscribers browse creators by category, content type, and popularity. Organic discovery means fans can find you without a direct link. The single biggest advantage over OnlyFans." },
+        { title: "Multi-Tier Subscriptions", description: "Offer multiple subscription levels with different content access. Basic tier for photos at $5, premium tier for full videos at $25. Flexible pricing monetizes different audience segments simultaneously." },
+        { title: "Content Organization & Labels", description: "Robust categorization with labels, tags, and collections. Creators sort content into organized libraries. Subscribers find specific content easily. Significantly better than OnlyFans' chronological feed." },
+        { title: "Pay-Per-View & Locked Content", description: "Lock content behind paywalls and send PPV messages with more flexibility than OnlyFans — different PPV prices per tier and granular access control." },
+        { title: "Direct Messaging", description: "Full DM system with text, photos, videos, mass messaging, and integrated tipping. Build direct fan relationships and monetize through custom content requests." },
+        { title: "Creator Analytics", description: "Detailed dashboard showing subscriber growth, revenue breakdowns, top content, engagement metrics, and traffic sources. Significantly more developed than OnlyFans' basic reporting." }
+      ],
+      pricingIntro: "Fansly pricing mirrors the OnlyFans model in some ways, but the tier system and additional monetization options give creators more flexibility.",
+      pricingDetails: [
+        { plan: "Creator Account", price: "Free", features: ["Free signup, no cost to start", "20% commission on all earnings (same as OnlyFans)", "Minimum $100 payout via bank, Paxum, crypto, or Cosmopayment", "Processing 3-7 business days"] },
+        { plan: "Subscriber (Free)", price: "Free", features: ["Following creators is free", "Browse free content without paying", "No subscription or membership fee required"] },
+        { plan: "Subscriber (Paid)", price: "$3-$50+/mo", features: ["Creator-set pricing per tier", "Multiple subscription tiers available", "Additional costs for PPV, tips, custom content"] }
+      ],
+      pricingOutro: "**For Creators:**\n\n- Signing up is completely free — no cost to start\n- Fansly takes a **20% commission** on all earnings (same as OnlyFans)\n- Minimum payout is **$100** via bank transfer, Paxum, crypto, or Cosmopayment\n- Processing takes 3-7 business days\n- New creators typically earn **$50-$300/month**\n- Mid-level creators: **$500-$2,000/month**\n- Top performers earn significantly more\n\n**For Subscribers:**\n\n- Following creators is free — browse free content without paying\n- Subscriptions are set by creators per tier, typically **$3-$50+/month**\n- Additional costs for PPV messages, tips, and custom content requests",
+      scores: [
+        { label: "Content Quality", score: 8.5, description: "Tier system and labels encourage higher-quality, organized content. Subscribers find specific content easily." },
+        { label: "User Interface", score: 8.5, description: "More modern and intuitive than OnlyFans. Explore page, search, analytics, and organization tools all polished." },
+        { label: "Value for Money", score: 8.0, description: "Same 20% commission as OnlyFans. Multi-tier system benefits subscribers. $100 minimum payout is a downside." },
+        { label: "Privacy & Safety", score: 8.0, description: "ID verification, DMCA enforcement, discreet billing. Discovery features mean more visibility than OnlyFans' closed system." },
+        { label: "Features", score: 8.5, description: "Discovery, multi-tier, analytics, labels, PPV, DMs, tips. Most complete creator toolkit available." }
+      ],
+      pros: [
+        "Built-in content discovery and explore page",
+        "Multi-tier subscription pricing flexibility",
+        "Superior content organization with labels and collections",
+        "More modern interface than OnlyFans",
+        "Advanced analytics with detailed breakdowns",
+        "Rapidly growing creator community"
+      ],
+      cons: [
+        "Smaller subscriber base than OnlyFans",
+        "$100 minimum payout (vs OnlyFans' $20)",
+        "Same 20% commission — no fee advantage",
+        "No native mobile app",
+        "Lower brand recognition than OnlyFans",
+        "Some Trustpilot reviews report customer support issues"
+      ],
+      prosConsNote: "Is Fansly better than OnlyFans? For new creators, Fansly's discovery features make it arguably the better starting platform. For established creators, OnlyFans' larger base generates more revenue. Smartest approach: use both simultaneously.",
+      privacyIntro: "Questions about whether Fansly is safe and legit come up frequently.",
+      whoShouldUse: [
+        { persona: "New creators needing organic discovery", reason: "Explore page gives real chance of being found", ideal: true },
+        { persona: "Creators wanting pricing flexibility", reason: "Multi-tier system maximizes revenue across audience segments", ideal: true },
+        { persona: "Creators migrating from OnlyFans", reason: "Smart diversification with discovery benefits", ideal: true },
+        { persona: "Creators needing maximum audience reach now", reason: "OnlyFans still has vastly larger base", ideal: false },
+        { persona: "Creators needing fast small payouts", reason: "$100 minimum is frustrating for beginners", ideal: false }
+      ],
+      alternatives: ["onlyfans", "fanvue", "loyalfans", "manyvids"],
+      comparisons: [
+        { slug: "onlyfans-vs-fansly", title: "OnlyFans vs Fansly" },
+        { slug: "fansly-vs-fanvue", title: "Fansly vs FanVue" },
+        { slug: "fansly-vs-loyalfans", title: "Fansly vs LoyalFans" }
+      ],
+      faqs: [
+        { question: "Is Fansly free to use?", answer: "For creators, free signup with 20% commission. For subscribers, following and free content costs nothing. Paid subscriptions $3-$50+ per month per tier." },
+        { question: "Is Fansly safe and private?", answer: "Yes. SSL encryption, ID verification, DMCA enforcement, discreet billing. Standard security meeting industry expectations." },
+        { question: "What is Fansly and how does it work?", answer: "Subscription platform where creators share exclusive content. Multiple subscription tiers, 20% commission, built-in content discovery unlike OnlyFans." },
+        { question: "How much can creators earn on Fansly?", answer: "New creators $50-$300/month, mid-level $500-$2,000, top performers significantly more. Discovery helps new creators find first fans faster than OnlyFans." },
+        { question: "Does Fansly have a mobile app?", answer: "No native app. Mobile browser works well and can be saved as PWA. Many find Fansly's mobile smoother than OnlyFans." },
+        { question: "Is Fansly better than OnlyFans?", answer: "For new creators, yes (discovery features). For established creators, OnlyFans' larger base generates more revenue. Best to use both simultaneously." },
+        { question: "Is Fansly worth it for creators?", answer: "Yes, especially for new/mid-level creators. Discovery, multi-tier pricing, and analytics give genuine advantages. $100 payout minimum is a downside." },
+        { question: "How do I delete my Fansly account?", answer: "Account settings > account management > deactivate/delete. Withdraw balance first. Support can process via email." },
+        { question: "What are the best Fansly alternatives?", answer: "OnlyFans for max reach, FanVue for lower fees, LoyalFans for live streaming, ManyVids for clip sales." },
+        { question: "Does Fansly work internationally?", answer: "Yes. Global operations with bank transfer, Paxum, crypto, Cosmopayment. English primary. Processing times vary by region." }
+      ],
+      finalVerdict: "Fansly has earned its place as the strongest OnlyFans alternative in 2026. Content discovery features alone justify its existence — for the first time, new adult content creators have a platform where they can genuinely be found without relying entirely on external social media marketing. Multi-tier subscriptions, superior content organization, modern interface, and detailed analytics deliver a creator experience that in many ways surpasses OnlyFans. Limitations are real: smaller subscriber base, $100 payout minimum, and lower brand recognition. Our recommendation: new creators start with Fansly as primary, add OnlyFans once established. Established creators add Fansly as secondary for discovery and diversification. Either way, Fansly deserves a place in every serious creator's toolkit."
+    },
+    {
       name: "OnlyFans", slug: "onlyfans", category: "Creator Platforms", score: 8.5,
       verdict: "The biggest name in creator subscriptions — but rising fees and growing competition mean it may no longer be the only option",
       pricing: "Free to join / 20% commission", bestFor: "The #1 creator subscription platform",

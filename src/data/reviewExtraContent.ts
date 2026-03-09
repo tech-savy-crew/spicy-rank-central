@@ -105,6 +105,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Post Consistently and Engage Daily", description: "Post 3-5 times per week minimum, respond to messages daily, go live weekly. Consistency is the single strongest predictor of earnings growth." },
     { title: "Diversify Across Platforms", description: "Use Fansly or FanVue as backups, maintain active social media, consider FeetFinder or Snifffr for physical items. Platform diversification protects your income." },
   ],
+  "fansly": [
+    { title: "Set Up Multiple Tiers from Day One", description: "Low-cost entry, mid-range popular, premium VIP. Price middle tier as best value." },
+    { title: "Use Labels and Content Organization", description: "Categorize every piece of content. Organized profiles convert better." },
+    { title: "Leverage the Explore Page", description: "Post consistently with relevant tags. Fansly rewards active creators with organic visibility." },
+    { title: "Cross-Promote Between OnlyFans and Fansly", description: "Run both simultaneously. Promote each in the other's bio." },
+    { title: "Engage in DMs and Build Relationships", description: "Respond promptly, offer custom content. DMs drive tips, PPV, and retention." },
+  ],
 };
 
 // ── Generic generators ──
