@@ -90,6 +90,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Content Protection", description: "DMCA enforcement and watermarking. Fansly downloader tools exist online and content theft remains a challenge, but Fansly actively combats this." },
     { icon: "eye-off", title: "Identity Verification", description: "Government ID required for all creators before posting. Reduces fake accounts and ensures age compliance." },
   ],
+  "bumble": [
+    { icon: "lock", title: "Photo Verification", description: "Real-time selfie matching specific pose. Blue checkmark badge. Dramatically reduces catfishing and fake profiles." },
+    { icon: "shield-check", title: "AI Content Moderation", description: "Detects and flags inappropriate messages and photos. Offensive content auto-detected. Warnings and bans for violations." },
+    { icon: "eye-off", title: "Block & Report", description: "Comprehensive reporting for fake profiles and inappropriate behavior. Moderation team reviews reports. Instant blocking available." },
+    { icon: "credit-card", title: "Incognito Mode", description: "Premium feature — profile visible only to people you swiped right on. Essential for users needing discretion." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
