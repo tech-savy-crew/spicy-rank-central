@@ -127,7 +127,7 @@ function getCategoryPrivacyAnalysis(category: string, name: string): string {
 
 export function getPrivacyTrust(review: DetailedReview): PrivacyTrustContent {
   return {
-    cards: getCategoryPrivacyCards(review.category, review.name),
+    cards: privacyCardOverrides[review.slug] || getCategoryPrivacyCards(review.category, review.name),
     analysis: privacyOverrides[review.slug] || getCategoryPrivacyAnalysis(review.category, review.name),
   };
 }
