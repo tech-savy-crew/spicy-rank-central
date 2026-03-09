@@ -1,24 +1,28 @@
 import { Layout } from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { SEO, breadcrumbSchema } from "@/components/SEO";
-import { categories } from "@/data/platforms";
-import { ArrowRight } from "lucide-react";
+import { reviewCategories } from "@/data/reviews";
+import { ArrowRight, Users, Camera, Heart, Play, Bot, MessageCircle } from "lucide-react";
 
-const categoryIcons: Record<string, string> = {
-  "Social Media": "📱",
-  "Streaming": "🎬",
-  "Gaming": "🎮",
-  "Messaging": "💬",
-  "Productivity": "⚡",
-  "Music": "🎵",
+const categoryMeta: Record<string, { icon: React.ElementType; emoji: string; description: string }> = {
+  "Creator Platforms": { icon: Users, emoji: "💰", description: "OnlyFans, Fansly, FeetFinder, ManyVids & more" },
+  "Live Cam Sites": { icon: Camera, emoji: "🎥", description: "Chaturbate, Stripchat, Jerkmate, LiveJasmin & more" },
+  "Dating & Hookup Apps": { icon: Heart, emoji: "❤️", description: "Tinder, Bumble, Seeking, Feeld & more" },
+  "Tube & Streaming": { icon: Play, emoji: "🎬", description: "Free and premium video streaming platforms" },
+  "AI Companions": { icon: Bot, emoji: "🤖", description: "Candy.ai, CrushOn, DreamGF, Replika & more" },
+  "Sexting & Chat": { icon: MessageCircle, emoji: "💬", description: "Arousr, Flingster, ChatRandom & more" },
 };
+
+function categorySlug(cat: string) {
+  return cat.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-");
+}
 
 const CategoriesPage = () => {
   return (
     <Layout>
       <SEO
-        title="Browse Categories"
-        description="Explore platform reviews by category — Social Media, Streaming, Gaming, Messaging, Music, and more."
+        title="Browse Categories — Adult Platform Reviews | SpicyRanked"
+        description="Explore adult platform reviews by category — Creator Platforms, Live Cam Sites, AI Companions, Dating Apps, Sexting & more."
         canonical="/categories"
         jsonLd={breadcrumbSchema([
           { name: "Home", url: "/" },
@@ -31,19 +35,26 @@ const CategoriesPage = () => {
         <p className="text-muted-foreground mb-10">Browse platforms by category</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {categories.filter((c) => c !== "All").map((cat) => (
-            <Link
-              key={cat}
-              to={`/category/${cat.toLowerCase().replace(" ", "-")}`}
-              className="group bg-card rounded-xl border border-border/50 p-8 card-hover flex flex-col items-center text-center"
-            >
-              <span className="text-5xl mb-4">{categoryIcons[cat] || "📦"}</span>
-              <h2 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">{cat}</h2>
-              <span className="text-sm text-primary font-medium inline-flex items-center gap-1">
-                Browse <ArrowRight className="h-3.5 w-3.5" />
-              </span>
-            </Link>
-          ))}
+          {reviewCategories.filter((c) => c !== "All").map((cat) => {
+            const meta = categoryMeta[cat] || { icon: Users, emoji: "📦", description: "" };
+            const Icon = meta.icon;
+            return (
+              <Link
+                key={cat}
+                to={`/category/${categorySlug(cat)}`}
+                className="group bg-card rounded-xl border border-border/50 p-8 card-hover flex flex-col items-center text-center"
+              >
+                <div className="w-16 h-16 rounded-xl spicy-gradient flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Icon className="h-8 w-8 text-primary-foreground" />
+                </div>
+                <h2 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">{cat}</h2>
+                <p className="text-sm text-muted-foreground mb-3">{meta.description}</p>
+                <span className="text-sm text-primary font-medium inline-flex items-center gap-1">
+                  Browse <ArrowRight className="h-3.5 w-3.5" />
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </Layout>

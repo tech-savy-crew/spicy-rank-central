@@ -5,23 +5,23 @@ const reviewLinks = [
   { label: "OnlyFans Review", to: "/reviews/onlyfans" },
   { label: "Fansly Review", to: "/reviews/fansly" },
   { label: "Chaturbate Review", to: "/reviews/chaturbate" },
-  { label: "Stripchat Review", to: "/reviews/stripchat" },
-  { label: "Bumble Review", to: "/reviews/bumble" },
+  { label: "Candy.ai Review", to: "/reviews/candy-ai" },
+  { label: "FeetFinder Review", to: "/reviews/feetfinder" },
   { label: "All Reviews", to: "/reviews" },
 ];
 
 const compareLinks = [
-  { label: "OnlyFans vs Fansly", to: "/compare/onlyfans-vs-fansly" },
-  { label: "Chaturbate vs Stripchat", to: "/compare/chaturbate-vs-stripchat" },
-  { label: "Tinder vs Bumble", to: "/compare/tinder-vs-bumble" },
-  { label: "OnlyFans vs Patreon", to: "/compare/onlyfans-vs-patreon" },
+  { label: "Candy.ai vs DreamGF", to: "/compare/candy-ai-vs-dreamgf" },
+  { label: "FeetFinder vs Footly", to: "/compare/feetfinder-vs-footly" },
+  { label: "Jerkmate vs Chaturbate", to: "/compare/jerkmate-vs-chaturbate" },
+  { label: "LoyalFans vs OnlyFans", to: "/compare/loyalfans-vs-onlyfans" },
 ];
 
 const bestLinks = [
-  { label: "Best OnlyFans Alternatives", to: "/best/onlyfans-alternatives" },
-  { label: "Best Cam Sites", to: "/best/free-cam-sites" },
-  { label: "Best Dating Apps", to: "/best/hookup-apps" },
-  { label: "Best AI Companions", to: "/best/ai-girlfriend-apps" },
+  { label: "Best OnlyFans Alternatives", to: "/best-lists/best-onlyfans-alternatives" },
+  { label: "Best AI Girlfriend Apps", to: "/best-lists/best-ai-girlfriend-apps" },
+  { label: "Best Free Cam Sites", to: "/best-lists/best-free-cam-sites" },
+  { label: "Best Sugar Daddy Sites", to: "/best-lists/best-sugar-daddy-sites" },
 ];
 
 const companyLinks = [

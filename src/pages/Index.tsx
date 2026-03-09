@@ -58,12 +58,12 @@ const comparisons = [
 ];
 
 const topLists = [
-  { title: "10 Best OnlyFans Alternatives (2026)", category: "Creator Platforms", slug: "onlyfans-alternatives" },
-  { title: "Best Free Cam Sites — Top 8 Ranked", category: "Live Cam", slug: "free-cam-sites" },
-  { title: "Best Hookup Apps That Actually Work (2026)", category: "Dating", slug: "hookup-apps" },
-  { title: "Best AI Girlfriend Apps — Top 10 Ranked", category: "AI Companions", slug: "ai-girlfriend-apps" },
-  { title: "Best Chaturbate Alternatives — Top 8", category: "Live Cam", slug: "chaturbate-alternatives" },
-  { title: "Best Creator Platforms for Beginners", category: "Creator Platforms", slug: "creator-platforms-beginners" },
+  { title: "10 Best OnlyFans Alternatives (2026)", category: "Creator Platforms", slug: "best-onlyfans-alternatives" },
+  { title: "Best Free Cam Sites — Top 8 Ranked", category: "Live Cam", slug: "best-free-cam-sites" },
+  { title: "Best Hookup Apps That Actually Work (2026)", category: "Dating", slug: "best-hookup-apps" },
+  { title: "Best AI Girlfriend Apps — Top 12 Ranked", category: "AI Companions", slug: "best-ai-girlfriend-apps" },
+  { title: "Best Chaturbate Alternatives — Top 8", category: "Live Cam", slug: "best-chaturbate-alternatives" },
+  { title: "Best Creator Platforms for Beginners", category: "Creator Platforms", slug: "best-creator-platforms-beginners" },
 ];
 
 const trending = [
@@ -71,7 +71,7 @@ const trending = [
   { emoji: "📈", text: "OnlyFans updates creator payout policy", link: "/reviews/onlyfans" },
   { emoji: "💻", text: "New AI companion app CrushOn reviewed", link: "/reviews/crushon-ai" },
   { emoji: "✨", text: "Stripchat launches VR 2.0 features", link: "/reviews/stripchat" },
-  { emoji: "💡", text: "Best cam sites list updated for March 2026", link: "/best/best-free-cam-sites" },
+  { emoji: "💡", text: "Best cam sites list updated for March 2026", link: "/best-lists/best-free-cam-sites" },
   { emoji: "⚡", text: "Tinder vs Bumble: latest comparison published", link: "/compare/tinder-vs-bumble" },
 ];
 
@@ -103,7 +103,7 @@ const Index = () => {
         jsonLd={[
           websiteSchema(),
           organizationSchema(),
-          itemListSchema("Featured Platform Reviews", featuredReviews.map((p, i) => ({ name: p.title, url: `/review/${p.slug}`, position: i + 1 }))),
+          itemListSchema("Featured Platform Reviews", featuredReviews.map((p, i) => ({ name: p.title, url: `/reviews/${p.slug}`, position: i + 1 }))),
         ]}
       />
 
@@ -296,7 +296,7 @@ const Index = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {topLists.map((list, i) => (
             <AnimatedSection key={list.slug} delay={i * 80}>
-              <Link to={`/best/${list.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
+              <Link to={`/best-lists/${list.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
                 <span className="text-xs font-medium bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">{list.category}</span>
                 <h3 className="font-bold text-sm mt-3 group-hover:text-primary transition-colors">{list.title}</h3>
                 <span className="inline-flex items-center gap-1 text-xs text-primary font-medium mt-2">
