@@ -146,7 +146,7 @@ const Index = () => {
             </form>
 
             <div className="flex flex-wrap gap-3 mb-6">
-              <Link to="/category/all" className="inline-flex items-center gap-2 spicy-gradient text-primary-foreground font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity btn-hover">
+              <Link to="/reviews" className="inline-flex items-center gap-2 spicy-gradient text-primary-foreground font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity btn-hover">
                 Browse All Reviews <ArrowRight className="h-4 w-4" />
               </Link>
               <Link to="/rankings" className="inline-flex items-center gap-2 border border-primary text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary/10 transition-colors btn-hover">
