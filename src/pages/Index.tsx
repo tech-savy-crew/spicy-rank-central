@@ -196,7 +196,7 @@ const Index = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {featuredReviews.map((card, i) => (
             <AnimatedSection key={card.slug} delay={i * 100}>
-              <Link to={`/review/${card.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group flex flex-col h-full">
+              <Link to={`/reviews/${card.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group flex flex-col h-full">
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-xs font-medium bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">{card.category}</span>
                   <RatingBadge rating={card.rating} />
