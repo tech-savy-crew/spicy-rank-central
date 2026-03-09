@@ -107,6 +107,7 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "NSFW Content Gating", description: "NSFW restricted to paid subscribers. Free users cannot access explicit conversations. Paywall serves as soft age-verification layer." },
     { icon: "credit-card", title: "Data Handling", description: "Privacy policy present but could be more detailed about conversation data storage, retention, AI training usage, and access policies." },
   ],
+  "dreamgf-ai": [
     { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all connections. Content, account data, payments encrypted in transit." },
     { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. Platform name not visible." },
     { icon: "shield-check", title: "Content Moderation", description: "NSFW restricted to verified premium users. Age verification required. Boundaries against illegal content." },
