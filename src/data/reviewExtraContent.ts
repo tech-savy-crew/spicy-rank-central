@@ -62,6 +62,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Chaturbate's interface is its weakest point. The design looks like it has not been significantly updated since launch. The homepage displays a grid of live thumbnails sorted by viewer count. Navigation is basic with category tabs and a search bar. It works, but it feels dated compared to Stripchat's modern design or LiveJasmin's polished interface.",
     mobileExperience: "The Chaturbate app is not available on app stores, but the mobile website works adequately. Browsing, watching, and tipping all function on mobile. The experience is serviceable but not optimized for touch interaction in the way that Stripchat's mobile experience is.",
   },
+  "stripchat": {
+    gettingStarted: "Quick registration via email. Performer verification within 24-48 hours. Viewers can start watching immediately without an account.",
+    interfaceNavigation: "Modern, dark-themed design that feels contemporary. Homepage features a mix of trending performers, categories, and AI-recommended streams. Search and filtering are significantly better than Chaturbate. The overall experience feels like a platform built in the 2020s rather than the 2010s.",
+    mobileExperience: "Excellent mobile experience. The responsive design works smoothly on phones with touch-optimized controls. No native Stripchat app on app stores, but the mobile website functions effectively as a PWA.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
@@ -107,6 +112,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Age Verification", description: "Government ID required for all performers before broadcasting. Ensures age compliance and reduces fake accounts." },
     { icon: "eye-off", title: "Anonymous Viewing", description: "No account required for basic viewing. Free browsing without providing personal information." },
   ],
+  "stripchat": [
+    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all connections including streams, chat, and payments." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. Stripchat name not visible." },
+    { icon: "shield-check", title: "Performer Verification", description: "Age and identity verification for all performers. Standard compliance measures." },
+    { icon: "eye-off", title: "Account Privacy", description: "Anonymous browsing available. Invisible mode for Ultimate members. Account deletion available." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
@@ -117,6 +128,7 @@ const privacyOverrides: Record<string, string> = {
   "fansly": "Is Fansly legit? Yes — legitimate platform with functioning payments, real payouts, growing user base. Is Fansly safe? Yes, with standard security meeting industry norms. Is Fansly a scam? No — platform is legitimate though some Trustpilot reviewers report support issues worth noting.",
   "bumble": "Is Bumble safe? Yes — among the safest mainstream dating apps. Is Bumble legit? Absolutely — publicly traded company (NASDAQ: BMBL). Is Bumble a scam? No — genuine dating experience with real users. Some frustration around pricing, but platform is legitimate.",
   "chaturbate": "Is Chaturbate safe? Yes, with standard security protections. SSL encryption, age verification for performers, and discreet billing for token purchases. Is Chaturbate legit? Absolutely — one of the longest-running and most established cam platforms globally. Is Chaturbate a scam? No — legitimate platform with millions of daily users. Is Chaturbate free? Yes, public broadcasts are completely free to watch. Tokens are only needed for interacting with performers.",
+  "stripchat": "Is Stripchat safe? Yes. SSL encryption, performer verification, discreet billing, and standard account security. Is Stripchat legit? Yes — operated by a legitimate company with millions of daily users. Is Stripchat free? Yes, public broadcasts are completely free to watch. Tokens are only needed for tipping and private shows.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -168,6 +180,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Invest in a Lovense Toy", description: "Performers: Interactive tip-activated shows earn 2-3x more than standard broadcasting." },
     { title: "Set Clear Tip Menus and Room Goals", description: "Performers: Viewers tip more when they know exactly what each amount unlocks." },
     { title: "Broadcast Consistently at Set Times", description: "Performers: Regular scheduling builds a loyal viewer base." },
+  ],
+  "stripchat": [
+    { title: "Try VR If You Have a Headset", description: "The VR experience is Stripchat's biggest differentiator. Even basic VR headsets provide a dramatically more immersive experience." },
+    { title: "Use AI Recommendations", description: "Let the algorithm learn your preferences. The more you watch, the better the AI suggestions become." },
+    { title: "Buy Tokens in Bulk", description: "The 520-token bundle at $49.99 offers the best per-token value for regular viewers." },
+    { title: "Performers: Leverage VR Shows", description: "VR-compatible performers earn premium rates. Invest in VR setup to access this growing market." },
+    { title: "Use Mobile for Casual Browsing", description: "Stripchat's mobile experience is excellent. Save desktop for VR and private shows." },
   ],
 };
 
