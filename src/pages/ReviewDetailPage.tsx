@@ -278,15 +278,20 @@ const ReviewDetailPage = () => {
               <h2 className="text-xl md:text-2xl font-bold mb-5">Our Rating Breakdown</h2>
               <div className="bg-card rounded-xl border border-border/50 p-5 md:p-6 space-y-4">
                 {review.scores.map((s) => (
-                  <div key={s.label} className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
-                    <span className="text-sm font-medium sm:w-40 shrink-0">{s.label}</span>
-                    <div className="flex items-center gap-3 flex-1">
-                      <StarRating score={s.score} />
-                      <div className="flex-1 bg-secondary rounded-full h-2.5 overflow-hidden">
-                        <div className="h-full spicy-gradient rounded-full transition-all duration-700" style={{ width: `${s.score * 10}%` }} />
+                  <div key={s.label}>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+                      <span className="text-sm font-medium sm:w-40 shrink-0">{s.label}</span>
+                      <div className="flex items-center gap-3 flex-1">
+                        <StarRating score={s.score} />
+                        <div className="flex-1 bg-secondary rounded-full h-2.5 overflow-hidden">
+                          <div className="h-full spicy-gradient rounded-full transition-all duration-700" style={{ width: `${s.score * 10}%` }} />
+                        </div>
+                        <span className="text-sm font-bold w-10 text-right">{s.score}/10</span>
                       </div>
-                      <span className="text-sm font-bold w-10 text-right">{s.score}/10</span>
                     </div>
+                    {s.description && (
+                      <p className="text-xs text-muted-foreground mt-1.5 sm:ml-[calc(10rem+1rem)] leading-relaxed">{s.description}</p>
+                    )}
                   </div>
                 ))}
                 <div className="pt-4 border-t border-border/50 flex items-center justify-between">
