@@ -7,6 +7,7 @@ const reviewLinks = [
   { label: "Chaturbate Review", to: "/reviews/chaturbate" },
   { label: "Stripchat Review", to: "/reviews/stripchat" },
   { label: "Bumble Review", to: "/reviews/bumble" },
+  { label: "All Reviews", to: "/reviews" },
 ];
 
 const compareLinks = [
