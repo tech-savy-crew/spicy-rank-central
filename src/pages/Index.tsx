@@ -58,12 +58,12 @@ const comparisons = [
 ];
 
 const topLists = [
-  { title: "10 Best OnlyFans Alternatives (2026)", category: "Creator Platforms", slug: "onlyfans-alternatives" },
-  { title: "Best Free Cam Sites — Top 8 Ranked", category: "Live Cam", slug: "free-cam-sites" },
-  { title: "Best Hookup Apps That Actually Work (2026)", category: "Dating", slug: "hookup-apps" },
-  { title: "Best AI Girlfriend Apps — Top 10 Ranked", category: "AI Companions", slug: "ai-girlfriend-apps" },
-  { title: "Best Chaturbate Alternatives — Top 8", category: "Live Cam", slug: "chaturbate-alternatives" },
-  { title: "Best Creator Platforms for Beginners", category: "Creator Platforms", slug: "creator-platforms-beginners" },
+  { title: "10 Best OnlyFans Alternatives (2026)", category: "Creator Platforms", slug: "best-onlyfans-alternatives" },
+  { title: "Best Free Cam Sites — Top 8 Ranked", category: "Live Cam", slug: "best-free-cam-sites" },
+  { title: "Best Hookup Apps That Actually Work (2026)", category: "Dating", slug: "best-hookup-apps" },
+  { title: "Best AI Girlfriend Apps — Top 12 Ranked", category: "AI Companions", slug: "best-ai-girlfriend-apps" },
+  { title: "Best Chaturbate Alternatives — Top 8", category: "Live Cam", slug: "best-chaturbate-alternatives" },
+  { title: "Best Creator Platforms for Beginners", category: "Creator Platforms", slug: "best-creator-platforms-beginners" },
 ];
 
 const trending = [
