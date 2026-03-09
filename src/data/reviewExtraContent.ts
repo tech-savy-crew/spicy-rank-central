@@ -32,6 +32,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "The interface is clean, modern, and built around conversations. A left sidebar lets you switch between companions, access settings, and browse your image gallery. Message input feels responsive, and AI replies typically arrive within two to three seconds on premium. The image generation feature is integrated directly into the chat flow — you request visuals without ever leaving the conversation window. Settings are well-organized and nothing feels buried behind unnecessary menus.",
     mobileExperience: "The Candy.ai app is available for both Android and iOS, and the mobile experience closely mirrors what you get on desktop. Scrolling is smooth, load times are fast, and the interface adapts well to smaller screens with thumb-friendly navigation. If you primarily use your phone, you will not feel like you are getting a compromised experience.",
   },
+  "crushon-ai": {
+    gettingStarted: "Under two minutes. Email registration, no ID verification. Browse character library or create custom characters immediately. Minimal onboarding — chatting within two minutes.",
+    interfaceNavigation: "Clean, dark-themed design organized around character library. Homepage shows trending, popular, and new characters in browsable grid. Chat interface is straightforward with avatar, message history, input field. Category browsing and search help discover characters. Functional and well-organized though not as visually polished as Candy.ai.",
+    mobileExperience: "No native CrushOn ai app on iOS/Android. Mobile website responsive and works well for chat. Character library browsing smooth on phones. Text-heavy nature translates well to mobile. Save to home screen for quick access.",
+  },
   "dreamgf-ai": {
     gettingStarted: "Under three minutes to sign up. Email registration, age verification, straight into character builder. Within five minutes you can have your first AI girlfriend created and be generating images. Fastest signup-to-content experience we tested.",
     interfaceNavigation: "Visually focused dashboard centering on characters. Easy access to chat, image generation, and gallery. Character builder is most polished element with real-time preview updates. Image generation integrated into chat flow.",
