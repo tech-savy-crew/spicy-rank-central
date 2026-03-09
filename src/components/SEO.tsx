@@ -123,7 +123,7 @@ export function reviewSchema(platform: {
     description: platform.summary,
     datePublished: "2026-03-08",
     dateModified: platform.lastUpdated,
-    url: `${SITE_URL}/review/${platform.slug}`,
+    url: `${SITE_URL}/reviews/${platform.slug}`,
   };
 }
 

@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
 const Index = lazy(() => import("./pages/Index"));
-const ReviewPage = lazy(() => import("./pages/ReviewPage"));
+const ReviewPage = lazy(() => import("./pages/ReviewDetailPage"));
 const ComparePage = lazy(() => import("./pages/ComparePage"));
 const AlternativesPage = lazy(() => import("./pages/AlternativesPage"));
 const RankingsPage = lazy(() => import("./pages/RankingsPage"));
