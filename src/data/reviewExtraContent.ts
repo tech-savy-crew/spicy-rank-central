@@ -224,6 +224,27 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Performers: Leverage VR Shows", description: "VR-compatible performers earn premium rates. Invest in VR setup to access this growing market." },
     { title: "Use Mobile for Casual Browsing", description: "Stripchat's mobile experience is excellent. Save desktop for VR and private shows." },
   ],
+  "tinder": [
+    { title: "Invest in Quality Photos", description: "Clear headshot, full-body shot, activity photos. Six photos outperform three. First photo matters most." },
+    { title: "Write a Specific Bio", description: "Mention specific interests, hobbies, or conversation starters. Generic bios get skipped." },
+    { title: "Verify Your Profile", description: "Photo verification adds a blue checkmark and significantly increases trust and match rates." },
+    { title: "Swipe During Peak Hours", description: "Sunday-Thursday evenings 7-10 PM. Consistent daily usage beats weekend binge-swiping." },
+    { title: "Start with Gold Before Platinum", description: "Gold's See Who Likes You is the most valuable paid feature. Platinum's extras rarely justify the price increase." },
+  ],
+  "fanvue": [
+    { title: "Direct Your Most Loyal Fans to FanVue", description: "Keep your most engaged subscribers on FanVue where you keep 85%. Use OnlyFans for broader reach." },
+    { title: "Use AI Analytics to Optimize Posting", description: "Let the AI recommend optimal posting times and pricing. Data-driven decisions outperform guesswork." },
+    { title: "Set Up Multiple Tiers", description: "Offer different price points to capture different audience segments. Mid-tier as best value." },
+    { title: "Leverage AI Caption Tools", description: "Use the AI caption generator to write engaging post descriptions faster. Edit for your voice." },
+    { title: "Cross-Promote Between Platforms", description: "Run FanVue alongside OnlyFans. Promote the cost savings to subscribers who follow you on both." },
+  ],
+  "patreon": [
+    { title: "Start with 3-4 Tiers Maximum", description: "Too many tiers confuse patrons. Offer a low entry, popular middle, and premium top tier." },
+    { title: "Use Per-Creation Billing If Appropriate", description: "If you publish irregularly, per-creation billing is fairer and reduces churn from inactive months." },
+    { title: "Engage Your Community Regularly", description: "Post polls, behind-the-scenes content, and community updates. Engagement reduces patron churn." },
+    { title: "Offer Exclusive Value at Every Tier", description: "Each tier needs clear, exclusive benefits. Patrons upgrade when the next tier offers something they want." },
+    { title: "Promote Patreon on Every Platform", description: "Mention your Patreon in every YouTube video, podcast episode, and social media post. Consistent promotion drives growth." },
+  ],
 };
 
 // ── Generic generators ──

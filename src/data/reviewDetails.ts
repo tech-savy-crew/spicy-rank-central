@@ -854,6 +854,162 @@ export const detailedReviews: DetailedReview[] = [
   },
 
   // ─── CREATOR PLATFORMS ───
+  {
+    name: "FanVue",
+    slug: "fanvue",
+    category: "Creator Platforms",
+    score: 7.6,
+    verdict: "The creator-first OnlyFans alternative with the lowest 15% commission and AI-powered tools — but can its smaller audience compete?",
+    pricing: "Free / 15% commission",
+    bestFor: "Maximum creator earnings",
+    url: "https://fanvue.com",
+    lastUpdated: "March 2026",
+    readingTime: 9,
+    overview: [
+      "FanVue is a UK-based subscription content platform positioning itself as the creator-first alternative to OnlyFans. Launched in 2021, FanVue's headline differentiator is simple but powerful: a 15% commission rate compared to OnlyFans' 20%. That 5% difference may sound small, but for a creator earning $5,000 per month, it means an extra $250 in their pocket — $3,000 per year.",
+      "Beyond the lower fees, FanVue has invested heavily in AI-powered tools that no other creator platform offers. AI-generated captions, content scheduling optimization, subscriber engagement analytics, and smart pricing recommendations give creators data-driven insights to grow their audience and revenue. The platform supports the same content types as OnlyFans — photos, videos, messages, PPV, tips, and subscriptions.",
+      "FanVue's challenge is the same one every OnlyFans alternative faces: audience scale. OnlyFans has 300 million registered users. FanVue is growing but significantly smaller. For creators whose income depends on subscriber volume, this gap matters. FanVue's strategy is to win creators with better economics and better tools, betting that subscribers will follow their favorite creators to whichever platform they use."
+    ],
+    keyFeatures: [
+      { title: "15% Commission", description: "FanVue's headline feature. Creators keep 85% of all earnings compared to 80% on OnlyFans and Fansly. The lowest commission among major creator platforms." },
+      { title: "AI-Powered Analytics", description: "Machine learning tools that analyze subscriber behavior, predict churn, recommend optimal posting times, and suggest pricing adjustments. No other creator platform offers this level of AI-driven creator support." },
+      { title: "AI Content Tools", description: "AI-assisted caption generation, hashtag suggestions, and content optimization recommendations. These tools help creators produce better-performing content more efficiently." },
+      { title: "Subscription Tiers", description: "Like Fansly, FanVue supports multiple subscription tiers per creator. Different price points with different content access levels maximize revenue across audience segments." },
+      { title: "PPV & Tips", description: "Standard pay-per-view messaging and tipping functionality. Send locked content with custom pricing directly to subscribers." },
+      { title: "Creator Dashboard", description: "Comprehensive dashboard showing real-time earnings, subscriber analytics, content performance, and AI recommendations in one unified view. Clean, modern design that is easy to navigate." }
+    ],
+    pricingDetails: [
+      { plan: "For Creators", price: "15% commission", features: ["Free to join", "85% creator payout", "$50 minimum payout", "Bank, Paxum, crypto"] },
+      { plan: "For Subscribers", price: "Varies", features: ["Free to follow", "Subscriptions $3.99-$49.99/mo", "PPV and tips available"] }
+    ],
+    pricingIntro: "FanVue pricing is the platform's strongest selling point — creators keep more of their earnings than on any major competitor.",
+    pricingOutro: "The FanVue cost advantage is meaningful. A creator earning $10,000/month keeps $8,500 on FanVue versus $8,000 on OnlyFans — a $500 monthly difference, $6,000 annually. For high earners, this alone justifies using FanVue.",
+    scores: [
+      { label: "Content Quality", score: 7.5, description: "Growing creator roster with quality improving as more established creators migrate. Content types match OnlyFans capabilities." },
+      { label: "User Interface", score: 8.5, description: "One of the best-designed creator platform dashboards. Clean, modern, intuitive." },
+      { label: "Value for Money", score: 9, description: "15% commission is the best rate available. AI tools add genuine value. Creators keep more of their earnings." },
+      { label: "Privacy & Safety", score: 7.5, description: "ID verification, SSL encryption, discreet billing. Standard protections meeting industry norms." },
+      { label: "Features", score: 8, description: "AI analytics, AI content tools, multiple tiers, PPV, tips, comprehensive dashboard. Feature set exceeds OnlyFans in several areas." }
+    ],
+    pros: [
+      "Lowest commission at 15% — creators keep 85% of earnings",
+      "AI-powered analytics and content optimization tools",
+      "Modern, well-designed creator dashboard",
+      "Multiple subscription tier support",
+      "Growing platform with creator-first philosophy"
+    ],
+    cons: [
+      "Significantly smaller subscriber base than OnlyFans",
+      "Lower brand recognition among mainstream subscribers",
+      "No native mobile app",
+      "Newer platform with less track record",
+      "Limited content discovery compared to Fansly"
+    ],
+    prosConsNote: "Is FanVue worth it? For creators who prioritize keeping maximum earnings, FanVue's 15% rate is unbeatable. For creators who need maximum subscriber reach, OnlyFans' scale still wins. The optimal strategy: use FanVue as a secondary platform alongside OnlyFans and let your most loyal subscribers follow you for the better creator economics.",
+    whoShouldUse: [
+      { persona: "Creators prioritizing maximum earnings", reason: "15% commission is the lowest available", ideal: true },
+      { persona: "Data-driven creators", reason: "AI analytics and content tools are unmatched", ideal: true },
+      { persona: "Creators needing maximum audience reach now", reason: "OnlyFans has vastly larger subscriber base", ideal: false },
+      { persona: "Creators wanting established platform stability", reason: "FanVue is newer with less track record", ideal: false }
+    ],
+    alternatives: ["onlyfans", "fansly", "loyalfans", "manyvids"],
+    comparisons: [
+      { slug: "fanvue-vs-onlyfans", title: "FanVue vs OnlyFans" },
+      { slug: "fanvue-vs-fansly", title: "FanVue vs Fansly" }
+    ],
+    faqs: [
+      { question: "What is FanVue's commission?", answer: "15% on all earnings. Creators keep 85%." },
+      { question: "Is FanVue legit?", answer: "Yes. UK-based company with functioning payments and growing creator community." },
+      { question: "FanVue vs OnlyFans?", answer: "FanVue has lower fees (15% vs 20%) and AI tools. OnlyFans has vastly larger audience." },
+      { question: "How much can you earn on FanVue?", answer: "Depends on audience. Earnings per subscriber higher due to lower commission. Overall audience smaller." },
+      { question: "Is there a FanVue app?", answer: "No native app. Mobile website is functional." },
+      { question: "Is FanVue safe?", answer: "Yes. ID verification, SSL encryption, discreet billing." },
+      { question: "What is the FanVue minimum payout?", answer: "$50 via bank transfer, Paxum, or crypto." },
+      { question: "How to delete FanVue account?", answer: "Account settings > Delete Account. Withdraw balance first." },
+      { question: "What are the best FanVue alternatives?", answer: "OnlyFans for max audience, Fansly for discovery, LoyalFans for live streaming." },
+      { question: "Does FanVue work internationally?", answer: "Yes. Global operations with multiple payout methods." }
+    ],
+    finalVerdict: "FanVue is the smartest financial choice for adult content creators in 2026. The 15% commission saves meaningful money — thousands of dollars annually for active creators. The AI-powered analytics and content tools are genuine differentiators that no competitor matches. The main limitation is scale: FanVue's subscriber base is a fraction of OnlyFans'. Our recommendation: use FanVue as your secondary platform and actively direct your most engaged fans there. The economics are better, the tools are better, and as the platform grows, the audience gap will narrow."
+  },
+  {
+    name: "Patreon",
+    slug: "patreon",
+    category: "Creator Platforms",
+    score: 7.0,
+    verdict: "The original creator subscription platform — still the best for non-adult creators with mainstream credibility",
+    pricing: "5-12% commission",
+    bestFor: "Non-adult creator subscriptions",
+    url: "https://patreon.com",
+    lastUpdated: "March 2026",
+    readingTime: 9,
+    overview: [
+      "Patreon is the original subscription-based creator platform, launched in 2013 by musician Jack Conte and developer Sam Yam. If you are wondering how does Patreon work, the model is straightforward: creators offer exclusive content and community access to paying supporters, called patrons, who subscribe at monthly or per-creation pricing tiers set by the creator.",
+      "Patreon's origins in the music and art world give it a fundamentally different DNA than OnlyFans or Fansly. While those platforms are built around adult content, Patreon was designed for podcasters, musicians, artists, writers, educators, video creators, and community builders. Adult content exists on Patreon but is heavily restricted and not the platform's focus.",
+      "With over 250,000 active creators and millions of patrons, Patreon has paid out over $3.5 billion to creators since launch. Its brand credibility and recognition among mainstream audiences is unmatched — when someone says they support a creator on Patreon, there is no stigma attached. This mainstream acceptability is Patreon's single greatest advantage for creators who produce non-adult content."
+    ],
+    keyFeatures: [
+      { title: "Tiered Memberships", description: "Create multiple patron tiers with different benefits at different price points. The most flexible tier management system among creator platforms." },
+      { title: "Community Features", description: "Built-in community posts, polls, and discussions. Patreon's community tools foster ongoing engagement between creators and patrons beyond just content delivery." },
+      { title: "Merch Integration", description: "Patreon integrates with merch fulfillment services, allowing creators to offer physical rewards like merchandise, prints, and exclusive items to higher-tier patrons." },
+      { title: "Analytics Dashboard", description: "Detailed insights into patron growth, churn rates, revenue trends, and tier performance. The analytics are comprehensive and help creators optimize their offerings." },
+      { title: "Per-Creation Billing", description: "Unique to Patreon — charge patrons per piece of content rather than monthly. Ideal for creators who publish on irregular schedules like musicians releasing albums or artists sharing illustrations." },
+      { title: "Patreon App", description: "Native iOS and Android apps for both creators and patrons. The Patreon app provides mobile access to content, messaging, community posts, and patron management." }
+    ],
+    pricingDetails: [
+      { plan: "Lite", price: "5% commission", features: ["Basic features", "Limited customization", "Community tools"] },
+      { plan: "Pro", price: "8% commission", features: ["Full analytics", "Tier management", "Merch integration", "Community features"] },
+      { plan: "Premium", price: "12% commission", features: ["Everything in Pro", "Team accounts", "Priority support", "Advanced features"] }
+    ],
+    pricingIntro: "Patreon fees vary by plan tier, with additional payment processing charges on top of the platform commission.",
+    pricingOutro: "On top of Patreon fees, payment processing charges apply: approximately 2.9% + $0.30 per transaction. The true Patreon cost for creators ranges from roughly 8% to 15% of total revenue depending on plan and transaction sizes.",
+    scores: [
+      { label: "Content Quality", score: 7, description: "Content quality depends entirely on the creator. Patreon does not curate or recommend." },
+      { label: "User Interface", score: 8, description: "Professional, polished design. Both creator and patron interfaces are intuitive." },
+      { label: "Value for Money", score: 7, description: "5-12% commission is reasonable. Processing fees add to the cost. Rising prices have reduced the value proposition." },
+      { label: "Privacy & Safety", score: 7.5, description: "Standard protections. No adult content risks for mainstream creators. Secure payments via Stripe." },
+      { label: "Features", score: 7, description: "Tiers, community, merch, per-creation billing, analytics, native app. Solid but not innovative." }
+    ],
+    pros: [
+      "Mainstream brand credibility — no stigma attached to Patreon support",
+      "Most flexible tier management with per-creation billing option",
+      "Built-in community features, polls, and engagement tools",
+      "Native mobile apps on iOS and Android",
+      "Merch integration for physical rewards",
+      "$3.5B+ paid to creators — proven track record"
+    ],
+    cons: [
+      "No content discovery — creators must drive all traffic externally",
+      "Adult content heavily restricted and not well-supported",
+      "Commission plus processing fees can total 10-15%",
+      "Growing competition from Ko-fi and Buy Me a Coffee at lower fees",
+      "Platform has become more corporate and less creator-friendly over time"
+    ],
+    prosConsNote: "Is Patreon worth it? For non-adult creators with established audiences — podcasters, musicians, artists, educators — Patreon remains the best option due to brand credibility and comprehensive features. For adult content creators, OnlyFans, Fansly, or FanVue are significantly better choices.",
+    whoShouldUse: [
+      { persona: "Non-adult creators with established audiences", reason: "Mainstream credibility and comprehensive features", ideal: true },
+      { persona: "Creators wanting community engagement tools", reason: "Best community features among creator platforms", ideal: true },
+      { persona: "Adult content creators", reason: "OnlyFans, Fansly, or FanVue are better options", ideal: false },
+      { persona: "Creators wanting the lowest fees", reason: "Ko-fi and Buy Me a Coffee offer lower or zero commission", ideal: false }
+    ],
+    alternatives: ["onlyfans", "fansly", "fanvue", "loyalfans"],
+    comparisons: [
+      { slug: "patreon-vs-onlyfans", title: "Patreon vs OnlyFans" },
+      { slug: "patreon-vs-kofi", title: "Patreon vs Ko-fi" }
+    ],
+    faqs: [
+      { question: "Is Patreon free for patrons?", answer: "Following is free. Subscribing requires payment at creator-set prices." },
+      { question: "How much does Patreon charge creators?", answer: "5% (Lite), 8% (Pro), 12% (Premium) plus payment processing ~2.9% + $0.30." },
+      { question: "Patreon vs OnlyFans?", answer: "Patreon for non-adult content with mainstream credibility. OnlyFans for adult content with larger adult audience." },
+      { question: "Is Patreon safe?", answer: "Yes. Secure payments via Stripe. Professional platform with transparent operations." },
+      { question: "Does Patreon have an app?", answer: "Yes. Native iOS and Android apps for creators and patrons." },
+      { question: "Can you post adult content on Patreon?", answer: "Limited. Patreon restricts explicit content. Allowed with restrictions but not the platform's strength." },
+      { question: "Is Patreon worth it for small creators?", answer: "Yes if you have an engaged audience. Even 100 dedicated patrons at $5/month generates meaningful income." },
+      { question: "How to delete Patreon?", answer: "Settings > Account > Delete Account. Cancel subscriptions and withdraw balance first." },
+      { question: "What are the best Patreon alternatives?", answer: "Ko-fi for simplicity, Buy Me a Coffee for one-time payments, Gumroad for digital products, OnlyFans for adult content." },
+      { question: "Does Patreon work internationally?", answer: "Yes. Available globally. Supports multiple currencies and international payments." }
+    ],
+    finalVerdict: "Patreon is the original creator subscription platform and still the best choice for non-adult content creators in 2026. The mainstream brand credibility, flexible tier system, community features, per-creation billing, and native mobile apps create a comprehensive package that competitors have not fully matched. The weaknesses are the lack of content discovery, rising fees, restrictive adult content policies, and growing competition from simpler alternatives like Ko-fi. For podcasters, artists, musicians, educators, and any creator who values mainstream credibility, Patreon remains the gold standard."
+  },
   ...generateCreatorPlatformReviews(),
 
   // ─── LIVE CAM SITES ───
