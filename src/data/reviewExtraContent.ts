@@ -68,6 +68,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Age Verification", description: "Government-issued ID required for all creators. Subscribers must confirm 18+. Strengthened over the years in response to regulatory pressure." },
     { icon: "eye-off", title: "Content Protection", description: "DMCA takedown enforcement, watermarking, and screenshot detection. Subscriber activity is private and not publicly visible. Creator anonymity possible with stage name but real ID is tied to the platform." },
   ],
+  "fansly": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all data transfers including content, messages, and payments." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. Fansly name not explicitly visible." },
+    { icon: "shield-check", title: "Content Protection", description: "DMCA enforcement and watermarking. Fansly downloader tools exist online and content theft remains a challenge, but Fansly actively combats this." },
+    { icon: "eye-off", title: "Identity Verification", description: "Government ID required for all creators before posting. Reduces fake accounts and ensures age compliance." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
