@@ -1024,7 +1024,7 @@ function compactCreatorPlatforms(): DetailedReview[] {
   });
 
   return [
-    template("FunWithFeet",marketplace with focus on anonymity 7.0, "Curated feet marketplace with stronmarketplace with focus on anonymitytures", "Seller: $9.99/mo", "Curated feet content selling", "https://funwithfeet.com",
+    template("FunWithFeet", "funwithfeet", 7.0, "Curated feet marketplace with strong anonymity features", "Seller: $9.99/mo", "Curated feet marketplace with focus on anonymity", "https://funwithfeet.com",
       ["FunWithFeet offers a curated approach to feet content with themed categories and strong anonymity protections. The platform vets content for quality, creating a more premium browsing experience for buyers.", "The $9.99 monthly seller fee is higher than FeetFinder but includes access to themed content sections that can drive targeted buyer traffic. The platform's focus on curation means less content but higher average quality.", "Privacy features are a standout — sellers can blur backgrounds, use watermarks, and maintain complete anonymity throughout transactions."],
       ["Strong anonymity protections", "Curated, higher-quality content", "Themed categories for discovery", "Watermark tools included"],
       ["Higher seller fee at $9.99/mo", "Smaller buyer community", "Strict content curation", "Less traffic than FeetFinder"],
