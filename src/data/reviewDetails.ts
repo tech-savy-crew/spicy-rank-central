@@ -2036,6 +2036,84 @@ function generateTubeReviews(): DetailedReview[] {
       { question: "Is SmutFinder safe?", answer: "SmutFinder itself is safe to use, but it links to external platforms with varying safety and ad practices. Use an ad blocker for the best experience." }
     ],
     finalVerdict: "SmutFinder serves its purpose well as a free content discovery tool. It's not a destination platform but a useful utility for efficiently finding content across the adult web."
+  },
+  // ─── JERKMATE ───
+  {
+    name: "Jerkmate",
+    slug: "jerkmate",
+    category: "Live Cam Sites",
+    score: 7.2,
+    verdict: "A legitimate premium cam site with curated matchmaking and a unique ranked system — held back by aggressive ads and expensive per-minute pricing",
+    pricing: "Credits ~$1 each",
+    bestFor: "Curated premium cam experience",
+    url: "https://jerkmate.com",
+    lastUpdated: "March 2026",
+    readingTime: 10,
+    overview: [
+      "If you have spent any time on adult websites, you have almost certainly seen a Jerkmate ad. The platform's aggressive advertising strategy has made it one of the most recognizable names in the cam industry — but it has also created a perception problem. Many people assume Jerkmate is a scam because the ads are so ubiquitous and often misleading. The reality is more nuanced.",
+      "Jerkmate is a premium live cam platform that connects viewers with performers for live interactive shows. Unlike Chaturbate's free-to-watch model, Jerkmate operates primarily on a per-minute payment system for private shows, supplemented by Gold shows that use a ticket-based model. The platform emphasizes a curated, matchmaking-style experience where an algorithm suggests performers based on your preferences.",
+      "How does Jerkmate work? You create a free account, set your preferences for performer type, and the platform suggests matches. You can browse performer profiles, watch brief previews, and then enter paid private shows or join Gold shows. The experience feels more like an interactive dating service than a traditional cam site browsing grid — which is intentional. Jerkmate is trying to differentiate itself from the chaotic energy of Chaturbate by offering a more curated, premium feel."
+    ],
+    keyFeatures: [
+      { title: "Jerkmate Ranked System", description: "The Jerkmate ranked feature is a gamification layer where viewers earn rank levels based on activity and spending. Jerkmate ranked level names progress through tiers — each level unlocks perks like discounted shows, exclusive content access, and priority matching. The Jerkmate ranked lobby names correspond to themed waiting rooms where users at different rank levels congregate before shows." },
+      { title: "Gold Shows", description: "Group shows where viewers purchase Gold tickets to watch. More affordable than private shows since the cost is split among attendees. Gold shows offer a middle ground between free browsing and expensive private sessions." },
+      { title: "Private Shows", description: "One-on-one sessions with performers at per-minute rates. Cam-to-cam optional. The most expensive but most personalized experience. Rates typically range from $1.98 to $9.99 per minute depending on the performer." },
+      { title: "Performer Matchmaking", description: "Algorithm-based matching that suggests performers based on your stated preferences and viewing history. More curated than Chaturbate's browse-and-scroll approach." },
+      { title: "Interactive Toys", description: "Supports Lovense and other connected devices. Viewers can trigger toy responses through tipping during shows." },
+      { title: "Content Library", description: "Pre-recorded videos and photo sets available for purchase. Performers sell exclusive content beyond live shows." },
+    ],
+    pricingIntro: "Jerkmate operates on a credit-based system with per-minute private shows and ticket-based Gold shows.",
+    pricingDetails: [
+      { plan: "Free Account", price: "Free", features: ["Limited browsing and preview access", "Registration is free", "Cannot fully interact without credits"] },
+      { plan: "Credits", price: "~$1/credit", features: ["Minimum purchase ~$24.99", "Credits spent per-minute on private shows", "Or per-ticket on Gold shows"] },
+      { plan: "Private Shows", price: "$1.98-$9.99/min", features: ["Average ~$3-4 per minute", "15-min show costs roughly $45-60", "Cam-to-cam optional"] },
+      { plan: "Gold Shows", price: "$5-$20/ticket", features: ["Group viewing experience", "More affordable than private", "Ticket prices vary by show"] },
+    ],
+    pricingOutro: "Is Jerkmate free? Only in the most limited sense. You can browse and see previews, but meaningful interaction requires credits. The Jerkmate cost per session is significantly higher than tipping on Chaturbate's free streams. Jerkmate is designed as a premium, pay-per-use experience.",
+    scores: [
+      { label: "Content Quality", score: 8, description: "High-quality performers with professional production values. The curated selection ensures a premium feel." },
+      { label: "User Interface", score: 7.5, description: "Modern design, good matchmaking. Aggressive credit upselling detracts from the experience." },
+      { label: "Value for Money", score: 6, description: "Per-minute pricing is expensive. Credits add up quickly. Gold shows provide better value than private sessions." },
+      { label: "Privacy & Safety", score: 7.5, description: "SSL encryption, age verification, discreet billing. Legitimate company with real operations." },
+      { label: "Features", score: 7.5, description: "Ranked system, Gold shows, matchmaking, interactive toys, content library. Unique gamification through ranked levels." },
+    ],
+    pros: [
+      "High-quality, curated performer selection",
+      "Unique ranked system with gamification and level progression",
+      "Gold shows offer affordable group viewing alternative",
+      "Modern interface with matchmaking-style discovery",
+      "Legitimate platform despite ad reputation concerns",
+    ],
+    cons: [
+      "Per-minute private show pricing is expensive ($3-10/min)",
+      "Aggressive advertising has created a trust and reputation problem",
+      "Free experience is very limited compared to Chaturbate",
+      "Credit upselling throughout the interface can feel pushy",
+      "No native mobile app",
+    ],
+    prosConsNote: "Is Jerkmate legit? Yes. Behind the aggressive ads is a functioning, professional cam platform with real performers, working payments, and a genuine entertainment experience. Is Jerkmate a scam? No — but the misleading advertising has understandably created skepticism. The actual product is significantly better than the ads suggest.",
+    privacyIntro: "Jerkmate operates as a legitimate premium cam platform with standard security protections.",
+    whoShouldUse: [
+      { persona: "Viewers wanting curated premium cam experience", reason: "Matchmaking-style discovery with high-quality performers", ideal: true },
+      { persona: "Users who value gamification and rank progression", reason: "Unique ranked system with perks at each level", ideal: true },
+      { persona: "Budget-conscious viewers wanting free content", reason: "Very limited free experience — Chaturbate is better for free viewing", ideal: false },
+      { persona: "Users wary of aggressive advertising", reason: "Ads are more provocative than the actual platform experience", ideal: false },
+    ],
+    alternatives: ["chaturbate", "stripchat", "livejasmin", "camsoda"],
+    comparisons: [{ slug: "chaturbate", title: "Jerkmate vs Chaturbate" }],
+    faqs: [
+      { question: "Is Jerkmate legit?", answer: "Yes. Legitimate platform with real performers, functioning payments, and professional operations. The aggressive ads are misleading but the product is real." },
+      { question: "Is Jerkmate safe?", answer: "Yes. SSL encryption, age verification, discreet billing. Standard security protections." },
+      { question: "Is Jerkmate free?", answer: "Limited free browsing. Meaningful interaction requires purchased credits. Primarily a paid platform." },
+      { question: "How much does Jerkmate cost?", answer: "Credits ~$1 each. Private shows $1.98-$9.99/min. Gold shows $5-$20 per ticket. Minimum purchase ~$24.99." },
+      { question: "What is Jerkmate ranked?", answer: "Gamification system where viewers earn rank levels based on activity. Higher Jerkmate ranked level names unlock perks, discounts, and exclusive access." },
+      { question: "Jerkmate vs Chaturbate?", answer: "Jerkmate is premium/curated with per-minute pricing. Chaturbate is free-to-watch with tip-based income. Different models for different preferences." },
+      { question: "Is there a Jerkmate app?", answer: "No native app. Mobile website works but desktop is better." },
+      { question: "How to delete Jerkmate account?", answer: "Account settings > Support > Request account deletion." },
+      { question: "What are the best Jerkmate alternatives?", answer: "Chaturbate for free viewing, Stripchat for modern free cams, LiveJasmin for premium quality." },
+      { question: "Why are there so many Jerkmate ads?", answer: "Jerkmate invests heavily in advertising across adult networks. The ads are often more provocative than the actual platform experience." },
+    ],
+    finalVerdict: "Jerkmate is a legitimate premium cam site that suffers from a self-inflicted reputation problem caused by its aggressive advertising. Behind the ads, there is a genuinely curated cam experience with high-quality performers, an interesting ranked gamification system, and Gold shows that offer good value. The per-minute pricing makes it expensive for extended viewing, and the free experience is minimal. If you are willing to pay for a premium, curated cam experience, Jerkmate delivers. If you want free content with optional tipping, Chaturbate is the better choice."
   }];
 }
 
