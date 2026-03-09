@@ -1,0 +1,228 @@
+// Dynamic content generators for review page extra sections
+// These generate UX, Privacy, Tips, and extra FAQ content per platform
+
+import type { DetailedReview } from "./reviewDetails";
+
+export interface UserExperienceContent {
+  gettingStarted: string;
+  interfaceNavigation: string;
+  mobileExperience: string;
+}
+
+export interface TrustCard {
+  icon: "lock" | "credit-card" | "shield-check" | "eye-off";
+  title: string;
+  description: string;
+}
+
+export interface PrivacyTrustContent {
+  cards: TrustCard[];
+  analysis: string;
+}
+
+export interface Tip {
+  title: string;
+  description: string;
+}
+
+// ── Platform-specific overrides ──
+const uxOverrides: Record<string, UserExperienceContent> = {
+  "candy-ai": {
+    gettingStarted: "Signing up for Candy.ai takes less than two minutes. You can register with an email address or Google account — no phone verification needed. The onboarding wizard walks you through creating your first AI companion by selecting appearance, personality traits, and communication style. Within five minutes of signing up, you can be in a full conversation.",
+    interfaceNavigation: "The Candy.ai interface is clean and modern, with a chat-first design that puts conversations front and center. The left sidebar lets you switch between companions, access settings, and manage your gallery. Message input feels responsive, and AI replies typically arrive within 2-3 seconds. The image generation feature is integrated directly into the chat flow, so you can request visuals without leaving the conversation.",
+    mobileExperience: "Candy.ai works well on mobile browsers with a fully responsive design. There is also a dedicated mobile app available for both Android and iOS. The mobile experience mirrors the desktop version closely, with smooth scrolling, fast load times, and an interface optimized for thumb navigation.",
+  },
+};
+
+const privacyOverrides: Record<string, string> = {
+  "candy-ai": "Candy.ai takes privacy seriously with SSL encryption on all connections and a clear privacy policy that outlines data usage. Billing appears discreetly on credit card statements without mentioning the platform name. The platform allows full account deletion upon request, and conversations can be individually cleared at any time. While Candy.ai collects usage data to improve AI responses, they state that personal information is not shared with third parties. Overall, the privacy protections meet industry standards for AI companion platforms.",
+};
+
+const tipsOverrides: Record<string, Tip[]> = {
+  "candy-ai": [
+    { title: "Start with the Free Tier", description: "Test basic features before committing to a paid plan. This helps you evaluate conversation quality and see if the platform matches your expectations." },
+    { title: "Customize Personality Traits Early", description: "The more detail you provide during character creation — interests, communication style, humor level — the more natural your conversations will feel from the start." },
+    { title: "Explore Voice Messages", description: "Premium voice features add a layer of immersion that text alone cannot replicate. Try voice interactions for a more engaging experience." },
+    { title: "Save and Reference Past Conversations", description: "The AI builds on shared history. Mentioning previous topics helps create continuity and deeper interactions over time." },
+    { title: "Experiment with Multiple Companions", description: "Do not limit yourself to one character. Different personality types offer different experiences and help you discover what you enjoy most." },
+  ],
+};
+
+// ── Generic generators ──
+
+function getCategorySignupFlow(category: string, name: string): string {
+  const flows: Record<string, string> = {
+    "AI Companions": `Getting started with ${name} is straightforward. You can sign up using an email address or social login — the process takes just a couple of minutes. Once registered, the platform guides you through initial setup, helping you configure your preferences and start your first interaction quickly.`,
+    "Creator Platforms": `Creating an account on ${name} is simple and takes under five minutes. You'll need to provide basic information and verify your identity for security purposes. The onboarding process walks you through setting up your profile, configuring payment preferences, and understanding the platform's features before you start.`,
+    "Live Cam Sites": `Signing up for ${name} is quick and free — just provide an email and create a password. No credit card is required for basic access. The platform drops you into the action immediately, with live rooms visible right from the homepage. Purchasing tokens or credits takes just a few additional clicks.`,
+    "Dating & Hookup Apps": `Registration on ${name} involves creating a profile with photos and basic details about yourself. The verification process helps ensure authentic users. Depending on your subscription level, you can start browsing and messaging matches within minutes of completing your profile.`,
+    "Sexting & Chat": `Getting started on ${name} is designed to be fast and anonymous. You can register with minimal personal information and begin chatting almost immediately. The platform prioritizes quick connections, so the onboarding process is streamlined to get you into conversations as fast as possible.`,
+    "Tube & Streaming": `${name} requires no registration for basic browsing. Creating a free account unlocks additional features like favorites, playlists, and personalized recommendations. The signup process takes under a minute with just an email address.`,
+  };
+  return flows[category] || flows["AI Companions"];
+}
+
+function getCategoryInterfaceDesc(category: string, name: string): string {
+  const descs: Record<string, string> = {
+    "AI Companions": `The ${name} interface follows a modern chat-centric layout. The main conversation area is front and center, with navigation options accessible through a sidebar or menu. Settings and account management are easy to find, and the overall design feels responsive and polished. Response times are generally fast, keeping conversations flowing naturally.`,
+    "Creator Platforms": `${name} features a dashboard-style interface with clear navigation between content management, messaging, analytics, and earnings. The content upload process is intuitive, and the discovery/search system helps connect creators with their audience. The platform's layout is functional and gets the job done without unnecessary complexity.`,
+    "Live Cam Sites": `The ${name} interface is built around live content discovery. The homepage displays a grid of active streams with thumbnails, viewer counts, and category tags. Filtering and search tools help you find specific content, and the chat interface within streams is straightforward. The video player supports multiple quality settings for different connection speeds.`,
+    "Dating & Hookup Apps": `${name} uses a familiar dating app interface with profile browsing, matching, and messaging sections. The profile cards are clean and informative, and the messaging system supports text, photos, and in some cases video. Search filters and preferences help narrow down potential matches to your specific interests.`,
+    "Sexting & Chat": `The ${name} interface is built for fast, private conversations. The chat window is clean and distraction-free, with easy access to media sharing and profile information. The platform keeps things simple — no unnecessary features to navigate around. Connection matching and chat initiation are designed to be as seamless as possible.`,
+    "Tube & Streaming": `${name} features a familiar video platform layout with a search bar, category navigation, and content grid. The video player is responsive with adjustable quality settings. Related content suggestions and trending sections help with discovery, and the overall browsing experience is smooth and intuitive.`,
+  };
+  return descs[category] || descs["AI Companions"];
+}
+
+function getCategoryMobileDesc(category: string, name: string): string {
+  const descs: Record<string, string> = {
+    "AI Companions": `${name} offers a responsive mobile experience through the browser, and may also have a dedicated app available. The mobile layout adapts well to smaller screens, maintaining full functionality. Chat interactions feel natural on mobile, with optimized input and quick response rendering.`,
+    "Creator Platforms": `${name} is accessible on mobile devices through a responsive web design. Content uploading, messaging, and account management all work on mobile, though the desktop version offers a more comprehensive experience for content management tasks. Push notifications keep you informed of new activity.`,
+    "Live Cam Sites": `${name} works on mobile browsers with adaptive streaming quality. The mobile experience provides access to live streams, chat, and tipping features. While the full-screen viewing experience is best on desktop, mobile users can enjoy shows on the go with reasonable video quality.`,
+    "Dating & Hookup Apps": `${name} is designed mobile-first, with a smooth experience on both iOS and Android. The app (or mobile site) provides full access to profiles, messaging, and matching features. Push notifications ensure you never miss a new match or message.`,
+    "Sexting & Chat": `${name} works well on mobile devices with a responsive design that adapts to any screen size. The chat experience is optimized for mobile use, with easy media sharing and a clean interface. Mobile users get the full feature set available on desktop.`,
+    "Tube & Streaming": `${name} is fully responsive on mobile devices with adaptive video streaming. The mobile experience provides easy browsing, search, and playback with quality that adjusts to your connection speed. The interface is touch-friendly and navigation is intuitive.`,
+  };
+  return descs[category] || descs["AI Companions"];
+}
+
+export function getUserExperience(review: DetailedReview): UserExperienceContent {
+  if (uxOverrides[review.slug]) return uxOverrides[review.slug];
+  return {
+    gettingStarted: getCategorySignupFlow(review.category, review.name),
+    interfaceNavigation: getCategoryInterfaceDesc(review.category, review.name),
+    mobileExperience: getCategoryMobileDesc(review.category, review.name),
+  };
+}
+
+function getCategoryPrivacyCards(category: string, name: string): TrustCard[] {
+  return [
+    { icon: "lock", title: "Data Encryption", description: `${name} uses SSL/TLS encryption to protect all data transmitted between your browser and their servers. Your conversations and personal data are encrypted in transit.` },
+    { icon: "credit-card", title: "Discreet Billing", description: `Charges from ${name} appear discreetly on credit card and bank statements. The platform uses a generic billing descriptor to protect your privacy.` },
+    { icon: "shield-check", title: "Content Moderation", description: `${name} enforces content policies in line with industry standards, including DMCA compliance and age verification for adult content access.` },
+    { icon: "eye-off", title: "Account Privacy", description: `${name} allows anonymous usage with minimal personal information required. Account deletion is available upon request, removing your data from their systems.` },
+  ];
+}
+
+function getCategoryPrivacyAnalysis(category: string, name: string): string {
+  const analyses: Record<string, string> = {
+    "AI Companions": `${name} implements standard security measures including SSL encryption and secure data storage. The platform's privacy policy outlines data collection practices, and users can request full account deletion. While AI platforms do collect conversation data to improve their models, ${name} states that personal information is not shared with third parties. For an AI companion platform, the privacy protections are in line with industry expectations.`,
+    "Creator Platforms": `${name} prioritizes creator and buyer privacy with verified accounts and secure payment processing. The platform complies with relevant data protection regulations and offers account privacy controls. Payment information is handled through secure third-party processors, and content is protected by DMCA policies. Creators retain control over their content and can request full data removal.`,
+    "Live Cam Sites": `${name} uses encrypted connections for all streaming and payment activity. The platform processes payments through reputable third-party providers with discreet billing descriptors. User data is protected under the platform's privacy policy, and accounts can be fully deleted upon request. As with most cam sites, anonymous browsing is supported for basic access.`,
+    "Dating & Hookup Apps": `${name} takes user privacy seriously with profile verification, encrypted messaging, and discreet billing practices. The platform complies with applicable data protection laws including GDPR where relevant. Users can control profile visibility and manage their data through account settings. Photo verification and moderation help maintain a trustworthy environment.`,
+    "Sexting & Chat": `${name} emphasizes anonymity and discretion as core features. The platform uses encryption for all communications and minimizes the personal information required to create an account. Billing is handled discreetly, and conversation data can be deleted at any time. The platform's privacy-first approach is appropriate for its intimate use case.`,
+    "Tube & Streaming": `${name} provides standard privacy protections for a content platform, including encrypted browsing and account security features. No personal information is required for basic browsing. Registered users can manage their data and delete their accounts. The platform complies with DMCA and relevant content regulations.`,
+  };
+  return analyses[category] || analyses["AI Companions"];
+}
+
+export function getPrivacyTrust(review: DetailedReview): PrivacyTrustContent {
+  return {
+    cards: getCategoryPrivacyCards(review.category, review.name),
+    analysis: privacyOverrides[review.slug] || getCategoryPrivacyAnalysis(review.category, review.name),
+  };
+}
+
+function getCategoryTips(category: string, name: string, review: DetailedReview): Tip[] {
+  const tipsMap: Record<string, Tip[]> = {
+    "AI Companions": [
+      { title: "Start with the Free Tier", description: `Test ${name}'s basic features before upgrading. This lets you evaluate the conversation quality and see if the platform fits your needs.` },
+      { title: "Invest Time in Customization", description: `The more detail you provide during setup — personality preferences, interests, communication style — the better your experience will be from the start.` },
+      { title: "Explore All Features", description: `Don't just stick to text chat. Try voice messages, image generation, or any premium features available to get the full experience.` },
+      { title: "Build Conversation History", description: `The AI improves with context. Reference past topics and build on shared interactions for more natural, engaging conversations over time.` },
+      { title: "Try Different Characters", description: `Experiment with multiple AI companions or personality settings. Different configurations offer different experiences and help you discover what you enjoy most.` },
+    ],
+    "Creator Platforms": [
+      { title: "Optimize Your Profile First", description: `Before posting content, make sure your profile is complete with a compelling bio, quality profile photo, and clear description of what you offer on ${name}.` },
+      { title: "Post Consistently", description: `Regular uploads keep your audience engaged and help you appear in discovery feeds. Aim for a consistent posting schedule rather than sporadic bulk uploads.` },
+      { title: "Engage with Your Audience", description: `Respond to messages and comments promptly. Engaged creators earn more and build loyal fan bases that provide steady income over time.` },
+      { title: "Cross-Promote Your Content", description: `Share your ${name} profile on social media and other platforms to drive traffic. Diversifying your audience sources protects against platform changes.` },
+      { title: "Price Strategically", description: `Research what similar creators charge on ${name}. Start with competitive pricing to build a customer base, then adjust as your reputation grows.` },
+    ],
+    "Live Cam Sites": [
+      { title: "Browse Free Content First", description: `${name} offers plenty of free content to explore before spending money. Use this to find performers and content types you enjoy most.` },
+      { title: "Set a Budget", description: `Tokens and credits can add up quickly. Set a monthly spending limit before you start tipping to keep your entertainment spending in check.` },
+      { title: "Follow Your Favorites", description: `Follow or favorite performers you enjoy so you're notified when they go live. This ensures you never miss their shows.` },
+      { title: "Try Different Show Types", description: `${name} offers various show formats — public, private, group, and more. Experiment with different types to find what gives you the best experience.` },
+      { title: "Use Interactive Features", description: `Many performers use tip-activated toys and interactive features. Engaging with these creates a more immersive and personal experience.` },
+    ],
+    "Dating & Hookup Apps": [
+      { title: "Complete Your Profile Fully", description: `Profiles with detailed bios and multiple photos get significantly more matches on ${name}. Take time to present yourself authentically.` },
+      { title: "Be Clear About Intentions", description: `Honesty about what you're looking for saves time for both you and potential matches. ${name} works best when expectations are aligned.` },
+      { title: "Upgrade Strategically", description: `Try the free tier first to gauge the user base in your area. Premium features are worth it only if you're seeing potential matches worth pursuing.` },
+      { title: "Stay Safe", description: `Always meet in public places for first dates. Share your plans with a friend and trust your instincts. Safety should always come first.` },
+      { title: "Be Responsive", description: `Quick replies show genuine interest. The ${name} algorithm often favors active users, so regular engagement can improve your visibility.` },
+    ],
+    "Sexting & Chat": [
+      { title: "Start with Free Features", description: `Explore ${name}'s free options before purchasing credits or a subscription. This helps you understand the platform and find the right connections.` },
+      { title: "Set Clear Boundaries", description: `Be upfront about your comfort levels and preferences. Good communication leads to better experiences for everyone involved.` },
+      { title: "Protect Your Identity", description: `Use a username that doesn't reveal your real identity. Be cautious about sharing personal information until you're comfortable.` },
+      { title: "Use Platform Features", description: `${name} has built-in tools for safe interactions. Use platform messaging rather than sharing personal contact information.` },
+      { title: "Report Issues Promptly", description: `If you encounter inappropriate behavior, report it immediately. This helps keep the ${name} community safe and enjoyable for everyone.` },
+    ],
+    "Tube & Streaming": [
+      { title: "Create an Account for Extras", description: `While ${name} allows anonymous browsing, creating a free account unlocks favorites, playlists, and personalized recommendations.` },
+      { title: "Use Search Filters", description: `${name}'s search and filter tools help you find exactly what you're looking for. Learn the category system to browse more efficiently.` },
+      { title: "Adjust Video Quality", description: `If videos are buffering, lower the quality setting. If your connection is strong, switch to HD for the best viewing experience.` },
+      { title: "Build Playlists", description: `Save content you enjoy to playlists for easy access later. This saves time browsing and creates a curated collection.` },
+      { title: "Explore Categories", description: `Don't just stick to the homepage. Browse different categories and tags to discover content you might not have found otherwise.` },
+    ],
+  };
+  return tipsMap[category] || tipsMap["AI Companions"];
+}
+
+export function getTips(review: DetailedReview): Tip[] {
+  if (tipsOverrides[review.slug]) return tipsOverrides[review.slug];
+  return getCategoryTips(review.category, review.name, review);
+}
+
+export function getExtraFaqs(review: DetailedReview): { question: string; answer: string }[] {
+  const alts = review.alternatives.slice(0, 3);
+  const altNames = alts.map(s => {
+    const nameMap: Record<string, string> = {
+      "candy-ai": "Candy.ai", "crushon-ai": "CrushOn.ai", "dreamgf-ai": "DreamGF.ai",
+      "replika": "Replika", "soulfun-ai": "SoulFun.ai", "girlfriendgpt": "GirlfriendGPT",
+      "kupid-ai": "Kupid.ai", "get-honey-ai": "Get-Honey.ai", "kalon-ai": "Kalon.ai",
+      "myanima": "MyAnima", "infatuated-ai": "Infatuated.ai", "ourdream-ai": "OurDream.ai",
+      "soulgen-ai": "SoulGen.ai", "pornpen-ai": "Pornpen.ai",
+      "feetfinder": "FeetFinder", "fetishfinder": "FetishFinder", "footly": "Footly",
+      "funwithfeet": "FunWithFeet", "feetify": "Feetify", "snifffr": "Snifffr",
+      "sofia-gray": "Sofia Gray", "pantydeal": "PantyDeal", "all-things-worn": "All Things Worn",
+      "manyvids": "ManyVids", "clips4sale": "Clips4Sale", "loyalfans": "LoyalFans",
+      "justforfans": "JustFor.Fans", "admireme-vip": "AdmireMe VIP",
+      "cam4": "Cam4", "bongacams": "BongaCams", "livejasmin": "LiveJasmin",
+      "jerkmate": "Jerkmate", "flirt4free": "Flirt4Free", "camsoda": "CamSoda",
+      "myfreecams": "MyFreeCams", "slutroulette": "SlutRoulette",
+      "sugardaddy": "SugarDaddy.com", "secret-benefits": "Secret Benefits",
+      "seeking": "Seeking", "sugardaddymeet": "SugarDaddyMeet", "sugarbook": "Sugarbook",
+      "whats-your-price": "WhatsYourPrice", "adultfriendfinder": "AdultFriendFinder",
+      "pure-app": "Pure", "feeld": "Feeld",
+      "arousr": "Arousr", "sextfriend": "SextFriend", "flingster": "Flingster",
+      "chatrandom": "ChatRandom", "smutfinder": "SmutFinder",
+    };
+    return nameMap[s] || s;
+  });
+
+  const altList = altNames.length > 0
+    ? altNames.join(", ")
+    : "several platforms in this category";
+
+  return [
+    {
+      question: `Is ${review.name} worth the money?`,
+      answer: `${review.name} offers solid value for its ${review.pricing} pricing. The free tier lets you test core features before committing. Premium adds ${review.category === "AI Companions" ? "unlimited messaging, image generation, and priority responses" : review.category === "Creator Platforms" ? "better visibility, lower fees, and advanced analytics" : "full access to premium content and enhanced features"} that significantly improve the experience. Whether it's worth it depends on how much you use the platform — regular users will find the upgrade pays for itself.`,
+    },
+    {
+      question: `How do I cancel my ${review.name} subscription?`,
+      answer: `You can cancel your ${review.name} subscription anytime through your account settings. Navigate to the billing or subscription section and click "Cancel Subscription." Your access continues until the end of your current billing period. If you have trouble cancelling, you can also contact ${review.name}'s support team via email for assistance.`,
+    },
+    {
+      question: `What are the best alternatives to ${review.name}?`,
+      answer: `The top alternatives to ${review.name} include ${altList}. Each offers different strengths — check our individual reviews to find which platform best matches your specific needs and budget. We recommend trying free tiers on multiple platforms before committing.`,
+    },
+    {
+      question: `Does ${review.name} work outside the US?`,
+      answer: `Yes, ${review.name} is accessible internationally in most countries. The platform supports users worldwide, though some features or payment methods may vary by region. ${review.category === "Dating & Hookup Apps" ? "User bases tend to be larger in the US, UK, and Western Europe." : "Content and services are generally the same regardless of location."} Check the platform's terms of service for any regional restrictions.`,
+    },
+  ];
+}

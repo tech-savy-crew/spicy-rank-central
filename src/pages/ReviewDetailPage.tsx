@@ -3,8 +3,9 @@ import { Layout } from "@/components/Layout";
 import { RatingBadge } from "@/components/RatingBadge";
 import { SEO, reviewSchema, faqSchema, breadcrumbSchema } from "@/components/SEO";
 import { getReviewBySlug, detailedReviews } from "@/data/reviewDetails";
+import { getUserExperience, getPrivacyTrust, getTips, getExtraFaqs } from "@/data/reviewExtraContent";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle, XCircle, ExternalLink, Star, Clock, Calendar, ChevronRight, ChevronDown, Zap, Users, Shield, DollarSign, Sparkles, ArrowRight } from "lucide-react";
+import { CheckCircle, XCircle, ExternalLink, Star, Clock, Calendar, ChevronRight, ChevronDown, Zap, Users, Shield, DollarSign, Sparkles, ArrowRight, Monitor, ShieldCheck, Lightbulb, Lock, CreditCard, EyeOff, Camera } from "lucide-react";
 import { useState, useMemo } from "react";
 
 function StarRating({ score, max = 10 }: { score: number; max?: number }) {
@@ -39,6 +40,7 @@ function VisitButton({ name, url, className = "" }: { name: string; url: string;
 }
 
 const featureIcons = [Zap, Users, Shield, DollarSign, Sparkles, Star];
+const trustIcons = { lock: Lock, "credit-card": CreditCard, "shield-check": ShieldCheck, "eye-off": EyeOff };
 
 const ReviewDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -51,15 +53,24 @@ const ReviewDetailPage = () => {
     return Math.max(5, Math.ceil(text.split(/\s+/).length / 200));
   }, [review]);
 
+  const ux = useMemo(() => review ? getUserExperience(review) : null, [review]);
+  const privacy = useMemo(() => review ? getPrivacyTrust(review) : null, [review]);
+  const tips = useMemo(() => review ? getTips(review) : null, [review]);
+  const extraFaqs = useMemo(() => review ? getExtraFaqs(review) : [], [review]);
+  const allFaqs = useMemo(() => review ? [...review.faqs, ...extraFaqs] : [], [review, extraFaqs]);
+
   const tocItems = useMemo(() => {
     if (!review) return [];
     return [
       { id: "overview", label: `What is ${review.name}?` },
       { id: "features", label: "Key Features" },
       { id: "pricing", label: "Pricing & Plans" },
+      { id: "user-experience", label: "User Experience & Interface" },
       { id: "rating-breakdown", label: "Our Rating Breakdown" },
       { id: "pros-cons", label: "Pros & Cons" },
+      { id: "privacy-trust", label: "Privacy, Safety & Trust" },
       { id: "who-should-use", label: `Who Should Use ${review.name}?` },
+      { id: "tips", label: "Tips & Best Practices" },
       { id: "alternatives", label: `${review.name} Alternatives` },
       ...(review.comparisons.length > 0 ? [{ id: "comparisons", label: `How ${review.name} Compares` }] : []),
       { id: "faq", label: "FAQ" },
@@ -111,7 +122,7 @@ const ReviewDetailPage = () => {
             { name: "Reviews", url: "/reviews" },
             { name: `${review.name} Review`, url: `/reviews/${review.slug}` },
           ]),
-          ...(review.faqs.length > 0 ? [faqSchema(review.faqs)] : []),
+          faqSchema(allFaqs),
         ]}
       />
 
@@ -143,7 +154,6 @@ const ReviewDetailPage = () => {
               <div className="flex items-center gap-4 text-xs text-muted-foreground">
                 <span className="flex items-center gap-1.5"><Clock className="h-3.5 w-3.5" /> {readingTime} min read</span>
               </div>
-              {/* Quick Verdict Box */}
               <div className="mt-5 bg-card rounded-xl border border-primary/20 p-4">
                 <p className="text-sm font-medium text-foreground">
                   <span className="text-primary font-bold">Quick Verdict:</span> {review.verdict}
@@ -165,7 +175,7 @@ const ReviewDetailPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-8 md:gap-10">
           {/* Main Content */}
           <div className="space-y-10 max-w-[800px]">
-            {/* Section 4: Overview */}
+            {/* Overview */}
             <section id="overview" className="scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mb-4">What is {review.name}?</h2>
               <div className="space-y-4">
@@ -175,7 +185,7 @@ const ReviewDetailPage = () => {
               </div>
             </section>
 
-            {/* Section 5: Key Features */}
+            {/* Key Features */}
             <section id="features" className="scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mb-5">Key Features</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -196,7 +206,7 @@ const ReviewDetailPage = () => {
               </div>
             </section>
 
-            {/* Section 6: Pricing */}
+            {/* Pricing */}
             <section id="pricing" className="scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mb-5">Pricing & Plans</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -216,7 +226,35 @@ const ReviewDetailPage = () => {
               </div>
             </section>
 
-            {/* Section 7: Rating Breakdown */}
+            {/* NEW: User Experience & Interface */}
+            {ux && (
+              <section id="user-experience" className="scroll-mt-24">
+                <h2 className="text-xl md:text-2xl font-bold mb-5 flex items-center gap-2">
+                  <Monitor className="h-5 w-5 text-primary" /> User Experience & Interface
+                </h2>
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-base font-bold mb-2">Getting Started</h3>
+                    <p className="text-[15px] text-muted-foreground leading-7">{ux.gettingStarted}</p>
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold mb-2">Interface & Navigation</h3>
+                    <p className="text-[15px] text-muted-foreground leading-7">{ux.interfaceNavigation}</p>
+                  </div>
+                  {/* Screenshot placeholder */}
+                  <div className="w-full rounded-xl border-2 border-dashed border-muted-foreground/30 flex flex-col items-center justify-center py-12" style={{ aspectRatio: "16/9" }}>
+                    <Camera className="h-8 w-8 text-muted-foreground/40 mb-2" />
+                    <p className="text-xs text-muted-foreground/50">Screenshot coming soon</p>
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold mb-2">Mobile Experience</h3>
+                    <p className="text-[15px] text-muted-foreground leading-7">{ux.mobileExperience}</p>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* Rating Breakdown */}
             <section id="rating-breakdown" className="scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mb-5">Our Rating Breakdown</h2>
               <div className="bg-card rounded-xl border border-border/50 p-5 md:p-6 space-y-4">
@@ -239,7 +277,7 @@ const ReviewDetailPage = () => {
               </div>
             </section>
 
-            {/* Section 8: Pros & Cons */}
+            {/* Pros & Cons */}
             <section id="pros-cons" className="scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mb-5">Pros & Cons</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -266,7 +304,33 @@ const ReviewDetailPage = () => {
               </div>
             </section>
 
-            {/* Section 9: Who Should Use */}
+            {/* NEW: Privacy, Safety & Trust */}
+            {privacy && (
+              <section id="privacy-trust" className="scroll-mt-24">
+                <h2 className="text-xl md:text-2xl font-bold mb-5 flex items-center gap-2">
+                  <ShieldCheck className="h-5 w-5 text-primary" /> Privacy, Safety & Trust
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                  {privacy.cards.map((card) => {
+                    const TrustIcon = trustIcons[card.icon];
+                    return (
+                      <div key={card.title} className="rounded-xl border border-success/20 bg-success/5 p-4">
+                        <div className="flex items-center gap-3 mb-2">
+                          <div className="w-8 h-8 rounded-lg bg-success/10 flex items-center justify-center">
+                            <TrustIcon className="h-4 w-4 text-success" />
+                          </div>
+                          <h3 className="font-bold text-sm">{card.title}</h3>
+                        </div>
+                        <p className="text-sm text-muted-foreground leading-relaxed">{card.description}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+                <p className="text-[15px] text-muted-foreground leading-7">{privacy.analysis}</p>
+              </section>
+            )}
+
+            {/* Who Should Use */}
             <section id="who-should-use" className="scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mb-5">Who Should Use {review.name}?</h2>
               <div className="space-y-3">
@@ -284,7 +348,31 @@ const ReviewDetailPage = () => {
               </div>
             </section>
 
-            {/* Section 10: Alternatives */}
+            {/* NEW: Tips & Best Practices */}
+            {tips && (
+              <section id="tips" className="scroll-mt-24">
+                <h2 className="text-xl md:text-2xl font-bold mb-5 flex items-center gap-2">
+                  <Lightbulb className="h-5 w-5 text-primary" /> Tips for Getting the Most Out of {review.name}
+                </h2>
+                <div className="bg-card rounded-xl border border-border/50 p-5">
+                  <div className="space-y-4">
+                    {tips.map((tip, i) => (
+                      <div key={tip.title} className="flex items-start gap-4">
+                        <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+                          <span className="text-sm font-bold text-primary-foreground">{i + 1}</span>
+                        </div>
+                        <div>
+                          <p className="font-bold text-sm">{tip.title}</p>
+                          <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{tip.description}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* Alternatives */}
             {altReviews.length > 0 && (
               <section id="alternatives" className="scroll-mt-24">
                 <h2 className="text-xl md:text-2xl font-bold mb-5">{review.name} Alternatives</h2>
@@ -305,7 +393,7 @@ const ReviewDetailPage = () => {
               </section>
             )}
 
-            {/* Section 11: Comparisons */}
+            {/* Comparisons */}
             {review.comparisons.length > 0 && (
               <section id="comparisons" className="scroll-mt-24">
                 <h2 className="text-xl md:text-2xl font-bold mb-5">How {review.name} Compares</h2>
@@ -321,11 +409,11 @@ const ReviewDetailPage = () => {
               </section>
             )}
 
-            {/* Section 12: FAQ */}
+            {/* FAQ — now includes extra 4 questions */}
             <section id="faq" className="scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mb-5">Frequently Asked Questions</h2>
               <Accordion type="single" collapsible className="space-y-2.5">
-                {review.faqs.map((faq, i) => (
+                {allFaqs.map((faq, i) => (
                   <AccordionItem key={i} value={`faq-${i}`} className="bg-card rounded-xl border border-border/50 px-5">
                     <AccordionTrigger className="text-sm font-medium hover:no-underline text-left py-4">{faq.question}</AccordionTrigger>
                     <AccordionContent className="text-sm text-muted-foreground leading-7">{faq.answer}</AccordionContent>
@@ -334,7 +422,7 @@ const ReviewDetailPage = () => {
               </Accordion>
             </section>
 
-            {/* Section 13: Final Verdict */}
+            {/* Final Verdict */}
             <section id="verdict" className="scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mb-5">Final Verdict</h2>
               <div className="bg-card rounded-xl border border-border/50 p-6">
@@ -350,7 +438,7 @@ const ReviewDetailPage = () => {
               </div>
             </section>
 
-            {/* Section 14: Related Reviews */}
+            {/* Related Reviews */}
             {relatedReviews.length > 0 && (
               <section className="scroll-mt-24">
                 <h2 className="text-xl md:text-2xl font-bold mb-5">Related Reviews</h2>
