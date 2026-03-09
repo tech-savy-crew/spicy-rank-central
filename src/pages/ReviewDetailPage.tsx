@@ -170,7 +170,7 @@ const ReviewDetailPage = () => {
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spicyranked.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://spicyranked.com/reviews"},{"@type":"ListItem","position":3,"name":"Stripchat Review","item":"https://spicyranked.com/reviews/stripchat"}]}
   ] : undefined;
 
-  const customJsonLd = candyJsonLd || feetFinderJsonLd || onlyFansJsonLd || fanslyJsonLd || dreamGFJsonLd || bumbleJsonLd || chaturbateJsonLd;
+  const customJsonLd = candyJsonLd || feetFinderJsonLd || onlyFansJsonLd || fanslyJsonLd || dreamGFJsonLd || bumbleJsonLd || chaturbateJsonLd || stripchatJsonLd;
 
   return (
     <Layout>
