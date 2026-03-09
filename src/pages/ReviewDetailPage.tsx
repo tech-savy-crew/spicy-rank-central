@@ -49,6 +49,7 @@ const ReviewDetailPage = () => {
 
   const readingTime = useMemo(() => {
     if (!review) return 0;
+    if (review.readingTime) return review.readingTime;
     const text = review.overview.join(" ") + review.pros.join(" ") + review.cons.join(" ") + review.finalVerdict;
     return Math.max(5, Math.ceil(text.split(/\s+/).length / 200));
   }, [review]);
