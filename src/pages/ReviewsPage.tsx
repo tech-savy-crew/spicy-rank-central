@@ -6,7 +6,7 @@ import { reviewPlatforms, reviewCategories } from "@/data/reviews";
 import { RatingBadge } from "@/components/RatingBadge";
 import { Search, X, ArrowRight } from "lucide-react";
 
-type SortOption = "highest" | "lowest" | "az" | "za";
+type SortOption = "highest" | "lowest" | "az" | "za" | "newest";
 
 const ReviewsPage = () => {
   const [query, setQuery] = useState("");
@@ -36,6 +36,7 @@ const ReviewsPage = () => {
         case "lowest": return a.score - b.score;
         case "az": return a.name.localeCompare(b.name);
         case "za": return b.name.localeCompare(a.name);
+        case "newest": return 0; // maintain original order as proxy
         default: return 0;
       }
     });
@@ -44,7 +45,7 @@ const ReviewsPage = () => {
   return (
     <Layout>
       <SEO
-        title="All Platform Reviews — Honest Adult Platform Reviews"
+        title="All Platform Reviews | SpicyRanked - Honest Adult Platform Reviews"
         description="Browse 50+ honest, independent reviews of adult platforms. Creator sites, cam sites, AI companions, dating apps & more - all rated on our 10-point scale."
         canonical="/reviews"
         jsonLd={[
@@ -97,7 +98,7 @@ const ReviewsPage = () => {
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                   activeCategory === cat
                     ? "bg-primary text-primary-foreground"
-                    : "bg-secondary text-secondary-foreground hover:bg-surface-hover"
+                    : "bg-secondary text-secondary-foreground hover:bg-accent/20"
                 }`}
               >
                 {cat}
@@ -113,6 +114,7 @@ const ReviewsPage = () => {
             <option value="lowest">Sort by: Lowest Rated</option>
             <option value="az">Sort by: A–Z</option>
             <option value="za">Sort by: Z–A</option>
+            <option value="newest">Sort by: Newest</option>
           </select>
         </div>
 
@@ -128,7 +130,7 @@ const ReviewsPage = () => {
               <Link
                 key={p.slug}
                 to={`/reviews/${p.slug}`}
-                className="group block bg-card rounded-xl border border-border/50 overflow-hidden transition-all hover:border-primary hover:shadow-lg hover:shadow-primary/5"
+                className="group block bg-card rounded-xl border border-border/50 overflow-hidden transition-all hover:border-primary hover:shadow-lg hover:shadow-primary/10"
               >
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-4">
