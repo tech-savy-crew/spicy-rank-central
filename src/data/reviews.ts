@@ -1,0 +1,81 @@
+export interface ReviewPlatform {
+  name: string;
+  category: string;
+  score: number;
+  slug: string;
+  description: string;
+}
+
+export const reviewCategories = [
+  "All",
+  "Creator Platforms",
+  "Live Cam Sites",
+  "AI Companions",
+  "Dating & Hookup Apps",
+  "Sexting & Chat",
+  "Tube & Streaming",
+] as const;
+
+export const reviewPlatforms: ReviewPlatform[] = [
+  // AI Companions
+  { name: "Candy.ai", category: "AI Companions", score: 8.3, slug: "candy-ai", description: "Premium AI companion with highly realistic conversations and customizable personalities. Top-rated for immersive roleplay." },
+  { name: "CrushOn.ai", category: "AI Companions", score: 7.4, slug: "crushon-ai", description: "Uncensored AI chatbot with memory and realistic NSFW conversations. Popular for its lack of content filters." },
+  { name: "DreamGF.ai", category: "AI Companions", score: 7.8, slug: "dreamgf-ai", description: "AI girlfriend generator with image creation and chat. Create and interact with custom virtual companions." },
+  { name: "Replika", category: "AI Companions", score: 7.0, slug: "replika", description: "One of the original AI companion apps. Great for emotional connection but limited NSFW capabilities after recent updates." },
+  { name: "SoulFun.ai", category: "AI Companions", score: 7.5, slug: "soulfun-ai", description: "AI companion platform with voice chat and image generation. Growing user base with diverse character options." },
+  { name: "GirlfriendGPT", category: "AI Companions", score: 7.6, slug: "girlfriendgpt", description: "Open-source AI girlfriend platform with uncensored models. Good customization but requires some technical knowledge." },
+  { name: "Kupid.ai", category: "AI Companions", score: 7.3, slug: "kupid-ai", description: "AI dating simulator with realistic profiles and conversations. Fun concept but limited depth in interactions." },
+  { name: "Get-Honey.ai", category: "AI Companions", score: 7.2, slug: "get-honey-ai", description: "Newer AI companion app with photo generation and chat features. Affordable pricing but still building its feature set." },
+  { name: "Kalon.ai", category: "AI Companions", score: 7.4, slug: "kalon-ai", description: "AI companion with focus on emotional intelligence and realistic personality modeling. Solid mid-tier option." },
+  { name: "MyAnima", category: "AI Companions", score: 7.5, slug: "myanima", description: "AI companion focused on emotional wellbeing with roleplay features. Clean interface and thoughtful conversation design." },
+  { name: "Infatuated.ai", category: "AI Companions", score: 7.8, slug: "infatuated-ai", description: "Advanced AI companion with memory features and deep conversation capabilities. Strong contender in the AI companion space." },
+  { name: "OurDream.ai", category: "AI Companions", score: 7.1, slug: "ourdream-ai", description: "Couple-focused AI platform for shared fantasy exploration. Unique concept but still in early development." },
+  { name: "SoulGen.ai", category: "AI Companions", score: 7.5, slug: "soulgen-ai", description: "AI image generation platform for creating custom companion visuals. Great art quality but limited chat features." },
+  { name: "Pornpen.ai", category: "AI Companions", score: 7.0, slug: "pornpen-ai", description: "AI-powered adult image generator with extensive customization options. Focused on visual content rather than conversation." },
+
+  // Creator Platforms
+  { name: "FeetFinder", category: "Creator Platforms", score: 8.0, slug: "feetfinder", description: "The largest dedicated marketplace for foot content creators. High earnings potential with a focused, active buyer community." },
+  { name: "FetishFinder", category: "Creator Platforms", score: 7.5, slug: "fetishfinder", description: "Niche fetish content marketplace connecting creators with enthusiasts. Good discovery features for specialized content." },
+  { name: "Footly", category: "Creator Platforms", score: 7.6, slug: "footly", description: "Newer FeetFinder competitor with lower fees and modern interface. Growing fast but smaller audience than established platforms." },
+  { name: "FunWithFeet", category: "Creator Platforms", score: 7.0, slug: "funwithfeet", description: "Budget-friendly foot content platform with simple setup. Lower traffic than FeetFinder but decent for beginners." },
+  { name: "Feetify", category: "Creator Platforms", score: 6.8, slug: "feetify", description: "Social-media-style foot content platform with free and premium tiers. Limited monetization options compared to competitors." },
+  { name: "Snifffr", category: "Creator Platforms", score: 7.2, slug: "snifffr", description: "Marketplace for selling worn items with built-in messaging. Niche but loyal user base with decent earning potential." },
+  { name: "Sofia Gray", category: "Creator Platforms", score: 7.5, slug: "sofia-gray", description: "Established used clothing marketplace with strong brand recognition. Premium pricing and verified sellers make it trustworthy." },
+  { name: "PantyDeal", category: "Creator Platforms", score: 7.0, slug: "pantydeal", description: "One of the oldest worn item marketplaces with a large community. Free to join but requires active marketing to succeed." },
+  { name: "All Things Worn", category: "Creator Platforms", score: 7.3, slug: "all-things-worn", description: "UK-based worn items marketplace with a supportive community. Clean interface and fair commission structure for sellers." },
+  { name: "ManyVids", category: "Creator Platforms", score: 7.8, slug: "manyvids", description: "Video-first adult content platform with clip sales, subscriptions, and live shows. Great for established video creators." },
+  { name: "Clips4Sale", category: "Creator Platforms", score: 6.5, slug: "clips4sale", description: "Long-running fetish clip marketplace with massive catalog. Outdated interface but loyal customer base for niche content." },
+  { name: "LoyalFans", category: "Creator Platforms", score: 7.3, slug: "loyalfans", description: "OnlyFans alternative with live streaming and tip-based features. Competitive fees and growing creator community." },
+  { name: "JustFor.Fans", category: "Creator Platforms", score: 7.0, slug: "justforfans", description: "Creator subscription platform popular with male and LGBTQ+ creators. Decent features but smaller audience than OnlyFans." },
+  { name: "AdmireMe VIP", category: "Creator Platforms", score: 6.8, slug: "admireme-vip", description: "European creator platform with competitive 20% commission. Smaller user base but growing with solid creator tools." },
+
+  // Live Cam Sites
+  { name: "Cam4", category: "Live Cam Sites", score: 6.8, slug: "cam4", description: "Community-focused cam site popular for amateur performers. Free shows are plentiful but video quality is inconsistent." },
+  { name: "BongaCams", category: "Live Cam Sites", score: 7.3, slug: "bongacams", description: "European cam site with a huge selection of models and frequent promotions. Aggressive pop-ups but solid streaming quality." },
+  { name: "LiveJasmin", category: "Live Cam Sites", score: 7.5, slug: "livejasmin", description: "Premium cam site known for high-quality HD streams and professional models. Expensive but the production quality is top-tier." },
+  { name: "Jerkmate", category: "Live Cam Sites", score: 7.6, slug: "jerkmate", description: "AI-powered cam matching service that connects you with compatible performers. Innovative concept with a polished interface." },
+  { name: "Flirt4Free", category: "Live Cam Sites", score: 7.2, slug: "flirt4free", description: "Upscale cam site with HD streams and interactive features. Smaller model selection but consistently high quality." },
+  { name: "CamSoda", category: "Live Cam Sites", score: 7.4, slug: "camsoda", description: "Fun, modern cam site with interactive toys and unique features like voyeur house cams. Good free content available." },
+  { name: "MyFreeCams", category: "Live Cam Sites", score: 7.0, slug: "myfreecams", description: "One of the oldest cam sites with a loyal community. Dated interface but genuine performers and free show access." },
+  { name: "SlutRoulette", category: "Live Cam Sites", score: 6.5, slug: "slutroulette", description: "Chatroulette-style random cam site. Fun concept for spontaneous connections but quality varies significantly." },
+
+  // Dating & Hookup Apps
+  { name: "SugarDaddy.com", category: "Dating & Hookup Apps", score: 7.5, slug: "sugardaddy", description: "Premium sugar dating platform with verified profiles and secure messaging. Higher cost but attracts serious members." },
+  { name: "Secret Benefits", category: "Dating & Hookup Apps", score: 7.3, slug: "secret-benefits", description: "Discreet sugar dating site with credit-based messaging system. Good privacy features but costs add up quickly." },
+  { name: "Seeking", category: "Dating & Hookup Apps", score: 7.8, slug: "seeking", description: "The largest sugar dating platform with millions of active users. Rebranded and expanding beyond sugar dating niche." },
+  { name: "SugarDaddyMeet", category: "Dating & Hookup Apps", score: 7.0, slug: "sugardaddymeet", description: "Established sugar dating site with straightforward matching. Smaller pool than Seeking but less competition." },
+  { name: "SugarBook", category: "Dating & Hookup Apps", score: 6.8, slug: "sugarbook", description: "Asian-focused sugar dating app with growing global presence. Clean design but limited features on free tier." },
+  { name: "WhatsYourPrice", category: "Dating & Hookup Apps", score: 7.2, slug: "whats-your-price", description: "Unique auction-style dating platform where you bid on first dates. Interesting concept with mixed user reviews." },
+  { name: "AdultFriendFinder", category: "Dating & Hookup Apps", score: 7.0, slug: "adultfriendfinder", description: "One of the oldest adult dating sites with a massive global user base. Dated design but huge pool of active users." },
+  { name: "Pure App", category: "Dating & Hookup Apps", score: 7.2, slug: "pure-app", description: "Anonymous hookup app where posts expire in 24 hours. Great privacy but limited to major cities for best results." },
+  { name: "Feeld", category: "Dating & Hookup Apps", score: 7.5, slug: "feeld", description: "Open-minded dating app for couples and singles exploring non-traditional relationships. Best for ethically non-monogamous dating." },
+
+  // Sexting & Chat
+  { name: "Arousr", category: "Sexting & Chat", score: 7.2, slug: "arousr", description: "Verified sexting platform connecting users with real chat hosts. Pay-per-minute pricing with anonymous, safe interactions." },
+  { name: "SextFriend", category: "Sexting & Chat", score: 6.5, slug: "sextfriend", description: "Free sexting matchmaking site with location-based connections. Simple concept but watch out for fake profiles." },
+  { name: "Flingster", category: "Sexting & Chat", score: 6.8, slug: "flingster", description: "Video chat platform with AR face filters for anonymity. Fun random connections but premium needed for gender filters." },
+  { name: "ChatRandom", category: "Sexting & Chat", score: 6.5, slug: "chatrandom", description: "Random video chat platform with country and gender filters. Large user base but moderation can be inconsistent." },
+
+  // Tube & Streaming
+  { name: "SmutFinder", category: "Tube & Streaming", score: 6.5, slug: "smutfinder", description: "Aggregator site that indexes content across multiple tube sites. Useful search tool but no original content." },
+];

@@ -11,6 +11,7 @@ const ReviewPage = lazy(() => import("./pages/ReviewPage"));
 const ComparePage = lazy(() => import("./pages/ComparePage"));
 const AlternativesPage = lazy(() => import("./pages/AlternativesPage"));
 const RankingsPage = lazy(() => import("./pages/RankingsPage"));
+const ReviewsPage = lazy(() => import("./pages/ReviewsPage"));
 const CategoryPage = lazy(() => import("./pages/CategoryPage"));
 const CategoriesPage = lazy(() => import("./pages/CategoriesPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
@@ -42,6 +43,8 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/review/:slug" element={<ReviewPage />} />
+              <Route path="/reviews" element={<ReviewsPage />} />
+              <Route path="/reviews/:slug" element={<ReviewPage />} />
               <Route path="/compare" element={<ComparePage />} />
               <Route path="/alternatives/:slug" element={<AlternativesPage />} />
               <Route path="/rankings" element={<RankingsPage />} />
