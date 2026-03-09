@@ -87,6 +87,12 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Modern, dark-themed design. The matchmaking approach means you see curated performer suggestions rather than an overwhelming grid. Navigation is clean but the constant upselling for credits and premium features can feel aggressive.",
     mobileExperience: "No dedicated Jerkmate app on app stores. The mobile website is functional with responsive design. Desktop provides the better experience for extended viewing sessions.",
   },
+  "jerkmate": [
+    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including streams, chat, and payment information." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Credit purchases appear under a generic billing descriptor. Jerkmate name not visible on statements." },
+    { icon: "shield-check", title: "Age Verification", description: "Government ID required for all performers. Ensures compliance and reduces fake accounts." },
+    { icon: "eye-off", title: "Account Privacy", description: "Basic privacy controls available. Account deletion through support. Standard security measures." },
+  ],
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
