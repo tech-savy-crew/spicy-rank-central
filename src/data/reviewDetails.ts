@@ -854,6 +854,162 @@ export const detailedReviews: DetailedReview[] = [
   },
 
   // ─── CREATOR PLATFORMS ───
+  {
+    name: "FanVue",
+    slug: "fanvue",
+    category: "Creator Platforms",
+    score: 7.6,
+    verdict: "The creator-first OnlyFans alternative with the lowest 15% commission and AI-powered tools — but can its smaller audience compete?",
+    pricing: "Free / 15% commission",
+    bestFor: "Maximum creator earnings",
+    url: "https://fanvue.com",
+    lastUpdated: "March 2026",
+    readingTime: 9,
+    overview: [
+      "FanVue is a UK-based subscription content platform positioning itself as the creator-first alternative to OnlyFans. Launched in 2021, FanVue's headline differentiator is simple but powerful: a 15% commission rate compared to OnlyFans' 20%. That 5% difference may sound small, but for a creator earning $5,000 per month, it means an extra $250 in their pocket — $3,000 per year.",
+      "Beyond the lower fees, FanVue has invested heavily in AI-powered tools that no other creator platform offers. AI-generated captions, content scheduling optimization, subscriber engagement analytics, and smart pricing recommendations give creators data-driven insights to grow their audience and revenue. The platform supports the same content types as OnlyFans — photos, videos, messages, PPV, tips, and subscriptions.",
+      "FanVue's challenge is the same one every OnlyFans alternative faces: audience scale. OnlyFans has 300 million registered users. FanVue is growing but significantly smaller. For creators whose income depends on subscriber volume, this gap matters. FanVue's strategy is to win creators with better economics and better tools, betting that subscribers will follow their favorite creators to whichever platform they use."
+    ],
+    keyFeatures: [
+      { title: "15% Commission", description: "FanVue's headline feature. Creators keep 85% of all earnings compared to 80% on OnlyFans and Fansly. The lowest commission among major creator platforms." },
+      { title: "AI-Powered Analytics", description: "Machine learning tools that analyze subscriber behavior, predict churn, recommend optimal posting times, and suggest pricing adjustments. No other creator platform offers this level of AI-driven creator support." },
+      { title: "AI Content Tools", description: "AI-assisted caption generation, hashtag suggestions, and content optimization recommendations. These tools help creators produce better-performing content more efficiently." },
+      { title: "Subscription Tiers", description: "Like Fansly, FanVue supports multiple subscription tiers per creator. Different price points with different content access levels maximize revenue across audience segments." },
+      { title: "PPV & Tips", description: "Standard pay-per-view messaging and tipping functionality. Send locked content with custom pricing directly to subscribers." },
+      { title: "Creator Dashboard", description: "Comprehensive dashboard showing real-time earnings, subscriber analytics, content performance, and AI recommendations in one unified view. Clean, modern design that is easy to navigate." }
+    ],
+    pricingDetails: [
+      { plan: "For Creators", price: "15% commission", features: ["Free to join", "85% creator payout", "$50 minimum payout", "Bank, Paxum, crypto"] },
+      { plan: "For Subscribers", price: "Varies", features: ["Free to follow", "Subscriptions $3.99-$49.99/mo", "PPV and tips available"] }
+    ],
+    pricingIntro: "FanVue pricing is the platform's strongest selling point — creators keep more of their earnings than on any major competitor.",
+    pricingOutro: "The FanVue cost advantage is meaningful. A creator earning $10,000/month keeps $8,500 on FanVue versus $8,000 on OnlyFans — a $500 monthly difference, $6,000 annually. For high earners, this alone justifies using FanVue.",
+    scores: [
+      { label: "Content Quality", score: 7.5, description: "Growing creator roster with quality improving as more established creators migrate. Content types match OnlyFans capabilities." },
+      { label: "User Interface", score: 8.5, description: "One of the best-designed creator platform dashboards. Clean, modern, intuitive." },
+      { label: "Value for Money", score: 9, description: "15% commission is the best rate available. AI tools add genuine value. Creators keep more of their earnings." },
+      { label: "Privacy & Safety", score: 7.5, description: "ID verification, SSL encryption, discreet billing. Standard protections meeting industry norms." },
+      { label: "Features", score: 8, description: "AI analytics, AI content tools, multiple tiers, PPV, tips, comprehensive dashboard. Feature set exceeds OnlyFans in several areas." }
+    ],
+    pros: [
+      "Lowest commission at 15% — creators keep 85% of earnings",
+      "AI-powered analytics and content optimization tools",
+      "Modern, well-designed creator dashboard",
+      "Multiple subscription tier support",
+      "Growing platform with creator-first philosophy"
+    ],
+    cons: [
+      "Significantly smaller subscriber base than OnlyFans",
+      "Lower brand recognition among mainstream subscribers",
+      "No native mobile app",
+      "Newer platform with less track record",
+      "Limited content discovery compared to Fansly"
+    ],
+    prosConsNote: "Is FanVue worth it? For creators who prioritize keeping maximum earnings, FanVue's 15% rate is unbeatable. For creators who need maximum subscriber reach, OnlyFans' scale still wins. The optimal strategy: use FanVue as a secondary platform alongside OnlyFans and let your most loyal subscribers follow you for the better creator economics.",
+    whoShouldUse: [
+      { persona: "Creators prioritizing maximum earnings", reason: "15% commission is the lowest available", ideal: true },
+      { persona: "Data-driven creators", reason: "AI analytics and content tools are unmatched", ideal: true },
+      { persona: "Creators needing maximum audience reach now", reason: "OnlyFans has vastly larger subscriber base", ideal: false },
+      { persona: "Creators wanting established platform stability", reason: "FanVue is newer with less track record", ideal: false }
+    ],
+    alternatives: ["onlyfans", "fansly", "loyalfans", "manyvids"],
+    comparisons: [
+      { slug: "fanvue-vs-onlyfans", title: "FanVue vs OnlyFans" },
+      { slug: "fanvue-vs-fansly", title: "FanVue vs Fansly" }
+    ],
+    faqs: [
+      { question: "What is FanVue's commission?", answer: "15% on all earnings. Creators keep 85%." },
+      { question: "Is FanVue legit?", answer: "Yes. UK-based company with functioning payments and growing creator community." },
+      { question: "FanVue vs OnlyFans?", answer: "FanVue has lower fees (15% vs 20%) and AI tools. OnlyFans has vastly larger audience." },
+      { question: "How much can you earn on FanVue?", answer: "Depends on audience. Earnings per subscriber higher due to lower commission. Overall audience smaller." },
+      { question: "Is there a FanVue app?", answer: "No native app. Mobile website is functional." },
+      { question: "Is FanVue safe?", answer: "Yes. ID verification, SSL encryption, discreet billing." },
+      { question: "What is the FanVue minimum payout?", answer: "$50 via bank transfer, Paxum, or crypto." },
+      { question: "How to delete FanVue account?", answer: "Account settings > Delete Account. Withdraw balance first." },
+      { question: "What are the best FanVue alternatives?", answer: "OnlyFans for max audience, Fansly for discovery, LoyalFans for live streaming." },
+      { question: "Does FanVue work internationally?", answer: "Yes. Global operations with multiple payout methods." }
+    ],
+    finalVerdict: "FanVue is the smartest financial choice for adult content creators in 2026. The 15% commission saves meaningful money — thousands of dollars annually for active creators. The AI-powered analytics and content tools are genuine differentiators that no competitor matches. The main limitation is scale: FanVue's subscriber base is a fraction of OnlyFans'. Our recommendation: use FanVue as your secondary platform and actively direct your most engaged fans there. The economics are better, the tools are better, and as the platform grows, the audience gap will narrow."
+  },
+  {
+    name: "Patreon",
+    slug: "patreon",
+    category: "Creator Platforms",
+    score: 7.0,
+    verdict: "The original creator subscription platform — still the best for non-adult creators with mainstream credibility",
+    pricing: "5-12% commission",
+    bestFor: "Non-adult creator subscriptions",
+    url: "https://patreon.com",
+    lastUpdated: "March 2026",
+    readingTime: 9,
+    overview: [
+      "Patreon is the original subscription-based creator platform, launched in 2013 by musician Jack Conte and developer Sam Yam. If you are wondering how does Patreon work, the model is straightforward: creators offer exclusive content and community access to paying supporters, called patrons, who subscribe at monthly or per-creation pricing tiers set by the creator.",
+      "Patreon's origins in the music and art world give it a fundamentally different DNA than OnlyFans or Fansly. While those platforms are built around adult content, Patreon was designed for podcasters, musicians, artists, writers, educators, video creators, and community builders. Adult content exists on Patreon but is heavily restricted and not the platform's focus.",
+      "With over 250,000 active creators and millions of patrons, Patreon has paid out over $3.5 billion to creators since launch. Its brand credibility and recognition among mainstream audiences is unmatched — when someone says they support a creator on Patreon, there is no stigma attached. This mainstream acceptability is Patreon's single greatest advantage for creators who produce non-adult content."
+    ],
+    keyFeatures: [
+      { title: "Tiered Memberships", description: "Create multiple patron tiers with different benefits at different price points. The most flexible tier management system among creator platforms." },
+      { title: "Community Features", description: "Built-in community posts, polls, and discussions. Patreon's community tools foster ongoing engagement between creators and patrons beyond just content delivery." },
+      { title: "Merch Integration", description: "Patreon integrates with merch fulfillment services, allowing creators to offer physical rewards like merchandise, prints, and exclusive items to higher-tier patrons." },
+      { title: "Analytics Dashboard", description: "Detailed insights into patron growth, churn rates, revenue trends, and tier performance. The analytics are comprehensive and help creators optimize their offerings." },
+      { title: "Per-Creation Billing", description: "Unique to Patreon — charge patrons per piece of content rather than monthly. Ideal for creators who publish on irregular schedules like musicians releasing albums or artists sharing illustrations." },
+      { title: "Patreon App", description: "Native iOS and Android apps for both creators and patrons. The Patreon app provides mobile access to content, messaging, community posts, and patron management." }
+    ],
+    pricingDetails: [
+      { plan: "Lite", price: "5% commission", features: ["Basic features", "Limited customization", "Community tools"] },
+      { plan: "Pro", price: "8% commission", features: ["Full analytics", "Tier management", "Merch integration", "Community features"] },
+      { plan: "Premium", price: "12% commission", features: ["Everything in Pro", "Team accounts", "Priority support", "Advanced features"] }
+    ],
+    pricingIntro: "Patreon fees vary by plan tier, with additional payment processing charges on top of the platform commission.",
+    pricingOutro: "On top of Patreon fees, payment processing charges apply: approximately 2.9% + $0.30 per transaction. The true Patreon cost for creators ranges from roughly 8% to 15% of total revenue depending on plan and transaction sizes.",
+    scores: [
+      { label: "Content Quality", score: 7, description: "Content quality depends entirely on the creator. Patreon does not curate or recommend." },
+      { label: "User Interface", score: 8, description: "Professional, polished design. Both creator and patron interfaces are intuitive." },
+      { label: "Value for Money", score: 7, description: "5-12% commission is reasonable. Processing fees add to the cost. Rising prices have reduced the value proposition." },
+      { label: "Privacy & Safety", score: 7.5, description: "Standard protections. No adult content risks for mainstream creators. Secure payments via Stripe." },
+      { label: "Features", score: 7, description: "Tiers, community, merch, per-creation billing, analytics, native app. Solid but not innovative." }
+    ],
+    pros: [
+      "Mainstream brand credibility — no stigma attached to Patreon support",
+      "Most flexible tier management with per-creation billing option",
+      "Built-in community features, polls, and engagement tools",
+      "Native mobile apps on iOS and Android",
+      "Merch integration for physical rewards",
+      "$3.5B+ paid to creators — proven track record"
+    ],
+    cons: [
+      "No content discovery — creators must drive all traffic externally",
+      "Adult content heavily restricted and not well-supported",
+      "Commission plus processing fees can total 10-15%",
+      "Growing competition from Ko-fi and Buy Me a Coffee at lower fees",
+      "Platform has become more corporate and less creator-friendly over time"
+    ],
+    prosConsNote: "Is Patreon worth it? For non-adult creators with established audiences — podcasters, musicians, artists, educators — Patreon remains the best option due to brand credibility and comprehensive features. For adult content creators, OnlyFans, Fansly, or FanVue are significantly better choices.",
+    whoShouldUse: [
+      { persona: "Non-adult creators with established audiences", reason: "Mainstream credibility and comprehensive features", ideal: true },
+      { persona: "Creators wanting community engagement tools", reason: "Best community features among creator platforms", ideal: true },
+      { persona: "Adult content creators", reason: "OnlyFans, Fansly, or FanVue are better options", ideal: false },
+      { persona: "Creators wanting the lowest fees", reason: "Ko-fi and Buy Me a Coffee offer lower or zero commission", ideal: false }
+    ],
+    alternatives: ["onlyfans", "fansly", "fanvue", "loyalfans"],
+    comparisons: [
+      { slug: "patreon-vs-onlyfans", title: "Patreon vs OnlyFans" },
+      { slug: "patreon-vs-kofi", title: "Patreon vs Ko-fi" }
+    ],
+    faqs: [
+      { question: "Is Patreon free for patrons?", answer: "Following is free. Subscribing requires payment at creator-set prices." },
+      { question: "How much does Patreon charge creators?", answer: "5% (Lite), 8% (Pro), 12% (Premium) plus payment processing ~2.9% + $0.30." },
+      { question: "Patreon vs OnlyFans?", answer: "Patreon for non-adult content with mainstream credibility. OnlyFans for adult content with larger adult audience." },
+      { question: "Is Patreon safe?", answer: "Yes. Secure payments via Stripe. Professional platform with transparent operations." },
+      { question: "Does Patreon have an app?", answer: "Yes. Native iOS and Android apps for creators and patrons." },
+      { question: "Can you post adult content on Patreon?", answer: "Limited. Patreon restricts explicit content. Allowed with restrictions but not the platform's strength." },
+      { question: "Is Patreon worth it for small creators?", answer: "Yes if you have an engaged audience. Even 100 dedicated patrons at $5/month generates meaningful income." },
+      { question: "How to delete Patreon?", answer: "Settings > Account > Delete Account. Cancel subscriptions and withdraw balance first." },
+      { question: "What are the best Patreon alternatives?", answer: "Ko-fi for simplicity, Buy Me a Coffee for one-time payments, Gumroad for digital products, OnlyFans for adult content." },
+      { question: "Does Patreon work internationally?", answer: "Yes. Available globally. Supports multiple currencies and international payments." }
+    ],
+    finalVerdict: "Patreon is the original creator subscription platform and still the best choice for non-adult content creators in 2026. The mainstream brand credibility, flexible tier system, community features, per-creation billing, and native mobile apps create a comprehensive package that competitors have not fully matched. The weaknesses are the lack of content discovery, rising fees, restrictive adult content policies, and growing competition from simpler alternatives like Ko-fi. For podcasters, artists, musicians, educators, and any creator who values mainstream credibility, Patreon remains the gold standard."
+  },
   ...generateCreatorPlatformReviews(),
 
   // ─── LIVE CAM SITES ───
@@ -1099,6 +1255,85 @@ export const detailedReviews: DetailedReview[] = [
       { question: "Does Bumble work internationally?", answer: "Yes. Available in 150+ countries. Auto-adjusts to location. Travel mode lets you swipe in other cities. Most active in US, UK, Canada, Australia, Western Europe." }
     ],
     finalVerdict: "Bumble has earned its position as the second most popular dating app for good reason. Women-first messaging improves the experience for everyone. App design is excellent, profile quality is high, safety features are industry-leading. Main complaint is pricing — Premium at $39.99/month is expensive, and free experience keeps getting more restricted. For women and safety-conscious daters, it remains the gold standard. For men, works best with strong profile and patience. For everyone, the user quality and platform design make it one of our highest-rated dating apps."
+  },
+  {
+    name: "Tinder",
+    slug: "tinder",
+    category: "Dating & Hookup Apps",
+    score: 7.5,
+    verdict: "The world's most downloaded dating app with the largest user base — but aggressive monetization and declining free features hold it back",
+    pricing: "Free / Gold $29.99/mo",
+    bestFor: "Largest dating pool",
+    url: "https://tinder.com",
+    lastUpdated: "March 2026",
+    readingTime: 10,
+    overview: [
+      "Tinder is the world's most downloaded dating app and the platform that invented modern swipe-based dating. Launched in 2012, Tinder popularized the swipe-right-to-like, swipe-left-to-pass mechanic that every subsequent dating app has copied. With over 75 million monthly active users globally, Tinder has the largest user base of any dating app and operates in 190+ countries.",
+      "How does Tinder work? You create a profile with photos, a bio, and your preferences. The app shows you potential matches based on location, age, and gender preferences. Swipe right to like, left to pass. When two users swipe right on each other, it is a match and both can message freely. Unlike Bumble, either person can send the first message on Tinder.",
+      "Tinder's massive user base is its greatest strength and the primary reason people still download it despite growing competition. In many markets, especially outside major US cities, Tinder simply has more users than Bumble or Hinge, making it the default dating app. However, Tinder's aggressive monetization strategy — with multiple paid tiers and limited free features — has drawn significant criticism from users in recent years."
+    ],
+    keyFeatures: [
+      { title: "Swiping & Matching", description: "The original swipe mechanic. Right to like, left to pass. Mutual likes create matches with open messaging for both parties." },
+      { title: "Tinder Gold", description: "See who liked you before swiping, get 5 Super Likes per week, 1 free Boost per month, and Passport to swipe in other locations." },
+      { title: "Tinder Platinum", description: "Everything in Gold plus message before matching (Super Likes include a note), priority likes shown before others, and see which likes you have already swiped on." },
+      { title: "Super Likes & Boosts", description: "Tinder Super Like notifies someone you are especially interested. Tinder Boost puts your profile at the top of the stack for 30 minutes. Both dramatically increase match probability." },
+      { title: "Explore Tab", description: "Browse themed groups and events like Hot Takes (ice-breaker games), Swipe Night (interactive stories), and curated collections. These features differentiate Tinder from pure swiping apps." },
+      { title: "Passport", description: "Swipe in any location worldwide before traveling. Available with Gold and Platinum subscriptions. Useful for planning dates while traveling." }
+    ],
+    pricingDetails: [
+      { plan: "Free", price: "Free", features: ["Limited daily swipes", "1 Super Like/week", "Basic matching"] },
+      { plan: "Plus", price: "~$9.99/mo", features: ["Unlimited swipes", "5 Super Likes/week", "1 Boost/month", "Passport"] },
+      { plan: "Gold", price: "~$29.99/mo", features: ["Everything in Plus", "See Who Likes You", "Top Picks"] },
+      { plan: "Platinum", price: "~$39.99/mo", features: ["Everything in Gold", "Message before matching", "Priority likes"] }
+    ],
+    pricingIntro: "Tinder pricing has become increasingly aggressive, with multiple paid tiers and a free experience that feels intentionally limited to push upgrades.",
+    pricingOutro: "**Note:** Tinder pricing varies significantly by age, location, and platform. Younger users often see lower prices. Discounts for longer subscriptions. Tinder cost has increased notably over the past two years.",
+    scores: [
+      { label: "Content Quality", score: 7, description: "Profile quality varies widely. More casual users and bots than Bumble or Hinge. Volume compensates." },
+      { label: "User Interface", score: 7.5, description: "The swiping mechanic remains excellent. Overall app has become cluttered with features and aggressive upgrade prompts." },
+      { label: "Value for Money", score: 6.5, description: "Free tier is too limited. Gold at $29.99 and Platinum at $39.99 are expensive. Competitors offer better value." },
+      { label: "Privacy & Safety", score: 7.5, description: "Photo verification, block/report, safety tips. No AI moderation like Bumble. Some bot and scam account issues persist." },
+      { label: "Features", score: 8, description: "Swiping, Super Likes, Boosts, Passport, Explore, Gold/Platinum tiers. Comprehensive but increasingly locked behind paywalls." }
+    ],
+    pros: [
+      "Largest user base — 75M+ monthly active users globally",
+      "Available in 190+ countries — widest geographic reach",
+      "Both parties can message freely after matching",
+      "Explore tab adds interactive features beyond basic swiping",
+      "Strong mobile apps on iOS and Android"
+    ],
+    cons: [
+      "Aggressive monetization — premium pricing is expensive and keeps increasing",
+      "Free tier increasingly limited to push upgrades",
+      "More bots and fake profiles than Bumble or Hinge",
+      "App has become cluttered with features and ads",
+      "Profile quality generally lower than relationship-focused competitors"
+    ],
+    prosConsNote: "Is Tinder worth it? For users in smaller cities or countries where Bumble and Hinge have limited presence, Tinder's user base makes it the default choice. In major US cities, Bumble and Hinge offer better experiences for serious dating at lower prices.",
+    whoShouldUse: [
+      { persona: "Users needing the largest possible dating pool", reason: "75M+ users in 190+ countries", ideal: true },
+      { persona: "International travelers", reason: "Passport feature and global availability", ideal: true },
+      { persona: "Budget-conscious serious daters", reason: "Premium pricing is expensive, competitors cheaper", ideal: false },
+      { persona: "Users wanting safety-first experience", reason: "Bumble's verification and women-first model is safer", ideal: false }
+    ],
+    alternatives: ["bumble", "feeld"],
+    comparisons: [
+      { slug: "tinder-vs-bumble", title: "Tinder vs Bumble" },
+      { slug: "tinder-vs-hinge", title: "Tinder vs Hinge" }
+    ],
+    faqs: [
+      { question: "Is Tinder free?", answer: "Yes, basic swiping and matching is free but limited. Full features require Gold or Platinum." },
+      { question: "Is Tinder safe?", answer: "Reasonably. Photo verification, block/report. Some bot issues persist." },
+      { question: "Tinder vs Bumble?", answer: "Tinder has more users and equal messaging. Bumble is safer with women-first model. Profile quality higher on Bumble." },
+      { question: "Tinder vs Hinge?", answer: "Tinder for volume and casual dating. Hinge for compatibility-based serious relationships." },
+      { question: "How much does Tinder cost?", answer: "Plus ~$9.99, Gold ~$29.99, Platinum ~$39.99/month. Varies by age and location." },
+      { question: "Is Tinder Gold worth paying for?", answer: "Gold is the best value tier. Platinum is overpriced for most users." },
+      { question: "How to get more Tinder matches?", answer: "Quality photos, specific bio, verify your profile, be active during peak hours." },
+      { question: "How to delete Tinder?", answer: "Settings > Delete Account. Cancel subscription through app store first." },
+      { question: "What are the best Tinder alternatives?", answer: "Bumble for women-first, Hinge for serious dating, Feeld for ENM, Coffee Meets Bagel for curated." },
+      { question: "Does Tinder work internationally?", answer: "Yes. 190+ countries. Passport feature for swiping in other locations." }
+    ],
+    finalVerdict: "Tinder invented modern dating app culture and remains the largest platform by user base. That scale is its killer advantage — in many markets, Tinder simply has more potential matches than any alternative. But the platform has leaned too hard into monetization, with increasingly expensive premium tiers and an increasingly limited free experience. For users who need the largest possible dating pool, Tinder delivers. For everyone else, Bumble's safety features and Hinge's compatibility matching offer better experiences at lower prices."
   },
   ...generateDatingReviews(),
 

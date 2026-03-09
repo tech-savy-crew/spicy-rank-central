@@ -67,6 +67,21 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Modern, dark-themed design that feels contemporary. Homepage features a mix of trending performers, categories, and AI-recommended streams. Search and filtering are significantly better than Chaturbate. The overall experience feels like a platform built in the 2020s rather than the 2010s.",
     mobileExperience: "Excellent mobile experience. The responsive design works smoothly on phones with touch-optimized controls. No native Stripchat app on app stores, but the mobile website functions effectively as a PWA.",
   },
+  "tinder": {
+    gettingStarted: "Five minutes. Phone number or social login. Add photos, write bio, set preferences. Straightforward onboarding.",
+    interfaceNavigation: "The original swipe UI remains intuitive and fast. Tinder has added more features over the years, and the app can feel cluttered compared to its original simplicity. Ads appear frequently for free users, pushing upgrades aggressively. The messaging interface is functional but basic.",
+    mobileExperience: "Tinder is mobile-first with excellent iOS and Android apps. Also available as a web app. Push notifications for matches and messages work reliably. App performance is smooth and stable.",
+  },
+  "fanvue": {
+    gettingStarted: "Quick registration with email and ID verification. Creator approval within 24-48 hours. Clean onboarding flow guides profile setup and first content upload.",
+    interfaceNavigation: "Modern, polished design with a dark theme. The creator dashboard is well-organized with analytics, content management, messaging, and AI tools accessible from a single navigation bar. Cleaner and more intuitive than OnlyFans.",
+    mobileExperience: "No native FanVue app. Mobile browser experience is functional with responsive design. Desktop provides the best experience for detailed analytics and content management.",
+  },
+  "patreon": {
+    gettingStarted: "Registration is straightforward. No ID verification required for non-adult creators. Set up your page, create tiers, describe benefits, and start accepting patrons immediately.",
+    interfaceNavigation: "Professional and polished. The creator dashboard is well-organized with clear navigation between posts, patrons, analytics, and settings. The patron experience is equally clean with easy access to content, community, and membership management.",
+    mobileExperience: "Native Patreon app on iOS and Android. Smooth experience for both creators and patrons. Content consumption, posting, messaging, and patron management all work well on mobile.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
@@ -118,6 +133,24 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Performer Verification", description: "Age and identity verification for all performers. Standard compliance measures." },
     { icon: "eye-off", title: "Account Privacy", description: "Anonymous browsing available. Invisible mode for Ultimate members. Account deletion available." },
   ],
+  "tinder": [
+    { icon: "lock", title: "Photo Verification", description: "Real-time selfie verification with blue checkmark badge. Reduces catfishing." },
+    { icon: "shield-check", title: "Block & Report", description: "Block and report users for inappropriate behavior. Moderation team reviews reports." },
+    { icon: "credit-card", title: "Safe Payments", description: "In-app purchases through Apple/Google app stores with standard payment protections." },
+    { icon: "eye-off", title: "Privacy Controls", description: "Control profile visibility, hide age and distance, and manage data sharing preferences." },
+  ],
+  "fanvue": [
+    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including content and payments." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. FanVue name not visible to third parties." },
+    { icon: "shield-check", title: "ID Verification", description: "Government ID verification required for all creators. Age compliance enforced." },
+    { icon: "eye-off", title: "Content Protection", description: "DMCA enforcement and content protection measures. Creators retain ownership of their content." },
+  ],
+  "patreon": [
+    { icon: "lock", title: "Secure Payments", description: "All payments processed through Stripe with bank-grade encryption and PCI compliance." },
+    { icon: "shield-check", title: "Content Moderation", description: "Community guidelines enforced with content review. Adult content restricted and monitored." },
+    { icon: "credit-card", title: "Transparent Billing", description: "Clear billing with Patreon name on statements. Subscription management through account settings." },
+    { icon: "eye-off", title: "Patron Privacy", description: "Patron identities private by default. Creators see patron names but not personal details unless shared." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
@@ -129,6 +162,9 @@ const privacyOverrides: Record<string, string> = {
   "bumble": "Is Bumble safe? Yes — among the safest mainstream dating apps. Is Bumble legit? Absolutely — publicly traded company (NASDAQ: BMBL). Is Bumble a scam? No — genuine dating experience with real users. Some frustration around pricing, but platform is legitimate.",
   "chaturbate": "Is Chaturbate safe? Yes, with standard security protections. SSL encryption, age verification for performers, and discreet billing for token purchases. Is Chaturbate legit? Absolutely — one of the longest-running and most established cam platforms globally. Is Chaturbate a scam? No — legitimate platform with millions of daily users. Is Chaturbate free? Yes, public broadcasts are completely free to watch. Tokens are only needed for interacting with performers.",
   "stripchat": "Is Stripchat safe? Yes. SSL encryption, performer verification, discreet billing, and standard account security. Is Stripchat legit? Yes — operated by a legitimate company with millions of daily users. Is Stripchat free? Yes, public broadcasts are completely free to watch. Tokens are only needed for tipping and private shows.",
+  "tinder": "Is Tinder safe? Reasonably — photo verification, block/report tools, and safety tips are available. Is Tinder legit? Absolutely — owned by Match Group (NASDAQ: MTCH), the world's largest dating company. Is Tinder a scam? No — genuine dating app with real users, though some bot and scam accounts persist.",
+  "fanvue": "Is FanVue legit? Yes — UK-based company with functioning payments and growing creator community. Is FanVue safe? Yes — ID verification, SSL encryption, and discreet billing meet industry standards. Is FanVue a scam? No — legitimate creator platform with the lowest commission in the market.",
+  "patreon": "Is Patreon safe? Yes — secure payments processed through Stripe with PCI compliance. Is Patreon legit? Absolutely — publicly funded company that has paid out over $3.5 billion to creators. Is Patreon a scam? No — the original and most established creator subscription platform.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -187,6 +223,27 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Buy Tokens in Bulk", description: "The 520-token bundle at $49.99 offers the best per-token value for regular viewers." },
     { title: "Performers: Leverage VR Shows", description: "VR-compatible performers earn premium rates. Invest in VR setup to access this growing market." },
     { title: "Use Mobile for Casual Browsing", description: "Stripchat's mobile experience is excellent. Save desktop for VR and private shows." },
+  ],
+  "tinder": [
+    { title: "Invest in Quality Photos", description: "Clear headshot, full-body shot, activity photos. Six photos outperform three. First photo matters most." },
+    { title: "Write a Specific Bio", description: "Mention specific interests, hobbies, or conversation starters. Generic bios get skipped." },
+    { title: "Verify Your Profile", description: "Photo verification adds a blue checkmark and significantly increases trust and match rates." },
+    { title: "Swipe During Peak Hours", description: "Sunday-Thursday evenings 7-10 PM. Consistent daily usage beats weekend binge-swiping." },
+    { title: "Start with Gold Before Platinum", description: "Gold's See Who Likes You is the most valuable paid feature. Platinum's extras rarely justify the price increase." },
+  ],
+  "fanvue": [
+    { title: "Direct Your Most Loyal Fans to FanVue", description: "Keep your most engaged subscribers on FanVue where you keep 85%. Use OnlyFans for broader reach." },
+    { title: "Use AI Analytics to Optimize Posting", description: "Let the AI recommend optimal posting times and pricing. Data-driven decisions outperform guesswork." },
+    { title: "Set Up Multiple Tiers", description: "Offer different price points to capture different audience segments. Mid-tier as best value." },
+    { title: "Leverage AI Caption Tools", description: "Use the AI caption generator to write engaging post descriptions faster. Edit for your voice." },
+    { title: "Cross-Promote Between Platforms", description: "Run FanVue alongside OnlyFans. Promote the cost savings to subscribers who follow you on both." },
+  ],
+  "patreon": [
+    { title: "Start with 3-4 Tiers Maximum", description: "Too many tiers confuse patrons. Offer a low entry, popular middle, and premium top tier." },
+    { title: "Use Per-Creation Billing If Appropriate", description: "If you publish irregularly, per-creation billing is fairer and reduces churn from inactive months." },
+    { title: "Engage Your Community Regularly", description: "Post polls, behind-the-scenes content, and community updates. Engagement reduces patron churn." },
+    { title: "Offer Exclusive Value at Every Tier", description: "Each tier needs clear, exclusive benefits. Patrons upgrade when the next tier offers something they want." },
+    { title: "Promote Patreon on Every Platform", description: "Mention your Patreon in every YouTube video, podcast episode, and social media post. Consistent promotion drives growth." },
   ],
 };
 
