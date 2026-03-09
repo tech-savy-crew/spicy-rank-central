@@ -58,7 +58,7 @@ export const detailedReviews: DetailedReview[] = [
       { plan: "Premium", price: "$12.99/mo", features: ["Unlimited messages", "Full customization options", "AI image generation", "Voice messages", "Priority responses"] },
       { plan: "Annual", price: "$5.99/mo", features: ["All premium features", "Billed annually at $71.88", "Best value option for committed users"] }
     ],
-    pricingOutro: "So, is Candy.ai free? Technically yes — there is a free tier. But honestly, the free Candy.ai experience is quite limited. You will hit daily message caps quickly, and the best features like image generation and voice are locked behind the premium subscription. Our recommendation: use the free tier to test conversation quality, then decide if the premium pricing is worth it for you.",
+    pricingOutro: "**Is Candy.ai free?** Technically yes — there is a free tier. But honestly, the free Candy.ai experience is quite limited:\n\n- You will hit daily message caps quickly\n- Image generation is locked behind premium\n- Voice messages require a paid subscription\n- Full customization options are premium-only\n\n**Our recommendation:** use the free tier to test conversation quality, then decide if the premium pricing is worth it for you.",
     scores: [
       { label: "Content Quality", score: 8.5, description: "Conversations are remarkably natural. The AI handles context shifts, humor, emotional depth, and even complex hypothetical scenarios better than most competitors." },
       { label: "User Interface", score: 8.0, description: "Clean, intuitive design that puts conversations first. Navigation is logical, settings are accessible, and the overall flow from signup to active chat is seamless." },
