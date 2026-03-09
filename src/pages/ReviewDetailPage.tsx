@@ -7,6 +7,7 @@ import { getUserExperience, getPrivacyTrust, getTips, getExtraFaqs } from "@/dat
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle, XCircle, ExternalLink, Star, Clock, Calendar, ChevronRight, ChevronDown, Zap, Users, Shield, DollarSign, Sparkles, ArrowRight, Monitor, ShieldCheck, Lightbulb, Lock, CreditCard, EyeOff, Camera } from "lucide-react";
 import { useState, useMemo } from "react";
+import candyAiInterface from "@/assets/candy-ai-interface.webp";
 
 function StarRating({ score, max = 10 }: { score: number; max?: number }) {
   const stars = 5;
