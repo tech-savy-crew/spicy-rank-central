@@ -266,6 +266,8 @@ const ReviewDetailPage = () => {
                     ? "Fansly is the strongest OnlyFans alternative available in 2026. Better content discovery, flexible subscription tiers, and a growing creator community earn it an 8.2/10 rating. While its audience is still smaller than OnlyFans, Fansly's creator-first approach and discovery features make it the better choice for new creators building from scratch."
                     : isDreamGF
                     ? "DreamGF.ai excels at visual AI companion creation with some of the best image generation in the space. At 7.8/10, it earns our recommendation for users who prioritize visuals over conversation depth. The character builder is intuitive, NSFW content is unrestricted, and pricing is competitive — but conversation quality still trails behind Candy.ai."
+                    : isBumble
+                    ? "Bumble remains one of the best dating apps in 2026 thanks to its women-first messaging model, clean design, and strong safety features. At 8.0/10, we recommend it for anyone serious about finding real connections — though Bumble Premium pricing has gotten expensive and the free experience is increasingly limited."
                     : review.verdict}
                 </p>
               </div>
