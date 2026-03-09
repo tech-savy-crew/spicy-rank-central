@@ -326,6 +326,9 @@ const ReviewDetailPage = () => {
                   </ul>
                 </div>
               </div>
+              {review.prosConsNote && (
+                <p className="text-[15px] text-muted-foreground leading-7 mt-5">{review.prosConsNote}</p>
+              )}
             </section>
 
             {/* NEW: Privacy, Safety & Trust */}
