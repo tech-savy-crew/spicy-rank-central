@@ -61,6 +61,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Content Moderation", description: "Candy.ai enforces content policies in line with industry standards, including DMCA compliance and age verification for adult content access. All users must confirm they are 18 or older." },
     { icon: "eye-off", title: "Account Privacy", description: "You can use Candy.ai with minimal personal information. No social media linking is required, and account deletion is available upon request. Personal information is not sold to third parties." },
   ],
+  "dreamgf-ai": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all connections. Content, account data, payments encrypted in transit." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. Platform name not visible." },
+    { icon: "shield-check", title: "Content Moderation", description: "NSFW restricted to verified premium users. Age verification required. Boundaries against illegal content." },
+    { icon: "eye-off", title: "Account Privacy", description: "Anonymous usage without social media linking. Account deletion available. Privacy policy less detailed than Candy.ai on data retention specifics." },
+  ],
   "feetfinder": [
     { icon: "lock", title: "Data Encryption", description: "FeetFinder uses SSL/TLS encryption across the entire platform. All data transfers between your browser and their servers are secured, including payment information and uploaded content." },
     { icon: "credit-card", title: "Discreet Billing", description: "Charges appear on bank and credit card statements under a generic billing descriptor. The FeetFinder name does not show up on financial statements." },
