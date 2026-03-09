@@ -57,6 +57,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "One of the cleanest dating app interfaces. Uncluttered swiping screen, large photos, clear text. Bottom tab navigation. Modern and pleasant to use. Settings logically organized.",
     mobileExperience: "Mobile-first app available on iOS and Android. Web version exists but limited. Push notifications reliable. App runs smoothly on all devices. Polished, stable, best-in-class.",
   },
+  "chaturbate": {
+    gettingStarted: "Creating an account takes two minutes. Viewers need only an email. Performers require age verification with government ID, typically processed within 24-48 hours. Broadcasting begins immediately after verification.",
+    interfaceNavigation: "Chaturbate's interface is its weakest point. The design looks like it has not been significantly updated since launch. The homepage displays a grid of live thumbnails sorted by viewer count. Navigation is basic with category tabs and a search bar. It works, but it feels dated compared to Stripchat's modern design or LiveJasmin's polished interface.",
+    mobileExperience: "The Chaturbate app is not available on app stores, but the mobile website works adequately. Browsing, watching, and tipping all function on mobile. The experience is serviceable but not optimized for touch interaction in the way that Stripchat's mobile experience is.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
