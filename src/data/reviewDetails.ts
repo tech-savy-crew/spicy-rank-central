@@ -2096,11 +2096,12 @@ function generateTubeReviews(): DetailedReview[] {
     whoShouldUse: [
       { persona: "Viewers wanting curated premium cam experience", reason: "Matchmaking-style discovery with high-quality performers", ideal: true },
       { persona: "Users who value gamification and rank progression", reason: "Unique ranked system with perks at each level", ideal: true },
-      { persona: "Budget-conscious viewers wanting free content", reason: "Very limited free experience — Chaturbate is better for free viewing", ideal: false },
-      { persona: "Users wary of aggressive advertising", reason: "Ads are more provocative than the actual platform experience", ideal: false },
+      { persona: "Gold show enthusiasts", reason: "Group viewing experiences at affordable ticket prices offer the best value on the platform", ideal: true },
+      { persona: "Budget-conscious viewers wanting free content", reason: "Very limited free experience — Chaturbate's free-to-watch model offers significantly more free entertainment", ideal: false },
+      { persona: "Users who distrust the platform due to advertising", reason: "If the ads have already created a negative impression, the actual experience may not overcome that bias", ideal: false },
     ],
     alternatives: ["chaturbate", "stripchat", "livejasmin", "camsoda"],
-    comparisons: [{ slug: "chaturbate", title: "Jerkmate vs Chaturbate" }],
+    comparisons: [{ slug: "chaturbate", title: "Jerkmate vs Chaturbate" }, { slug: "stripchat", title: "Jerkmate vs Stripchat" }, { slug: "livejasmin", title: "Jerkmate vs LiveJasmin" }],
     faqs: [
       { question: "Is Jerkmate legit?", answer: "Yes. Legitimate platform with real performers, functioning payments, and professional operations. The aggressive ads are misleading but the product is real." },
       { question: "Is Jerkmate safe?", answer: "Yes. SSL encryption, age verification, discreet billing. Standard security protections." },
