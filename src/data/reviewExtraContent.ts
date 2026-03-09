@@ -46,10 +46,17 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Content Moderation", description: "Candy.ai enforces content policies in line with industry standards, including DMCA compliance and age verification for adult content access. All users must confirm they are 18 or older." },
     { icon: "eye-off", title: "Account Privacy", description: "You can use Candy.ai with minimal personal information. No social media linking is required, and account deletion is available upon request. Personal information is not sold to third parties." },
   ],
+  "feetfinder": [
+    { icon: "lock", title: "Data Encryption", description: "FeetFinder uses SSL/TLS encryption across the entire platform. All data transfers between your browser and their servers are secured, including payment information and uploaded content." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Charges appear on bank and credit card statements under a generic billing descriptor. The FeetFinder name does not show up on financial statements." },
+    { icon: "shield-check", title: "Content Protection", description: "All uploaded content is watermarked and protected against unauthorized downloading. FeetFinder actively enforces DMCA takedown requests when content is stolen." },
+    { icon: "eye-off", title: "Identity Verification", description: "Both sellers and buyers must verify their identity. Sellers provide government ID for age verification. This dramatically reduces fake accounts and scam attempts." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
   "candy-ai": "So, is Candy.ai a scam? Based on our 30+ days of testing: absolutely not. It is a legitimate, well-built platform with a clear business model. Is Candy.ai safe? Yes, with reasonable privacy protections that meet what we would expect for this category. Is Candy.ai legit? The company operates transparently, processes refund requests, and has a growing presence on review platforms like Trustpilot. We found no red flags during our extended testing period.",
+  "feetfinder": "So, is FeetFinder legit? Absolutely. After testing the platform extensively from both sides, FeetFinder is a legitimate, well-established marketplace with a real business model, genuine buyer traffic, and functioning payout systems. Is FeetFinder safe? Yes — the combination of identity verification, encryption, content protection, and discreet billing makes it one of the safest options available. Is FeetFinder a scam? No. There are legitimate criticisms around pricing and competition levels, but the platform itself operates transparently and has been doing so since 2019.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
