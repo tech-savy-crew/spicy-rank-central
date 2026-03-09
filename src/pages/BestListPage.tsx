@@ -443,7 +443,7 @@ const BestListPage = () => {
                   <tr key={p.rank} className={`border-t border-border/40 ${i % 2 === 0 ? "bg-card" : "bg-secondary/30"}`}>
                     <td className="px-3 md:px-4 py-3 font-bold text-primary text-xs md:text-sm">#{p.rank}</td>
                     <td className="px-3 md:px-4 py-3 font-medium text-foreground text-xs md:text-sm">
-                      <Link to={`/review/${p.slug}`} className="hover:text-primary transition-colors">{p.logo} {p.name}</Link>
+                      <Link to={`/reviews/${p.slug}`} className="hover:text-primary transition-colors">{p.logo} {p.name}</Link>
                     </td>
                     <td className="px-3 md:px-4 py-3 text-xs md:text-sm"><RatingBadge rating={p.rating} size="sm" /></td>
                     <td className="px-3 md:px-4 py-3 text-xs md:text-sm text-muted-foreground">{p.bestFor}</td>
