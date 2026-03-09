@@ -190,6 +190,14 @@ const ReviewDetailPage = () => {
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "Creator Platforms" },
+        ] : isDreamGF ? [
+          { name: "keywords", content: "dreamgf review, dreamgf ai review, dreamgf ai, dreamgf pricing, dreamgf app, dreamgf nsfw, dreamgf ai girlfriend, dreamgf alternatives, dreamgf promo code, dreamgf ai pricing, dreamgf free, is dreamgf legit, is dreamgf safe, dreamgf ai nsfw, dreamgf cost" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "DreamGF.ai Review 2026 — Best AI Girlfriend for Image Generation?" },
+          { property: "og:description", content: "We tested DreamGF.ai for 30+ days. Full review of AI image generation, pricing, NSFW features, and Candy.ai comparison. 7.8/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "AI Companions" },
         ] : undefined}
         jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
