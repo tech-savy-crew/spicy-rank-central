@@ -11,14 +11,19 @@ export interface DetailedReview {
   overview: string[];
   keyFeatures: { title: string; description: string }[];
   pricingDetails: { plan: string; price: string; features: string[] }[];
-  scores: { label: string; score: number }[];
+  pricingIntro?: string;
+  pricingOutro?: string;
+  scores: { label: string; score: number; description?: string }[];
   pros: string[];
   cons: string[];
+  prosConsNote?: string;
+  privacyIntro?: string;
   whoShouldUse: { persona: string; reason: string; ideal: boolean }[];
   alternatives: string[];
   comparisons: { slug: string; title: string }[];
   faqs: { question: string; answer: string }[];
   finalVerdict: string;
+  readingTime?: number;
 }
 
 export const detailedReviews: DetailedReview[] = [
