@@ -290,7 +290,7 @@ const Index = () => {
               </h2>
               <p className="text-sm text-muted-foreground mt-1">Curated rankings updated monthly</p>
             </div>
-            <Link to="/best-lists" className="text-sm text-primary font-medium hover:underline hidden md:block">View all lists →</Link>
+            <Link to="/rankings" className="text-sm text-primary font-medium hover:underline hidden md:block">View all lists →</Link>
           </div>
         </AnimatedSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
