@@ -220,6 +220,14 @@ const ReviewDetailPage = () => {
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "Dating & Hookup Apps" },
+        ] : isChaturbate ? [
+          { name: "keywords", content: "chaturbate review, chaturbate tokens, chaturbate free, is chaturbate safe, chaturbate pricing, chaturbate app, how does chaturbate work, chaturbate token price, chaturbate alternatives, is chaturbate legit, chaturbate cost, chaturbate models, chaturbate earnings, chaturbate vs stripchat, chaturbate tips" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "Chaturbate Review 2026 — Still the Best Free Cam Site?" },
+          { property: "og:description", content: "We tested Chaturbate for 45+ days. Full review of free cams, token pricing, model earnings, safety, and alternatives. 7.8/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Live Cam Sites" },
         ] : undefined}
         jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
