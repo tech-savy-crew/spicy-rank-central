@@ -318,7 +318,7 @@ export const detailedReviews: DetailedReview[] = [
     score: 7.5,
     verdict: "A growing AI companion platform with diverse characters and personalized interactions",
     pricing: "Free tier / $11.99/mo",
-    bestFor: "Personalized AI characters",
+    bestFor: "Newer platform with diverse characters and growing features",
     url: "https://soulfun.ai",
     lastUpdated: "March 2026",
     overview: [
