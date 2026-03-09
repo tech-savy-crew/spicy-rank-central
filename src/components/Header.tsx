@@ -6,10 +6,11 @@ import { ThemeToggle } from "./ThemeToggle";
 const reviewDropdown = [
   { label: "Creator Platforms", to: "/category/creator-platforms" },
   { label: "Live Cam Sites", to: "/category/live-cam-sites" },
-  { label: "Dating Apps", to: "/category/dating-apps" },
+  { label: "Dating & Hookup Apps", to: "/category/dating-hookup-apps" },
   { label: "AI Companions", to: "/category/ai-companions" },
-  { label: "Streaming", to: "/category/streaming-sites" },
-  { label: "All Reviews", to: "/category/all" },
+  { label: "Sexting & Chat", to: "/category/sexting-chat" },
+  { label: "Tube & Streaming", to: "/category/tube-streaming" },
+  { label: "All Reviews", to: "/reviews" },
 ];
 
 const moreDropdown = [

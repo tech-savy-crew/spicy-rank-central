@@ -26,7 +26,7 @@ const posts: NewsPost[] = [
     date: "March 5, 2026",
     readTime: "4 min read",
     excerpt: "OnlyFans has rolled out major changes to its creator payout structure. Here's what every creator needs to know about the new fee schedule.",
-    link: "/blog/onlyfans-payout-policy-2026",
+    link: "/reviews/onlyfans",
   },
   {
     category: "Creator Platforms",
@@ -38,7 +38,7 @@ const posts: NewsPost[] = [
     date: "March 2, 2026",
     readTime: "6 min read",
     excerpt: "Fansly just hit a massive milestone. We break down what this growth means for creators and whether it's time to switch.",
-    link: "/blog/fansly-5-million-creators",
+    link: "/reviews/fansly",
   },
   {
     category: "AI Companions",
@@ -50,7 +50,7 @@ const posts: NewsPost[] = [
     date: "February 28, 2026",
     readTime: "8 min read",
     excerpt: "We tested 12 AI companion apps head-to-head. From CrushOn to Candy AI, here's which ones actually deliver on their promises.",
-    link: "/blog/best-nsfw-ai-chatbots-2026",
+    link: "/reviews/crushon-ai",
   },
   {
     category: "Live Cam",
@@ -62,7 +62,7 @@ const posts: NewsPost[] = [
     date: "February 25, 2026",
     readTime: "5 min read",
     excerpt: "Stripchat's updated VR experience promises more immersive cam shows. We got early access to test the new features.",
-    link: "/blog/stripchat-vr-2-features",
+    link: "/reviews/stripchat",
   },
 ];
 
@@ -82,8 +82,8 @@ export function LatestNews() {
                 Stay informed with the latest changes across adult platforms
               </p>
             </div>
-            <Link to="/blog" className="text-sm font-medium hover:underline hidden md:block" style={{ color: "#E53E3E" }}>
-              Read all articles →
+            <Link to="/reviews" className="text-sm font-medium hover:underline hidden md:block" style={{ color: "#E53E3E" }}>
+              View all reviews →
             </Link>
           </div>
         </AnimatedSection>
@@ -142,7 +142,7 @@ export function LatestNews() {
 
         {/* Mobile link */}
         <div className="mt-4 lg:hidden text-center">
-          <Link to="/blog" className="text-sm font-medium" style={{ color: "#E53E3E" }}>Read all articles →</Link>
+          <Link to="/reviews" className="text-sm font-medium" style={{ color: "#E53E3E" }}>View all reviews →</Link>
         </div>
       </div>
     </section>

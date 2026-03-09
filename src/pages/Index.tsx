@@ -33,12 +33,12 @@ import {
 /* ── Static Data ── */
 
 const featuredReviews = [
-  { title: "OnlyFans", category: "Creator Platform", rating: 8.5, slug: "onlyfans-review", desc: "Still the biggest name in creator subscriptions — but rising fees and growing competition mean it's no longer the only option. Full breakdown inside." },
-  { title: "Fansly", category: "Creator Platform", rating: 8.2, slug: "fansly-review", desc: "Lower creator fees, better content organization, and a rapidly growing user base make Fansly the top OnlyFans alternative for both creators and fans." },
-  { title: "Chaturbate", category: "Live Cam Site", rating: 7.8, slug: "chaturbate-review", desc: "The most popular free live cam platform with thousands of broadcasters online 24/7. Great free experience but the token system can get expensive." },
-  { title: "Stripchat", category: "Live Cam Site", rating: 7.5, slug: "stripchat-review", desc: "AI-powered cam site with virtual reality support and innovative features. Strong Chaturbate alternative with a modern, clean interface." },
-  { title: "Bumble", category: "Dating App", rating: 8.0, slug: "bumble-review", desc: "Women-make-the-first-move dating app with a solid matching algorithm. Premium features are worth it if you're serious about dating in 2026." },
-  { title: "FanVue", category: "Creator Platform", rating: 7.6, slug: "fanvue-review", desc: "UK-based OnlyFans competitor with built-in AI tools for creators. Lower fees and better analytics, but still building its audience." },
+  { title: "OnlyFans", category: "Creator Platform", rating: 8.5, slug: "onlyfans", desc: "Still the biggest name in creator subscriptions — but rising fees and growing competition mean it's no longer the only option. Full breakdown inside." },
+  { title: "Fansly", category: "Creator Platform", rating: 8.2, slug: "fansly", desc: "Lower creator fees, better content organization, and a rapidly growing user base make Fansly the top OnlyFans alternative for both creators and fans." },
+  { title: "Chaturbate", category: "Live Cam Site", rating: 7.8, slug: "chaturbate", desc: "The most popular free live cam platform with thousands of broadcasters online 24/7. Great free experience but the token system can get expensive." },
+  { title: "Stripchat", category: "Live Cam Site", rating: 7.5, slug: "stripchat", desc: "AI-powered cam site with virtual reality support and innovative features. Strong Chaturbate alternative with a modern, clean interface." },
+  { title: "Bumble", category: "Dating App", rating: 8.0, slug: "bumble", desc: "Women-make-the-first-move dating app with a solid matching algorithm. Premium features are worth it if you're serious about dating in 2026." },
+  { title: "FanVue", category: "Creator Platform", rating: 7.6, slug: "fanvue", desc: "UK-based OnlyFans competitor with built-in AI tools for creators. Lower fees and better analytics, but still building its audience." },
 ];
 
 const categoryCards = [
@@ -58,20 +58,20 @@ const comparisons = [
 ];
 
 const topLists = [
-  { title: "10 Best OnlyFans Alternatives (2026)", category: "Creator Platforms", slug: "best-onlyfans-alternatives" },
-  { title: "Best Free Cam Sites — Top 8 Ranked", category: "Live Cam", slug: "best-free-cam-sites" },
-  { title: "Best Hookup Apps That Actually Work (2026)", category: "Dating", slug: "best-hookup-apps" },
-  { title: "Best AI Girlfriend Apps — Top 10 Ranked", category: "AI Companions", slug: "best-ai-girlfriend-apps" },
-  { title: "Best Chaturbate Alternatives — Top 8", category: "Live Cam", slug: "best-chaturbate-alternatives" },
-  { title: "Best Creator Platforms for Beginners", category: "Creator Platforms", slug: "best-creator-platforms-beginners" },
+  { title: "10 Best OnlyFans Alternatives (2026)", category: "Creator Platforms", slug: "onlyfans-alternatives" },
+  { title: "Best Free Cam Sites — Top 8 Ranked", category: "Live Cam", slug: "free-cam-sites" },
+  { title: "Best Hookup Apps That Actually Work (2026)", category: "Dating", slug: "hookup-apps" },
+  { title: "Best AI Girlfriend Apps — Top 10 Ranked", category: "AI Companions", slug: "ai-girlfriend-apps" },
+  { title: "Best Chaturbate Alternatives — Top 8", category: "Live Cam", slug: "chaturbate-alternatives" },
+  { title: "Best Creator Platforms for Beginners", category: "Creator Platforms", slug: "creator-platforms-beginners" },
 ];
 
 const trending = [
-  { emoji: "🔥", text: "Fansly surpasses 5M creators", link: "/review/fansly-review" },
-  { emoji: "📈", text: "OnlyFans updates creator payout policy", link: "/review/onlyfans-review" },
-  { emoji: "💻", text: "New AI companion app CrushOn reviewed", link: "/review/crushon-review" },
-  { emoji: "✨", text: "Stripchat launches VR 2.0 features", link: "/review/stripchat-review" },
-  { emoji: "💡", text: "Best cam sites list updated for March 2026", link: "/best/free-cam-sites" },
+  { emoji: "🔥", text: "Fansly surpasses 5M creators", link: "/reviews/fansly" },
+  { emoji: "📈", text: "OnlyFans updates creator payout policy", link: "/reviews/onlyfans" },
+  { emoji: "💻", text: "New AI companion app CrushOn reviewed", link: "/reviews/crushon-ai" },
+  { emoji: "✨", text: "Stripchat launches VR 2.0 features", link: "/reviews/stripchat" },
+  { emoji: "💡", text: "Best cam sites list updated for March 2026", link: "/best/best-free-cam-sites" },
   { emoji: "⚡", text: "Tinder vs Bumble: latest comparison published", link: "/compare/tinder-vs-bumble" },
 ];
 
@@ -146,7 +146,7 @@ const Index = () => {
             </form>
 
             <div className="flex flex-wrap gap-3 mb-6">
-              <Link to="/category/all" className="inline-flex items-center gap-2 spicy-gradient text-primary-foreground font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity btn-hover">
+              <Link to="/reviews" className="inline-flex items-center gap-2 spicy-gradient text-primary-foreground font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity btn-hover">
                 Browse All Reviews <ArrowRight className="h-4 w-4" />
               </Link>
               <Link to="/rankings" className="inline-flex items-center gap-2 border border-primary text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary/10 transition-colors btn-hover">
@@ -196,7 +196,7 @@ const Index = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {featuredReviews.map((card, i) => (
             <AnimatedSection key={card.slug} delay={i * 100}>
-              <Link to={`/review/${card.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group flex flex-col h-full">
+              <Link to={`/reviews/${card.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group flex flex-col h-full">
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-xs font-medium bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">{card.category}</span>
                   <RatingBadge rating={card.rating} />
@@ -290,13 +290,13 @@ const Index = () => {
               </h2>
               <p className="text-sm text-muted-foreground mt-1">Curated rankings updated monthly</p>
             </div>
-            <Link to="/best-lists" className="text-sm text-primary font-medium hover:underline hidden md:block">View all lists →</Link>
+            <Link to="/rankings" className="text-sm text-primary font-medium hover:underline hidden md:block">View all lists →</Link>
           </div>
         </AnimatedSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {topLists.map((list, i) => (
             <AnimatedSection key={list.slug} delay={i * 80}>
-              <Link to={`/best-lists/${list.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
+              <Link to={`/best/${list.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
                 <span className="text-xs font-medium bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">{list.category}</span>
                 <h3 className="font-bold text-sm mt-3 group-hover:text-primary transition-colors">{list.title}</h3>
                 <span className="inline-flex items-center gap-1 text-xs text-primary font-medium mt-2">

@@ -25,7 +25,7 @@ export function RelatedContent({ currentSlug, category, max = 4, title = "Relate
         {related.map((p) => (
           <Link
             key={p.slug}
-            to={`/review/${p.slug}`}
+            to={`/reviews/${p.slug}`}
             className="flex items-center gap-4 bg-card rounded-xl border border-border/50 p-4 card-hover group"
           >
             <span className="text-2xl">{p.logo}</span>

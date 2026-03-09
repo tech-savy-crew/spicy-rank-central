@@ -15,14 +15,14 @@ interface PlatformRow {
 }
 
 const rows: PlatformRow[] = [
-  { name: "OnlyFans", category: "Creator Platform", score: 8.5, pricing: "Free (20% fee)", bestFor: "Established creators with large following", slug: "onlyfans-review" },
-  { name: "Fansly", category: "Creator Platform", score: 8.2, pricing: "Free (20% fee)", bestFor: "Creators migrating from OnlyFans", slug: "fansly-review" },
-  { name: "Bumble", category: "Dating App", score: 8.0, pricing: "Free / $39.99/mo", bestFor: "Women who want to make the first move", slug: "bumble-review" },
-  { name: "Chaturbate", category: "Live Cam", score: 7.8, pricing: "Free (tokens)", bestFor: "Free live cam viewing experience", slug: "chaturbate-review" },
-  { name: "FanVue", category: "Creator Platform", score: 7.6, pricing: "Free (15% fee)", bestFor: "AI tools + lower platform fees", slug: "fanvue-review" },
-  { name: "Stripchat", category: "Live Cam", score: 7.5, pricing: "Free (tokens)", bestFor: "VR cam shows + modern interface", slug: "stripchat-review" },
-  { name: "Tinder", category: "Dating App", score: 7.5, pricing: "Free / $29.99/mo", bestFor: "Casual dating with huge user base", slug: "tinder-review" },
-  { name: "Patreon", category: "Creator Platform", score: 7.0, pricing: "Free (5-12% fee)", bestFor: "Non-adult + adult content mix", slug: "patreon-review" },
+  { name: "OnlyFans", category: "Creator Platform", score: 8.5, pricing: "Free (20% fee)", bestFor: "Established creators with large following", slug: "onlyfans" },
+  { name: "Fansly", category: "Creator Platform", score: 8.2, pricing: "Free (20% fee)", bestFor: "Creators migrating from OnlyFans", slug: "fansly" },
+  { name: "Bumble", category: "Dating App", score: 8.0, pricing: "Free / $39.99/mo", bestFor: "Women who want to make the first move", slug: "bumble" },
+  { name: "Chaturbate", category: "Live Cam", score: 7.8, pricing: "Free (tokens)", bestFor: "Free live cam viewing experience", slug: "chaturbate" },
+  { name: "FanVue", category: "Creator Platform", score: 7.6, pricing: "Free (15% fee)", bestFor: "AI tools + lower platform fees", slug: "fanvue" },
+  { name: "Stripchat", category: "Live Cam", score: 7.5, pricing: "Free (tokens)", bestFor: "VR cam shows + modern interface", slug: "stripchat" },
+  { name: "Tinder", category: "Dating App", score: 7.5, pricing: "Free / $29.99/mo", bestFor: "Casual dating with huge user base", slug: "tinder" },
+  { name: "Patreon", category: "Creator Platform", score: 7.0, pricing: "Free (5-12% fee)", bestFor: "Non-adult + adult content mix", slug: "patreon" },
 ];
 
 const categoryStyles: Record<string, string> = {
@@ -117,7 +117,7 @@ export function PlatformRatingsTable() {
                     <td className="px-5 py-3.5 text-sm" style={{ color: "#718096" }}>{row.pricing}</td>
                     <td className="px-5 py-3.5 text-sm" style={{ color: "#718096" }}>{row.bestFor}</td>
                     <td className="px-5 py-3.5">
-                      <Link to={`/review/${row.slug}`} className="inline-flex items-center gap-1 text-sm font-medium hover:underline" style={{ color: "#E53E3E" }}>
+                      <Link to={`/reviews/${row.slug}`} className="inline-flex items-center gap-1 text-sm font-medium hover:underline" style={{ color: "#E53E3E" }}>
                         Read Review <ArrowRight className="h-3.5 w-3.5" />
                       </Link>
                     </td>
@@ -149,7 +149,7 @@ export function PlatformRatingsTable() {
               </div>
               <p className="text-sm mb-3" style={{ color: "#718096" }}>{row.bestFor}</p>
               <Link
-                to={`/review/${row.slug}`}
+                to={`/reviews/${row.slug}`}
                 className="flex items-center justify-center gap-1 w-full border rounded-lg py-2 text-sm font-medium transition-colors hover:bg-[#FFF5F5]"
                 style={{ borderColor: "#E53E3E", color: "#E53E3E" }}
               >
