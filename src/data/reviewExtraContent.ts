@@ -162,6 +162,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Be Active During Peak Hours", description: "Sunday-Thursday evenings 7-10 PM. Consistent daily usage beats binge-swiping." },
     { title: "Women: Send Engaging First Messages", description: "Reference something specific from their profile. Personalized messages convert 3-5x better than generic greetings." },
   ],
+  "chaturbate": [
+    { title: "Create a Free Account", description: "Viewers: Create a free account to access chat, follow favorites, and get notifications when performers go live." },
+    { title: "Buy Tokens in Larger Bundles", description: "Viewers: Buy tokens in larger bundles for better per-token value. The 500-token bundle offers the best balance." },
+    { title: "Invest in a Lovense Toy", description: "Performers: Interactive tip-activated shows earn 2-3x more than standard broadcasting." },
+    { title: "Set Clear Tip Menus and Room Goals", description: "Performers: Viewers tip more when they know exactly what each amount unlocks." },
+    { title: "Broadcast Consistently at Set Times", description: "Performers: Regular scheduling builds a loyal viewer base." },
+  ],
 };
 
 // ── Generic generators ──
