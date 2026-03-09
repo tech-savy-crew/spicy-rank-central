@@ -49,6 +49,7 @@ const ReviewDetailPage = () => {
 
   const readingTime = useMemo(() => {
     if (!review) return 0;
+    if (review.readingTime) return review.readingTime;
     const text = review.overview.join(" ") + review.pros.join(" ") + review.cons.join(" ") + review.finalVerdict;
     return Math.max(5, Math.ceil(text.split(/\s+/).length / 200));
   }, [review]);
@@ -108,14 +109,32 @@ const ReviewDetailPage = () => {
 
   const categorySlug = review.category.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-");
 
+  const isCandyAi = review.slug === "candy-ai";
+
+  const candyJsonLd = isCandyAi ? [
+    {"@context":"https://schema.org","@type":"Review","name":"Candy.ai Review 2026","description":"In-depth review of Candy.ai AI girlfriend platform covering features, pricing, safety, and user experience. Tested for 30+ days.","datePublished":"2026-03-01","dateModified":"2026-03-09","author":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"publisher":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"itemReviewed":{"@type":"SoftwareApplication","name":"Candy.ai","applicationCategory":"EntertainmentApplication","operatingSystem":"Web, Android, iOS","url":"https://candy.ai","offers":{"@type":"AggregateOffer","lowPrice":"0","highPrice":"12.99","priceCurrency":"USD","offerCount":"3"}},"reviewRating":{"@type":"Rating","ratingValue":"8.3","bestRating":"10","worstRating":"0"},"positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Most realistic AI conversations in the market"},{"@type":"ListItem","position":2,"name":"Excellent AI image generation quality"},{"@type":"ListItem","position":3,"name":"Deep personality customization options"},{"@type":"ListItem","position":4,"name":"Strong conversation memory and continuity"},{"@type":"ListItem","position":5,"name":"Clean interface on desktop and mobile"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium pricing higher than some competitors"},{"@type":"ListItem","position":2,"name":"Free tier is very limited"},{"@type":"ListItem","position":3,"name":"No video generation yet"}]}},
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":allFaqs.map(f => ({"@type":"Question","name":f.question,"acceptedAnswer":{"@type":"Answer","text":f.answer}}))},
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spicyranked.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://spicyranked.com/reviews"},{"@type":"ListItem","position":3,"name":"Candy.ai Review","item":"https://spicyranked.com/reviews/candy-ai"}]},
+    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Candy.ai","applicationCategory":"EntertainmentApplication","operatingSystem":"Web, Android, iOS","url":"https://candy.ai","description":"AI girlfriend platform with deep customization, realistic conversations, AI image generation, and voice messages.","offers":[{"@type":"Offer","name":"Free Trial","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Premium Monthly","price":"12.99","priceCurrency":"USD"},{"@type":"Offer","name":"Annual Plan","price":"71.88","priceCurrency":"USD"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"8.3","bestRating":"10","ratingCount":"1","reviewCount":"1"}}
+  ] : undefined;
+
   return (
     <Layout>
       <SEO
-        title={`${review.name} Review 2026: ${review.verdict}`}
-        description={`${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
+        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : `${review.name} Review 2026: ${review.verdict}`}
+        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
         canonical={`/reviews/${review.slug}`}
         ogType="article"
-        jsonLd={[
+        extraMeta={isCandyAi ? [
+          { name: "keywords", content: "candy ai review, candy.ai review, is candy ai safe, is candy ai legit, candy ai pricing, candy ai free, candy ai app, candy ai cost, is candy ai free, candy ai chat, what is candy ai, candy ai alternatives, is candy.ai worth it, candy ai girlfriend, candy ai nsfw, candy ai features, candy ai premium" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:image:alt", content: "Candy.ai Review 2026 - SpicyRanked Rating 8.3/10" },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "AI Companions" },
+          { property: "article:tag", content: "candy ai, ai girlfriend, ai companion, nsfw ai" },
+        ] : undefined}
+        jsonLd={candyJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
           breadcrumbSchema([
             { name: "Home", url: "/" },
@@ -156,7 +175,10 @@ const ReviewDetailPage = () => {
               </div>
               <div className="mt-5 bg-card rounded-xl border border-primary/20 p-4">
                 <p className="text-sm font-medium text-foreground">
-                  <span className="text-primary font-bold">Quick Verdict:</span> {review.verdict}
+                  <span className="text-primary font-bold">Quick Verdict:</span>{" "}
+                  {isCandyAi
+                    ? "Candy.ai is the best AI girlfriend platform we tested in 2026. Realistic conversations, excellent image generation, and deep personality customization earn it our top rating of 8.3/10 — though premium pricing may not suit every budget."
+                    : review.verdict}
                 </p>
               </div>
             </div>
@@ -209,6 +231,9 @@ const ReviewDetailPage = () => {
             {/* Pricing */}
             <section id="pricing" className="scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mb-5">Pricing & Plans</h2>
+              {review.pricingIntro && (
+                <p className="text-[15px] text-muted-foreground leading-7 mb-5">{review.pricingIntro}</p>
+              )}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {review.pricingDetails.map((plan) => (
                   <div key={plan.plan} className="bg-card rounded-xl border border-border/50 p-5">
@@ -224,6 +249,9 @@ const ReviewDetailPage = () => {
                   </div>
                 ))}
               </div>
+              {review.pricingOutro && (
+                <p className="text-[15px] text-muted-foreground leading-7 mt-5">{review.pricingOutro}</p>
+              )}
             </section>
 
             {/* NEW: User Experience & Interface */}
@@ -259,15 +287,20 @@ const ReviewDetailPage = () => {
               <h2 className="text-xl md:text-2xl font-bold mb-5">Our Rating Breakdown</h2>
               <div className="bg-card rounded-xl border border-border/50 p-5 md:p-6 space-y-4">
                 {review.scores.map((s) => (
-                  <div key={s.label} className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
-                    <span className="text-sm font-medium sm:w-40 shrink-0">{s.label}</span>
-                    <div className="flex items-center gap-3 flex-1">
-                      <StarRating score={s.score} />
-                      <div className="flex-1 bg-secondary rounded-full h-2.5 overflow-hidden">
-                        <div className="h-full spicy-gradient rounded-full transition-all duration-700" style={{ width: `${s.score * 10}%` }} />
+                  <div key={s.label}>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+                      <span className="text-sm font-medium sm:w-40 shrink-0">{s.label}</span>
+                      <div className="flex items-center gap-3 flex-1">
+                        <StarRating score={s.score} />
+                        <div className="flex-1 bg-secondary rounded-full h-2.5 overflow-hidden">
+                          <div className="h-full spicy-gradient rounded-full transition-all duration-700" style={{ width: `${s.score * 10}%` }} />
+                        </div>
+                        <span className="text-sm font-bold w-10 text-right">{s.score}/10</span>
                       </div>
-                      <span className="text-sm font-bold w-10 text-right">{s.score}/10</span>
                     </div>
+                    {s.description && (
+                      <p className="text-xs text-muted-foreground mt-1.5 sm:ml-[calc(10rem+1rem)] leading-relaxed">{s.description}</p>
+                    )}
                   </div>
                 ))}
                 <div className="pt-4 border-t border-border/50 flex items-center justify-between">
@@ -302,6 +335,9 @@ const ReviewDetailPage = () => {
                   </ul>
                 </div>
               </div>
+              {review.prosConsNote && (
+                <p className="text-[15px] text-muted-foreground leading-7 mt-5">{review.prosConsNote}</p>
+              )}
             </section>
 
             {/* NEW: Privacy, Safety & Trust */}
@@ -310,6 +346,9 @@ const ReviewDetailPage = () => {
                 <h2 className="text-xl md:text-2xl font-bold mb-5 flex items-center gap-2">
                   <ShieldCheck className="h-5 w-5 text-primary" /> Privacy, Safety & Trust
                 </h2>
+                {review.privacyIntro && (
+                  <p className="text-[15px] text-muted-foreground leading-7 mb-5">{review.privacyIntro}</p>
+                )}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   {privacy.cards.map((card) => {
                     const TrustIcon = trustIcons[card.icon];

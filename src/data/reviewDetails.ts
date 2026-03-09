@@ -11,14 +11,19 @@ export interface DetailedReview {
   overview: string[];
   keyFeatures: { title: string; description: string }[];
   pricingDetails: { plan: string; price: string; features: string[] }[];
-  scores: { label: string; score: number }[];
+  pricingIntro?: string;
+  pricingOutro?: string;
+  scores: { label: string; score: number; description?: string }[];
   pros: string[];
   cons: string[];
+  prosConsNote?: string;
+  privacyIntro?: string;
   whoShouldUse: { persona: string; reason: string; ideal: boolean }[];
   alternatives: string[];
   comparisons: { slug: string; title: string }[];
   faqs: { question: string; answer: string }[];
   finalVerdict: string;
+  readingTime?: number;
 }
 
 export const detailedReviews: DetailedReview[] = [
@@ -33,37 +38,40 @@ export const detailedReviews: DetailedReview[] = [
     bestFor: "Immersive AI girlfriend experience",
     url: "https://candy.ai",
     lastUpdated: "March 2026",
+    readingTime: 9,
     overview: [
-      "Candy.ai has quickly risen to the top of the AI companion market by offering an experience that feels genuinely personal. Unlike basic chatbots that follow rigid scripts, Candy.ai uses advanced language models to create conversations that adapt to your personality, remember your preferences, and evolve over time.",
-      "The platform lets you fully customize your AI companion's appearance, personality traits, interests, and communication style. Whether you want a flirty, playful partner or a deep, intellectual conversationalist, Candy.ai delivers with impressive consistency. The AI-generated images are among the best in the industry, creating visual content that matches your companion's persona.",
-      "What sets Candy.ai apart from competitors like CrushOn.ai and DreamGF is the quality of its conversational AI. Responses feel natural and contextually aware, with the AI remembering details from previous conversations and building on shared experiences. The premium tier unlocks voice messages, extended memory, and priority response times."
+      "Candy.ai has quickly established itself as one of the leading AI girlfriend platforms on the market. Launched in 2023, it uses advanced language models to create virtual companions that feel genuinely personal — not like the scripted chatbots you might be used to. If you have ever wondered what is Candy.ai, think of it as a platform where you can build and interact with AI characters that adapt to your personality, remember your preferences, and evolve with every conversation.",
+      "What makes the Candy.ai chat experience stand out is the depth of customization available. You can shape your AI girlfriend's appearance, personality traits, interests, and communication style from scratch. Whether you want someone playful and flirtatious, intellectually curious, or emotionally supportive, the platform delivers with impressive consistency. The AI-generated images are among the best in the industry — creating visual content that actually matches the persona you have built.",
+      "Where Candy.ai really separates itself from competitors like CrushOn.ai and DreamGF is in the quality of its conversational AI. Responses feel natural and contextually aware, with the AI picking up on previous conversations and building on shared experiences rather than starting fresh each time. The premium tier unlocks voice messages, extended memory, and priority response times — features that push the experience closer to something that genuinely feels like a relationship, not just a novelty."
     ],
     keyFeatures: [
-      { title: "Deep Customization", description: "Create your ideal companion with detailed appearance, personality, and behavior settings" },
-      { title: "AI Image Generation", description: "Request and receive AI-generated images of your companion in various scenarios" },
-      { title: "Voice Messages", description: "Hear your AI companion speak with natural-sounding voice synthesis" },
-      { title: "Conversation Memory", description: "Your AI remembers past conversations and builds on shared experiences" },
-      { title: "Multiple Companions", description: "Create and interact with multiple AI companions with different personalities" },
-      { title: "NSFW Content", description: "Unrestricted adult conversations and image generation available" }
+      { title: "Deep Customization", description: "Create your ideal companion with detailed control over appearance, personality traits, interests, and behavior. The character builder lets you set everything from humor style to emotional depth, making each Candy.ai girlfriend truly unique to you." },
+      { title: "AI Image Generation", description: "Request and receive AI-generated images of your companion in various scenarios, outfits, and settings. The Candy.ai image generation uses state-of-the-art models that produce consistent, high-quality visuals matching your character's established look." },
+      { title: "Voice Messages", description: "Hear your AI companion speak with natural-sounding voice synthesis. Candy.ai voice messages add an entirely new dimension to conversations — tone, emotion, and inflection make interactions feel significantly more real than text alone." },
+      { title: "Conversation Memory", description: "Your AI remembers past conversations, your preferences, inside jokes, and shared experiences. This persistent memory means your relationship actually develops over time instead of resetting with every session." },
+      { title: "Multiple Companions", description: "Create and interact with multiple AI companions, each with distinct personalities. Switch between characters seamlessly without losing progress or conversation history with any of them." },
+      { title: "NSFW Content", description: "Unrestricted adult conversations and AI image generation without artificial content filters. The platform is designed for adults who want genuine freedom in their interactions without constant restrictions." }
     ],
+    pricingIntro: "One of the most common questions we get is about Candy.ai pricing — specifically, how much does Candy.ai cost and is Candy.ai free to try? Here is the full breakdown based on our testing.",
     pricingDetails: [
-      { plan: "Free Trial", price: "Free", features: ["Limited messages per day", "Basic customization", "Standard response speed"] },
-      { plan: "Premium", price: "$12.99/mo", features: ["Unlimited messages", "Full customization", "AI image generation", "Voice messages", "Priority responses"] },
-      { plan: "Annual", price: "$5.99/mo", features: ["All Premium features", "Billed annually at $71.88", "Best value option"] }
+      { plan: "Free Trial", price: "Free", features: ["Limited messages per day", "Basic character customization", "Standard response speed"] },
+      { plan: "Premium", price: "$12.99/mo", features: ["Unlimited messages", "Full customization options", "AI image generation", "Voice messages", "Priority responses"] },
+      { plan: "Annual", price: "$5.99/mo", features: ["All premium features", "Billed annually at $71.88", "Best value option for committed users"] }
     ],
+    pricingOutro: "So, is Candy.ai free? Technically yes — there is a free tier. But honestly, the free Candy.ai experience is quite limited. You will hit daily message caps quickly, and the best features like image generation and voice are locked behind the premium subscription. Our recommendation: use the free tier to test conversation quality, then decide if the premium pricing is worth it for you.",
     scores: [
-      { label: "Content Quality", score: 8.5 },
-      { label: "User Interface", score: 8.0 },
-      { label: "Value for Money", score: 8.0 },
-      { label: "Privacy & Safety", score: 8.5 },
-      { label: "Features", score: 8.5 }
+      { label: "Content Quality", score: 8.5, description: "Conversations are remarkably natural. The AI handles context shifts, humor, emotional depth, and even complex hypothetical scenarios better than most competitors." },
+      { label: "User Interface", score: 8.0, description: "Clean, intuitive design that puts conversations first. Navigation is logical, settings are accessible, and the overall flow from signup to active chat is seamless." },
+      { label: "Value for Money", score: 8.0, description: "The annual plan at $5.99/month delivers excellent value. Monthly pricing at $12.99 is slightly above average for the category, but the quality gap justifies the premium." },
+      { label: "Privacy & Safety", score: 8.5, description: "SSL encryption, discreet billing, clear privacy policy, and straightforward account deletion. Handles the sensitive nature of its platform responsibly." },
+      { label: "Features", score: 8.5, description: "Deep customization, persistent memory, image generation, voice messages, and NSFW freedom put Candy.ai at the top. Main gap is the absence of video generation." }
     ],
     pros: [
       "Most realistic AI conversations in the market",
-      "Excellent AI image generation quality",
+      "Excellent AI image generation quality with consistent character visuals",
       "Deep personality customization options",
       "Strong conversation memory and continuity",
-      "Clean, intuitive interface"
+      "Clean, intuitive interface on desktop and mobile"
     ],
     cons: [
       "Premium pricing higher than some competitors",
@@ -71,6 +79,8 @@ export const detailedReviews: DetailedReview[] = [
       "No video generation yet",
       "Can occasionally break character in complex scenarios"
     ],
+    prosConsNote: "In most Candy.ai reviews across Reddit and Trustpilot, users consistently praise conversation quality and image generation while noting that pricing could be more competitive. Our testing aligns with this sentiment — is Candy.ai good? Yes, if you value quality over affordability, it is the best option available right now.",
+    privacyIntro: "When dealing with an AI companion platform that handles intimate conversations, questions like is Candy.ai safe and is Candy.ai legit deserve thorough answers. We dug into their security practices, billing, and policies.",
     whoShouldUse: [
       { persona: "Users seeking immersive AI companionship", reason: "Best-in-class conversation quality and customization", ideal: true },
       { persona: "Visual content enthusiasts", reason: "Top-tier AI image generation of your companion", ideal: true },
@@ -85,14 +95,18 @@ export const detailedReviews: DetailedReview[] = [
       { slug: "replika-vs-candy-ai", title: "Replika vs Candy.ai" }
     ],
     faqs: [
-      { question: "Is Candy.ai free to use?", answer: "Candy.ai offers a limited free trial with restricted daily messages. Full access requires the Premium plan at $12.99/month or the annual plan at $5.99/month." },
-      { question: "Is Candy.ai safe and private?", answer: "Yes, Candy.ai uses end-to-end encryption for conversations and does not share user data with third parties. All content is stored securely and can be deleted at any time." },
-      { question: "Can I create NSFW content with Candy.ai?", answer: "Yes, Candy.ai allows unrestricted adult conversations and AI image generation for premium subscribers. Content filters can be adjusted in settings." },
-      { question: "How does Candy.ai compare to ChatGPT?", answer: "Candy.ai is specifically designed for companion experiences with persistent memory, personality customization, and image generation — features ChatGPT does not offer." },
-      { question: "Can I use Candy.ai on mobile?", answer: "Yes, Candy.ai works on mobile browsers and has a progressive web app that can be installed on your home screen for a native app-like experience." },
-      { question: "Does Candy.ai remember conversations?", answer: "Yes, premium users get extended conversation memory. Your AI companion remembers past interactions and builds on shared experiences over time." }
+      { question: "Is Candy.ai free to use?", answer: "Candy.ai offers a free tier with limited daily messages and basic customization. However, features like AI image generation, voice messages, and unlimited conversations require a premium subscription starting at $12.99 per month. The free plan is enough to test conversation quality before deciding if the upgrade is worthwhile." },
+      { question: "Is Candy.ai safe and private?", answer: "Yes. Candy.ai uses SSL encryption on all connections, discreet billing that does not display the platform name on statements, and allows account deletion upon request. They have a published privacy policy and state that personal data is not shared with third parties." },
+      { question: "Can I create NSFW content with Candy.ai?", answer: "Yes. Candy.ai allows unrestricted adult conversations and NSFW AI image generation for premium subscribers. There are no artificial content filters for adult interactions between verified users over 18." },
+      { question: "How does Candy.ai compare to ChatGPT?", answer: "ChatGPT is a general-purpose AI assistant, while Candy.ai is specifically designed for companion and relationship experiences. Candy.ai offers persistent memory, character customization, AI image generation, and NSFW capabilities that ChatGPT does not provide." },
+      { question: "Can I use Candy.ai on mobile?", answer: "Yes. The Candy.ai app is available for both Android and iOS devices. The mobile experience is fully featured and mirrors the desktop version closely, with responsive design optimized for touchscreen navigation." },
+      { question: "Does Candy.ai remember conversations?", answer: "Yes, and this is one of its strongest features. Candy.ai maintains persistent conversation memory, remembering details from previous chats, your preferences, shared inside jokes, and relationship context." },
+      { question: "Is Candy.ai worth the money?", answer: "For users who value conversation quality and AI image generation above all else, yes. The annual plan at $5.99 per month is genuinely good value. The monthly plan at $12.99 is slightly above average, but the quality difference compared to cheaper alternatives is tangible." },
+      { question: "How do I cancel my Candy.ai subscription?", answer: "You can cancel directly through your account settings. Navigate to the billing section, select your active plan, and choose cancel. Cancellation takes effect at the end of your current billing period. Support responds within 24 to 48 hours." },
+      { question: "What are the best alternatives to Candy.ai?", answer: "The top Candy.ai alternatives include CrushOn.ai for unrestricted NSFW chat, DreamGF.ai for visual companion creation, Replika for emotional companionship, and SoulFun.ai as a newer option with growing features." },
+      { question: "Does Candy.ai work outside the US?", answer: "Yes. Candy.ai is available internationally and works in most countries. The platform primarily supports English, but AI conversations can accommodate other languages to varying degrees. Some users in regions with strict internet regulations may need a VPN." }
     ],
-    finalVerdict: "Candy.ai is the best AI girlfriend platform we've tested in 2026. The conversation quality, customization depth, and image generation set it apart from competitors. While the pricing is slightly higher than alternatives like CrushOn.ai, the premium experience justifies the cost for users who want the most immersive AI companion experience available."
+    finalVerdict: "Candy.ai is the best AI girlfriend platform we have tested in 2026. The conversation quality, deep customization, and excellent image generation set it clearly apart from the competition. After spending over 30 days with the platform, we can confidently say this is where the AI companion category is heading — interactions that feel genuinely personal rather than robotic. The pricing is slightly higher than alternatives like CrushOn.ai and DreamGF, but the quality gap justifies the cost for users who want the most immersive and realistic experience available. If you are looking for an AI companion that feels like a genuine relationship rather than a chatbot gimmick, Candy.ai delivers."
   },
 
   {
@@ -102,7 +116,7 @@ export const detailedReviews: DetailedReview[] = [
     score: 7.4,
     verdict: "The go-to platform for uncensored NSFW AI chat with no content restrictions",
     pricing: "Free tier / $7.99/mo",
-    bestFor: "Unrestricted NSFW AI chat",
+    bestFor: "Unrestricted NSFW AI chat at a lower price point",
     url: "https://crushon.ai",
     lastUpdated: "March 2026",
     overview: [
@@ -169,7 +183,7 @@ export const detailedReviews: DetailedReview[] = [
     score: 7.8,
     verdict: "The best AI platform for creating and interacting with visually stunning custom companions",
     pricing: "Free trial / $9.99/mo",
-    bestFor: "Visual AI companion creation",
+    bestFor: "Visual AI companion creation with strong image/video generation",
     url: "https://dreamgf.ai",
     lastUpdated: "March 2026",
     overview: [
@@ -237,7 +251,7 @@ export const detailedReviews: DetailedReview[] = [
     score: 7.0,
     verdict: "The original AI companion app — great for emotional connection but limited adult features",
     pricing: "Free / $19.99/mo Pro",
-    bestFor: "Emotional AI companionship",
+    bestFor: "Emotional AI companionship focused on mental wellness",
     url: "https://replika.ai",
     lastUpdated: "March 2026",
     overview: [
@@ -304,7 +318,7 @@ export const detailedReviews: DetailedReview[] = [
     score: 7.5,
     verdict: "A growing AI companion platform with diverse characters and personalized interactions",
     pricing: "Free tier / $11.99/mo",
-    bestFor: "Personalized AI characters",
+    bestFor: "Newer platform with diverse characters and growing features",
     url: "https://soulfun.ai",
     lastUpdated: "March 2026",
     overview: [

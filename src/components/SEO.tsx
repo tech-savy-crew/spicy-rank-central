@@ -12,6 +12,7 @@ interface SEOProps {
   ogImage?: string;
   noindex?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  extraMeta?: { name?: string; property?: string; content: string }[];
 }
 
 export function SEO({
@@ -22,6 +23,7 @@ export function SEO({
   ogImage = DEFAULT_OG_IMAGE,
   noindex = false,
   jsonLd,
+  extraMeta,
 }: SEOProps) {
   const fullTitle = `${title} | ${SITE_NAME}`;
   const canonicalUrl = canonical ? `${SITE_URL}${canonical}` : undefined;
@@ -50,6 +52,13 @@ export function SEO({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
+
+      {/* Extra meta tags */}
+      {extraMeta?.map((meta, i) =>
+        meta.property
+          ? <meta key={`extra-${i}`} property={meta.property} content={meta.content} />
+          : <meta key={`extra-${i}`} name={meta.name!} content={meta.content} />
+      )}
 
       {/* JSON-LD */}
       {jsonLdArray.map((ld, i) => (
