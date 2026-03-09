@@ -101,7 +101,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Content Moderation", description: "Candy.ai enforces content policies in line with industry standards, including DMCA compliance and age verification for adult content access. All users must confirm they are 18 or older." },
     { icon: "eye-off", title: "Account Privacy", description: "You can use Candy.ai with minimal personal information. No social media linking is required, and account deletion is available upon request. Personal information is not sold to third parties." },
   ],
-  "dreamgf-ai": [
+  "crushon-ai": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all platform connections. Account data, conversations, and payments encrypted in transit." },
+    { icon: "eye-off", title: "Account Privacy", description: "No ID verification required. Anonymous usage with email only. Lower barrier but less identity assurance." },
+    { icon: "shield-check", title: "NSFW Content Gating", description: "NSFW restricted to paid subscribers. Free users cannot access explicit conversations. Paywall serves as soft age-verification layer." },
+    { icon: "credit-card", title: "Data Handling", description: "Privacy policy present but could be more detailed about conversation data storage, retention, AI training usage, and access policies." },
+  ],
     { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all connections. Content, account data, payments encrypted in transit." },
     { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. Platform name not visible." },
     { icon: "shield-check", title: "Content Moderation", description: "NSFW restricted to verified premium users. Age verification required. Boundaries against illegal content." },
