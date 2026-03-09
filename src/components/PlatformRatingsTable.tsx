@@ -117,7 +117,7 @@ export function PlatformRatingsTable() {
                     <td className="px-5 py-3.5 text-sm" style={{ color: "#718096" }}>{row.pricing}</td>
                     <td className="px-5 py-3.5 text-sm" style={{ color: "#718096" }}>{row.bestFor}</td>
                     <td className="px-5 py-3.5">
-                      <Link to={`/review/${row.slug}`} className="inline-flex items-center gap-1 text-sm font-medium hover:underline" style={{ color: "#E53E3E" }}>
+                      <Link to={`/reviews/${row.slug}`} className="inline-flex items-center gap-1 text-sm font-medium hover:underline" style={{ color: "#E53E3E" }}>
                         Read Review <ArrowRight className="h-3.5 w-3.5" />
                       </Link>
                     </td>
