@@ -42,6 +42,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Functional but noticeably basic compared to social media. Home feed shows content chronologically. Navigation includes feed, notifications, messages, bookmarks, and search. Search is intentionally limited — no content discovery system. Subscribers find creators only through direct links or external promotion. This is simultaneously the biggest weakness for new creators and the strongest privacy feature.",
     mobileExperience: "No dedicated OnlyFans app on iOS or Android app stores due to content restrictions. OnlyFans offers a progressive web app (PWA) that works in mobile browsers and can be added to home screen. Mobile web version is fully functional for both creators and subscribers. Absence of native app is a frequent complaint but PWA works well enough.",
   },
+  "fansly": {
+    gettingStarted: "Under five minutes to create account. Email registration + ID verification for creators. Onboarding guides profile setup, tier configuration, first upload. More structured than OnlyFans onboarding.",
+    interfaceNavigation: "Modern, clean dark-themed dashboard. Intuitive navigation between feed, explore, messages, notifications, analytics. Explore page with search functionality is the standout. Content organization with labels superior to OnlyFans' chronological feed.",
+    mobileExperience: "No native app on iOS/Android. Mobile browser experience is excellent — responsive, fast, touch-optimized. PWA available for home screen. Many creators report smoother mobile experience than OnlyFans.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
