@@ -347,6 +347,12 @@ const ReviewDetailPage = () => {
                     ? "Chaturbate remains the world's largest free cam site with 4M+ daily visitors and unmatched performer variety. At 7.8/10, the free viewing model is unbeatable — but the dated interface and high platform cut hold it back from a higher score."
                     : isStripchat
                     ? "Stripchat is the most technically advanced free cam site with VR support, AI recommendations, and a modern interface. At 7.5/10, it's the best choice for viewers who value design and innovation — but Chaturbate's larger traffic base still provides more variety."
+                    : isTinder
+                    ? "Tinder remains the world's most downloaded dating app with 75M+ monthly users in 190+ countries. At 7.5/10, its massive user base is unmatched — but aggressive premium pricing and a declining free experience mean Bumble and Hinge offer better value for serious daters."
+                    : isFanVue
+                    ? "FanVue's 15% commission is the lowest among major creator platforms, and its AI-powered tools are genuine differentiators. At 7.6/10, it's the smartest financial choice for creators — but the smaller subscriber base means it works best as a secondary platform alongside OnlyFans."
+                    : isPatreon
+                    ? "Patreon remains the gold standard for non-adult creators with mainstream credibility, flexible tiers, and $3.5B+ paid to creators. At 7.0/10, it's the best choice for podcasters, musicians, and educators — but rising fees and competition from Ko-fi are closing the gap."
                     : review.verdict}
                 </p>
               </div>
