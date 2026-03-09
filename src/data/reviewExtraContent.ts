@@ -62,6 +62,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Chaturbate's interface is its weakest point. The design looks like it has not been significantly updated since launch. The homepage displays a grid of live thumbnails sorted by viewer count. Navigation is basic with category tabs and a search bar. It works, but it feels dated compared to Stripchat's modern design or LiveJasmin's polished interface.",
     mobileExperience: "The Chaturbate app is not available on app stores, but the mobile website works adequately. Browsing, watching, and tipping all function on mobile. The experience is serviceable but not optimized for touch interaction in the way that Stripchat's mobile experience is.",
   },
+  "stripchat": {
+    gettingStarted: "Quick registration via email. Performer verification within 24-48 hours. Viewers can start watching immediately without an account.",
+    interfaceNavigation: "Modern, dark-themed design that feels contemporary. Homepage features a mix of trending performers, categories, and AI-recommended streams. Search and filtering are significantly better than Chaturbate. The overall experience feels like a platform built in the 2020s rather than the 2010s.",
+    mobileExperience: "Excellent mobile experience. The responsive design works smoothly on phones with touch-optimized controls. No native Stripchat app on app stores, but the mobile website functions effectively as a PWA.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
