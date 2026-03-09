@@ -183,7 +183,7 @@ export const detailedReviews: DetailedReview[] = [
     score: 7.8,
     verdict: "The best AI platform for creating and interacting with visually stunning custom companions",
     pricing: "Free trial / $9.99/mo",
-    bestFor: "Visual AI companion creation",
+    bestFor: "Visual AI companion creation with strong image/video generation",
     url: "https://dreamgf.ai",
     lastUpdated: "March 2026",
     overview: [
