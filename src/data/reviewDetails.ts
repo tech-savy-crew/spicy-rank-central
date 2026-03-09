@@ -936,6 +936,84 @@ export const detailedReviews: DetailedReview[] = [
     ],
     finalVerdict: "Chaturbate is the undisputed king of free live cams. Nothing else matches its traffic, performer variety, or the pure volume of live content available at any given moment. The free viewing model is genuinely revolutionary and remains the reason millions visit daily. The weaknesses are real — the interface is overdue for a complete redesign, the platform cut is high, and performer income is unpredictable. But for viewers who want the most content for the least money, Chaturbate delivers an experience no competitor can match."
   },
+  {
+    name: "Stripchat",
+    slug: "stripchat",
+    category: "Live Cam Sites",
+    score: 7.5,
+    verdict: "The tech-forward free cam site with VR support and modern design — Chaturbate's strongest competitor",
+    pricing: "Free / Tokens from $9.99",
+    bestFor: "Modern free cam experience with VR",
+    url: "https://stripchat.com",
+    lastUpdated: "March 2026",
+    readingTime: 9,
+    overview: [
+      "Stripchat is a free live cam platform that combines the open freemium model pioneered by Chaturbate with a significantly more modern interface and cutting-edge features like VR cam support. Launched in 2016, Stripchat has grown rapidly to become one of the top five most visited adult cam sites globally, positioning itself as the tech-forward alternative to Chaturbate's aging platform.",
+      "Like Chaturbate, Stripchat lets viewers watch live broadcasts for free and monetizes through token tips, private shows, and premium memberships. Where Stripchat distinguishes itself is in execution. The interface is visually modern with dark-themed design, the mobile experience is genuinely optimized for touch, VR cam support lets viewers experience shows in virtual reality, and AI-powered recommendations help viewers discover performers that match their preferences.",
+      "For performers, Stripchat offers competitive payouts, promotional tools, and a growing audience. While its daily traffic is smaller than Chaturbate's, many performers report higher per-viewer engagement because Stripchat's audience tends to be more interactive and willing to tip. The platform has been particularly aggressive about recruiting and retaining top performers, creating a rising competitive dynamic with Chaturbate."
+    ],
+    keyFeatures: [
+      { title: "Free Live Cams", description: "All public broadcasts are free to watch. Same freemium model as Chaturbate with no subscription requirement for basic viewing." },
+      { title: "VR Cam Support", description: "Stripchat's standout feature. Watch compatible performers in full virtual reality with VR headsets. This immersive experience is available nowhere else at this scale among free cam sites." },
+      { title: "AI Recommendations", description: "Machine learning algorithms recommend performers based on your viewing history and preferences. This discovery system helps viewers find new favorites automatically — a significant advantage over Chaturbate's basic category browsing." },
+      { title: "Token System", description: "Similar to Chaturbate. Viewers purchase Stripchat tokens to tip performers, activate toys, and pay for private shows. Token pricing is competitive with Chaturbate." },
+      { title: "Private & Exclusive Shows", description: "One-on-one private shows plus exclusive shows where only the requester can view. Cam-to-cam functionality lets performers see the viewer during private sessions." },
+      { title: "Mobile-First Design", description: "The Stripchat mobile experience is genuinely optimized for phones with touch-friendly controls, responsive design, and fast loading. Significantly better mobile experience than Chaturbate." }
+    ],
+    pricingDetails: [
+      { plan: "Free Viewing", price: "Free", features: ["Watch all public broadcasts", "No account required", "Browse all categories"] },
+      { plan: "Token Bundles", price: "From $9.99", features: ["90 tokens = $9.99", "200 tokens = $19.99", "520 tokens = $49.99", "1080 tokens = $99.99"] },
+      { plan: "Ultimate Membership", price: "$19.99/mo", features: ["Ad-free viewing", "Invisible mode", "Custom colors", "Priority support"] }
+    ],
+    pricingIntro: "Stripchat pricing follows the same freemium model as Chaturbate — free viewing with optional token purchases for interaction.",
+    pricingOutro: "**For Performers:** Stripchat pays approximately 50-60% of token value depending on performer tier and volume. Higher performer payouts than Chaturbate's ~50%.",
+    scores: [
+      { label: "Content Quality", score: 8, description: "Strong performer variety with growing roster. VR content adds unique value." },
+      { label: "User Interface", score: 8.5, description: "One of the best-designed cam site interfaces. Modern, clean, intuitive." },
+      { label: "Value for Money", score: 8, description: "Free viewing plus competitive token pricing. Higher performer payouts." },
+      { label: "Privacy & Safety", score: 7.5, description: "SSL encryption, age verification, discreet billing. Standard protections." },
+      { label: "Features", score: 8, description: "VR, AI recommendations, mobile-first design, private shows, interactive toys." }
+    ],
+    pros: [
+      "Modern, polished interface — best-designed free cam site",
+      "VR cam support — unique immersive feature",
+      "AI-powered performer recommendations",
+      "Excellent mobile experience",
+      "Higher performer payouts than Chaturbate"
+    ],
+    cons: [
+      "Smaller traffic base than Chaturbate means fewer simultaneous performers",
+      "VR content library is still growing",
+      "Less established brand recognition",
+      "Some performers report inconsistent earnings due to smaller audience"
+    ],
+    privacyIntro: "Is Stripchat safe? Yes. SSL encryption, performer verification, discreet billing, and standard account security. Is Stripchat legit? Yes — operated by a legitimate company with millions of daily users. Is Stripchat free? Yes, public broadcasts are completely free to watch.",
+    whoShouldUse: [
+      { persona: "Viewers who value modern design and VR", reason: "Best tech-forward cam experience available", ideal: true },
+      { persona: "Performers seeking higher payouts", reason: "50-60% payout vs Chaturbate's ~50%", ideal: true },
+      { persona: "Viewers needing maximum performer variety", reason: "Chaturbate has more simultaneous performers", ideal: false },
+      { persona: "Users who need a native mobile app", reason: "No native app available", ideal: false }
+    ],
+    alternatives: ["chaturbate", "livejasmin", "bongacams", "camsoda"],
+    comparisons: [
+      { slug: "chaturbate-vs-stripchat", title: "Chaturbate vs Stripchat" },
+      { slug: "stripchat-vs-livejasmin", title: "Stripchat vs LiveJasmin" },
+      { slug: "stripchat-vs-bongacams", title: "Stripchat vs BongaCams" }
+    ],
+    faqs: [
+      { question: "Is Stripchat free?", answer: "Yes. Free viewing for all public broadcasts. Tokens for interaction." },
+      { question: "Is Stripchat safe?", answer: "Yes. SSL, age verification, discreet billing." },
+      { question: "Does Stripchat have VR?", answer: "Yes. VR cam support with compatible headsets." },
+      { question: "Stripchat vs Chaturbate?", answer: "Stripchat has better design, VR, and AI. Chaturbate has more traffic and performers." },
+      { question: "How much do Stripchat tokens cost?", answer: "90 tokens = $9.99 up to 1080 tokens = $99.99." },
+      { question: "Is there a Stripchat app?", answer: "No native app. Excellent mobile website." },
+      { question: "How much do Stripchat performers earn?", answer: "50-60% of token value. Competitive payouts." },
+      { question: "How to delete Stripchat account?", answer: "Settings > Privacy > Delete Account." },
+      { question: "What are the best Stripchat alternatives?", answer: "Chaturbate for max traffic, LiveJasmin for premium, BongaCams for European focus." },
+      { question: "Does Stripchat work internationally?", answer: "Yes. Available globally with some restrictions." }
+    ],
+    finalVerdict: "Stripchat is what Chaturbate would look like if it were built today. The modern interface, VR support, AI recommendations, and superior mobile experience make it the most technically advanced free cam site available. It earns a slightly lower score than Chaturbate primarily because of its smaller traffic base — fewer viewers means fewer performers and a less diverse selection at any given moment. For viewers who value modern design and want to experience VR cams, Stripchat is the clear choice. For performers, it offers better payouts but a smaller audience. For the overall cam experience, Chaturbate's scale still edges ahead, but Stripchat is closing the gap rapidly."
+  },
   ...generateLiveCamReviews(),
 
   // ─── DATING & HOOKUP APPS ───

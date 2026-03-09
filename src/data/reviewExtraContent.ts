@@ -181,6 +181,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Set Clear Tip Menus and Room Goals", description: "Performers: Viewers tip more when they know exactly what each amount unlocks." },
     { title: "Broadcast Consistently at Set Times", description: "Performers: Regular scheduling builds a loyal viewer base." },
   ],
+  "stripchat": [
+    { title: "Try VR If You Have a Headset", description: "The VR experience is Stripchat's biggest differentiator. Even basic VR headsets provide a dramatically more immersive experience." },
+    { title: "Use AI Recommendations", description: "Let the algorithm learn your preferences. The more you watch, the better the AI suggestions become." },
+    { title: "Buy Tokens in Bulk", description: "The 520-token bundle at $49.99 offers the best per-token value for regular viewers." },
+    { title: "Performers: Leverage VR Shows", description: "VR-compatible performers earn premium rates. Invest in VR setup to access this growing market." },
+    { title: "Use Mobile for Casual Browsing", description: "Stripchat's mobile experience is excellent. Save desktop for VR and private shows." },
+  ],
 };
 
 // ── Generic generators ──
