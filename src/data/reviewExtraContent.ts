@@ -86,6 +86,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Use Social Media to Drive External Traffic", description: "Do not rely solely on internal discovery. Promote your profile on Twitter/X, Reddit, TikTok, and Instagram. The most successful sellers combine platform presence with external marketing." },
     { title: "Respond to Messages Quickly", description: "Buyer interest has a short lifespan. Sellers who respond within a few hours consistently outsell those who take days. Custom content requests are where the real money is." },
   ],
+  "onlyfans": [
+    { title: "Build Your Audience Before You Launch", description: "Spend 1-2 months building followers on Twitter/X, TikTok, Instagram, or Reddit before launching OnlyFans. Even 500-1,000 engaged followers is enough for a strong start." },
+    { title: "Use a Free Page as a Funnel", description: "Create a free OnlyFans alongside your paid one. Post teaser content on free page to convert fans toward paid subscription. Consistently outperforms paid-only approaches." },
+    { title: "Prioritize PPV and Custom Content", description: "Highest earners make the majority from pay-per-view messages and custom requests. Send regular PPV drops and be responsive to custom inquiries." },
+    { title: "Post Consistently and Engage Daily", description: "Post 3-5 times per week minimum, respond to messages daily, go live weekly. Consistency is the single strongest predictor of earnings growth." },
+    { title: "Diversify Across Platforms", description: "Use Fansly or FanVue as backups, maintain active social media, consider FeetFinder or Snifffr for physical items. Platform diversification protects your income." },
+  ],
 };
 
 // ── Generic generators ──
