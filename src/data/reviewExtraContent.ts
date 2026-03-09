@@ -157,10 +157,10 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "eye-off", title: "Patron Privacy", description: "Patron identities private by default. Creators see patron names but not personal details unless shared." },
   ],
   "jerkmate": [
-    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including streams, chat, and payment information." },
-    { icon: "credit-card", title: "Discreet Billing", description: "Credit purchases appear under a generic billing descriptor. Jerkmate name not visible on statements." },
-    { icon: "shield-check", title: "Age Verification", description: "Government ID required for all performers. Ensures compliance and reduces fake accounts." },
-    { icon: "eye-off", title: "Account Privacy", description: "Basic privacy controls available. Account deletion through support. Standard security measures." },
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption across the entire platform. All content, payments, and personal data encrypted in transit." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Charges appear on statements under a generic descriptor. The Jerkmate name does not show up on financial statements." },
+    { icon: "shield-check", title: "Age Verification", description: "Performers must verify identity with government ID. Standard age compliance for cam platforms." },
+    { icon: "eye-off", title: "Legitimate Operations", description: "Jerkmate is operated by a legitimate company with real corporate structure, functioning payment processing, and responsive customer support." },
   ],
 };
 
