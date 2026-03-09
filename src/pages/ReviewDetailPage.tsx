@@ -232,6 +232,8 @@ const ReviewDetailPage = () => {
                     ? "FeetFinder is the most established feet content marketplace with a massive buyer base, verified profiles, and strong safety features. At 8.0/10, it earns our recommendation for serious sellers — though the subscription fees and high competition mean beginners need a solid strategy to succeed."
                     : isOnlyFans
                     ? "OnlyFans remains the most recognized creator platform in 2026, with the largest audience and highest earning potential for established creators. At 8.5/10, we rate it as the best overall creator platform — but the 20% commission, increasing competition, and lack of content discovery mean newer creators may struggle without an existing audience."
+                    : isFansly
+                    ? "Fansly is the strongest OnlyFans alternative available in 2026. Better content discovery, flexible subscription tiers, and a growing creator community earn it an 8.2/10 rating. While its audience is still smaller than OnlyFans, Fansly's creator-first approach and discovery features make it the better choice for new creators building from scratch."
                     : review.verdict}
                 </p>
               </div>
