@@ -1100,6 +1100,85 @@ export const detailedReviews: DetailedReview[] = [
     ],
     finalVerdict: "Bumble has earned its position as the second most popular dating app for good reason. Women-first messaging improves the experience for everyone. App design is excellent, profile quality is high, safety features are industry-leading. Main complaint is pricing — Premium at $39.99/month is expensive, and free experience keeps getting more restricted. For women and safety-conscious daters, it remains the gold standard. For men, works best with strong profile and patience. For everyone, the user quality and platform design make it one of our highest-rated dating apps."
   },
+  {
+    name: "Tinder",
+    slug: "tinder",
+    category: "Dating & Hookup Apps",
+    score: 7.5,
+    verdict: "The world's most downloaded dating app with the largest user base — but aggressive monetization and declining free features hold it back",
+    pricing: "Free / Gold $29.99/mo",
+    bestFor: "Largest dating pool",
+    url: "https://tinder.com",
+    lastUpdated: "March 2026",
+    readingTime: 10,
+    overview: [
+      "Tinder is the world's most downloaded dating app and the platform that invented modern swipe-based dating. Launched in 2012, Tinder popularized the swipe-right-to-like, swipe-left-to-pass mechanic that every subsequent dating app has copied. With over 75 million monthly active users globally, Tinder has the largest user base of any dating app and operates in 190+ countries.",
+      "How does Tinder work? You create a profile with photos, a bio, and your preferences. The app shows you potential matches based on location, age, and gender preferences. Swipe right to like, left to pass. When two users swipe right on each other, it is a match and both can message freely. Unlike Bumble, either person can send the first message on Tinder.",
+      "Tinder's massive user base is its greatest strength and the primary reason people still download it despite growing competition. In many markets, especially outside major US cities, Tinder simply has more users than Bumble or Hinge, making it the default dating app. However, Tinder's aggressive monetization strategy — with multiple paid tiers and limited free features — has drawn significant criticism from users in recent years."
+    ],
+    keyFeatures: [
+      { title: "Swiping & Matching", description: "The original swipe mechanic. Right to like, left to pass. Mutual likes create matches with open messaging for both parties." },
+      { title: "Tinder Gold", description: "See who liked you before swiping, get 5 Super Likes per week, 1 free Boost per month, and Passport to swipe in other locations." },
+      { title: "Tinder Platinum", description: "Everything in Gold plus message before matching (Super Likes include a note), priority likes shown before others, and see which likes you have already swiped on." },
+      { title: "Super Likes & Boosts", description: "Tinder Super Like notifies someone you are especially interested. Tinder Boost puts your profile at the top of the stack for 30 minutes. Both dramatically increase match probability." },
+      { title: "Explore Tab", description: "Browse themed groups and events like Hot Takes (ice-breaker games), Swipe Night (interactive stories), and curated collections. These features differentiate Tinder from pure swiping apps." },
+      { title: "Passport", description: "Swipe in any location worldwide before traveling. Available with Gold and Platinum subscriptions. Useful for planning dates while traveling." }
+    ],
+    pricingDetails: [
+      { plan: "Free", price: "Free", features: ["Limited daily swipes", "1 Super Like/week", "Basic matching"] },
+      { plan: "Plus", price: "~$9.99/mo", features: ["Unlimited swipes", "5 Super Likes/week", "1 Boost/month", "Passport"] },
+      { plan: "Gold", price: "~$29.99/mo", features: ["Everything in Plus", "See Who Likes You", "Top Picks"] },
+      { plan: "Platinum", price: "~$39.99/mo", features: ["Everything in Gold", "Message before matching", "Priority likes"] }
+    ],
+    pricingIntro: "Tinder pricing has become increasingly aggressive, with multiple paid tiers and a free experience that feels intentionally limited to push upgrades.",
+    pricingOutro: "**Note:** Tinder pricing varies significantly by age, location, and platform. Younger users often see lower prices. Discounts for longer subscriptions. Tinder cost has increased notably over the past two years.",
+    scores: [
+      { label: "Content Quality", score: 7, description: "Profile quality varies widely. More casual users and bots than Bumble or Hinge. Volume compensates." },
+      { label: "User Interface", score: 7.5, description: "The swiping mechanic remains excellent. Overall app has become cluttered with features and aggressive upgrade prompts." },
+      { label: "Value for Money", score: 6.5, description: "Free tier is too limited. Gold at $29.99 and Platinum at $39.99 are expensive. Competitors offer better value." },
+      { label: "Privacy & Safety", score: 7.5, description: "Photo verification, block/report, safety tips. No AI moderation like Bumble. Some bot and scam account issues persist." },
+      { label: "Features", score: 8, description: "Swiping, Super Likes, Boosts, Passport, Explore, Gold/Platinum tiers. Comprehensive but increasingly locked behind paywalls." }
+    ],
+    pros: [
+      "Largest user base — 75M+ monthly active users globally",
+      "Available in 190+ countries — widest geographic reach",
+      "Both parties can message freely after matching",
+      "Explore tab adds interactive features beyond basic swiping",
+      "Strong mobile apps on iOS and Android"
+    ],
+    cons: [
+      "Aggressive monetization — premium pricing is expensive and keeps increasing",
+      "Free tier increasingly limited to push upgrades",
+      "More bots and fake profiles than Bumble or Hinge",
+      "App has become cluttered with features and ads",
+      "Profile quality generally lower than relationship-focused competitors"
+    ],
+    prosConsNote: "Is Tinder worth it? For users in smaller cities or countries where Bumble and Hinge have limited presence, Tinder's user base makes it the default choice. In major US cities, Bumble and Hinge offer better experiences for serious dating at lower prices.",
+    whoShouldUse: [
+      { persona: "Users needing the largest possible dating pool", reason: "75M+ users in 190+ countries", ideal: true },
+      { persona: "International travelers", reason: "Passport feature and global availability", ideal: true },
+      { persona: "Budget-conscious serious daters", reason: "Premium pricing is expensive, competitors cheaper", ideal: false },
+      { persona: "Users wanting safety-first experience", reason: "Bumble's verification and women-first model is safer", ideal: false }
+    ],
+    alternatives: ["bumble", "feeld"],
+    comparisons: [
+      { slug: "tinder-vs-bumble", title: "Tinder vs Bumble" },
+      { slug: "tinder-vs-hinge", title: "Tinder vs Hinge" }
+    ],
+    faqs: [
+      { question: "Is Tinder free?", answer: "Yes, basic swiping and matching is free but limited. Full features require Gold or Platinum." },
+      { question: "Is Tinder safe?", answer: "Reasonably. Photo verification, block/report. Some bot issues persist." },
+      { question: "Tinder vs Bumble?", answer: "Tinder has more users and equal messaging. Bumble is safer with women-first model. Profile quality higher on Bumble." },
+      { question: "Tinder vs Hinge?", answer: "Tinder for volume and casual dating. Hinge for compatibility-based serious relationships." },
+      { question: "How much does Tinder cost?", answer: "Plus ~$9.99, Gold ~$29.99, Platinum ~$39.99/month. Varies by age and location." },
+      { question: "Is Tinder Gold worth paying for?", answer: "Gold is the best value tier. Platinum is overpriced for most users." },
+      { question: "How to get more Tinder matches?", answer: "Quality photos, specific bio, verify your profile, be active during peak hours." },
+      { question: "How to delete Tinder?", answer: "Settings > Delete Account. Cancel subscription through app store first." },
+      { question: "What are the best Tinder alternatives?", answer: "Bumble for women-first, Hinge for serious dating, Feeld for ENM, Coffee Meets Bagel for curated." },
+      { question: "Does Tinder work internationally?", answer: "Yes. 190+ countries. Passport feature for swiping in other locations." }
+    ],
+    finalVerdict: "Tinder invented modern dating app culture and remains the largest platform by user base. That scale is its killer advantage — in many markets, Tinder simply has more potential matches than any alternative. But the platform has leaned too hard into monetization, with increasingly expensive premium tiers and an increasingly limited free experience. For users who need the largest possible dating pool, Tinder delivers. For everyone else, Bumble's safety features and Hinge's compatibility matching offer better experiences at lower prices."
+  },
   ...generateDatingReviews(),
 
   // ─── SEXTING & CHAT ───
