@@ -163,7 +163,7 @@ const ReviewDetailPage = () => {
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spicyranked.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://spicyranked.com/reviews"},{"@type":"ListItem","position":3,"name":"Chaturbate Review","item":"https://spicyranked.com/reviews/chaturbate"}]}
   ] : undefined;
 
-  const customJsonLd = candyJsonLd || feetFinderJsonLd || onlyFansJsonLd || fanslyJsonLd || dreamGFJsonLd || bumbleJsonLd;
+  const customJsonLd = candyJsonLd || feetFinderJsonLd || onlyFansJsonLd || fanslyJsonLd || dreamGFJsonLd || bumbleJsonLd || chaturbateJsonLd;
 
   return (
     <Layout>
