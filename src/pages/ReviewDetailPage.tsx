@@ -143,7 +143,13 @@ const ReviewDetailPage = () => {
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spicyranked.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://spicyranked.com/reviews"},{"@type":"ListItem","position":3,"name":"Fansly Review","item":"https://spicyranked.com/reviews/fansly"}]}
   ] : undefined;
 
-  const customJsonLd = candyJsonLd || feetFinderJsonLd || onlyFansJsonLd || fanslyJsonLd;
+  const dreamGFJsonLd = isDreamGF ? [
+    {"@context":"https://schema.org","@type":"Review","name":"DreamGF.ai Review 2026","description":"Honest DreamGF.ai review covering AI image generation, pricing, NSFW features, and alternatives. Tested 30+ days.","datePublished":"2026-03-01","dateModified":"2026-03-09","author":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"publisher":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"itemReviewed":{"@type":"SoftwareApplication","name":"DreamGF.ai","applicationCategory":"EntertainmentApplication","operatingSystem":"Web","url":"https://dreamgf.ai","offers":{"@type":"AggregateOffer","lowPrice":"0","highPrice":"49.99","priceCurrency":"USD","offerCount":"4"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"7.8","bestRating":"10","worstRating":"0","ratingCount":"1","reviewCount":"1"}},"reviewRating":{"@type":"Rating","ratingValue":"7.8","bestRating":"10","worstRating":"0"},"positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Outstanding AI image generation quality"},{"@type":"ListItem","position":2,"name":"Strong character consistency"},{"@type":"ListItem","position":3,"name":"Intuitive visual character builder"},{"@type":"ListItem","position":4,"name":"Unrestricted NSFW for premium users"},{"@type":"ListItem","position":5,"name":"Multiple AI girlfriend support"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Conversation AI lags behind competitors"},{"@type":"ListItem","position":2,"name":"No voice or audio features"},{"@type":"ListItem","position":3,"name":"Gold tier pricing is expensive"}]}},
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":allFaqs.map(f => ({"@type":"Question","name":f.question,"acceptedAnswer":{"@type":"Answer","text":f.answer}}))},
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spicyranked.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://spicyranked.com/reviews"},{"@type":"ListItem","position":3,"name":"DreamGF.ai Review","item":"https://spicyranked.com/reviews/dreamgf-ai"}]}
+  ] : undefined;
+
+  const customJsonLd = candyJsonLd || feetFinderJsonLd || onlyFansJsonLd || fanslyJsonLd || dreamGFJsonLd;
 
   return (
     <Layout>
