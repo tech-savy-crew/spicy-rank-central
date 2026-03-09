@@ -28,23 +28,32 @@ export interface Tip {
 // ── Platform-specific overrides ──
 const uxOverrides: Record<string, UserExperienceContent> = {
   "candy-ai": {
-    gettingStarted: "Signing up for Candy.ai takes less than two minutes. You can register with an email address or Google account — no phone verification needed. The onboarding wizard walks you through creating your first AI companion by selecting appearance, personality traits, and communication style. Within five minutes of signing up, you can be in a full conversation.",
-    interfaceNavigation: "The Candy.ai interface is clean and modern, with a chat-first design that puts conversations front and center. The left sidebar lets you switch between companions, access settings, and manage your gallery. Message input feels responsive, and AI replies typically arrive within 2-3 seconds. The image generation feature is integrated directly into the chat flow, so you can request visuals without leaving the conversation.",
-    mobileExperience: "Candy.ai works well on mobile browsers with a fully responsive design. There is also a dedicated mobile app available for both Android and iOS. The mobile experience mirrors the desktop version closely, with smooth scrolling, fast load times, and an interface optimized for thumb navigation.",
+    gettingStarted: "Signing up for Candy.ai takes less than two minutes. You can register through the Candy.ai website using an email address or Google account — no phone verification or ID required. The login process is straightforward, and returning users can sign in with one tap. After registration, an onboarding wizard walks you through creating your first AI companion by selecting appearance, personality traits, and communication style. Within five minutes of completing signup, you can already be deep in a natural-feeling conversation.",
+    interfaceNavigation: "The interface is clean, modern, and built around conversations. A left sidebar lets you switch between companions, access settings, and browse your image gallery. Message input feels responsive, and AI replies typically arrive within two to three seconds on premium. The image generation feature is integrated directly into the chat flow — you request visuals without ever leaving the conversation window. Settings are well-organized and nothing feels buried behind unnecessary menus.",
+    mobileExperience: "The Candy.ai app is available for both Android and iOS, and the mobile experience closely mirrors what you get on desktop. Scrolling is smooth, load times are fast, and the interface adapts well to smaller screens with thumb-friendly navigation. If you primarily use your phone, you will not feel like you are getting a compromised experience.",
   },
 };
 
+const privacyCardOverrides: Record<string, TrustCard[]> = {
+  "candy-ai": [
+    { icon: "lock", title: "Data Encryption", description: "Candy.ai uses SSL/TLS encryption to protect all data transmitted between your browser and their servers. Conversations and personal data are encrypted in transit, meeting industry norms for AI companion platforms." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Charges appear discreetly on credit card and bank statements using a generic billing descriptor. The platform name does not show up, which is important for users who value financial privacy." },
+    { icon: "shield-check", title: "Content Moderation", description: "Candy.ai enforces content policies in line with industry standards, including DMCA compliance and age verification for adult content access. All users must confirm they are 18 or older." },
+    { icon: "eye-off", title: "Account Privacy", description: "You can use Candy.ai with minimal personal information. No social media linking is required, and account deletion is available upon request. Personal information is not sold to third parties." },
+  ],
+};
+
 const privacyOverrides: Record<string, string> = {
-  "candy-ai": "Candy.ai takes privacy seriously with SSL encryption on all connections and a clear privacy policy that outlines data usage. Billing appears discreetly on credit card statements without mentioning the platform name. The platform allows full account deletion upon request, and conversations can be individually cleared at any time. While Candy.ai collects usage data to improve AI responses, they state that personal information is not shared with third parties. Overall, the privacy protections meet industry standards for AI companion platforms.",
+  "candy-ai": "So, is Candy.ai a scam? Based on our 30+ days of testing: absolutely not. It is a legitimate, well-built platform with a clear business model. Is Candy.ai safe? Yes, with reasonable privacy protections that meet what we would expect for this category. Is Candy.ai legit? The company operates transparently, processes refund requests, and has a growing presence on review platforms like Trustpilot. We found no red flags during our extended testing period.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
   "candy-ai": [
-    { title: "Start with the Free Tier", description: "Test basic features before committing to a paid plan. This helps you evaluate conversation quality and see if the platform matches your expectations." },
-    { title: "Customize Personality Traits Early", description: "The more detail you provide during character creation — interests, communication style, humor level — the more natural your conversations will feel from the start." },
-    { title: "Explore Voice Messages", description: "Premium voice features add a layer of immersion that text alone cannot replicate. Try voice interactions for a more engaging experience." },
-    { title: "Save and Reference Past Conversations", description: "The AI builds on shared history. Mentioning previous topics helps create continuity and deeper interactions over time." },
-    { title: "Experiment with Multiple Companions", description: "Do not limit yourself to one character. Different personality types offer different experiences and help you discover what you enjoy most." },
+    { title: "Start with the Free Tier Before Committing", description: "Spend at least two or three days on the free plan before purchasing a subscription. This gives you enough time to evaluate conversation quality and decide if the platform matches your expectations without risking any money." },
+    { title: "Invest Time in Character Creation", description: "The more detail you provide during setup — interests, humor level, communication style, emotional depth — the more natural and personalized your chat experience will feel from day one. Do not rush the character builder." },
+    { title: "Use Voice Messages for Deeper Immersion", description: "The voice feature adds a layer of realism that text alone simply cannot replicate. Enable it in settings and try sending voice-based requests — the responses feel surprisingly natural and emotionally appropriate." },
+    { title: "Reference Past Conversations", description: "Candy.ai's memory feature works best when you actively build on previous interactions. Mention things you discussed earlier, reference inside jokes, and the AI will pick up continuity that makes the experience feel like an evolving relationship." },
+    { title: "Experiment with Multiple Companions", description: "Do not limit yourself to a single character. Different personality configurations produce completely different experiences. Try creating two or three AI girlfriends with contrasting traits to discover what you enjoy most." },
   ],
 };
 
