@@ -2092,7 +2092,7 @@ function generateTubeReviews(): DetailedReview[] {
       "No native mobile app",
     ],
     prosConsNote: "Is Jerkmate legit? Yes. Behind the aggressive ads is a functioning, professional cam platform with real performers, working payments, and a genuine entertainment experience. Is Jerkmate a scam? No — but the misleading advertising has understandably created skepticism. The actual product is significantly better than the ads suggest.",
-    privacyIntro: "Jerkmate operates as a legitimate premium cam platform with standard security protections.",
+    privacyIntro: "The number one question we encounter is whether Jerkmate is legit — which is entirely understandable given how aggressive and sometimes misleading the advertising is.",
     whoShouldUse: [
       { persona: "Viewers wanting curated premium cam experience", reason: "Matchmaking-style discovery with high-quality performers", ideal: true },
       { persona: "Users who value gamification and rank progression", reason: "Unique ranked system with perks at each level", ideal: true },
