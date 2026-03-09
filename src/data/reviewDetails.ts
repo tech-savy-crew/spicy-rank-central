@@ -860,6 +860,89 @@ export const detailedReviews: DetailedReview[] = [
   ...generateLiveCamReviews(),
 
   // ─── DATING & HOOKUP APPS ───
+  {
+    name: "Bumble",
+    slug: "bumble",
+    category: "Dating & Hookup Apps",
+    score: 8.0,
+    verdict: "The women-make-the-first-move dating app with a solid matching algorithm — but are the premium features actually worth paying for?",
+    pricing: "Free / Premium $39.99/mo",
+    bestFor: "Women-first safe dating",
+    url: "https://bumble.com",
+    lastUpdated: "March 2026",
+    readingTime: 10,
+    overview: [
+      "Bumble is the dating app where women make the first move. Launched in 2014 by Whitney Wolfe Herd, a co-founder of Tinder, the Bumble dating app was built on a simple but revolutionary idea: in heterosexual matches, only women can send the first message. This flipped the traditional dating app dynamic and created an environment where women feel more in control and less overwhelmed by unsolicited messages.",
+      "So how does Bumble work? You create a profile with photos and bio information, set your preferences for age, distance, and gender, and start swiping. Swipe right to like, left to pass. When two people swipe right on each other, it is a match. In heterosexual matches, the woman has 24 hours to send the first message, and the man has 24 hours to respond — otherwise the match expires. In same-gender matches, either person can message first.",
+      "Beyond dating, Bumble has expanded into Bumble BFF for finding friendships and Bumble Bizz for professional networking. But the core dating experience remains the reason most people download the app, and it is what we are evaluating in this review. With over 40 million monthly active users globally, Bumble is the second-largest dating app after Tinder — and for many users, it delivers a noticeably better experience."
+    ],
+    keyFeatures: [
+      { title: "Women Message First", description: "Bumble's signature feature. In heterosexual matches, only women can initiate. Creates less aggressive messaging environment and gives women agency. Biggest differentiator from Tinder." },
+      { title: "24-Hour Match Expiry", description: "Matches expire if no message is sent in 24 hours. Creates urgency, encourages engagement, reduces dead matches plaguing other apps." },
+      { title: "Bumble SuperSwipe", description: "Send a super like notifying someone you are especially interested. Costs one Bumble coin. Makes your profile stand out in their stack." },
+      { title: "Bumble Boost & Spotlight", description: "Boost puts your profile at top of stack for 30 minutes. Spotlight provides broader reach. Premium features designed to increase match rate dramatically." },
+      { title: "Advanced Filters", description: "Premium users filter by height, exercise, education, zodiac, drinking. Free users get basic age and distance only. Advanced filtering significantly improves match quality." },
+      { title: "Bumble BFF & Bizz", description: "BFF mode for finding platonic friendships. Bizz mode for professional networking. Same swiping mechanics, different purpose. Multi-purpose social platform." }
+    ],
+    pricingIntro: "Bumble pricing has evolved significantly, and understanding the Bumble cost structure is important because the free experience has become increasingly limited.",
+    pricingDetails: [
+      { plan: "Free Bumble", price: "Free", features: ["Create profile, swipe, match, message", "Limited daily swipes", "Cannot see who liked you", "No advanced filters, no undo"] },
+      { plan: "Bumble Premium", price: "$39.99/mo", features: ["Unlimited swipes", "See who liked you", "Advanced filters, unlimited extends", "Rematch, travel mode, incognito", "~$26.99/mo for 3 months, ~$19.99/mo for 6 months"] },
+      { plan: "Bumble Premium Plus", price: "$54.99/mo", features: ["Everything in Premium", "Priority visibility", "Weekly Spotlight boost", "SuperSwipe credits", "Most expensive tier for competitive markets"] }
+    ],
+    pricingOutro: "**Is the Bumble premium pricing worth the cost?** For active daters in major cities, Premium offers genuine advantages. For casual users in smaller areas, the free tier is probably sufficient. We recommend testing free for two weeks, then evaluating whether Premium would improve your experience.",
+    scores: [
+      { label: "Content Quality", score: 8, description: "Higher profile quality than Tinder. Photo prompts and verification badges encourage effort. Fewer fake accounts and bots." },
+      { label: "User Interface", score: 8.5, description: "Cleanest dating app interface available. Intuitive, modern, smooth. Continuous refinement visible." },
+      { label: "Value for Money", score: 7.5, description: "Free tier works but limited. Premium at $39.99/month expensive vs competitors. Good features but high cost. Long-term discounts help." },
+      { label: "Privacy & Safety", score: 8.5, description: "Photo verification, AI moderation, block/report, women-first model, incognito mode. Among safest dating apps." },
+      { label: "Features", score: 8, description: "Women-first, SuperSwipe, Boost, Spotlight, advanced filters, travel mode, BFF, Bizz. Gap: algorithm less sophisticated than Hinge." }
+    ],
+    pros: [
+      "Women-first model creates safer environment",
+      "Higher profile quality than Tinder",
+      "Clean, modern, well-designed interface",
+      "Strong safety features with verification and AI moderation",
+      "Multi-purpose with BFF and Bizz",
+      "24-hour expiry encourages engagement"
+    ],
+    cons: [
+      "Premium pricing expensive at $39.99/month",
+      "Free experience increasingly limited",
+      "Women-first can feel restrictive for men",
+      "Algorithm less sophisticated than Hinge",
+      "24-hour expiry means lost matches",
+      "Smaller user base than Tinder outside major cities"
+    ],
+    prosConsNote: "Is Bumble worth it? For women and non-binary users, Bumble offers a genuinely safer experience. For men willing to wait for women to initiate, match quality tends to be higher. Premium pricing is the main pain point — the full experience behind the paywall comes at a notable cost.",
+    privacyIntro: "Safety is where Bumble genuinely excels compared to most dating apps.",
+    whoShouldUse: [
+      { persona: "Women who want inbox control", reason: "Women-first model designed specifically for this.", ideal: true },
+      { persona: "Safety-conscious users", reason: "Best verification and moderation in dating apps.", ideal: true },
+      { persona: "People seeking serious relationships", reason: "User base skews relationship-oriented.", ideal: true },
+      { persona: "Men who prefer initiating conversations", reason: "Tinder or Hinge give equal messaging freedom.", ideal: false },
+      { persona: "Budget-conscious users needing full features", reason: "Premium at $39.99 is expensive. Hinge or Tinder cheaper.", ideal: false }
+    ],
+    alternatives: ["tinder", "feeld"],
+    comparisons: [
+      { slug: "tinder-vs-bumble", title: "Tinder vs Bumble" },
+      { slug: "bumble-vs-hinge", title: "Bumble vs Hinge" },
+      { slug: "bumble-vs-feeld", title: "Bumble vs Feeld" }
+    ],
+    faqs: [
+      { question: "Is Bumble free?", answer: "Yes, free tier for profile, swiping, matching, messaging. But limited swipes, no seeing who liked you, no advanced filters. Full experience requires Premium subscription." },
+      { question: "Is Bumble safe?", answer: "Yes. Photo verification, AI moderation, block/report, women-first messaging, incognito mode. Publicly traded company. Among safest dating apps." },
+      { question: "How does Bumble work?", answer: "Create profile, set preferences, swipe right/left. Mutual right-swipes create matches. Women message first in hetero matches (24hr limit). Same-gender: either can message first." },
+      { question: "How much does Bumble cost?", answer: "Premium ~$39.99/month, ~$26.99/mo for 3 months, ~$19.99/mo for 6 months. Premium Plus ~$54.99/month. Free tier available. Pricing varies by region." },
+      { question: "What does Bumble Premium include?", answer: "Unlimited swipes, see who liked you, advanced filters, unlimited extends, rematch, travel mode, incognito. Premium Plus adds priority visibility and weekly Spotlight." },
+      { question: "Is Bumble better than Tinder?", answer: "For women, generally yes — safer and less overwhelming. For men wanting initiation control, Tinder allows both parties to message. Profile quality higher on Bumble, Tinder has larger user base." },
+      { question: "Is Bumble worth it in 2026?", answer: "Free tier is decent but limited. Premium offers genuine advantages for active daters in larger cities. Test free for two weeks, then evaluate if Premium improves your experience." },
+      { question: "How do I delete my Bumble account?", answer: "Settings > scroll to bottom > Delete Account. Choose temporary snooze or permanent deletion. Cancel subscription through app store first to avoid continued charges." },
+      { question: "What are the best Bumble alternatives?", answer: "Tinder for largest user base, Hinge for compatibility matching, Feeld for couples/ENM, Coffee Meets Bagel for curated matches. Many daters use 2-3 apps simultaneously." },
+      { question: "Does Bumble work internationally?", answer: "Yes. Available in 150+ countries. Auto-adjusts to location. Travel mode lets you swipe in other cities. Most active in US, UK, Canada, Australia, Western Europe." }
+    ],
+    finalVerdict: "Bumble has earned its position as the second most popular dating app for good reason. Women-first messaging improves the experience for everyone. App design is excellent, profile quality is high, safety features are industry-leading. Main complaint is pricing — Premium at $39.99/month is expensive, and free experience keeps getting more restricted. For women and safety-conscious daters, it remains the gold standard. For men, works best with strong profile and patience. For everyone, the user quality and platform design make it one of our highest-rated dating apps."
+  },
   ...generateDatingReviews(),
 
   // ─── SEXTING & CHAT ───

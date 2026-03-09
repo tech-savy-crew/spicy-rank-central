@@ -52,6 +52,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Modern, clean dark-themed dashboard. Intuitive navigation between feed, explore, messages, notifications, analytics. Explore page with search functionality is the standout. Content organization with labels superior to OnlyFans' chronological feed.",
     mobileExperience: "No native app on iOS/Android. Mobile browser experience is excellent — responsive, fast, touch-optimized. PWA available for home screen. Many creators report smoother mobile experience than OnlyFans.",
   },
+  "bumble": {
+    gettingStarted: "Five to ten minutes. Sign up via phone, Apple ID, or Facebook. Onboarding covers photos, bio, preferences. Photo verification optional but recommended — verified profiles get significantly more matches.",
+    interfaceNavigation: "One of the cleanest dating app interfaces. Uncluttered swiping screen, large photos, clear text. Bottom tab navigation. Modern and pleasant to use. Settings logically organized.",
+    mobileExperience: "Mobile-first app available on iOS and Android. Web version exists but limited. Push notifications reliable. App runs smoothly on all devices. Polished, stable, best-in-class.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
@@ -85,6 +90,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Content Protection", description: "DMCA enforcement and watermarking. Fansly downloader tools exist online and content theft remains a challenge, but Fansly actively combats this." },
     { icon: "eye-off", title: "Identity Verification", description: "Government ID required for all creators before posting. Reduces fake accounts and ensures age compliance." },
   ],
+  "bumble": [
+    { icon: "lock", title: "Photo Verification", description: "Real-time selfie matching specific pose. Blue checkmark badge. Dramatically reduces catfishing and fake profiles." },
+    { icon: "shield-check", title: "AI Content Moderation", description: "Detects and flags inappropriate messages and photos. Offensive content auto-detected. Warnings and bans for violations." },
+    { icon: "eye-off", title: "Block & Report", description: "Comprehensive reporting for fake profiles and inappropriate behavior. Moderation team reviews reports. Instant blocking available." },
+    { icon: "credit-card", title: "Incognito Mode", description: "Premium feature — profile visible only to people you swiped right on. Essential for users needing discretion." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
@@ -93,6 +104,7 @@ const privacyOverrides: Record<string, string> = {
   "feetfinder": "So, is FeetFinder legit? Absolutely. After testing the platform extensively from both sides, FeetFinder is a legitimate, well-established marketplace with a real business model, genuine buyer traffic, and functioning payout systems. Is FeetFinder safe? Yes — the combination of identity verification, encryption, content protection, and discreet billing makes it one of the safest options available. Is FeetFinder a scam? No. There are legitimate criticisms around pricing and competition levels, but the platform itself operates transparently and has been doing so since 2019.",
   "onlyfans": "Is OnlyFans legit? Without question. Operated by Fenix International Limited, a UK-based company processing billions in creator payouts annually. Is OnlyFans safe? Yes, with strong privacy protections and reliable security. Is OnlyFans a scam? Absolutely not — individual creator quality varies but the platform itself is entirely legitimate and one of the most established names in the creator economy.",
   "fansly": "Is Fansly legit? Yes — legitimate platform with functioning payments, real payouts, growing user base. Is Fansly safe? Yes, with standard security meeting industry norms. Is Fansly a scam? No — platform is legitimate though some Trustpilot reviewers report support issues worth noting.",
+  "bumble": "Is Bumble safe? Yes — among the safest mainstream dating apps. Is Bumble legit? Absolutely — publicly traded company (NASDAQ: BMBL). Is Bumble a scam? No — genuine dating experience with real users. Some frustration around pricing, but platform is legitimate.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -130,6 +142,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Leverage the Explore Page", description: "Post consistently with relevant tags. Fansly rewards active creators with organic visibility." },
     { title: "Cross-Promote Between OnlyFans and Fansly", description: "Run both simultaneously. Promote each in the other's bio." },
     { title: "Engage in DMs and Build Relationships", description: "Respond promptly, offer custom content. DMs drive tips, PPV, and retention." },
+  ],
+  "bumble": [
+    { title: "Invest in Profile Photos", description: "Clear headshot first, one full-body, hobby photos. Six photos significantly outperform three." },
+    { title: "Verify Immediately", description: "Free, takes 30 seconds, adds blue checkmark, meaningfully improves match rate." },
+    { title: "Answer Bio Prompts Thoughtfully", description: "Specific answers always outperform generic ones. Invite conversation." },
+    { title: "Be Active During Peak Hours", description: "Sunday-Thursday evenings 7-10 PM. Consistent daily usage beats binge-swiping." },
+    { title: "Women: Send Engaging First Messages", description: "Reference something specific from their profile. Personalized messages convert 3-5x better than generic greetings." },
   ],
 };
 
