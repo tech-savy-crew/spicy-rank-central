@@ -53,6 +53,13 @@ export function SEO({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
 
+      {/* Extra meta tags */}
+      {extraMeta?.map((meta, i) =>
+        meta.property
+          ? <meta key={`extra-${i}`} property={meta.property} content={meta.content} />
+          : <meta key={`extra-${i}`} name={meta.name!} content={meta.content} />
+      )}
+
       {/* JSON-LD */}
       {jsonLdArray.map((ld, i) => (
         <script key={i} type="application/ld+json">
