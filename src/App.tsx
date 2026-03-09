@@ -9,6 +9,7 @@ import { HelmetProvider } from "react-helmet-async";
 const Index = lazy(() => import("./pages/Index"));
 const ReviewPage = lazy(() => import("./pages/ReviewDetailPage"));
 const ComparePage = lazy(() => import("./pages/ComparePage"));
+const CompareDetailPage = lazy(() => import("./pages/CompareDetailPage"));
 const AlternativesPage = lazy(() => import("./pages/AlternativesPage"));
 const RankingsPage = lazy(() => import("./pages/RankingsPage"));
 const ReviewsPage = lazy(() => import("./pages/ReviewsPage"));
@@ -20,6 +21,7 @@ const AdvertisePage = lazy(() => import("./pages/AdvertisePage"));
 const WriteForUsPage = lazy(() => import("./pages/WriteForUsPage"));
 const SearchPage = lazy(() => import("./pages/SearchPage"));
 const BestListPage = lazy(() => import("./pages/BestListPage"));
+const BestListDetailPage = lazy(() => import("./pages/BestListDetailPage"));
 const PrivacyPolicyPage = lazy(() => import("./pages/PrivacyPolicyPage"));
 const TermsPage = lazy(() => import("./pages/TermsPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -46,6 +48,7 @@ const App = () => (
               <Route path="/reviews" element={<ReviewsPage />} />
               <Route path="/reviews/:slug" element={<ReviewPage />} />
               <Route path="/compare" element={<ComparePage />} />
+              <Route path="/compare/:slug" element={<CompareDetailPage />} />
               <Route path="/alternatives/:slug" element={<AlternativesPage />} />
               <Route path="/rankings" element={<RankingsPage />} />
               <Route path="/category/:category" element={<CategoryPage />} />
@@ -56,6 +59,7 @@ const App = () => (
               <Route path="/write-for-us" element={<WriteForUsPage />} />
               <Route path="/search" element={<SearchPage />} />
               <Route path="/best/:slug" element={<BestListPage />} />
+              <Route path="/best-lists/:slug" element={<BestListDetailPage />} />
               <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
               <Route path="/privacy" element={<PrivacyPolicyPage />} />
               <Route path="/terms" element={<TermsPage />} />
