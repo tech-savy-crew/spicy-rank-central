@@ -133,6 +133,24 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Performer Verification", description: "Age and identity verification for all performers. Standard compliance measures." },
     { icon: "eye-off", title: "Account Privacy", description: "Anonymous browsing available. Invisible mode for Ultimate members. Account deletion available." },
   ],
+  "tinder": [
+    { icon: "lock", title: "Photo Verification", description: "Real-time selfie verification with blue checkmark badge. Reduces catfishing." },
+    { icon: "shield-check", title: "Block & Report", description: "Block and report users for inappropriate behavior. Moderation team reviews reports." },
+    { icon: "credit-card", title: "Safe Payments", description: "In-app purchases through Apple/Google app stores with standard payment protections." },
+    { icon: "eye-off", title: "Privacy Controls", description: "Control profile visibility, hide age and distance, and manage data sharing preferences." },
+  ],
+  "fanvue": [
+    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including content and payments." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. FanVue name not visible to third parties." },
+    { icon: "shield-check", title: "ID Verification", description: "Government ID verification required for all creators. Age compliance enforced." },
+    { icon: "eye-off", title: "Content Protection", description: "DMCA enforcement and content protection measures. Creators retain ownership of their content." },
+  ],
+  "patreon": [
+    { icon: "lock", title: "Secure Payments", description: "All payments processed through Stripe with bank-grade encryption and PCI compliance." },
+    { icon: "shield-check", title: "Content Moderation", description: "Community guidelines enforced with content review. Adult content restricted and monitored." },
+    { icon: "credit-card", title: "Transparent Billing", description: "Clear billing with Patreon name on statements. Subscription management through account settings." },
+    { icon: "eye-off", title: "Patron Privacy", description: "Patron identities private by default. Creators see patron names but not personal details unless shared." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
