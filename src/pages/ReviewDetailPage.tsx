@@ -310,6 +310,14 @@ const ReviewDetailPage = () => {
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "Live Cam Sites" },
+        ] : isCrushOn ? [
+          { name: "keywords", content: "crushon ai review, crushon ai, crushon ai nsfw, is crushon ai safe, crushon ai free, crushon ai pricing, crushon ai alternatives, crushon ai characters, crushon ai app, is crushon ai legit, crushon ai cost, crushon ai chat, what is crushon ai" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "CrushOn.ai Review 2026 — Most Unrestricted NSFW AI Chat?" },
+          { property: "og:description", content: "We tested CrushOn.ai for 30+ days. Full review of NSFW chat quality, pricing, character variety, and Candy.ai comparison. Rated 7.4/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "AI Companions" },
         ] : undefined}
         jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
