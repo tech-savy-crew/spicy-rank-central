@@ -36,7 +36,7 @@ export function SEO({
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      <meta name="robots" content="noindex, nofollow" />
+      <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
 
       {/* Open Graph */}
