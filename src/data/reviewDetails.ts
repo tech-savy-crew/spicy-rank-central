@@ -116,7 +116,7 @@ export const detailedReviews: DetailedReview[] = [
     score: 7.4,
     verdict: "The go-to platform for uncensored NSFW AI chat with no content restrictions",
     pricing: "Free tier / $7.99/mo",
-    bestFor: "Unrestricted NSFW AI chat",
+    bestFor: "Unrestricted NSFW AI chat at a lower price point",
     url: "https://crushon.ai",
     lastUpdated: "March 2026",
     overview: [
