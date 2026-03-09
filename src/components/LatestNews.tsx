@@ -38,7 +38,7 @@ const posts: NewsPost[] = [
     date: "March 2, 2026",
     readTime: "6 min read",
     excerpt: "Fansly just hit a massive milestone. We break down what this growth means for creators and whether it's time to switch.",
-    link: "/blog/fansly-5-million-creators",
+    link: "/reviews/fansly",
   },
   {
     category: "AI Companions",
