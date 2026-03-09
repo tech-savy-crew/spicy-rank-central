@@ -143,6 +143,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Cross-Promote Between OnlyFans and Fansly", description: "Run both simultaneously. Promote each in the other's bio." },
     { title: "Engage in DMs and Build Relationships", description: "Respond promptly, offer custom content. DMs drive tips, PPV, and retention." },
   ],
+  "bumble": [
+    { title: "Invest in Profile Photos", description: "Clear headshot first, one full-body, hobby photos. Six photos significantly outperform three." },
+    { title: "Verify Immediately", description: "Free, takes 30 seconds, adds blue checkmark, meaningfully improves match rate." },
+    { title: "Answer Bio Prompts Thoughtfully", description: "Specific answers always outperform generic ones. Invite conversation." },
+    { title: "Be Active During Peak Hours", description: "Sunday-Thursday evenings 7-10 PM. Consistent daily usage beats binge-swiping." },
+    { title: "Women: Send Engaging First Messages", description: "Reference something specific from their profile. Personalized messages convert 3-5x better than generic greetings." },
+  ],
 };
 
 // ── Generic generators ──
