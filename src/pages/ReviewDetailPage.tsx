@@ -8,6 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, XCircle, ExternalLink, Star, Clock, Calendar, ChevronRight, ChevronDown, Zap, Users, Shield, DollarSign, Sparkles, ArrowRight, Monitor, ShieldCheck, Lightbulb, Lock, CreditCard, EyeOff, Camera } from "lucide-react";
 import { useState, useMemo } from "react";
 import candyAiInterface from "@/assets/candy-ai-interface.webp";
+import { ReviewContent } from "@/components/ReviewContent";
 
 function StarRating({ score, max = 10 }: { score: number; max?: number }) {
   const stars = 5;
@@ -288,34 +289,8 @@ const ReviewDetailPage = () => {
                 ))}
               </div>
               {review.pricingOutro && (
-                <div className="text-[15px] text-muted-foreground leading-7 mt-5 space-y-4">
-                  {review.pricingOutro.split("\n\n").map((block, i) => {
-                    // Check if block has a bold header pattern like "FOR CREATORS:" or "**Header**"
-                    const headerMatch = block.match(/^(FOR [A-Z]+:|[A-Z][A-Z ]+:)\s*/);
-                    if (headerMatch) {
-                      const header = headerMatch[1];
-                      const body = block.slice(headerMatch[0].length);
-                      const lines = body.split(/\.\s+(?=[A-Z])/).filter(Boolean);
-                      return (
-                        <div key={i}>
-                          <h4 className="text-sm font-bold text-foreground uppercase tracking-wide mb-2">{header}</h4>
-                          {lines.length > 1 ? (
-                            <ul className="space-y-1.5">
-                              {lines.map((line, j) => (
-                                <li key={j} className="flex items-start gap-2">
-                                  <span className="text-primary mt-1 shrink-0">•</span>
-                                  <span>{line.trim().replace(/\.$/, '')}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          ) : (
-                            <p>{body}</p>
-                          )}
-                        </div>
-                      );
-                    }
-                    return <p key={i}>{block}</p>;
-                  })}
+                <div className="mt-5">
+                  <ReviewContent content={review.pricingOutro} />
                 </div>
               )}
             </section>
