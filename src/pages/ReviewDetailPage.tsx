@@ -196,6 +196,8 @@ const ReviewDetailPage = () => {
                   <span className="text-primary font-bold">Quick Verdict:</span>{" "}
                   {isCandyAi
                     ? "Candy.ai is the best AI girlfriend platform we tested in 2026. Realistic conversations, excellent image generation, and deep personality customization earn it our top rating of 8.3/10 — though premium pricing may not suit every budget."
+                    : isFeetFinder
+                    ? "FeetFinder is the most established feet content marketplace with a massive buyer base, verified profiles, and strong safety features. At 8.0/10, it earns our recommendation for serious sellers — though the subscription fees and high competition mean beginners need a solid strategy to succeed."
                     : review.verdict}
                 </p>
               </div>
