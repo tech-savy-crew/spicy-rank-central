@@ -258,11 +258,11 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Promote Patreon on Every Platform", description: "Mention your Patreon in every YouTube video, podcast episode, and social media post. Consistent promotion drives growth." },
   ],
   "jerkmate": [
-    { title: "Start with Gold Shows", description: "Gold shows offer the best value on Jerkmate. Group viewing at $5-$20 per show is significantly cheaper than per-minute private sessions." },
-    { title: "Use the Matchmaking Quiz", description: "Take the preference quiz seriously at signup. Better input = better performer recommendations and less time browsing." },
-    { title: "Set a Session Budget", description: "Per-minute pricing adds up fast. Set a credit limit before entering private shows to avoid surprising charges." },
-    { title: "Explore the Ranked System", description: "Higher rank levels unlock discounts and perks. Consistent activity on the platform earns rank progression over time." },
-    { title: "Compare with Chaturbate First", description: "Try Chaturbate's free model before committing to Jerkmate's paid experience. You may prefer free viewing with optional tipping." },
+    { title: "Start with Gold Shows, Not Private Shows", description: "Gold shows cost $5-$20 per ticket and let you experience Jerkmate's quality without the per-minute expense of private sessions. This is the best way to evaluate the platform before committing to higher spending." },
+    { title: "Use the Matchmaking Quiz Honestly", description: "The more accurate your preference settings, the better Jerkmate's algorithm matches you with performers you will actually enjoy. Generic settings produce generic results." },
+    { title: "Work the Ranked System", description: "Jerkmate ranked levels unlock real perks including discounted shows and exclusive access. Consistent platform use earns rank progression that improves your experience over time." },
+    { title: "Set a Credit Budget Before Each Session", description: "Per-minute pricing adds up fast. Decide before starting how many credits you are willing to spend. This prevents impulse spending during shows." },
+    { title: "Explore the Content Library", description: "Pre-recorded videos and photo sets offer entertainment without the per-minute pressure of live shows. Often better value for extended viewing." },
   ],
 };
 
