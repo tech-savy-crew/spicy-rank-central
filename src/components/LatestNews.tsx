@@ -26,7 +26,7 @@ const posts: NewsPost[] = [
     date: "March 5, 2026",
     readTime: "4 min read",
     excerpt: "OnlyFans has rolled out major changes to its creator payout structure. Here's what every creator needs to know about the new fee schedule.",
-    link: "/blog/onlyfans-payout-policy-2026",
+    link: "/reviews/onlyfans",
   },
   {
     category: "Creator Platforms",
