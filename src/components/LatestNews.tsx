@@ -82,8 +82,8 @@ export function LatestNews() {
                 Stay informed with the latest changes across adult platforms
               </p>
             </div>
-            <Link to="/blog" className="text-sm font-medium hover:underline hidden md:block" style={{ color: "#E53E3E" }}>
-              Read all articles →
+            <Link to="/reviews" className="text-sm font-medium hover:underline hidden md:block" style={{ color: "#E53E3E" }}>
+              View all reviews →
             </Link>
           </div>
         </AnimatedSection>
