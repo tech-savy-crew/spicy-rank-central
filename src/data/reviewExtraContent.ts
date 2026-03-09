@@ -156,6 +156,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "credit-card", title: "Transparent Billing", description: "Clear billing with Patreon name on statements. Subscription management through account settings." },
     { icon: "eye-off", title: "Patron Privacy", description: "Patron identities private by default. Creators see patron names but not personal details unless shared." },
   ],
+  "jerkmate": [
+    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including streams, chat, and payment information." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Credit purchases appear under a generic billing descriptor. Jerkmate name not visible on statements." },
+    { icon: "shield-check", title: "Age Verification", description: "Government ID required for all performers. Ensures compliance and reduces fake accounts." },
+    { icon: "eye-off", title: "Account Privacy", description: "Basic privacy controls available. Account deletion through support. Standard security measures." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
