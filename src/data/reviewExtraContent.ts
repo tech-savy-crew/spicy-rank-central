@@ -52,6 +52,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Modern, clean dark-themed dashboard. Intuitive navigation between feed, explore, messages, notifications, analytics. Explore page with search functionality is the standout. Content organization with labels superior to OnlyFans' chronological feed.",
     mobileExperience: "No native app on iOS/Android. Mobile browser experience is excellent — responsive, fast, touch-optimized. PWA available for home screen. Many creators report smoother mobile experience than OnlyFans.",
   },
+  "bumble": {
+    gettingStarted: "Five to ten minutes. Sign up via phone, Apple ID, or Facebook. Onboarding covers photos, bio, preferences. Photo verification optional but recommended — verified profiles get significantly more matches.",
+    interfaceNavigation: "One of the cleanest dating app interfaces. Uncluttered swiping screen, large photos, clear text. Bottom tab navigation. Modern and pleasant to use. Settings logically organized.",
+    mobileExperience: "Mobile-first app available on iOS and Android. Web version exists but limited. Push notifications reliable. App runs smoothly on all devices. Polished, stable, best-in-class.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
