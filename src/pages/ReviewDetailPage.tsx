@@ -114,6 +114,7 @@ const ReviewDetailPage = () => {
   const isCandyAi = review.slug === "candy-ai";
   const isFeetFinder = review.slug === "feetfinder";
   const isOnlyFans = review.slug === "onlyfans";
+  const isFansly = review.slug === "fansly";
 
   const candyJsonLd = isCandyAi ? [
     {"@context":"https://schema.org","@type":"Review","name":"Candy.ai Review 2026","description":"In-depth review of Candy.ai AI girlfriend platform covering features, pricing, safety, and user experience. Tested for 30+ days.","datePublished":"2026-03-01","dateModified":"2026-03-09","author":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"publisher":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"itemReviewed":{"@type":"SoftwareApplication","name":"Candy.ai","applicationCategory":"EntertainmentApplication","operatingSystem":"Web, Android, iOS","url":"https://candy.ai","offers":{"@type":"AggregateOffer","lowPrice":"0","highPrice":"12.99","priceCurrency":"USD","offerCount":"3"}},"reviewRating":{"@type":"Rating","ratingValue":"8.3","bestRating":"10","worstRating":"0"},"positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Most realistic AI conversations in the market"},{"@type":"ListItem","position":2,"name":"Excellent AI image generation quality"},{"@type":"ListItem","position":3,"name":"Deep personality customization options"},{"@type":"ListItem","position":4,"name":"Strong conversation memory and continuity"},{"@type":"ListItem","position":5,"name":"Clean interface on desktop and mobile"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium pricing higher than some competitors"},{"@type":"ListItem","position":2,"name":"Free tier is very limited"},{"@type":"ListItem","position":3,"name":"No video generation yet"}]}},
@@ -135,13 +136,19 @@ const ReviewDetailPage = () => {
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spicyranked.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://spicyranked.com/reviews"},{"@type":"ListItem","position":3,"name":"OnlyFans Review","item":"https://spicyranked.com/reviews/onlyfans"}]}
   ] : undefined;
 
-  const customJsonLd = candyJsonLd || feetFinderJsonLd || onlyFansJsonLd;
+  const fanslyJsonLd = isFansly ? [
+    {"@context":"https://schema.org","@type":"Review","name":"Fansly Review 2026","description":"Honest Fansly review covering pricing, creator earnings, content discovery, features, and OnlyFans comparison. Tested 45+ days as creator and subscriber.","datePublished":"2026-03-01","dateModified":"2026-03-09","author":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"publisher":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"itemReviewed":{"@type":"SoftwareApplication","name":"Fansly","applicationCategory":"EntertainmentApplication","operatingSystem":"Web","url":"https://fansly.com","offers":{"@type":"AggregateOffer","lowPrice":"0","highPrice":"49.99","priceCurrency":"USD","offerCount":"3"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"8.2","bestRating":"10","worstRating":"0","ratingCount":"1","reviewCount":"1"}},"reviewRating":{"@type":"Rating","ratingValue":"8.2","bestRating":"10","worstRating":"0"},"positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Built-in content discovery and explore page"},{"@type":"ListItem","position":2,"name":"Multi-tier subscription pricing flexibility"},{"@type":"ListItem","position":3,"name":"Superior content organization"},{"@type":"ListItem","position":4,"name":"More modern interface than OnlyFans"},{"@type":"ListItem","position":5,"name":"Advanced creator analytics"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Smaller subscriber base than OnlyFans"},{"@type":"ListItem","position":2,"name":"$100 minimum payout threshold"},{"@type":"ListItem","position":3,"name":"Same 20% commission as OnlyFans"}]}},
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":allFaqs.map(f => ({"@type":"Question","name":f.question,"acceptedAnswer":{"@type":"Answer","text":f.answer}}))},
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spicyranked.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://spicyranked.com/reviews"},{"@type":"ListItem","position":3,"name":"Fansly Review","item":"https://spicyranked.com/reviews/fansly"}]}
+  ] : undefined;
+
+  const customJsonLd = candyJsonLd || feetFinderJsonLd || onlyFansJsonLd || fanslyJsonLd;
 
   return (
     <Layout>
       <SEO
-        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : isFeetFinder ? "FeetFinder Review 2026: Is It Legit? Honest Seller & Buyer Rating" : isOnlyFans ? "OnlyFans Review 2026: Is It Still Worth It for Creators & Fans?" : `${review.name} Review 2026: ${review.verdict}`}
-        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : isFeetFinder ? "Our honest FeetFinder review covers pricing, seller income, safety, and whether FeetFinder is legit. Tested from both seller and buyer sides. 8.0/10 rating." : isOnlyFans ? "Honest OnlyFans review for both creators and subscribers. We cover pricing, creator earnings, safety, features, and whether OnlyFans is still worth it in 2026. Rated 8.5/10." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
+        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : isFeetFinder ? "FeetFinder Review 2026: Is It Legit? Honest Seller & Buyer Rating" : isOnlyFans ? "OnlyFans Review 2026: Is It Still Worth It for Creators & Fans?" : isFansly ? "Fansly Review 2026: Is It Better Than OnlyFans? Honest Creator Rating" : `${review.name} Review 2026: ${review.verdict}`}
+        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : isFeetFinder ? "Our honest FeetFinder review covers pricing, seller income, safety, and whether FeetFinder is legit. Tested from both seller and buyer sides. 8.0/10 rating." : isOnlyFans ? "Honest OnlyFans review for both creators and subscribers. We cover pricing, creator earnings, safety, features, and whether OnlyFans is still worth it in 2026. Rated 8.5/10." : isFansly ? "Our honest Fansly review covers pricing, creator earnings, content discovery, and how it compares to OnlyFans. Tested for 45+ days as creator and subscriber. Rated 8.2/10." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
         canonical={`/reviews/${review.slug}`}
         ogType="article"
         extraMeta={isCandyAi ? [
@@ -165,6 +172,14 @@ const ReviewDetailPage = () => {
           { name: "author", content: "SpicyRanked" },
           { property: "og:title", content: "OnlyFans Review 2026 — Still the Best Creator Platform?" },
           { property: "og:description", content: "We tested OnlyFans for 60+ days as both creator and subscriber. Full review of earnings, pricing, features, and alternatives. Rated 8.5/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Creator Platforms" },
+        ] : isFansly ? [
+          { name: "keywords", content: "fansly review, fansly reviews, what is fansly, fansly vs onlyfans, fansly app, fansly pricing, fansly creator, is fansly safe, is fansly legit, fansly alternatives, fansly features, free fansly, fansly cost, fansly subscription, fansly payout, is fansly worth it, fansly tips" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "Fansly Review 2026 — Better Than OnlyFans for Creators?" },
+          { property: "og:description", content: "We tested Fansly for 45+ days as both creator and subscriber. Full review of pricing, discovery, features, and OnlyFans comparison. Rated 8.2/10." },
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "Creator Platforms" },
@@ -217,6 +232,8 @@ const ReviewDetailPage = () => {
                     ? "FeetFinder is the most established feet content marketplace with a massive buyer base, verified profiles, and strong safety features. At 8.0/10, it earns our recommendation for serious sellers — though the subscription fees and high competition mean beginners need a solid strategy to succeed."
                     : isOnlyFans
                     ? "OnlyFans remains the most recognized creator platform in 2026, with the largest audience and highest earning potential for established creators. At 8.5/10, we rate it as the best overall creator platform — but the 20% commission, increasing competition, and lack of content discovery mean newer creators may struggle without an existing audience."
+                    : isFansly
+                    ? "Fansly is the strongest OnlyFans alternative available in 2026. Better content discovery, flexible subscription tiers, and a growing creator community earn it an 8.2/10 rating. While its audience is still smaller than OnlyFans, Fansly's creator-first approach and discovery features make it the better choice for new creators building from scratch."
                     : review.verdict}
                 </p>
               </div>

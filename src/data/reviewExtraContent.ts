@@ -42,6 +42,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Functional but noticeably basic compared to social media. Home feed shows content chronologically. Navigation includes feed, notifications, messages, bookmarks, and search. Search is intentionally limited — no content discovery system. Subscribers find creators only through direct links or external promotion. This is simultaneously the biggest weakness for new creators and the strongest privacy feature.",
     mobileExperience: "No dedicated OnlyFans app on iOS or Android app stores due to content restrictions. OnlyFans offers a progressive web app (PWA) that works in mobile browsers and can be added to home screen. Mobile web version is fully functional for both creators and subscribers. Absence of native app is a frequent complaint but PWA works well enough.",
   },
+  "fansly": {
+    gettingStarted: "Under five minutes to create account. Email registration + ID verification for creators. Onboarding guides profile setup, tier configuration, first upload. More structured than OnlyFans onboarding.",
+    interfaceNavigation: "Modern, clean dark-themed dashboard. Intuitive navigation between feed, explore, messages, notifications, analytics. Explore page with search functionality is the standout. Content organization with labels superior to OnlyFans' chronological feed.",
+    mobileExperience: "No native app on iOS/Android. Mobile browser experience is excellent — responsive, fast, touch-optimized. PWA available for home screen. Many creators report smoother mobile experience than OnlyFans.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
@@ -63,12 +68,19 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Age Verification", description: "Government-issued ID required for all creators. Subscribers must confirm 18+. Strengthened over the years in response to regulatory pressure." },
     { icon: "eye-off", title: "Content Protection", description: "DMCA takedown enforcement, watermarking, and screenshot detection. Subscriber activity is private and not publicly visible. Creator anonymity possible with stage name but real ID is tied to the platform." },
   ],
+  "fansly": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all data transfers including content, messages, and payments." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. Fansly name not explicitly visible." },
+    { icon: "shield-check", title: "Content Protection", description: "DMCA enforcement and watermarking. Fansly downloader tools exist online and content theft remains a challenge, but Fansly actively combats this." },
+    { icon: "eye-off", title: "Identity Verification", description: "Government ID required for all creators before posting. Reduces fake accounts and ensures age compliance." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
   "candy-ai": "So, is Candy.ai a scam? Based on our 30+ days of testing: absolutely not. It is a legitimate, well-built platform with a clear business model. Is Candy.ai safe? Yes, with reasonable privacy protections that meet what we would expect for this category. Is Candy.ai legit? The company operates transparently, processes refund requests, and has a growing presence on review platforms like Trustpilot. We found no red flags during our extended testing period.",
   "feetfinder": "So, is FeetFinder legit? Absolutely. After testing the platform extensively from both sides, FeetFinder is a legitimate, well-established marketplace with a real business model, genuine buyer traffic, and functioning payout systems. Is FeetFinder safe? Yes — the combination of identity verification, encryption, content protection, and discreet billing makes it one of the safest options available. Is FeetFinder a scam? No. There are legitimate criticisms around pricing and competition levels, but the platform itself operates transparently and has been doing so since 2019.",
   "onlyfans": "Is OnlyFans legit? Without question. Operated by Fenix International Limited, a UK-based company processing billions in creator payouts annually. Is OnlyFans safe? Yes, with strong privacy protections and reliable security. Is OnlyFans a scam? Absolutely not — individual creator quality varies but the platform itself is entirely legitimate and one of the most established names in the creator economy.",
+  "fansly": "Is Fansly legit? Yes — legitimate platform with functioning payments, real payouts, growing user base. Is Fansly safe? Yes, with standard security meeting industry norms. Is Fansly a scam? No — platform is legitimate though some Trustpilot reviewers report support issues worth noting.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -92,6 +104,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Prioritize PPV and Custom Content", description: "Highest earners make the majority from pay-per-view messages and custom requests. Send regular PPV drops and be responsive to custom inquiries." },
     { title: "Post Consistently and Engage Daily", description: "Post 3-5 times per week minimum, respond to messages daily, go live weekly. Consistency is the single strongest predictor of earnings growth." },
     { title: "Diversify Across Platforms", description: "Use Fansly or FanVue as backups, maintain active social media, consider FeetFinder or Snifffr for physical items. Platform diversification protects your income." },
+  ],
+  "fansly": [
+    { title: "Set Up Multiple Tiers from Day One", description: "Low-cost entry, mid-range popular, premium VIP. Price middle tier as best value." },
+    { title: "Use Labels and Content Organization", description: "Categorize every piece of content. Organized profiles convert better." },
+    { title: "Leverage the Explore Page", description: "Post consistently with relevant tags. Fansly rewards active creators with organic visibility." },
+    { title: "Cross-Promote Between OnlyFans and Fansly", description: "Run both simultaneously. Promote each in the other's bio." },
+    { title: "Engage in DMs and Build Relationships", description: "Respond promptly, offer custom content. DMs drive tips, PPV, and retention." },
   ],
 };
 
