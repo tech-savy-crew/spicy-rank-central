@@ -385,6 +385,8 @@ const ReviewDetailPage = () => {
                     ? "Patreon remains the gold standard for non-adult creators with mainstream credibility, flexible tiers, and $3.5B+ paid to creators. At 7.0/10, it's the best choice for podcasters, musicians, and educators — but rising fees and competition from Ko-fi are closing the gap."
                     : isJerkmate
                     ? "Jerkmate is a legitimate premium cam site with high-quality performers, Gold shows, and a unique ranking system. At 7.2/10, the actual platform is better than the ads suggest — but per-minute pricing is expensive, the free experience is limited, and the aggressive advertising has created a trust problem the platform is still working to overcome."
+                    : isCrushOn
+                    ? "CrushOn.ai is the platform for users who want completely unrestricted NSFW AI conversations without content filters. At 7.4/10, it delivers the most permissive chat experience in the AI companion space with a massive community-created character library. Conversation quality is solid though not as emotionally deep as Candy.ai, and image generation is limited."
                     : review.verdict}
                 </p>
               </div>
