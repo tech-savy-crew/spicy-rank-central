@@ -222,6 +222,9 @@ const ReviewDetailPage = () => {
             {/* Pricing */}
             <section id="pricing" className="scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mb-5">Pricing & Plans</h2>
+              {review.pricingIntro && (
+                <p className="text-[15px] text-muted-foreground leading-7 mb-5">{review.pricingIntro}</p>
+              )}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {review.pricingDetails.map((plan) => (
                   <div key={plan.plan} className="bg-card rounded-xl border border-border/50 p-5">
@@ -237,6 +240,9 @@ const ReviewDetailPage = () => {
                   </div>
                 ))}
               </div>
+              {review.pricingOutro && (
+                <p className="text-[15px] text-muted-foreground leading-7 mt-5">{review.pricingOutro}</p>
+              )}
             </section>
 
             {/* NEW: User Experience & Interface */}
