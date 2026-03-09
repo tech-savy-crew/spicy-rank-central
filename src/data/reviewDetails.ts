@@ -933,7 +933,7 @@ function generateCreatorPlatformReviews(): DetailedReview[] {
     {
       name: "FetishFinder", slug: "fetishfinder", category: "Creator Platforms", score: 7.5,
       verdict: "Community-driven fetish marketplace with strong buyer engagement",
-      pricing: "Free + premium options", bestFor: "Niche fetish content sales",
+      pricing: "Free + premium options", bestFor: "Broader fetish marketplace including feet content",
       url: "https://fetishfinder.com", lastUpdated: "March 2026",
       overview: ["FetishFinder serves a broader fetish community beyond just feet content. The platform connects creators with buyers interested in various niches, providing a marketplace for specialized adult content.", "The community-driven approach fosters strong buyer-seller relationships, with active forums and discussion boards that help creators understand what buyers want.", "While smaller than FeetFinder in the feet niche, FetishFinder's broader scope means creators can diversify their content offerings."],
       keyFeatures: [
