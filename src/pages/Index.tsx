@@ -33,12 +33,12 @@ import {
 /* ── Static Data ── */
 
 const featuredReviews = [
-  { title: "OnlyFans", category: "Creator Platform", rating: 8.5, slug: "onlyfans-review", desc: "Still the biggest name in creator subscriptions — but rising fees and growing competition mean it's no longer the only option. Full breakdown inside." },
-  { title: "Fansly", category: "Creator Platform", rating: 8.2, slug: "fansly-review", desc: "Lower creator fees, better content organization, and a rapidly growing user base make Fansly the top OnlyFans alternative for both creators and fans." },
-  { title: "Chaturbate", category: "Live Cam Site", rating: 7.8, slug: "chaturbate-review", desc: "The most popular free live cam platform with thousands of broadcasters online 24/7. Great free experience but the token system can get expensive." },
-  { title: "Stripchat", category: "Live Cam Site", rating: 7.5, slug: "stripchat-review", desc: "AI-powered cam site with virtual reality support and innovative features. Strong Chaturbate alternative with a modern, clean interface." },
-  { title: "Bumble", category: "Dating App", rating: 8.0, slug: "bumble-review", desc: "Women-make-the-first-move dating app with a solid matching algorithm. Premium features are worth it if you're serious about dating in 2026." },
-  { title: "FanVue", category: "Creator Platform", rating: 7.6, slug: "fanvue-review", desc: "UK-based OnlyFans competitor with built-in AI tools for creators. Lower fees and better analytics, but still building its audience." },
+  { title: "OnlyFans", category: "Creator Platform", rating: 8.5, slug: "onlyfans", desc: "Still the biggest name in creator subscriptions — but rising fees and growing competition mean it's no longer the only option. Full breakdown inside." },
+  { title: "Fansly", category: "Creator Platform", rating: 8.2, slug: "fansly", desc: "Lower creator fees, better content organization, and a rapidly growing user base make Fansly the top OnlyFans alternative for both creators and fans." },
+  { title: "Chaturbate", category: "Live Cam Site", rating: 7.8, slug: "chaturbate", desc: "The most popular free live cam platform with thousands of broadcasters online 24/7. Great free experience but the token system can get expensive." },
+  { title: "Stripchat", category: "Live Cam Site", rating: 7.5, slug: "stripchat", desc: "AI-powered cam site with virtual reality support and innovative features. Strong Chaturbate alternative with a modern, clean interface." },
+  { title: "Bumble", category: "Dating App", rating: 8.0, slug: "bumble", desc: "Women-make-the-first-move dating app with a solid matching algorithm. Premium features are worth it if you're serious about dating in 2026." },
+  { title: "FanVue", category: "Creator Platform", rating: 7.6, slug: "fanvue", desc: "UK-based OnlyFans competitor with built-in AI tools for creators. Lower fees and better analytics, but still building its audience." },
 ];
 
 const categoryCards = [
