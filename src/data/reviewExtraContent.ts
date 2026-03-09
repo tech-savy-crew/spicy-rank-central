@@ -199,6 +199,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Reference Past Conversations", description: "Candy.ai's memory feature works best when you actively build on previous interactions. Mention things you discussed earlier, reference inside jokes, and the AI will pick up continuity that makes the experience feel like an evolving relationship." },
     { title: "Experiment with Multiple Companions", description: "Do not limit yourself to a single character. Different personality configurations produce completely different experiences. Try creating two or three AI girlfriends with contrasting traits to discover what you enjoy most." },
   ],
+  "crushon-ai": [
+    { title: "Browse the Character Library Before Creating Your Own", description: "Thousands of community characters already exist. Search by category and top-rated before investing time in custom creation." },
+    { title: "Use Detailed Personality Instructions for Custom Characters", description: "More specific descriptions produce better AI responses. Vague instructions produce generic results." },
+    { title: "Start with Premium Tier", description: "Advanced AI model at $19.99 produces noticeably better conversations than Standard tier. Quality difference is significant." },
+    { title: "Experiment with Group Chats", description: "Underused but powerful feature. Multiple characters in one conversation create dynamic interactions impossible in 1-on-1." },
+    { title: "Pair with a Visual Platform", description: "Use CrushOn.ai for text freedom and DreamGF.ai or Candy.ai for image generation. Best of both worlds." },
+  ],
   "dreamgf-ai": [
     { title: "Start Free to Test the Builder", description: "Explore creation tools before paying. Free tier shows builder quality and sample images." },
     { title: "Invest Time in Character Customization", description: "More specific character creation = better results across all future generations." },
