@@ -67,6 +67,21 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Modern, dark-themed design that feels contemporary. Homepage features a mix of trending performers, categories, and AI-recommended streams. Search and filtering are significantly better than Chaturbate. The overall experience feels like a platform built in the 2020s rather than the 2010s.",
     mobileExperience: "Excellent mobile experience. The responsive design works smoothly on phones with touch-optimized controls. No native Stripchat app on app stores, but the mobile website functions effectively as a PWA.",
   },
+  "tinder": {
+    gettingStarted: "Five minutes. Phone number or social login. Add photos, write bio, set preferences. Straightforward onboarding.",
+    interfaceNavigation: "The original swipe UI remains intuitive and fast. Tinder has added more features over the years, and the app can feel cluttered compared to its original simplicity. Ads appear frequently for free users, pushing upgrades aggressively. The messaging interface is functional but basic.",
+    mobileExperience: "Tinder is mobile-first with excellent iOS and Android apps. Also available as a web app. Push notifications for matches and messages work reliably. App performance is smooth and stable.",
+  },
+  "fanvue": {
+    gettingStarted: "Quick registration with email and ID verification. Creator approval within 24-48 hours. Clean onboarding flow guides profile setup and first content upload.",
+    interfaceNavigation: "Modern, polished design with a dark theme. The creator dashboard is well-organized with analytics, content management, messaging, and AI tools accessible from a single navigation bar. Cleaner and more intuitive than OnlyFans.",
+    mobileExperience: "No native FanVue app. Mobile browser experience is functional with responsive design. Desktop provides the best experience for detailed analytics and content management.",
+  },
+  "patreon": {
+    gettingStarted: "Registration is straightforward. No ID verification required for non-adult creators. Set up your page, create tiers, describe benefits, and start accepting patrons immediately.",
+    interfaceNavigation: "Professional and polished. The creator dashboard is well-organized with clear navigation between posts, patrons, analytics, and settings. The patron experience is equally clean with easy access to content, community, and membership management.",
+    mobileExperience: "Native Patreon app on iOS and Android. Smooth experience for both creators and patrons. Content consumption, posting, messaging, and patron management all work well on mobile.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
