@@ -82,6 +82,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Professional and polished. The creator dashboard is well-organized with clear navigation between posts, patrons, analytics, and settings. The patron experience is equally clean with easy access to content, community, and membership management.",
     mobileExperience: "Native Patreon app on iOS and Android. Smooth experience for both creators and patrons. Content consumption, posting, messaging, and patron management all work well on mobile.",
   },
+  "jerkmate": {
+    gettingStarted: "Quick registration. The matchmaking quiz at signup asks about your preferences — performer gender, body type, age range, and interests. The platform then tailors its suggestions. The experience feels more guided than other cam sites.",
+    interfaceNavigation: "Modern, dark-themed design. The matchmaking approach means you see curated performer suggestions rather than an overwhelming grid. Navigation is clean but the constant upselling for credits and premium features can feel aggressive.",
+    mobileExperience: "No dedicated Jerkmate app on app stores. The mobile website is functional with responsive design. Desktop provides the better experience for extended viewing sessions.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
