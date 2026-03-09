@@ -32,6 +32,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "The interface is clean, modern, and built around conversations. A left sidebar lets you switch between companions, access settings, and browse your image gallery. Message input feels responsive, and AI replies typically arrive within two to three seconds on premium. The image generation feature is integrated directly into the chat flow — you request visuals without ever leaving the conversation window. Settings are well-organized and nothing feels buried behind unnecessary menus.",
     mobileExperience: "The Candy.ai app is available for both Android and iOS, and the mobile experience closely mirrors what you get on desktop. Scrolling is smooth, load times are fast, and the interface adapts well to smaller screens with thumb-friendly navigation. If you primarily use your phone, you will not feel like you are getting a compromised experience.",
   },
+  "dreamgf-ai": {
+    gettingStarted: "Under three minutes to sign up. Email registration, age verification, straight into character builder. Within five minutes you can have your first AI girlfriend created and be generating images. Fastest signup-to-content experience we tested.",
+    interfaceNavigation: "Visually focused dashboard centering on characters. Easy access to chat, image generation, and gallery. Character builder is most polished element with real-time preview updates. Image generation integrated into chat flow.",
+    mobileExperience: "No native DreamGF app on iOS/Android. Mobile browser experience is solid with responsive design, touch-friendly character builder, reasonable image loading speeds. Desktop preferred for detailed creation.",
+  },
   "feetfinder": {
     gettingStarted: "Setting up a seller account on FeetFinder takes about ten minutes. You will need a valid email, government-issued ID for age and identity verification, and a payment method for the subscription. The verification process typically completes within 24 to 48 hours. Once approved, your FeetFinder login gives you access to the seller dashboard where you can start uploading content immediately.",
     interfaceNavigation: "The seller dashboard is functional but not flashy. You can manage uploads, view messages, track earnings, and update your profile from a central hub. Content uploading is straightforward — drag and drop files, add descriptions and pricing, and choose categories. The buyer-side interface is a grid-based discovery system where users browse seller profiles filtered by categories, popularity, and price. Navigation works but feels dated compared to newer platforms like Footly.",
@@ -56,6 +61,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Content Moderation", description: "Candy.ai enforces content policies in line with industry standards, including DMCA compliance and age verification for adult content access. All users must confirm they are 18 or older." },
     { icon: "eye-off", title: "Account Privacy", description: "You can use Candy.ai with minimal personal information. No social media linking is required, and account deletion is available upon request. Personal information is not sold to third parties." },
   ],
+  "dreamgf-ai": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all connections. Content, account data, payments encrypted in transit." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. Platform name not visible." },
+    { icon: "shield-check", title: "Content Moderation", description: "NSFW restricted to verified premium users. Age verification required. Boundaries against illegal content." },
+    { icon: "eye-off", title: "Account Privacy", description: "Anonymous usage without social media linking. Account deletion available. Privacy policy less detailed than Candy.ai on data retention specifics." },
+  ],
   "feetfinder": [
     { icon: "lock", title: "Data Encryption", description: "FeetFinder uses SSL/TLS encryption across the entire platform. All data transfers between your browser and their servers are secured, including payment information and uploaded content." },
     { icon: "credit-card", title: "Discreet Billing", description: "Charges appear on bank and credit card statements under a generic billing descriptor. The FeetFinder name does not show up on financial statements." },
@@ -78,6 +89,7 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
 
 const privacyOverrides: Record<string, string> = {
   "candy-ai": "So, is Candy.ai a scam? Based on our 30+ days of testing: absolutely not. It is a legitimate, well-built platform with a clear business model. Is Candy.ai safe? Yes, with reasonable privacy protections that meet what we would expect for this category. Is Candy.ai legit? The company operates transparently, processes refund requests, and has a growing presence on review platforms like Trustpilot. We found no red flags during our extended testing period.",
+  "dreamgf-ai": "Is DreamGF legit? Yes — functioning platform with working payments and active users. Is DreamGF safe? Reasonably — standard protections in place. Is it a scam? No — delivers on promises, especially image generation. Free tier is very limited; full experience requires subscription.",
   "feetfinder": "So, is FeetFinder legit? Absolutely. After testing the platform extensively from both sides, FeetFinder is a legitimate, well-established marketplace with a real business model, genuine buyer traffic, and functioning payout systems. Is FeetFinder safe? Yes — the combination of identity verification, encryption, content protection, and discreet billing makes it one of the safest options available. Is FeetFinder a scam? No. There are legitimate criticisms around pricing and competition levels, but the platform itself operates transparently and has been doing so since 2019.",
   "onlyfans": "Is OnlyFans legit? Without question. Operated by Fenix International Limited, a UK-based company processing billions in creator payouts annually. Is OnlyFans safe? Yes, with strong privacy protections and reliable security. Is OnlyFans a scam? Absolutely not — individual creator quality varies but the platform itself is entirely legitimate and one of the most established names in the creator economy.",
   "fansly": "Is Fansly legit? Yes — legitimate platform with functioning payments, real payouts, growing user base. Is Fansly safe? Yes, with standard security meeting industry norms. Is Fansly a scam? No — platform is legitimate though some Trustpilot reviewers report support issues worth noting.",
@@ -90,6 +102,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Use Voice Messages for Deeper Immersion", description: "The voice feature adds a layer of realism that text alone simply cannot replicate. Enable it in settings and try sending voice-based requests — the responses feel surprisingly natural and emotionally appropriate." },
     { title: "Reference Past Conversations", description: "Candy.ai's memory feature works best when you actively build on previous interactions. Mention things you discussed earlier, reference inside jokes, and the AI will pick up continuity that makes the experience feel like an evolving relationship." },
     { title: "Experiment with Multiple Companions", description: "Do not limit yourself to a single character. Different personality configurations produce completely different experiences. Try creating two or three AI girlfriends with contrasting traits to discover what you enjoy most." },
+  ],
+  "dreamgf-ai": [
+    { title: "Start Free to Test the Builder", description: "Explore creation tools before paying. Free tier shows builder quality and sample images." },
+    { title: "Invest Time in Character Customization", description: "More specific character creation = better results across all future generations." },
+    { title: "Use Silver Tier for Best Value", description: "Bronze is fine for exploring but Silver at $19.99 unlocks genuine quality. Skip Gold unless generating daily." },
+    { title: "Build a Gallery Over Time", description: "Save favorites and learn what prompts/scenarios produce best results." },
+    { title: "Pair with a Chat-Focused Platform", description: "Use DreamGF for visuals and Candy.ai or CrushOn.ai for conversation. Best of both worlds." },
   ],
   "feetfinder": [
     { title: "Invest Time in Your FeetFinder Bio", description: "Your bio is the first thing buyers see. Write a clear, engaging description that explains your content style, upload schedule, and specialties. A strong FeetFinder bio converts browsers into buyers." },

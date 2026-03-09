@@ -115,6 +115,7 @@ const ReviewDetailPage = () => {
   const isFeetFinder = review.slug === "feetfinder";
   const isOnlyFans = review.slug === "onlyfans";
   const isFansly = review.slug === "fansly";
+  const isDreamGF = review.slug === "dreamgf-ai";
 
   const candyJsonLd = isCandyAi ? [
     {"@context":"https://schema.org","@type":"Review","name":"Candy.ai Review 2026","description":"In-depth review of Candy.ai AI girlfriend platform covering features, pricing, safety, and user experience. Tested for 30+ days.","datePublished":"2026-03-01","dateModified":"2026-03-09","author":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"publisher":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"itemReviewed":{"@type":"SoftwareApplication","name":"Candy.ai","applicationCategory":"EntertainmentApplication","operatingSystem":"Web, Android, iOS","url":"https://candy.ai","offers":{"@type":"AggregateOffer","lowPrice":"0","highPrice":"12.99","priceCurrency":"USD","offerCount":"3"}},"reviewRating":{"@type":"Rating","ratingValue":"8.3","bestRating":"10","worstRating":"0"},"positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Most realistic AI conversations in the market"},{"@type":"ListItem","position":2,"name":"Excellent AI image generation quality"},{"@type":"ListItem","position":3,"name":"Deep personality customization options"},{"@type":"ListItem","position":4,"name":"Strong conversation memory and continuity"},{"@type":"ListItem","position":5,"name":"Clean interface on desktop and mobile"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Premium pricing higher than some competitors"},{"@type":"ListItem","position":2,"name":"Free tier is very limited"},{"@type":"ListItem","position":3,"name":"No video generation yet"}]}},
@@ -142,13 +143,19 @@ const ReviewDetailPage = () => {
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spicyranked.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://spicyranked.com/reviews"},{"@type":"ListItem","position":3,"name":"Fansly Review","item":"https://spicyranked.com/reviews/fansly"}]}
   ] : undefined;
 
-  const customJsonLd = candyJsonLd || feetFinderJsonLd || onlyFansJsonLd || fanslyJsonLd;
+  const dreamGFJsonLd = isDreamGF ? [
+    {"@context":"https://schema.org","@type":"Review","name":"DreamGF.ai Review 2026","description":"Honest DreamGF.ai review covering AI image generation, pricing, NSFW features, and alternatives. Tested 30+ days.","datePublished":"2026-03-01","dateModified":"2026-03-09","author":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"publisher":{"@type":"Organization","name":"SpicyRanked","url":"https://spicyranked.com"},"itemReviewed":{"@type":"SoftwareApplication","name":"DreamGF.ai","applicationCategory":"EntertainmentApplication","operatingSystem":"Web","url":"https://dreamgf.ai","offers":{"@type":"AggregateOffer","lowPrice":"0","highPrice":"49.99","priceCurrency":"USD","offerCount":"4"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"7.8","bestRating":"10","worstRating":"0","ratingCount":"1","reviewCount":"1"}},"reviewRating":{"@type":"Rating","ratingValue":"7.8","bestRating":"10","worstRating":"0"},"positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Outstanding AI image generation quality"},{"@type":"ListItem","position":2,"name":"Strong character consistency"},{"@type":"ListItem","position":3,"name":"Intuitive visual character builder"},{"@type":"ListItem","position":4,"name":"Unrestricted NSFW for premium users"},{"@type":"ListItem","position":5,"name":"Multiple AI girlfriend support"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Conversation AI lags behind competitors"},{"@type":"ListItem","position":2,"name":"No voice or audio features"},{"@type":"ListItem","position":3,"name":"Gold tier pricing is expensive"}]}},
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":allFaqs.map(f => ({"@type":"Question","name":f.question,"acceptedAnswer":{"@type":"Answer","text":f.answer}}))},
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spicyranked.com/"},{"@type":"ListItem","position":2,"name":"Reviews","item":"https://spicyranked.com/reviews"},{"@type":"ListItem","position":3,"name":"DreamGF.ai Review","item":"https://spicyranked.com/reviews/dreamgf-ai"}]}
+  ] : undefined;
+
+  const customJsonLd = candyJsonLd || feetFinderJsonLd || onlyFansJsonLd || fanslyJsonLd || dreamGFJsonLd;
 
   return (
     <Layout>
       <SEO
-        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : isFeetFinder ? "FeetFinder Review 2026: Is It Legit? Honest Seller & Buyer Rating" : isOnlyFans ? "OnlyFans Review 2026: Is It Still Worth It for Creators & Fans?" : isFansly ? "Fansly Review 2026: Is It Better Than OnlyFans? Honest Creator Rating" : `${review.name} Review 2026: ${review.verdict}`}
-        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : isFeetFinder ? "Our honest FeetFinder review covers pricing, seller income, safety, and whether FeetFinder is legit. Tested from both seller and buyer sides. 8.0/10 rating." : isOnlyFans ? "Honest OnlyFans review for both creators and subscribers. We cover pricing, creator earnings, safety, features, and whether OnlyFans is still worth it in 2026. Rated 8.5/10." : isFansly ? "Our honest Fansly review covers pricing, creator earnings, content discovery, and how it compares to OnlyFans. Tested for 45+ days as creator and subscriber. Rated 8.2/10." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
+        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : isFeetFinder ? "FeetFinder Review 2026: Is It Legit? Honest Seller & Buyer Rating" : isOnlyFans ? "OnlyFans Review 2026: Is It Still Worth It for Creators & Fans?" : isFansly ? "Fansly Review 2026: Is It Better Than OnlyFans? Honest Creator Rating" : isDreamGF ? "DreamGF.ai Review 2026: Is This AI Girlfriend App Worth It?" : `${review.name} Review 2026: ${review.verdict}`}
+        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : isFeetFinder ? "Our honest FeetFinder review covers pricing, seller income, safety, and whether FeetFinder is legit. Tested from both seller and buyer sides. 8.0/10 rating." : isOnlyFans ? "Honest OnlyFans review for both creators and subscribers. We cover pricing, creator earnings, safety, features, and whether OnlyFans is still worth it in 2026. Rated 8.5/10." : isFansly ? "Our honest Fansly review covers pricing, creator earnings, content discovery, and how it compares to OnlyFans. Tested for 45+ days as creator and subscriber. Rated 8.2/10." : isDreamGF ? "Our honest DreamGF.ai review covers AI image generation, pricing, NSFW features, and how it compares to Candy.ai. Tested for 30+ days. Rated 7.8/10 by SpicyRanked." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
         canonical={`/reviews/${review.slug}`}
         ogType="article"
         extraMeta={isCandyAi ? [
@@ -183,6 +190,14 @@ const ReviewDetailPage = () => {
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "Creator Platforms" },
+        ] : isDreamGF ? [
+          { name: "keywords", content: "dreamgf review, dreamgf ai review, dreamgf ai, dreamgf pricing, dreamgf app, dreamgf nsfw, dreamgf ai girlfriend, dreamgf alternatives, dreamgf promo code, dreamgf ai pricing, dreamgf free, is dreamgf legit, is dreamgf safe, dreamgf ai nsfw, dreamgf cost" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "DreamGF.ai Review 2026 — Best AI Girlfriend for Image Generation?" },
+          { property: "og:description", content: "We tested DreamGF.ai for 30+ days. Full review of AI image generation, pricing, NSFW features, and Candy.ai comparison. 7.8/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "AI Companions" },
         ] : undefined}
         jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
@@ -234,6 +249,8 @@ const ReviewDetailPage = () => {
                     ? "OnlyFans remains the most recognized creator platform in 2026, with the largest audience and highest earning potential for established creators. At 8.5/10, we rate it as the best overall creator platform — but the 20% commission, increasing competition, and lack of content discovery mean newer creators may struggle without an existing audience."
                     : isFansly
                     ? "Fansly is the strongest OnlyFans alternative available in 2026. Better content discovery, flexible subscription tiers, and a growing creator community earn it an 8.2/10 rating. While its audience is still smaller than OnlyFans, Fansly's creator-first approach and discovery features make it the better choice for new creators building from scratch."
+                    : isDreamGF
+                    ? "DreamGF.ai excels at visual AI companion creation with some of the best image generation in the space. At 7.8/10, it earns our recommendation for users who prioritize visuals over conversation depth. The character builder is intuitive, NSFW content is unrestricted, and pricing is competitive — but conversation quality still trails behind Candy.ai."
                     : review.verdict}
                 </p>
               </div>
