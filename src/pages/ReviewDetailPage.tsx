@@ -161,8 +161,8 @@ const ReviewDetailPage = () => {
   return (
     <Layout>
       <SEO
-        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : isFeetFinder ? "FeetFinder Review 2026: Is It Legit? Honest Seller & Buyer Rating" : isOnlyFans ? "OnlyFans Review 2026: Is It Still Worth It for Creators & Fans?" : isFansly ? "Fansly Review 2026: Is It Better Than OnlyFans? Honest Creator Rating" : isDreamGF ? "DreamGF.ai Review 2026: Is This AI Girlfriend App Worth It?" : `${review.name} Review 2026: ${review.verdict}`}
-        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : isFeetFinder ? "Our honest FeetFinder review covers pricing, seller income, safety, and whether FeetFinder is legit. Tested from both seller and buyer sides. 8.0/10 rating." : isOnlyFans ? "Honest OnlyFans review for both creators and subscribers. We cover pricing, creator earnings, safety, features, and whether OnlyFans is still worth it in 2026. Rated 8.5/10." : isFansly ? "Our honest Fansly review covers pricing, creator earnings, content discovery, and how it compares to OnlyFans. Tested for 45+ days as creator and subscriber. Rated 8.2/10." : isDreamGF ? "Our honest DreamGF.ai review covers AI image generation, pricing, NSFW features, and how it compares to Candy.ai. Tested for 30+ days. Rated 7.8/10 by SpicyRanked." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
+        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : isFeetFinder ? "FeetFinder Review 2026: Is It Legit? Honest Seller & Buyer Rating" : isOnlyFans ? "OnlyFans Review 2026: Is It Still Worth It for Creators & Fans?" : isFansly ? "Fansly Review 2026: Is It Better Than OnlyFans? Honest Creator Rating" : isDreamGF ? "DreamGF.ai Review 2026: Is This AI Girlfriend App Worth It?" : isBumble ? "Bumble Review 2026: Is It Worth It? Honest Dating App Rating" : `${review.name} Review 2026: ${review.verdict}`}
+        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : isFeetFinder ? "Our honest FeetFinder review covers pricing, seller income, safety, and whether FeetFinder is legit. Tested from both seller and buyer sides. 8.0/10 rating." : isOnlyFans ? "Honest OnlyFans review for both creators and subscribers. We cover pricing, creator earnings, safety, features, and whether OnlyFans is still worth it in 2026. Rated 8.5/10." : isFansly ? "Our honest Fansly review covers pricing, creator earnings, content discovery, and how it compares to OnlyFans. Tested for 45+ days as creator and subscriber. Rated 8.2/10." : isDreamGF ? "Our honest DreamGF.ai review covers AI image generation, pricing, NSFW features, and how it compares to Candy.ai. Tested for 30+ days. Rated 7.8/10 by SpicyRanked." : isBumble ? "Our honest Bumble review covers premium pricing, features, safety, and how it compares to Tinder. Tested for 60+ days with real matches. Rated 8.0/10 by SpicyRanked." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
         canonical={`/reviews/${review.slug}`}
         ogType="article"
         extraMeta={isCandyAi ? [
@@ -205,6 +205,14 @@ const ReviewDetailPage = () => {
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "AI Companions" },
+        ] : isBumble ? [
+          { name: "keywords", content: "bumble review, bumble app review, bumble dating app, is bumble worth it, bumble premium, bumble cost, bumble pricing, is bumble free, bumble vs tinder, bumble features, is bumble safe, bumble subscription, bumble alternatives, bumble tips, how does bumble work, bumble boost, bumble superswipe" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "Bumble Review 2026 — Best Dating App for Serious Connections?" },
+          { property: "og:description", content: "We tested Bumble for 60+ days with real matches. Full review of premium pricing, features, safety, and Tinder comparison. 8.0/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Dating & Hookup Apps" },
         ] : undefined}
         jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
