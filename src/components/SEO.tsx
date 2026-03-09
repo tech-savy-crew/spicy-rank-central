@@ -12,6 +12,7 @@ interface SEOProps {
   ogImage?: string;
   noindex?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  extraMeta?: { name?: string; property?: string; content: string }[];
 }
 
 export function SEO({
