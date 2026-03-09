@@ -7,6 +7,7 @@ import { getUserExperience, getPrivacyTrust, getTips, getExtraFaqs } from "@/dat
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle, XCircle, ExternalLink, Star, Clock, Calendar, ChevronRight, ChevronDown, Zap, Users, Shield, DollarSign, Sparkles, ArrowRight, Monitor, ShieldCheck, Lightbulb, Lock, CreditCard, EyeOff, Camera } from "lucide-react";
 import { useState, useMemo } from "react";
+import candyAiInterface from "@/assets/candy-ai-interface.webp";
 
 function StarRating({ score, max = 10 }: { score: number; max?: number }) {
   const stars = 5;
@@ -270,10 +271,14 @@ const ReviewDetailPage = () => {
                     <p className="text-[15px] text-muted-foreground leading-7">{ux.interfaceNavigation}</p>
                   </div>
                   {/* Screenshot placeholder */}
-                  <div className="w-full rounded-xl border-2 border-dashed border-muted-foreground/30 flex flex-col items-center justify-center py-12" style={{ aspectRatio: "16/9" }}>
-                    <Camera className="h-8 w-8 text-muted-foreground/40 mb-2" />
-                    <p className="text-xs text-muted-foreground/50">Screenshot coming soon</p>
-                  </div>
+                  {review.slug === "candy-ai" ? (
+                    <img src={candyAiInterface} alt="Candy.ai chat interface showing AI companion conversation" className="w-full rounded-xl border border-border/50" loading="lazy" />
+                  ) : (
+                    <div className="w-full rounded-xl border-2 border-dashed border-muted-foreground/30 flex flex-col items-center justify-center py-12" style={{ aspectRatio: "16/9" }}>
+                      <Camera className="h-8 w-8 text-muted-foreground/40 mb-2" />
+                      <p className="text-xs text-muted-foreground/50">Screenshot coming soon</p>
+                    </div>
+                  )}
                   <div>
                     <h3 className="text-base font-bold mb-2">Mobile Experience</h3>
                     <p className="text-[15px] text-muted-foreground leading-7">{ux.mobileExperience}</p>
