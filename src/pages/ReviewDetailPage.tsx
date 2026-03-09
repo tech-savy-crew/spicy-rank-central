@@ -235,6 +235,14 @@ const ReviewDetailPage = () => {
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "Live Cam Sites" },
+        ] : isStripchat ? [
+          { name: "keywords", content: "stripchat review, stripchat free, is stripchat safe, stripchat vr, stripchat tokens, stripchat vs chaturbate, stripchat app, stripchat pricing, is stripchat legit, stripchat alternatives, stripchat models, stripchat cost" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "Stripchat Review 2026 — Best Free Cam Site with VR?" },
+          { property: "og:description", content: "Stripchat review covering free cams, VR features, token pricing, and Chaturbate comparison. 7.5/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Live Cam Sites" },
         ] : undefined}
         jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
