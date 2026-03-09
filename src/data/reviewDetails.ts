@@ -933,7 +933,7 @@ function generateCreatorPlatformReviews(): DetailedReview[] {
     {
       name: "FetishFinder", slug: "fetishfinder", category: "Creator Platforms", score: 7.5,
       verdict: "Community-driven fetish marketplace with strong buyer engagement",
-      pricing: "Free + premium options", bestFor: "Broader fetish marketplace including feet content",
+      pricing: "Free + premium options", bestFor: "Broader fetish marketplace including feet content including feet content",
       url: "https://fetishfinder.com", lastUpdated: "March 2026",
       overview: ["FetishFinder serves a broader fetish community beyond just feet content. The platform connects creators with buyers interested in various niches, providing a marketplace for specialized adult content.", "The community-driven approach fosters strong buyer-seller relationships, with active forums and discussion boards that help creators understand what buyers want.", "While smaller than FeetFinder in the feet niche, FetishFinder's broader scope means creators can diversify their content offerings."],
       keyFeatures: [
@@ -964,7 +964,7 @@ function generateCreatorPlatformReviews(): DetailedReview[] {
     {
       name: "Footly", slug: "footly", category: "Creator Platforms", score: 7.6,
       verdict: "TikTok-style feet content discovery with industry-best 90% creator payout",
-      pricing: "Free to join / 10% fee", bestFor: "New creators seeking discovery",
+      pricing: "Free to joinTikTok-style discovery, no subscription fees, 90% creator payoutators seeking discovery",
       url: "https://footly.io", lastUpdated: "March 2026",
       overview: ["Footly has disrupted the feet content market with a TikTok-style discovery feed and the highest creator payout in the industry at 90%. The algorithmic feed helps new creators get discovered without needing an existing following.", "The platform's modern interface and social media-style engagement make it feel more dynamic than traditional marketplace listings. Content appears in a scrollable feed where buyers can like, comment, and purchase.", "While newer and smaller than FeetFinder, Footly's discovery algorithm means even brand new creators can get eyes on their content immediately."],
       keyFeatures: [
