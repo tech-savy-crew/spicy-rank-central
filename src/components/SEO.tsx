@@ -23,6 +23,7 @@ export function SEO({
   ogImage = DEFAULT_OG_IMAGE,
   noindex = false,
   jsonLd,
+  extraMeta,
 }: SEOProps) {
   const fullTitle = `${title} | ${SITE_NAME}`;
   const canonicalUrl = canonical ? `${SITE_URL}${canonical}` : undefined;
