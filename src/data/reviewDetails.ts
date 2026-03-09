@@ -2043,7 +2043,7 @@ function generateTubeReviews(): DetailedReview[] {
     slug: "jerkmate",
     category: "Live Cam Sites",
     score: 7.2,
-    verdict: "A legitimate premium cam site with curated matchmaking and a unique ranked system — held back by aggressive ads and expensive per-minute pricing",
+    verdict: "You have seen the ads everywhere — but what is Jerkmate actually like behind the aggressive marketing? We spent 30+ days finding out.",
     pricing: "Credits ~$1 each",
     bestFor: "Curated premium cam experience",
     url: "https://jerkmate.com",
