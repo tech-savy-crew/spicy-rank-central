@@ -139,8 +139,8 @@ const ReviewDetailPage = () => {
   return (
     <Layout>
       <SEO
-        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : isFeetFinder ? "FeetFinder Review 2026: Is It Legit? Honest Seller & Buyer Rating" : `${review.name} Review 2026: ${review.verdict}`}
-        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : isFeetFinder ? "Our honest FeetFinder review covers pricing, seller income, safety, and whether FeetFinder is legit. Tested from both seller and buyer sides. 8.0/10 rating." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
+        title={isCandyAi ? "Candy.ai Review 2026: Is It Worth It? Honest Rating & Pricing" : isFeetFinder ? "FeetFinder Review 2026: Is It Legit? Honest Seller & Buyer Rating" : isOnlyFans ? "OnlyFans Review 2026: Is It Still Worth It for Creators & Fans?" : `${review.name} Review 2026: ${review.verdict}`}
+        description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : isFeetFinder ? "Our honest FeetFinder review covers pricing, seller income, safety, and whether FeetFinder is legit. Tested from both seller and buyer sides. 8.0/10 rating." : isOnlyFans ? "Honest OnlyFans review for both creators and subscribers. We cover pricing, creator earnings, safety, features, and whether OnlyFans is still worth it in 2026. Rated 8.5/10." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
         canonical={`/reviews/${review.slug}`}
         ogType="article"
         extraMeta={isCandyAi ? [
@@ -156,6 +156,14 @@ const ReviewDetailPage = () => {
           { name: "author", content: "SpicyRanked" },
           { property: "og:title", content: "FeetFinder Review 2026 — Is This Feet Pic Marketplace Legit?" },
           { property: "og:description", content: "We tested FeetFinder as both a buyer and seller. Full review of fees, income potential, safety, and alternatives. Rated 8.0/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Creator Platforms" },
+        ] : isOnlyFans ? [
+          { name: "keywords", content: "onlyfans review, onlyfans reviews, is onlyfans worth it, how does onlyfans work, onlyfans pricing, onlyfans app, onlyfans free, is onlyfans safe, onlyfans creator, onlyfans alternatives, onlyfans earnings, onlyfans subscription, onlyfans cost, onlyfans payout, is onlyfans legit, onlyfans tips" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "OnlyFans Review 2026 — Still the Best Creator Platform?" },
+          { property: "og:description", content: "We tested OnlyFans for 60+ days as both creator and subscriber. Full review of earnings, pricing, features, and alternatives. Rated 8.5/10." },
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "Creator Platforms" },
