@@ -157,10 +157,10 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "eye-off", title: "Patron Privacy", description: "Patron identities private by default. Creators see patron names but not personal details unless shared." },
   ],
   "jerkmate": [
-    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including streams, chat, and payment information." },
-    { icon: "credit-card", title: "Discreet Billing", description: "Credit purchases appear under a generic billing descriptor. Jerkmate name not visible on statements." },
-    { icon: "shield-check", title: "Age Verification", description: "Government ID required for all performers. Ensures compliance and reduces fake accounts." },
-    { icon: "eye-off", title: "Account Privacy", description: "Basic privacy controls available. Account deletion through support. Standard security measures." },
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption across the entire platform. All content, payments, and personal data encrypted in transit." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Charges appear on statements under a generic descriptor. The Jerkmate name does not show up on financial statements." },
+    { icon: "shield-check", title: "Age Verification", description: "Performers must verify identity with government ID. Standard age compliance for cam platforms." },
+    { icon: "eye-off", title: "Legitimate Operations", description: "Jerkmate is operated by a legitimate company with real corporate structure, functioning payment processing, and responsive customer support." },
   ],
 };
 
@@ -176,7 +176,7 @@ const privacyOverrides: Record<string, string> = {
   "tinder": "Is Tinder safe? Reasonably — photo verification, block/report tools, and safety tips are available. Is Tinder legit? Absolutely — owned by Match Group (NASDAQ: MTCH), the world's largest dating company. Is Tinder a scam? No — genuine dating app with real users, though some bot and scam accounts persist.",
   "fanvue": "Is FanVue legit? Yes — UK-based company with functioning payments and growing creator community. Is FanVue safe? Yes — ID verification, SSL encryption, and discreet billing meet industry standards. Is FanVue a scam? No — legitimate creator platform with the lowest commission in the market.",
   "patreon": "Is Patreon safe? Yes — secure payments processed through Stripe with PCI compliance. Is Patreon legit? Absolutely — publicly funded company that has paid out over $3.5 billion to creators. Is Patreon a scam? No — the original and most established creator subscription platform.",
-  "jerkmate": "Is Jerkmate legit? Yes. Behind the aggressive ads is a functioning, professional cam platform with real performers, working payments, and a genuine entertainment experience. Is Jerkmate a scam? No — but the misleading advertising has understandably created skepticism. The actual product is significantly better than the ads suggest. Is Jerkmate safe? Yes — SSL encryption, age verification, and discreet billing are standard.",
+  "jerkmate": "Is Jerkmate safe? Yes — standard security protections are in place including encryption, verification, and discreet billing. Is Jerkmate legit? Absolutely — the platform is a real, functioning business with professional operations. The aggressive advertising creates a perception problem, but the actual product delivers a genuine cam experience. Is Jerkmate a scam? No. There are legitimate criticisms about pricing and the misleading ads, but the platform itself operates transparently.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -258,11 +258,11 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Promote Patreon on Every Platform", description: "Mention your Patreon in every YouTube video, podcast episode, and social media post. Consistent promotion drives growth." },
   ],
   "jerkmate": [
-    { title: "Start with Gold Shows", description: "Gold shows offer the best value on Jerkmate. Group viewing at $5-$20 per show is significantly cheaper than per-minute private sessions." },
-    { title: "Use the Matchmaking Quiz", description: "Take the preference quiz seriously at signup. Better input = better performer recommendations and less time browsing." },
-    { title: "Set a Session Budget", description: "Per-minute pricing adds up fast. Set a credit limit before entering private shows to avoid surprising charges." },
-    { title: "Explore the Ranked System", description: "Higher rank levels unlock discounts and perks. Consistent activity on the platform earns rank progression over time." },
-    { title: "Compare with Chaturbate First", description: "Try Chaturbate's free model before committing to Jerkmate's paid experience. You may prefer free viewing with optional tipping." },
+    { title: "Start with Gold Shows, Not Private Shows", description: "Gold shows cost $5-$20 per ticket and let you experience Jerkmate's quality without the per-minute expense of private sessions. This is the best way to evaluate the platform before committing to higher spending." },
+    { title: "Use the Matchmaking Quiz Honestly", description: "The more accurate your preference settings, the better Jerkmate's algorithm matches you with performers you will actually enjoy. Generic settings produce generic results." },
+    { title: "Work the Ranked System", description: "Jerkmate ranked levels unlock real perks including discounted shows and exclusive access. Consistent platform use earns rank progression that improves your experience over time." },
+    { title: "Set a Credit Budget Before Each Session", description: "Per-minute pricing adds up fast. Decide before starting how many credits you are willing to spend. This prevents impulse spending during shows." },
+    { title: "Explore the Content Library", description: "Pre-recorded videos and photo sets offer entertainment without the per-minute pressure of live shows. Often better value for extended viewing." },
   ],
 };
 
