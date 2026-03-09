@@ -8,6 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, XCircle, ExternalLink, Star, Clock, Calendar, ChevronRight, ChevronDown, Zap, Users, Shield, DollarSign, Sparkles, ArrowRight, Monitor, ShieldCheck, Lightbulb, Lock, CreditCard, EyeOff, Camera } from "lucide-react";
 import { useState, useMemo } from "react";
 import candyAiInterface from "@/assets/candy-ai-interface.webp";
+import { ReviewContent } from "@/components/ReviewContent";
 
 function StarRating({ score, max = 10 }: { score: number; max?: number }) {
   const stars = 5;
