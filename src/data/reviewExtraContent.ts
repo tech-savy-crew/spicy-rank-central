@@ -67,6 +67,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Reference Past Conversations", description: "Candy.ai's memory feature works best when you actively build on previous interactions. Mention things you discussed earlier, reference inside jokes, and the AI will pick up continuity that makes the experience feel like an evolving relationship." },
     { title: "Experiment with Multiple Companions", description: "Do not limit yourself to a single character. Different personality configurations produce completely different experiences. Try creating two or three AI girlfriends with contrasting traits to discover what you enjoy most." },
   ],
+  "feetfinder": [
+    { title: "Invest Time in Your FeetFinder Bio", description: "Your bio is the first thing buyers see. Write a clear, engaging description that explains your content style, upload schedule, and specialties. A strong FeetFinder bio converts browsers into buyers." },
+    { title: "Choose a Memorable Username", description: "Spend time on FeetFinder username ideas before committing. Avoid generic names and pick something catchy, easy to remember, and relevant to feet content. Good FeetFinder names create instant brand recognition." },
+    { title: "Post Consistently and Build Volume", description: "Sellers with larger content libraries get more visibility. Aim for three to five new uploads per week. Consistency signals to both the algorithm and buyers that you are active and reliable." },
+    { title: "Use Social Media to Drive External Traffic", description: "Do not rely solely on internal discovery. Promote your profile on Twitter/X, Reddit, TikTok, and Instagram. The most successful sellers combine platform presence with external marketing." },
+    { title: "Respond to Messages Quickly", description: "Buyer interest has a short lifespan. Sellers who respond within a few hours consistently outsell those who take days. Custom content requests are where the real money is." },
+  ],
 };
 
 // ── Generic generators ──
