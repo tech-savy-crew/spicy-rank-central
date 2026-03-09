@@ -176,6 +176,7 @@ const privacyOverrides: Record<string, string> = {
   "tinder": "Is Tinder safe? Reasonably — photo verification, block/report tools, and safety tips are available. Is Tinder legit? Absolutely — owned by Match Group (NASDAQ: MTCH), the world's largest dating company. Is Tinder a scam? No — genuine dating app with real users, though some bot and scam accounts persist.",
   "fanvue": "Is FanVue legit? Yes — UK-based company with functioning payments and growing creator community. Is FanVue safe? Yes — ID verification, SSL encryption, and discreet billing meet industry standards. Is FanVue a scam? No — legitimate creator platform with the lowest commission in the market.",
   "patreon": "Is Patreon safe? Yes — secure payments processed through Stripe with PCI compliance. Is Patreon legit? Absolutely — publicly funded company that has paid out over $3.5 billion to creators. Is Patreon a scam? No — the original and most established creator subscription platform.",
+  "jerkmate": "Is Jerkmate legit? Yes. Behind the aggressive ads is a functioning, professional cam platform with real performers, working payments, and a genuine entertainment experience. Is Jerkmate a scam? No — but the misleading advertising has understandably created skepticism. The actual product is significantly better than the ads suggest. Is Jerkmate safe? Yes — SSL encryption, age verification, and discreet billing are standard.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
