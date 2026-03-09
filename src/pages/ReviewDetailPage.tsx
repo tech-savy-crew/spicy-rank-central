@@ -283,6 +283,8 @@ const ReviewDetailPage = () => {
                     ? "DreamGF.ai excels at visual AI companion creation with some of the best image generation in the space. At 7.8/10, it earns our recommendation for users who prioritize visuals over conversation depth. The character builder is intuitive, NSFW content is unrestricted, and pricing is competitive — but conversation quality still trails behind Candy.ai."
                     : isBumble
                     ? "Bumble remains one of the best dating apps in 2026 thanks to its women-first messaging model, clean design, and strong safety features. At 8.0/10, we recommend it for anyone serious about finding real connections — though Bumble Premium pricing has gotten expensive and the free experience is increasingly limited."
+                    : isChaturbate
+                    ? "Chaturbate remains the world's largest free cam site with 4M+ daily visitors and unmatched performer variety. At 7.8/10, the free viewing model is unbeatable — but the dated interface and high platform cut hold it back from a higher score."
                     : review.verdict}
                 </p>
               </div>
