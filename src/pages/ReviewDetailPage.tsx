@@ -368,6 +368,8 @@ const ReviewDetailPage = () => {
                     ? "FanVue's 15% commission is the lowest among major creator platforms, and its AI-powered tools are genuine differentiators. At 7.6/10, it's the smartest financial choice for creators — but the smaller subscriber base means it works best as a secondary platform alongside OnlyFans."
                     : isPatreon
                     ? "Patreon remains the gold standard for non-adult creators with mainstream credibility, flexible tiers, and $3.5B+ paid to creators. At 7.0/10, it's the best choice for podcasters, musicians, and educators — but rising fees and competition from Ko-fi are closing the gap."
+                    : isJerkmate
+                    ? "Jerkmate is a legitimate premium cam site with high-quality performers, Gold shows, and a unique ranking system. At 7.2/10, the actual platform is better than the ads suggest — but per-minute pricing is expensive, the free experience is limited, and the aggressive advertising has created a trust problem the platform is still working to overcome."
                     : review.verdict}
                 </p>
               </div>
