@@ -125,6 +125,15 @@ const ReviewDetailPage = () => {
         description={isCandyAi ? "Our in-depth Candy.ai review covers pricing, features, safety, and whether this AI girlfriend app is legit. Tested for 30+ days. See our honest 8.3/10 rating." : `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
         canonical={`/reviews/${review.slug}`}
         ogType="article"
+        extraMeta={isCandyAi ? [
+          { name: "keywords", content: "candy ai review, candy.ai review, is candy ai safe, is candy ai legit, candy ai pricing, candy ai free, candy ai app, candy ai cost, is candy ai free, candy ai chat, what is candy ai, candy ai alternatives, is candy.ai worth it, candy ai girlfriend, candy ai nsfw, candy ai features, candy ai premium" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:image:alt", content: "Candy.ai Review 2026 - SpicyRanked Rating 8.3/10" },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "AI Companions" },
+          { property: "article:tag", content: "candy ai, ai girlfriend, ai companion, nsfw ai" },
+        ] : undefined}
         jsonLd={candyJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
           breadcrumbSchema([
