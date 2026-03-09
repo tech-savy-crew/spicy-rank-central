@@ -114,66 +114,84 @@ export const detailedReviews: DetailedReview[] = [
     slug: "crushon-ai",
     category: "AI Companions",
     score: 7.4,
-    verdict: "The go-to platform for uncensored NSFW AI chat with no content restrictions",
-    pricing: "Free tier / $7.99/mo",
-    bestFor: "Unrestricted NSFW AI chat at a lower price point",
+    verdict: "An unrestricted NSFW AI chatbot platform with massive character variety — the go-to for users who want zero content filters",
+    pricing: "Free / $5.99/mo",
+    bestFor: "Unrestricted NSFW AI chat with massive character variety",
     url: "https://crushon.ai",
     lastUpdated: "March 2026",
+    readingTime: 10,
     overview: [
-      "CrushOn.ai has carved out a unique niche in the AI companion space by being one of the few platforms that offers completely uncensored NSFW conversations. While competitors like Replika have scaled back their adult content, CrushOn.ai leans into it with no content filters or restrictions.",
-      "The platform offers a diverse library of pre-built AI characters alongside the ability to create your own custom companions. Conversations are surprisingly natural for an uncensored platform, with the AI maintaining character consistency even during explicit scenarios.",
-      "CrushOn.ai's biggest advantage is its pricing — the free tier is genuinely usable with a decent daily message allowance, and the premium plan at $7.99/month is one of the most affordable in the AI companion market."
+      "CrushOn.ai is an AI chatbot platform built specifically for unrestricted NSFW conversations. While platforms like Character.ai impose strict content filters and Candy.ai offers NSFW with a more polished companion experience, CrushOn.ai positions itself as the no-filter alternative — a place where users can explore any conversation scenario without artificial content restrictions.",
+      "The platform hosts a massive library of community-created AI characters spanning every genre, personality type, and fantasy scenario imaginable. From romantic companions to fictional characters to completely original creations, the CrushOn.ai character library is one of the largest in the AI chatbot space. Users can also create their own custom characters with specific personality traits, backstories, and behavioral instructions.",
+      "CrushOn.ai's appeal is straightforward: if you want CrushOn ai nsfw conversations without hitting content walls, this is where you go. The platform does not pretend to be anything else. The trade-off is that the conversational AI, while capable, is not as emotionally nuanced or contextually sophisticated as Candy.ai's more relationship-focused approach. CrushOn.ai is breadth over depth — unlimited freedom with solid but not exceptional AI quality."
     ],
     keyFeatures: [
-      { title: "Uncensored Chat", description: "No content filters or restrictions on conversation topics" },
-      { title: "Character Library", description: "Browse hundreds of pre-built AI characters or create your own" },
-      { title: "Memory System", description: "AI remembers conversation context and user preferences" },
-      { title: "Custom Characters", description: "Build unique AI companions with custom personalities and appearances" },
-      { title: "Multi-language", description: "Chat in multiple languages with natural translation" },
-      { title: "Affordable Pricing", description: "One of the cheapest premium AI companion plans available" }
+      { title: "Unrestricted NSFW Chat", description: "Zero content filters for premium users. Any topic, any scenario, any direction. The most permissive NSFW AI chat platform available. No artificial walls once on a paid plan." },
+      { title: "Massive Character Library", description: "Thousands of community-created characters across every genre. Romantic partners, anime, fictional personas, originals. Browsable by category, popularity, tags. Growing daily." },
+      { title: "Custom Character Creation", description: "Build characters with custom personality, appearance description, backstory, behavioral instructions. Define speaking style and reactions. Share publicly or keep private." },
+      { title: "Multiple AI Models", description: "Different AI backends affecting conversation quality, speed, style. Higher tiers unlock advanced models with better contextual understanding and more natural dialogue." },
+      { title: "Group Chats", description: "Chat with multiple AI characters simultaneously. Complex role-play scenarios with multiple interacting characters. Unique feature most competitors lack." },
+      { title: "Memory & Context", description: "Context maintained within sessions. Higher tiers carry memory across sessions for ongoing storylines and developing relationships." }
     ],
+    pricingIntro: "CrushOn.ai pricing is structured across four tiers that progressively unlock more features, messages, and AI model access.",
     pricingDetails: [
-      { plan: "Free", price: "Free", features: ["50 messages/day", "Basic characters", "Standard responses"] },
-      { plan: "Standard", price: "$7.99/mo", features: ["Unlimited messages", "All characters", "Priority responses", "Memory features"] },
-      { plan: "Premium", price: "$15.99/mo", features: ["All Standard features", "Custom character creation", "Advanced memory", "Fastest responses"] }
+      { plan: "Free", price: "Free", features: ["50 messages/month", "Basic AI model only", "NSFW restricted", "Test interface and browse characters"] },
+      { plan: "Standard", price: "$5.99/mo", features: ["500 messages/month", "Basic NSFW access", "Standard AI model", "Entry-level for casual users"] },
+      { plan: "Premium", price: "$19.99/mo", features: ["2,000 messages/month", "Full unrestricted NSFW", "Advanced AI model", "Custom character creation", "Best value — recommended"] },
+      { plan: "Ultimate", price: "$49.99/mo", features: ["Unlimited messages", "All AI models", "Priority speed", "Extended cross-session memory", "All features"] }
     ],
+    pricingOutro: "Is CrushOn ai free? Technically yes with 50 messages per month, but the free experience is heavily restricted — no NSFW, basic AI model only, and 50 messages disappear quickly. Most users need at least the Standard plan for a meaningful experience. We recommend the Premium tier at $19.99 as the best value for most users.",
     scores: [
-      { label: "Content Quality", score: 7.5 },
-      { label: "User Interface", score: 7.0 },
-      { label: "Value for Money", score: 8.0 },
-      { label: "Privacy & Safety", score: 7.0 },
-      { label: "Features", score: 7.5 }
+      { label: "Content Quality", score: 7.5, description: "Massive character variety impressive and growing. Conversation quality solid but not as deep as Candy.ai. NSFW freedom is the strongest selling point." },
+      { label: "User Interface", score: 7.0, description: "Functional, clean design. Dark theme easy on eyes. Character browsing well-organized. Not as polished as Candy.ai but effective." },
+      { label: "Value for Money", score: 7.5, description: "Premium at $19.99 genuine value. Free tier too limited. Pricing competitive in NSFW AI space." },
+      { label: "Privacy & Safety", score: 7.0, description: "Basic account security with SSL. No ID required. NSFW properly gated. Privacy policy could be more detailed on data handling." },
+      { label: "Features", score: 8.0, description: "Unrestricted NSFW, massive library, custom characters, group chats, multiple AI models, memory. Rich feature set." }
     ],
     pros: [
-      "Completely uncensored NSFW conversations",
-      "Very affordable pricing at $7.99/month",
-      "Generous free tier with 50 daily messages",
-      "Large library of pre-built characters"
+      "Most permissive NSFW AI chat — zero filters for premium",
+      "Massive community-created character library",
+      "Custom character creation with detailed controls",
+      "Group chat with multiple AI characters",
+      "Multiple AI model options",
+      "Fast minimal onboarding"
     ],
     cons: [
-      "Conversation quality not as refined as Candy.ai",
-      "No AI image generation",
-      "Interface could be more polished",
-      "Memory system occasionally inconsistent"
+      "Conversation depth lags behind Candy.ai",
+      "Free tier severely limited at 50 messages",
+      "No image generation — text only",
+      "No voice or audio features",
+      "Privacy policy could be more transparent",
+      "No native mobile app"
     ],
+    prosConsNote: "The bottom line on CrushOn.ai is clear: if unrestricted NSFW conversation freedom is your top priority, no platform does it better. If you value emotional depth, visual content, or voice features alongside chat, Candy.ai delivers a more complete package. Many users find the two platforms complement each other well.",
+    privacyIntro: "Given that CrushOn.ai handles unrestricted NSFW conversations, safety and legitimacy questions are important to address.",
     whoShouldUse: [
-      { persona: "Users wanting uncensored AI chat", reason: "No content restrictions whatsoever", ideal: true },
-      { persona: "Budget-conscious users", reason: "Most affordable premium AI companion plan", ideal: true },
-      { persona: "Users wanting visual AI content", reason: "No image generation capabilities", ideal: false },
-      { persona: "Users seeking emotional support AI", reason: "Focused more on entertainment than emotional intelligence", ideal: false }
+      { persona: "Users wanting zero-filter NSFW conversations", reason: "Purpose-built for unrestricted exploration", ideal: true },
+      { persona: "Role-play and creative scenario enthusiasts", reason: "Massive library, custom creation, group chats", ideal: true },
+      { persona: "Users valuing character variety over visual content", reason: "Library unmatched in size", ideal: true },
+      { persona: "Users wanting emotional depth and companionship", reason: "Candy.ai or Replika deliver deeper experiences", ideal: false },
+      { persona: "Users wanting visual AI content", reason: "Text only — DreamGF.ai or Candy.ai for images", ideal: false }
     ],
     alternatives: ["candy-ai", "dreamgf-ai", "girlfriendgpt", "infatuated-ai"],
     comparisons: [
-      { slug: "candy-ai-vs-crushon-ai", title: "Candy.ai vs CrushOn.ai" }
+      { slug: "candy-ai", title: "CrushOn.ai vs Candy.ai" },
+      { slug: "character-ai", title: "CrushOn.ai vs Character.ai" },
+      { slug: "spicychat", title: "CrushOn.ai vs SpicyChat" }
     ],
     faqs: [
-      { question: "Is CrushOn.ai really uncensored?", answer: "Yes, CrushOn.ai has no content filters or topic restrictions. Users can engage in any type of conversation including explicit NSFW content." },
-      { question: "Is CrushOn.ai free?", answer: "Yes, CrushOn.ai offers a free tier with 50 messages per day. Premium plans start at $7.99/month for unlimited messaging." },
-      { question: "Is CrushOn.ai safe to use?", answer: "CrushOn.ai uses encryption for conversations but users should be aware that uncensored platforms may have less content moderation. Always practice safe online behavior." },
-      { question: "Can I create my own character on CrushOn.ai?", answer: "Yes, Premium subscribers can create fully custom AI characters with unique personalities, backgrounds, and appearance descriptions." },
-      { question: "How does CrushOn.ai compare to Candy.ai?", answer: "CrushOn.ai is cheaper and more permissive with content, while Candy.ai offers higher conversation quality and AI image generation. Choose based on your priorities." }
+      { question: "Is CrushOn.ai free?", answer: "50 free messages/month with basic AI. NSFW restricted. Full experience requires paid plan starting $5.99/mo. Premium at $19.99 recommended." },
+      { question: "Is CrushOn.ai safe?", answer: "SSL encryption, no ID required, NSFW gated behind paid tiers. Standard security. Privacy policy could be more detailed on data handling." },
+      { question: "Does CrushOn.ai allow NSFW?", answer: "Yes. Fully unrestricted for premium users. Zero content filters. The platform's core purpose and strongest selling point." },
+      { question: "How much does CrushOn.ai cost?", answer: "Free/50 msgs, Standard $5.99/500 msgs, Premium $19.99/2000 msgs (recommended), Ultimate $49.99/unlimited. Each tier unlocks better AI models." },
+      { question: "Can I use CrushOn.ai on my phone?", answer: "No native app. Mobile website responsive and works well for text chat. Save to home screen for quick access." },
+      { question: "CrushOn.ai vs Candy.ai?", answer: "CrushOn.ai for maximum NSFW freedom and character variety. Candy.ai for deeper conversations, visuals, voice, and polished experience. Many use both." },
+      { question: "Can I create my own characters?", answer: "Yes. Premium users create custom characters with personality, backstory, behavior instructions. Share publicly or keep private." },
+      { question: "How do I delete my CrushOn.ai account?", answer: "Account settings > Delete. Contact support via email if needed. Cancel subscription through payment provider first." },
+      { question: "Best CrushOn.ai alternatives?", answer: "Candy.ai for complete AI girlfriend experience, DreamGF for images, SpicyChat for similar NSFW freedom, GirlfriendGPT for generous free tier, Character.ai for SFW." },
+      { question: "Does CrushOn.ai work internationally?", answer: "Yes. Available globally. English primary. International credit cards accepted." }
     ],
-    finalVerdict: "CrushOn.ai is the best choice for users who want completely uncensored AI conversations at an affordable price. While it lacks the polish and image generation of Candy.ai, its no-restrictions approach and budget-friendly pricing make it a strong choice for its target audience."
+    finalVerdict: "CrushOn.ai owns the unrestricted NSFW AI chatbot niche convincingly. If your priority is complete conversational freedom without content filters, no platform does this better. The massive character library gives thousands of unique conversation partners, custom creation tools let you build exactly what you want, and group chat enables complex multi-character scenarios. Where it falls short is conversational sophistication and multimedia — Candy.ai outperforms on emotional depth, images, and voice. Our recommendation: use CrushOn.ai for unrestricted NSFW text conversations and character exploration. Pair with Candy.ai for visual content and emotional depth. Start with Premium tier at $19.99."
   },
 
   {

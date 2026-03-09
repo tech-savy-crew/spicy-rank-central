@@ -32,6 +32,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "The interface is clean, modern, and built around conversations. A left sidebar lets you switch between companions, access settings, and browse your image gallery. Message input feels responsive, and AI replies typically arrive within two to three seconds on premium. The image generation feature is integrated directly into the chat flow — you request visuals without ever leaving the conversation window. Settings are well-organized and nothing feels buried behind unnecessary menus.",
     mobileExperience: "The Candy.ai app is available for both Android and iOS, and the mobile experience closely mirrors what you get on desktop. Scrolling is smooth, load times are fast, and the interface adapts well to smaller screens with thumb-friendly navigation. If you primarily use your phone, you will not feel like you are getting a compromised experience.",
   },
+  "crushon-ai": {
+    gettingStarted: "Under two minutes. Email registration, no ID verification. Browse character library or create custom characters immediately. Minimal onboarding — chatting within two minutes.",
+    interfaceNavigation: "Clean, dark-themed design organized around character library. Homepage shows trending, popular, and new characters in browsable grid. Chat interface is straightforward with avatar, message history, input field. Category browsing and search help discover characters. Functional and well-organized though not as visually polished as Candy.ai.",
+    mobileExperience: "No native CrushOn ai app on iOS/Android. Mobile website responsive and works well for chat. Character library browsing smooth on phones. Text-heavy nature translates well to mobile. Save to home screen for quick access.",
+  },
   "dreamgf-ai": {
     gettingStarted: "Under three minutes to sign up. Email registration, age verification, straight into character builder. Within five minutes you can have your first AI girlfriend created and be generating images. Fastest signup-to-content experience we tested.",
     interfaceNavigation: "Visually focused dashboard centering on characters. Easy access to chat, image generation, and gallery. Character builder is most polished element with real-time preview updates. Image generation integrated into chat flow.",
@@ -95,6 +100,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "credit-card", title: "Discreet Billing", description: "Charges appear discreetly on credit card and bank statements using a generic billing descriptor. The platform name does not show up, which is important for users who value financial privacy." },
     { icon: "shield-check", title: "Content Moderation", description: "Candy.ai enforces content policies in line with industry standards, including DMCA compliance and age verification for adult content access. All users must confirm they are 18 or older." },
     { icon: "eye-off", title: "Account Privacy", description: "You can use Candy.ai with minimal personal information. No social media linking is required, and account deletion is available upon request. Personal information is not sold to third parties." },
+  ],
+  "crushon-ai": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all platform connections. Account data, conversations, and payments encrypted in transit." },
+    { icon: "eye-off", title: "Account Privacy", description: "No ID verification required. Anonymous usage with email only. Lower barrier but less identity assurance." },
+    { icon: "shield-check", title: "NSFW Content Gating", description: "NSFW restricted to paid subscribers. Free users cannot access explicit conversations. Paywall serves as soft age-verification layer." },
+    { icon: "credit-card", title: "Data Handling", description: "Privacy policy present but could be more detailed about conversation data storage, retention, AI training usage, and access policies." },
   ],
   "dreamgf-ai": [
     { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all connections. Content, account data, payments encrypted in transit." },
@@ -167,6 +178,7 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
 const privacyOverrides: Record<string, string> = {
   "candy-ai": "So, is Candy.ai a scam? Based on our 30+ days of testing: absolutely not. It is a legitimate, well-built platform with a clear business model. Is Candy.ai safe? Yes, with reasonable privacy protections that meet what we would expect for this category. Is Candy.ai legit? The company operates transparently, processes refund requests, and has a growing presence on review platforms like Trustpilot. We found no red flags during our extended testing period.",
   "dreamgf-ai": "Is DreamGF legit? Yes — functioning platform with working payments and active users. Is DreamGF safe? Reasonably — standard protections in place. Is it a scam? No — delivers on promises, especially image generation. Free tier is very limited; full experience requires subscription.",
+  "crushon-ai": "Is CrushOn.ai legit? Yes — functioning platform with real user base, working payments, active community. Is CrushOn.ai safe? Reasonably — standard security protections meeting industry norms. Privacy policy transparency is the main improvement area. Is it a scam? Absolutely not — delivers exactly what it promises.",
   "feetfinder": "So, is FeetFinder legit? Absolutely. After testing the platform extensively from both sides, FeetFinder is a legitimate, well-established marketplace with a real business model, genuine buyer traffic, and functioning payout systems. Is FeetFinder safe? Yes — the combination of identity verification, encryption, content protection, and discreet billing makes it one of the safest options available. Is FeetFinder a scam? No. There are legitimate criticisms around pricing and competition levels, but the platform itself operates transparently and has been doing so since 2019.",
   "onlyfans": "Is OnlyFans legit? Without question. Operated by Fenix International Limited, a UK-based company processing billions in creator payouts annually. Is OnlyFans safe? Yes, with strong privacy protections and reliable security. Is OnlyFans a scam? Absolutely not — individual creator quality varies but the platform itself is entirely legitimate and one of the most established names in the creator economy.",
   "fansly": "Is Fansly legit? Yes — legitimate platform with functioning payments, real payouts, growing user base. Is Fansly safe? Yes, with standard security meeting industry norms. Is Fansly a scam? No — platform is legitimate though some Trustpilot reviewers report support issues worth noting.",
@@ -186,6 +198,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Use Voice Messages for Deeper Immersion", description: "The voice feature adds a layer of realism that text alone simply cannot replicate. Enable it in settings and try sending voice-based requests — the responses feel surprisingly natural and emotionally appropriate." },
     { title: "Reference Past Conversations", description: "Candy.ai's memory feature works best when you actively build on previous interactions. Mention things you discussed earlier, reference inside jokes, and the AI will pick up continuity that makes the experience feel like an evolving relationship." },
     { title: "Experiment with Multiple Companions", description: "Do not limit yourself to a single character. Different personality configurations produce completely different experiences. Try creating two or three AI girlfriends with contrasting traits to discover what you enjoy most." },
+  ],
+  "crushon-ai": [
+    { title: "Browse the Character Library Before Creating Your Own", description: "Thousands of community characters already exist. Search by category and top-rated before investing time in custom creation." },
+    { title: "Use Detailed Personality Instructions for Custom Characters", description: "More specific descriptions produce better AI responses. Vague instructions produce generic results." },
+    { title: "Start with Premium Tier", description: "Advanced AI model at $19.99 produces noticeably better conversations than Standard tier. Quality difference is significant." },
+    { title: "Experiment with Group Chats", description: "Underused but powerful feature. Multiple characters in one conversation create dynamic interactions impossible in 1-on-1." },
+    { title: "Pair with a Visual Platform", description: "Use CrushOn.ai for text freedom and DreamGF.ai or Candy.ai for image generation. Best of both worlds." },
   ],
   "dreamgf-ai": [
     { title: "Start Free to Test the Builder", description: "Explore creation tools before paying. Free tier shows builder quality and sample images." },
