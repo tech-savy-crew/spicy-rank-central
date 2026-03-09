@@ -166,7 +166,10 @@ const ReviewDetailPage = () => {
               </div>
               <div className="mt-5 bg-card rounded-xl border border-primary/20 p-4">
                 <p className="text-sm font-medium text-foreground">
-                  <span className="text-primary font-bold">Quick Verdict:</span> {review.verdict}
+                  <span className="text-primary font-bold">Quick Verdict:</span>{" "}
+                  {isCandyAi
+                    ? "Candy.ai is the best AI girlfriend platform we tested in 2026. Realistic conversations, excellent image generation, and deep personality customization earn it our top rating of 8.3/10 — though premium pricing may not suit every budget."
+                    : review.verdict}
                 </p>
               </div>
             </div>
