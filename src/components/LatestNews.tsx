@@ -142,7 +142,7 @@ export function LatestNews() {
 
         {/* Mobile link */}
         <div className="mt-4 lg:hidden text-center">
-          <Link to="/blog" className="text-sm font-medium" style={{ color: "#E53E3E" }}>Read all articles →</Link>
+          <Link to="/reviews" className="text-sm font-medium" style={{ color: "#E53E3E" }}>View all reviews →</Link>
         </div>
       </div>
     </section>

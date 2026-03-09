@@ -5,7 +5,7 @@ import type { Platform } from "@/data/platforms";
 export function PlatformCard({ platform }: { platform: Platform }) {
   return (
     <Link
-      to={`/review/${platform.slug}`}
+      to={`/reviews/${platform.slug}`}
       className="group block bg-card rounded-xl border border-border/50 overflow-hidden card-hover"
     >
       <div className="p-6">

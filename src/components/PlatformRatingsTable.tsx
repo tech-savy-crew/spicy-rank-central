@@ -149,7 +149,7 @@ export function PlatformRatingsTable() {
               </div>
               <p className="text-sm mb-3" style={{ color: "#718096" }}>{row.bestFor}</p>
               <Link
-                to={`/review/${row.slug}`}
+                to={`/reviews/${row.slug}`}
                 className="flex items-center justify-center gap-1 w-full border rounded-lg py-2 text-sm font-medium transition-colors hover:bg-[#FFF5F5]"
                 style={{ borderColor: "#E53E3E", color: "#E53E3E" }}
               >

@@ -18,10 +18,10 @@ const compareLinks = [
 ];
 
 const bestLinks = [
-  { label: "Best OnlyFans Alternatives", to: "/best-lists/best-onlyfans-alternatives" },
-  { label: "Best Cam Sites", to: "/best-lists/best-free-cam-sites" },
-  { label: "Best Dating Apps", to: "/best-lists/best-hookup-apps" },
-  { label: "Best AI Companions", to: "/best-lists/best-ai-girlfriend-apps" },
+  { label: "Best OnlyFans Alternatives", to: "/best/onlyfans-alternatives" },
+  { label: "Best Cam Sites", to: "/best/free-cam-sites" },
+  { label: "Best Dating Apps", to: "/best/hookup-apps" },
+  { label: "Best AI Companions", to: "/best/ai-girlfriend-apps" },
 ];
 
 const companyLinks = [

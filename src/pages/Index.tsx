@@ -296,7 +296,7 @@ const Index = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {topLists.map((list, i) => (
             <AnimatedSection key={list.slug} delay={i * 80}>
-              <Link to={`/best-lists/${list.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
+              <Link to={`/best/${list.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover block group">
                 <span className="text-xs font-medium bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">{list.category}</span>
                 <h3 className="font-bold text-sm mt-3 group-hover:text-primary transition-colors">{list.title}</h3>
                 <span className="inline-flex items-center gap-1 text-xs text-primary font-medium mt-2">

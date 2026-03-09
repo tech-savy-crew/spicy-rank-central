@@ -78,4 +78,14 @@ export const reviewPlatforms: ReviewPlatform[] = [
 
   // Tube & Streaming
   { name: "SmutFinder", category: "Tube & Streaming", score: 6.5, slug: "smutfinder", description: "Aggregator site that indexes content across multiple tube sites. Useful search tool but no original content." },
+
+  // Major Platforms (Featured)
+  { name: "OnlyFans", category: "Creator Platforms", score: 8.5, slug: "onlyfans", description: "Still the biggest name in creator subscriptions — but rising fees and growing competition mean it's no longer the only option." },
+  { name: "Fansly", category: "Creator Platforms", score: 8.2, slug: "fansly", description: "Lower creator fees, better content organization, and a rapidly growing user base make Fansly the top OnlyFans alternative." },
+  { name: "FanVue", category: "Creator Platforms", score: 7.6, slug: "fanvue", description: "UK-based OnlyFans competitor with built-in AI tools for creators. Lower fees and better analytics, but still building its audience." },
+  { name: "Patreon", category: "Creator Platforms", score: 7.0, slug: "patreon", description: "The original creator subscription platform. Great for non-adult and mixed content but strict content policies limit adult creators." },
+  { name: "Chaturbate", category: "Live Cam Sites", score: 7.8, slug: "chaturbate", description: "The most popular free live cam platform with thousands of broadcasters online 24/7. Great free experience but the token system can get expensive." },
+  { name: "Stripchat", category: "Live Cam Sites", score: 7.5, slug: "stripchat", description: "AI-powered cam site with virtual reality support and innovative features. Strong Chaturbate alternative with a modern, clean interface." },
+  { name: "Bumble", category: "Dating & Hookup Apps", score: 8.0, slug: "bumble", description: "Women-make-the-first-move dating app with a solid matching algorithm. Premium features are worth it if you're serious about dating." },
+  { name: "Tinder", category: "Dating & Hookup Apps", score: 7.5, slug: "tinder", description: "The most popular dating app worldwide with the largest user base. Great for casual dating but premium pricing has increased significantly." },
 ];
