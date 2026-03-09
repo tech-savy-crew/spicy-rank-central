@@ -963,7 +963,8 @@ function generateCreatorPlatformReviews(): DetailedReview[] {
     },
     {
       name: "Footly", slug: "footly", category: "Creator Platforms", score: 7.6,
-      verdict: "TikTok-style feet content discovery with industry-best 90%TikTok-style discovery, no subscription fees, 90% creator payoutstyle discovery, no subscription fees, 90% creator payoutstyle discovery, no subscription fees, 90% creator payoutators seeking discovery",
+      verdict: "TikTok-style feet content discovery with industry-best 90% creator payout",
+      pricing: "Free to join / 10% fee", bestFor: "TikTok-style discovery, no subscription fees, 90% creator payout",
       url: "https://footly.io", lastUpdated: "March 2026",
       overview: ["Footly has disrupted the feet content market with a TikTok-style discovery feed and the highest creator payout in the industry at 90%. The algorithmic feed helps new creators get discovered without needing an existing following.", "The platform's modern interface and social media-style engagement make it feel more dynamic than traditional marketplace listings. Content appears in a scrollable feed where buyers can like, comment, and purchase.", "While newer and smaller than FeetFinder, Footly's discovery algorithm means even brand new creators can get eyes on their content immediately."],
       keyFeatures: [
