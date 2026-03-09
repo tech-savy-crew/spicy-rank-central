@@ -37,6 +37,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "The seller dashboard is functional but not flashy. You can manage uploads, view messages, track earnings, and update your profile from a central hub. Content uploading is straightforward — drag and drop files, add descriptions and pricing, and choose categories. The buyer-side interface is a grid-based discovery system where users browse seller profiles filtered by categories, popularity, and price. Navigation works but feels dated compared to newer platforms like Footly.",
     mobileExperience: "The FeetFinder app is available for download on both Android and iOS devices. The mobile experience covers all essential functions — uploading, messaging, and managing sales. However, the app download has occasionally been flagged or removed from app stores due to content policies, so many users access the platform through mobile browsers instead. The responsive web version works well on phones.",
   },
+  "onlyfans": {
+    gettingStarted: "Creating an account is straightforward. Login works via email or social sign-in. Subscribers can browse and subscribe within minutes. Creators need ID verification (24-72 hours). Once verified, set subscription price, upload content, start accepting subscribers immediately.",
+    interfaceNavigation: "Functional but noticeably basic compared to social media. Home feed shows content chronologically. Navigation includes feed, notifications, messages, bookmarks, and search. Search is intentionally limited — no content discovery system. Subscribers find creators only through direct links or external promotion. This is simultaneously the biggest weakness for new creators and the strongest privacy feature.",
+    mobileExperience: "No dedicated OnlyFans app on iOS or Android app stores due to content restrictions. OnlyFans offers a progressive web app (PWA) that works in mobile browsers and can be added to home screen. Mobile web version is fully functional for both creators and subscribers. Absence of native app is a frequent complaint but PWA works well enough.",
+  },
 };
 
 const privacyCardOverrides: Record<string, TrustCard[]> = {
