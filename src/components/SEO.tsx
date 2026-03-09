@@ -116,9 +116,10 @@ export function reviewSchema(platform: {
     "@context": "https://schema.org",
     "@type": "Review",
     itemReviewed: {
-      "@type": "WebApplication",
+      "@type": "SoftwareApplication",
       name: platform.name,
-      applicationCategory: "Entertainment",
+      applicationCategory: "LifestyleApplication",
+      operatingSystem: "Web",
       ...(platform.url ? { url: platform.url } : {}),
     },
     reviewRating: {
