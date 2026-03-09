@@ -295,6 +295,14 @@ const ReviewDetailPage = () => {
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "Creator Platforms" },
+        ] : isJerkmate ? [
+          { name: "keywords", content: "jerkmate review, is jerkmate legit, is jerkmate safe, jerkmate ranked, jerkmate ranked level names, jerkmate ranked lobby names, jerkmate ad, jerkmate cost, jerkmate gold, jerkmate free, jerkmate alternatives, jerkmate app, how does jerkmate work, jerkmate price, jerkmate scam" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "Jerkmate Review 2026 — Is It Legit or Just Ads?" },
+          { property: "og:description", content: "We tested Jerkmate for 30+ days. Full review of real pricing, Gold shows, ranked system, safety. Rated 7.2/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Live Cam Sites" },
         ] : undefined}
         jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
