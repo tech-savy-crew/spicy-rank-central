@@ -51,7 +51,7 @@ export const reviewPlatforms: ReviewPlatform[] = [
 
   // Live Cam Sites
   { name: "Cam4", category: "Live Cam Sites", score: 6.8, slug: "cam4", description: "Community-focused cam site popular for amateur performers. Free shows are plentiful but video quality is inconsistent." },
-  { name: "BongaCams", category: "Live Cam Sites", score: 7.3, slug: "bongacams", description: "European cam site with a huge selection of models and frequent promotions. Aggressive pop-ups but solid streaming quality." },
+  { name: "BongaCams", category: "Live Cam Sites", score: 7.0, slug: "bongacams", description: "Europe's largest free cam site with aggressive promotions, competitive performer payouts, and a massive Eastern European model roster." },
   { name: "LiveJasmin", category: "Live Cam Sites", score: 7.5, slug: "livejasmin", description: "Premium cam site known for high-quality HD streams and professional models. Expensive but the production quality is top-tier." },
   { name: "Jerkmate", category: "Live Cam Sites", score: 7.6, slug: "jerkmate", description: "AI-powered cam matching service that connects you with compatible performers. Innovative concept with a polished interface." },
   { name: "Flirt4Free", category: "Live Cam Sites", score: 7.2, slug: "flirt4free", description: "Upscale cam site with HD streams and interactive features. Smaller model selection but consistently high quality." },
