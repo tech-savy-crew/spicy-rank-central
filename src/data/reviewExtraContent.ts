@@ -112,6 +112,16 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Functional, organized around search and discovery. Dashboard shows matches, messages, profile views, nearby active users. Profile pages detailed with kink preferences prominent alongside photos and bio. Search system is strongest element — filter by fetish category, experience, distance, age, relationship type. Not as visually polished as mainstream apps but well-organized for purpose.",
     mobileExperience: "No native FetishFinder app due to app store content policies. Mobile website responsive and functional for browsing, messaging, account management. Save to home screen for app-like experience. Desktop more comfortable for detailed profile editing and search filtering.",
   },
+  "bongacams": {
+    gettingStarted: "Under two minutes with email. No registration required for basic viewing. Performers need age/identity verification (24-48 hours). Zero barrier for viewers.",
+    interfaceNavigation: "BongaCams' weakest area. Cluttered with promotional banners, pop-ups, and upgrade offers creating visually noisy experience. Core functionality works beneath the clutter — performer grid sorted by viewer count, category tabs, search filtering. Performer rooms include chat, tip menus, interactive features. VIP membership removes promotional noise. Functional but first impression is poor compared to Stripchat or Chaturbate.",
+    mobileExperience: "No native BongaCams app on iOS/Android. Mobile website functional for browsing and watching. Promotional elements especially intrusive on smaller screens. Desktop provides significantly better experience.",
+  },
+  "camsoda": {
+    gettingStarted: "Under two minutes with email. No account needed for basic viewing — watch immediately. Performers need age/ID verification (24-48 hours).",
+    interfaceNavigation: "Clean, modern, dark-themed design. Homepage presents performer grid with voyeur section prominently featured. Straightforward navigation with category filtering, search, trending sections. Voyeur section well-organized with clear activity thumbnails. Significantly cleaner than BongaCams' cluttered design. More contemporary than Chaturbate's dated interface.",
+    mobileExperience: "No native CamSoda app on iOS/Android. Mobile website responsive and functional for browsing, watching, tipping. Voyeur experience translates reasonably to smaller screens. Desktop preferred for extended sessions and multi-stream browsing. Save to home screen for quick access.",
+  },
 };
 const privacyCardOverrides: Record<string, TrustCard[]> = {
   "candy-ai": [
