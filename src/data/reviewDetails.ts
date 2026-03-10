@@ -2140,13 +2140,7 @@ function generateLiveCamReviews(): DetailedReview[] {
       [{ question: "Is Cam4 free?", answer: "Yes, Cam4 offers free public shows. Tokens for tipping and private shows start at $6.99." }],
       "Cam4 is best for viewers who prefer amateur, authentic content and value international diversity. It's showing its age but still has a loyal community."
     ),
-    camTemplate("BongaCams", "bongacams", 7.3, "Major cam site with frequent free token promotions and diverse performers", "Free / Tokens from $2.99", "Free cam shows with tokens", "https://bongacams.com",
-      ["BongaCams is a major European cam site known for aggressive marketing, frequent promotions, and one of the largest model selections in the industry. New users often receive free tokens as a welcome bonus.", "The platform features diverse performers from around the world with shows ranging from free public broadcasts to paid private sessions. The token system is straightforward, and BongaCams frequently runs promotions that give users extra tokens.", "The main drawback is the aggressive pop-up marketing and notifications. BongaCams pushes hard for spending, which can feel overwhelming compared to calmer platforms like CamSoda."],
-      ["Frequent free token promotions", "Massive model selection", "Low starting token prices", "Diverse international performers"],
-      ["Aggressive pop-up marketing", "Pushy notification system", "Token spending can add up", "Interface feels cluttered"],
-      [{ question: "Does BongaCams give free tokens?", answer: "Yes, BongaCams frequently offers free tokens to new users and runs regular promotions. It's one of the most generous cam sites for token bonuses." }],
-      "BongaCams is great for value-conscious cam viewers who don't mind aggressive marketing. The frequent token promotions make it one of the cheapest ways to enjoy live cam shows."
-    ),
+    // BongaCams full entry is in main array
     camTemplate("LiveJasmin", "livejasmin", 7.5, "Premium cam site with professional performers and HD quality", "Free / Credits from $9.99", "Premium cam experience", "https://livejasmin.com",
       ["LiveJasmin is the luxury option in the cam site market. Every performer goes through a vetting process, video quality is consistently HD or higher, and the overall experience feels polished and professional.", "The platform targets a higher-spending audience with premium pricing and credit-based system. While more expensive than competitors, the quality justifies the premium for many viewers.", "LiveJasmin's model selection skews toward professional, polished performers rather than amateurs. If you prefer a curated, high-quality experience over raw authenticity, LiveJasmin delivers."],
       ["Consistently high HD quality", "Professional, vetted performers", "Polished user experience", "Reliable streaming technology"],
