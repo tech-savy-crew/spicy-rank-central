@@ -372,6 +372,20 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Engage with Community Features", description: "Forums, groups, events are underused but valuable. Build reputation, increase visibility, meet people in lower-pressure context." },
     { title: "Balance Kink and Personality in Your Profile", description: "Best profiles combine kink information with personality — humor, communication style, interests outside kink. More engaging and attracts better matches." },
   ],
+  "bongacams": [
+    { title: "Use an Ad Blocker for Free Viewing", description: "Standard ad blocker removes much promotional noise. Makes free experience significantly more pleasant without paying for VIP." },
+    { title: "Take Advantage of Introductory Token Offers", description: "New users get first bundle at ~$1.99 for 17 tokens. Cheapest way to test paid features before larger purchases." },
+    { title: "Watch for Token Promotions", description: "Frequent bonus token offers on purchases. Wait for promotions to buy larger bundles. 20-50% additional value possible." },
+    { title: "Create Free Account for Full Chat Access", description: "Free and takes under two minutes. Enables chat, following performers, notifications when favorites go live." },
+    { title: "Consider VIP Only If Regular User", description: "$33.99/month expensive for occasional use. For daily users, ad-free experience and invisible mode genuinely improve quality." },
+  ],
+  "camsoda": [
+    { title: "Start with the Voyeur Cam Section", description: "This makes CamSoda unique. Experience the 24/7 feeds before standard shows. Primary reason to use CamSoda over competitors." },
+    { title: "Use Private Show Recording", description: "Always enable recording for private shows. Revisit sessions without repurchasing. Genuine value add to token spending." },
+    { title: "Buy Tokens in Larger Bundles", description: "Per-token cost decreases with larger purchases. 550 ($49.99) and 800 ($69.99) bundles offer best value for regular users." },
+    { title: "Create Free Account Even for Free Viewing", description: "Enables chat, following, notifications. Following favorites means alerts when they go live — especially useful with smaller performer count." },
+    { title: "Browse During Peak Hours", description: "US and European evening hours offer most variety. Off-peak can have limited selection. Try peak times for best experience." },
+  ],
 };
 
 function getCategorySignupFlow(category: string, name: string): string {
