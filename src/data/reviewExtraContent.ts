@@ -102,6 +102,16 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Functional but not as visually polished as Candy.ai or CrushOn.ai. Character library browsing works well with categories, search, tags, popularity sorting. Chat interface is clean but basic — avatar, message thread, input field. Prioritizes features and accessibility over visual polish.",
     mobileExperience: "No native GirlfriendGPT app on iOS/Android. Mobile-responsive website works adequately for text-based chat. Character browsing and chatting function on phones. Save to home screen for quick access. Desktop more comfortable for extended sessions.",
   },
+  "snifffr": {
+    gettingStarted: "Email registration. Sellers verify identity (24-48 hours). Create profile, write bio, upload photos, list items. Registration to first listing takes 1-2 days including verification.",
+    interfaceNavigation: "Clean, organized, professional design. Homepage features sellers, new listings, category navigation. Seller profiles well-structured with bio, listings, ratings, reviews. Listing creation straightforward. Messaging functional with history. Does not feel amateur — takes the niche seriously.",
+    mobileExperience: "No native Snifffr app on iOS/Android. Mobile-responsive website works well for browsing, messaging, managing listings. Marketplace translates cleanly to phone screens. Desktop more comfortable for managing multiple listings.",
+  },
+  "fetishfinder": {
+    gettingStarted: "Five to ten minutes — longer than mainstream apps because kink preference setup is detailed. Age verification required. Onboarding asks about fetish interests, experience level, and goals upfront. Select from dozens of categories, indicate experience for each, define hard and soft limits. Detailed setup pays off in match quality.",
+    interfaceNavigation: "Functional, organized around search and discovery. Dashboard shows matches, messages, profile views, nearby active users. Profile pages detailed with kink preferences prominent alongside photos and bio. Search system is strongest element — filter by fetish category, experience, distance, age, relationship type. Not as visually polished as mainstream apps but well-organized for purpose.",
+    mobileExperience: "No native FetishFinder app due to app store content policies. Mobile website responsive and functional for browsing, messaging, account management. Save to home screen for app-like experience. Desktop more comfortable for detailed profile editing and search filtering.",
+  },
 };
 const privacyCardOverrides: Record<string, TrustCard[]> = {
   "candy-ai": [
