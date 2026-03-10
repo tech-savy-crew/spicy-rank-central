@@ -92,8 +92,17 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Modern, dark-themed design. The matchmaking approach means you see curated performer suggestions rather than an overwhelming grid. Navigation is clean but the constant upselling for credits and premium features can feel aggressive.",
     mobileExperience: "No dedicated Jerkmate app on app stores. The mobile website is functional with responsive design. Desktop provides the better experience for extended viewing sessions.",
   },
+  "replika": {
+    gettingStarted: "Download from iOS App Store or Google Play. Account creation, 3D avatar customization (face, hair, skin, body, clothing), relationship type selection, start chatting. Most polished onboarding in AI companion space.",
+    interfaceNavigation: "Clean, calming, deliberately therapeutic design. Conversation screen with 3D avatar above. Tabs for chat, diary (conversation highlights), activities (meditation, quizzes, games), settings. Soft colors, rounded elements, gentle animations. Intentionally different from dark-themed stimulation-focused competitors.",
+    mobileExperience: "Gold standard for mobile AI companions. Native iOS and Android with excellent performance. Push notifications for daily check-ins. Smooth AR placing companion in real environments through camera. Reliable voice call quality. No other platform matches Replika app's mobile polish.",
+  },
+  "girlfriendgpt": {
+    gettingStarted: "Under two minutes. Email registration, no ID verification. Land directly in character library. Start browsing or chatting immediately. Lowest barrier to entry among AI chatbot platforms.",
+    interfaceNavigation: "Functional but not as visually polished as Candy.ai or CrushOn.ai. Character library browsing works well with categories, search, tags, popularity sorting. Chat interface is clean but basic — avatar, message thread, input field. Prioritizes features and accessibility over visual polish.",
+    mobileExperience: "No native GirlfriendGPT app on iOS/Android. Mobile-responsive website works adequately for text-based chat. Character browsing and chatting function on phones. Save to home screen for quick access. Desktop more comfortable for extended sessions.",
+  },
 };
-
 const privacyCardOverrides: Record<string, TrustCard[]> = {
   "candy-ai": [
     { icon: "lock", title: "Data Encryption", description: "Candy.ai uses SSL/TLS encryption to protect all data transmitted between your browser and their servers. Conversations and personal data are encrypted in transit, meeting industry norms for AI companion platforms." },
