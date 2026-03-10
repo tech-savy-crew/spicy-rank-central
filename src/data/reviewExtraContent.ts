@@ -210,6 +210,8 @@ const privacyOverrides: Record<string, string> = {
   "fanvue": "Is FanVue legit? Yes — UK-based company with functioning payments and growing creator community. Is FanVue safe? Yes — ID verification, SSL encryption, and discreet billing meet industry standards. Is FanVue a scam? No — legitimate creator platform with the lowest commission in the market.",
   "patreon": "Is Patreon safe? Yes — secure payments processed through Stripe with PCI compliance. Is Patreon legit? Absolutely — publicly funded company that has paid out over $3.5 billion to creators. Is Patreon a scam? No — the original and most established creator subscription platform.",
   "jerkmate": "Is Jerkmate safe? Yes — standard security protections are in place including encryption, verification, and discreet billing. Is Jerkmate legit? Absolutely — the platform is a real, functioning business with professional operations. The aggressive advertising creates a perception problem, but the actual product delivers a genuine cam experience. Is Jerkmate a scam? No. There are legitimate criticisms about pricing and the misleading ads, but the platform itself operates transparently.",
+  "replika": "Is Replika safe? Yes — technical security exceeds most AI companions thanks to app store compliance. Is Replika legit? Absolutely — years of operations, millions of users. The trust issue is about feature reliability, not legitimacy.",
+  "girlfriendgpt": "Is GirlfriendGPT safe? Yes, with standard security meeting expectations. Is it legit? Yes — functioning platform with real AI, community engagement, and genuine features. Is it a scam? No — the free tier alone proves real value before asking for payment, which is a strong trust signal.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
