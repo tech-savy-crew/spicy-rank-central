@@ -182,6 +182,18 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Age Verification", description: "Performers must verify identity with government ID. Standard age compliance for cam platforms." },
     { icon: "eye-off", title: "Legitimate Operations", description: "Jerkmate is operated by a legitimate company with real corporate structure, functioning payment processing, and responsive customer support." },
   ],
+  "replika": [
+    { icon: "lock", title: "Data Encryption", description: "Industry-standard encryption for data in transit. App store security requirements compliance for iOS and Android." },
+    { icon: "shield-check", title: "App Store Compliance", description: "Official app stores mean Apple and Google privacy and security oversight. Genuine advantage over web-only platforms." },
+    { icon: "eye-off", title: "Conversation Data", description: "Privacy policy states anonymized data may be used for AI improvements. Some users uncomfortable given intimate nature of conversations." },
+    { icon: "credit-card", title: "Trust After ERP Rollback", description: "Abrupt 2023 removal of explicit role-play without warning damaged trust fundamentally. Partial romantic restoration hasn't fully addressed the precedent concern." },
+  ],
+  "girlfriendgpt": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all platform connections. Account data and conversations encrypted in transit." },
+    { icon: "eye-off", title: "Account Privacy", description: "No ID verification required. Anonymous usage with email only. Low barrier but less identity assurance." },
+    { icon: "shield-check", title: "NSFW Content Gating", description: "Some restrictions on free tier. Full unrestricted on paid plans. Paywall serves as soft verification layer." },
+    { icon: "credit-card", title: "Data Handling", description: "Privacy policy covers standard bases. Could be more detailed on conversation data storage, AI training usage, and third-party sharing." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
