@@ -171,37 +171,7 @@ const ReviewDetailPage = () => {
               <div className="mt-5 bg-card rounded-xl border border-primary/20 p-4">
                 <p className="text-sm font-medium text-foreground">
                   <span className="text-primary font-bold">Quick Verdict:</span>{" "}
-                  {isCandyAi
-                    ? "Candy.ai is the best AI girlfriend platform we tested in 2026. Realistic conversations, excellent image generation, and deep personality customization earn it our top rating of 8.3/10 — though premium pricing may not suit every budget."
-                    : isFeetFinder
-                    ? "FeetFinder is the most established feet content marketplace with a massive buyer base, verified profiles, and strong safety features. At 8.0/10, it earns our recommendation for serious sellers — though the subscription fees and high competition mean beginners need a solid strategy to succeed."
-                    : isOnlyFans
-                    ? "OnlyFans remains the most recognized creator platform in 2026, with the largest audience and highest earning potential for established creators. At 8.5/10, we rate it as the best overall creator platform — but the 20% commission, increasing competition, and lack of content discovery mean newer creators may struggle without an existing audience."
-                    : isFansly
-                    ? "Fansly is the strongest OnlyFans alternative available in 2026. Better content discovery, flexible subscription tiers, and a growing creator community earn it an 8.2/10 rating. While its audience is still smaller than OnlyFans, Fansly's creator-first approach and discovery features make it the better choice for new creators building from scratch."
-                    : isDreamGF
-                    ? "DreamGF.ai excels at visual AI companion creation with some of the best image generation in the space. At 7.8/10, it earns our recommendation for users who prioritize visuals over conversation depth. The character builder is intuitive, NSFW content is unrestricted, and pricing is competitive — but conversation quality still trails behind Candy.ai."
-                    : isBumble
-                    ? "Bumble remains one of the best dating apps in 2026 thanks to its women-first messaging model, clean design, and strong safety features. At 8.0/10, we recommend it for anyone serious about finding real connections — though Bumble Premium pricing has gotten expensive and the free experience is increasingly limited."
-                    : isChaturbate
-                    ? "Chaturbate remains the world's largest free cam site with 4M+ daily visitors and unmatched performer variety. At 7.8/10, the free viewing model is unbeatable — but the dated interface and high platform cut hold it back from a higher score."
-                    : isStripchat
-                    ? "Stripchat is the most technically advanced free cam site with VR support, AI recommendations, and a modern interface. At 7.5/10, it's the best choice for viewers who value design and innovation — but Chaturbate's larger traffic base still provides more variety."
-                    : isTinder
-                    ? "Tinder remains the world's most downloaded dating app with 75M+ monthly users in 190+ countries. At 7.5/10, its massive user base is unmatched — but aggressive premium pricing and a declining free experience mean Bumble and Hinge offer better value for serious daters."
-                    : isFanVue
-                    ? "FanVue's 15% commission is the lowest among major creator platforms, and its AI-powered tools are genuine differentiators. At 7.6/10, it's the smartest financial choice for creators — but the smaller subscriber base means it works best as a secondary platform alongside OnlyFans."
-                    : isPatreon
-                    ? "Patreon remains the gold standard for non-adult creators with mainstream credibility, flexible tiers, and $3.5B+ paid to creators. At 7.0/10, it's the best choice for podcasters, musicians, and educators — but rising fees and competition from Ko-fi are closing the gap."
-                    : isJerkmate
-                    ? "Jerkmate is a legitimate premium cam site with high-quality performers, Gold shows, and a unique ranking system. At 7.2/10, the actual platform is better than the ads suggest — but per-minute pricing is expensive, the free experience is limited, and the aggressive advertising has created a trust problem the platform is still working to overcome."
-                    : isCrushOn
-                    ? "CrushOn.ai is the platform for users who want completely unrestricted NSFW AI conversations without content filters. At 7.4/10, it delivers the most permissive chat experience in the AI companion space with a massive community-created character library. Conversation quality is solid though not as emotionally deep as Candy.ai, and image generation is limited."
-                    : isReplika
-                    ? "Replika pioneered AI companionship and still delivers the most emotionally intelligent conversations in the space. At 7.0/10, its strength is genuine emotional depth and therapeutic-style support. However, the controversial removal of ERP features, rising subscription costs, and competition from unrestricted platforms like CrushOn.ai have narrowed its appeal significantly."
-                    : isGirlfriendGPT
-                    ? "GirlfriendGPT offers one of the most accessible entry points into NSFW AI chatbots with the most generous free tier in the space. At 7.2/10, it delivers solid NSFW chat and a growing character library at competitive prices. The AI quality is decent but not best-in-class, and the interface could use polish. Best for users who want to explore AI companionship without immediate financial commitment."
-                    : review.verdict}
+                  {seoConfig?.quickVerdict || review.verdict}
                 </p>
               </div>
             </div>
