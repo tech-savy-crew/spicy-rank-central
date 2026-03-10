@@ -332,6 +332,22 @@ const ReviewDetailPage = () => {
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "AI Companions" },
+        ] : isReplika ? [
+          { name: "keywords", content: "replika review, replika ai review, replika app, replika ai, replika pricing, replika pro, replika free, is replika safe, replika alternative, replika nsfw, replika erp, replika cost, how does replika work, is replika worth it, replika 3d avatar" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "Replika Review 2026 — Best AI for Emotional Companionship?" },
+          { property: "og:description", content: "We tested Replika for 45+ days. Full review of conversation quality, ERP controversy, Pro pricing, and Candy.ai comparison. 7.0/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "AI Companions" },
+        ] : isGirlfriendGPT ? [
+          { name: "keywords", content: "girlfriendgpt review, girlfriendgpt, girlfriendgpt nsfw, girlfriendgpt free, girlfriendgpt alternative, girlfriendgpt ai, girlfriendgpt characters, girlfriendgpt pricing, is girlfriendgpt safe, girlfriendgpt app, girlfriendgpt cost, girlfriendgpt pro" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "GirlfriendGPT Review 2026 — Best Free NSFW AI Chatbot?" },
+          { property: "og:description", content: "We tested GirlfriendGPT for 30+ days. Full review of free tier, NSFW features, character library, and CrushOn.ai comparison. 7.2/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "AI Companions" },
         ] : undefined}
         jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
