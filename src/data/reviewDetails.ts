@@ -1644,35 +1644,82 @@ function generateCreatorPlatformReviews(): DetailedReview[] {
       finalVerdict: "FeetFinder remains the dominant marketplace in the feet content space for good reason. The combination of a massive buyer base, strong verification systems, reliable payments, and content protection creates an environment where serious sellers can build real income. No other platform in this niche comes close to matching its scale. That said, the subscription-plus-commission model means you are paying before you earn, and high seller competition creates genuine challenges for new accounts. Our recommendation: if you are serious about selling feet content and willing to invest time in building your profile, FeetFinder is the best starting platform available. Use it as your primary marketplace, supplement with social media marketing, and consider adding Footly or OnlyFans as secondary channels."
     },
     {
-      name: "FetishFinder", slug: "fetishfinder", category: "Creator Platforms", score: 7.5,
-      verdict: "Community-driven fetish marketplace with strong buyer engagement",
-      pricing: "Free + premium options", bestFor: "Broader fetish marketplace including feet content including feet content including feet content including feet content",
+      name: "FetishFinder", slug: "fetishfinder", category: "Dating & Hookup Apps", score: 7.5,
+      verdict: "A dedicated fetish dating and hookup platform that connects kink-curious and experienced fetishists — niche, discreet, and genuinely functional",
+      pricing: "Free / Premium ~$29.99/mo", bestFor: "Fetish dating and kink-compatible matching",
       url: "https://fetishfinder.com", lastUpdated: "March 2026",
-      overview: ["FetishFinder serves a broader fetish community beyond just feet content. The platform connects creators with buyers interested in various niches, providing a marketplace for specialized adult content.", "The community-driven approach fosters strong buyer-seller relationships, with active forums and discussion boards that help creators understand what buyers want.", "While smaller than FeetFinder in the feet niche, FetishFinder's broader scope means creators can diversify their content offerings."],
+      readingTime: 10,
+      overview: [
+        "FetishFinder is a dedicated fetish dating and hookup platform designed specifically for people who want to connect based on shared kink interests. Unlike mainstream dating apps like Tinder or Bumble where mentioning fetishes can feel awkward or result in judgment, FetishFinder creates a space where kink is the starting point of every connection, not something you have to work up the courage to mention on a third date.",
+        "How does FetishFinder work? You create a profile that prominently features your fetish interests, kink preferences, experience level, and what you are looking for — whether that is a casual hookup, an ongoing arrangement, or a long-term kink-compatible relationship. The matching system connects you with users who share your specific interests. Fetish dating on FetishFinder means you skip the mainstream dating awkwardness and go straight to conversations with people who already share your desires.",
+        "The platform covers a wide range of fetish categories: BDSM, foot fetish, role-play, domination and submission, leather, latex, voyeurism, exhibitionism, and many more. FetishFinder positions itself between the community-forum approach of FetLife and the hookup-focused approach of mainstream dating apps, creating a middle ground that works for both community building and actual connections. With a growing user base that skews toward serious fetish enthusiasts rather than curious window-shoppers, the platform provides a genuinely useful service that fills a real gap in the dating market."
+      ],
       keyFeatures: [
-        { title: "Multi-niche Marketplace", description: "Support for various fetish content categories" },
-        { title: "Community Forums", description: "Active forums for buyer-seller interaction" },
-        { title: "Seller Profiles", description: "Detailed seller profiles with ratings and reviews" },
-        { title: "Custom Requests", description: "Built-in system for custom content orders" },
-        { title: "Secure Payments", description: "Protected payment processing" },
-        { title: "Content Variety", description: "Photos, videos, and digital items" }
+        { title: "Kink-Based Matching", description: "Matching driven by fetish compatibility rather than just photos and proximity. Specify kink interests, experience level, preferences. Platform surfaces compatible users. Core value mainstream apps cannot replicate — every match starts with confirmed shared interests." },
+        { title: "Detailed Fetish Profiles", description: "Profiles prominently feature kink preferences, experience levels, hard limits, soft limits, and what you seek. Kink identity is the centerpiece. Honesty from the start saves time and eliminates compatibility surprises." },
+        { title: "Advanced Privacy Controls", description: "Control who sees your profile, hide photos behind privacy locks, browse completely anonymously, manage visibility with granular controls. Essential for users needing discretion — professionals, public figures, anyone keeping kink life separate." },
+        { title: "Messaging & Chat", description: "Direct messaging with photo and video sharing for negotiations, boundary discussions, connection building. Supports detailed fetish conversation — scenes, safe words, expectations. Chat history maintained." },
+        { title: "Location-Based Search", description: "Find kink-compatible users in your area with adjustable radius. Filter by distance, fetish category, experience level, relationship type. Local or long-distance connections." },
+        { title: "Community Features", description: "Forums, interest-based groups, event listings. Local munches, kink events, workshops, discussion groups. Community layer adds depth beyond pure dating — learn, discuss, connect." }
       ],
+      pricingIntro: "FetishFinder pricing follows the standard niche dating model with a limited free tier and premium subscriptions that unlock full functionality.",
       pricingDetails: [
-        { plan: "Free", price: "Free", features: ["Basic listing", "Messaging", "Standard visibility"] },
-        { plan: "Premium", price: "Varies", features: ["Enhanced visibility", "Featured listings", "Priority support"] }
+        { plan: "Free", price: "Free", features: ["Create profile", "Set kink preferences", "Browse limited results", "See who is online"] },
+        { plan: "Premium", price: "~$29.99/mo", features: ["Unlimited messaging", "Advanced search filters", "See who viewed you", "Priority placement", "Full community access", "Discounts for 3-month (~$24.99/mo) and 6-month (~$19.99/mo)"] },
+        { plan: "VIP", price: "~$49.99/mo", features: ["Everything in Premium", "Highlighted profile", "VIP badge", "Top search placement", "Verified status", "Priority support"] }
       ],
-      scores: [{ label: "Content Quality", score: 7.5 }, { label: "User Interface", score: 7.0 }, { label: "Value for Money", score: 8.0 }, { label: "Privacy & Safety", score: 7.5 }, { label: "Features", score: 7.5 }],
-      pros: ["Broader fetish categories beyond feet", "Active community forums", "Free to start selling", "Good buyer engagement"],
-      cons: ["Smaller than FeetFinder", "Interface could be modernized", "Less brand recognition", "Variable buyer quality"],
-      whoShouldUse: [{ persona: "Multi-niche fetish creators", reason: "Supports various fetish categories", ideal: true }, { persona: "Feet-only creators", reason: "FeetFinder has larger feet-specific audience", ideal: false }],
+      pricingOutro: "Is FetishFinder free? You can create a profile and browse for free, but meaningful interaction requires premium. The free tier is genuinely useful for evaluating user availability in your area before paying, which is important for a niche platform where density varies by location.",
+      scores: [
+        { label: "Content Quality", score: 7.5, description: "Genuine user base of serious enthusiasts. Profile quality higher than generic adult dating due to detailed setup. Real people with real interests, not bots or scammers." },
+        { label: "User Interface", score: 7.0, description: "Functional, well-organized for fetish discovery. Search and filtering strongest element. Not as modern as mainstream apps. Some visual modernization would help." },
+        { label: "Value for Money", score: 7.0, description: "Premium at $29.99 standard for niche dating. Free tier limited but useful for evaluation. Long-term discounts improve value significantly." },
+        { label: "Privacy & Safety", score: 8.5, description: "Strongest privacy in fetish dating. Anonymous browsing, photo locks, visibility management, discreet billing. Essential features well-implemented. Genuinely excels here." },
+        { label: "Features", score: 7.5, description: "Kink matching, detailed profiles, privacy controls, messaging with media, location search, community forums, groups, events. Comprehensive for niche platform." }
+      ],
+      pros: [
+        "Kink-based matching eliminates mainstream awkwardness",
+        "Detailed profiles make compatibility clear before messaging",
+        "Strongest privacy controls in fetish dating",
+        "Genuine community of serious enthusiasts",
+        "Location-based search with adjustable radius",
+        "Community forums, groups, and event listings add depth"
+      ],
+      cons: [
+        "Premium at $29.99/month standard but not cheap",
+        "Free tier too limited for meaningful interaction",
+        "No native mobile app",
+        "User base smaller than FetLife in many areas",
+        "Interface needs visual modernization",
+        "User density varies significantly by location"
+      ],
+      prosConsNote: "Is FetishFinder legit? Yes — functioning platform with real users, genuine kink community, and working features. The subscription model aligns business interests with maintaining community quality.",
+      privacyIntro: "Privacy and safety are especially critical for a fetish dating platform where users share sensitive personal information about sexual interests.",
+      whoShouldUse: [
+        { persona: "People who know their kink interests", reason: "Matching eliminates guesswork. Every match starts with confirmed shared interests.", ideal: true },
+        { persona: "Privacy-conscious users needing discretion", reason: "Most comprehensive privacy controls available in fetish dating", ideal: true },
+        { persona: "Users wanting both dating and community", reason: "Forums, groups, events add social dimension beyond pure hookup apps", ideal: true },
+        { persona: "Kink-curious users just exploring", reason: "Detailed setup and premium pricing are heavy investment for casual exploration. Try FetLife first.", ideal: false },
+        { persona: "Users in rural or low-population areas", reason: "Density varies. Check free tier first to evaluate local availability.", ideal: false }
+      ],
       alternatives: ["feetfinder", "snifffr", "sofia-gray"],
-      comparisons: [],
-      faqs: [
-        { question: "What types of content can I sell on FetishFinder?", answer: "FetishFinder supports various fetish content categories including feet, worn items, custom videos, and more." },
-        { question: "Is FetishFinder free?", answer: "Yes, basic selling is free. Premium features are available for enhanced visibility." },
-        { question: "How does FetishFinder compare to FeetFinder?", answer: "FetishFinder offers broader categories but has a smaller audience than FeetFinder for feet-specific content." }
+      comparisons: [
+        { slug: "fetishfinder-vs-fetlife", title: "FetishFinder vs FetLife" },
+        { slug: "fetishfinder-vs-feeld", title: "FetishFinder vs Feeld" },
+        { slug: "fetishfinder-vs-alt-com", title: "FetishFinder vs Alt.com" }
       ],
-      finalVerdict: "FetishFinder is a solid choice for creators who want to sell across multiple fetish categories. While not the leader in any single niche, its breadth and community features make it a good complement to more specialized platforms."
+      faqs: [
+        { question: "Is FetishFinder legit?", answer: "Yes. Functioning platform with real users, genuine kink community, working features. Operating for multiple years with growing user base of serious enthusiasts." },
+        { question: "Is FetishFinder safe?", answer: "Yes. Strongest privacy in fetish dating: anonymous browsing, photo locks, visibility management, discreet billing. Comprehensive safety framework for sensitive content." },
+        { question: "How much does FetishFinder cost?", answer: "Free to browse. Premium ~$29.99/mo with discounts for 3-month (~$24.99/mo) and 6-month (~$19.99/mo). VIP ~$49.99/mo for maximum visibility." },
+        { question: "Does FetishFinder have an app?", answer: "No native app due to content policies. Mobile website responsive and functional. Save to home screen for app-like experience." },
+        { question: "What fetish categories are supported?", answer: "Comprehensive: BDSM, foot fetish, role-play, dom/sub, leather, latex, voyeurism, exhibitionism, and many more. One of the most detailed category systems." },
+        { question: "FetishFinder vs FetLife?", answer: "Different purposes. FetishFinder for dating and hookups with kink matching. FetLife for community, discussion, education, events. Many use both together." },
+        { question: "Can I browse anonymously?", answer: "Yes. Full anonymous browsing. Others cannot see you viewed their profile. Photo locks and visibility settings provide additional discretion layers." },
+        { question: "How to delete FetishFinder account?", answer: "Account settings > Delete. Cancel subscription first. Support can process via email if needed." },
+        { question: "Best FetishFinder alternatives?", answer: "FetLife for community (not dating), Feeld for couples/ENM, Alt.com for BDSM dating, Flirt4Free for fetish cam entertainment." },
+        { question: "Does FetishFinder work internationally?", answer: "Yes. Available globally. Most active in US, UK, Canada, Australia, Western Europe. Density varies — check free tier first." }
+      ],
+      finalVerdict: "FetishFinder fills a genuine gap that mainstream apps cannot address. When dating priorities include kink compatibility, privacy, and connecting with people who share your interests, no mainstream app provides what FetishFinder offers. Kink-based matching, detailed profiles, and comprehensive privacy controls create a purpose-built fetish dating experience. Limitations are expected for niche: density varies, interface needs polish, free tier limited, premium pricing standard. Our recommendation: if you know your kink interests, FetishFinder is the best dedicated platform. Use free tier to evaluate area, upgrade to Premium for serious engagement. Consider alongside FetLife — FetLife for community, FetishFinder for dating. The combination covers social and romantic sides of the fetish experience."
     },
     {
       name: "Footly", slug: "footly", category: "Creator Platforms", score: 7.6,
