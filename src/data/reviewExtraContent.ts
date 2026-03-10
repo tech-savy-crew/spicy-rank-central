@@ -102,6 +102,16 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Functional but not as visually polished as Candy.ai or CrushOn.ai. Character library browsing works well with categories, search, tags, popularity sorting. Chat interface is clean but basic — avatar, message thread, input field. Prioritizes features and accessibility over visual polish.",
     mobileExperience: "No native GirlfriendGPT app on iOS/Android. Mobile-responsive website works adequately for text-based chat. Character browsing and chatting function on phones. Save to home screen for quick access. Desktop more comfortable for extended sessions.",
   },
+  "snifffr": {
+    gettingStarted: "Email registration. Sellers verify identity (24-48 hours). Create profile, write bio, upload photos, list items. Registration to first listing takes 1-2 days including verification.",
+    interfaceNavigation: "Clean, organized, professional design. Homepage features sellers, new listings, category navigation. Seller profiles well-structured with bio, listings, ratings, reviews. Listing creation straightforward. Messaging functional with history. Does not feel amateur — takes the niche seriously.",
+    mobileExperience: "No native Snifffr app on iOS/Android. Mobile-responsive website works well for browsing, messaging, managing listings. Marketplace translates cleanly to phone screens. Desktop more comfortable for managing multiple listings.",
+  },
+  "fetishfinder": {
+    gettingStarted: "Five to ten minutes — longer than mainstream apps because kink preference setup is detailed. Age verification required. Onboarding asks about fetish interests, experience level, and goals upfront. Select from dozens of categories, indicate experience for each, define hard and soft limits. Detailed setup pays off in match quality.",
+    interfaceNavigation: "Functional, organized around search and discovery. Dashboard shows matches, messages, profile views, nearby active users. Profile pages detailed with kink preferences prominent alongside photos and bio. Search system is strongest element — filter by fetish category, experience, distance, age, relationship type. Not as visually polished as mainstream apps but well-organized for purpose.",
+    mobileExperience: "No native FetishFinder app due to app store content policies. Mobile website responsive and functional for browsing, messaging, account management. Save to home screen for app-like experience. Desktop more comfortable for detailed profile editing and search filtering.",
+  },
 };
 const privacyCardOverrides: Record<string, TrustCard[]> = {
   "candy-ai": [
@@ -194,6 +204,18 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "NSFW Content Gating", description: "Some restrictions on free tier. Full unrestricted on paid plans. Paywall serves as soft verification layer." },
     { icon: "credit-card", title: "Data Handling", description: "Privacy policy covers standard bases. Could be more detailed on conversation data storage, AI training usage, and third-party sharing." },
   ],
+  "snifffr": [
+    { icon: "shield-check", title: "Seller Verification", description: "All sellers must verify identity. Verified badges signal authenticity. Screens out fake accounts. Critical trust driver in this niche." },
+    { icon: "lock", title: "Platform Messaging", description: "All communication through Snifffr's system. Personal info private until both parties choose to share. Message history maintained for reference." },
+    { icon: "eye-off", title: "Discreet Design", description: "Professional design without explicit imagery in navigation. Helps maintain privacy in browser history and shared devices." },
+    { icon: "credit-card", title: "External Payment Risk", description: "Main safety concern. Payments handled outside platform via PayPal, Venmo, crypto. Snifffr cannot intervene in payment disputes. Use trusted payment methods." },
+  ],
+  "fetishfinder": [
+    { icon: "eye-off", title: "Anonymous Browsing", description: "Browse without revealing identity. Others cannot see you viewed their profile unless you choose. Essential for discreet exploration." },
+    { icon: "lock", title: "Photo Privacy Locks", description: "Granular photo privacy. Lock specific photos requiring your explicit approval. Critical for identifiable or explicit photos." },
+    { icon: "shield-check", title: "Profile Visibility Management", description: "Control exactly who sees your profile. Hide from search, limit to specific user types, visible only to matches. Complete authority over presence." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. FetishFinder name not visible. Protects privacy in shared financial situations." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
@@ -212,6 +234,8 @@ const privacyOverrides: Record<string, string> = {
   "jerkmate": "Is Jerkmate safe? Yes — standard security protections are in place including encryption, verification, and discreet billing. Is Jerkmate legit? Absolutely — the platform is a real, functioning business with professional operations. The aggressive advertising creates a perception problem, but the actual product delivers a genuine cam experience. Is Jerkmate a scam? No. There are legitimate criticisms about pricing and the misleading ads, but the platform itself operates transparently.",
   "replika": "Is Replika safe? Yes — technical security exceeds most AI companions thanks to app store compliance. Is Replika legit? Absolutely — years of operations, millions of users. The trust issue is about feature reliability, not legitimacy.",
   "girlfriendgpt": "Is GirlfriendGPT safe? Yes, with standard security meeting expectations. Is it legit? Yes — functioning platform with real AI, community engagement, and genuine features. Is it a scam? No — the free tier alone proves real value before asking for payment, which is a strong trust signal.",
+  "snifffr": "Is Snifffr safe? Yes, with caveat that external payments carry inherent risk. Verification, messaging, and discreet design create reasonably safe environment. Is Snifffr legit? Absolutely — established, verified marketplace with genuine community. Is it a scam? No — transparent business model based on subscriptions, not hidden fees.",
+  "fetishfinder": "Is FetishFinder safe? Yes — strongest privacy protections in fetish dating space. Anonymous browsing, photo locks, visibility controls, discreet billing create comprehensive framework. Is FetishFinder legit? Absolutely — real users, genuine community, transparent business. Is it a scam? No — delivers exactly what promised: dedicated, privacy-focused fetish dating.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -319,6 +343,20 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Be Specific When Creating Custom Characters", description: "Detailed backstories, specific traits, conversation preferences. More detail = better AI performance." },
     { title: "Upgrade to Plus for the Real Experience", description: "Quality jump from free to Plus at $9.99 is significant and worth the modest investment." },
     { title: "Use as Your Testing Ground", description: "Discover preferences here, then make informed decisions about premium platforms like CrushOn.ai or Candy.ai." },
+  ],
+  "snifffr": [
+    { title: "Invest in Your Seller Profile", description: "Detailed bio, quality photos, professional presentation. Completed profiles convert dramatically better." },
+    { title: "List Consistently", description: "2-3 new listings per week minimum. Fresh listings get more visibility. Rotate inventory, offer seasonal items." },
+    { title: "Respond to Messages Quickly", description: "Buyer interest fades fast. Quick responses build trust and encourage repeat purchases." },
+    { title: "Offer Custom Options", description: "Specific wearing duration, activities, packaging command premium prices. Make custom availability clear in profile." },
+    { title: "Cross-Promote on Social Media", description: "Reddit communities, Twitter, other platforms. External traffic significantly boosts visibility and sales." },
+  ],
+  "fetishfinder": [
+    { title: "Be Honest and Detailed in Kink Preferences", description: "Matching works best with specific interests and boundaries. Vague profiles get vague matches. Platform rewards honesty." },
+    { title: "Use Free Tier to Evaluate Your Area", description: "Check active user count before committing to premium. Density varies significantly by location." },
+    { title: "Set Privacy Controls Before Activating Profile", description: "Configure anonymous browsing, photo locks, visibility settings first. Especially important if discretion matters." },
+    { title: "Engage with Community Features", description: "Forums, groups, events are underused but valuable. Build reputation, increase visibility, meet people in lower-pressure context." },
+    { title: "Balance Kink and Personality in Your Profile", description: "Best profiles combine kink information with personality — humor, communication style, interests outside kink. More engaging and attracts better matches." },
   ],
 };
 
