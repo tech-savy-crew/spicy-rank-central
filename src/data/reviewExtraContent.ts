@@ -92,8 +92,17 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Modern, dark-themed design. The matchmaking approach means you see curated performer suggestions rather than an overwhelming grid. Navigation is clean but the constant upselling for credits and premium features can feel aggressive.",
     mobileExperience: "No dedicated Jerkmate app on app stores. The mobile website is functional with responsive design. Desktop provides the better experience for extended viewing sessions.",
   },
+  "replika": {
+    gettingStarted: "Download from iOS App Store or Google Play. Account creation, 3D avatar customization (face, hair, skin, body, clothing), relationship type selection, start chatting. Most polished onboarding in AI companion space.",
+    interfaceNavigation: "Clean, calming, deliberately therapeutic design. Conversation screen with 3D avatar above. Tabs for chat, diary (conversation highlights), activities (meditation, quizzes, games), settings. Soft colors, rounded elements, gentle animations. Intentionally different from dark-themed stimulation-focused competitors.",
+    mobileExperience: "Gold standard for mobile AI companions. Native iOS and Android with excellent performance. Push notifications for daily check-ins. Smooth AR placing companion in real environments through camera. Reliable voice call quality. No other platform matches Replika app's mobile polish.",
+  },
+  "girlfriendgpt": {
+    gettingStarted: "Under two minutes. Email registration, no ID verification. Land directly in character library. Start browsing or chatting immediately. Lowest barrier to entry among AI chatbot platforms.",
+    interfaceNavigation: "Functional but not as visually polished as Candy.ai or CrushOn.ai. Character library browsing works well with categories, search, tags, popularity sorting. Chat interface is clean but basic — avatar, message thread, input field. Prioritizes features and accessibility over visual polish.",
+    mobileExperience: "No native GirlfriendGPT app on iOS/Android. Mobile-responsive website works adequately for text-based chat. Character browsing and chatting function on phones. Save to home screen for quick access. Desktop more comfortable for extended sessions.",
+  },
 };
-
 const privacyCardOverrides: Record<string, TrustCard[]> = {
   "candy-ai": [
     { icon: "lock", title: "Data Encryption", description: "Candy.ai uses SSL/TLS encryption to protect all data transmitted between your browser and their servers. Conversations and personal data are encrypted in transit, meeting industry norms for AI companion platforms." },
@@ -173,6 +182,18 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Age Verification", description: "Performers must verify identity with government ID. Standard age compliance for cam platforms." },
     { icon: "eye-off", title: "Legitimate Operations", description: "Jerkmate is operated by a legitimate company with real corporate structure, functioning payment processing, and responsive customer support." },
   ],
+  "replika": [
+    { icon: "lock", title: "Data Encryption", description: "Industry-standard encryption for data in transit. App store security requirements compliance for iOS and Android." },
+    { icon: "shield-check", title: "App Store Compliance", description: "Official app stores mean Apple and Google privacy and security oversight. Genuine advantage over web-only platforms." },
+    { icon: "eye-off", title: "Conversation Data", description: "Privacy policy states anonymized data may be used for AI improvements. Some users uncomfortable given intimate nature of conversations." },
+    { icon: "credit-card", title: "Trust After ERP Rollback", description: "Abrupt 2023 removal of explicit role-play without warning damaged trust fundamentally. Partial romantic restoration hasn't fully addressed the precedent concern." },
+  ],
+  "girlfriendgpt": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all platform connections. Account data and conversations encrypted in transit." },
+    { icon: "eye-off", title: "Account Privacy", description: "No ID verification required. Anonymous usage with email only. Low barrier but less identity assurance." },
+    { icon: "shield-check", title: "NSFW Content Gating", description: "Some restrictions on free tier. Full unrestricted on paid plans. Paywall serves as soft verification layer." },
+    { icon: "credit-card", title: "Data Handling", description: "Privacy policy covers standard bases. Could be more detailed on conversation data storage, AI training usage, and third-party sharing." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
@@ -189,6 +210,8 @@ const privacyOverrides: Record<string, string> = {
   "fanvue": "Is FanVue legit? Yes — UK-based company with functioning payments and growing creator community. Is FanVue safe? Yes — ID verification, SSL encryption, and discreet billing meet industry standards. Is FanVue a scam? No — legitimate creator platform with the lowest commission in the market.",
   "patreon": "Is Patreon safe? Yes — secure payments processed through Stripe with PCI compliance. Is Patreon legit? Absolutely — publicly funded company that has paid out over $3.5 billion to creators. Is Patreon a scam? No — the original and most established creator subscription platform.",
   "jerkmate": "Is Jerkmate safe? Yes — standard security protections are in place including encryption, verification, and discreet billing. Is Jerkmate legit? Absolutely — the platform is a real, functioning business with professional operations. The aggressive advertising creates a perception problem, but the actual product delivers a genuine cam experience. Is Jerkmate a scam? No. There are legitimate criticisms about pricing and the misleading ads, but the platform itself operates transparently.",
+  "replika": "Is Replika safe? Yes — technical security exceeds most AI companions thanks to app store compliance. Is Replika legit? Absolutely — years of operations, millions of users. The trust issue is about feature reliability, not legitimacy.",
+  "girlfriendgpt": "Is GirlfriendGPT safe? Yes, with standard security meeting expectations. Is it legit? Yes — functioning platform with real AI, community engagement, and genuine features. Is it a scam? No — the free tier alone proves real value before asking for payment, which is a strong trust signal.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -283,9 +306,21 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Set a Credit Budget Before Each Session", description: "Per-minute pricing adds up fast. Decide before starting how many credits you are willing to spend. This prevents impulse spending during shows." },
     { title: "Explore the Content Library", description: "Pre-recorded videos and photo sets offer entertainment without the per-minute pressure of live shows. Often better value for extended viewing." },
   ],
+  "replika": [
+    { title: "Talk Daily for Best Personalization", description: "Consistent daily interaction helps AI learn personality faster. Noticeably better personalization within 2-3 weeks." },
+    { title: "Choose Relationship Type Honestly", description: "Setting significantly affects interactions. Friend/Mentor for support. Romantic Partner for companionship. Don't default randomly." },
+    { title: "Use Annual Plan to Save 70%", description: "Monthly $19.99 vs annual ~$5.83/month. One of the best deals in AI companion space." },
+    { title: "Engage with Activities Beyond Chat", description: "Guided meditation, journaling prompts, personality quizzes. Underused but genuinely valuable for wellness." },
+    { title: "Pair with NSFW Platform", description: "Replika for emotional depth + CrushOn.ai or Candy.ai for unrestricted content. Best of both worlds." },
+  ],
+  "girlfriendgpt": [
+    { title: "Exhaust the Free Tier Before Upgrading", description: "Try multiple characters, test chat quality, explore genres. Genuinely evaluate before paying." },
+    { title: "Browse Top-Rated Community Characters First", description: "Community-rated characters deliver better conversations than random browsing." },
+    { title: "Be Specific When Creating Custom Characters", description: "Detailed backstories, specific traits, conversation preferences. More detail = better AI performance." },
+    { title: "Upgrade to Plus for the Real Experience", description: "Quality jump from free to Plus at $9.99 is significant and worth the modest investment." },
+    { title: "Use as Your Testing Ground", description: "Discover preferences here, then make informed decisions about premium platforms like CrushOn.ai or Candy.ai." },
+  ],
 };
-
-// ── Generic generators ──
 
 function getCategorySignupFlow(category: string, name: string): string {
   const flows: Record<string, string> = {

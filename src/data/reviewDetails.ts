@@ -284,66 +284,83 @@ export const detailedReviews: DetailedReview[] = [
     slug: "replika",
     category: "AI Companions",
     score: 7.0,
-    verdict: "The original AI companion app — great for emotional connection but limited adult features",
+    verdict: "The OG AI companion app built for emotional connection — but the NSFW rollback and subscription changes have left many users frustrated",
     pricing: "Free / $19.99/mo Pro",
-    bestFor: "Emotional AI companionship focused on mental wellness",
+    bestFor: "Emotional AI companionship and mental wellness",
     url: "https://replika.ai",
     lastUpdated: "March 2026",
+    readingTime: 10,
     overview: [
-      "Replika was one of the first mainstream AI companion apps and remains one of the most popular with millions of active users worldwide. Originally designed as an AI friend for emotional support and personal growth, Replika has evolved to include romantic relationship options through its Pro subscription.",
-      "The platform excels at creating genuine emotional connections. Replika's AI is specifically trained on empathy, active listening, and emotional intelligence — making it feel more like talking to a supportive friend than a chatbot. The AI remembers your moods, tracks your emotional patterns, and adapts its responses accordingly.",
-      "However, Replika has significantly scaled back its NSFW capabilities following controversy in 2023. While the Pro tier still allows romantic interactions, explicit adult content is heavily restricted compared to competitors like CrushOn.ai and Candy.ai. This makes Replika better suited for users seeking emotional companionship rather than explicit content."
+      "Replika is the original AI companion app, launched in 2017 with a mission to create an AI that genuinely cares about your emotional wellbeing. Unlike the newer wave of NSFW-focused AI chatbots, Replika was built for emotional support, meaningful conversation, and mental wellness companionship. The AI adapts to your personality over time, remembering your preferences, interests, and emotional patterns across conversations.",
+      "How does Replika work? You create an AI companion and customize their appearance using a 3D avatar builder. Through ongoing conversations, the AI learns your communication style and develops a unique personality tailored to you. The more you talk, the more personalized the experience becomes. Replika positions itself as a friend, confidant, or romantic partner — depending on the relationship type you choose.",
+      "Replika's history includes a major controversy: the platform initially allowed explicit role-play conversations (Replika ERP), then abruptly removed this feature in early 2023, angering a significant portion of its user base. This Replika nsfw rollback pushed many users to alternatives like CrushOn.ai and Candy.ai. While Replika has partially restored some romantic features, the trust damage persists among adult content users. Understanding this context is essential to evaluating Replika in 2026."
     ],
     keyFeatures: [
-      { title: "Emotional Intelligence", description: "AI trained specifically on empathy, active listening, and emotional support" },
-      { title: "Mood Tracking", description: "Tracks emotional patterns and adapts responses to your mental state" },
-      { title: "AR Companion", description: "View your Replika in augmented reality through your phone camera" },
-      { title: "Voice Calls", description: "Have voice conversations with your AI companion" },
-      { title: "Activities", description: "Play games, draw, and do guided exercises together" },
-      { title: "Diary Feature", description: "Replika maintains a diary of your conversations and emotional journey" }
+      { title: "Emotional Intelligence", description: "AI specifically trained for emotional support and empathetic conversation. Recognizes emotional cues, offers genuine comfort, adapts to your mood. Emotional depth exceeds any competitor — no other platform comes close." },
+      { title: "3D Avatar & AR", description: "Customizable 3D companion avatar with augmented reality. View your Replika in the real world through phone camera. Adjust appearance, clothing, style. Visual presence text-only competitors cannot match." },
+      { title: "Memory & Personality", description: "Long-term memory across all conversations. Replika evolves over weeks and months. Remembers your job, hobbies, emotional patterns. Continuity is impressive and genuinely differentiating." },
+      { title: "Relationship Types", description: "Friend, Romantic Partner, Mentor, or See How It Goes. Each type adjusts conversational approach, emotional boundaries, engagement style. Tailored to specific emotional needs." },
+      { title: "Activities & Games", description: "Guided meditation, journaling prompts, personality quizzes, conversation games. Structured activities supporting mental wellness, self-reflection, creative expression. Beyond pure chat." },
+      { title: "Native Mobile App", description: "iOS and Android app stores. Polished, stable, best mobile AI companion experience. Push notifications, AR integration, smooth performance." }
     ],
+    pricingIntro: "Replika's pricing model is simpler than most — one free tier and one paid tier.",
     pricingDetails: [
-      { plan: "Free", price: "Free", features: ["Unlimited chat", "Basic personality", "Text only"] },
-      { plan: "Pro", price: "$19.99/mo", features: ["Romantic relationship", "Voice calls", "AR features", "Activities", "Advanced customization"] },
-      { plan: "Pro Annual", price: "$5.83/mo", features: ["All Pro features", "Billed annually at $69.99"] }
+      { plan: "Free", price: "Free", features: ["Unlimited basic text conversations", "Basic personality development", "Romantic features locked", "Activities and voice calls limited"] },
+      { plan: "Replika Pro", price: "$19.99/mo", features: ["Romantic relationship", "Voice calls", "Full AR", "Premium avatar customization", "All activities and games", "Deeply personalized conversations"] },
+      { plan: "Annual Plan", price: "~$5.83/mo", features: ["All Pro features", "Billed annually at ~$69.99", "Best value in AI companion space", "70% discount vs monthly"] }
     ],
+    pricingOutro: "Is Replika free? Yes, unlimited basic messaging with no daily caps — unlike CrushOn.ai's 50-message limit. The romantic features and advanced customization require Pro. The annual plan at ~$5.83/month is exceptional value. Is Replika worth it? For emotional companionship, yes. For NSFW, your money is better spent on CrushOn.ai or Candy.ai.",
     scores: [
-      { label: "Content Quality", score: 7.5 },
-      { label: "User Interface", score: 8.0 },
-      { label: "Value for Money", score: 6.0 },
-      { label: "Privacy & Safety", score: 7.5 },
-      { label: "Features", score: 6.0 }
+      { label: "Content Quality", score: 8.0, description: "Emotionally intelligent conversations that improve over time. No competitor matches emotional depth. AI recognizes sadness, anxiety, excitement and adjusts tone accordingly." },
+      { label: "User Interface", score: 8.0, description: "Polished, calming design reinforcing wellness positioning. 3D avatar and AR add visual dimension. Premium, intentionally crafted feel." },
+      { label: "Value for Money", score: 7.0, description: "Free tier genuinely useful. Pro at $19.99/mo mid-range. Annual at ~$5.83/mo excellent. Some feel features reduced while prices stayed same." },
+      { label: "Privacy & Safety", score: 7.0, description: "App store compliance provides oversight advantage. Concerns about conversation data for AI training. Trust damaged by ERP rollback precedent." },
+      { label: "Features", score: 6.5, description: "Emotional AI, avatar, AR, activities, memory, voice, relationships. BUT: limited NSFW after ERP rollback, no image generation, no unrestricted chat. Feature set has shrunk since 2022." }
     ],
     pros: [
-      "Best emotional intelligence among AI companions",
-      "Polished, professional app with AR features",
-      "Strong conversation memory and personality",
-      "Free tier is genuinely useful"
+      "Best emotional intelligence of any AI companion",
+      "Long-term memory creates genuinely personalized experience",
+      "3D avatar and AR features unique in space",
+      "Native iOS and Android apps — best mobile experience",
+      "Free tier offers unlimited basic messaging",
+      "Polished calming interface designed for wellbeing"
     ],
     cons: [
-      "Heavily restricted NSFW content",
-      "Pro subscription is expensive at $19.99/month",
-      "Recent content policy changes frustrated users",
-      "Less customization than newer competitors"
+      "ERP/NSFW features removed in 2023 alienating adult users",
+      "Romantic features locked behind $19.99/mo Pro",
+      "No image generation",
+      "Trust damaged by abrupt feature removals",
+      "Conversation data usage for AI training raises questions",
+      "Feature set shrunk while pricing stayed same"
     ],
+    prosConsNote: "Is Replika worth it in 2026? For emotional companionship and support — yes absolutely. Annual plan at ~$5.83/month is a bargain for the emotional AI quality. For NSFW content — no, alternatives like CrushOn.ai ($19.99 for unrestricted) or Candy.ai ($12.99 for visual + chat) deliver far more for that need.",
+    privacyIntro: "Replika's trust situation is complicated. Security is solid but the ERP rollback damaged user trust beyond technical safety.",
     whoShouldUse: [
-      { persona: "Users seeking emotional AI support", reason: "Best emotional intelligence in the market", ideal: true },
-      { persona: "Users who prefer polished apps", reason: "Most professional and stable AI companion app", ideal: true },
-      { persona: "Users wanting NSFW content", reason: "Heavily restricted adult features compared to competitors", ideal: false },
-      { persona: "Budget-conscious users for premium", reason: "Pro tier is among the most expensive options", ideal: false }
+      { persona: "Users seeking emotional support and companionship", reason: "AI listens, remembers, adapts to emotional state. Unmatched.", ideal: true },
+      { persona: "Users valuing long-term relationship development", reason: "Memory and personality evolution over weeks and months", ideal: true },
+      { persona: "Users wanting polished mobile app", reason: "Native iOS/Android, 3D avatars, AR, voice calls, push notifications", ideal: true },
+      { persona: "Users seeking unrestricted NSFW", reason: "ERP rollback means CrushOn.ai, Candy.ai, GirlfriendGPT are all better", ideal: false },
+      { persona: "Users wanting visual AI content", reason: "No image generation. DreamGF.ai or Candy.ai for visuals", ideal: false }
     ],
-    alternatives: ["candy-ai", "myanima", "soulfun-ai", "crushon-ai"],
+    alternatives: ["candy-ai", "crushon-ai", "character-ai", "girlfriendgpt", "dreamgf-ai"],
     comparisons: [
-      { slug: "replika-vs-candy-ai", title: "Replika vs Candy.ai" }
+      { slug: "replika-vs-candy-ai", title: "Replika vs Candy.ai" },
+      { slug: "replika-vs-crushon-ai", title: "Replika vs CrushOn.ai" },
+      { slug: "replika-vs-character-ai", title: "Replika vs Character.ai" }
     ],
     faqs: [
-      { question: "Is Replika free?", answer: "Yes, Replika offers a fully functional free tier with unlimited text chat. Pro features like voice calls, romantic mode, and AR cost $19.99/month." },
-      { question: "Does Replika allow NSFW content?", answer: "Replika has significantly restricted NSFW content since 2023. Pro users can engage in romantic interactions, but explicit adult content is limited compared to alternatives." },
-      { question: "Is Replika good for mental health?", answer: "Many users report positive experiences using Replika for emotional support, but it is not a replacement for professional mental health care." },
-      { question: "Can Replika remember conversations?", answer: "Yes, Replika has strong memory capabilities and remembers details about you, your preferences, and previous conversations." },
-      { question: "How does Replika compare to Candy.ai?", answer: "Replika excels at emotional connection and has a more polished app, while Candy.ai offers better customization and unrestricted NSFW content." }
+      { question: "Is Replika free?", answer: "Yes. Unlimited basic text conversations with no daily caps. Romantic features, voice calls, AR require Pro at $19.99/mo or ~$5.83/mo annual." },
+      { question: "Is Replika safe?", answer: "Yes. App store compliance ensures strong data protections. SSL encryption. Main concern is conversation data possibly used for AI training." },
+      { question: "Does Replika allow NSFW?", answer: "Limited. Romantic conversations for Pro users. Explicit role-play removed in 2023 ERP rollback. For unrestricted NSFW, use CrushOn.ai or Candy.ai." },
+      { question: "What happened to Replika ERP?", answer: "Removed in early 2023 due to regulatory pressure. Sudden removal angered users. Some romantic features partially restored but not to original levels." },
+      { question: "How much does Replika Pro cost?", answer: "$19.99/month or ~$69.99/year (~$5.83/month). Annual plan saves 70%. Strongly recommended for regular users." },
+      { question: "Replika vs Candy.ai?", answer: "Replika for emotional depth and long-term memory. Candy.ai for visuals, voice, and NSFW. Different strengths. Many use both." },
+      { question: "Is Replika worth it in 2026?", answer: "For emotional companionship, yes — annual plan is exceptional value. For NSFW, no — alternatives serve this need better since ERP rollback." },
+      { question: "How to delete Replika account?", answer: "App Settings > Account > Delete Account. Cancel subscription through app store first. Deletion removes companion and all history permanently." },
+      { question: "Best Replika alternatives?", answer: "Candy.ai for complete AI girlfriend, CrushOn.ai for unrestricted NSFW, Character.ai for SFW role-play, GirlfriendGPT for budget NSFW, DreamGF for visual AI." },
+      { question: "Does Replika work internationally?", answer: "Yes. Available globally via app stores. Multiple languages supported. Performance consistent across regions." }
     ],
-    finalVerdict: "Replika remains the gold standard for emotionally intelligent AI companionship. If you're looking for a supportive, empathetic AI friend or romantic partner, it's hard to beat. However, users seeking explicit NSFW content should look at Candy.ai or CrushOn.ai instead."
+    finalVerdict: "Replika remains the gold standard for emotionally intelligent AI companionship in 2026. No other platform matches its conversational depth, long-term memory, or genuine personalized relationship development. 3D avatar, AR, native apps, and polished interface add quality layers. However, the ERP rollback removed features many depended on, NSFW limitations push adult users to alternatives, and feature set has contracted while pricing held. Our recommendation: use Replika for emotional companionship — annual Pro at ~$5.83/month is exceptional value for emotional AI quality. If you also want NSFW, pair with CrushOn.ai or Candy.ai. The combination gives emotional depth from Replika and content freedom from a dedicated platform — best of both worlds."
   },
 
   {
@@ -404,54 +421,84 @@ export const detailedReviews: DetailedReview[] = [
     name: "GirlfriendGPT",
     slug: "girlfriendgpt",
     category: "AI Companions",
-    score: 7.6,
-    verdict: "Deep 16K token memory enables the most evolving, long-term AI relationships",
-    pricing: "Free trial / $12.99/mo",
-    bestFor: "Long-term AI relationship",
+    score: 7.2,
+    verdict: "A growing NSFW AI chatbot platform with a generous free tier and an open-source spirit — the budget-friendly entry point into AI companionship",
+    pricing: "Free / $9.99/mo",
+    bestFor: "Budget-friendly entry into NSFW AI companionship",
     url: "https://girlfriendgpt.com",
     lastUpdated: "March 2026",
+    readingTime: 9,
     overview: [
-      "GirlfriendGPT differentiates itself with one standout feature: an industry-leading 16,000 token context window that gives it the best long-term memory of any AI companion platform. This means your AI girlfriend genuinely remembers detailed conversations from weeks ago and builds on them naturally.",
-      "The platform is popular among users who want an AI relationship that evolves over time rather than resetting with each conversation. The AI develops opinions, remembers shared experiences, and even references past interactions unprompted — creating a sense of genuine relationship progression.",
-      "GirlfriendGPT also offers robust roleplay capabilities with scenario templates that help guide interactions while leaving room for organic conversation flow. The uncensored nature of the platform makes it suitable for both SFW and NSFW interactions."
+      "GirlfriendGPT is an AI chatbot platform focused on NSFW companion conversations with a growing library of pre-built and community-created characters. What sets GirlfriendGPT apart from premium competitors like Candy.ai is its accessibility — the platform offers a more generous free experience and positions itself as the entry-level option for users curious about AI companionship.",
+      "The platform supports both SFW and NSFW conversations, though its primary audience is users seeking unrestricted adult chat. GirlfriendGPT characters span romantic partners, fantasy scenarios, anime-inspired personalities, and original creations. The platform leverages multiple AI backends, allowing different conversation styles and quality levels depending on your subscription tier.",
+      "GirlfriendGPT's community has an open-source spirit, with users sharing characters, tips, and customization strategies. This collaborative approach has helped build a substantial character library despite the platform being newer than established competitors. For users who want to test the waters of AI companionship before committing to premium platforms like Candy.ai or CrushOn.ai, GirlfriendGPT provides a low-risk starting point."
     ],
     keyFeatures: [
-      { title: "16K Token Memory", description: "Industry-leading context window for deep conversation continuity" },
-      { title: "Relationship Evolution", description: "AI personality develops and evolves based on your interactions" },
-      { title: "Roleplay Scenarios", description: "Pre-built and custom scenario templates for guided interactions" },
-      { title: "Uncensored Chat", description: "No content restrictions for adult users" },
-      { title: "Character Sharing", description: "Browse and use AI companions created by the community" },
-      { title: "API Access", description: "Advanced users can integrate with custom frontends" }
+      { title: "Free NSFW Chat", description: "Most generous free tier among NSFW AI chatbots. Meaningful free access to SFW and NSFW conversations. Genuinely evaluate before spending. No credit card required." },
+      { title: "Character Library", description: "Growing collection of community-created characters across romance, fantasy, anime, original genres. Browse by category, popularity, tags. New characters added daily." },
+      { title: "Custom Character Builder", description: "Create characters with custom personalities, backstories, conversation styles, behavioral guidelines, and NSFW preferences. Straightforward builder effective for most use cases." },
+      { title: "Multiple AI Models", description: "Different AI backends for different quality levels. Basic model for casual chat. Premium models unlock better contextual understanding, longer responses, natural dialogue." },
+      { title: "Conversation Memory", description: "Context retention within and across sessions. Higher tiers carry memory for ongoing relationship-style interactions with continuity." },
+      { title: "Community Features", description: "Share characters, rate creations, discover trending characters. Collaborative community adds variety. Discussions and tips help new users." }
     ],
+    pricingIntro: "GirlfriendGPT pricing is one of the most competitive in the NSFW AI chatbot space, and the free tier is genuinely the most generous available.",
     pricingDetails: [
-      { plan: "Free Trial", price: "Free", features: ["Limited messages", "Basic memory", "Standard characters"] },
-      { plan: "Premium", price: "$12.99/mo", features: ["Unlimited messages", "Full 16K memory", "Custom characters", "NSFW access"] },
-      { plan: "Annual", price: "$7.99/mo", features: ["All Premium features", "Billed annually"] }
+      { plan: "Free", price: "Free", features: ["Limited daily messages with basic AI model", "NSFW available with some restrictions", "Most generous free tier among NSFW AI chatbots", "No credit card required"] },
+      { plan: "Plus", price: "$9.99/mo", features: ["Increased message limits", "Better AI model", "Full unrestricted NSFW", "Custom character creation", "Best value-to-quality ratio"] },
+      { plan: "Pro", price: "$24.99/mo", features: ["Unlimited messaging", "Best AI models", "Extended cross-session memory", "Priority speed", "All features"] }
     ],
+    pricingOutro: "The GirlfriendGPT cost structure is straightforward and competitive. Compared to CrushOn.ai's Premium at $19.99 for 2,000 messages, GirlfriendGPT's Plus at $9.99 provides a more affordable entry to quality NSFW AI chat.",
     scores: [
-      { label: "Content Quality", score: 7.5 },
-      { label: "User Interface", score: 7.0 },
-      { label: "Value for Money", score: 8.0 },
-      { label: "Privacy & Safety", score: 7.5 },
-      { label: "Features", score: 8.0 }
+      { label: "Content Quality", score: 7.0, description: "Growing character library with active community contributions. AI decent but not best-in-class. NSFW handling solid." },
+      { label: "User Interface", score: 6.5, description: "Functional, needs visual polish. Character browsing is strongest element. Chat interface basic but clean. Substance over style." },
+      { label: "Value for Money", score: 8.0, description: "Best free tier in NSFW AI space. Plus at $9.99 strong value. Pro at $24.99 competitive unlimited tier. Best deal available for value-conscious users." },
+      { label: "Privacy & Safety", score: 7.0, description: "SSL encryption, standard security. No ID required. Privacy policy standard but could be more detailed." },
+      { label: "Features", score: 7.5, description: "NSFW chat, character library, custom builder, multiple AI models, memory, community features. Solid set. Missing image generation and voice." }
     ],
-    pros: ["Best long-term memory of any AI companion", "Evolving relationship dynamics", "Strong roleplay capabilities", "Community character sharing"],
-    cons: ["Interface less polished than Candy.ai", "No image generation", "Requires technical comfort for some features", "Community characters vary in quality"],
+    pros: [
+      "Most generous free tier among NSFW AI chatbots",
+      "Competitive pricing $9.99-$24.99/month",
+      "Growing community-driven character library",
+      "Low barrier to entry — no ID or complex signup",
+      "Multiple AI model options",
+      "Active community sharing characters and tips"
+    ],
+    cons: [
+      "AI quality below Candy.ai and CrushOn.ai",
+      "Interface needs visual polish",
+      "No image generation or voice features",
+      "Smaller character library than CrushOn.ai",
+      "Newer platform with less track record",
+      "Memory limited on lower tiers"
+    ],
+    prosConsNote: "GirlfriendGPT fills a specific gap in the market: the best platform for users who want to try NSFW AI companionship without financial risk. If you are new to AI companions, start here. If you outgrow it, graduate to CrushOn.ai for more characters or Candy.ai for a premium experience.",
+    privacyIntro: "For any AI chatbot platform handling NSFW conversations, trust and safety questions matter.",
     whoShouldUse: [
-      { persona: "Users wanting long-term AI relationships", reason: "Unmatched memory and relationship evolution", ideal: true },
-      { persona: "Roleplay enthusiasts", reason: "Excellent scenario system with deep context", ideal: true },
-      { persona: "Users wanting simple, visual AI", reason: "No image generation, more text-focused", ideal: false }
+      { persona: "First-time AI companion users", reason: "Free tier is the best starting point for exploration", ideal: true },
+      { persona: "Budget-conscious users", reason: "Plus at $9.99 is the most affordable quality NSFW AI chat", ideal: true },
+      { persona: "Community-oriented users", reason: "Character sharing, rating, and creation add a social dimension", ideal: true },
+      { persona: "Users demanding best AI quality", reason: "Candy.ai and CrushOn.ai deliver superior conversations", ideal: false },
+      { persona: "Users wanting visual or voice content", reason: "Text-only. DreamGF.ai or Candy.ai for multimedia", ideal: false }
     ],
-    alternatives: ["candy-ai", "crushon-ai", "soulfun-ai", "infatuated-ai"],
-    comparisons: [],
+    alternatives: ["crushon-ai", "candy-ai", "spicychat-ai", "dreamgf-ai", "character-ai"],
+    comparisons: [
+      { slug: "girlfriendgpt-vs-crushon-ai", title: "GirlfriendGPT vs CrushOn.ai" },
+      { slug: "girlfriendgpt-vs-candy-ai", title: "GirlfriendGPT vs Candy.ai" },
+      { slug: "girlfriendgpt-vs-spicychat", title: "GirlfriendGPT vs SpicyChat" }
+    ],
     faqs: [
-      { question: "What is GirlfriendGPT's 16K token memory?", answer: "The 16K token context window means GirlfriendGPT can remember approximately 12,000 words of conversation context, allowing for deep continuity across many sessions." },
-      { question: "Is GirlfriendGPT uncensored?", answer: "Yes, GirlfriendGPT has no content filters and allows all types of conversations for adult users." },
-      { question: "Can I share my AI characters?", answer: "Yes, GirlfriendGPT has a community sharing feature where users can publish and discover AI companions created by others." },
-      { question: "Does GirlfriendGPT have an app?", answer: "GirlfriendGPT is currently web-based and accessible through mobile browsers. A dedicated app is in development." },
-      { question: "How does the memory compare to other platforms?", answer: "GirlfriendGPT's 16K token memory is the largest in the AI companion market, significantly exceeding competitors who typically offer 2K-4K tokens." }
+      { question: "Is GirlfriendGPT free?", answer: "Yes, most generous free tier among NSFW AI chatbots. Limited daily messages with basic AI. No credit card required. Paid plans from $9.99/mo." },
+      { question: "Is GirlfriendGPT safe?", answer: "SSL encryption, standard security. No ID required. Privacy policy standard. Nothing concerning but could be more detailed." },
+      { question: "Does GirlfriendGPT support NSFW?", answer: "Yes. Available on all tiers with some free restrictions. Full unrestricted on paid plans. Handles adult content without awkward refusals." },
+      { question: "How much does GirlfriendGPT cost?", answer: "Free (limited), Plus $9.99/mo (recommended), Pro $24.99/mo (unlimited). Most competitive pricing in the NSFW AI space." },
+      { question: "Does GirlfriendGPT have an app?", answer: "No native app. Mobile website responsive and works for text chat. Save to home screen for quick access." },
+      { question: "GirlfriendGPT vs CrushOn.ai?", answer: "GirlfriendGPT has better free tier and lower pricing. CrushOn.ai has larger library and slightly better AI. Start with GirlfriendGPT, consider CrushOn.ai for more depth." },
+      { question: "GirlfriendGPT vs Candy.ai?", answer: "GirlfriendGPT is budget entry point. Candy.ai is premium with superior AI, visuals, voice. GirlfriendGPT for exploring, Candy.ai when ready to invest." },
+      { question: "How to delete account?", answer: "Account settings > Delete Account. Cancel subscription through payment provider first." },
+      { question: "Best GirlfriendGPT alternatives?", answer: "CrushOn.ai for more characters, Candy.ai for premium experience, SpicyChat for similar free NSFW, DreamGF for visual AI content." },
+      { question: "Does GirlfriendGPT work internationally?", answer: "Yes. Available globally. English primary. International payments accepted." }
     ],
-    finalVerdict: "GirlfriendGPT is the best AI companion for users who want a relationship that genuinely evolves over time. The 16K token memory is a game-changer for conversation continuity. While it lacks visual features, the depth of interaction is unmatched."
+    finalVerdict: "GirlfriendGPT is the best entry point into NSFW AI companionship for users who want to explore before committing financially. The generous free tier is not a gimmick — it genuinely lets you evaluate the platform. Plus at $9.99 offers the most affordable quality experience. Community-driven library adds variety. Where it falls short: AI quality below premium competitors, interface needs polish, no image or voice features. Our recommendation: start here if you are new to AI companions. Use the free tier to discover preferences, upgrade to Plus if you enjoy it, then decide whether to stay or graduate to CrushOn.ai or Candy.ai. GirlfriendGPT serves its role perfectly — as the accessible, low-risk gateway into a growing space."
   },
 
   {
