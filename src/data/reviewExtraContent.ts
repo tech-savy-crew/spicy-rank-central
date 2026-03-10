@@ -344,6 +344,20 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Upgrade to Plus for the Real Experience", description: "Quality jump from free to Plus at $9.99 is significant and worth the modest investment." },
     { title: "Use as Your Testing Ground", description: "Discover preferences here, then make informed decisions about premium platforms like CrushOn.ai or Candy.ai." },
   ],
+  "snifffr": [
+    { title: "Invest in Your Seller Profile", description: "Detailed bio, quality photos, professional presentation. Completed profiles convert dramatically better." },
+    { title: "List Consistently", description: "2-3 new listings per week minimum. Fresh listings get more visibility. Rotate inventory, offer seasonal items." },
+    { title: "Respond to Messages Quickly", description: "Buyer interest fades fast. Quick responses build trust and encourage repeat purchases." },
+    { title: "Offer Custom Options", description: "Specific wearing duration, activities, packaging command premium prices. Make custom availability clear in profile." },
+    { title: "Cross-Promote on Social Media", description: "Reddit communities, Twitter, other platforms. External traffic significantly boosts visibility and sales." },
+  ],
+  "fetishfinder": [
+    { title: "Be Honest and Detailed in Kink Preferences", description: "Matching works best with specific interests and boundaries. Vague profiles get vague matches. Platform rewards honesty." },
+    { title: "Use Free Tier to Evaluate Your Area", description: "Check active user count before committing to premium. Density varies significantly by location." },
+    { title: "Set Privacy Controls Before Activating Profile", description: "Configure anonymous browsing, photo locks, visibility settings first. Especially important if discretion matters." },
+    { title: "Engage with Community Features", description: "Forums, groups, events are underused but valuable. Build reputation, increase visibility, meet people in lower-pressure context." },
+    { title: "Balance Kink and Personality in Your Profile", description: "Best profiles combine kink information with personality — humor, communication style, interests outside kink. More engaging and attracts better matches." },
+  ],
 };
 
 function getCategorySignupFlow(category: string, name: string): string {
