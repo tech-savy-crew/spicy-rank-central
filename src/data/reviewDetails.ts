@@ -1235,6 +1235,172 @@ export const detailedReviews: DetailedReview[] = [
     ],
     finalVerdict: "Stripchat is what Chaturbate would look like if it were built today. The modern interface, VR support, AI recommendations, and superior mobile experience make it the most technically advanced free cam site available. It earns a slightly lower score than Chaturbate primarily because of its smaller traffic base — fewer viewers means fewer performers and a less diverse selection at any given moment. For viewers who value modern design and want to experience VR cams, Stripchat is the clear choice. For performers, it offers better payouts but a smaller audience. For the overall cam experience, Chaturbate's scale still edges ahead, but Stripchat is closing the gap rapidly."
   },
+  {
+    name: "BongaCams",
+    slug: "bongacams",
+    category: "Live Cam Sites",
+    score: 7.0,
+    verdict: "Europe's largest free cam site with aggressive promotions, competitive performer payouts, and a massive Eastern European model roster",
+    pricing: "Free / Tokens from $1.99",
+    bestFor: "European performer variety",
+    url: "https://bongacams.com",
+    lastUpdated: "March 2026",
+    readingTime: 9,
+    overview: [
+      "BongaCams is one of the world's largest free live cam platforms, headquartered in Europe and particularly dominant in Eastern European markets. The platform follows the same freemium model as Chaturbate — free public broadcasts supported by token tips and private shows. What distinguishes BongaCams is its massive European performer base, aggressive promotional strategy, and competitive payouts that attract and retain high-quality models from across the continent.",
+      "How does BongaCams work? Performers broadcast live streams that viewers can watch completely free of charge. Viewers purchase BongaCams tokens to tip performers during shows, activate connected interactive toys, and pay for private one-on-one sessions. The platform earns its revenue by selling tokens at a markup over what performers receive, keeping the difference as its commission.",
+      "BongaCams has built its reputation through aggressive marketing — pop-up ads, banner campaigns, and promotional offers that appear across adult websites globally. While this marketing approach can feel pushy, the actual platform behind the ads is legitimate and functional. The performer roster is particularly strong in the European market, with thousands of models from Russia, Ukraine, Romania, Colombia, and other countries broadcasting simultaneously. For viewers who prefer European performers, BongaCams offers the strongest selection available among major cam sites."
+    ],
+    keyFeatures: [
+      { title: "Free Live Cams", description: "All public broadcasts completely free. No registration required for basic viewing. Browse full performer grid, enter any public room, watch shows without account or money. Zero-barrier model drives massive daily traffic." },
+      { title: "Token System", description: "BongaCams tokens for all paid interactions — tipping, toy activation, private sessions, gifts. Token bundles competitively priced with Chaturbate. Frequent promotional offers with bonus tokens on purchases." },
+      { title: "Private Shows", description: "One-on-one sessions at per-minute rates. Cam-to-cam available. Group shows offer affordable alternative with multiple viewers splitting cost." },
+      { title: "Interactive Toys", description: "Lovense and connected toy support. Tip-activated vibrations and responses in real-time. Physical interactive element beyond standard broadcasts." },
+      { title: "BongaCams VIP Membership", description: "Monthly membership removes all ads, enables invisible browsing, unlocks custom emoticons, provides private messaging, adds VIP badge. Significantly cleans up the cluttered free interface." },
+      { title: "European Performer Focus", description: "Strongest European performer roster among all major cam sites. Dominant in Eastern European, Russian, Ukrainian, Romanian, and Colombian communities. Widest and deepest European selection available." }
+    ],
+    pricingIntro: "BongaCams pricing is structured around its token system for viewers and a tiered payout system for performers.",
+    pricingDetails: [
+      { plan: "Free Viewing", price: "Free", features: ["All public broadcasts free", "No account or tokens required for watching", "Free account enables chat, following, notifications"] },
+      { plan: "Token Bundles", price: "From $1.99", features: ["17 tokens = $1.99 (intro offer)", "45 = $4.99", "100 = $9.99", "250 = $24.99", "500 = $49.99", "Frequent promotional offers with bonus tokens"] },
+      { plan: "BongaCams VIP", price: "~$33.99/mo", features: ["Ad-free viewing", "Invisible mode", "Custom emoticons", "Private messaging", "VIP badge"] }
+    ],
+    pricingOutro: "**FOR PERFORMERS:**\nTiered commission with top performers earning up to 60% of token value. New performer bonuses and promotional support. Bi-weekly payout processing via wire transfer, Paxum, and e-wallets.\n\nIs BongaCams free? Yes, core viewing is completely free. Tokens only needed for paid interaction — tipping, toys, private shows. Cost for active viewers depends entirely on how much interaction they want beyond free watching.",
+    scores: [
+      { label: "Content Quality", score: 7.5, description: "Strong European performer variety. Professional stream quality with good production from established models. European specialization is genuine content advantage." },
+      { label: "User Interface", score: 6, description: "Biggest weakness. Promotional clutter makes platform feel less trustworthy than it is. Core browsing works. VIP membership fixes ads. First impression poor." },
+      { label: "Value for Money", score: 7.5, description: "Free viewing genuine and unrestricted. Token pricing competitive. Frequent promotional discounts. Intro bundle at $1.99 is low-risk test." },
+      { label: "Privacy & Safety", score: 7, description: "SSL encryption, performer verification, discreet billing. Standard protections for major cam platform. Pop-ups are promotional not security threats." },
+      { label: "Features", score: 7, description: "Free cams, tokens, toys, private shows, group shows, VIP, European roster. Solid standard cam functionality. Promotional elements are distractions not features." }
+    ],
+    pros: [
+      "Strongest European performer roster among all major cam sites",
+      "Completely free viewing with no registration",
+      "Competitive token pricing with frequent promos",
+      "Competitive performer payouts attract quality models",
+      "Interactive toy integration",
+      "VIP membership cleans up ad clutter"
+    ],
+    cons: [
+      "Interface cluttered with aggressive promotions and pop-ups",
+      "Marketing approach feels spam-like and damages brand perception",
+      "Smaller global traffic than Chaturbate",
+      "VIP at $33.99/month expensive just to remove ads",
+      "No native mobile app",
+      "First impression can feel untrustworthy"
+    ],
+    prosConsNote: "Is BongaCams legit? Yes — absolutely. Behind the aggressive marketing is a legitimate, well-established cam platform with years of operation and millions of daily users. The marketing may feel spammy, but the product itself is functional and legitimate.",
+    privacyIntro: "BongaCams' aggressive marketing creates a trust perception problem that the actual platform does not deserve.",
+    whoShouldUse: [
+      { persona: "Viewers preferring European performers", reason: "Widest and deepest European selection available. No competitor matches this roster.", ideal: true },
+      { persona: "Budget-conscious viewers wanting free live entertainment", reason: "Completely free with no registration required.", ideal: true },
+      { persona: "Token buyers wanting promotional discounts", reason: "More frequent promotions than most competitors.", ideal: true },
+      { persona: "Users valuing clean ad-free interface", reason: "Promotional clutter will test patience. Stripchat is cleaner. VIP at $33.99 is expensive fix.", ideal: false },
+      { persona: "Users wanting largest global performer selection", reason: "Chaturbate has more total traffic and variety across all regions.", ideal: false }
+    ],
+    alternatives: ["chaturbate", "stripchat", "livejasmin", "camsoda"],
+    comparisons: [
+      { slug: "bongacams-vs-chaturbate", title: "BongaCams vs Chaturbate" },
+      { slug: "bongacams-vs-stripchat", title: "BongaCams vs Stripchat" },
+      { slug: "bongacams-vs-livejasmin", title: "BongaCams vs LiveJasmin" }
+    ],
+    faqs: [
+      { question: "Is BongaCams free?", answer: "Yes. All public broadcasts completely free. No registration required. Tokens only for tipping, toys, private shows. Unlimited free watching." },
+      { question: "Is BongaCams safe?", answer: "Yes. SSL encryption, performer verification, discreet billing. Pop-ups are marketing not security threats. Millions of safe daily transactions." },
+      { question: "Is BongaCams legit?", answer: "Yes. One of the largest cam platforms globally. Years of operation, millions of users, real performers earning real money. Marketing is aggressive but platform is legitimate." },
+      { question: "How much do BongaCams tokens cost?", answer: "17 tokens = $1.99 (intro), 45 = $4.99, 100 = $9.99, 250 = $24.99, 500 = $49.99. Frequent promotional bonus offers on larger purchases." },
+      { question: "Does BongaCams have an app?", answer: "No native app. Mobile website functional but promotional clutter is intrusive on small screens. Desktop recommended." },
+      { question: "BongaCams vs Chaturbate?", answer: "BongaCams has stronger European roster and more frequent promos. Chaturbate has more global traffic, greater variety, cleaner interface. European preference = BongaCams. Overall = Chaturbate." },
+      { question: "How much do performers earn?", answer: "Up to 60% of token value for top performers. Tiered payouts. New performer bonuses. Bi-weekly processing." },
+      { question: "What is BongaCams VIP?", answer: "~$33.99/month. Ad-free viewing, invisible mode, custom emoticons, messaging, VIP badge. Primarily valuable for removing interface clutter." },
+      { question: "Best BongaCams alternatives?", answer: "Chaturbate for global scale, Stripchat for modern design and VR, LiveJasmin for premium HD, CamSoda for innovation." },
+      { question: "Does BongaCams work internationally?", answer: "Yes. Available globally with strong European presence. International payment methods supported. Performer activity varies by time zone." }
+    ],
+    finalVerdict: "BongaCams is a legitimate major cam platform that suffers from a self-inflicted perception problem caused by aggressive marketing. Behind the pop-ups is a genuinely strong cam site with the best European performer roster, competitive token pricing, fair payouts, and real free entertainment value. Interface clutter is frustrating and VIP at $33.99 feels like paying to fix the platform's own problem. Our recommendation: if you prefer European performers, BongaCams offers the strongest selection. Use an ad blocker for free viewing. Take advantage of intro token offers. Consider VIP only for daily use. For the broadest overall cam experience, Chaturbate's scale still leads — but for European content, BongaCams is the clear market leader."
+  },
+  {
+    name: "CamSoda",
+    slug: "camsoda",
+    category: "Live Cam Sites",
+    score: 7.0,
+    verdict: "The most innovative free cam site with voyeur mode, AR features, and real-time interaction technology that competitors have not matched",
+    pricing: "Free / Tokens from $5.99",
+    bestFor: "Innovative cam features",
+    url: "https://camsoda.com",
+    lastUpdated: "March 2026",
+    readingTime: 9,
+    overview: [
+      "CamSoda is a free live cam platform that differentiates itself through technological innovation. While Chaturbate dominates the cam space with sheer scale and Stripchat leads in VR capabilities, CamSoda has carved out its own niche as the most experimental and feature-forward cam site in the market. The platform pioneered voyeur cams — real-time feeds from performers' homes that run around the clock — and has invested in augmented reality filters, real-time translation, and interactive features that competitors simply have not matched.",
+      "How does CamSoda work? The core model is the same as other free cam sites: performers broadcast live video streams, viewers watch for free, and CamSoda tokens are used for tipping performers, activating interactive toys, and paying for private one-on-one shows. Where CamSoda genuinely differs is in the additional features layered on top of this standard model. CamSoda voyeur mode lets you watch performers going about their natural daily routines in real-time, not just during scheduled performances. AR filters add visual effects and playful elements to live streams. And the private show recording feature lets you save sessions for later viewing.",
+      "CamSoda's user base is smaller than Chaturbate's or Stripchat's, which means fewer simultaneous performers are live at any given time. But what the platform lacks in raw scale, it genuinely attempts to make up for with innovation and unique experiences that you cannot find anywhere else. If you have been watching cam sites for years and everything starts to feel the same, CamSoda is the platform most likely to surprise you with something new."
+    ],
+    keyFeatures: [
+      { title: "Voyeur Cams", description: "CamSoda's signature feature. Real-time, around-the-clock feeds from performers' homes. Authentic, unscripted daily moments — cooking, relaxing, watching TV. Fly-on-the-wall experience unique in the cam industry and unavailable at this scale on any competitor." },
+      { title: "Free Live Cams", description: "Standard free public broadcasts with tip-based interaction. Performers go live, viewers watch free, tokens for tipping, toys, and private sessions." },
+      { title: "AR Filters & Effects", description: "Augmented reality filters performers apply to live streams. Playful cosmetic effects to themed visual overlays. Fun, experimental personality that distinguishes from traditional cam sites." },
+      { title: "Interactive Toys", description: "Lovense and connected device support. Tip-activated vibrations and responses. Physical interactive dimension beyond static content. Reliable integration and popular paid feature." },
+      { title: "Private Shows", description: "One-on-one sessions with cam-to-cam at per-minute rates. Exclusive personal experience with performer's full attention. Rates vary by performer popularity." },
+      { title: "Private Show Recording", description: "Record private sessions for later viewing. Revisit favorites without repurchasing. Saved to account, accessible anytime. Genuinely useful feature most competitors lack." }
+    ],
+    pricingIntro: "CamSoda pricing follows the standard token-based model used by most free cam sites.",
+    pricingDetails: [
+      { plan: "Free Viewing", price: "Free", features: ["All public broadcasts and voyeur cams completely free", "No account required for basic viewing", "Free account enables chat, following, notifications"] },
+      { plan: "Token Bundles", price: "From $5.99", features: ["50 tokens = $5.99", "100 = $10.99", "200 = $20.99", "550 = $49.99", "800 = $69.99", "Larger bundles = better per-token value"] },
+      { plan: "Premium Membership", price: "~$19.95/mo", features: ["Ad-free viewing", "Anonymous tipping", "Private messaging", "Optional — free experience fully functional without it"] }
+    ],
+    pricingOutro: "**FOR PERFORMERS:**\nFree to broadcast. ~55% of token value payout. Competitive with industry averages. Regular payout schedule with multiple payment methods.\n\nIs CamSoda free? Yes, core viewing — public broadcasts and voyeur cams — is completely free with no registration required. Tokens only needed for tipping, toys, and private shows. The voyeur cam feature adds unique free content value that competitors do not match.",
+    scores: [
+      { label: "Content Quality", score: 7, description: "Smaller performer roster but voyeur cams add genuinely unique content. Professional stream quality good. Amateur quality inconsistent. Innovation in content types partially compensates for smaller scale." },
+      { label: "User Interface", score: 7, description: "Clean, modern dark theme focused on content. Voyeur section well-organized. More contemporary than Chaturbate, cleaner than BongaCams. Pleasant browsing experience." },
+      { label: "Value for Money", score: 7, description: "Free viewing works with unique voyeur content. Token pricing mid-range. Premium at $19.95 reasonable. Private show recording adds genuine value to token spending." },
+      { label: "Privacy & Safety", score: 7, description: "SSL encryption, performer verification, discreet billing. Standard for major cam sites. Premium adds anonymous tipping. Nothing exceptional but nothing concerning." },
+      { label: "Features", score: 7.5, description: "Voyeur cams, AR filters, interactive toys, private shows with recording, clean interface. Most innovative feature set among cam sites. Genuinely differentiating." }
+    ],
+    pros: [
+      "Voyeur cams genuinely unique — 24/7 feeds unavailable elsewhere",
+      "AR filters push cam innovation forward",
+      "Free viewing includes standard broadcasts AND voyeur cams",
+      "Clean modern interface more contemporary than most competitors",
+      "Private show recording for revisiting favorites",
+      "Competitive ~55% performer payout"
+    ],
+    cons: [
+      "Significantly smaller performer roster than Chaturbate or Stripchat",
+      "Streaming quality inconsistent from amateur performers",
+      "Fewer performers online especially during off-peak",
+      "No native mobile app",
+      "Voyeur cam selection limited by time of day",
+      "AR filters feel gimmicky rather than essential"
+    ],
+    prosConsNote: "CamSoda vs Chaturbate — which is better? Chaturbate wins on scale, variety, and volume of content. CamSoda wins on innovation, unique features like voyeur cams, and interface design. Most content for free = Chaturbate. Something genuinely different = CamSoda.",
+    privacyIntro: "CamSoda maintains standard security and privacy protections meeting expectations for a major cam platform.",
+    whoShouldUse: [
+      { persona: "Viewers wanting something genuinely different", reason: "Voyeur cams and AR offer experiences competitors do not have.", ideal: true },
+      { persona: "Voyeur content enthusiasts", reason: "Only major cam platform offering 24/7 real-time home feeds at scale.", ideal: true },
+      { persona: "Viewers valuing clean modern interface", reason: "Significantly better design than BongaCams and more contemporary than Chaturbate.", ideal: true },
+      { persona: "Viewers prioritizing performer variety above all", reason: "Chaturbate's scale is unmatched for sheer selection.", ideal: false },
+      { persona: "Viewers in uncommon time zones seeking peak selection", reason: "Smaller roster means thinner selection during off-peak hours.", ideal: false }
+    ],
+    alternatives: ["chaturbate", "stripchat", "bongacams", "livejasmin"],
+    comparisons: [
+      { slug: "camsoda-vs-chaturbate", title: "CamSoda vs Chaturbate" },
+      { slug: "camsoda-vs-stripchat", title: "CamSoda vs Stripchat" },
+      { slug: "camsoda-vs-bongacams", title: "CamSoda vs BongaCams" }
+    ],
+    faqs: [
+      { question: "Is CamSoda free?", answer: "Yes. Public broadcasts and voyeur cams completely free. No registration required. Tokens only for tipping, toys, private shows. Voyeur feature adds unique free content." },
+      { question: "Is CamSoda safe?", answer: "Yes. SSL encryption, performer verification, discreet billing. Standard for major cam sites. Premium adds anonymous tipping." },
+      { question: "Is CamSoda legit?", answer: "Yes. Operating for years with real user base, functioning payments, genuine innovative features. Voyeur and AR capabilities work as described." },
+      { question: "How much do CamSoda tokens cost?", answer: "50 = $5.99, 100 = $10.99, 200 = $20.99, 550 = $49.99, 800 = $69.99. Larger bundles offer better value. Occasional new user promos." },
+      { question: "Does CamSoda have an app?", answer: "No native app. Mobile website responsive and functional. Desktop preferred for extended viewing. Save to home screen." },
+      { question: "What is CamSoda voyeur mode?", answer: "24/7 real-time feeds from performers' homes. Authentic daily moments, not scheduled shows. Unique to CamSoda and unavailable on any other major platform." },
+      { question: "Can I record private shows?", answer: "Yes. Paid feature saving sessions for later viewing. Stored in account, accessible anytime. Genuine value add most competitors lack." },
+      { question: "CamSoda vs Chaturbate?", answer: "CamSoda wins on innovation (voyeur, AR, recording). Chaturbate wins on scale (more performers, traffic, variety). Different strengths for different preferences." },
+      { question: "Best CamSoda alternatives?", answer: "Chaturbate for largest selection, Stripchat for modern design and VR, BongaCams for European performers, LiveJasmin for premium HD quality." },
+      { question: "Does CamSoda work internationally?", answer: "Yes. Available globally. International payment methods supported. Performer availability varies by time zone — best during US and European evenings." }
+    ],
+    finalVerdict: "CamSoda is the most innovative cam site available in 2026 and genuinely pushes boundaries. Voyeur cams are unique and fascinating. AR filters add experimental fun. Private show recording provides ongoing value. The limitations are about scale — fewer performers, inconsistent amateur quality, thinner off-peak selection. Our recommendation: use CamSoda as your secondary or exploratory cam alongside Chaturbate or Stripchat. Voyeur cams and innovative features provide experiences unavailable elsewhere, making CamSoda valuable as a complement to larger platforms. Start with free voyeur cams to experience what makes it unique, then decide if innovation justifies regular use. For viewers craving something different from standard cam formula, CamSoda is the most interesting option available."
+  },
   ...generateLiveCamReviews(),
 
   // ─── DATING & HOOKUP APPS ───
