@@ -112,6 +112,16 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Functional, organized around search and discovery. Dashboard shows matches, messages, profile views, nearby active users. Profile pages detailed with kink preferences prominent alongside photos and bio. Search system is strongest element — filter by fetish category, experience, distance, age, relationship type. Not as visually polished as mainstream apps but well-organized for purpose.",
     mobileExperience: "No native FetishFinder app due to app store content policies. Mobile website responsive and functional for browsing, messaging, account management. Save to home screen for app-like experience. Desktop more comfortable for detailed profile editing and search filtering.",
   },
+  "bongacams": {
+    gettingStarted: "Under two minutes with email. No registration required for basic viewing. Performers need age/identity verification (24-48 hours). Zero barrier for viewers.",
+    interfaceNavigation: "BongaCams' weakest area. Cluttered with promotional banners, pop-ups, and upgrade offers creating visually noisy experience. Core functionality works beneath the clutter — performer grid sorted by viewer count, category tabs, search filtering. Performer rooms include chat, tip menus, interactive features. VIP membership removes promotional noise. Functional but first impression is poor compared to Stripchat or Chaturbate.",
+    mobileExperience: "No native BongaCams app on iOS/Android. Mobile website functional for browsing and watching. Promotional elements especially intrusive on smaller screens. Desktop provides significantly better experience.",
+  },
+  "camsoda": {
+    gettingStarted: "Under two minutes with email. No account needed for basic viewing — watch immediately. Performers need age/ID verification (24-48 hours).",
+    interfaceNavigation: "Clean, modern, dark-themed design. Homepage presents performer grid with voyeur section prominently featured. Straightforward navigation with category filtering, search, trending sections. Voyeur section well-organized with clear activity thumbnails. Significantly cleaner than BongaCams' cluttered design. More contemporary than Chaturbate's dated interface.",
+    mobileExperience: "No native CamSoda app on iOS/Android. Mobile website responsive and functional for browsing, watching, tipping. Voyeur experience translates reasonably to smaller screens. Desktop preferred for extended sessions and multi-stream browsing. Save to home screen for quick access.",
+  },
 };
 const privacyCardOverrides: Record<string, TrustCard[]> = {
   "candy-ai": [
@@ -216,6 +226,18 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Profile Visibility Management", description: "Control exactly who sees your profile. Hide from search, limit to specific user types, visible only to matches. Complete authority over presence." },
     { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. FetishFinder name not visible. Protects privacy in shared financial situations." },
   ],
+  "bongacams": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption across entire platform. Account data, chat, and payments encrypted in transit. Standard security for major cam platforms." },
+    { icon: "shield-check", title: "Performer Verification", description: "All performers verify age and identity with government documentation before broadcasting. Ensures content compliance and reduces underage risk." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. BongaCams name not visible. Billing discretion for token purchases and VIP." },
+    { icon: "eye-off", title: "Pop-Up Reality", description: "Aggressive pop-ups and banners are promotional marketing, not security threats. Annoying and visually intrusive but not malware, phishing, or scams. VIP removes them." },
+  ],
+  "camsoda": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all data transfers — account info, chat, payments. Standard implementation for the cam industry." },
+    { icon: "shield-check", title: "Performer Verification", description: "All performers verify age and identity with government documentation. Ensures regulatory compliance and underage protection." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. CamSoda name not visible on financial records. Billing discretion for viewers." },
+    { icon: "eye-off", title: "Anonymous Viewing", description: "Premium membership includes anonymous tipping. Basic free viewing already anonymous since no account required." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
@@ -236,6 +258,8 @@ const privacyOverrides: Record<string, string> = {
   "girlfriendgpt": "Is GirlfriendGPT safe? Yes, with standard security meeting expectations. Is it legit? Yes — functioning platform with real AI, community engagement, and genuine features. Is it a scam? No — the free tier alone proves real value before asking for payment, which is a strong trust signal.",
   "snifffr": "Is Snifffr safe? Yes, with caveat that external payments carry inherent risk. Verification, messaging, and discreet design create reasonably safe environment. Is Snifffr legit? Absolutely — established, verified marketplace with genuine community. Is it a scam? No — transparent business model based on subscriptions, not hidden fees.",
   "fetishfinder": "Is FetishFinder safe? Yes — strongest privacy protections in fetish dating space. Anonymous browsing, photo locks, visibility controls, discreet billing create comprehensive framework. Is FetishFinder legit? Absolutely — real users, genuine community, transparent business. Is it a scam? No — delivers exactly what promised: dedicated, privacy-focused fetish dating.",
+  "bongacams": "Is BongaCams safe? Yes — standard security, millions of safe daily transactions. Is BongaCams legit? Absolutely — one of the largest cam platforms globally with years of operation. Is it a scam? No — aggressive marketing creates perception problem but platform operates legitimately.",
+  "camsoda": "Is CamSoda safe? Yes — standard security consistent with major cam sites. Is CamSoda legit? Yes — operating for years with real user base and functioning payments. Is it a scam? No — delivers exactly what promised: free cams with innovative voyeur, AR, and recording features.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -357,6 +381,20 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Set Privacy Controls Before Activating Profile", description: "Configure anonymous browsing, photo locks, visibility settings first. Especially important if discretion matters." },
     { title: "Engage with Community Features", description: "Forums, groups, events are underused but valuable. Build reputation, increase visibility, meet people in lower-pressure context." },
     { title: "Balance Kink and Personality in Your Profile", description: "Best profiles combine kink information with personality — humor, communication style, interests outside kink. More engaging and attracts better matches." },
+  ],
+  "bongacams": [
+    { title: "Use an Ad Blocker for Free Viewing", description: "Standard ad blocker removes much promotional noise. Makes free experience significantly more pleasant without paying for VIP." },
+    { title: "Take Advantage of Introductory Token Offers", description: "New users get first bundle at ~$1.99 for 17 tokens. Cheapest way to test paid features before larger purchases." },
+    { title: "Watch for Token Promotions", description: "Frequent bonus token offers on purchases. Wait for promotions to buy larger bundles. 20-50% additional value possible." },
+    { title: "Create Free Account for Full Chat Access", description: "Free and takes under two minutes. Enables chat, following performers, notifications when favorites go live." },
+    { title: "Consider VIP Only If Regular User", description: "$33.99/month expensive for occasional use. For daily users, ad-free experience and invisible mode genuinely improve quality." },
+  ],
+  "camsoda": [
+    { title: "Start with the Voyeur Cam Section", description: "This makes CamSoda unique. Experience the 24/7 feeds before standard shows. Primary reason to use CamSoda over competitors." },
+    { title: "Use Private Show Recording", description: "Always enable recording for private shows. Revisit sessions without repurchasing. Genuine value add to token spending." },
+    { title: "Buy Tokens in Larger Bundles", description: "Per-token cost decreases with larger purchases. 550 ($49.99) and 800 ($69.99) bundles offer best value for regular users." },
+    { title: "Create Free Account Even for Free Viewing", description: "Enables chat, following, notifications. Following favorites means alerts when they go live — especially useful with smaller performer count." },
+    { title: "Browse During Peak Hours", description: "US and European evening hours offer most variety. Off-peak can have limited selection. Try peak times for best experience." },
   ],
 };
 
