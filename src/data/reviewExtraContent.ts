@@ -216,6 +216,18 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "Profile Visibility Management", description: "Control exactly who sees your profile. Hide from search, limit to specific user types, visible only to matches. Complete authority over presence." },
     { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. FetishFinder name not visible. Protects privacy in shared financial situations." },
   ],
+  "bongacams": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption across entire platform. Account data, chat, and payments encrypted in transit. Standard security for major cam platforms." },
+    { icon: "shield-check", title: "Performer Verification", description: "All performers verify age and identity with government documentation before broadcasting. Ensures content compliance and reduces underage risk." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. BongaCams name not visible. Billing discretion for token purchases and VIP." },
+    { icon: "eye-off", title: "Pop-Up Reality", description: "Aggressive pop-ups and banners are promotional marketing, not security threats. Annoying and visually intrusive but not malware, phishing, or scams. VIP removes them." },
+  ],
+  "camsoda": [
+    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption for all data transfers — account info, chat, payments. Standard implementation for the cam industry." },
+    { icon: "shield-check", title: "Performer Verification", description: "All performers verify age and identity with government documentation. Ensures regulatory compliance and underage protection." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. CamSoda name not visible on financial records. Billing discretion for viewers." },
+    { icon: "eye-off", title: "Anonymous Viewing", description: "Premium membership includes anonymous tipping. Basic free viewing already anonymous since no account required." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
