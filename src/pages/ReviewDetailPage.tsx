@@ -392,6 +392,22 @@ const ReviewDetailPage = () => {
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-10T00:00:00Z" },
           { property: "article:section", content: "Dating & Hookup Apps" },
+        ] : isBongaCams ? [
+          { name: "keywords", content: "bongacams review, bongacams, is bongacams safe, is bongacams legit, is bongacams free, bongacams tokens, bongacams price, bongacams app, bongacams alternatives, bongacams cost, bongacams models, how does bongacams work, bongacams vs chaturbate, bongacams payout, bongacams vip" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "BongaCams Review 2026 — Best European Free Cam Site?" },
+          { property: "og:description", content: "We tested BongaCams for 30+ days. Full review of free cams, European performers, token pricing, and Chaturbate comparison. 7.0/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-10T00:00:00Z" },
+          { property: "article:section", content: "Live Cam Sites" },
+        ] : isCamSoda ? [
+          { name: "keywords", content: "camsoda review, camsoda, is camsoda safe, is camsoda legit, is camsoda free, camsoda tokens, camsoda price, camsoda app, camsoda alternatives, camsoda cost, camsoda models, how does camsoda work, camsoda voyeur, camsoda vs chaturbate, camsoda private show" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "CamSoda Review 2026 — Most Innovative Free Cam Site?" },
+          { property: "og:description", content: "We tested CamSoda for 30+ days. Full review of voyeur mode, AR features, token pricing, and Chaturbate comparison. 7.0/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-10T00:00:00Z" },
+          { property: "article:section", content: "Live Cam Sites" },
         ] : undefined}
         jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
