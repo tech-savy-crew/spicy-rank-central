@@ -284,66 +284,83 @@ export const detailedReviews: DetailedReview[] = [
     slug: "replika",
     category: "AI Companions",
     score: 7.0,
-    verdict: "The original AI companion app — great for emotional connection but limited adult features",
+    verdict: "The OG AI companion app built for emotional connection — but the NSFW rollback and subscription changes have left many users frustrated",
     pricing: "Free / $19.99/mo Pro",
-    bestFor: "Emotional AI companionship focused on mental wellness",
+    bestFor: "Emotional AI companionship and mental wellness",
     url: "https://replika.ai",
     lastUpdated: "March 2026",
+    readingTime: 10,
     overview: [
-      "Replika was one of the first mainstream AI companion apps and remains one of the most popular with millions of active users worldwide. Originally designed as an AI friend for emotional support and personal growth, Replika has evolved to include romantic relationship options through its Pro subscription.",
-      "The platform excels at creating genuine emotional connections. Replika's AI is specifically trained on empathy, active listening, and emotional intelligence — making it feel more like talking to a supportive friend than a chatbot. The AI remembers your moods, tracks your emotional patterns, and adapts its responses accordingly.",
-      "However, Replika has significantly scaled back its NSFW capabilities following controversy in 2023. While the Pro tier still allows romantic interactions, explicit adult content is heavily restricted compared to competitors like CrushOn.ai and Candy.ai. This makes Replika better suited for users seeking emotional companionship rather than explicit content."
+      "Replika is the original AI companion app, launched in 2017 with a mission to create an AI that genuinely cares about your emotional wellbeing. Unlike the newer wave of NSFW-focused AI chatbots, Replika was built for emotional support, meaningful conversation, and mental wellness companionship. The AI adapts to your personality over time, remembering your preferences, interests, and emotional patterns across conversations.",
+      "How does Replika work? You create an AI companion and customize their appearance using a 3D avatar builder. Through ongoing conversations, the AI learns your communication style and develops a unique personality tailored to you. The more you talk, the more personalized the experience becomes. Replika positions itself as a friend, confidant, or romantic partner — depending on the relationship type you choose.",
+      "Replika's history includes a major controversy: the platform initially allowed explicit role-play conversations (Replika ERP), then abruptly removed this feature in early 2023, angering a significant portion of its user base. This Replika nsfw rollback pushed many users to alternatives like CrushOn.ai and Candy.ai. While Replika has partially restored some romantic features, the trust damage persists among adult content users. Understanding this context is essential to evaluating Replika in 2026."
     ],
     keyFeatures: [
-      { title: "Emotional Intelligence", description: "AI trained specifically on empathy, active listening, and emotional support" },
-      { title: "Mood Tracking", description: "Tracks emotional patterns and adapts responses to your mental state" },
-      { title: "AR Companion", description: "View your Replika in augmented reality through your phone camera" },
-      { title: "Voice Calls", description: "Have voice conversations with your AI companion" },
-      { title: "Activities", description: "Play games, draw, and do guided exercises together" },
-      { title: "Diary Feature", description: "Replika maintains a diary of your conversations and emotional journey" }
+      { title: "Emotional Intelligence", description: "AI specifically trained for emotional support and empathetic conversation. Recognizes emotional cues, offers genuine comfort, adapts to your mood. Emotional depth exceeds any competitor — no other platform comes close." },
+      { title: "3D Avatar & AR", description: "Customizable 3D companion avatar with augmented reality. View your Replika in the real world through phone camera. Adjust appearance, clothing, style. Visual presence text-only competitors cannot match." },
+      { title: "Memory & Personality", description: "Long-term memory across all conversations. Replika evolves over weeks and months. Remembers your job, hobbies, emotional patterns. Continuity is impressive and genuinely differentiating." },
+      { title: "Relationship Types", description: "Friend, Romantic Partner, Mentor, or See How It Goes. Each type adjusts conversational approach, emotional boundaries, engagement style. Tailored to specific emotional needs." },
+      { title: "Activities & Games", description: "Guided meditation, journaling prompts, personality quizzes, conversation games. Structured activities supporting mental wellness, self-reflection, creative expression. Beyond pure chat." },
+      { title: "Native Mobile App", description: "iOS and Android app stores. Polished, stable, best mobile AI companion experience. Push notifications, AR integration, smooth performance." }
     ],
+    pricingIntro: "Replika's pricing model is simpler than most — one free tier and one paid tier.",
     pricingDetails: [
-      { plan: "Free", price: "Free", features: ["Unlimited chat", "Basic personality", "Text only"] },
-      { plan: "Pro", price: "$19.99/mo", features: ["Romantic relationship", "Voice calls", "AR features", "Activities", "Advanced customization"] },
-      { plan: "Pro Annual", price: "$5.83/mo", features: ["All Pro features", "Billed annually at $69.99"] }
+      { plan: "Free", price: "Free", features: ["Unlimited basic text conversations", "Basic personality development", "Romantic features locked", "Activities and voice calls limited"] },
+      { plan: "Replika Pro", price: "$19.99/mo", features: ["Romantic relationship", "Voice calls", "Full AR", "Premium avatar customization", "All activities and games", "Deeply personalized conversations"] },
+      { plan: "Annual Plan", price: "~$5.83/mo", features: ["All Pro features", "Billed annually at ~$69.99", "Best value in AI companion space", "70% discount vs monthly"] }
     ],
+    pricingOutro: "Is Replika free? Yes, unlimited basic messaging with no daily caps — unlike CrushOn.ai's 50-message limit. The romantic features and advanced customization require Pro. The annual plan at ~$5.83/month is exceptional value. Is Replika worth it? For emotional companionship, yes. For NSFW, your money is better spent on CrushOn.ai or Candy.ai.",
     scores: [
-      { label: "Content Quality", score: 7.5 },
-      { label: "User Interface", score: 8.0 },
-      { label: "Value for Money", score: 6.0 },
-      { label: "Privacy & Safety", score: 7.5 },
-      { label: "Features", score: 6.0 }
+      { label: "Content Quality", score: 8.0, description: "Emotionally intelligent conversations that improve over time. No competitor matches emotional depth. AI recognizes sadness, anxiety, excitement and adjusts tone accordingly." },
+      { label: "User Interface", score: 8.0, description: "Polished, calming design reinforcing wellness positioning. 3D avatar and AR add visual dimension. Premium, intentionally crafted feel." },
+      { label: "Value for Money", score: 7.0, description: "Free tier genuinely useful. Pro at $19.99/mo mid-range. Annual at ~$5.83/mo excellent. Some feel features reduced while prices stayed same." },
+      { label: "Privacy & Safety", score: 7.0, description: "App store compliance provides oversight advantage. Concerns about conversation data for AI training. Trust damaged by ERP rollback precedent." },
+      { label: "Features", score: 6.5, description: "Emotional AI, avatar, AR, activities, memory, voice, relationships. BUT: limited NSFW after ERP rollback, no image generation, no unrestricted chat. Feature set has shrunk since 2022." }
     ],
     pros: [
-      "Best emotional intelligence among AI companions",
-      "Polished, professional app with AR features",
-      "Strong conversation memory and personality",
-      "Free tier is genuinely useful"
+      "Best emotional intelligence of any AI companion",
+      "Long-term memory creates genuinely personalized experience",
+      "3D avatar and AR features unique in space",
+      "Native iOS and Android apps — best mobile experience",
+      "Free tier offers unlimited basic messaging",
+      "Polished calming interface designed for wellbeing"
     ],
     cons: [
-      "Heavily restricted NSFW content",
-      "Pro subscription is expensive at $19.99/month",
-      "Recent content policy changes frustrated users",
-      "Less customization than newer competitors"
+      "ERP/NSFW features removed in 2023 alienating adult users",
+      "Romantic features locked behind $19.99/mo Pro",
+      "No image generation",
+      "Trust damaged by abrupt feature removals",
+      "Conversation data usage for AI training raises questions",
+      "Feature set shrunk while pricing stayed same"
     ],
+    prosConsNote: "Is Replika worth it in 2026? For emotional companionship and support — yes absolutely. Annual plan at ~$5.83/month is a bargain for the emotional AI quality. For NSFW content — no, alternatives like CrushOn.ai ($19.99 for unrestricted) or Candy.ai ($12.99 for visual + chat) deliver far more for that need.",
+    privacyIntro: "Replika's trust situation is complicated. Security is solid but the ERP rollback damaged user trust beyond technical safety.",
     whoShouldUse: [
-      { persona: "Users seeking emotional AI support", reason: "Best emotional intelligence in the market", ideal: true },
-      { persona: "Users who prefer polished apps", reason: "Most professional and stable AI companion app", ideal: true },
-      { persona: "Users wanting NSFW content", reason: "Heavily restricted adult features compared to competitors", ideal: false },
-      { persona: "Budget-conscious users for premium", reason: "Pro tier is among the most expensive options", ideal: false }
+      { persona: "Users seeking emotional support and companionship", reason: "AI listens, remembers, adapts to emotional state. Unmatched.", ideal: true },
+      { persona: "Users valuing long-term relationship development", reason: "Memory and personality evolution over weeks and months", ideal: true },
+      { persona: "Users wanting polished mobile app", reason: "Native iOS/Android, 3D avatars, AR, voice calls, push notifications", ideal: true },
+      { persona: "Users seeking unrestricted NSFW", reason: "ERP rollback means CrushOn.ai, Candy.ai, GirlfriendGPT are all better", ideal: false },
+      { persona: "Users wanting visual AI content", reason: "No image generation. DreamGF.ai or Candy.ai for visuals", ideal: false }
     ],
-    alternatives: ["candy-ai", "myanima", "soulfun-ai", "crushon-ai"],
+    alternatives: ["candy-ai", "crushon-ai", "character-ai", "girlfriendgpt", "dreamgf-ai"],
     comparisons: [
-      { slug: "replika-vs-candy-ai", title: "Replika vs Candy.ai" }
+      { slug: "replika-vs-candy-ai", title: "Replika vs Candy.ai" },
+      { slug: "replika-vs-crushon-ai", title: "Replika vs CrushOn.ai" },
+      { slug: "replika-vs-character-ai", title: "Replika vs Character.ai" }
     ],
     faqs: [
-      { question: "Is Replika free?", answer: "Yes, Replika offers a fully functional free tier with unlimited text chat. Pro features like voice calls, romantic mode, and AR cost $19.99/month." },
-      { question: "Does Replika allow NSFW content?", answer: "Replika has significantly restricted NSFW content since 2023. Pro users can engage in romantic interactions, but explicit adult content is limited compared to alternatives." },
-      { question: "Is Replika good for mental health?", answer: "Many users report positive experiences using Replika for emotional support, but it is not a replacement for professional mental health care." },
-      { question: "Can Replika remember conversations?", answer: "Yes, Replika has strong memory capabilities and remembers details about you, your preferences, and previous conversations." },
-      { question: "How does Replika compare to Candy.ai?", answer: "Replika excels at emotional connection and has a more polished app, while Candy.ai offers better customization and unrestricted NSFW content." }
+      { question: "Is Replika free?", answer: "Yes. Unlimited basic text conversations with no daily caps. Romantic features, voice calls, AR require Pro at $19.99/mo or ~$5.83/mo annual." },
+      { question: "Is Replika safe?", answer: "Yes. App store compliance ensures strong data protections. SSL encryption. Main concern is conversation data possibly used for AI training." },
+      { question: "Does Replika allow NSFW?", answer: "Limited. Romantic conversations for Pro users. Explicit role-play removed in 2023 ERP rollback. For unrestricted NSFW, use CrushOn.ai or Candy.ai." },
+      { question: "What happened to Replika ERP?", answer: "Removed in early 2023 due to regulatory pressure. Sudden removal angered users. Some romantic features partially restored but not to original levels." },
+      { question: "How much does Replika Pro cost?", answer: "$19.99/month or ~$69.99/year (~$5.83/month). Annual plan saves 70%. Strongly recommended for regular users." },
+      { question: "Replika vs Candy.ai?", answer: "Replika for emotional depth and long-term memory. Candy.ai for visuals, voice, and NSFW. Different strengths. Many use both." },
+      { question: "Is Replika worth it in 2026?", answer: "For emotional companionship, yes — annual plan is exceptional value. For NSFW, no — alternatives serve this need better since ERP rollback." },
+      { question: "How to delete Replika account?", answer: "App Settings > Account > Delete Account. Cancel subscription through app store first. Deletion removes companion and all history permanently." },
+      { question: "Best Replika alternatives?", answer: "Candy.ai for complete AI girlfriend, CrushOn.ai for unrestricted NSFW, Character.ai for SFW role-play, GirlfriendGPT for budget NSFW, DreamGF for visual AI." },
+      { question: "Does Replika work internationally?", answer: "Yes. Available globally via app stores. Multiple languages supported. Performance consistent across regions." }
     ],
-    finalVerdict: "Replika remains the gold standard for emotionally intelligent AI companionship. If you're looking for a supportive, empathetic AI friend or romantic partner, it's hard to beat. However, users seeking explicit NSFW content should look at Candy.ai or CrushOn.ai instead."
+    finalVerdict: "Replika remains the gold standard for emotionally intelligent AI companionship in 2026. No other platform matches its conversational depth, long-term memory, or genuine personalized relationship development. 3D avatar, AR, native apps, and polished interface add quality layers. However, the ERP rollback removed features many depended on, NSFW limitations push adult users to alternatives, and feature set has contracted while pricing held. Our recommendation: use Replika for emotional companionship — annual Pro at ~$5.83/month is exceptional value for emotional AI quality. If you also want NSFW, pair with CrushOn.ai or Candy.ai. The combination gives emotional depth from Replika and content freedom from a dedicated platform — best of both worlds."
   },
 
   {
