@@ -1751,6 +1751,85 @@ function generateCreatorPlatformReviews(): DetailedReview[] {
       ],
       finalVerdict: "Footly is the best platform for new feet content creators thanks to its discovery algorithm and industry-leading 90% payout. While it can't match FeetFinder's buyer volume, its modern approach is winning over both creators and buyers."
     },
+    // Snifffr - full entry (moved out of compact template for detailed content)
+    {
+      name: "Snifffr", slug: "snifffr", category: "Creator Platforms", score: 7.0,
+      verdict: "The most established dedicated marketplace for selling used panties and undergarments",
+      pricing: "$7.99-$15.99/mo", bestFor: "Selling used underwear",
+      url: "https://snifffr.com", lastUpdated: "March 2026",
+      readingTime: 9,
+      overview: [
+        "Snifffr is an online marketplace specifically designed for buying and selling used undergarments. If that sounds hyper-specific, that is because it is — and the platform leans into this niche with purpose. Snifffr provides the marketplace infrastructure, verification systems, and messaging tools that make transactions between sellers and buyers safe, discreet, and organized.",
+        "How does Snifffr work? Sellers create profiles, list their items with descriptions and pricing, and connect with interested buyers through the platform's messaging system. Transactions are negotiated between buyer and seller, with Snifffr providing the platform and verification layer. Sellers ship items directly to buyers. Snifffr does not handle payment processing directly — transactions are arranged between parties, typically through external payment methods like PayPal, Venmo, or cryptocurrency.",
+        "The used panty marketplace is a genuine niche with consistent demand. Snifffr sits alongside competitors like AllThingsWorn, SofiaGray, and PantyDeal, but differentiates through its verification system, user interface, and community features. For sellers, the platform represents a low-investment side income opportunity with no upfront inventory costs. For buyers, it provides a safer alternative to unverified social media purchases."
+      ],
+      keyFeatures: [
+        { title: "Seller Verification", description: "Identity verification for all sellers. Verified badges signal authenticity. Reduces scam risk. Verification takes 24-48 hours. Critical trust factor in this niche." },
+        { title: "Listing Management", description: "Detailed listings with descriptions, photos, pricing, categories. Organize multiple listings. Add, edit, pause, remove anytime. Straightforward interface." },
+        { title: "Messaging System", description: "Direct buyer-seller messaging for negotiations, custom requests, transaction coordination. Chat history maintained for reference. Primary connection method." },
+        { title: "Seller Profiles", description: "Customizable with bio, photos, ratings, review history. Your storefront. Strong profiles with quality photos and positive reviews convert dramatically better." },
+        { title: "Category Organization", description: "Items by type — panties, bras, socks, sportswear, more. Browse by category, price, seller rating. Helps buyers find exactly what they want." },
+        { title: "Community & Blog", description: "Forums, seller tips, marketplace advice blog. New seller resources. Experienced sellers share tips. Community adds genuine learning value." }
+      ],
+      pricingIntro: "Snifffr's pricing model is designed to be predictable for sellers, with no commission on actual sales.",
+      pricingDetails: [
+        { plan: "For Buyers", price: "Free", features: ["Free to browse and message", "Item prices set by sellers ($15-$75+)", "No subscription or fees"] },
+        { plan: "Basic Seller", price: "$7.99/mo", features: ["List items", "Create seller profile", "Message buyers", "Basic seller tools"] },
+        { plan: "Premium Seller", price: "$15.99/mo", features: ["Everything in Basic", "Enhanced search visibility", "Premium badge", "Priority placement", "Advanced analytics"] }
+      ],
+      pricingOutro: "Sellers keep 100% of item sale prices. Snifffr revenue from subscriptions only, not commissions. Active sellers earn $100-$500+/month. Top sellers $1,000+. Subscription pays for itself after a few sales.",
+      scores: [
+        { label: "Content Quality", score: 7.0, description: "Well-organized marketplace with genuine sellers and real buyers. Verification adds quality layer. Listing quality varies by seller." },
+        { label: "User Interface", score: 7.0, description: "Clean, professional design. Marketplace browsing, profiles, messaging work well. Not flashy but functional and organized." },
+        { label: "Value for Money", score: 7.5, description: "No commission — sellers keep 100%. Subscription $7.99-$15.99/month predictable and affordable. Pays for itself after a few sales." },
+        { label: "Privacy & Safety", score: 7.0, description: "Seller verification, platform messaging, discreet design. External payments add some risk. Main safety concern." },
+        { label: "Features", score: 6.5, description: "Verification, listings, messaging, profiles, categories, community. Solid basics. Lacks integrated payments, shipping tools, detailed analytics." }
+      ],
+      pros: [
+        "Most established dedicated used panty marketplace",
+        "Seller verification builds genuine trust",
+        "No commission — sellers keep 100%",
+        "Predictable subscription pricing $7.99-$15.99/month",
+        "Community features help new sellers learn",
+        "Clean professional design"
+      ],
+      cons: [
+        "Niche market means limited buyer pool",
+        "No native mobile app",
+        "External payment processing adds friction and risk",
+        "Smaller than AllThingsWorn in some markets",
+        "Monthly subscription even during zero-sale months",
+        "No integrated shipping or tracking"
+      ],
+      prosConsNote: "Is Snifffr legit? Yes — established marketplace with verified sellers, real buyer traffic, active community, and years of successful operation. The subscription model means Snifffr's interests are aligned with helping sellers succeed.",
+      privacyIntro: "Given the intimate nature of products, privacy and safety are especially important for both sellers and buyers.",
+      whoShouldUse: [
+        { persona: "People looking to sell used panties as side income", reason: "Infrastructure, verification, and buyer traffic ready to go", ideal: true },
+        { persona: "Sellers prioritizing safety and verification", reason: "Safer than social media marketplaces where scams are common", ideal: true },
+        { persona: "Buyers wanting verified legitimate sellers", reason: "Badges and reviews help avoid scams", ideal: true },
+        { persona: "Sellers wanting integrated payment processing", reason: "AllThingsWorn offers more integrated features", ideal: false },
+        { persona: "Sellers expecting high-volume immediate sales", reason: "Niche market means genuine but limited traffic", ideal: false }
+      ],
+      alternatives: ["all-things-worn", "sofia-gray", "pantydeal", "feetfinder"],
+      comparisons: [
+        { slug: "snifffr-vs-allthingsworn", title: "Snifffr vs AllThingsWorn" },
+        { slug: "snifffr-vs-sofiagray", title: "Snifffr vs SofiaGray" },
+        { slug: "snifffr-vs-pantydeal", title: "Snifffr vs PantyDeal" }
+      ],
+      faqs: [
+        { question: "Is Snifffr legit?", answer: "Yes. Established marketplace with verification, real transactions, active community, years of operation. Most recognized dedicated platform for used undergarments." },
+        { question: "Is Snifffr safe?", answer: "Seller verification and platform messaging add safety. External payments carry inherent risk. Use trusted payment methods and keep conversations on platform." },
+        { question: "How much can sellers earn?", answer: "Active sellers $100-$500+/month. Top sellers $1,000+. Depends on listing quality, frequency, pricing, and marketing effort." },
+        { question: "How much does Snifffr cost?", answer: "Free for buyers. Seller subscriptions $7.99/month Basic, $15.99/month Premium. No commission on sales — sellers keep 100%." },
+        { question: "Does Snifffr have an app?", answer: "No native app. Mobile-responsive website works well for browsing, messaging, and listing management." },
+        { question: "Snifffr vs AllThingsWorn?", answer: "Snifffr more focused on undergarments. AllThingsWorn broader marketplace with more integrated features. Many sellers use both simultaneously." },
+        { question: "What can I sell?", answer: "Used panties, bras, socks, sportswear, other undergarments. Custom wearing requests common and command premium prices." },
+        { question: "How to delete account?", answer: "Account settings > Delete or contact support. Cancel subscription first to avoid continued charges." },
+        { question: "Best Snifffr alternatives?", answer: "AllThingsWorn for broader marketplace, SofiaGray for similar niche, PantyDeal for international, FeetFinder as complementary platform." },
+        { question: "Does Snifffr work internationally?", answer: "Yes. Global sellers and buyers. Shipping handled directly between parties. No geographic restrictions on the platform." }
+      ],
+      finalVerdict: "Snifffr fills a genuine niche with a well-organized, verified marketplace for used undergarments. No-commission model means sellers keep 100% of earnings. Verification builds trust unverified platforms cannot match. Community features help new sellers learn and succeed. Limitations are niche-inherent: smaller buyer pool, external payments, subscription during slow months. Our recommendation: start with Basic at $7.99 to test the market, invest in your profile, list consistently, cross-promote on social media. Upgrade to Premium for visibility. Run alongside AllThingsWorn for max buyer reach and FeetFinder if you also produce feet content. Sellers who treat this as a real side hustle build sustainable income."
+    },
     // Remaining creator platforms with compact data
     ...compactCreatorPlatforms(),
   ];
