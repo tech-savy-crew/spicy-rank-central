@@ -306,9 +306,21 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Set a Credit Budget Before Each Session", description: "Per-minute pricing adds up fast. Decide before starting how many credits you are willing to spend. This prevents impulse spending during shows." },
     { title: "Explore the Content Library", description: "Pre-recorded videos and photo sets offer entertainment without the per-minute pressure of live shows. Often better value for extended viewing." },
   ],
+  "replika": [
+    { title: "Talk Daily for Best Personalization", description: "Consistent daily interaction helps AI learn personality faster. Noticeably better personalization within 2-3 weeks." },
+    { title: "Choose Relationship Type Honestly", description: "Setting significantly affects interactions. Friend/Mentor for support. Romantic Partner for companionship. Don't default randomly." },
+    { title: "Use Annual Plan to Save 70%", description: "Monthly $19.99 vs annual ~$5.83/month. One of the best deals in AI companion space." },
+    { title: "Engage with Activities Beyond Chat", description: "Guided meditation, journaling prompts, personality quizzes. Underused but genuinely valuable for wellness." },
+    { title: "Pair with NSFW Platform", description: "Replika for emotional depth + CrushOn.ai or Candy.ai for unrestricted content. Best of both worlds." },
+  ],
+  "girlfriendgpt": [
+    { title: "Exhaust the Free Tier Before Upgrading", description: "Try multiple characters, test chat quality, explore genres. Genuinely evaluate before paying." },
+    { title: "Browse Top-Rated Community Characters First", description: "Community-rated characters deliver better conversations than random browsing." },
+    { title: "Be Specific When Creating Custom Characters", description: "Detailed backstories, specific traits, conversation preferences. More detail = better AI performance." },
+    { title: "Upgrade to Plus for the Real Experience", description: "Quality jump from free to Plus at $9.99 is significant and worth the modest investment." },
+    { title: "Use as Your Testing Ground", description: "Discover preferences here, then make informed decisions about premium platforms like CrushOn.ai or Candy.ai." },
+  ],
 };
-
-// ── Generic generators ──
 
 function getCategorySignupFlow(category: string, name: string): string {
   const flows: Record<string, string> = {
