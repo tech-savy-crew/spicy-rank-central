@@ -204,6 +204,18 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "shield-check", title: "NSFW Content Gating", description: "Some restrictions on free tier. Full unrestricted on paid plans. Paywall serves as soft verification layer." },
     { icon: "credit-card", title: "Data Handling", description: "Privacy policy covers standard bases. Could be more detailed on conversation data storage, AI training usage, and third-party sharing." },
   ],
+  "snifffr": [
+    { icon: "shield-check", title: "Seller Verification", description: "All sellers must verify identity. Verified badges signal authenticity. Screens out fake accounts. Critical trust driver in this niche." },
+    { icon: "lock", title: "Platform Messaging", description: "All communication through Snifffr's system. Personal info private until both parties choose to share. Message history maintained for reference." },
+    { icon: "eye-off", title: "Discreet Design", description: "Professional design without explicit imagery in navigation. Helps maintain privacy in browser history and shared devices." },
+    { icon: "credit-card", title: "External Payment Risk", description: "Main safety concern. Payments handled outside platform via PayPal, Venmo, crypto. Snifffr cannot intervene in payment disputes. Use trusted payment methods." },
+  ],
+  "fetishfinder": [
+    { icon: "eye-off", title: "Anonymous Browsing", description: "Browse without revealing identity. Others cannot see you viewed their profile unless you choose. Essential for discreet exploration." },
+    { icon: "lock", title: "Photo Privacy Locks", description: "Granular photo privacy. Lock specific photos requiring your explicit approval. Critical for identifiable or explicit photos." },
+    { icon: "shield-check", title: "Profile Visibility Management", description: "Control exactly who sees your profile. Hide from search, limit to specific user types, visible only to matches. Complete authority over presence." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. FetishFinder name not visible. Protects privacy in shared financial situations." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
