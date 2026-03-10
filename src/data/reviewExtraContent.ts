@@ -248,6 +248,8 @@ const privacyOverrides: Record<string, string> = {
   "girlfriendgpt": "Is GirlfriendGPT safe? Yes, with standard security meeting expectations. Is it legit? Yes — functioning platform with real AI, community engagement, and genuine features. Is it a scam? No — the free tier alone proves real value before asking for payment, which is a strong trust signal.",
   "snifffr": "Is Snifffr safe? Yes, with caveat that external payments carry inherent risk. Verification, messaging, and discreet design create reasonably safe environment. Is Snifffr legit? Absolutely — established, verified marketplace with genuine community. Is it a scam? No — transparent business model based on subscriptions, not hidden fees.",
   "fetishfinder": "Is FetishFinder safe? Yes — strongest privacy protections in fetish dating space. Anonymous browsing, photo locks, visibility controls, discreet billing create comprehensive framework. Is FetishFinder legit? Absolutely — real users, genuine community, transparent business. Is it a scam? No — delivers exactly what promised: dedicated, privacy-focused fetish dating.",
+  "bongacams": "Is BongaCams safe? Yes — standard security, millions of safe daily transactions. Is BongaCams legit? Absolutely — one of the largest cam platforms globally with years of operation. Is it a scam? No — aggressive marketing creates perception problem but platform operates legitimately.",
+  "camsoda": "Is CamSoda safe? Yes — standard security consistent with major cam sites. Is CamSoda legit? Yes — operating for years with real user base and functioning payments. Is it a scam? No — delivers exactly what promised: free cams with innovative voyeur, AR, and recording features.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
