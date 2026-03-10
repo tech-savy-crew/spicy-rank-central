@@ -362,6 +362,22 @@ const ReviewDetailPage = () => {
           { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
           { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
           { property: "article:section", content: "AI Companions" },
+        ] : isSnifffr ? [
+          { name: "keywords", content: "snifffr review, snifffr, sell used panties, sell used underwear, is snifffr legit, is snifffr safe, snifffr app, snifffr pricing, snifffr alternatives, snifffr seller, how does snifffr work, snifffr cost, buy used panties, used panty marketplace" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "Snifffr Review 2026 — Best Used Panty Marketplace?" },
+          { property: "og:description", content: "We tested Snifffr for 30+ days. Full review of seller earnings, pricing, safety, and AllThingsWorn comparison. 7.0/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-09T00:00:00Z" },
+          { property: "article:section", content: "Fetish Marketplaces" },
+        ] : isFetishFinder ? [
+          { name: "keywords", content: "fetishfinder review, fetishfinder, fetish dating site, fetish hookup, is fetishfinder legit, is fetishfinder safe, fetishfinder pricing, fetishfinder app, fetishfinder alternatives, fetishfinder cost, fetishfinder free, how does fetishfinder work, fetish dating app, kink dating, bdsm dating site, fetishfinder vs fetlife" },
+          { name: "author", content: "SpicyRanked" },
+          { property: "og:title", content: "FetishFinder Review 2026 — Best Fetish Dating & Hookup Platform?" },
+          { property: "og:description", content: "We tested FetishFinder for 30+ days. Full review of kink matching, pricing, privacy, and FetLife comparison. 7.5/10." },
+          { property: "article:published_time", content: "2026-03-01T00:00:00Z" },
+          { property: "article:modified_time", content: "2026-03-10T00:00:00Z" },
+          { property: "article:section", content: "Dating & Hookup Apps" },
         ] : undefined}
         jsonLd={customJsonLd || [
           reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
