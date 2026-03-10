@@ -417,6 +417,10 @@ const ReviewDetailPage = () => {
                     ? "Jerkmate is a legitimate premium cam site with high-quality performers, Gold shows, and a unique ranking system. At 7.2/10, the actual platform is better than the ads suggest — but per-minute pricing is expensive, the free experience is limited, and the aggressive advertising has created a trust problem the platform is still working to overcome."
                     : isCrushOn
                     ? "CrushOn.ai is the platform for users who want completely unrestricted NSFW AI conversations without content filters. At 7.4/10, it delivers the most permissive chat experience in the AI companion space with a massive community-created character library. Conversation quality is solid though not as emotionally deep as Candy.ai, and image generation is limited."
+                    : isReplika
+                    ? "Replika pioneered AI companionship and still delivers the most emotionally intelligent conversations in the space. At 7.0/10, its strength is genuine emotional depth and therapeutic-style support. However, the controversial removal of ERP features, rising subscription costs, and competition from unrestricted platforms like CrushOn.ai have narrowed its appeal significantly."
+                    : isGirlfriendGPT
+                    ? "GirlfriendGPT offers one of the most accessible entry points into NSFW AI chatbots with the most generous free tier in the space. At 7.2/10, it delivers solid NSFW chat and a growing character library at competitive prices. The AI quality is decent but not best-in-class, and the interface could use polish. Best for users who want to explore AI companionship without immediate financial commitment."
                     : review.verdict}
                 </p>
               </div>
