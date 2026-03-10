@@ -2162,13 +2162,7 @@ function generateLiveCamReviews(): DetailedReview[] {
       [{ question: "Is Flirt4Free good for fetish content?", answer: "Yes, Flirt4Free has one of the most extensive fetish category systems among cam sites, with performers who specialize in niche content." }],
       "Flirt4Free is the best cam site for fetish enthusiasts. The extensive categorization and specialized performers make it easy to find exactly the niche content you're looking for."
     ),
-    camTemplate("CamSoda", "camsoda", 7.4, "Innovative cam site with interactive toys and unique show formats", "Free / Tokens from $5.99", "Interactive toy cam shows", "https://camsoda.com",
-      ["CamSoda has built its reputation on innovation, pioneering interactive toy integration where viewers control performers' devices through tips. This creates a uniquely interactive experience that passive viewing can't match.", "The platform also offers unique formats like Voyeur House cams and themed events that keep the experience fresh. The interface is modern and mobile-friendly, with a clean design.", "CamSoda's free show selection is solid, with many performers streaming free public shows supported by tip-based interactions. Private shows are available but the real appeal is the interactive public experience."],
-      ["Interactive tip-controlled toys", "Innovative show formats", "Good free content", "Modern mobile-friendly design"],
-      ["Smaller than top competitors", "Token costs can add up", "Some gimmicky features", "Performer count varies by time"],
-      [{ question: "What are interactive toy shows?", answer: "Interactive toy shows feature performers using tip-controlled devices. When viewers tip, the toy responds, creating a real-time interactive experience." }],
-      "CamSoda is the best cam site for interactive experiences. The tip-controlled toy integration creates engagement that traditional cam viewing can't match."
-    ),
+    // CamSoda full entry is in main array
     camTemplate("MyFreeCams", "myfreecams", 7.0, "Veteran female-only performer platform with one of the largest communities", "Free / Tokens from $19.99", "Female performer cams", "https://myfreecams.com",
       ["MyFreeCams (MFC) is one of the oldest and most established cam sites, exclusively featuring female performers. The platform has built a massive community over its two decades of operation.", "The loyal community is MFC's biggest asset — many viewers and performers have been on the platform for years, creating genuine connections and a social atmosphere unlike newer sites.", "The major downside is the outdated interface, which looks like it hasn't been significantly updated in over a decade. While functional, it lacks the polish and features of modern competitors."],
       ["Massive, established community", "Loyal long-term user base", "Female performers only", "Free shows widely available"],
