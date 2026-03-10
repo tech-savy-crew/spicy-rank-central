@@ -4,6 +4,7 @@ import { RatingBadge } from "@/components/RatingBadge";
 import { SEO, reviewSchema, faqSchema, breadcrumbSchema } from "@/components/SEO";
 import { getReviewBySlug, detailedReviews } from "@/data/reviewDetails";
 import { getUserExperience, getPrivacyTrust, getTips, getExtraFaqs } from "@/data/reviewExtraContent";
+import { reviewSEO, buildReviewExtraMeta } from "@/data/reviewSEO";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle, XCircle, ExternalLink, Star, Clock, Calendar, ChevronRight, ChevronDown, Zap, Users, Shield, DollarSign, Sparkles, ArrowRight, Monitor, ShieldCheck, Lightbulb, Lock, CreditCard, EyeOff, Camera } from "lucide-react";
 import { useState, useMemo } from "react";
