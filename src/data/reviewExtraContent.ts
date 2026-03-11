@@ -265,6 +265,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "credit-card", title: "Discreet Billing", description: "Generic descriptor on statements. Ashley Madison name not visible. Essential for users sharing financial accounts." },
     { icon: "eye-off", title: "Full-Profile Wipe", description: "Paid permanent deletion of all data, messages, photos, history. Created post-breach in response to user demand. Guaranteed exit option." },
   ],
+  "adult-friend-finder": [
+    { icon: "lock", title: "Post-Breach Security", description: "AFF upgraded to SSL/TLS encryption, improved password hashing, regular security audits, and enhanced monitoring after the 2016 breach. Improvements are genuine but reactive — they came after 412 million accounts were exposed." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Gold membership charges appear under a generic billing descriptor. The Adult Friend Finder name is not visible on bank or credit card statements. Standard billing discretion for adult platforms." },
+    { icon: "shield-check", title: "2016 Data Breach History", description: "412 million accounts exposed across Friend Finder Networks in November 2016. Emails, usernames, and poorly encrypted passwords were leaked. The largest adult site breach in internet history and AFF's defining trust event." },
+    { icon: "eye-off", title: "Anonymous Browsing", description: "Free browsing requires no identifying information beyond an email address. No identity verification for basic accounts. Use a dedicated email and unique password given the breach history." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
