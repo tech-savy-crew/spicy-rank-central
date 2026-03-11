@@ -256,11 +256,9 @@ export const detailedReviews: DetailedReview[] = [
       { persona: "Users wanting deep emotional conversations", reason: "Candy.ai or Replika are better for conversation depth", ideal: false },
       { persona: "Budget-conscious users needing voice/video", reason: "DreamGF lacks these and Gold tier is expensive", ideal: false }
     ],
-    alternatives: ["candy-ai", "crushon-ai", "soulgen-ai", "replika"],
+    alternatives: ["candy-ai", "crushon-ai", "replika", "girlfriendgpt"],
     comparisons: [
       { slug: "candy-ai-vs-dreamgf", title: "DreamGF vs Candy.ai" },
-      { slug: "dreamgf-vs-crushon-ai", title: "DreamGF vs CrushOn.ai" },
-      { slug: "dreamgf-vs-soulgen", title: "DreamGF vs SoulGen" }
     ],
     faqs: [
       { question: "Is DreamGF.ai free?", answer: "Free tier available with limited generations. NSFW locked behind premium starting at $9.99/month. Full experience requires paid plan." },
