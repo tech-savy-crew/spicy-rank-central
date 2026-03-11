@@ -278,6 +278,7 @@ const privacyOverrides: Record<string, string> = {
   "bongacams": "Is BongaCams safe? Yes — standard security, millions of safe daily transactions. Is BongaCams legit? Absolutely — one of the largest cam platforms globally with years of operation. Is it a scam? No — aggressive marketing creates perception problem but platform operates legitimately.",
   "camsoda": "Is CamSoda safe? Yes — standard security consistent with major cam sites. Is CamSoda legit? Yes — operating for years with real user base and functioning payments. Is it a scam? No — delivers exactly what promised: free cams with innovative voyeur, AR, and recording features.",
   "seeking": "Is Seeking safe? Yes — strongest verification suite in dating. Is it a scam? No — delivers exactly what promised: premium verified sugar dating environment with largest active user base.",
+  "ashley-madison": "Is Ashley Madison safe in 2026? Significantly safer than pre-breach, with security investment exceeding most dating platforms. No absolute guarantee possible. Users should use anonymous details and understand digital activity always carries some risk.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
