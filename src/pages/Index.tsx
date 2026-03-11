@@ -42,12 +42,11 @@ const featuredReviews = [
 ];
 
 const categoryCards = [
-  { label: "Creator Platforms", icon: Users, sub: "OnlyFans, Fansly, Patreon & more", count: "25+ reviewed", slug: "creator-platforms" },
-  { label: "Live Cam Sites", icon: Camera, sub: "Chaturbate, Stripchat, Cam4 & more", count: "18+ reviewed", slug: "live-cam-sites" },
-  { label: "Dating & Hookup Apps", icon: Heart, sub: "Tinder, Bumble, Hinge & more", count: "20+ reviewed", slug: "dating-hookup-apps" },
-  { label: "Tube & Streaming", icon: Play, sub: "Free and premium video platforms", count: "15+ reviewed", slug: "tube-streaming" },
-  { label: "AI Companions", icon: Bot, sub: "AI girlfriend, chatbots & companions", count: "12+ reviewed", slug: "ai-companions" },
-  { label: "Sexting & Chat", icon: MessageCircle, sub: "Anonymous chat and messaging platforms", count: "10+ reviewed", slug: "sexting-chat" },
+  { label: "Creator Platforms", icon: Users, sub: "OnlyFans, Fansly, FanVue, Patreon", count: "4 reviewed", slug: "creator-platforms" },
+  { label: "Live Cam Sites", icon: Camera, sub: "Chaturbate, Stripchat, Jerkmate & more", count: "7 reviewed", slug: "live-cam-sites" },
+  { label: "Dating & Hookup Apps", icon: Heart, sub: "Tinder, Bumble, Seeking & more", count: "5 reviewed", slug: "dating-hookup-apps" },
+  { label: "AI Companions", icon: Bot, sub: "Candy.ai, DreamGF, CrushOn & more", count: "5 reviewed", slug: "ai-companions" },
+  { label: "Fetish & Niche", icon: MessageCircle, sub: "FeetFinder, FetishFinder, Snifffr", count: "3 reviewed", slug: "fetish-niche-marketplaces" },
 ];
 
 const comparisons = [
@@ -98,7 +97,7 @@ const Index = () => {
     <Layout>
       <SEO
         title="SpicyRanked — Honest Reviews & Rankings of Adult Platforms, Cam Sites & Dating Apps"
-        description="Independent reviews, ratings & comparisons of 150+ adult platforms. OnlyFans, Fansly, Chaturbate, Stripchat & more — ranked by real testing. Updated weekly."
+        description="Independent reviews, ratings & comparisons of 24 adult platforms. OnlyFans, Fansly, Chaturbate, Stripchat & more — ranked by real testing. Updated weekly."
         canonical="/"
         jsonLd={[
           websiteSchema(),
@@ -117,7 +116,7 @@ const Index = () => {
               <span className="spicy-text-gradient">Ranked & Rated</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-              We review, compare, and rank the top creator platforms, live cam sites, adult streaming services, AI companions, and dating apps — so you don't waste your time or money. Every platform is independently tested and rated on a 10-point scale.
+              We review, compare, and rank the top creator platforms, live cam sites, AI companions, and dating apps — so you don't waste your time or money. Every platform is independently tested and rated on a 10-point scale.
             </p>
 
             {/* Search */}
@@ -151,7 +150,7 @@ const Index = () => {
             </div>
 
             <p className="text-xs text-muted-foreground">
-              150+ platforms reviewed · Updated weekly · Independent & unbiased
+              24 platforms reviewed · Updated weekly · Independent & unbiased
             </p>
           </AnimatedSection>
         </div>

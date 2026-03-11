@@ -72,58 +72,40 @@ export const comparisons: ComparisonPage[] = [
     ]
   },
   {
-    slug: "feetfinder-vs-footly",
-    platformA: "feetfinder",
-    platformB: "footly",
-    category: "Feet Marketplace",
-    verdict: "FeetFinder wins for buyer volume, Footly wins for new creator discovery and higher payouts",
+    slug: "onlyfans-vs-fansly",
+    platformA: "onlyfans",
+    platformB: "fansly",
+    category: "Creator Platform",
+    verdict: "OnlyFans wins on audience size, Fansly wins on discovery and creator tools",
     detailedBreakdown: [
-      "FeetFinder has the largest buyer community in the feet content market, meaning more potential sales for established creators with existing content libraries.",
-      "Footly's TikTok-style discovery feed and 90% creator payout make it the best choice for new creators who don't have an existing audience yet.",
-      "FeetFinder charges $4.99/month for sellers while Footly is free with a 10% commission. For high-earning creators, FeetFinder's flat fee is more economical."
+      "OnlyFans has the largest subscriber base by far, giving established creators maximum earning potential through sheer audience scale.",
+      "Fansly's built-in explore page helps new creators get discovered organically — something OnlyFans completely lacks.",
+      "Both charge 20% commission. The choice comes down to whether you need OnlyFans' massive existing audience or Fansly's better tools and discovery."
     ],
-    whoShouldChooseA: ["Established feet content creators", "Sellers with existing audiences", "Those who prefer marketplace-style selling"],
-    whoShouldChooseB: ["New creators without existing audience", "Those wanting algorithmic discovery", "Creators who prefer no monthly fees", "Those wanting highest payout percentage"],
+    whoShouldChooseA: ["Established creators with existing audiences", "Creators who need maximum subscriber reach", "Brand recognition matters"],
+    whoShouldChooseB: ["New creators needing discovery", "Those wanting better content organization", "Creators who value multi-tier subscriptions"],
     faqs: [
-      { question: "Which has more buyers?", answer: "FeetFinder has the largest buyer community for feet content." },
-      { question: "Which pays creators more?", answer: "Footly offers 90% payout vs FeetFinder's variable rates, though FeetFinder's larger audience can mean more total earnings." },
-      { question: "Which is better for beginners?", answer: "Footly's discovery algorithm helps new creators get seen without needing to bring their own traffic." }
+      { question: "Which has more subscribers?", answer: "OnlyFans has 300M+ registered users vs Fansly's growing but smaller base." },
+      { question: "Which has better discovery?", answer: "Fansly has a built-in explore page. OnlyFans has zero content discovery." },
+      { question: "Do they charge the same?", answer: "Yes, both take 20% commission on creator earnings." }
     ]
   },
   {
-    slug: "feetfinder-vs-funwithfeet",
-    platformA: "feetfinder",
-    platformB: "funwithfeet",
-    category: "Feet Marketplace",
-    verdict: "FeetFinder dominates with a larger community and lower seller fees",
+    slug: "onlyfans-vs-patreon",
+    platformA: "onlyfans",
+    platformB: "patreon",
+    category: "Creator Platform",
+    verdict: "OnlyFans for adult content monetization, Patreon for mainstream creator credibility",
     detailedBreakdown: [
-      "FeetFinder's massive buyer community gives sellers significantly more exposure and earning potential than FunWithFeet's smaller marketplace.",
-      "FunWithFeet charges $9.99/month for sellers vs FeetFinder's $4.99, making it more expensive with less traffic — a tough value proposition.",
-      "FunWithFeet's privacy features and content curation are strong points, but they don't compensate for the audience size gap."
+      "OnlyFans is purpose-built for adult content with a massive paying subscriber base. For NSFW creators, it's the obvious choice.",
+      "Patreon offers mainstream credibility, native apps, and zero stigma. For creators whose work is publicly visible, Patreon is essential.",
+      "OnlyFans takes a flat 20%. Patreon's combined fees range from 8-15% depending on tier and payment processing."
     ],
-    whoShouldChooseA: ["Most feet content sellers", "Budget-conscious creators", "Those wanting maximum exposure"],
-    whoShouldChooseB: ["Privacy-focused sellers", "Those who prefer curated marketplaces", "Sellers wanting themed categories"],
+    whoShouldChooseA: ["Adult content creators", "Creators who need the largest paying audience", "Those wanting simple flat-fee pricing"],
+    whoShouldChooseB: ["Mainstream creators needing public credibility", "Those wanting native iOS/Android apps", "Creators needing tier-based memberships"],
     faqs: [
-      { question: "Which is cheaper for sellers?", answer: "FeetFinder at $4.99/month is half the price of FunWithFeet's $9.99/month." },
-      { question: "Which has better privacy?", answer: "FunWithFeet has stronger privacy features including background blur and watermarking tools." }
-    ]
-  },
-  {
-    slug: "snifffr-vs-sofia-gray",
-    platformA: "snifffr",
-    platformB: "sofia-gray",
-    category: "Panty Marketplace",
-    verdict: "Sofia Gray wins with larger audience and zero commission, Snifffr wins on entry cost",
-    detailedBreakdown: [
-      "Sofia Gray has over 1 million monthly visitors — the largest used panties marketplace. Its zero-commission model means sellers keep 100% of sale revenue.",
-      "Snifffr charges $10.95/month with a smaller audience, but the lower monthly fee makes it more accessible for new sellers testing the market.",
-      "For serious, high-volume panty sellers, Sofia Gray's zero commission and larger audience make it the better long-term platform."
-    ],
-    whoShouldChooseA: ["New sellers testing the market", "Budget-conscious beginners", "Those wanting customizable storefronts"],
-    whoShouldChooseB: ["Serious, high-volume sellers", "Those wanting maximum audience reach", "Sellers who prefer zero commission"],
-    faqs: [
-      { question: "Which has more buyers?", answer: "Sofia Gray with 1M+ monthly visitors significantly outpaces Snifffr's audience." },
-      { question: "Which takes less commission?", answer: "Sofia Gray takes zero commission — you keep 100% of sales. Snifffr charges a monthly fee of $10.95." }
+      { question: "Can I use both?", answer: "Yes, many creators use OnlyFans for adult content and Patreon for SFW/mainstream work." },
+      { question: "Which takes less commission?", answer: "Patreon Lite (5% + processing) can be cheaper, but Pro (8%) and Premium (12%) plus processing approach or exceed OnlyFans' flat 20%." }
     ]
   },
   {
@@ -181,111 +163,112 @@ export const comparisons: ComparisonPage[] = [
     ]
   },
   {
-    slug: "manyvids-vs-onlyfans",
-    platformA: "manyvids",
-    platformB: "onlyfans",
-    category: "Creator Platform",
-    verdict: "OnlyFans wins for subscriptions, ManyVids wins for individual clip sales",
+    slug: "chaturbate-vs-stripchat",
+    platformA: "chaturbate",
+    platformB: "stripchat",
+    category: "Live Cam",
+    verdict: "Chaturbate wins on scale and free content, Stripchat wins on design and technology",
     detailedBreakdown: [
-      "OnlyFans' subscription model provides creators with predictable monthly revenue, while ManyVids' clip sale model generates passive income from individual content pieces.",
-      "ManyVids takes 20-40% commission vs OnlyFans' 20%, making OnlyFans more economical for subscription-based earnings.",
-      "Many successful creators use both platforms — OnlyFans for subscriptions and ManyVids for individual clip sales — maximizing revenue across different monetization models."
+      "Chaturbate has more daily visitors, more simultaneous performers, and a longer track record as the dominant free cam platform.",
+      "Stripchat offers VR support, AI recommendations, a modern interface, and better mobile experience — genuine technology advantages.",
+      "Many regular cam viewers use both platforms, leveraging Chaturbate's scale and Stripchat's modern features."
     ],
-    whoShouldChooseA: ["Video-focused creators", "Those wanting passive catalog income", "Creators who prefer per-piece sales"],
-    whoShouldChooseB: ["Subscription model preference", "Creators with large followings", "Those wanting lower platform fees"],
+    whoShouldChooseA: ["Users wanting maximum content variety", "Free content enthusiasts", "Community-focused viewers"],
+    whoShouldChooseB: ["Users who value modern design", "VR enthusiasts", "Mobile-first viewers"],
     faqs: [
-      { question: "Can I use both?", answer: "Yes, many creators use OnlyFans for subscriptions and ManyVids for individual clip sales simultaneously." },
-      { question: "Which takes less commission?", answer: "OnlyFans takes a flat 20%, while ManyVids ranges from 20-40% depending on the sale type." }
+      { question: "Which has more performers?", answer: "Chaturbate has significantly more simultaneous live performers at any time." },
+      { question: "Which has VR?", answer: "Stripchat is the only major free cam site with VR support." }
     ]
   },
   {
-    slug: "loyalfans-vs-onlyfans",
-    platformA: "loyalfans",
-    platformB: "onlyfans",
-    category: "Creator Platform",
-    verdict: "OnlyFans wins on audience size, LoyalFans wins on payout flexibility and support",
+    slug: "chaturbate-vs-livejasmin",
+    platformA: "chaturbate",
+    platformB: "livejasmin",
+    category: "Live Cam",
+    verdict: "Chaturbate for free content and variety, LiveJasmin for premium HD quality",
     detailedBreakdown: [
-      "OnlyFans' massive audience gives creators the largest potential subscriber pool, making it essential for reach and discovery.",
-      "LoyalFans offers superior payout options including crypto and faster processing, plus genuinely responsive customer support.",
-      "Both charge 20% commission. The choice comes down to whether audience size (OnlyFans) or operational quality (LoyalFans) matters more."
+      "Chaturbate's free viewing model and massive performer roster make it the value leader in live cams.",
+      "LiveJasmin enforces HD streaming standards with professional performers — every stream meets a quality floor that Chaturbate cannot guarantee.",
+      "Completely different price points and experiences. Chaturbate is the busy free market, LiveJasmin is the premium boutique."
     ],
-    whoShouldChooseA: ["Creators frustrated with payout delays", "Those wanting crypto payments", "Creators who value responsive support"],
-    whoShouldChooseB: ["Creators prioritizing audience reach", "Those wanting maximum brand recognition", "Creators relying on organic discovery"],
+    whoShouldChooseA: ["Free content seekers", "Variety enthusiasts", "Budget-conscious viewers"],
+    whoShouldChooseB: ["Quality-focused viewers", "Those wanting professional performers", "Users who prefer premium private shows"],
     faqs: [
-      { question: "Do they charge the same fees?", answer: "Yes, both charge 20% commission on creator earnings." },
-      { question: "Which has better support?", answer: "LoyalFans is widely praised for responsive, helpful customer support compared to OnlyFans' often criticized service." }
+      { question: "Which is free?", answer: "Chaturbate offers genuinely free public viewing. LiveJasmin's free content is limited — premium features require credits." },
+      { question: "Which has better quality?", answer: "LiveJasmin enforces HD standards. Chaturbate quality varies by performer." }
     ]
   },
   {
-    slug: "sugardaddy-vs-seeking",
-    platformA: "sugardaddy",
+    slug: "tinder-vs-bumble",
+    platformA: "tinder",
+    platformB: "bumble",
+    category: "Dating App",
+    verdict: "Tinder wins on user volume, Bumble wins on conversation quality",
+    detailedBreakdown: [
+      "Tinder has 75M+ monthly active users — the largest dating pool. More potential matches than any competitor.",
+      "Bumble's women-message-first model creates higher-quality conversations and less harassment.",
+      "Both cost approximately $39.99 at mid-tier subscriptions. The choice is volume vs quality."
+    ],
+    whoShouldChooseA: ["Users wanting maximum match volume", "Frequent travelers (Passport)", "Those in smaller markets"],
+    whoShouldChooseB: ["Women who want to control conversations", "Users prioritizing conversation quality", "Those wanting less harassment"],
+    faqs: [
+      { question: "Which has more users?", answer: "Tinder with 75M+ monthly active users significantly outpaces Bumble." },
+      { question: "Which leads to better conversations?", answer: "Bumble's women-first model generally produces higher quality opening messages." },
+      { question: "Which is cheaper?", answer: "Both are similarly priced at ~$39.99/month for mid-tier subscriptions." }
+    ]
+  },
+  {
+    slug: "ashley-madison-vs-seeking",
+    platformA: "ashley-madison",
     platformB: "seeking",
-    category: "Sugar Dating",
-    verdict: "Seeking wins with the largest user base, SugarDaddy.com offers better value",
+    category: "Dating",
+    verdict: "Ashley Madison for discreet affairs, Seeking for sugar dating arrangements",
     detailedBreakdown: [
-      "Seeking has the largest sugar dating user base with millions of active members, providing the best odds of finding compatible matches.",
-      "SugarDaddy.com at $49/month is significantly cheaper than Seeking's $109/month premium, offering better value for the sugar dating experience.",
-      "Both platforms offer income verification and quality profiles, but Seeking's scale advantage is significant."
+      "Ashley Madison is purpose-built for extramarital affairs with privacy features no other platform matches.",
+      "Seeking targets sugar dating with income verification and premium positioning that filters for serious members.",
+      "Different audiences with different goals — rarely direct competitors despite surface similarities."
     ],
-    whoShouldChooseA: ["Budget-conscious sugar daters", "Those wanting good value", "Users in smaller markets"],
-    whoShouldChooseB: ["Users wanting the largest pool", "Those in major cities", "Users willing to pay for premium"],
+    whoShouldChooseA: ["Those seeking discreet extramarital connections", "Privacy-focused users", "Women (free messaging)"],
+    whoShouldChooseB: ["Those interested in sugar dating", "Users wanting verified high-income members", "Those in major cities"],
     faqs: [
-      { question: "Which is bigger?", answer: "Seeking is the largest sugar dating platform with millions more active users than SugarDaddy.com." },
-      { question: "Which is cheaper?", answer: "SugarDaddy.com at $49/month is less than half of Seeking's $109/month premium." }
+      { question: "Which is more private?", answer: "Ashley Madison with blurred photos, discreet billing, panic button, and post-breach security infrastructure." },
+      { question: "Which is more expensive?", answer: "Seeking at $109/month for men is significantly more expensive than Ashley Madison's credit system." }
     ]
   },
   {
-    slug: "secret-benefits-vs-seeking",
-    platformA: "secret-benefits",
-    platformB: "seeking",
-    category: "Sugar Dating",
-    verdict: "Seeking wins for features, Secret Benefits wins for privacy and flexible spending",
+    slug: "ashley-madison-vs-adult-friend-finder",
+    platformA: "ashley-madison",
+    platformB: "adult-friend-finder",
+    category: "Dating",
+    verdict: "Ashley Madison for discreet affairs, AFF for swingers and open encounters",
     detailedBreakdown: [
-      "Seeking offers the most comprehensive sugar dating experience with the largest user base, sophisticated matching, and extensive profiles.",
-      "Secret Benefits' credit-based model means you only pay when actively messaging, which can be more economical for casual users.",
-      "Secret Benefits' privacy features — blurred photos, private sharing with approval — are stronger than Seeking's standard approach."
+      "Ashley Madison is designed specifically for discreet extramarital affairs with top-tier privacy features.",
+      "Adult Friend Finder's strength is its swinger community, group encounters, and explicit social network features.",
+      "Different use cases — Ashley Madison for secret connections, AFF for openly adventurous encounters."
     ],
-    whoShouldChooseA: ["Privacy-focused sugar daters", "Casual users who message infrequently", "Those preferring pay-per-use"],
-    whoShouldChooseB: ["Active sugar daters", "Those wanting the largest selection", "Users who prefer monthly subscriptions"],
+    whoShouldChooseA: ["Those seeking discreet affairs", "Privacy-first users", "Women (free experience)"],
+    whoShouldChooseB: ["Swingers and couples", "Those wanting community features", "Sexually adventurous social networking"],
     faqs: [
-      { question: "Which is more private?", answer: "Secret Benefits offers stronger privacy features including blurred photos and approval-based photo sharing." },
-      { question: "Which payment model is better?", answer: "Secret Benefits' credits work well for casual users; Seeking's subscription suits active daters better." }
+      { question: "Which has more users?", answer: "AFF claims 80M registered accounts, though active users are much fewer. Ashley Madison has millions of active members." },
+      { question: "Which has had security issues?", answer: "Both have experienced significant data breaches — Ashley Madison in 2015 and AFF in 2016." }
     ]
   },
   {
-    slug: "arousr-vs-infatuated-ai",
-    platformA: "arousr",
-    platformB: "infatuated-ai",
-    category: "Sexting",
-    verdict: "Arousr offers real human interaction, Infatuated.ai offers unlimited AI at a fixed price",
+    slug: "adult-friend-finder-vs-tinder",
+    platformA: "adult-friend-finder",
+    platformB: "tinder",
+    category: "Dating",
+    verdict: "AFF for explicit hookup culture, Tinder for mainstream casual dating",
     detailedBreakdown: [
-      "Arousr connects you with real, verified chat hosts for genuine human interaction. The experience is authentic but costs accumulate per session.",
-      "Infatuated.ai uses AI for unlimited interactions at $14.99/month. The AI is impressive but cannot truly replicate human spontaneity.",
-      "For authentic human connection, Arousr wins. For unlimited, affordable adult chat, Infatuated.ai is the better value."
+      "Adult Friend Finder offers explicit profiles, swinger community, chat rooms, and webcams — a dedicated hookup ecosystem.",
+      "Tinder is mainstream casual dating with a polished app, massive user base, and social acceptability.",
+      "Different comfort levels — AFF is explicit from the start, Tinder uses the mainstream dating format."
     ],
-    whoShouldChooseA: ["Users wanting real human interaction", "Those who value authenticity", "Users who chat occasionally"],
-    whoShouldChooseB: ["Budget-conscious frequent users", "Those comfortable with AI", "Users wanting unlimited interactions"],
+    whoShouldChooseA: ["Swingers and lifestyle enthusiasts", "Those wanting explicit profiles upfront", "Community feature users"],
+    whoShouldChooseB: ["Mainstream casual daters", "Those wanting a polished app experience", "Users in any market size"],
     faqs: [
-      { question: "Is Arousr real people or AI?", answer: "Arousr uses real, verified chat hosts — real people, not AI." },
-      { question: "Which is cheaper for heavy use?", answer: "Infatuated.ai's flat $14.99/month is dramatically cheaper for frequent users vs Arousr's per-message credits." }
-    ]
-  },
-  {
-    slug: "soulgen-ai-vs-pornpen-ai",
-    platformA: "soulgen-ai",
-    platformB: "pornpen-ai",
-    category: "NSFW AI Tools",
-    verdict: "SoulGen.ai wins on image quality and control, Pornpen.ai wins on accessibility and price",
-    detailedBreakdown: [
-      "SoulGen.ai produces significantly higher quality images with more precise control over poses, styles, and details. The inpainting feature for editing specific areas is unique.",
-      "Pornpen.ai is free and requires no account, making it the most accessible NSFW AI image generator available. Quality is good but noticeably below SoulGen.",
-      "For serious AI art creation, SoulGen's paid plans are worth it. For casual experimentation, Pornpen.ai's free access can't be beat."
-    ],
-    whoShouldChooseA: ["Users wanting highest quality images", "Those needing precise control", "Frequent AI art generators"],
-    whoShouldChooseB: ["Casual users", "Budget-conscious users", "Those wanting no-commitment access", "Beginners exploring AI art"],
-    faqs: [
-      { question: "Which produces better images?", answer: "SoulGen.ai produces noticeably higher quality, more detailed images than Pornpen.ai." },
-      { question: "Is Pornpen.ai really free?", answer: "Yes, Pornpen.ai offers genuine free image generation with daily limits. No account or payment required." }
+      { question: "Which is better for hookups?", answer: "AFF is explicitly designed for hookups. Tinder is designed for dating but widely used for casual encounters." },
+      { question: "Which has more users?", answer: "Tinder with 75M+ monthly active users vastly outpaces AFF's active user base." }
     ]
   },
 ];

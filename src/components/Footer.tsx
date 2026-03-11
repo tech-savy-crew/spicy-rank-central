@@ -12,16 +12,16 @@ const reviewLinks = [
 
 const compareLinks = [
   { label: "Candy.ai vs DreamGF", to: "/compare/candy-ai-vs-dreamgf" },
-  { label: "FeetFinder vs Footly", to: "/compare/feetfinder-vs-footly" },
+  { label: "Tinder vs Bumble", to: "/compare/tinder-vs-bumble" },
   { label: "Jerkmate vs Chaturbate", to: "/compare/jerkmate-vs-chaturbate" },
-  { label: "LoyalFans vs OnlyFans", to: "/compare/loyalfans-vs-onlyfans" },
+  { label: "OnlyFans vs Fansly", to: "/compare/onlyfans-vs-fansly" },
 ];
 
 const bestLinks = [
   { label: "Best OnlyFans Alternatives", to: "/best-lists/best-onlyfans-alternatives" },
   { label: "Best AI Girlfriend Apps", to: "/best-lists/best-ai-girlfriend-apps" },
   { label: "Best Free Cam Sites", to: "/best-lists/best-free-cam-sites" },
-  { label: "Best Sugar Daddy Sites", to: "/best-lists/best-sugar-daddy-sites" },
+  { label: "Best Creator Platforms", to: "/best-lists/best-creator-platforms-beginners" },
 ];
 
 const companyLinks = [
