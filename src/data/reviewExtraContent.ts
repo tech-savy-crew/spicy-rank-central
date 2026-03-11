@@ -295,6 +295,7 @@ const privacyOverrides: Record<string, string> = {
   "camsoda": "Is CamSoda safe? Yes — standard security consistent with major cam sites. Is CamSoda legit? Yes — operating for years with real user base and functioning payments. Is it a scam? No — delivers exactly what promised: free cams with innovative voyeur, AR, and recording features.",
   "seeking": "Is Seeking safe? Yes — strongest verification suite in dating. Is it a scam? No — delivers exactly what promised: premium verified sugar dating environment with largest active user base.",
   "ashley-madison": "Is Ashley Madison safe in 2026? Significantly safer than pre-breach, with security investment exceeding most dating platforms. No absolute guarantee possible. Users should use anonymous details and understand digital activity always carries some risk.",
+  "adult-friend-finder": "Is Adult Friend Finder legit and safe to use in 2026? The platform is legitimate — it operates, processes real payments, and facilitates genuine connections. But safe requires qualification: the current security infrastructure is standard, but the 2016 breach history means users should be cautious with personal information, use unique passwords, and understand that no platform that has been breached at this scale can guarantee it will not happen again. Use a dedicated email address, a unique password, and share minimal personally identifying information on your profile.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
