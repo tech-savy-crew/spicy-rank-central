@@ -63,9 +63,9 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     mobileExperience: "Mobile-first app available on iOS and Android. Web version exists but limited. Push notifications reliable. App runs smoothly on all devices. Polished, stable, best-in-class.",
   },
   "chaturbate": {
-    gettingStarted: "Creating an account takes two minutes. Viewers need only an email. Performers require age verification with government ID, typically processed within 24-48 hours. Broadcasting begins immediately after verification.",
-    interfaceNavigation: "Chaturbate's interface is its weakest point. The design looks like it has not been significantly updated since launch. The homepage displays a grid of live thumbnails sorted by viewer count. Navigation is basic with category tabs and a search bar. It works, but it feels dated compared to Stripchat's modern design or LiveJasmin's polished interface.",
-    mobileExperience: "The Chaturbate app is not available on app stores, but the mobile website works adequately. Browsing, watching, and tipping all function on mobile. The experience is serviceable but not optimized for touch interaction in the way that Stripchat's mobile experience is.",
+    gettingStarted: "Under two minutes for viewers — email and username, done. No verification needed to watch free content. Performers require age verification with government ID, typically processed within 24-48 hours. Broadcasting begins immediately after approval. Zero barrier for viewers, reasonable barrier for performers.",
+    interfaceNavigation: "Chaturbate's interface is its most criticized element — and fairly so. The design has barely changed since launch. Homepage displays a massive grid of live thumbnails sorted by viewer count. Category tabs across the top (Female, Male, Couple, Trans). Basic search. Minimal filtering compared to Stripchat's AI-powered recommendations. Performer rooms include chat, tip menu, bio, and interactive features. It works because users know it — not because it's well-designed. Post-2020 competitors make Chaturbate's UI look ancient.",
+    mobileExperience: "No native Chaturbate app on iOS or Android app stores. Mobile website is functional — browsing, watching, tipping all work on phones. But the dated desktop design translates poorly to small screens. Thumbnails are cramped, navigation is clunky, and the experience feels like a desktop site squeezed onto mobile rather than a responsive design. Desktop strongly preferred for extended viewing. Stripchat's mobile experience is significantly better.",
   },
   "stripchat": {
     gettingStarted: "Quick registration via email. Performer verification within 24-48 hours. Viewers can start watching immediately without an account.",
@@ -177,10 +177,10 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "credit-card", title: "Incognito Mode", description: "Premium feature — profile visible only to people you swiped right on. Essential for users needing discretion." },
   ],
   "chaturbate": [
-    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including streams, chat, and payment information." },
-    { icon: "credit-card", title: "Discreet Billing", description: "Token purchases appear under a generic billing descriptor. Chaturbate name not visible on statements." },
-    { icon: "shield-check", title: "Age Verification", description: "Government ID required for all performers before broadcasting. Ensures age compliance and reduces fake accounts." },
-    { icon: "eye-off", title: "Anonymous Viewing", description: "No account required for basic viewing. Free browsing without providing personal information." },
+    { icon: "lock", title: "SSL & Payment Security", description: "SSL/TLS encryption for all data transfers. PCI-compliant payment processing for token purchases. Industry-standard security with no major data breaches in platform history." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Token purchases appear under a generic billing descriptor on statements. Chaturbate name not visible. Essential for users who share financial accounts or need billing discretion." },
+    { icon: "shield-check", title: "Performer Verification", description: "Government ID and age verification required for all performers before broadcasting. Ensures legal compliance and reduces fake accounts. Verification typically processed within 24-48 hours." },
+    { icon: "eye-off", title: "Anonymous Viewing", description: "No account, no registration, no personal information required to watch any public broadcast. Completely anonymous free viewing. Account creation optional and requires only email. Minimal data collection compared to mainstream platforms." },
   ],
   "stripchat": [
     { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all connections including streams, chat, and payments." },
@@ -337,11 +337,11 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Women: Send Engaging First Messages", description: "Reference something specific from their profile. Personalized messages convert 3-5x better than generic greetings." },
   ],
   "chaturbate": [
-    { title: "Create a Free Account", description: "Viewers: Create a free account to access chat, follow favorites, and get notifications when performers go live." },
-    { title: "Buy Tokens in Larger Bundles", description: "Viewers: Buy tokens in larger bundles for better per-token value. The 500-token bundle offers the best balance." },
-    { title: "Invest in a Lovense Toy", description: "Performers: Interactive tip-activated shows earn 2-3x more than standard broadcasting." },
-    { title: "Set Clear Tip Menus and Room Goals", description: "Performers: Viewers tip more when they know exactly what each amount unlocks." },
-    { title: "Broadcast Consistently at Set Times", description: "Performers: Regular scheduling builds a loyal viewer base." },
+    { title: "Create a Free Account Even for Free Viewing", description: "Free account unlocks chat, following favorites, notifications when performers go live, and purchase history. Takes under two minutes. Enhances the free experience significantly." },
+    { title: "Buy the 500 or 1,000 Token Bundle", description: "Per-token cost drops from $0.11 to $0.08 with larger bundles. The 500-token bundle ($44.99) is the sweet spot for regular viewers. 1,000 tokens ($79.99) for heavy users." },
+    { title: "Explore the Couples Category", description: "One of Chaturbate's most unique offerings. Real couples performing together create dynamics impossible on solo cam sites. Browse the Couple tag for the platform's most distinctive content." },
+    { title: "Performers: Invest in Interactive Toys", description: "Lovense and OhMiBod tip-activated shows earn 2-3x more than standard broadcasting. The interactive element keeps viewers engaged and tipping. Essential investment for serious performers." },
+    { title: "Performers: Use Apps, Bots, and Clear Tip Menus", description: "Chaturbate's open app ecosystem is unique. Tip games, countdowns, spin wheels, and automated responses create engaging room experiences. Clear tip menus with specific prices for specific actions dramatically increase tipping frequency." },
   ],
   "stripchat": [
     { title: "Try VR If You Have a Headset", description: "The VR experience is Stripchat's biggest differentiator. Even basic VR headsets provide a dramatically more immersive experience." },
