@@ -212,10 +212,10 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "eye-off", title: "Payment Privacy", description: "Patreon charges appear on financial statements under the Patreon name — which is a feature, not a bug, for this platform. Unlike adult platforms that need discreet billing, Patreon's mainstream brand means having 'Patreon' on your bank statement carries no stigma. This transparency is part of the platform's credibility value proposition." },
   ],
   "jerkmate": [
-    { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption across the entire platform. All content, payments, and personal data encrypted in transit." },
-    { icon: "credit-card", title: "Discreet Billing", description: "Charges appear on statements under a generic descriptor. The Jerkmate name does not show up on financial statements." },
-    { icon: "shield-check", title: "Age Verification", description: "Performers must verify identity with government ID. Standard age compliance for cam platforms." },
-    { icon: "eye-off", title: "Legitimate Operations", description: "Jerkmate is operated by a legitimate company with real corporate structure, functioning payment processing, and responsive customer support." },
+    { icon: "lock", title: "Data Security", description: "SSL/TLS encryption across the entire platform. PCI-compliant payment processing. Account data, chat messages, and payment information encrypted in transit. No major data breaches in the platform's operating history." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Gold purchases and premium charges appear on financial statements under a generic billing descriptor. The Jerkmate name is not visible on bank or credit card statements." },
+    { icon: "shield-check", title: "Performer Verification", description: "All performers must verify age and identity with government documentation before being approved. The curated performer roster adds an additional quality screening layer beyond basic verification." },
+    { icon: "eye-off", title: "Legitimate Operations", description: "Jerkmate is operated by an established adult entertainment company with real corporate structure. The aggressive advertising creates a trust perception problem that the actual security and operations do not deserve." },
   ],
   "replika": [
     { icon: "lock", title: "Data Encryption", description: "Industry-standard encryption for data in transit. App store security requirements compliance for iOS and Android." },
