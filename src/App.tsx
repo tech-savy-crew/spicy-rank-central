@@ -3,7 +3,12 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
+
+function ReviewRedirect() {
+  const { slug } = useParams<{ slug: string }>();
+  return <Navigate to={`/reviews/${slug}`} replace />;
+}
 import { HelmetProvider } from "react-helmet-async";
 
 const Index = lazy(() => import("./pages/Index"));
@@ -46,7 +51,7 @@ const App = () => (
               {/* Reviews */}
               <Route path="/reviews" element={<ReviewsPage />} />
               <Route path="/reviews/:slug" element={<ReviewDetailPage />} />
-              <Route path="/review/:slug" element={<ReviewDetailPage />} />
+              <Route path="/review/:slug" element={<ReviewRedirect />} />
               {/* Comparisons */}
               <Route path="/compare" element={<ComparePage />} />
               <Route path="/compare/:slug" element={<CompareDetailPage />} />
