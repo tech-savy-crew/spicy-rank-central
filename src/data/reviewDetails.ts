@@ -1544,14 +1544,14 @@ export const detailedReviews: DetailedReview[] = [
       "Explore tab adds interactive features beyond basic swiping"
     ],
     cons: [
-      "Free tier progressively restricted to push upgrades",
-      "Lower conversation quality than Bumble/Hinge",
-      "Platinum at $49.99 delivers minimal value over Gold",
-      "More bots and fake profiles than competitors",
-      "App has become cluttered with features and ads",
-      "Paid profile wipe monetizes trust problem"
+      "Free tier has been progressively restricted — limited likes, no key features, ads between swipes",
+      "Conversation quality is noticeably lower than Bumble and Hinge due to low-effort matching",
+      "Platinum at $49.99 delivers minimal additional value over Gold's $39.99",
+      "Dynamic pricing means different users see different prices for the same subscription — feels manipulative",
+      "Photo-first interface rewards attractiveness over personality more than competitors",
+      "The deliberate frustration of the free tier feels increasingly like a dark pattern rather than a business model"
     ],
-    prosConsNote: "Does Tinder work? Yes — millions of real matches happen daily. But success varies significantly by tier, location, profile quality, and gender. Male users face intense competition and variable match rates. Female users receive abundant matches but must filter aggressively for quality.\n\nIs Tinder worth it? Gold subscribers in active markets, yes. Free users get a deliberately restricted experience — Bumble and Hinge offer better free tiers. Platinum rarely justifies the extra $10 over Gold.",
+    prosConsNote: "Is Tinder worth it in 2026? For Gold subscribers in major markets, yes — the combination of unlimited likes, See Who Likes You, and Passport delivers genuine value. For free users, the experience has been restricted enough that Bumble's more functional free tier or Hinge's 8 free daily likes offer better unpaid experiences. For Platinum subscribers, the extra $10 per month over Gold rarely justifies itself.\n\nTinder vs Bumble: Tinder has more users and a faster matching pace. Bumble has the women-message-first model that creates higher-quality conversations and less harassment. Tinder is better for volume. Bumble is better for conversation quality. Both cost approximately $39.99 at their mid-tier subscriptions.\n\nTinder vs Hinge: Tinder is photo-first swiping for maximum volume. Hinge is prompt-based commenting for maximum conversation quality. Tinder matches more people. Hinge leads to better first dates. If you want quantity of matches, Tinder. If you want quality of conversations that lead to real connections, Hinge. Many active daters use both simultaneously.",
     whoShouldUse: [
       { persona: "Users needing the largest possible dating pool", reason: "75M+ users in 190+ countries — no competitor matches this scale", ideal: true },
       { persona: "International travelers", reason: "Passport feature and widest global availability make Tinder unmatched for travel dating", ideal: true },
