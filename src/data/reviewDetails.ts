@@ -88,7 +88,7 @@ export const detailedReviews: DetailedReview[] = [
       { persona: "Budget-conscious users", reason: "Free tier is very limited, premium required for full experience", ideal: false },
       { persona: "Users wanting real human interaction", reason: "AI companions cannot replace genuine human connection", ideal: false }
     ],
-    alternatives: ["crushon-ai", "dreamgf-ai", "replika", "soulfun-ai"],
+    alternatives: ["crushon-ai", "dreamgf-ai", "replika", "girlfriendgpt"],
     comparisons: [
       { slug: "candy-ai-vs-crushon-ai", title: "Candy.ai vs CrushOn.ai" },
       { slug: "candy-ai-vs-dreamgf", title: "Candy.ai vs DreamGF.ai" },
