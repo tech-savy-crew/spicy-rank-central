@@ -182,10 +182,10 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "credit-card", title: "Incognito Mode", description: "Premium feature — profile visible only to people you swiped right on. Essential for users needing discretion." },
   ],
   "chaturbate": [
-    { icon: "lock", title: "SSL & Payment Security", description: "SSL/TLS encryption for all data transfers. PCI-compliant payment processing for token purchases. Industry-standard security with no major data breaches in platform history." },
-    { icon: "credit-card", title: "Discreet Billing", description: "Token purchases appear under a generic billing descriptor on statements. Chaturbate name not visible. Essential for users who share financial accounts or need billing discretion." },
-    { icon: "shield-check", title: "Performer Verification", description: "Government ID and age verification required for all performers before broadcasting. Ensures legal compliance and reduces fake accounts. Verification typically processed within 24-48 hours." },
-    { icon: "eye-off", title: "Anonymous Viewing", description: "No account, no registration, no personal information required to watch any public broadcast. Completely anonymous free viewing. Account creation optional and requires only email. Minimal data collection compared to mainstream platforms." },
+    { icon: "lock", title: "Data Security", description: "SSL/TLS encryption across the entire platform. All payment data processed through secure, PCI-compliant payment processors. No major data breaches in the platform's history — notable given its size and the fact that it has been a high-value target for hackers since its early years." },
+    { icon: "shield-check", title: "Performer Verification", description: "All performers must submit age and identity verification documents before being approved to broadcast. Chaturbate uses a combination of automated checks and manual review to verify that every performer is of legal age. Compliance with 18 USC 2257 record-keeping requirements." },
+    { icon: "eye-off", title: "Anonymous Viewing", description: "No registration, login, or personal information is required to watch public broadcasts. Viewers can watch thousands of hours of live content without providing a single piece of identifying information. This is the highest level of viewer anonymity among major cam platforms." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Token purchases appear on financial statements under generic billing descriptors. The Chaturbate name is not visible on bank or credit card statements. Standard billing discretion for adult platforms." },
   ],
   "stripchat": [
     { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all connections including streams, chat, and payments." },
