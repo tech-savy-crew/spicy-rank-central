@@ -173,11 +173,9 @@ export const detailedReviews: DetailedReview[] = [
       { persona: "Users wanting emotional depth and companionship", reason: "Candy.ai or Replika deliver deeper experiences", ideal: false },
       { persona: "Users wanting visual AI content", reason: "Text only — DreamGF.ai or Candy.ai for images", ideal: false }
     ],
-    alternatives: ["candy-ai", "dreamgf-ai", "girlfriendgpt", "infatuated-ai"],
+    alternatives: ["candy-ai", "dreamgf-ai", "girlfriendgpt", "replika"],
     comparisons: [
-      { slug: "candy-ai", title: "CrushOn.ai vs Candy.ai" },
-      { slug: "character-ai", title: "CrushOn.ai vs Character.ai" },
-      { slug: "spicychat", title: "CrushOn.ai vs SpicyChat" }
+      { slug: "candy-ai-vs-crushon-ai", title: "CrushOn.ai vs Candy.ai" },
     ],
     faqs: [
       { question: "Is CrushOn.ai free?", answer: "50 free messages/month with basic AI. NSFW restricted. Full experience requires paid plan starting $5.99/mo. Premium at $19.99 recommended." },
