@@ -249,6 +249,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "eye-off", title: "Photo Verification", description: "Selfie matching against profile photos. Timestamp and pose system. Reduces catfishing. Verified badge visible on profiles." },
     { icon: "credit-card", title: "Discreet Billing", description: "Generic descriptor on financial statements. Seeking name not visible. Billing privacy for users needing financial discretion." },
   ],
+  "ashley-madison": [
+    { icon: "shield-check", title: "The 2015 Breach", description: "Hackers exposed 37M accounts — names, emails, payments, preferences. Led to divorces, job losses, suicides. Most devastating dating data breach in history. Permanently branded Ashley Madison with trust deficit." },
+    { icon: "lock", title: "Post-Breach Security", description: "New ownership, rebuilt infrastructure. End-to-end encryption, HTTPS everywhere, regular third-party audits, Deloitte partnership. Not cosmetic — fundamental security rebuild." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic descriptor on statements. Ashley Madison name not visible. Essential for users sharing financial accounts." },
+    { icon: "eye-off", title: "Full-Profile Wipe", description: "Paid permanent deletion of all data, messages, photos, history. Created post-breach in response to user demand. Guaranteed exit option." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
