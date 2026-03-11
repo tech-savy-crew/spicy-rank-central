@@ -177,10 +177,10 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "credit-card", title: "Incognito Mode", description: "Premium feature — profile visible only to people you swiped right on. Essential for users needing discretion." },
   ],
   "chaturbate": [
-    { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including streams, chat, and payment information." },
-    { icon: "credit-card", title: "Discreet Billing", description: "Token purchases appear under a generic billing descriptor. Chaturbate name not visible on statements." },
-    { icon: "shield-check", title: "Age Verification", description: "Government ID required for all performers before broadcasting. Ensures age compliance and reduces fake accounts." },
-    { icon: "eye-off", title: "Anonymous Viewing", description: "No account required for basic viewing. Free browsing without providing personal information." },
+    { icon: "lock", title: "SSL & Payment Security", description: "SSL/TLS encryption for all data transfers. PCI-compliant payment processing for token purchases. Industry-standard security with no major data breaches in platform history." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Token purchases appear under a generic billing descriptor on statements. Chaturbate name not visible. Essential for users who share financial accounts or need billing discretion." },
+    { icon: "shield-check", title: "Performer Verification", description: "Government ID and age verification required for all performers before broadcasting. Ensures legal compliance and reduces fake accounts. Verification typically processed within 24-48 hours." },
+    { icon: "eye-off", title: "Anonymous Viewing", description: "No account, no registration, no personal information required to watch any public broadcast. Completely anonymous free viewing. Account creation optional and requires only email. Minimal data collection compared to mainstream platforms." },
   ],
   "stripchat": [
     { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all connections including streams, chat, and payments." },
