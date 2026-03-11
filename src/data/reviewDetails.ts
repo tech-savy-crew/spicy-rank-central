@@ -338,11 +338,9 @@ export const detailedReviews: DetailedReview[] = [
       { persona: "Users seeking unrestricted NSFW", reason: "ERP rollback means CrushOn.ai, Candy.ai, GirlfriendGPT are all better", ideal: false },
       { persona: "Users wanting visual AI content", reason: "No image generation. DreamGF.ai or Candy.ai for visuals", ideal: false }
     ],
-    alternatives: ["candy-ai", "crushon-ai", "character-ai", "girlfriendgpt", "dreamgf-ai"],
+    alternatives: ["candy-ai", "crushon-ai", "girlfriendgpt", "dreamgf-ai"],
     comparisons: [
       { slug: "replika-vs-candy-ai", title: "Replika vs Candy.ai" },
-      { slug: "replika-vs-crushon-ai", title: "Replika vs CrushOn.ai" },
-      { slug: "replika-vs-character-ai", title: "Replika vs Character.ai" }
     ],
     faqs: [
       { question: "Is Replika free?", answer: "Yes. Unlimited basic text conversations with no daily caps. Romantic features, voice calls, AR require Pro at $19.99/mo or ~$5.83/mo annual." },
