@@ -1563,7 +1563,8 @@ export const detailedReviews: DetailedReview[] = [
     alternatives: ["bumble", "feeld"],
     comparisons: [
       { slug: "tinder-vs-bumble", title: "Tinder vs Bumble" },
-      { slug: "tinder-vs-hinge", title: "Tinder vs Hinge" }
+      { slug: "tinder-vs-hinge", title: "Tinder vs Hinge" },
+      { slug: "tinder-vs-feeld", title: "Tinder vs Feeld" }
     ],
     faqs: [
       { question: "Is Tinder worth it in 2026?", answer: "Gold subscribers in active markets, yes. Free users get a restricted experience — Bumble and Hinge offer better free tiers. Platinum rarely justifies the extra $10 over Gold." },
