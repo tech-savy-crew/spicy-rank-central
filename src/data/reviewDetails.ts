@@ -2265,13 +2265,7 @@ function generateDatingReviews(): DetailedReview[] {
       [{ question: "How does WhatsYourPrice bidding work?", answer: "Generous members bid a dollar amount to take attractive members on a first date. If accepted, both parties arrange the date. Bids typically range from $50-500." }],
       "WhatsYourPrice is a creative take on sugar dating that works well for arranging first meetings. The auction format reduces ambiguity but may feel too transactional for some users."
     ),
-    datingTemplate("AdultFriendFinder", "adultfriendfinder", 7.0, "Massive adult dating community with 80M+ members and multiple features", "Free / Gold from $14.95/mo", "Adult casual hookups", "https://adultfriendfinder.com",
-      ["AdultFriendFinder (AFF) is one of the largest adult dating communities in the world with over 80 million registered members. The platform caters to all types of adult connections including hookups, swinging, polyamory, and casual encounters.", "Beyond basic matching, AFF offers chat rooms, live streams, forums, and an active community that makes it more of a social platform than a traditional dating app.", "The interface is dated and can feel overwhelming with features, ads, and notifications. However, the sheer size of the user base means active users in virtually every city."],
-      ["80M+ registered members", "Multiple connection types", "Community features beyond dating", "Active in most cities worldwide"],
-      ["Dated, cluttered interface", "Many inactive profiles", "Spam and fake accounts exist", "Free tier very limited"],
-      [{ question: "Is AdultFriendFinder worth it?", answer: "AFF's massive user base means potential matches everywhere. Gold membership at $14.95/month is reasonable for the access it provides." }],
-      "AdultFriendFinder's massive user base makes it the widest net for adult dating. The dated interface and spam are drawbacks, but no other platform offers as many potential connections."
-    ),
+    // AdultFriendFinder moved to standalone optimized entry below
     datingTemplate("Pure App", "pure-app", 7.2, "Anonymous hookup app with self-destructing posts for maximum privacy", "Free trial / $14.99/week", "Anonymous hookups", "https://pure.app",
       ["Pure App takes privacy to the extreme — posts expire after 24 hours, photos self-destruct after viewing, and the app encourages using it without a persistent profile. It's designed for people who want hookups without the social media baggage.", "The concept is compelling: create a post, find a match, hook up, and everything disappears. No browsing history, no lingering profile, no digital footprint.", "The privacy focus works great in major cities but limits functionality in smaller markets where the user base is thin."],
       ["Maximum privacy with auto-deletion", "No permanent digital footprint", "Clean, minimal interface", "Perfect for discreet hookups"],
