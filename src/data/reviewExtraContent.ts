@@ -363,11 +363,11 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Use Mobile for Casual Browsing", description: "Stripchat's mobile experience is excellent. Save desktop for VR and private shows." },
   ],
   "tinder": [
-    { title: "Invest in Quality Photos First", description: "Clear headshot, full-body shot, activity photos with good lighting. Six photos outperform three. First photo matters most — it determines 80% of swipe decisions. No group photos as your lead image." },
-    { title: "Write a Specific, Conversation-Starting Bio", description: "Mention specific interests, hobbies, or questions that invite responses. 'I make the best carbonara in Brooklyn — fight me' outperforms 'I love to travel and eat good food.' Generic bios get skipped." },
-    { title: "Get Selfie Verified Immediately", description: "The blue checkmark significantly increases trust and match rates. Takes 30 seconds. In a platform with bot concerns, verification signals you are real and serious." },
-    { title: "Swipe Consistently During Peak Hours", description: "Sunday-Thursday evenings 7-10 PM in your timezone. Consistent daily usage of 10-15 minutes beats weekend binge-swiping. The algorithm rewards regular activity over sporadic heavy usage." },
-    { title: "Start with Gold — Skip Platinum", description: "Gold's See Who Likes You is the single most valuable paid feature on Tinder. It eliminates the swiping game entirely. Platinum's extras (message before matching, priority likes) rarely justify the additional $10/month in our testing." },
+    { title: "Subscribe to Gold, Not Platinum", description: "Is tinder gold worth it? Yes — See Who Likes You is the single most time-saving feature on the platform. Platinum's pre-match messaging sounds valuable but has low engagement rates. Save the $10 monthly premium. Gold is the value sweet spot." },
+    { title: "Use Boosts Strategically During Peak Hours", description: "Boosts work best during high-activity windows: Sunday 8-10pm, weekday evenings 7-9pm. A Boost during peak hours can generate 10x the normal profile visibility. Never waste a Boost during mid-afternoon when activity is low." },
+    { title: "Complete Selfie Verification Immediately", description: "The blue checkmark increases match rates meaningfully because it signals you are real. In a sea of potential catfish profiles, verified accounts stand out. Takes under two minutes and is free." },
+    { title: "Write an Actual Bio — Even a Short One", description: "Profiles with bios receive significantly more right swipes than blank profiles. Even a two-line bio with humor or a conversation hook outperforms no bio at all. Tinder is photo-first but text is not irrelevant." },
+    { title: "Use Passport to Evaluate New Cities Before Visiting", description: "Traveling somewhere new? Use Passport to swipe in that city a few days before you arrive. Match with locals who can recommend restaurants, activities, and meetup spots. Some of the best travel advice comes from Tinder matches who actually live there." },
   ],
   "fanvue": [
     { title: "Direct Your Most Loyal Fans to FanVue", description: "Keep your most engaged subscribers on FanVue where you keep 85%. Use OnlyFans for broader reach." },
