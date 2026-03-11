@@ -1,18 +1,26 @@
-# Search Engine Crawlers
-User-agent: Googlebot
+User-agent: *
+Allow: /
+
+Sitemap: https://spicyranked.com/sitemap.xml
+
+# Block admin/internal routes if any
+Disallow: /api/
+Disallow: /_/
+
+# Allow all crawlers including AI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Slurp
+User-agent: Googlebot
 Allow: /
 
-User-agent: DuckDuckBot
-Allow: /
-
-# AI Crawlers - Explicitly Allowed
-User-agent: GPTBot
+User-agent: PerplexityBot
 Allow: /
 
 User-agent: ChatGPT-User
@@ -21,26 +29,5 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
 User-agent: Anthropic-ai
 Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-User-agent: cohere-ai
-Allow: /
-
-# All Other Bots
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /_assets/
-
-# Sitemaps
-Sitemap: https://spicyranked.com/sitemap.xml
