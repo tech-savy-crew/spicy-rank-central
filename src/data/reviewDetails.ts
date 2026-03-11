@@ -1553,12 +1553,12 @@ export const detailedReviews: DetailedReview[] = [
     ],
     prosConsNote: "Is Tinder worth it in 2026? For Gold subscribers in major markets, yes — the combination of unlimited likes, See Who Likes You, and Passport delivers genuine value. For free users, the experience has been restricted enough that Bumble's more functional free tier or Hinge's 8 free daily likes offer better unpaid experiences. For Platinum subscribers, the extra $10 per month over Gold rarely justifies itself.\n\nTinder vs Bumble: Tinder has more users and a faster matching pace. Bumble has the women-message-first model that creates higher-quality conversations and less harassment. Tinder is better for volume. Bumble is better for conversation quality. Both cost approximately $39.99 at their mid-tier subscriptions.\n\nTinder vs Hinge: Tinder is photo-first swiping for maximum volume. Hinge is prompt-based commenting for maximum conversation quality. Tinder matches more people. Hinge leads to better first dates. If you want quantity of matches, Tinder. If you want quality of conversations that lead to real connections, Hinge. Many active daters use both simultaneously.",
     whoShouldUse: [
-      { persona: "Users needing the largest possible dating pool", reason: "75M+ users in 190+ countries — no competitor matches this scale", ideal: true },
-      { persona: "International travelers", reason: "Passport feature and widest global availability make Tinder unmatched for travel dating", ideal: true },
-      { persona: "Users wanting maximum match volume", reason: "Sheer scale produces more matches per day than any alternative", ideal: true },
-      { persona: "Users wanting deeper conversation quality", reason: "Bumble's women-first model and Hinge's prompt-based profiles produce better conversations", ideal: false },
-      { persona: "Budget-conscious daters", reason: "Gold at $39.99 and Platinum at $49.99 are expensive — Bumble and Hinge offer better value", ideal: false },
-      { persona: "Users frustrated by bots and fake profiles", reason: "Despite verification, Tinder has more fake accounts than Bumble or Hinge", ideal: false }
+      { persona: "Anyone who wants the largest possible dating pool", reason: "With 75+ million monthly active users across 190 countries, Tinder provides more potential matches than any competitor.", ideal: true },
+      { persona: "Frequent travelers who want to connect in new cities", reason: "Passport lets you swipe anywhere in the world. Combined with the global user base, this makes Tinder the best dating app for international travel.", ideal: true },
+      { persona: "Users who prefer fast, photo-first matching", reason: "If you make dating decisions quickly based on physical attraction and want volume over lengthy profile analysis, Tinder's swiping mechanic is designed exactly for this.", ideal: true },
+      { persona: "Users who prioritize conversation quality over match quantity", reason: "Hinge's prompt-based system leads to significantly better opening conversations. If quality of messages matters more than quantity of matches, Hinge is better.", ideal: false },
+      { persona: "Users who want a strong free dating experience", reason: "Tinder's free tier has been restricted enough that Bumble and Hinge both offer more functional unpaid experiences.", ideal: false },
+      { persona: "Women who want to control the conversation dynamic", reason: "Bumble's women-message-first model gives women more control and reduces unwanted messages.", ideal: false }
     ],
     alternatives: ["bumble", "feeld"],
     comparisons: [
