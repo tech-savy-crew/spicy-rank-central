@@ -112,10 +112,6 @@ const Index = () => {
         <div className="absolute inset-0 spicy-gradient opacity-5" />
         <div className="container py-20 md:py-28 relative">
           <AnimatedSection className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 border border-primary/20 px-4 py-1.5 text-xs font-medium text-primary mb-6">
-              <Flame className="h-3.5 w-3.5" />
-              Honest reviews, spicy takes
-            </div>
             <h1 className="text-4xl md:text-6xl font-black leading-tight mb-6 text-balance">
               Honest Reviews of Adult Platforms —{" "}
               <span className="spicy-text-gradient">Ranked & Rated</span>
