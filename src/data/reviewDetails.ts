@@ -500,7 +500,7 @@ export const detailedReviews: DetailedReview[] = [
       { persona: "Creators who need adult content monetization", reason: "Patreon's content policies prohibit most NSFW content. For adult content creators, OnlyFans, Fansly, or FanVue are purpose-built alternatives with no content restrictions.", ideal: false },
       { persona: "Creators who prioritize minimizing fees above all else", reason: "If keeping maximum revenue is the top priority and you do not need Patreon's specific features, Ko-fi (0% on donations), Buy Me a Coffee (5%), or even FanVue (15% flat with AI tools) offer better economics.", ideal: false }
     ],
-    alternatives: ["onlyfans", "fansly", "fanvue", "loyalfans"],
+    alternatives: ["onlyfans", "fansly", "fanvue"],
     comparisons: [
       { slug: "patreon-vs-onlyfans", title: "Patreon vs OnlyFans" },
       { slug: "patreon-vs-kofi", title: "Patreon vs Ko-fi" },
