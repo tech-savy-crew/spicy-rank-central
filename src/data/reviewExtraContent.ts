@@ -337,11 +337,11 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Women: Send Engaging First Messages", description: "Reference something specific from their profile. Personalized messages convert 3-5x better than generic greetings." },
   ],
   "chaturbate": [
-    { title: "Create a Free Account", description: "Viewers: Create a free account to access chat, follow favorites, and get notifications when performers go live." },
-    { title: "Buy Tokens in Larger Bundles", description: "Viewers: Buy tokens in larger bundles for better per-token value. The 500-token bundle offers the best balance." },
-    { title: "Invest in a Lovense Toy", description: "Performers: Interactive tip-activated shows earn 2-3x more than standard broadcasting." },
-    { title: "Set Clear Tip Menus and Room Goals", description: "Performers: Viewers tip more when they know exactly what each amount unlocks." },
-    { title: "Broadcast Consistently at Set Times", description: "Performers: Regular scheduling builds a loyal viewer base." },
+    { title: "Create a Free Account Even for Free Viewing", description: "Free account unlocks chat, following favorites, notifications when performers go live, and purchase history. Takes under two minutes. Enhances the free experience significantly." },
+    { title: "Buy the 500 or 1,000 Token Bundle", description: "Per-token cost drops from $0.11 to $0.08 with larger bundles. The 500-token bundle ($44.99) is the sweet spot for regular viewers. 1,000 tokens ($79.99) for heavy users." },
+    { title: "Explore the Couples Category", description: "One of Chaturbate's most unique offerings. Real couples performing together create dynamics impossible on solo cam sites. Browse the Couple tag for the platform's most distinctive content." },
+    { title: "Performers: Invest in Interactive Toys", description: "Lovense and OhMiBod tip-activated shows earn 2-3x more than standard broadcasting. The interactive element keeps viewers engaged and tipping. Essential investment for serious performers." },
+    { title: "Performers: Use Apps, Bots, and Clear Tip Menus", description: "Chaturbate's open app ecosystem is unique. Tip games, countdowns, spin wheels, and automated responses create engaging room experiences. Clear tip menus with specific prices for specific actions dramatically increase tipping frequency." },
   ],
   "stripchat": [
     { title: "Try VR If You Have a Headset", description: "The VR experience is Stripchat's biggest differentiator. Even basic VR headsets provide a dramatically more immersive experience." },
