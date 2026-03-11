@@ -201,10 +201,10 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "eye-off", title: "Content Protection", description: "DMCA enforcement and content protection measures. Creators retain ownership of their content." },
   ],
   "patreon": [
-    { icon: "lock", title: "Secure Payments", description: "All payments processed through Stripe with bank-grade encryption and PCI compliance." },
-    { icon: "shield-check", title: "Content Moderation", description: "Community guidelines enforced with content review. Adult content restricted and monitored." },
-    { icon: "credit-card", title: "Transparent Billing", description: "Clear billing with Patreon name on statements. Subscription management through account settings." },
-    { icon: "eye-off", title: "Patron Privacy", description: "Patron identities private by default. Creators see patron names but not personal details unless shared." },
+    { icon: "lock", title: "Corporate Security", description: "Patreon is a venture-backed company with institutional investors and corporate governance. The platform processes payments through PCI-compliant systems, maintains SOC 2 compliance for data security, and employs dedicated security teams. This level of corporate security infrastructure exceeds what most creator platforms offer." },
+    { icon: "shield-check", title: "Content Moderation", description: "Active content moderation team that enforces community guidelines. Patreon prohibits most adult content, hate speech, and content that violates US law. The moderation is more aggressive than adult platforms but creates a safer, more professional environment for mainstream creators and their supporters." },
+    { icon: "credit-card", title: "Native App Security", description: "The Patreon app passes both Apple App Store and Google Play Store security reviews. This additional layer of third-party security vetting is an advantage that most adult platforms cannot claim because they are excluded from app stores entirely." },
+    { icon: "eye-off", title: "Payment Privacy", description: "Patreon charges appear on financial statements under the Patreon name — which is a feature, not a bug, for this platform. Unlike adult platforms that need discreet billing, Patreon's mainstream brand means having 'Patreon' on your bank statement carries no stigma. This transparency is part of the platform's credibility value proposition." },
   ],
   "jerkmate": [
     { icon: "lock", title: "Data Encryption", description: "SSL/TLS encryption across the entire platform. All content, payments, and personal data encrypted in transit." },
