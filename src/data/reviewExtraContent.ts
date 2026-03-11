@@ -243,6 +243,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. CamSoda name not visible on financial records. Billing discretion for viewers." },
     { icon: "eye-off", title: "Anonymous Viewing", description: "Premium membership includes anonymous tipping. Basic free viewing already anonymous since no account required." },
   ],
+  "seeking": [
+    { icon: "lock", title: "Income Verification", description: "Third-party document submission (tax returns, pay stubs). Verified badges on profiles. Objective proof of financial claims. Dramatically increases credibility and response rates." },
+    { icon: "shield-check", title: "Background Checks", description: "Optional criminal screening through third-party service. Badge confirming no criminal record. Genuine peace of mind for members meeting someone online." },
+    { icon: "eye-off", title: "Photo Verification", description: "Selfie matching against profile photos. Timestamp and pose system. Reduces catfishing. Verified badge visible on profiles." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic descriptor on financial statements. Seeking name not visible. Billing privacy for users needing financial discretion." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
