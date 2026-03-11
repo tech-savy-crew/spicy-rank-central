@@ -46,7 +46,7 @@ const ReviewsPage = () => {
     <Layout>
       <SEO
         title="All Platform Reviews | SpicyRanked - Honest Adult Platform Reviews"
-        description="Browse 50+ honest, independent reviews of adult platforms. Creator sites, cam sites, AI companions, dating apps & more - all rated on our 10-point scale."
+        description="Browse 24 honest, independent reviews of adult platforms. Creator sites, cam sites, AI companions, dating apps & more - all rated on our 10-point scale."
         canonical="/reviews"
         jsonLd={[
           itemListSchema(
