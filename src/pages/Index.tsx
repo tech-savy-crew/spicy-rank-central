@@ -150,7 +150,7 @@ const Index = () => {
             </div>
 
             <p className="text-xs text-muted-foreground">
-              150+ platforms reviewed · Updated weekly · Independent & unbiased
+              24 platforms reviewed · Updated weekly · Independent & unbiased
             </p>
           </AnimatedSection>
         </div>
