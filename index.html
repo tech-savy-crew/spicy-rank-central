@@ -4,15 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-29YNWZJ6K1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-29YNWZJ6K1');
-    </script>
-
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="QS1ousQIqV60vyGOhnDbDlk9RBsISkbsH4LDwuYnx_k" />
 
@@ -43,10 +34,13 @@
     <meta name="twitter:description" content="Independent reviews and rankings of adult platforms, cam sites, dating apps and AI companions." />
     <meta name="twitter:image" content="https://spicyranked.com/og-image.png" />
 
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Preconnect — only truly critical origins (max 2) -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
+
+    <!-- Google Fonts — non-render-blocking with preload + swap -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" /></noscript>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -73,6 +67,15 @@
       }
     }
     </script>
+
+    <!-- Critical CSS: inline core layout/theme tokens for instant first paint -->
+    <style>
+      :root{--background:230 25% 95%;--foreground:235 45% 14%;--card:0 0% 100%;--primary:10 88% 44%;--primary-foreground:0 0% 100%;--secondary:230 20% 90%;--secondary-foreground:235 45% 14%;--muted:230 15% 88%;--muted-foreground:230 15% 40%;--border:230 15% 85%;--radius:0.75rem}
+      .dark{--background:235 45% 14%;--foreground:0 0% 96%;--card:235 40% 18%;--primary:10 88% 44%;--primary-foreground:0 0% 100%;--secondary:235 30% 24%;--secondary-foreground:0 0% 96%;--muted:235 25% 22%;--muted-foreground:230 15% 60%;--border:235 25% 25%}
+      *{box-sizing:border-box;border-color:hsl(var(--border))}
+      html{scroll-behavior:smooth}
+      body{margin:0;background:hsl(var(--background));color:hsl(var(--foreground));font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -124,7 +127,6 @@
           <li><a href="/compare/tinder-vs-bumble">Tinder vs Bumble</a></li>
           <li><a href="/compare/ashley-madison-vs-seeking">Ashley Madison vs Seeking</a></li>
           <li><a href="/compare/ashley-madison-vs-adult-friend-finder">Ashley Madison vs Adult Friend Finder</a></li>
-          <li><a href="/compare/adult-friend-finder-vs-tinder">Adult Friend Finder vs Tinder</a></li>
         </ul>
 
         <h2>Best Lists</h2>
@@ -159,5 +161,24 @@
       </div>
     </noscript>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- GA4 — deferred after first paint (non-blocking) -->
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var s = document.createElement('script');
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-29YNWZJ6K1';
+          s.async = true;
+          document.head.appendChild(s);
+          s.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-29YNWZJ6K1', { send_page_view: true });
+          };
+        }, 2500);
+      });
+    </script>
   </body>
 </html>
