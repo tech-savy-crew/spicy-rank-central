@@ -1147,11 +1147,11 @@ export const detailedReviews: DetailedReview[] = [
       { persona: "Users who value modern interface design and curated quality", reason: "If a dated interface genuinely bothers you, Stripchat offers a dramatically better visual experience with VR support and AI recommendations.", ideal: false },
       { persona: "Viewers who prefer premium private show experiences", reason: "Chaturbate's strength is the free tipping economy, not the private show experience. LiveJasmin provides a more refined private show product.", ideal: false }
     ],
-    alternatives: ["stripchat", "bongacams", "livejasmin", "camsoda"],
+    alternatives: ["stripchat", "bongacams", "livejasmin", "camsoda", "flirt4free"],
     comparisons: [
       { slug: "chaturbate-vs-stripchat", title: "Chaturbate vs Stripchat" },
-      { slug: "chaturbate-vs-livejasmin", title: "Chaturbate vs LiveJasmin" },
-      { slug: "chaturbate-vs-bongacams", title: "Chaturbate vs BongaCams" }
+      { slug: "chaturbate-vs-bongacams", title: "Chaturbate vs BongaCams" },
+      { slug: "chaturbate-vs-livejasmin", title: "Chaturbate vs LiveJasmin" }
     ],
     faqs: [
       { question: "Is Chaturbate free?", answer: "Yes, genuinely free. All public broadcasts watchable without registration, login, or payment. Tokens only for tipping and interaction." },
