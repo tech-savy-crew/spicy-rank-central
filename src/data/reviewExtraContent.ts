@@ -271,6 +271,7 @@ const privacyOverrides: Record<string, string> = {
   "fetishfinder": "Is FetishFinder safe? Yes — strongest privacy protections in fetish dating space. Anonymous browsing, photo locks, visibility controls, discreet billing create comprehensive framework. Is FetishFinder legit? Absolutely — real users, genuine community, transparent business. Is it a scam? No — delivers exactly what promised: dedicated, privacy-focused fetish dating.",
   "bongacams": "Is BongaCams safe? Yes — standard security, millions of safe daily transactions. Is BongaCams legit? Absolutely — one of the largest cam platforms globally with years of operation. Is it a scam? No — aggressive marketing creates perception problem but platform operates legitimately.",
   "camsoda": "Is CamSoda safe? Yes — standard security consistent with major cam sites. Is CamSoda legit? Yes — operating for years with real user base and functioning payments. Is it a scam? No — delivers exactly what promised: free cams with innovative voyeur, AR, and recording features.",
+  "seeking": "Is Seeking safe? Yes — strongest verification suite in dating. Is it a scam? No — delivers exactly what promised: premium verified sugar dating environment with largest active user base.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
