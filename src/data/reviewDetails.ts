@@ -417,7 +417,7 @@ export const detailedReviews: DetailedReview[] = [
       { persona: "Creators needing maximum audience reach now", reason: "OnlyFans has vastly larger subscriber base", ideal: false },
       { persona: "Creators wanting established platform stability", reason: "FanVue is newer with less track record", ideal: false }
     ],
-    alternatives: ["onlyfans", "fansly", "loyalfans", "manyvids"],
+    alternatives: ["onlyfans", "fansly", "patreon"],
     comparisons: [
       { slug: "fanvue-vs-onlyfans", title: "FanVue vs OnlyFans" },
       { slug: "fanvue-vs-fansly", title: "FanVue vs Fansly" }
