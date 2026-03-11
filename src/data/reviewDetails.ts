@@ -1536,12 +1536,12 @@ export const detailedReviews: DetailedReview[] = [
       { label: "Features", score: 7.5, description: "Three subscription tiers, Boosts, Super Likes, Passport, Rewind, See Who Likes You (Gold+), Message Before Match (Platinum), selfie verification, and the most polished swiping interface in dating. The feature set is comprehensive but increasingly gated behind paywalls." }
     ],
     pros: [
-      "Largest user base — 75M+ monthly active users globally",
-      "Most intuitive swiping interface in dating",
-      "Gold's See Who Likes You saves enormous time",
-      "Passport for global swiping in 190+ countries",
-      "Selfie verification reduces catfishing",
-      "Explore tab adds interactive features beyond basic swiping"
+      "Largest user base among all dating apps with 75+ million monthly active users globally",
+      "The most intuitive, polished, and addictive swiping interface in dating",
+      "Available in 190+ countries — genuinely global reach for travelers",
+      "Tinder Gold's See Who Likes You saves enormous time by bypassing the swiping game",
+      "Passport feature lets you swipe in any city worldwide — excellent for travel planning",
+      "Selfie verification reduces catfishing and builds profile trust"
     ],
     cons: [
       "Free tier has been progressively restricted — limited likes, no key features, ads between swipes",
