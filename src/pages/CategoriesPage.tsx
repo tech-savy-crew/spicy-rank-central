@@ -2,15 +2,14 @@ import { Layout } from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { SEO, breadcrumbSchema } from "@/components/SEO";
 import { reviewCategories } from "@/data/reviews";
-import { ArrowRight, Users, Camera, Heart, Play, Bot, MessageCircle } from "lucide-react";
+import { ArrowRight, Users, Camera, Heart, Bot, MessageCircle } from "lucide-react";
 
 const categoryMeta: Record<string, { icon: React.ElementType; emoji: string; description: string }> = {
-  "Creator Platforms": { icon: Users, emoji: "💰", description: "OnlyFans, Fansly, FeetFinder, ManyVids & more" },
+  "Creator Platforms": { icon: Users, emoji: "💰", description: "OnlyFans, Fansly, FanVue, Patreon" },
   "Live Cam Sites": { icon: Camera, emoji: "🎥", description: "Chaturbate, Stripchat, Jerkmate, LiveJasmin & more" },
-  "Dating & Hookup Apps": { icon: Heart, emoji: "❤️", description: "Tinder, Bumble, Seeking, Feeld & more" },
-  "Tube & Streaming": { icon: Play, emoji: "🎬", description: "Free and premium video streaming platforms" },
-  "AI Companions": { icon: Bot, emoji: "🤖", description: "Candy.ai, CrushOn, DreamGF, Replika & more" },
-  "Sexting & Chat": { icon: MessageCircle, emoji: "💬", description: "Arousr, Flingster, ChatRandom & more" },
+  "Dating & Hookup Apps": { icon: Heart, emoji: "❤️", description: "Tinder, Bumble, Seeking, Ashley Madison & more" },
+  "AI Companions": { icon: Bot, emoji: "🤖", description: "Candy.ai, CrushOn, DreamGF, GirlfriendGPT, Replika" },
+  "Fetish & Niche Marketplaces": { icon: MessageCircle, emoji: "🔥", description: "FeetFinder, FetishFinder, Snifffr" },
 };
 
 function categorySlug(cat: string) {
@@ -22,7 +21,7 @@ const CategoriesPage = () => {
     <Layout>
       <SEO
         title="Browse Categories — Adult Platform Reviews | SpicyRanked"
-        description="Explore adult platform reviews by category — Creator Platforms, Live Cam Sites, AI Companions, Dating Apps, Sexting & more."
+        description="Explore adult platform reviews by category — Creator Platforms, Live Cam Sites, AI Companions, Dating Apps & Fetish Marketplaces."
         canonical="/categories"
         jsonLd={breadcrumbSchema([
           { name: "Home", url: "/" },

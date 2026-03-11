@@ -8,8 +8,7 @@ const reviewDropdown = [
   { label: "Live Cam Sites", to: "/category/live-cam-sites" },
   { label: "Dating & Hookup Apps", to: "/category/dating-hookup-apps" },
   { label: "AI Companions", to: "/category/ai-companions" },
-  { label: "Sexting & Chat", to: "/category/sexting-chat" },
-  { label: "Tube & Streaming", to: "/category/tube-streaming" },
+  { label: "Fetish & Niche", to: "/category/fetish-niche-marketplaces" },
   { label: "All Reviews", to: "/reviews" },
 ];
 

@@ -20,12 +20,12 @@ const rows: PlatformRow[] = [
   { name: "Candy.ai", category: "AI Companion", score: 8.3, pricing: "$12.99/mo", bestFor: "Immersive AI girlfriend experience", slug: "candy-ai" },
   { name: "Fansly", category: "Creator Platform", score: 8.2, pricing: "Free (20% fee)", bestFor: "Creators migrating from OnlyFans", slug: "fansly" },
   { name: "Bumble", category: "Dating App", score: 8.0, pricing: "Free / $39.99/mo", bestFor: "Women who want to make the first move", slug: "bumble" },
-  { name: "FeetFinder", category: "Creator Platform", score: 8.0, pricing: "$4.99/mo seller", bestFor: "Selling feet pics professionally", slug: "feetfinder" },
+  { name: "FeetFinder", category: "Fetish Marketplace", score: 8.0, pricing: "$4.99/mo seller", bestFor: "Selling feet pics professionally", slug: "feetfinder" },
   { name: "Chaturbate", category: "Live Cam", score: 7.8, pricing: "Free (tokens)", bestFor: "Free live cam viewing experience", slug: "chaturbate" },
-  { name: "Seeking", category: "Dating App", score: 7.8, pricing: "Free / $109/mo", bestFor: "Largest sugar dating pool", slug: "seeking" },
-  { name: "ManyVids", category: "Creator Platform", score: 7.8, pricing: "Free (40% fee)", bestFor: "Selling adult clips", slug: "manyvids" },
-  { name: "Jerkmate", category: "Live Cam", score: 7.6, pricing: "Free / Gold", bestFor: "AI-matched cam shows", slug: "jerkmate" },
+  { name: "DreamGF.ai", category: "AI Companion", score: 7.8, pricing: "$9.99/mo", bestFor: "Visual AI girlfriend experience", slug: "dreamgf-ai" },
+  { name: "FanVue", category: "Creator Platform", score: 7.6, pricing: "Free (15% fee)", bestFor: "Maximum creator earnings", slug: "fanvue" },
   { name: "Stripchat", category: "Live Cam", score: 7.5, pricing: "Free (tokens)", bestFor: "VR cam shows + modern interface", slug: "stripchat" },
+  { name: "Tinder", category: "Dating App", score: 7.5, pricing: "Free / $39.99/mo", bestFor: "Largest dating user base", slug: "tinder" },
 ];
 
 const categoryStyles: Record<string, string> = {
@@ -33,6 +33,7 @@ const categoryStyles: Record<string, string> = {
   "Live Cam": "bg-destructive/10 text-destructive",
   "Dating App": "bg-accent/30 text-accent-foreground",
   "AI Companion": "bg-secondary text-secondary-foreground",
+  "Fetish Marketplace": "bg-primary/10 text-primary",
 };
 
 export function PlatformRatingsTable() {

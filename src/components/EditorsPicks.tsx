@@ -16,7 +16,7 @@ const picks: PickCard[] = [
   { title: "Best Free Cam Experience", winner: "Chaturbate", score: 7.8, reason: "Thousands of free live broadcasts 24/7 with no signup required", link: "/reviews/chaturbate" },
   { title: "Best OnlyFans Alternative", winner: "Fansly", score: 8.2, reason: "Lower fees, better content organization, rapidly growing community", link: "/reviews/fansly" },
   { title: "Best AI Companion App", winner: "Candy.ai", score: 8.3, reason: "Most polished AI girlfriend experience with deep customization and realistic conversations", link: "/reviews/candy-ai" },
-  { title: "Best for Anonymous Sexting", winner: "Arousr", score: 7.2, reason: "Verified real people, anonymous by default, pay-per-chat pricing", link: "/reviews/arousr" },
+  { title: "Best Dating App", winner: "Bumble", score: 8.0, reason: "Women-first model creates higher-quality conversations and real connections", link: "/reviews/bumble" },
 ];
 
 export function EditorsPicks() {

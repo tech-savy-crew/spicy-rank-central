@@ -64,7 +64,7 @@ const ReviewsPage = () => {
         {/* Header */}
         <h1 className="text-3xl md:text-4xl font-black mb-2">All Platform Reviews</h1>
         <p className="text-muted-foreground mb-8">
-          Honest, independent reviews of 50+ adult platforms — rated and ranked
+          Honest, independent reviews of 24 adult platforms — rated and ranked
         </p>
 
         {/* Search */}
