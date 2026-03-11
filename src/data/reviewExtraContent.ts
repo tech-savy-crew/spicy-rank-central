@@ -127,6 +127,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Post-rebrand modern redesign. Clean premium aesthetic. Curated member grid filtered by preferences. Search is core navigation with intuitive filters. Profile pages display financial and lifestyle info prominently. Feels premium and intentional.",
     mobileExperience: "No iOS app due to Apple content policies. Android varies. Mobile website fully functional and responsive. Save to home screen for app-like access. Desktop better for detailed search and profile evaluation.",
   },
+  "ashley-madison": {
+    gettingStarted: "~5 minutes. Discreet username, basic demographics, profile description, optional photos (blurrable). No identity verification — anonymity is a feature. Women message immediately. Men need credits for conversations.",
+    interfaceNavigation: "Post-redesign clean dark theme. Contemporary and appropriately discreet. Curated online members grid. Search by distance, age, body type, interests. Messaging supports text, photos, priority system. Professional, purpose-built for discreet browsing.",
+    mobileExperience: "Ashley Madison app available on Android with discreet icon. iOS varies due to Apple policies. Mobile website reliable alternative. App includes panic button. Designed for discretion — hideable icon, nondescript appearance.",
+  },
 };
 const privacyCardOverrides: Record<string, TrustCard[]> = {
   "candy-ai": [
