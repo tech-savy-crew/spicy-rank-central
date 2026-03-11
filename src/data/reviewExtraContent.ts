@@ -194,10 +194,10 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "eye-off", title: "Account Privacy", description: "Anonymous browsing available. Invisible mode for Ultimate members. Account deletion available." },
   ],
   "tinder": [
-    { icon: "lock", title: "Selfie Verification", description: "Real-time selfie verification with blue checkmark badge. Pose-matching technology confirms you are a real person. Significantly reduces catfishing and builds trust with potential matches." },
-    { icon: "shield-check", title: "Match Group Security", description: "Owned by Match Group (NASDAQ: MTCH), the world's largest dating company. Corporate-level security infrastructure, responsive moderation team, and continuous investment in safety technology across the platform." },
-    { icon: "credit-card", title: "App Store Payments", description: "All payments processed through Apple App Store or Google Play with standard payment protections and refund policies. No direct credit card entry required. Subscription management through app store settings." },
-    { icon: "eye-off", title: "Location & Privacy", description: "Approximate location only — never shares exact position. Hide age and distance with paid tiers. Control profile visibility and discovery settings. Block contacts by phone number. Data export available." },
+    { icon: "lock", title: "Selfie Verification", description: "Optional but recommended. Real-time selfie matching against profile photos confirms you are a real person and adds a blue checkmark badge. Significantly reduces catfishing risk and increases match rates because verified profiles generate more trust." },
+    { icon: "shield-check", title: "Match Group Security", description: "Owned by Match Group, the world's largest dating company (which also owns Hinge, OkCupid, Plenty of Fish, and others). Corporate security resources, dedicated trust and safety teams, and industry-leading moderation practices." },
+    { icon: "credit-card", title: "Block & Report", description: "Comprehensive blocking and reporting system. Reports are reviewed by Tinder's trust and safety team. Blocked users cannot see your profile or contact you. The system is responsive and taken seriously by Match Group's moderation team." },
+    { icon: "eye-off", title: "Location Privacy", description: "Tinder shows approximate distance rather than exact location. You can set your discovery preferences to control who sees your profile. Passport allows you to set any location globally, which can also serve as a privacy tool to hide your actual location." },
   ],
   "fanvue": [
     { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including content and payments." },
