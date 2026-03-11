@@ -197,7 +197,7 @@ function buildRoutes(): RouteEntry[] {
       path: "/reviews",
       title: "All Platform Reviews | SpicyRanked — Honest Adult Platform Reviews",
       description:
-        "Browse 50+ honest, independent reviews of adult platforms. Creator sites, cam sites, AI companions, dating apps & more.",
+        "Browse 24 honest, independent reviews of adult platforms. Creator sites, cam sites, AI companions, dating apps & more.",
       canonical: "/reviews",
       h1: "All Platform Reviews",
       bodyText:
