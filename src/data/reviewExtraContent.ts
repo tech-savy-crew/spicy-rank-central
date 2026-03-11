@@ -127,6 +127,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Post-rebrand modern redesign. Clean premium aesthetic. Curated member grid filtered by preferences. Search is core navigation with intuitive filters. Profile pages display financial and lifestyle info prominently. Feels premium and intentional.",
     mobileExperience: "No iOS app due to Apple content policies. Android varies. Mobile website fully functional and responsive. Save to home screen for app-like access. Desktop better for detailed search and profile evaluation.",
   },
+  "ashley-madison": {
+    gettingStarted: "~5 minutes. Discreet username, basic demographics, profile description, optional photos (blurrable). No identity verification — anonymity is a feature. Women message immediately. Men need credits for conversations.",
+    interfaceNavigation: "Post-redesign clean dark theme. Contemporary and appropriately discreet. Curated online members grid. Search by distance, age, body type, interests. Messaging supports text, photos, priority system. Professional, purpose-built for discreet browsing.",
+    mobileExperience: "Ashley Madison app available on Android with discreet icon. iOS varies due to Apple policies. Mobile website reliable alternative. App includes panic button. Designed for discretion — hideable icon, nondescript appearance.",
+  },
 };
 const privacyCardOverrides: Record<string, TrustCard[]> = {
   "candy-ai": [
@@ -249,6 +254,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "eye-off", title: "Photo Verification", description: "Selfie matching against profile photos. Timestamp and pose system. Reduces catfishing. Verified badge visible on profiles." },
     { icon: "credit-card", title: "Discreet Billing", description: "Generic descriptor on financial statements. Seeking name not visible. Billing privacy for users needing financial discretion." },
   ],
+  "ashley-madison": [
+    { icon: "shield-check", title: "The 2015 Breach", description: "Hackers exposed 37M accounts — names, emails, payments, preferences. Led to divorces, job losses, suicides. Most devastating dating data breach in history. Permanently branded Ashley Madison with trust deficit." },
+    { icon: "lock", title: "Post-Breach Security", description: "New ownership, rebuilt infrastructure. End-to-end encryption, HTTPS everywhere, regular third-party audits, Deloitte partnership. Not cosmetic — fundamental security rebuild." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic descriptor on statements. Ashley Madison name not visible. Essential for users sharing financial accounts." },
+    { icon: "eye-off", title: "Full-Profile Wipe", description: "Paid permanent deletion of all data, messages, photos, history. Created post-breach in response to user demand. Guaranteed exit option." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
@@ -272,6 +283,7 @@ const privacyOverrides: Record<string, string> = {
   "bongacams": "Is BongaCams safe? Yes — standard security, millions of safe daily transactions. Is BongaCams legit? Absolutely — one of the largest cam platforms globally with years of operation. Is it a scam? No — aggressive marketing creates perception problem but platform operates legitimately.",
   "camsoda": "Is CamSoda safe? Yes — standard security consistent with major cam sites. Is CamSoda legit? Yes — operating for years with real user base and functioning payments. Is it a scam? No — delivers exactly what promised: free cams with innovative voyeur, AR, and recording features.",
   "seeking": "Is Seeking safe? Yes — strongest verification suite in dating. Is it a scam? No — delivers exactly what promised: premium verified sugar dating environment with largest active user base.",
+  "ashley-madison": "Is Ashley Madison safe in 2026? Significantly safer than pre-breach, with security investment exceeding most dating platforms. No absolute guarantee possible. Users should use anonymous details and understand digital activity always carries some risk.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -414,6 +426,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Evaluate Your Local Market Before Committing", description: "Browse member counts in your area before subscribing. $109+ only worth it with active local community." },
     { title: "Use Advanced Filters Aggressively", description: "Income, lifestyle, education, body type, location filters. Precision saves time and leads to better conversations." },
     { title: "Consider Diamond Only in Competitive Markets", description: "NYC, LA, Miami, London markets benefit from Diamond visibility. Smaller markets don't need it." },
+  ],
+  "ashley-madison": [
+    { title: "Start with 100-Credit Basic Package ($59)", description: "Test your market before $169+ investment. ~20 conversation openers to evaluate response rates." },
+    { title: "Write Compelling Anonymous Profile", description: "Personality-driven, specific about connection type. Generic profiles get ignored." },
+    { title: "Use Blurred Photos Strategically", description: "Show enough to attract, not enough to identify. Selective reveal for established conversations." },
+    { title: "Leverage Travelling Feature 2-3 Weeks Before Trips", description: "Give local members time to see and respond." },
+    { title: "Be Realistic About Gender Ratio", description: "Not every message gets a response. Focus quality over quantity." },
   ],
 };
 
@@ -561,7 +580,7 @@ export function getExtraFaqs(review: DetailedReview): { question: string; answer
       "jerkmate": "Jerkmate", "flirt4free": "Flirt4Free", "camsoda": "CamSoda",
       "myfreecams": "MyFreeCams", "slutroulette": "SlutRoulette",
       "sugardaddy": "SugarDaddy.com", "secret-benefits": "Secret Benefits",
-      "seeking": "Seeking", "sugardaddymeet": "SugarDaddyMeet", "sugarbook": "Sugarbook",
+      "seeking": "Seeking", "sugardaddymeet": "SugarDaddyMeet", "sugarbook": "Sugarbook", "ashley-madison": "Ashley Madison",
       "whats-your-price": "WhatsYourPrice", "adultfriendfinder": "AdultFriendFinder",
       "pure-app": "Pure", "feeld": "Feeld",
       "arousr": "Arousr", "sextfriend": "SextFriend", "flingster": "Flingster",

@@ -69,6 +69,7 @@ export const reviewPlatforms: ReviewPlatform[] = [
   { name: "AdultFriendFinder", category: "Dating & Hookup Apps", score: 7.0, slug: "adultfriendfinder", description: "One of the oldest adult dating sites with a massive global user base. Dated design but huge pool of active users." },
   { name: "Pure App", category: "Dating & Hookup Apps", score: 7.2, slug: "pure-app", description: "Anonymous hookup app where posts expire in 24 hours. Great privacy but limited to major cities for best results." },
   { name: "Feeld", category: "Dating & Hookup Apps", score: 7.5, slug: "feeld", description: "Open-minded dating app for couples and singles exploring non-traditional relationships. Best for ethically non-monogamous dating." },
+  { name: "Ashley Madison", category: "Dating & Hookup Apps", score: 6.5, slug: "ashley-madison", description: "The world's most infamous affair platform rebuilt its security from scratch after the 2015 breach — we tested whether the product behind the reputation actually delivers." },
 
   // Sexting & Chat
   { name: "Arousr", category: "Sexting & Chat", score: 7.2, slug: "arousr", description: "Verified sexting platform connecting users with real chat hosts. Pay-per-minute pricing with anonymous, safe interactions." },
