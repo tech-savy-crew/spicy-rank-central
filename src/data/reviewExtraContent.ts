@@ -446,6 +446,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Leverage Travelling Feature 2-3 Weeks Before Trips", description: "Give local members time to see and respond." },
     { title: "Be Realistic About Gender Ratio", description: "Not every message gets a response. Focus quality over quantity." },
   ],
+  "adult-friend-finder": [
+    { title: "Invest in Your Username and Introduction Title", description: "Your adult friend finder username and introduction title are the first — and often only — things other members see. Choose a username that is memorable, personality-driven, and hints at your interests. Write an introduction title that is specific and intriguing. 'Fun-loving couple seeking adventures in Austin' outperforms 'Looking for fun' by orders of magnitude." },
+    { title: "Start with the Swinger and Couples Communities", description: "AFF's success rate is highest in the swinger and couples channels. These communities are filled with experienced, active, and genuine participants. Joining swinger chat rooms and groups gives you the best chance of genuine connections and the most welcoming community atmosphere." },
+    { title: "Subscribe to the Quarterly Gold Plan", description: "The 3-month Gold plan at $26.95 per month provides the sweet spot between commitment and value. One month at $39.95 is too expensive for the evaluation time AFF requires. Three months gives you enough time to build a profile, join communities, and evaluate your local market." },
+    { title: "Use a Dedicated Email and Unique Password", description: "Given the 2016 data breach history, protect yourself by using an email address not connected to your real identity and a unique password you do not use anywhere else. This basic precaution limits your exposure in the event of any future security incident." },
+    { title: "Engage with Community Features Rather Than Just Messaging", description: "AFF's strength is community interaction, not cold messaging. Participate in chat rooms, contribute to forum discussions, join groups related to your interests, and build a visible community presence. Active community members attract more profile views and genuine interest." },
+  ],
 };
 
 function getCategorySignupFlow(category: string, name: string): string {
