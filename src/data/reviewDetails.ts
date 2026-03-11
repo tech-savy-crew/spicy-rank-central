@@ -2453,6 +2453,91 @@ function generateTubeReviews(): DetailedReview[] {
       { question: "Why are there so many Jerkmate ads?", answer: "Jerkmate invests heavily in advertising across adult networks. The ads are often more provocative than the actual platform experience. Do not judge the product by its marketing." },
     ],
     finalVerdict: "Jerkmate is a legitimate premium cam site that suffers from a self-inflicted reputation problem caused by its aggressive advertising. Behind the ads, there is a genuinely curated cam experience with high-quality performers, an interesting ranked gamification system, and Gold shows that offer good value. The per-minute pricing makes it expensive for extended viewing, and the free experience is minimal. If you are willing to pay for a premium, curated cam experience, Jerkmate delivers. If you want free content with optional tipping, Chaturbate is the better choice. The platform is real, the performers are real, and the experience is significantly better than the ads suggest."
+  },
+  // ─── DATING & HOOKUP ───
+  {
+    name: "Seeking",
+    slug: "seeking",
+    category: "Dating & Hookup Apps",
+    score: 7.0,
+    verdict: "The dominant sugar dating platform where the entry price is the point — filtering for serious arrangements through premium positioning",
+    pricing: "Free (women) / $109.99/mo",
+    bestFor: "Sugar dating with verified wealthy members",
+    url: "https://seeking.com",
+    lastUpdated: "March 2026",
+    readingTime: 11,
+    overview: [
+      "Seeking — formerly known as Seeking Arrangement — is the largest and most established sugar dating platform in the world. The site connects financially successful individuals with attractive partners for mutually beneficial relationships that sit somewhere between traditional dating and transactional arrangement. The 2023 rebrand from Seeking Arrangement to simply Seeking was strategic: broadening the brand's appeal while retaining the sugar dating infrastructure that built its 40-million-member user base.",
+      "What is Seeking.com exactly? It is a premium dating platform where wealthy members — Sugar Daddies and Sugar Mommas — display verified income and net worth information on their profiles, while attractive members — Sugar Babies — describe their lifestyle expectations openly. This radical transparency about financial dynamics is what separates Seeking from every mainstream dating app.",
+      "How does Seeking work in practice? You build a profile specifying your role (generous or attractive member), your financial situation or lifestyle expectations, and what kind of arrangement you are looking for. The search system matches profiles based on location, income brackets, interests, and arrangement preferences. Male members must purchase a premium subscription starting at $109.99 per month just to send messages — a deliberate price barrier that filters for financially capable members. Female members join and message for free, creating the supply-demand balance that makes sugar dating functional.",
+      "The sugar dating market includes alternatives like SugarDaddyMeet, WhatsYourPrice, and Secret Benefits, but Seeking dominates with the largest user base, strongest brand recognition, most comprehensive verification, and the legacy trust of the original Seeking Arrangement platform."
+    ],
+    keyFeatures: [
+      { title: "Income & Background Verification", description: "Optional but powerful verification of income, net worth, and criminal background through secure third-party services. Verified badges dramatically increase visibility and trust. Most comprehensive verification among all dating platforms — not just sugar dating." },
+      { title: "Free Access for Attractive Members", description: "Female and attractive members browse, message, and connect without payment. Creates the supply-demand dynamics sugar dating needs. Ensures large active pool of attractive members." },
+      { title: "Advanced Search & Filtering", description: "Most granular search on any dating platform. Filter by income range, net worth, body type, height, ethnicity, education, lifestyle expectations, relationship type, location. Define exactly what you want." },
+      { title: "Diamond Membership", description: "Top tier at ~$274.99/month. Diamond badge, priority placement, exclusive features, enhanced visibility. Signals serious financial commitment. Dramatically increases response rates in competitive markets." },
+      { title: "Photo Verification", description: "Selfie-based matching against profile photos. Timestamp and pose verification. Reduces catfishing. Verified badge on profile builds trust." },
+      { title: "Travel & Destination Dates", description: "Arrange travel dates and meetups. Connect with members in destination cities before arriving. Popular for business travelers and vacation arrangements." }
+    ],
+    pricingIntro: "Seeking's pricing structure is deliberately premium. The cost is not a barrier to overcome — it is a filter by design.",
+    pricingDetails: [
+      { plan: "Attractive Members", price: "Free", features: ["Full profile access", "Unlimited messaging", "Advanced search", "No paywall on supply side"] },
+      { plan: "Premium", price: "$109.99/mo", features: ["Unlimited messaging", "Advanced filters", "Read receipts", "Activity reports", "Profile highlighting"] },
+      { plan: "Diamond", price: "$274.99/mo", features: ["Everything in Premium", "Diamond badge", "Priority search placement", "Exclusive features", "Enhanced support"] }
+    ],
+    pricingOutro: "**Is Seeking free?** For attractive members, yes — completely free with full functionality. For generous members, no — Premium subscription mandatory for messaging. The pricing is deliberately high to filter for financially capable members.",
+    scores: [
+      { label: "Content Quality", score: 7, description: "Genuine verified wealthy members and attractive companions. Profile quality above average — niche attracts intentional users. Verification adds credibility. Some profiles overstate but verification options address this." },
+      { label: "User Interface", score: 7, description: "Clean, modern post-rebrand design. Search and filtering system is strongest feature. Profile pages clear. Navigation intuitive. Feels professional." },
+      { label: "Value for Money", score: 6, description: "$109-$274/month expensive by any standard. Value depends on market size. Major cities = good ROI. Small markets = hard to justify. Free for attractive members = excellent value on that side." },
+      { label: "Privacy & Safety", score: 7.5, description: "Income verification, background checks, photo verification, discreet billing, block/report. Strongest safety framework in dating. Verification genuinely reduces scam risk." },
+      { label: "Features", score: 7, description: "Verification suite, advanced search, Diamond tier, travel features, messaging. Comprehensive for sugar dating. Verification features genuinely differentiating." }
+    ],
+    pros: [
+      "Largest sugar dating platform with biggest active user base",
+      "Comprehensive verification (income, background, photo)",
+      "Free for attractive members — no paywall",
+      "Advanced search with financial and lifestyle filters",
+      "Diamond membership for serious members",
+      "Travel and destination date features"
+    ],
+    cons: [
+      "$109-$274/month among most expensive dating platforms",
+      "Male-pay model creates gender dynamics",
+      "Some profiles misrepresent income/expectations",
+      "Social stigma around sugar dating",
+      "Limited active users in rural/small markets",
+      "No iOS app"
+    ],
+    prosConsNote: "Is Seeking legit? Yes — unambiguously. Functioning platform with millions of real members, working verification, genuine arrangements daily. Is Seeking.com legit? Absolutely — same infrastructure as original Seeking Arrangement with maintained user base.",
+    privacyIntro: "Sugar dating involves financial transparency and personal vulnerability — making privacy and safety critical.",
+    whoShouldUse: [
+      { persona: "Financially successful individuals wanting transparent dating with verified income", reason: "Eliminates guesswork about financial dynamics.", ideal: true },
+      { persona: "Attractive individuals seeking mutually beneficial arrangements", reason: "Free access to largest pool of verified generous members.", ideal: true },
+      { persona: "Frequent business travelers wanting companionship in different cities", reason: "Travel features purpose-built for this.", ideal: true },
+      { persona: "Anyone uncomfortable with transactional dating dynamics", reason: "Seeking is not a luxury dating app wrapper. Financial dynamics are explicit.", ideal: false },
+      { persona: "Users in small markets or rural areas", reason: "Limited active user base makes $109+ subscription hard to justify.", ideal: false }
+    ],
+    alternatives: ["sugardaddymeet", "whats-your-price", "secret-benefits"],
+    comparisons: [
+      { slug: "sugardaddymeet", title: "Seeking vs SugarDaddyMeet" },
+      { slug: "whats-your-price", title: "Seeking vs WhatsYourPrice" },
+      { slug: "secret-benefits", title: "Seeking vs Secret Benefits" }
+    ],
+    faqs: [
+      { question: "Is Seeking legit?", answer: "Yes. Largest sugar dating platform globally with millions of real members. Over a decade of operation. Income verification, background checks, photo verification add credibility free alternatives lack." },
+      { question: "Is Seeking safe?", answer: "Strongest verification suite in dating: income, background, photo, discreet billing. Standard dating safety precautions still recommended. Meet publicly first." },
+      { question: "How much does Seeking cost?", answer: "Free for attractive members. Premium ~$109.99/month, Diamond ~$274.99/month for generous members. Deliberately high to filter for financially capable members." },
+      { question: "Is there a Seeking app?", answer: "No iOS app (Apple policies). Android varies. Mobile website fully functional and responsive. Save to home screen for app-like experience." },
+      { question: "How does Seeking work?", answer: "Create profile with role, financial details, arrangement preferences. Advanced filters for searching. Premium/Diamond for messaging (men). Free for attractive members." },
+      { question: "What happened to Seeking Arrangement?", answer: "Rebranded to Seeking in 2023. Same platform, users, features. Name change to broaden appeal. Old accounts work on Seeking.com." },
+      { question: "Can I verify my income?", answer: "Yes. Third-party document submission. Verified badges dramatically increase visibility and response rates." },
+      { question: "Is it just sugar dating?", answer: "Primarily yes. Rebrand aimed broader but core user base is sugar dating focused. Most members seek mutually beneficial arrangements." },
+      { question: "Best Seeking alternatives?", answer: "SugarDaddyMeet (cheaper entry), WhatsYourPrice (auction model), Secret Benefits (maximum privacy), Ashley Madison (affairs not sugar)." },
+      { question: "Does Seeking work internationally?", answer: "Yes. 130+ countries. Strongest in US, UK, Canada, Australia, Western Europe. Major cities have active communities." }
+    ],
+    finalVerdict: "Seeking is the undisputed leader in sugar dating because it understood that premium pricing is a feature, not a barrier. $109/month filters for serious members. Combined with the most comprehensive verification suite in dating — income, background, photo — Seeking provides trust and accountability that free alternatives cannot match. Limitations are real: expensive, gender dynamics, stigma, limited small-market presence, no iOS app. Our recommendation: attractive members should create a free account immediately. Generous members should evaluate local market before subscribing. Complete verification for maximum credibility. Use advanced filters. Consider Diamond only in competitive metros. Seeking is where sugar dating lives."
   }];
 }
 

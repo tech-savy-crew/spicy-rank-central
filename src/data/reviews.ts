@@ -62,7 +62,7 @@ export const reviewPlatforms: ReviewPlatform[] = [
   // Dating & Hookup Apps
   { name: "SugarDaddy.com", category: "Dating & Hookup Apps", score: 7.5, slug: "sugardaddy", description: "Premium sugar dating platform with verified profiles and secure messaging. Higher cost but attracts serious members." },
   { name: "Secret Benefits", category: "Dating & Hookup Apps", score: 7.3, slug: "secret-benefits", description: "Discreet sugar dating site with credit-based messaging system. Good privacy features but costs add up quickly." },
-  { name: "Seeking", category: "Dating & Hookup Apps", score: 7.8, slug: "seeking", description: "The largest sugar dating platform with millions of active users. Rebranded and expanding beyond sugar dating niche." },
+  { name: "Seeking", category: "Dating & Hookup Apps", score: 7.0, slug: "seeking", description: "The dominant sugar dating platform where the entry price is the point — filtering for serious arrangements through premium positioning." },
   { name: "SugarDaddyMeet", category: "Dating & Hookup Apps", score: 7.0, slug: "sugardaddymeet", description: "Established sugar dating site with straightforward matching. Smaller pool than Seeking but less competition." },
   { name: "SugarBook", category: "Dating & Hookup Apps", score: 6.8, slug: "sugarbook", description: "Asian-focused sugar dating app with growing global presence. Clean design but limited features on free tier." },
   { name: "WhatsYourPrice", category: "Dating & Hookup Apps", score: 7.2, slug: "whats-your-price", description: "Unique auction-style dating platform where you bid on first dates. Interesting concept with mixed user reviews." },

@@ -122,6 +122,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Clean, modern, dark-themed design. Homepage presents performer grid with voyeur section prominently featured. Straightforward navigation with category filtering, search, trending sections. Voyeur section well-organized with clear activity thumbnails. Significantly cleaner than BongaCams' cluttered design. More contemporary than Chaturbate's dated interface.",
     mobileExperience: "No native CamSoda app on iOS/Android. Mobile website responsive and functional for browsing, watching, tipping. Voyeur experience translates reasonably to smaller screens. Desktop preferred for extended sessions and multi-stream browsing. Save to home screen for quick access.",
   },
+  "seeking": {
+    gettingStarted: "5-8 minutes. Select member type, provide demographics, write profile, upload photos. Income and net worth fields prominent for generous members. Optional verification processes 2-5 business days.",
+    interfaceNavigation: "Post-rebrand modern redesign. Clean premium aesthetic. Curated member grid filtered by preferences. Search is core navigation with intuitive filters. Profile pages display financial and lifestyle info prominently. Feels premium and intentional.",
+    mobileExperience: "No iOS app due to Apple content policies. Android varies. Mobile website fully functional and responsive. Save to home screen for app-like access. Desktop better for detailed search and profile evaluation.",
+  },
 };
 const privacyCardOverrides: Record<string, TrustCard[]> = {
   "candy-ai": [
@@ -238,6 +243,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "credit-card", title: "Discreet Billing", description: "Generic billing descriptor on statements. CamSoda name not visible on financial records. Billing discretion for viewers." },
     { icon: "eye-off", title: "Anonymous Viewing", description: "Premium membership includes anonymous tipping. Basic free viewing already anonymous since no account required." },
   ],
+  "seeking": [
+    { icon: "lock", title: "Income Verification", description: "Third-party document submission (tax returns, pay stubs). Verified badges on profiles. Objective proof of financial claims. Dramatically increases credibility and response rates." },
+    { icon: "shield-check", title: "Background Checks", description: "Optional criminal screening through third-party service. Badge confirming no criminal record. Genuine peace of mind for members meeting someone online." },
+    { icon: "eye-off", title: "Photo Verification", description: "Selfie matching against profile photos. Timestamp and pose system. Reduces catfishing. Verified badge visible on profiles." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Generic descriptor on financial statements. Seeking name not visible. Billing privacy for users needing financial discretion." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
@@ -260,6 +271,7 @@ const privacyOverrides: Record<string, string> = {
   "fetishfinder": "Is FetishFinder safe? Yes — strongest privacy protections in fetish dating space. Anonymous browsing, photo locks, visibility controls, discreet billing create comprehensive framework. Is FetishFinder legit? Absolutely — real users, genuine community, transparent business. Is it a scam? No — delivers exactly what promised: dedicated, privacy-focused fetish dating.",
   "bongacams": "Is BongaCams safe? Yes — standard security, millions of safe daily transactions. Is BongaCams legit? Absolutely — one of the largest cam platforms globally with years of operation. Is it a scam? No — aggressive marketing creates perception problem but platform operates legitimately.",
   "camsoda": "Is CamSoda safe? Yes — standard security consistent with major cam sites. Is CamSoda legit? Yes — operating for years with real user base and functioning payments. Is it a scam? No — delivers exactly what promised: free cams with innovative voyeur, AR, and recording features.",
+  "seeking": "Is Seeking safe? Yes — strongest verification suite in dating. Is it a scam? No — delivers exactly what promised: premium verified sugar dating environment with largest active user base.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -395,6 +407,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Buy Tokens in Larger Bundles", description: "Per-token cost decreases with larger purchases. 550 ($49.99) and 800 ($69.99) bundles offer best value for regular users." },
     { title: "Create Free Account Even for Free Viewing", description: "Enables chat, following, notifications. Following favorites means alerts when they go live — especially useful with smaller performer count." },
     { title: "Browse During Peak Hours", description: "US and European evening hours offer most variety. Off-peak can have limited selection. Try peak times for best experience." },
+  ],
+  "seeking": [
+    { title: "Complete Income and Photo Verification Immediately", description: "Verified profiles get dramatically more views and messages. Single most effective thing you can do." },
+    { title: "Be Explicit About Arrangement Expectations", description: "Vagueness wastes time. State clearly what you offer and seek. Clarity attracts compatible matches." },
+    { title: "Evaluate Your Local Market Before Committing", description: "Browse member counts in your area before subscribing. $109+ only worth it with active local community." },
+    { title: "Use Advanced Filters Aggressively", description: "Income, lifestyle, education, body type, location filters. Precision saves time and leads to better conversations." },
+    { title: "Consider Diamond Only in Competitive Markets", description: "NYC, LA, Miami, London markets benefit from Diamond visibility. Smaller markets don't need it." },
   ],
 };
 
