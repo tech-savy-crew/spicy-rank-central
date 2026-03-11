@@ -408,6 +408,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Create Free Account Even for Free Viewing", description: "Enables chat, following, notifications. Following favorites means alerts when they go live — especially useful with smaller performer count." },
     { title: "Browse During Peak Hours", description: "US and European evening hours offer most variety. Off-peak can have limited selection. Try peak times for best experience." },
   ],
+  "seeking": [
+    { title: "Complete Income and Photo Verification Immediately", description: "Verified profiles get dramatically more views and messages. Single most effective thing you can do." },
+    { title: "Be Explicit About Arrangement Expectations", description: "Vagueness wastes time. State clearly what you offer and seek. Clarity attracts compatible matches." },
+    { title: "Evaluate Your Local Market Before Committing", description: "Browse member counts in your area before subscribing. $109+ only worth it with active local community." },
+    { title: "Use Advanced Filters Aggressively", description: "Income, lifestyle, education, body type, location filters. Precision saves time and leads to better conversations." },
+    { title: "Consider Diamond Only in Competitive Markets", description: "NYC, LA, Miami, London markets benefit from Diamond visibility. Smaller markets don't need it." },
+  ],
 };
 
 function getCategorySignupFlow(category: string, name: string): string {
