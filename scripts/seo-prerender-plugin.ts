@@ -516,11 +516,11 @@ function generateHtml(template: string, route: RouteEntry): string {
 
   const rootContent = [
     `<div id="root">`,
-    `<div style="max-width:800px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif;color:#e0e0e0;background:#1A1A2E">`,
+    `<div id="seo-content" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">`,
     siteNav,
     `<h1>${esc(route.h1)}</h1>`,
     route.bodyHtml,
-    `<p style="margin-top:32px;font-size:12px;color:#888">© 2026 ${SITE_NAME} — Adults 18+ only.</p>`,
+    `<p>© 2026 ${SITE_NAME} — Adults 18+ only.</p>`,
     `</div>`,
     `</div>`,
   ].join("");
