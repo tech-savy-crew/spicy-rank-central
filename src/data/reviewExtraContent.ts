@@ -427,6 +427,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Use Advanced Filters Aggressively", description: "Income, lifestyle, education, body type, location filters. Precision saves time and leads to better conversations." },
     { title: "Consider Diamond Only in Competitive Markets", description: "NYC, LA, Miami, London markets benefit from Diamond visibility. Smaller markets don't need it." },
   ],
+  "ashley-madison": [
+    { title: "Start with 100-Credit Basic Package ($59)", description: "Test your market before $169+ investment. ~20 conversation openers to evaluate response rates." },
+    { title: "Write Compelling Anonymous Profile", description: "Personality-driven, specific about connection type. Generic profiles get ignored." },
+    { title: "Use Blurred Photos Strategically", description: "Show enough to attract, not enough to identify. Selective reveal for established conversations." },
+    { title: "Leverage Travelling Feature 2-3 Weeks Before Trips", description: "Give local members time to see and respond." },
+    { title: "Be Realistic About Gender Ratio", description: "Not every message gets a response. Focus quality over quantity." },
+  ],
 };
 
 function getCategorySignupFlow(category: string, name: string): string {
