@@ -122,6 +122,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Clean, modern, dark-themed design. Homepage presents performer grid with voyeur section prominently featured. Straightforward navigation with category filtering, search, trending sections. Voyeur section well-organized with clear activity thumbnails. Significantly cleaner than BongaCams' cluttered design. More contemporary than Chaturbate's dated interface.",
     mobileExperience: "No native CamSoda app on iOS/Android. Mobile website responsive and functional for browsing, watching, tipping. Voyeur experience translates reasonably to smaller screens. Desktop preferred for extended sessions and multi-stream browsing. Save to home screen for quick access.",
   },
+  "seeking": {
+    gettingStarted: "5-8 minutes. Select member type, provide demographics, write profile, upload photos. Income and net worth fields prominent for generous members. Optional verification processes 2-5 business days.",
+    interfaceNavigation: "Post-rebrand modern redesign. Clean premium aesthetic. Curated member grid filtered by preferences. Search is core navigation with intuitive filters. Profile pages display financial and lifestyle info prominently. Feels premium and intentional.",
+    mobileExperience: "No iOS app due to Apple content policies. Android varies. Mobile website fully functional and responsive. Save to home screen for app-like access. Desktop better for detailed search and profile evaluation.",
+  },
 };
 const privacyCardOverrides: Record<string, TrustCard[]> = {
   "candy-ai": [
