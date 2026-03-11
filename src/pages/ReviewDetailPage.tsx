@@ -118,9 +118,27 @@ const ReviewDetailPage = () => {
   const seoConfig = reviewSEO[review.slug];
   const seoExtraMeta = seoConfig ? buildReviewExtraMeta(seoConfig) : undefined;
 
-  // JSON-LD schemas — use existing per-platform custom schemas if available, else generate defaults
+  // JSON-LD schemas
+  const baseReviewLd = reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url });
+
+  // Enrich with positiveNotes/negativeNotes & offers when available
+  if (review.pros.length > 0) {
+    (baseReviewLd as any).positiveNotes = { "@type": "ItemList", itemListElement: review.pros.slice(0, 5).map((p, i) => ({ "@type": "ListItem", position: i + 1, name: p })) };
+  }
+  if (review.cons.length > 0) {
+    (baseReviewLd as any).negativeNotes = { "@type": "ItemList", itemListElement: review.cons.slice(0, 3).map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c })) };
+  }
+  // Add offers & aggregateRating to itemReviewed
+  if (review.pricingDetails.length > 0) {
+    const prices = review.pricingDetails.map(p => parseFloat(p.price.replace(/[^0-9.]/g, ""))).filter(n => !isNaN(n));
+    if (prices.length > 0) {
+      (baseReviewLd as any).itemReviewed.offers = { "@type": "AggregateOffer", lowPrice: Math.min(0, ...prices).toString(), highPrice: Math.max(...prices).toString(), priceCurrency: "USD", offerCount: review.pricingDetails.length.toString() };
+    }
+    (baseReviewLd as any).itemReviewed.aggregateRating = { "@type": "AggregateRating", ratingValue: review.score.toString(), bestRating: "10", worstRating: "0", ratingCount: "1", reviewCount: "1" };
+  }
+
   const defaultJsonLd = [
-    reviewSchema({ name: review.name, slug: review.slug, rating: review.score, summary: review.verdict, lastUpdated: "2026-03-08", url: review.url }),
+    baseReviewLd,
     breadcrumbSchema([
       { name: "Home", url: "/" },
       { name: "Reviews", url: "/reviews" },
