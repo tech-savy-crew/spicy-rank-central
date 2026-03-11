@@ -365,11 +365,11 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Cross-Promote Between Platforms", description: "Run FanVue alongside OnlyFans. Promote the cost savings to subscribers who follow you on both." },
   ],
   "patreon": [
-    { title: "Start with 3-4 Tiers Maximum", description: "Too many tiers confuse patrons. Offer a low entry, popular middle, and premium top tier." },
-    { title: "Use Per-Creation Billing If Appropriate", description: "If you publish irregularly, per-creation billing is fairer and reduces churn from inactive months." },
-    { title: "Engage Your Community Regularly", description: "Post polls, behind-the-scenes content, and community updates. Engagement reduces patron churn." },
-    { title: "Offer Exclusive Value at Every Tier", description: "Each tier needs clear, exclusive benefits. Patrons upgrade when the next tier offers something they want." },
-    { title: "Promote Patreon on Every Platform", description: "Mention your Patreon in every YouTube video, podcast episode, and social media post. Consistent promotion drives growth." },
+    { title: "Design Your Tiers Around Three Price Anchors", description: "Offer a low tier ($3-5), a mid tier ($10-15), and a high tier ($25-50). Most patrons will choose the mid tier — this is the anchoring effect in action. The low tier captures casual supporters, the mid tier captures your core audience, and the high tier captures superfans willing to pay premium prices." },
+    { title: "Use Community Features to Reduce Churn", description: "The biggest threat to Patreon income is subscriber churn. Patrons who feel connected to you and your community are less likely to cancel. Use polls, Q&As, Discord integration, and member-only posts to create a sense of belonging that makes cancellation feel like leaving a community, not just stopping a payment." },
+    { title: "Deliver Consistent Value at Every Tier", description: "Under-delivering on tier promises is the fastest way to lose patrons. If your $15 tier promises weekly exclusive content, deliver it weekly without fail. Consistency builds trust, reduces churn, and encourages upgrades to higher tiers when patrons feel they are getting reliable value." },
+    { title: "Run Patreon Alongside a Free Content Channel", description: "Patreon works best as the premium layer on top of free public content. Publish regular free content on YouTube, a podcast, or a blog to attract new audience members, then convert the most engaged viewers into Patreon subscribers with exclusive perks. Patreon does not drive discovery — your free content does." },
+    { title: "Track Churn Analytics and Adjust Tiers Accordingly", description: "Use Patreon's analytics to identify which tiers have the highest churn rates. If your $25 tier loses members faster than your $10 tier, the value proposition at that price point needs adjustment. Data-driven tier optimization is how professional Patreon creators maximize long-term revenue." },
   ],
   "jerkmate": [
     { title: "Start with Gold Shows, Not Private Shows", description: "Gold shows cost $5-$20 per ticket and let you experience Jerkmate's quality without the per-minute expense of private sessions. This is the best way to evaluate the platform before committing to higher spending." },
