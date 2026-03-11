@@ -227,7 +227,7 @@ function buildRoutes(): RouteEntry[] {
       path: "/categories",
       title: "Browse Categories — Adult Platform Reviews | SpicyRanked",
       description:
-        "Explore adult platform reviews by category — Creator Platforms, Live Cam Sites, AI Companions, Dating Apps, Sexting & more.",
+        "Explore adult platform reviews by category — Creator Platforms, Live Cam Sites, AI Companions, Dating & Hookup Apps, Fetish & Niche Marketplaces.",
       canonical: "/categories",
       h1: "Platform Categories",
       bodyText:
