@@ -345,6 +345,20 @@ export const reviewSEO: Record<string, ReviewSEOMeta> = {
     articleModified: "2026-03-10T00:00:00Z",
     quickVerdict: "Flirt4Free combines premium cam quality with the most extensive fetish section in the cam industry. At 7.0/10, the fetish categorization is unmatched — but the smaller performer roster and credit-based pricing limit its appeal compared to free alternatives.",
   },
+  "adult-friend-finder": {
+    title: "Adult Friend Finder Review 2026: 80 Million Members, a 2016 Hack, and an Interface From Another Era — We Tested It Anyway",
+    description: "AFF claims 80 million members, but how many are real and how many are ghosts from 2004? This adult friend finder review cuts through the inflated numbers to cover the actual swinger community, Gold membership pricing, the 2016 data breach aftermath, and whether the oldest hookup site on the internet still delivers genuine connections in 2026. 6.5/10.",
+    keywords: "adult friend finder review, adult friend finder, is adult friend finder legit, adult friend finder app, adult friend finder reviews, adult friend finder success rate, adult friend finder username ideas, adult friend finder mobile, adult friend finder introduction title examples, how to delete adult friend finder account, what is adult friend finder, does adult friend finder work, is adult friend finder real, is adult friend finder free, sites like adult friend finder, adult friend finder cost, adult friend finder gold, adult friend finder alternatives, adult friend finder data breach, aff review, adultfriendfinder",
+    canonical: `${SITE}/reviews/adult-friend-finder`,
+    ogTitle: "80 Million Members. A 2016 Hack. An Interface From 2004. We Still Tested AFF for 45 Days.",
+    ogDescription: "Is Adult Friend Finder legit in 2026? We tested the swinger community, Gold membership, real success rates, and whether 80M members means anything. 6.5/10.",
+    twitterTitle: "Adult Friend Finder Review 2026 — The Internet's Oldest Hookup Site Tested",
+    twitterDescription: "80M members, 2016 breach, dated interface. But the swinger community is real. Full AFF review after 45 days. 6.5/10.",
+    articleSection: "Dating & Hookup Apps",
+    articlePublished: "2026-03-01T00:00:00Z",
+    articleModified: "2026-03-11T00:00:00Z",
+    quickVerdict: "Adult Friend Finder is the internet's oldest surviving hookup platform — operating since 1996 with over 80 million registered accounts. At 6.5/10, the platform's genuine strength lies in its swinger and group encounter community, which remains the most active and established of any platform. The interface looks like a museum exhibit, spam is persistent, and the 2016 breach exposed 412 million accounts. But the community features create a social layer that pure swiping apps cannot replicate. For swingers, AFF remains genuinely useful. For individual hookups, Tinder and Bumble offer easier alternatives.",
+  },
 };
 
 /**
