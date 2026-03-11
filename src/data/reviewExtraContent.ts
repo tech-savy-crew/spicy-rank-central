@@ -132,6 +132,11 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     interfaceNavigation: "Post-redesign clean dark theme. Contemporary and appropriately discreet. Curated online members grid. Search by distance, age, body type, interests. Messaging supports text, photos, priority system. Professional, purpose-built for discreet browsing.",
     mobileExperience: "Ashley Madison app available on Android with discreet icon. iOS varies due to Apple policies. Mobile website reliable alternative. App includes panic button. Designed for discretion — hideable icon, nondescript appearance.",
   },
+  "adult-friend-finder": {
+    gettingStarted: "Creating an AFF account takes approximately five minutes. Provide an email, choose your adult friend finder username (this matters — it is your first impression), write an introduction title, set your preferences, and optionally upload photos. The profile setup encourages explicit content and sexual honesty from the start, which sets AFF apart from the restrained onboarding of mainstream dating apps. Email verification is required but identity verification is not mandatory for basic accounts.",
+    interfaceNavigation: "There is no diplomatic way to describe AFF's interface: it looks like a website from 2004 that has received only incremental updates over two decades. The homepage is an overwhelming wall of content — member photos, chat room links, magazine articles, webcam previews, forum posts, and promotional elements competing for attention. Navigation tabs across the top provide access to Search, Chat, Webcams, Community, and Magazine sections, but the overall layout is cluttered, text-heavy, and visually dated. The paradox: the dated interface does not prevent AFF from functioning. The community features actually work better in this social-network layout than they would in a swipe-based mobile interface.",
+    mobileExperience: "The Adult Friend Finder app has limited availability on app stores due to explicit content policies. The adult friend finder mobile experience primarily happens through the mobile-responsive website, which adapts the desktop layout to smaller screens. The mobile version is functional for browsing, messaging, and chat room participation, but the information-dense design translates poorly to phone screens. Desktop provides a meaningfully better experience for the community features that are AFF's core strength.",
+  },
 };
 const privacyCardOverrides: Record<string, TrustCard[]> = {
   "candy-ai": [
@@ -581,7 +586,7 @@ export function getExtraFaqs(review: DetailedReview): { question: string; answer
       "myfreecams": "MyFreeCams", "slutroulette": "SlutRoulette",
       "sugardaddy": "SugarDaddy.com", "secret-benefits": "Secret Benefits",
       "seeking": "Seeking", "sugardaddymeet": "SugarDaddyMeet", "sugarbook": "Sugarbook", "ashley-madison": "Ashley Madison",
-      "whats-your-price": "WhatsYourPrice", "adultfriendfinder": "AdultFriendFinder",
+      "whats-your-price": "WhatsYourPrice", "adult-friend-finder": "Adult Friend Finder", "adultfriendfinder": "AdultFriendFinder",
       "pure-app": "Pure", "feeld": "Feeld",
       "arousr": "Arousr", "sextfriend": "SextFriend", "flingster": "Flingster",
       "chatrandom": "ChatRandom", "smutfinder": "SmutFinder",

@@ -2265,13 +2265,7 @@ function generateDatingReviews(): DetailedReview[] {
       [{ question: "How does WhatsYourPrice bidding work?", answer: "Generous members bid a dollar amount to take attractive members on a first date. If accepted, both parties arrange the date. Bids typically range from $50-500." }],
       "WhatsYourPrice is a creative take on sugar dating that works well for arranging first meetings. The auction format reduces ambiguity but may feel too transactional for some users."
     ),
-    datingTemplate("AdultFriendFinder", "adultfriendfinder", 7.0, "Massive adult dating community with 80M+ members and multiple features", "Free / Gold from $14.95/mo", "Adult casual hookups", "https://adultfriendfinder.com",
-      ["AdultFriendFinder (AFF) is one of the largest adult dating communities in the world with over 80 million registered members. The platform caters to all types of adult connections including hookups, swinging, polyamory, and casual encounters.", "Beyond basic matching, AFF offers chat rooms, live streams, forums, and an active community that makes it more of a social platform than a traditional dating app.", "The interface is dated and can feel overwhelming with features, ads, and notifications. However, the sheer size of the user base means active users in virtually every city."],
-      ["80M+ registered members", "Multiple connection types", "Community features beyond dating", "Active in most cities worldwide"],
-      ["Dated, cluttered interface", "Many inactive profiles", "Spam and fake accounts exist", "Free tier very limited"],
-      [{ question: "Is AdultFriendFinder worth it?", answer: "AFF's massive user base means potential matches everywhere. Gold membership at $14.95/month is reasonable for the access it provides." }],
-      "AdultFriendFinder's massive user base makes it the widest net for adult dating. The dated interface and spam are drawbacks, but no other platform offers as many potential connections."
-    ),
+    // AdultFriendFinder moved to standalone optimized entry below
     datingTemplate("Pure App", "pure-app", 7.2, "Anonymous hookup app with self-destructing posts for maximum privacy", "Free trial / $14.99/week", "Anonymous hookups", "https://pure.app",
       ["Pure App takes privacy to the extreme — posts expire after 24 hours, photos self-destruct after viewing, and the app encourages using it without a persistent profile. It's designed for people who want hookups without the social media baggage.", "The concept is compelling: create a post, find a match, hook up, and everything disappears. No browsing history, no lingering profile, no digital footprint.", "The privacy focus works great in major cities but limits functionality in smaller markets where the user base is thin."],
       ["Maximum privacy with auto-deletion", "No permanent digital footprint", "Clean, minimal interface", "Perfect for discreet hookups"],
@@ -2617,10 +2611,10 @@ function generateTubeReviews(): DetailedReview[] {
       { persona: "Men expecting guaranteed results from credits", reason: "Gender ratio means competition is intense and success varies.", ideal: false },
       { persona: "Anyone uncomfortable with ethical implications of facilitating affairs", reason: "Platform explicitly facilitates extramarital connections.", ideal: false }
     ],
-    alternatives: ["seeking", "adultfriendfinder", "feeld"],
+    alternatives: ["seeking", "adult-friend-finder", "feeld"],
     comparisons: [
       { slug: "seeking", title: "Ashley Madison vs Seeking" },
-      { slug: "adultfriendfinder", title: "Ashley Madison vs Adult Friend Finder" },
+      { slug: "adult-friend-finder", title: "Ashley Madison vs Adult Friend Finder" },
       { slug: "feeld", title: "Ashley Madison vs Feeld" }
     ],
     faqs: [
@@ -2636,6 +2630,94 @@ function generateTubeReviews(): DetailedReview[] {
       { question: "Can I permanently delete my account?", answer: "Yes. Paid full-profile wipe permanently deletes all data, messages, photos, history. Standard free deletion also available in settings." }
     ],
     finalVerdict: "Ashley Madison is defined by contradiction — most recognized affair brand yet synonymous with the worst dating breach. Most privacy-focused features yet users hesitant to trust. Facilitates real connections daily yet male users face uphill battle with every credit. Rebuilt security is genuine and substantial. Privacy features (blurred photos, panic button, discreet billing, full-profile wipe) are purpose-built for affair dating risks. Travelling feature genuinely useful. Free for women. The limitations: expensive credits for men, skewed gender ratio, bot persistence, ethical controversy, permanent breach reputation. Our recommendation: women should create free account at zero risk. Men start with 100-credit basic ($59) to test market. Use all privacy features. Be realistic about response rates. Ashley Madison works — the question is whether it works well enough for you, in your market, at the price it charges."
+  },
+  {
+    name: "Adult Friend Finder",
+    slug: "adult-friend-finder",
+    category: "Dating & Hookup Apps",
+    score: 6.5,
+    verdict: "80 million registered members, a dinosaur interface, and the only genuine swinger community that has survived nearly three decades of internet evolution",
+    pricing: "Free / Gold from $19.95/mo",
+    bestFor: "Swingers, couples, and sexually adventurous adults",
+    url: "https://adultfriendfinder.com",
+    lastUpdated: "March 2026",
+    readingTime: 14,
+    overview: [
+      "What is Adult Friend Finder? It is the internet's original hookup platform — a website that launched in 1996, survived the dot-com bubble, outlasted Craigslist personals, and continues to operate while dozens of newer competitors have come and gone. With over 80 million registered accounts spanning nearly three decades, Adult Friend Finder — commonly abbreviated as AFF — is one of the most established adult platforms in existence. The name is deliberately blunt about its purpose: finding adults who want to connect for sexual encounters, swinging, group experiences, and casual relationships without the pretense of traditional dating.",
+      "The platform operates in a space that mainstream dating apps deliberately avoid. While Tinder and Bumble maintain plausible deniability about hookup culture, AFF embraces it explicitly. Profiles can include nude photos, detailed sexual preferences, and candid descriptions of exactly what you are looking for. Chat rooms, forums, and groups create a social ecosystem that feels more like a sexually explicit social network than a traditional dating app. This combination of explicit profiles and community features is what has kept AFF alive while simpler hookup sites have failed.",
+      "Is Adult Friend Finder free? Technically you can create a free account, build a profile, and browse other members. But the free experience is severely limited — you cannot send messages, view full profiles, or access most interactive features without Adult Friend Finder Gold membership. The free tier is functionally a preview designed to show you enough to make you want to pay. For any meaningful interaction, Gold is required.",
+      "The elephant in the room is the 2016 data breach. In November 2016, hackers exposed approximately 412 million accounts across the Friend Finder Networks family of sites, including Adult Friend Finder. The adult friend finder data breach exposed email addresses, usernames, passwords (many poorly encrypted), and account information. It was one of the largest data breaches in internet history and permanently damaged the platform's trust with users who rightly questioned how their most sensitive data could be so poorly protected. AFF has improved its security infrastructure since then, but the breach remains a legitimate concern for anyone considering creating an account."
+    ],
+    keyFeatures: [
+      { title: "Explicit Profile System", description: "AFF allows what no mainstream dating app permits: fully nude photos, detailed sexual preferences, explicit descriptions of desires, and an honest profile system where sexual honesty is encouraged rather than penalized. Your adult friend finder username and introduction title are the first things other members see — choosing a memorable, personality-driven username and writing a compelling introduction title dramatically increases profile engagement." },
+      { title: "Chat Rooms & Groups", description: "AFF's hidden strength and the primary reason the platform survives. Active chat rooms organized by interest, location, and sexual preference create real-time social interaction that swiping apps cannot replicate. Groups for swingers, couples seeking thirds, specific kink interests, and geographic communities add a social dimension that transforms AFF from a hookup site into a sexually explicit social network." },
+      { title: "Live Member Webcams", description: "Members can broadcast live webcam feeds directly on the platform, adding a live cam dimension to the social and dating features. Free to watch with Gold membership. The webcam feature creates a hybrid between dating platform and cam site that competitors have not replicated." },
+      { title: "Adult Friend Finder Gold", description: "The premium membership required for any meaningful interaction. Gold unlocks messaging, full profile viewing, webcam access, chat room participation, advanced search, and priority placement. Without Gold, AFF is a window you can look through but not open. Gold pricing ranges from approximately $19.95 to $39.95 per month depending on commitment length." },
+      { title: "Hotlist & Points System", description: "The Hotlist feature lets you save interesting profiles for later. The Points system rewards activity — posting in forums, chatting, uploading content — with points that unlock premium features and increase your profile visibility. The gamification encourages ongoing engagement." },
+      { title: "Magazine & Community Content", description: "An integrated adult content magazine with articles, erotic stories, sex education content, and community contributions. The magazine adds a content layer that makes AFF more than just a matching platform — it is a sexually explicit content ecosystem." }
+    ],
+    pricingIntro: "Understanding Adult Friend Finder cost is essential because the free tier is functionally useless for actual connections. Here is the complete pricing breakdown:",
+    pricingDetails: [
+      { plan: "Free Tier", price: "Free", features: ["Create profile", "Upload photos (including explicit)", "Browse limited profiles", "Cannot send/read messages", "No chat rooms or webcams"] },
+      { plan: "Gold (1 Month)", price: "$39.95/mo", features: ["Unlimited messaging", "Full profile viewing", "Chat rooms & webcams", "Advanced search", "Priority placement"] },
+      { plan: "Gold (3 Months)", price: "$26.95/mo", features: ["Everything in Gold", "Best value for active users", "$80.85 total billed quarterly"] },
+      { plan: "Gold (12 Months)", price: "$19.95/mo", features: ["Everything in Gold", "Best long-term value", "$239.40 total billed annually"] }
+    ],
+    pricingOutro: "Is adult friend finder free for meaningful use? No — Gold at $19.95-$39.95 per month is effectively mandatory. The adult friend finder cost at the annual rate of $19.95 per month is competitive with other adult platforms. The value depends entirely on your local market — in major cities with active communities, Gold delivers genuine return.",
+    scores: [
+      { label: "Content Quality", score: 5.5, description: "The 80 million registered member count is misleading — the vast majority are inactive. Active members exist but require patience to find among dead profiles and spam. The swinger and group communities are genuinely active with real, engaged participants." },
+      { label: "User Interface", score: 4.5, description: "The worst interface among any platform we have reviewed. Dated design, cluttered layout, information overload, and poor mobile optimization. The community features function well despite the design, but the visual experience actively discourages new users." },
+      { label: "Value for Money", score: 6, description: "Gold pricing at $19.95 to $39.95 per month is reasonable for an adult platform. Value varies dramatically by market and use case. For active swingers in major cities, Gold delivers genuine community access worth the price." },
+      { label: "Privacy & Safety", score: 5, description: "The 2016 data breach exposing 412 million accounts is the defining security event. AFF has improved security since then with SSL encryption, better password hashing, and regular audits. But the breach permanently damaged trust." },
+      { label: "Features", score: 7.5, description: "Explicit profiles, chat rooms, groups, forums, live webcams, magazine content, points system, and the most established swinger community online. The feature set is the most comprehensive among adult platforms." }
+    ],
+    pros: [
+      "The most established and active swinger and group encounter community on any platform",
+      "Sexually explicit profiles allow complete honesty about desires without content restrictions",
+      "Chat rooms, groups, and forums create genuine social interaction beyond simple matching",
+      "Live member webcams add an interactive dimension unique among dating platforms",
+      "Gold membership pricing at $19.95 per month (annual) is competitive for an adult platform",
+      "Nearly three decades of operation with a surviving community through multiple internet eras",
+      "Points system rewards active community participation with tangible benefits"
+    ],
+    cons: [
+      "The 2016 data breach exposed 412 million accounts and permanently damaged brand trust",
+      "The interface is the most dated among any major adult platform — needs complete redesign",
+      "80 million registered members is grossly misleading — most accounts are inactive ghosts",
+      "Spam accounts and fake profiles are a persistent and frustrating problem",
+      "The free tier is functionally useless — Gold is mandatory for any meaningful interaction",
+      "Male-to-female ratio is heavily skewed in most individual hookup markets",
+      "No reliable native mobile app — the mobile website is functional but poorly optimized"
+    ],
+    prosConsNote: "Is Adult Friend Finder legit? Yes — it is a real, operating platform with genuine active users, functioning payment systems, and authentic connections happening daily. Does Adult Friend Finder work? For swingers and group encounter seekers in major metropolitan areas, yes — the community features and established user base provide genuine value. For individual men seeking one-on-one hookups, the success rate is lower due to gender ratio, spam, and the need for Gold membership.",
+    privacyIntro: "Every adult friend finder review must address the 2016 data breach — it is the platform's defining trust event and the first concern every potential user should consider.",
+    whoShouldUse: [
+      { persona: "Swingers and couples seeking group encounters", reason: "AFF's core community and genuine competitive advantage. Most established swinger platform available.", ideal: true },
+      { persona: "Sexually adventurous adults who want an explicit social network", reason: "Chat rooms, forums, webcams, and explicit profiles create a unique community experience.", ideal: true },
+      { persona: "Users who value explicit profile honesty over mainstream subtext", reason: "AFF's no-filter profile system eliminates the guesswork that mainstream dating apps require.", ideal: true },
+      { persona: "Individual men seeking easy one-on-one hookups", reason: "Male-heavy gender ratio, spam profiles, and Gold paywall create a challenging landscape.", ideal: false },
+      { persona: "Anyone with serious privacy concerns", reason: "The 2016 data breach should give pause to anyone especially privacy-conscious about adult site activity.", ideal: false },
+      { persona: "Users who expect a modern mobile-first experience", reason: "AFF's dated interface and poorly optimized mobile website feel like traveling back in time.", ideal: false }
+    ],
+    alternatives: ["feeld", "ashley-madison", "seeking", "fetishfinder", "tinder"],
+    comparisons: [
+      { slug: "feeld", title: "Adult Friend Finder vs Feeld" },
+      { slug: "ashley-madison", title: "Adult Friend Finder vs Ashley Madison" },
+      { slug: "tinder", title: "Adult Friend Finder vs Tinder" }
+    ],
+    faqs: [
+      { question: "Is Adult Friend Finder legit?", answer: "Yes. AFF is a legitimate, operating adult hookup platform with genuine active users, especially in the swinger community. 80M members includes many inactive accounts but the active community is real. The 2016 breach was a security failure, not evidence of illegitimacy." },
+      { question: "What is the Adult Friend Finder success rate?", answer: "Varies by use case. Swingers and couples in major cities have highest success. Individual men face challenging ratio and spam. Community engagement improves success dramatically over cold messaging." },
+      { question: "Is Adult Friend Finder free?", answer: "Free account creation and limited browsing only. Messaging, chat rooms, webcams, and most features require Gold at $19.95-$39.95/month. Free tier is a restricted preview." },
+      { question: "Does Adult Friend Finder actually work?", answer: "Yes for swingers and couples in major markets. Variable for individual hookups. Community features work better than cold messaging. Success depends on use case and location." },
+      { question: "Is Adult Friend Finder real?", answer: "Yes. Real platform, real active members, real connections. Active user base smaller than 80M headline suggests. Swinger community is particularly genuine and active." },
+      { question: "Does AFF have an app?", answer: "Limited app store availability. Mobile website is primary mobile experience. Functional but dated design translates poorly to small screens. Desktop preferred." },
+      { question: "How much does Adult Friend Finder cost?", answer: "Gold: 1 month ~$39.95, 3 months ~$26.95/mo, 12 months ~$19.95/mo. Gold required for messaging and most features. Free tier is preview only." },
+      { question: "What about the 2016 data breach?", answer: "412 million accounts exposed. Emails, usernames, poorly encrypted passwords. Security improved since with SSL and better encryption. Use dedicated email and unique password." },
+      { question: "How to delete Adult Friend Finder account?", answer: "Account Settings > Deactivate or Close Account. Contact support for full data deletion. Read deactivation vs deletion distinction carefully." },
+      { question: "Best sites like Adult Friend Finder?", answer: "Feeld for modern open relationships, Ashley Madison for discreet affairs, Seeking for sugar dating, FetishFinder for kink matching, Tinder for mainstream individual hookups." }
+    ],
+    finalVerdict: "Adult Friend Finder is the internet's great survivor — a platform from 1996 that has outlasted hundreds of competitors, endured one of the worst data breaches in internet history, and maintained a genuinely active community through nearly three decades of technological evolution. That survival is not accidental. The swinger and group encounter community, the sexually explicit social features, the chat rooms and forums, and the live webcam integration create a product that no modern app has successfully replicated.\n\nThe problems are equally real. The interface is a museum piece that desperately needs modernization. The 80 million member count is misleading — most accounts are inactive ghosts from decades of accumulation. Spam and fake profiles persist despite ongoing cleanup efforts. The 2016 data breach permanently damaged the brand's trust with privacy-conscious users. The free tier is functionally useless. And the male-heavy gender ratio creates a challenging landscape for individual men seeking one-on-one hookups.\n\nOur recommendation: if swinger culture, group encounters, or sexually explicit community interaction interest you, Adult Friend Finder remains the most established platform for these specific use cases. Start with the 3-month Gold plan at $26.95 per month to test your local market. Invest time in your username and introduction title — these matter more than on any other platform. Engage with community features rather than relying on cold messaging. Use a dedicated email and unique password given the breach history. And manage expectations about the active user base — it is genuine but smaller than the headline numbers suggest. For individual casual hookups without the community element, Tinder, Bumble, and Feeld provide more efficient, more modern, and often cheaper alternatives. But for the swinger lifestyle and explicit social networking that no mainstream app dares to offer, AFF is still where the community lives."
   }];
 }
 
