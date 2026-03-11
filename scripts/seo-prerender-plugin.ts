@@ -1,7 +1,10 @@
 /**
  * Vite plugin: generates per-route static HTML at build time so every URL
  * returns unique <title>, <meta description>, <link canonical>, <h1>, and
- * body text in the initial server response — making the SPA fully crawlable.
+ * SUBSTANTIAL body text in the initial server response — making the SPA fully crawlable.
+ *
+ * For review pages, the full content (overview, features, pricing, pros/cons,
+ * who should use, FAQ answers, and final verdict) is rendered into the static HTML.
  *
  * Runs in the `closeBundle` hook (after Vite writes dist/).
  */
@@ -40,11 +43,10 @@ interface RouteEntry {
   description: string;
   canonical: string;
   h1: string;
-  bodyText: string;
+  bodyHtml: string; // full HTML body content
   ogType?: string;
   ogTitle?: string;
   ogDescription?: string;
-  links?: { href: string; text: string }[];
   noindex?: boolean;
 }
 
@@ -52,64 +54,222 @@ function categorySlug(cat: string) {
   return cat.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-");
 }
 
+function esc(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+/* ------------------------------------------------------------------ */
+/*  Build full review body HTML                                        */
+/* ------------------------------------------------------------------ */
+
+function buildReviewBodyHtml(slug: string): string {
+  const review = getReviewBySlug(slug);
+  if (!review) return "";
+
+  const seo = reviewSEO[slug];
+  const parts: string[] = [];
+
+  // Quick Verdict
+  if (seo?.quickVerdict) {
+    parts.push(`<p><strong>Quick Verdict:</strong> ${esc(seo.quickVerdict)}</p>`);
+  }
+
+  // Overview
+  parts.push(`<h2>What is ${esc(review.name)}?</h2>`);
+  for (const p of review.overview) {
+    parts.push(`<p>${esc(p)}</p>`);
+  }
+
+  // Key Features
+  parts.push(`<h2>Key Features</h2>`);
+  parts.push(`<ul>`);
+  for (const f of review.keyFeatures) {
+    parts.push(`<li><strong>${esc(f.title)}</strong>: ${esc(f.description)}</li>`);
+  }
+  parts.push(`</ul>`);
+
+  // Pricing
+  parts.push(`<h2>Pricing &amp; Plans</h2>`);
+  if (review.pricingIntro) parts.push(`<p>${esc(review.pricingIntro)}</p>`);
+  for (const plan of review.pricingDetails) {
+    parts.push(`<h3>${esc(plan.plan)} — ${esc(plan.price)}</h3>`);
+    parts.push(`<ul>`);
+    for (const f of plan.features) {
+      parts.push(`<li>${esc(f)}</li>`);
+    }
+    parts.push(`</ul>`);
+  }
+
+  // Rating Breakdown
+  parts.push(`<h2>Our Rating Breakdown</h2>`);
+  parts.push(`<table><thead><tr><th>Category</th><th>Score</th></tr></thead><tbody>`);
+  for (const s of review.scores) {
+    parts.push(`<tr><td>${esc(s.label)}</td><td>${s.score}/10</td></tr>`);
+  }
+  parts.push(`<tr><td><strong>Overall</strong></td><td><strong>${review.score}/10</strong></td></tr>`);
+  parts.push(`</tbody></table>`);
+
+  // Pros & Cons
+  parts.push(`<h2>Pros &amp; Cons</h2>`);
+  parts.push(`<h3>Pros</h3><ul>`);
+  for (const p of review.pros) {
+    parts.push(`<li>${esc(p)}</li>`);
+  }
+  parts.push(`</ul>`);
+  parts.push(`<h3>Cons</h3><ul>`);
+  for (const c of review.cons) {
+    parts.push(`<li>${esc(c)}</li>`);
+  }
+  parts.push(`</ul>`);
+
+  // Who Should Use
+  parts.push(`<h2>Who Should Use ${esc(review.name)}?</h2>`);
+  for (const w of review.whoShouldUse) {
+    parts.push(`<p><strong>${w.ideal ? "Perfect for" : "Not ideal for"}:</strong> ${esc(w.persona)} — ${esc(w.reason)}</p>`);
+  }
+
+  // FAQ
+  if (review.faqs.length > 0) {
+    parts.push(`<h2>Frequently Asked Questions</h2>`);
+    for (const faq of review.faqs) {
+      parts.push(`<h3>${esc(faq.question)}</h3>`);
+      parts.push(`<p>${esc(faq.answer)}</p>`);
+    }
+  }
+
+  // Final Verdict
+  parts.push(`<h2>Final Verdict</h2>`);
+  parts.push(`<p>${esc(review.finalVerdict)}</p>`);
+  parts.push(`<p><strong>${esc(review.name)}: ${review.score}/10</strong> — ${esc(review.bestFor)}</p>`);
+
+  // Related links
+  const links: string[] = [];
+  links.push(`<a href="/reviews">All Reviews</a>`);
+  if (review.alternatives.length > 0) {
+    links.push(`<a href="/alternatives/${review.slug}">${review.name} Alternatives</a>`);
+    for (const altSlug of review.alternatives.slice(0, 4)) {
+      const alt = getReviewBySlug(altSlug);
+      if (alt) links.push(`<a href="/reviews/${alt.slug}">${alt.name} Review</a>`);
+    }
+  }
+  for (const comp of review.comparisons.slice(0, 4)) {
+    links.push(`<a href="/compare/${comp.slug}">${comp.title}</a>`);
+  }
+  // Related reviews in same category
+  const related = detailedReviews
+    .filter((r) => r.slug !== review.slug && r.category === review.category)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4);
+  if (related.length > 0) {
+    parts.push(`<h2>Related Reviews</h2><ul>`);
+    for (const r of related) {
+      parts.push(`<li><a href="/reviews/${r.slug}">${r.name} Review — ${r.score}/10</a></li>`);
+    }
+    parts.push(`</ul>`);
+  }
+
+  parts.push(`<nav aria-label="Page navigation"><ul>${links.map((l) => `<li>${l}</li>`).join("")}</ul></nav>`);
+
+  return parts.join("\n");
+}
+
+/* ------------------------------------------------------------------ */
+/*  Build comparison body HTML                                         */
+/* ------------------------------------------------------------------ */
+
+function buildComparisonBodyHtml(comp: typeof comparisons[0]): string {
+  const a = getReviewBySlug(comp.platformA);
+  const b = getReviewBySlug(comp.platformB);
+  if (!a || !b) return "";
+
+  const parts: string[] = [];
+  parts.push(`<p>${esc(comp.verdict)}</p>`);
+
+  // Score comparison
+  parts.push(`<h2>Score Comparison</h2>`);
+  parts.push(`<table><thead><tr><th>Category</th><th>${esc(a.name)}</th><th>${esc(b.name)}</th></tr></thead><tbody>`);
+  for (let i = 0; i < Math.min(a.scores.length, b.scores.length); i++) {
+    parts.push(`<tr><td>${esc(a.scores[i].label)}</td><td>${a.scores[i].score}/10</td><td>${b.scores[i].score}/10</td></tr>`);
+  }
+  parts.push(`<tr><td><strong>Overall</strong></td><td><strong>${a.score}/10</strong></td><td><strong>${b.score}/10</strong></td></tr>`);
+  parts.push(`</tbody></table>`);
+
+  // Quick pros/cons
+  parts.push(`<h2>${esc(a.name)} Pros</h2><ul>${a.pros.slice(0, 4).map((p) => `<li>${esc(p)}</li>`).join("")}</ul>`);
+  parts.push(`<h2>${esc(b.name)} Pros</h2><ul>${b.pros.slice(0, 4).map((p) => `<li>${esc(p)}</li>`).join("")}</ul>`);
+
+  parts.push(`<h2>Which Should You Choose?</h2>`);
+  parts.push(`<p>Choose <strong>${esc(a.name)}</strong> if you want: ${esc(a.bestFor)}.</p>`);
+  parts.push(`<p>Choose <strong>${esc(b.name)}</strong> if you want: ${esc(b.bestFor)}.</p>`);
+
+  parts.push(`<nav aria-label="Related"><ul>`);
+  parts.push(`<li><a href="/reviews/${a.slug}">${a.name} Review</a></li>`);
+  parts.push(`<li><a href="/reviews/${b.slug}">${b.name} Review</a></li>`);
+  parts.push(`<li><a href="/compare">All Comparisons</a></li>`);
+  parts.push(`</ul></nav>`);
+
+  return parts.join("\n");
+}
+
+/* ------------------------------------------------------------------ */
+/*  Build routes                                                       */
+/* ------------------------------------------------------------------ */
+
 function buildRoutes(): RouteEntry[] {
   const routes: RouteEntry[] = [];
 
   /* ── Homepage ── */
+  const homePlatforms = reviewPlatforms
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 12);
+  const homeLinks = homePlatforms.map((p) => `<li><a href="/reviews/${p.slug}">${esc(p.name)} Review — ${p.score}/10</a></li>`).join("");
+  const categoryLinks = [...reviewCategories].filter((c) => c !== "All").map((c) => {
+    const slug = categorySlug(c);
+    const count = reviewPlatforms.filter((p) => categorySlug(p.category) === slug).length;
+    return `<li><a href="/category/${slug}">${esc(c)} (${count} reviews)</a></li>`;
+  }).join("");
+  const compLinks = comparisons.slice(0, 6).map((c) => {
+    const a = getReviewBySlug(c.platformA);
+    const b = getReviewBySlug(c.platformB);
+    return a && b ? `<li><a href="/compare/${c.slug}">${esc(a.name)} vs ${esc(b.name)}</a></li>` : "";
+  }).join("");
+  const bestLinks = bestLists.map((l) => `<li><a href="/best-lists/${l.slug}">${esc(l.title)}</a></li>`).join("");
+
   routes.push({
     path: "/",
-    title:
-      "SpicyRanked — Honest Reviews & Rankings of Adult Platforms, Cam Sites & Dating Apps",
-    description:
-      "Independent reviews, ratings & comparisons of 150+ adult platforms. OnlyFans, Fansly, Chaturbate, Stripchat & more — ranked by real testing. Updated weekly.",
+    title: "SpicyRanked — Honest Reviews & Rankings of Adult Platforms, Cam Sites & Dating Apps",
+    description: "Independent reviews, ratings & comparisons of 24 adult platforms. OnlyFans, Fansly, Chaturbate, Stripchat & more — ranked by real testing. Updated weekly.",
     canonical: "/",
     h1: "SpicyRanked — Honest Adult Platform Reviews and Rankings",
-    bodyText:
-      "SpicyRanked provides independent reviews, comparisons, and rankings of the top adult creator platforms, cam sites, dating apps, and AI companion apps. Every platform is tested by our editorial team and scored on a 10-point scale.",
-    links: [
-      ...reviewPlatforms
-        .sort((a, b) => b.score - a.score)
-        .slice(0, 12)
-        .map((p) => ({
-          href: `/reviews/${p.slug}`,
-          text: `${p.name} Review — ${p.score}/10`,
-        })),
-      { href: "/reviews", text: "All Reviews" },
-      { href: "/compare", text: "Compare Platforms" },
-      { href: "/rankings", text: "Rankings" },
-      { href: "/categories", text: "Categories" },
-    ],
+    bodyHtml: [
+      `<p>SpicyRanked provides independent reviews, comparisons, and rankings of 24 adult creator platforms, cam sites, dating apps, and AI companion apps. Every platform is tested by our editorial team for 30-60 days and scored on a 10-point scale.</p>`,
+      `<h2>Top-Rated Reviews</h2><ul>${homeLinks}</ul>`,
+      `<h2>Categories</h2><ul>${categoryLinks}</ul>`,
+      `<h2>Popular Comparisons</h2><ul>${compLinks}</ul>`,
+      `<h2>Best Lists</h2><ul>${bestLinks}</ul>`,
+      `<p><a href="/reviews">Browse All 24 Reviews</a> · <a href="/rankings">Rankings</a> · <a href="/about">About Us</a></p>`,
+    ].join("\n"),
   });
 
   /* ── Review pages ── */
   for (const platform of reviewPlatforms) {
     const seo: ReviewSEOMeta | undefined = reviewSEO[platform.slug];
-    const review = getReviewBySlug(platform.slug);
-
-    const overview = review?.overview?.[0] || platform.description;
-    const verdict = review?.verdict || platform.description;
-
-    const links: { href: string; text: string }[] = [
-      { href: "/reviews", text: "All Reviews" },
-      { href: `/alternatives/${platform.slug}`, text: `${platform.name} Alternatives` },
-    ];
-    if (review?.comparisons) {
-      for (const comp of review.comparisons.slice(0, 3)) {
-        links.push({ href: `/compare/${comp.slug}`, text: comp.title });
-      }
-    }
+    const bodyHtml = buildReviewBodyHtml(platform.slug);
 
     routes.push({
       path: `/reviews/${platform.slug}`,
       title: seo?.title || `${platform.name} Review 2026 — ${platform.score}/10 | ${SITE_NAME}`,
-      description: seo?.description || `${platform.name} review — scored ${platform.score}/10. ${verdict}`,
+      description: seo?.description || `${platform.name} review — scored ${platform.score}/10. Pricing, features, pros & cons, and alternatives.`,
       canonical: `/reviews/${platform.slug}`,
       h1: `${platform.name} Review 2026`,
-      bodyText: seo?.quickVerdict || overview,
+      bodyHtml,
       ogType: "article",
       ogTitle: seo?.ogTitle || `${platform.name} Review 2026`,
       ogDescription: seo?.ogDescription || `Honest ${platform.name} review — ${platform.score}/10.`,
-      links,
     });
   }
 
@@ -125,29 +285,31 @@ function buildRoutes(): RouteEntry[] {
       description: `Head-to-head comparison: ${a.name} (${a.score}/10) vs ${b.name} (${b.score}/10). Compare features, pricing, and user experience.`,
       canonical: `/compare/${comp.slug}`,
       h1: `${a.name} vs ${b.name} — Complete Comparison 2026`,
-      bodyText: comp.verdict,
+      bodyHtml: buildComparisonBodyHtml(comp),
       ogType: "article",
-      links: [
-        { href: `/reviews/${a.slug}`, text: `${a.name} Review` },
-        { href: `/reviews/${b.slug}`, text: `${b.name} Review` },
-        { href: "/compare", text: "All Comparisons" },
-      ],
     });
   }
 
   /* ── Best-list pages ── */
   for (const list of bestLists) {
+    const platformItems = list.platformSlugs.map((s, i) => {
+      const r = getReviewBySlug(s);
+      return r
+        ? `<li><strong>#${i + 1} <a href="/reviews/${r.slug}">${esc(r.name)}</a></strong> — ${r.score}/10. ${esc(r.bestFor)}</li>`
+        : "";
+    }).join("");
+
     routes.push({
       path: `/best-lists/${list.slug}`,
       title: `${list.title} | ${SITE_NAME}`,
       description: list.subtitle.slice(0, 155),
       canonical: `/best-lists/${list.slug}`,
       h1: list.title,
-      bodyText: list.subtitle,
-      links: list.platformSlugs.slice(0, 6).map((s) => {
-        const r = getReviewBySlug(s);
-        return { href: `/reviews/${s}`, text: r ? `${r.name} — ${r.score}/10` : s };
-      }),
+      bodyHtml: [
+        `<p>${esc(list.subtitle)}</p>`,
+        `<h2>Our Top Picks</h2><ol>${platformItems}</ol>`,
+        `<p><a href="/reviews">All Reviews</a> · <a href="/rankings">Rankings</a></p>`,
+      ].join("\n"),
     });
   }
 
@@ -155,17 +317,22 @@ function buildRoutes(): RouteEntry[] {
   for (const platform of reviewPlatforms) {
     const review = getReviewBySlug(platform.slug);
     const altSlugs = review?.alternatives || [];
+    const altItems = altSlugs.map((s) => {
+      const r = getReviewBySlug(s);
+      return r ? `<li><a href="/reviews/${r.slug}">${esc(r.name)} — ${r.score}/10</a>: ${esc(r.bestFor)}</li>` : "";
+    }).join("");
+
     routes.push({
       path: `/alternatives/${platform.slug}`,
       title: `Top Alternatives to ${platform.name} in 2026 | ${SITE_NAME}`,
       description: `Looking for alternatives to ${platform.name}? Compare the best ${platform.category} platforms ranked by our editors.`,
       canonical: `/alternatives/${platform.slug}`,
       h1: `Top Alternatives to ${platform.name}`,
-      bodyText: `Compare the best alternatives to ${platform.name} in the ${platform.category} category, ranked by our editorial team.`,
-      links: altSlugs.slice(0, 5).map((s) => {
-        const r = getReviewBySlug(s);
-        return { href: `/reviews/${s}`, text: r ? `${r.name} Review` : s };
-      }),
+      bodyHtml: [
+        `<p>Compare the best alternatives to ${esc(platform.name)} in the ${esc(platform.category)} category, ranked by our editorial team.</p>`,
+        altItems ? `<h2>Best Alternatives</h2><ul>${altItems}</ul>` : "",
+        `<p><a href="/reviews/${platform.slug}">Read ${esc(platform.name)} Review</a> · <a href="/reviews">All Reviews</a></p>`,
+      ].join("\n"),
     });
   }
 
@@ -177,126 +344,108 @@ function buildRoutes(): RouteEntry[] {
       .filter((p) => categorySlug(p.category) === slug)
       .sort((a, b) => b.score - a.score);
 
+    const platformItems = platformsInCat.map((p) => `<li><a href="/reviews/${p.slug}">${esc(p.name)} — ${p.score}/10</a>: ${esc(p.description)}</li>`).join("");
+
     routes.push({
       path: `/category/${slug}`,
       title: `${cat} Reviews & Rankings | ${SITE_NAME}`,
       description: `Browse ${platformsInCat.length} ${cat.toLowerCase()} platform reviews. In-depth ratings, comparisons, and honest editorial opinions.`,
       canonical: `/category/${slug}`,
       h1: `${cat} Reviews & Rankings`,
-      bodyText: `Independent reviews and rankings of ${cat.toLowerCase()} platforms. Every platform tested by our editorial team and scored on a 10-point scale.`,
-      links: platformsInCat.slice(0, 8).map((p) => ({
-        href: `/reviews/${p.slug}`,
-        text: `${p.name} — ${p.score}/10`,
-      })),
+      bodyHtml: [
+        `<p>Independent reviews and rankings of ${platformsInCat.length} ${esc(cat.toLowerCase())} platforms. Every platform tested by our editorial team and scored on a 10-point scale.</p>`,
+        `<h2>All ${esc(cat)} Reviews</h2><ul>${platformItems}</ul>`,
+        `<p><a href="/categories">All Categories</a> · <a href="/reviews">All Reviews</a></p>`,
+      ].join("\n"),
     });
   }
 
   /* ── Static pages ── */
-  const staticPages: Omit<RouteEntry, "links">[] = [
+  const staticPages: { path: string; title: string; description: string; canonical: string; h1: string; bodyHtml: string }[] = [
     {
       path: "/reviews",
       title: "All Platform Reviews | SpicyRanked — Honest Adult Platform Reviews",
-      description:
-        "Browse 24 honest, independent reviews of adult platforms. Creator sites, cam sites, AI companions, dating apps & more.",
+      description: "Browse 24 honest, independent reviews of adult platforms. Creator sites, cam sites, AI companions, dating apps & more.",
       canonical: "/reviews",
       h1: "All Platform Reviews",
-      bodyText:
-        "Browse all 24 adult platform reviews on SpicyRanked. Creator platforms, cam sites, AI companions, dating apps, and fetish marketplaces — all rated on our 10-point scale.",
+      bodyHtml: `<p>Browse all 24 adult platform reviews on SpicyRanked. Creator platforms, cam sites, AI companions, dating apps, and fetish marketplaces — all rated on our 10-point scale.</p><ul>${reviewPlatforms.sort((a, b) => b.score - a.score).map((p) => `<li><a href="/reviews/${p.slug}">${esc(p.name)} — ${p.score}/10</a></li>`).join("")}</ul>`,
     },
     {
       path: "/compare",
       title: "Compare Adult Platforms — Head-to-Head Comparisons | SpicyRanked",
-      description:
-        "Side-by-side comparisons of top adult platforms. Compare features, pricing, ratings, and more.",
+      description: "Side-by-side comparisons of top adult platforms. Compare features, pricing, ratings, and more.",
       canonical: "/compare",
       h1: "Compare Adult Platforms",
-      bodyText:
-        "Side-by-side comparisons of top adult platforms. Compare features, pricing, ratings, and user experience to find the best platform for you.",
+      bodyHtml: `<p>Side-by-side comparisons of top adult platforms. Compare features, pricing, ratings, and user experience to find the best platform for you.</p><ul>${comparisons.map((c) => { const a = getReviewBySlug(c.platformA); const b = getReviewBySlug(c.platformB); return a && b ? `<li><a href="/compare/${c.slug}">${esc(a.name)} vs ${esc(b.name)}</a></li>` : ""; }).join("")}</ul>`,
     },
     {
       path: "/rankings",
       title: "Platform Rankings — All Adult Platforms Ranked | SpicyRanked",
-      description:
-        "Every adult platform we've reviewed, ranked by score. Creator platforms, cam sites, AI companions, dating apps & more.",
+      description: "Every adult platform we've reviewed, ranked by score. Creator platforms, cam sites, AI companions, dating apps & more.",
       canonical: "/rankings",
       h1: "Platform Rankings",
-      bodyText:
-        "Every adult platform we have reviewed, ranked by editorial score. Filter by category and sort by rating or name.",
+      bodyHtml: `<p>Every adult platform we have reviewed, ranked by editorial score.</p><ol>${reviewPlatforms.sort((a, b) => b.score - a.score).map((p, i) => `<li><a href="/reviews/${p.slug}">${esc(p.name)}</a> — ${p.score}/10</li>`).join("")}</ol>`,
     },
     {
       path: "/categories",
       title: "Browse Categories — Adult Platform Reviews | SpicyRanked",
-      description:
-        "Explore adult platform reviews by category — Creator Platforms, Live Cam Sites, AI Companions, Dating & Hookup Apps, Fetish & Niche Marketplaces.",
+      description: "Explore adult platform reviews by category — Creator Platforms, Live Cam Sites, AI Companions, Dating & Hookup Apps, Fetish & Niche Marketplaces.",
       canonical: "/categories",
       h1: "Platform Categories",
-      bodyText:
-        "Browse adult platform reviews by category. Creator Platforms, Live Cam Sites, AI Companions, Dating & Hookup Apps, and Fetish & Niche Marketplaces.",
+      bodyHtml: `<p>Browse adult platform reviews by category.</p><ul>${[...reviewCategories].filter((c) => c !== "All").map((c) => { const s = categorySlug(c); const count = reviewPlatforms.filter((p) => categorySlug(p.category) === s).length; return `<li><a href="/category/${s}">${esc(c)}</a> (${count} reviews)</li>`; }).join("")}</ul>`,
     },
     {
       path: "/about",
-      title: "About Us — Editorial Policy | SpicyRanked",
-      description:
-        "SpicyRanked is an independent editorial platform providing honest, in-depth reviews and rankings of digital entertainment and social platforms.",
+      title: "About Us — Editorial Policy & Review Methodology | SpicyRanked",
+      description: "SpicyRanked is an independent editorial team that tests and reviews adult platforms for 30-60 days each.",
       canonical: "/about",
       h1: "About SpicyRanked",
-      bodyText:
-        "SpicyRanked is an independent editorial platform dedicated to providing honest, in-depth reviews and rankings of digital entertainment and social platforms.",
+      bodyHtml: `<p>SpicyRanked is an independent editorial team that reviews and ranks adult platforms, cam sites, dating apps, and AI companion apps. We test every platform we review for 30 to 60 days using real accounts, real money, and real interactions before publishing our assessments.</p><p>Our editorial methodology is simple: we sign up, we use the platform as a real user would, we evaluate it across five standardized categories (Content Quality, User Interface, Value for Money, Privacy & Safety, and Features), and we publish an honest review with a score out of 10.</p>`,
     },
     {
       path: "/contact",
       title: "Contact Us | SpicyRanked",
-      description:
-        "Have a question, correction, or platform suggestion for SpicyRanked? Get in touch with our editorial team.",
+      description: "Have a question, correction, or platform suggestion for SpicyRanked? Get in touch with our editorial team.",
       canonical: "/contact",
       h1: "Contact Us",
-      bodyText:
-        "Have a question, correction, or platform suggestion? Get in touch with our editorial team.",
+      bodyHtml: `<p>Have a question, correction, or platform suggestion? Get in touch with our editorial team at hello@spicyranked.com.</p>`,
     },
     {
       path: "/advertise",
       title: "Advertise With Us | SpicyRanked",
-      description:
-        "Reach thousands of engaged users researching digital entertainment platforms. Banner ads, sponsored reviews, and custom packages.",
+      description: "Reach thousands of engaged users researching digital entertainment platforms.",
       canonical: "/advertise",
       h1: "Advertise With Us",
-      bodyText:
-        "Reach thousands of engaged users researching digital entertainment platforms.",
+      bodyHtml: `<p>Reach thousands of engaged users researching digital entertainment platforms. Banner ads, sponsored reviews, and custom packages.</p>`,
     },
     {
       path: "/write-for-us",
       title: "Write For Us — Guest Posts & Sponsored Content | SpicyRanked",
-      description:
-        "Write for SpicyRanked. Submit a free guest post or inquire about sponsored content opportunities.",
+      description: "Write for SpicyRanked. Submit a free guest post or inquire about sponsored content opportunities.",
       canonical: "/write-for-us",
       h1: "Write For Us",
-      bodyText:
-        "Submit a free guest post or inquire about sponsored content opportunities. Reach 50K+ monthly readers.",
+      bodyHtml: `<p>Submit a free guest post or inquire about sponsored content opportunities.</p>`,
     },
     {
       path: "/privacy-policy",
       title: "Privacy Policy | SpicyRanked",
-      description:
-        "SpicyRanked privacy policy. How we collect, use, and protect your data.",
+      description: "SpicyRanked privacy policy. How we collect, use, and protect your data.",
       canonical: "/privacy-policy",
       h1: "Privacy Policy",
-      bodyText:
-        "This privacy policy describes how SpicyRanked collects, uses, and protects your personal data.",
+      bodyHtml: `<p>This privacy policy describes how SpicyRanked collects, uses, and protects your personal data.</p>`,
     },
     {
       path: "/terms",
       title: "Terms of Service | SpicyRanked",
-      description:
-        "SpicyRanked terms of service. Rules and guidelines for using our site.",
+      description: "SpicyRanked terms of service. Rules and guidelines for using our site.",
       canonical: "/terms",
       h1: "Terms of Service",
-      bodyText:
-        "These terms of service govern your use of the SpicyRanked website.",
+      bodyHtml: `<p>These terms of service govern your use of the SpicyRanked website.</p>`,
     },
   ];
 
   for (const page of staticPages) {
-    routes.push({ ...page, links: undefined });
+    routes.push(page);
   }
 
   return routes;
@@ -305,14 +454,6 @@ function buildRoutes(): RouteEntry[] {
 /* ------------------------------------------------------------------ */
 /*  HTML generation                                                    */
 /* ------------------------------------------------------------------ */
-
-function esc(str: string): string {
-  return str
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
 
 function generateHtml(template: string, route: RouteEntry): string {
   let html = template;
@@ -326,7 +467,7 @@ function generateHtml(template: string, route: RouteEntry): string {
     `<meta name="description" content="${esc(route.description)}" />`
   );
 
-  // ── <meta name="robots"> – no change for indexable pages
+  // ── <meta name="robots">
   if (route.noindex) {
     html = html.replace(
       /<meta\s+name="robots"\s+content="[^"]*"\s*\/?>/,
@@ -371,21 +512,14 @@ function generateHtml(template: string, route: RouteEntry): string {
   );
 
   // ── Pre-rendered body content inside <div id="root">
-  const linksHtml = route.links?.length
-    ? `<nav aria-label="Page navigation"><ul>${route.links
-        .map((l) => `<li><a href="${l.href}">${esc(l.text)}</a></li>`)
-        .join("")}</ul></nav>`
-    : "";
-
-  const siteNav = `<nav aria-label="Site navigation"><ul><li><a href="/">Home</a></li><li><a href="/reviews">Reviews</a></li><li><a href="/compare">Compare</a></li><li><a href="/rankings">Rankings</a></li><li><a href="/categories">Categories</a></li></ul></nav>`;
+  const siteNav = `<nav aria-label="Site navigation"><ul><li><a href="/">Home</a></li><li><a href="/reviews">Reviews</a></li><li><a href="/compare">Compare</a></li><li><a href="/rankings">Rankings</a></li><li><a href="/categories">Categories</a></li><li><a href="/about">About</a></li></ul></nav>`;
 
   const rootContent = [
     `<div id="root">`,
     `<div style="max-width:800px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,sans-serif;color:#e0e0e0;background:#1A1A2E">`,
-    `<h1>${esc(route.h1)}</h1>`,
-    `<p>${esc(route.bodyText)}</p>`,
-    linksHtml,
     siteNav,
+    `<h1>${esc(route.h1)}</h1>`,
+    route.bodyHtml,
     `<p style="margin-top:32px;font-size:12px;color:#888">© 2026 ${SITE_NAME} — Adults 18+ only.</p>`,
     `</div>`,
     `</div>`,
@@ -429,7 +563,6 @@ export function seoPrerender(): Plugin {
         const html = generateHtml(template, route);
 
         if (route.path === "/") {
-          // Overwrite root index.html with pre-rendered homepage
           writeFileSync(templatePath, html);
           generated++;
           continue;
