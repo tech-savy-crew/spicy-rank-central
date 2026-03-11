@@ -73,9 +73,9 @@ const uxOverrides: Record<string, UserExperienceContent> = {
     mobileExperience: "Excellent mobile experience. The responsive design works smoothly on phones with touch-optimized controls. No native Stripchat app on app stores, but the mobile website functions effectively as a PWA.",
   },
   "tinder": {
-    gettingStarted: "Five minutes. Phone number or social login. Add photos, write bio, set preferences. Straightforward onboarding.",
-    interfaceNavigation: "The original swipe UI remains intuitive and fast. Tinder has added more features over the years, and the app can feel cluttered compared to its original simplicity. Ads appear frequently for free users, pushing upgrades aggressively. The messaging interface is functional but basic.",
-    mobileExperience: "Tinder is mobile-first with excellent iOS and Android apps. Also available as a web app. Push notifications for matches and messages work reliably. App performance is smooth and stable.",
+    gettingStarted: "Under five minutes. Phone number, Apple ID, Google, or Facebook login. Add up to nine photos, write a bio (500 characters), set age and distance preferences, choose what you are looking for. Selfie verification optional but recommended — adds blue checkmark badge. No identity verification beyond phone number. Swiping within minutes of download.",
+    interfaceNavigation: "The original swipe interface remains the most intuitive matching mechanic in dating apps — fast, satisfying, and universally understood. The Tinder app has grown more complex over the years with Explore, events, and multiple settings layers, creating some clutter compared to its original simplicity. Free users see frequent ads and aggressive upgrade prompts throughout the experience. The messaging interface is functional but basic — no video chat, no voice notes. Search and filtering are limited compared to Bumble. Profile cards show photos prominently with bio and shared interests secondary.",
+    mobileExperience: "Tinder is mobile-first with excellent native iOS and Android apps. Also available as a web app at tinder.com for desktop swiping. Push notifications for matches and messages work reliably. App performance is smooth, stable, and well-optimized. The Tinder app is one of the most downloaded apps globally and the mobile experience reflects years of refinement. Swipe gestures are fluid and responsive.",
   },
   "fanvue": {
     gettingStarted: "Quick registration with email and ID verification. Creator approval within 24-48 hours. Clean onboarding flow guides profile setup and first content upload.",
@@ -189,10 +189,10 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "eye-off", title: "Account Privacy", description: "Anonymous browsing available. Invisible mode for Ultimate members. Account deletion available." },
   ],
   "tinder": [
-    { icon: "lock", title: "Photo Verification", description: "Real-time selfie verification with blue checkmark badge. Reduces catfishing." },
-    { icon: "shield-check", title: "Block & Report", description: "Block and report users for inappropriate behavior. Moderation team reviews reports." },
-    { icon: "credit-card", title: "Safe Payments", description: "In-app purchases through Apple/Google app stores with standard payment protections." },
-    { icon: "eye-off", title: "Privacy Controls", description: "Control profile visibility, hide age and distance, and manage data sharing preferences." },
+    { icon: "lock", title: "Selfie Verification", description: "Real-time selfie verification with blue checkmark badge. Pose-matching technology confirms you are a real person. Significantly reduces catfishing and builds trust with potential matches." },
+    { icon: "shield-check", title: "Match Group Security", description: "Owned by Match Group (NASDAQ: MTCH), the world's largest dating company. Corporate-level security infrastructure, responsive moderation team, and continuous investment in safety technology across the platform." },
+    { icon: "credit-card", title: "App Store Payments", description: "All payments processed through Apple App Store or Google Play with standard payment protections and refund policies. No direct credit card entry required. Subscription management through app store settings." },
+    { icon: "eye-off", title: "Location & Privacy", description: "Approximate location only — never shares exact position. Hide age and distance with paid tiers. Control profile visibility and discovery settings. Block contacts by phone number. Data export available." },
   ],
   "fanvue": [
     { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including content and payments." },
@@ -272,7 +272,7 @@ const privacyOverrides: Record<string, string> = {
   "bumble": "Is Bumble safe? Yes — among the safest mainstream dating apps. Is Bumble legit? Absolutely — publicly traded company (NASDAQ: BMBL). Is Bumble a scam? No — genuine dating experience with real users. Some frustration around pricing, but platform is legitimate.",
   "chaturbate": "Is Chaturbate safe? Yes, with standard security protections. SSL encryption, age verification for performers, and discreet billing for token purchases. Is Chaturbate legit? Absolutely — one of the longest-running and most established cam platforms globally. Is Chaturbate a scam? No — legitimate platform with millions of daily users. Is Chaturbate free? Yes, public broadcasts are completely free to watch. Tokens are only needed for interacting with performers.",
   "stripchat": "Is Stripchat safe? Yes. SSL encryption, performer verification, discreet billing, and standard account security. Is Stripchat legit? Yes — operated by a legitimate company with millions of daily users. Is Stripchat free? Yes, public broadcasts are completely free to watch. Tokens are only needed for tipping and private shows.",
-  "tinder": "Is Tinder safe? Reasonably — photo verification, block/report tools, and safety tips are available. Is Tinder legit? Absolutely — owned by Match Group (NASDAQ: MTCH), the world's largest dating company. Is Tinder a scam? No — genuine dating app with real users, though some bot and scam accounts persist.",
+  "tinder": "Is Tinder safe? Yes — selfie verification, Match Group corporate security, responsive moderation, and approximate-only location sharing. Standard dating safety practices still apply when meeting strangers. Is Tinder legit? Absolutely — owned by Match Group (NASDAQ: MTCH), the world's largest dating company operating Hinge, Match.com, OkCupid, and more. Is Tinder a scam? No — genuine dating app with 75M+ monthly active users. Some bot and scam accounts persist despite moderation, but the platform itself is entirely legitimate with real matches happening millions of times daily.",
   "fanvue": "Is FanVue legit? Yes — UK-based company with functioning payments and growing creator community. Is FanVue safe? Yes — ID verification, SSL encryption, and discreet billing meet industry standards. Is FanVue a scam? No — legitimate creator platform with the lowest commission in the market.",
   "patreon": "Is Patreon safe? Yes — secure payments processed through Stripe with PCI compliance. Is Patreon legit? Absolutely — publicly funded company that has paid out over $3.5 billion to creators. Is Patreon a scam? No — the original and most established creator subscription platform.",
   "jerkmate": "Is Jerkmate safe? Yes — standard security protections are in place including encryption, verification, and discreet billing. Is Jerkmate legit? Absolutely — the platform is a real, functioning business with professional operations. The aggressive advertising creates a perception problem, but the actual product delivers a genuine cam experience. Is Jerkmate a scam? No. There are legitimate criticisms about pricing and the misleading ads, but the platform itself operates transparently.",
@@ -351,11 +351,11 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Use Mobile for Casual Browsing", description: "Stripchat's mobile experience is excellent. Save desktop for VR and private shows." },
   ],
   "tinder": [
-    { title: "Invest in Quality Photos", description: "Clear headshot, full-body shot, activity photos. Six photos outperform three. First photo matters most." },
-    { title: "Write a Specific Bio", description: "Mention specific interests, hobbies, or conversation starters. Generic bios get skipped." },
-    { title: "Verify Your Profile", description: "Photo verification adds a blue checkmark and significantly increases trust and match rates." },
-    { title: "Swipe During Peak Hours", description: "Sunday-Thursday evenings 7-10 PM. Consistent daily usage beats weekend binge-swiping." },
-    { title: "Start with Gold Before Platinum", description: "Gold's See Who Likes You is the most valuable paid feature. Platinum's extras rarely justify the price increase." },
+    { title: "Invest in Quality Photos First", description: "Clear headshot, full-body shot, activity photos with good lighting. Six photos outperform three. First photo matters most — it determines 80% of swipe decisions. No group photos as your lead image." },
+    { title: "Write a Specific, Conversation-Starting Bio", description: "Mention specific interests, hobbies, or questions that invite responses. 'I make the best carbonara in Brooklyn — fight me' outperforms 'I love to travel and eat good food.' Generic bios get skipped." },
+    { title: "Get Selfie Verified Immediately", description: "The blue checkmark significantly increases trust and match rates. Takes 30 seconds. In a platform with bot concerns, verification signals you are real and serious." },
+    { title: "Swipe Consistently During Peak Hours", description: "Sunday-Thursday evenings 7-10 PM in your timezone. Consistent daily usage of 10-15 minutes beats weekend binge-swiping. The algorithm rewards regular activity over sporadic heavy usage." },
+    { title: "Start with Gold — Skip Platinum", description: "Gold's See Who Likes You is the single most valuable paid feature on Tinder. It eliminates the swiping game entirely. Platinum's extras (message before matching, priority likes) rarely justify the additional $10/month in our testing." },
   ],
   "fanvue": [
     { title: "Direct Your Most Loyal Fans to FanVue", description: "Keep your most engaged subscribers on FanVue where you keep 85%. Use OnlyFans for broader reach." },
