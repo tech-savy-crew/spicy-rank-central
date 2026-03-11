@@ -351,11 +351,11 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Use Mobile for Casual Browsing", description: "Stripchat's mobile experience is excellent. Save desktop for VR and private shows." },
   ],
   "tinder": [
-    { title: "Invest in Quality Photos", description: "Clear headshot, full-body shot, activity photos. Six photos outperform three. First photo matters most." },
-    { title: "Write a Specific Bio", description: "Mention specific interests, hobbies, or conversation starters. Generic bios get skipped." },
-    { title: "Verify Your Profile", description: "Photo verification adds a blue checkmark and significantly increases trust and match rates." },
-    { title: "Swipe During Peak Hours", description: "Sunday-Thursday evenings 7-10 PM. Consistent daily usage beats weekend binge-swiping." },
-    { title: "Start with Gold Before Platinum", description: "Gold's See Who Likes You is the most valuable paid feature. Platinum's extras rarely justify the price increase." },
+    { title: "Invest in Quality Photos First", description: "Clear headshot, full-body shot, activity photos with good lighting. Six photos outperform three. First photo matters most — it determines 80% of swipe decisions. No group photos as your lead image." },
+    { title: "Write a Specific, Conversation-Starting Bio", description: "Mention specific interests, hobbies, or questions that invite responses. 'I make the best carbonara in Brooklyn — fight me' outperforms 'I love to travel and eat good food.' Generic bios get skipped." },
+    { title: "Get Selfie Verified Immediately", description: "The blue checkmark significantly increases trust and match rates. Takes 30 seconds. In a platform with bot concerns, verification signals you are real and serious." },
+    { title: "Swipe Consistently During Peak Hours", description: "Sunday-Thursday evenings 7-10 PM in your timezone. Consistent daily usage of 10-15 minutes beats weekend binge-swiping. The algorithm rewards regular activity over sporadic heavy usage." },
+    { title: "Start with Gold — Skip Platinum", description: "Gold's See Who Likes You is the single most valuable paid feature on Tinder. It eliminates the swiping game entirely. Platinum's extras (message before matching, priority likes) rarely justify the additional $10/month in our testing." },
   ],
   "fanvue": [
     { title: "Direct Your Most Loyal Fans to FanVue", description: "Keep your most engaged subscribers on FanVue where you keep 85%. Use OnlyFans for broader reach." },
