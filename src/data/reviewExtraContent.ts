@@ -265,6 +265,12 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "credit-card", title: "Discreet Billing", description: "Generic descriptor on statements. Ashley Madison name not visible. Essential for users sharing financial accounts." },
     { icon: "eye-off", title: "Full-Profile Wipe", description: "Paid permanent deletion of all data, messages, photos, history. Created post-breach in response to user demand. Guaranteed exit option." },
   ],
+  "adult-friend-finder": [
+    { icon: "lock", title: "Post-Breach Security", description: "AFF upgraded to SSL/TLS encryption, improved password hashing, regular security audits, and enhanced monitoring after the 2016 breach. Improvements are genuine but reactive — they came after 412 million accounts were exposed." },
+    { icon: "credit-card", title: "Discreet Billing", description: "Gold membership charges appear under a generic billing descriptor. The Adult Friend Finder name is not visible on bank or credit card statements. Standard billing discretion for adult platforms." },
+    { icon: "shield-check", title: "2016 Data Breach History", description: "412 million accounts exposed across Friend Finder Networks in November 2016. Emails, usernames, and poorly encrypted passwords were leaked. The largest adult site breach in internet history and AFF's defining trust event." },
+    { icon: "eye-off", title: "Anonymous Browsing", description: "Free browsing requires no identifying information beyond an email address. No identity verification for basic accounts. Use a dedicated email and unique password given the breach history." },
+  ],
 };
 
 const privacyOverrides: Record<string, string> = {
@@ -289,6 +295,7 @@ const privacyOverrides: Record<string, string> = {
   "camsoda": "Is CamSoda safe? Yes — standard security consistent with major cam sites. Is CamSoda legit? Yes — operating for years with real user base and functioning payments. Is it a scam? No — delivers exactly what promised: free cams with innovative voyeur, AR, and recording features.",
   "seeking": "Is Seeking safe? Yes — strongest verification suite in dating. Is it a scam? No — delivers exactly what promised: premium verified sugar dating environment with largest active user base.",
   "ashley-madison": "Is Ashley Madison safe in 2026? Significantly safer than pre-breach, with security investment exceeding most dating platforms. No absolute guarantee possible. Users should use anonymous details and understand digital activity always carries some risk.",
+  "adult-friend-finder": "Is Adult Friend Finder legit and safe to use in 2026? The platform is legitimate — it operates, processes real payments, and facilitates genuine connections. But safe requires qualification: the current security infrastructure is standard, but the 2016 breach history means users should be cautious with personal information, use unique passwords, and understand that no platform that has been breached at this scale can guarantee it will not happen again. Use a dedicated email address, a unique password, and share minimal personally identifying information on your profile.",
 };
 
 const tipsOverrides: Record<string, Tip[]> = {
@@ -438,6 +445,13 @@ const tipsOverrides: Record<string, Tip[]> = {
     { title: "Use Blurred Photos Strategically", description: "Show enough to attract, not enough to identify. Selective reveal for established conversations." },
     { title: "Leverage Travelling Feature 2-3 Weeks Before Trips", description: "Give local members time to see and respond." },
     { title: "Be Realistic About Gender Ratio", description: "Not every message gets a response. Focus quality over quantity." },
+  ],
+  "adult-friend-finder": [
+    { title: "Invest in Your Username and Introduction Title", description: "Your adult friend finder username and introduction title are the first — and often only — things other members see. Choose a username that is memorable, personality-driven, and hints at your interests. Write an introduction title that is specific and intriguing. 'Fun-loving couple seeking adventures in Austin' outperforms 'Looking for fun' by orders of magnitude." },
+    { title: "Start with the Swinger and Couples Communities", description: "AFF's success rate is highest in the swinger and couples channels. These communities are filled with experienced, active, and genuine participants. Joining swinger chat rooms and groups gives you the best chance of genuine connections and the most welcoming community atmosphere." },
+    { title: "Subscribe to the Quarterly Gold Plan", description: "The 3-month Gold plan at $26.95 per month provides the sweet spot between commitment and value. One month at $39.95 is too expensive for the evaluation time AFF requires. Three months gives you enough time to build a profile, join communities, and evaluate your local market." },
+    { title: "Use a Dedicated Email and Unique Password", description: "Given the 2016 data breach history, protect yourself by using an email address not connected to your real identity and a unique password you do not use anywhere else. This basic precaution limits your exposure in the event of any future security incident." },
+    { title: "Engage with Community Features Rather Than Just Messaging", description: "AFF's strength is community interaction, not cold messaging. Participate in chat rooms, contribute to forum discussions, join groups related to your interests, and build a visible community presence. Active community members attract more profile views and genuine interest." },
   ],
 };
 
