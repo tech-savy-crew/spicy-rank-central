@@ -189,10 +189,10 @@ const privacyCardOverrides: Record<string, TrustCard[]> = {
     { icon: "eye-off", title: "Account Privacy", description: "Anonymous browsing available. Invisible mode for Ultimate members. Account deletion available." },
   ],
   "tinder": [
-    { icon: "lock", title: "Photo Verification", description: "Real-time selfie verification with blue checkmark badge. Reduces catfishing." },
-    { icon: "shield-check", title: "Block & Report", description: "Block and report users for inappropriate behavior. Moderation team reviews reports." },
-    { icon: "credit-card", title: "Safe Payments", description: "In-app purchases through Apple/Google app stores with standard payment protections." },
-    { icon: "eye-off", title: "Privacy Controls", description: "Control profile visibility, hide age and distance, and manage data sharing preferences." },
+    { icon: "lock", title: "Selfie Verification", description: "Real-time selfie verification with blue checkmark badge. Pose-matching technology confirms you are a real person. Significantly reduces catfishing and builds trust with potential matches." },
+    { icon: "shield-check", title: "Match Group Security", description: "Owned by Match Group (NASDAQ: MTCH), the world's largest dating company. Corporate-level security infrastructure, responsive moderation team, and continuous investment in safety technology across the platform." },
+    { icon: "credit-card", title: "App Store Payments", description: "All payments processed through Apple App Store or Google Play with standard payment protections and refund policies. No direct credit card entry required. Subscription management through app store settings." },
+    { icon: "eye-off", title: "Location & Privacy", description: "Approximate location only — never shares exact position. Hide age and distance with paid tiers. Control profile visibility and discovery settings. Block contacts by phone number. Data export available." },
   ],
   "fanvue": [
     { icon: "lock", title: "SSL Encryption", description: "SSL/TLS encryption for all data transfers including content and payments." },
