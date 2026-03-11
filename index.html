@@ -20,9 +20,11 @@
     <title>SpicyRanked — Honest Adult Platform Reviews & Rankings 2026</title>
     <meta name="description" content="Independent reviews, comparisons and rankings of top adult creator platforms, cam sites, dating apps and AI companions. Honest ratings updated weekly." />
     <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href="https://spicyranked.com/" />
     <meta name="author" content="SpicyRanked" />
     <meta name="theme-color" content="#1A1A2E" />
+    <meta http-equiv="content-language" content="en-US" />
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="SpicyRanked" />
@@ -47,7 +49,30 @@
     <link rel="preconnect" href="https://www.googletagmanager.com" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+
+    <!-- Sitewide JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "SpicyRanked",
+      "url": "https://spicyranked.com",
+      "description": "Independent reviews and rankings of adult platforms, cam sites, dating apps, and AI companion apps.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "SpicyRanked",
+        "url": "https://spicyranked.com"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://spicyranked.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
