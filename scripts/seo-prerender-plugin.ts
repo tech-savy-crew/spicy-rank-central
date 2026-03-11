@@ -231,7 +231,7 @@ function buildRoutes(): RouteEntry[] {
       canonical: "/categories",
       h1: "Platform Categories",
       bodyText:
-        "Browse adult platform reviews by category. Creator Platforms, Live Cam Sites, AI Companions, Dating & Hookup Apps, Sexting & Chat, and Tube & Streaming.",
+        "Browse adult platform reviews by category. Creator Platforms, Live Cam Sites, AI Companions, Dating & Hookup Apps, and Fetish & Niche Marketplaces.",
     },
     {
       path: "/about",
