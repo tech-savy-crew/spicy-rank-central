@@ -201,7 +201,7 @@ function buildRoutes(): RouteEntry[] {
       canonical: "/reviews",
       h1: "All Platform Reviews",
       bodyText:
-        "Browse every adult platform review on SpicyRanked. Creator platforms, cam sites, AI companions, dating apps, and more — all rated on our 10-point scale.",
+        "Browse all 24 adult platform reviews on SpicyRanked. Creator platforms, cam sites, AI companions, dating apps, and fetish marketplaces — all rated on our 10-point scale.",
     },
     {
       path: "/compare",
