@@ -474,11 +474,9 @@ export const detailedReviews: DetailedReview[] = [
       { persona: "Users demanding best AI quality", reason: "Candy.ai and CrushOn.ai deliver superior conversations", ideal: false },
       { persona: "Users wanting visual or voice content", reason: "Text-only. DreamGF.ai or Candy.ai for multimedia", ideal: false }
     ],
-    alternatives: ["crushon-ai", "candy-ai", "spicychat-ai", "dreamgf-ai", "character-ai"],
+    alternatives: ["crushon-ai", "candy-ai", "dreamgf-ai", "replika"],
     comparisons: [
-      { slug: "girlfriendgpt-vs-crushon-ai", title: "GirlfriendGPT vs CrushOn.ai" },
-      { slug: "girlfriendgpt-vs-candy-ai", title: "GirlfriendGPT vs Candy.ai" },
-      { slug: "girlfriendgpt-vs-spicychat", title: "GirlfriendGPT vs SpicyChat" }
+      { slug: "candy-ai-vs-crushon-ai", title: "GirlfriendGPT vs CrushOn.ai" },
     ],
     faqs: [
       { question: "Is GirlfriendGPT free?", answer: "Yes, most generous free tier among NSFW AI chatbots. Limited daily messages with basic AI. No credit card required. Paid plans from $9.99/mo." },
