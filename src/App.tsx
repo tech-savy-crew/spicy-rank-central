@@ -46,7 +46,7 @@ const App = () => (
               {/* Reviews */}
               <Route path="/reviews" element={<ReviewsPage />} />
               <Route path="/reviews/:slug" element={<ReviewDetailPage />} />
-              <Route path="/review/:slug" element={<ReviewDetailPage />} />
+              <Route path="/review/:slug" element={<ReviewRedirect />} />
               {/* Comparisons */}
               <Route path="/compare" element={<ComparePage />} />
               <Route path="/compare/:slug" element={<CompareDetailPage />} />
