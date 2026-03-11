@@ -60,7 +60,7 @@ export const bestLists: BestList[] = [
     slug: "best-hookup-apps",
     title: "Best Hookup Apps That Actually Work in 2026",
     subtitle: "Finding genuine hookup apps that deliver real connections is harder than it should be. We tested the top platforms to find which ones actually work for casual encounters.",
-    platformSlugs: ["feeld", "pure-app", "adultfriendfinder", "arousr", "flingster"],
+    platformSlugs: ["feeld", "pure-app", "adult-friend-finder", "arousr", "flingster"],
     faqs: [
       { question: "What is the best hookup app in 2026?", answer: "Feeld is the best overall for open-minded dating, while Pure App is best for quick anonymous hookups." },
       { question: "Are hookup apps safe?", answer: "Use apps with identity verification and always meet in public places first. Never share financial information." },

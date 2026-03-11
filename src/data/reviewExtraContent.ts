@@ -581,7 +581,7 @@ export function getExtraFaqs(review: DetailedReview): { question: string; answer
       "myfreecams": "MyFreeCams", "slutroulette": "SlutRoulette",
       "sugardaddy": "SugarDaddy.com", "secret-benefits": "Secret Benefits",
       "seeking": "Seeking", "sugardaddymeet": "SugarDaddyMeet", "sugarbook": "Sugarbook", "ashley-madison": "Ashley Madison",
-      "whats-your-price": "WhatsYourPrice", "adultfriendfinder": "AdultFriendFinder",
+      "whats-your-price": "WhatsYourPrice", "adult-friend-finder": "Adult Friend Finder", "adultfriendfinder": "AdultFriendFinder",
       "pure-app": "Pure", "feeld": "Feeld",
       "arousr": "Arousr", "sextfriend": "SextFriend", "flingster": "Flingster",
       "chatrandom": "ChatRandom", "smutfinder": "SmutFinder",

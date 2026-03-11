@@ -2611,10 +2611,10 @@ function generateTubeReviews(): DetailedReview[] {
       { persona: "Men expecting guaranteed results from credits", reason: "Gender ratio means competition is intense and success varies.", ideal: false },
       { persona: "Anyone uncomfortable with ethical implications of facilitating affairs", reason: "Platform explicitly facilitates extramarital connections.", ideal: false }
     ],
-    alternatives: ["seeking", "adultfriendfinder", "feeld"],
+    alternatives: ["seeking", "adult-friend-finder", "feeld"],
     comparisons: [
       { slug: "seeking", title: "Ashley Madison vs Seeking" },
-      { slug: "adultfriendfinder", title: "Ashley Madison vs Adult Friend Finder" },
+      { slug: "adult-friend-finder", title: "Ashley Madison vs Adult Friend Finder" },
       { slug: "feeld", title: "Ashley Madison vs Feeld" }
     ],
     faqs: [
