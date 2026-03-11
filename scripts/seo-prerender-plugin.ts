@@ -197,11 +197,11 @@ function buildRoutes(): RouteEntry[] {
       path: "/reviews",
       title: "All Platform Reviews | SpicyRanked — Honest Adult Platform Reviews",
       description:
-        "Browse 50+ honest, independent reviews of adult platforms. Creator sites, cam sites, AI companions, dating apps & more.",
+        "Browse 24 honest, independent reviews of adult platforms. Creator sites, cam sites, AI companions, dating apps & more.",
       canonical: "/reviews",
       h1: "All Platform Reviews",
       bodyText:
-        "Browse every adult platform review on SpicyRanked. Creator platforms, cam sites, AI companions, dating apps, and more — all rated on our 10-point scale.",
+        "Browse all 24 adult platform reviews on SpicyRanked. Creator platforms, cam sites, AI companions, dating apps, and fetish marketplaces — all rated on our 10-point scale.",
     },
     {
       path: "/compare",
@@ -227,11 +227,11 @@ function buildRoutes(): RouteEntry[] {
       path: "/categories",
       title: "Browse Categories — Adult Platform Reviews | SpicyRanked",
       description:
-        "Explore adult platform reviews by category — Creator Platforms, Live Cam Sites, AI Companions, Dating Apps, Sexting & more.",
+        "Explore adult platform reviews by category — Creator Platforms, Live Cam Sites, AI Companions, Dating & Hookup Apps, Fetish & Niche Marketplaces.",
       canonical: "/categories",
       h1: "Platform Categories",
       bodyText:
-        "Browse adult platform reviews by category. Creator Platforms, Live Cam Sites, AI Companions, Dating & Hookup Apps, Sexting & Chat, and Tube & Streaming.",
+        "Browse adult platform reviews by category. Creator Platforms, Live Cam Sites, AI Companions, Dating & Hookup Apps, and Fetish & Niche Marketplaces.",
     },
     {
       path: "/about",
