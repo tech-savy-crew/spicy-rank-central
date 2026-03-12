@@ -197,6 +197,28 @@ const CompareDetailPage = () => {
           </div>
         </div>
 
+        {/* Read Full Reviews */}
+        <section className="mb-10">
+          <h2 className="text-xl font-bold mb-4">Read the Full Reviews</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link to={`/reviews/${a.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover group">
+              <p className="font-bold text-sm group-hover:text-primary transition-colors">{a.name} Review 2026</p>
+              <p className="text-xs text-muted-foreground mt-1">Score: {a.score}/10 · {a.category}</p>
+              <span className="text-xs text-primary font-medium mt-2 inline-flex items-center gap-1">Read full {a.name} review <ArrowRight className="h-3 w-3" /></span>
+            </Link>
+            <Link to={`/reviews/${b.slug}`} className="bg-card rounded-xl border border-border/50 p-5 card-hover group">
+              <p className="font-bold text-sm group-hover:text-primary transition-colors">{b.name} Review 2026</p>
+              <p className="text-xs text-muted-foreground mt-1">Score: {b.score}/10 · {b.category}</p>
+              <span className="text-xs text-primary font-medium mt-2 inline-flex items-center gap-1">Read full {b.name} review <ArrowRight className="h-3 w-3" /></span>
+            </Link>
+          </div>
+          <div className="mt-3 text-center">
+            <Link to={`/alternatives/${winner.slug}`} className="text-sm text-primary hover:underline font-medium">
+              Browse all {winner.name} alternatives →
+            </Link>
+          </div>
+        </section>
+
         {/* Related Comparisons */}
         {relatedComparisons.length > 0 && (
           <section className="mb-10">
