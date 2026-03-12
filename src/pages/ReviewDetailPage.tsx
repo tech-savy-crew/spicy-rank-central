@@ -10,6 +10,7 @@ import { CheckCircle, XCircle, ExternalLink, Star, Clock, Calendar, ChevronRight
 import { useState, useMemo } from "react";
 import candyAiInterface from "@/assets/candy-ai-interface.webp";
 import { ReviewContent } from "@/components/ReviewContent";
+import { ReviewAuthorBox } from "@/components/ReviewAuthorBox";
 
 function StarRating({ score, max = 10 }: { score: number; max?: number }) {
   const stars = 5;
@@ -205,6 +206,12 @@ const ReviewDetailPage = () => {
       </section>
 
       <div className="container py-8 md:py-12">
+        <ReviewAuthorBox
+          platformName={review.name}
+          lastUpdated={review.lastUpdated}
+          readingTime={readingTime}
+          category={review.category}
+        />
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-8 md:gap-10">
           {/* Main Content */}
           <div className="space-y-10 max-w-[800px]">

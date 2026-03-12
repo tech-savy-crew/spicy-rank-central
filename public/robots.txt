@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://spicyranked.com/sitemap.xml
+Sitemap: https://spicyranked.com/sitemap_index.xml
 
 # Block admin/internal routes if any
 Disallow: /api/
