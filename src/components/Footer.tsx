@@ -26,6 +26,9 @@ const bestLinks = [
 
 const companyLinks = [
   { label: "About Us", to: "/about" },
+  { label: "Editorial Policy", to: "/editorial-policy" },
+  { label: "Review Methodology", to: "/review-methodology" },
+  { label: "Affiliate Disclosure", to: "/affiliate-disclosure" },
   { label: "Advertise With Us", to: "/advertise" },
   { label: "Write For Us", to: "/write-for-us" },
   { label: "Contact", to: "/contact" },

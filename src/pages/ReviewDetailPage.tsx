@@ -10,6 +10,7 @@ import { CheckCircle, XCircle, ExternalLink, Star, Clock, Calendar, ChevronRight
 import { useState, useMemo } from "react";
 import candyAiInterface from "@/assets/candy-ai-interface.webp";
 import { ReviewContent } from "@/components/ReviewContent";
+import { ReviewAuthorBox } from "@/components/ReviewAuthorBox";
 
 function StarRating({ score, max = 10 }: { score: number; max?: number }) {
   const stars = 5;
