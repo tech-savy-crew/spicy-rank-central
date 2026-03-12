@@ -28,6 +28,9 @@ const SearchPage = lazy(() => import("./pages/SearchPage"));
 const BestListDetailPage = lazy(() => import("./pages/BestListDetailPage"));
 const PrivacyPolicyPage = lazy(() => import("./pages/PrivacyPolicyPage"));
 const TermsPage = lazy(() => import("./pages/TermsPage"));
+const EditorialPolicyPage = lazy(() => import("./pages/EditorialPolicyPage"));
+const ReviewMethodologyPage = lazy(() => import("./pages/ReviewMethodologyPage"));
+const AffiliateDisclosurePage = lazy(() => import("./pages/AffiliateDisclosurePage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -63,6 +66,10 @@ const App = () => (
               <Route path="/rankings" element={<RankingsPage />} />
               <Route path="/category/:category" element={<CategoryPage />} />
               <Route path="/categories" element={<CategoriesPage />} />
+              {/* Trust & Editorial */}
+              <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
+              <Route path="/review-methodology" element={<ReviewMethodologyPage />} />
+              <Route path="/affiliate-disclosure" element={<AffiliateDisclosurePage />} />
               {/* Company */}
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
