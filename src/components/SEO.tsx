@@ -3,7 +3,6 @@
  * All new code should import directly from "@/components/SEOHead".
  */
 export {
-  SEOHead as SEO,
   SEOHead,
   // Constants
   SITE_NAME,
@@ -28,11 +27,7 @@ export {
 
 export type { SEOHeadProps, Author, ArticleMeta } from "./SEOHead";
 
-// Legacy adapter: map old SEO props → SEOHead props
-// The old `jsonLd` prop is now `structuredData` in SEOHead,
-// but since we're re-exporting SEOHead as SEO and it doesn't have `jsonLd`,
-// we need a thin wrapper for backward compat.
-
+// Legacy adapter: map old `jsonLd` prop → `structuredData`
 import { SEOHead } from "./SEOHead";
 import type { SEOHeadProps } from "./SEOHead";
 import React from "react";
@@ -43,10 +38,6 @@ interface LegacySEOProps extends Omit<SEOHeadProps, "structuredData"> {
   structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-/**
- * Drop-in replacement that supports the old `jsonLd` prop name.
- * New code should use `structuredData` directly via SEOHead.
- */
 export function SEO(props: LegacySEOProps) {
   const { jsonLd, structuredData, ...rest } = props;
   return React.createElement(SEOHead, {
