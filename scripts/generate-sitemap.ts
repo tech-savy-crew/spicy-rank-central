@@ -39,33 +39,33 @@ ${entries
 
 /* ── Static pages ── */
 const staticPages: SitemapEntry[] = [
-  { loc: "/", priority: "1.0", changefreq: "weekly" },
+  { loc: "/", priority: "1.0", changefreq: "daily" },
   { loc: "/reviews", priority: "0.9", changefreq: "weekly" },
   { loc: "/rankings", priority: "0.8", changefreq: "weekly" },
-  { loc: "/compare", priority: "0.7", changefreq: "monthly" },
-  { loc: "/categories", priority: "0.7", changefreq: "monthly" },
-  { loc: "/about", priority: "0.5", changefreq: "yearly" },
-  { loc: "/contact", priority: "0.4", changefreq: "yearly" },
-  { loc: "/editorial-policy", priority: "0.5", changefreq: "yearly" },
-  { loc: "/review-methodology", priority: "0.5", changefreq: "yearly" },
-  { loc: "/affiliate-disclosure", priority: "0.4", changefreq: "yearly" },
-  { loc: "/advertise", priority: "0.3", changefreq: "yearly" },
-  { loc: "/write-for-us", priority: "0.3", changefreq: "yearly" },
+  { loc: "/compare", priority: "0.8", changefreq: "weekly" },
+  { loc: "/categories", priority: "0.7", changefreq: "weekly" },
+  { loc: "/search", priority: "0.5", changefreq: "weekly" },
+  { loc: "/about", priority: "0.5", changefreq: "monthly" },
+  { loc: "/contact", priority: "0.4", changefreq: "monthly" },
+  { loc: "/editorial-policy", priority: "0.5", changefreq: "monthly" },
+  { loc: "/review-methodology", priority: "0.5", changefreq: "monthly" },
+  { loc: "/affiliate-disclosure", priority: "0.4", changefreq: "monthly" },
+  { loc: "/advertise", priority: "0.3", changefreq: "monthly" },
+  { loc: "/write-for-us", priority: "0.3", changefreq: "monthly" },
   { loc: "/privacy-policy", priority: "0.2", changefreq: "yearly" },
   { loc: "/terms", priority: "0.2", changefreq: "yearly" },
 ];
 
-/* ── Review pages ── */
+/* ── Review + alternatives + best-list pages ── */
 const reviewPages: SitemapEntry[] = reviewPlatforms.flatMap((p) => [
-  { loc: `/reviews/${p.slug}`, priority: "0.9", changefreq: "monthly" },
+  { loc: `/reviews/${p.slug}`, priority: "0.9", changefreq: "weekly" },
   { loc: `/alternatives/${p.slug}`, priority: "0.6", changefreq: "monthly" },
 ]);
 
-/* ── Best-list pages ── */
 const bestListPages: SitemapEntry[] = bestLists.map((l) => ({
   loc: `/best-lists/${l.slug}`,
   priority: "0.8",
-  changefreq: "monthly",
+  changefreq: "weekly",
 }));
 
 /* ── Comparison pages ── */
@@ -81,7 +81,7 @@ const categoryPages: SitemapEntry[] = [...reviewCategories]
   .map((c) => ({
     loc: `/category/${categorySlug(c)}`,
     priority: "0.7",
-    changefreq: "monthly",
+    changefreq: "weekly",
   }));
 
 /* ── Write individual sitemaps ── */
@@ -90,7 +90,7 @@ writeFileSync("public/sitemap-reviews.xml", buildXml([...reviewPages, ...bestLis
 writeFileSync("public/sitemap-comparisons.xml", buildXml(comparisonPages));
 writeFileSync("public/sitemap-categories.xml", buildXml(categoryPages));
 
-/* ── Write sitemap index ── */
+/* ── Write sitemap index (used by both sitemap.xml and sitemap_index.xml) ── */
 const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
@@ -111,10 +111,8 @@ const indexXml = `<?xml version="1.0" encoding="UTF-8"?>
   </sitemap>
 </sitemapindex>`;
 
+writeFileSync("public/sitemap.xml", indexXml);
 writeFileSync("public/sitemap_index.xml", indexXml);
 
-/* ── Also keep legacy sitemap.xml pointing to all URLs for backward compat ── */
 const allPages = [...staticPages, ...reviewPages, ...bestListPages, ...comparisonPages, ...categoryPages];
-writeFileSync("public/sitemap.xml", buildXml(allPages));
-
-console.log(`✅ Sitemap index + 4 sitemaps generated with ${allPages.length} total URLs`);
+console.log(`✅ Sitemap index + 4 sub-sitemaps generated with ${allPages.length} total URLs`);
