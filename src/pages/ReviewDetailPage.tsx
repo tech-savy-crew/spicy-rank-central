@@ -101,7 +101,7 @@ const ReviewDetailPage = () => {
   if (!review) {
     return (
       <Layout>
-        <SEO title="Review Not Found" description="The requested review could not be found." noindex />
+        <SEOHead title="Review Not Found" description="The requested review could not be found." noindex />
         <div className="container py-20 text-center">
           <h1 className="text-3xl font-black mb-4">Review Not Found</h1>
           <p className="text-muted-foreground mb-6">We couldn't find a review for this platform.</p>
