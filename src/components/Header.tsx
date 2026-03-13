@@ -80,8 +80,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 glass border-b border-border/50">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-1">
-          <img src={logoImg} alt="SpicyRanked" className="h-9 w-auto" />
+        <Link to="/" className="flex items-center">
+          <img src={logoImg} alt="SpicyRanked" className="h-8 md:h-10 w-auto max-w-[160px] md:max-w-[200px] object-contain" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
