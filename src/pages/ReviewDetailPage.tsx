@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { RatingBadge } from "@/components/RatingBadge";
-import { SEO, reviewSchema, faqSchema, breadcrumbSchema } from "@/components/SEO";
+import { SEOHead, reviewSchema, faqSchema, breadcrumbSchema, generateArticleBreadcrumbs, countWords } from "@/components/SEOHead";
 import { getReviewBySlug, detailedReviews } from "@/data/reviewDetails";
 import { getUserExperience, getPrivacyTrust, getTips, getExtraFaqs } from "@/data/reviewExtraContent";
 import { reviewSEO, buildReviewExtraMeta } from "@/data/reviewSEO";
