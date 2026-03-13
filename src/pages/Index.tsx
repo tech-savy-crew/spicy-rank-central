@@ -2,7 +2,7 @@ import { lazy, Suspense, useState } from "react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { RatingBadge } from "@/components/RatingBadge";
-import { SEO, websiteSchema, organizationSchema, itemListSchema } from "@/components/SEO";
+import { SEOHead, websiteSchema, organizationSchema, itemListSchema } from "@/components/SEOHead";
 import {
   ArrowRight,
   Search,
