@@ -86,7 +86,7 @@ export function Header() {
             alt="SpicyRanked logo"
             width={400}
             height={134}
-            className="h-[63px] w-[210px] sm:h-[72px] sm:w-[240px] md:h-[78px] md:w-[300px] object-contain"
+            className="h-[76px] w-[252px] sm:h-[86px] sm:w-[288px] md:h-[94px] md:w-[360px] object-contain"
           />
         </Link>
 
