@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { RatingBadge } from "@/components/RatingBadge";
-import { SEO, reviewSchema, faqSchema, breadcrumbSchema } from "@/components/SEO";
+import { SEOHead, reviewSchema, faqSchema, breadcrumbSchema, generateArticleBreadcrumbs, countWords } from "@/components/SEOHead";
 import { getReviewBySlug, detailedReviews } from "@/data/reviewDetails";
 import { getUserExperience, getPrivacyTrust, getTips, getExtraFaqs } from "@/data/reviewExtraContent";
 import { reviewSEO, buildReviewExtraMeta } from "@/data/reviewSEO";
@@ -101,7 +101,7 @@ const ReviewDetailPage = () => {
   if (!review) {
     return (
       <Layout>
-        <SEO title="Review Not Found" description="The requested review could not be found." noindex />
+        <SEOHead title="Review Not Found" description="The requested review could not be found." noindex />
         <div className="container py-20 text-center">
           <h1 className="text-3xl font-black mb-4">Review Not Found</h1>
           <p className="text-muted-foreground mb-6">We couldn't find a review for this platform.</p>
@@ -148,15 +148,32 @@ const ReviewDetailPage = () => {
     faqSchema(allFaqs),
   ];
 
+  const articleWordCount = countWords(
+    ...review.overview,
+    ...review.pros,
+    ...review.cons,
+    review.finalVerdict,
+    ...(review.keyFeatures?.map(f => f.description) || []),
+  );
+
   return (
     <Layout>
-      <SEO
+      <SEOHead
         title={seoConfig?.title || `${review.name} Review 2026: ${review.verdict}`}
         description={seoConfig?.description || `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
         canonical={`/reviews/${review.slug}`}
         ogType="article"
+        keywords={seoConfig?.keywords?.split(", ") || [review.name, review.category, "review"]}
         extraMeta={seoExtraMeta}
-        jsonLd={defaultJsonLd}
+        structuredData={defaultJsonLd}
+        wordCount={articleWordCount}
+        article={{
+          publishedTime: seoConfig?.articlePublished || "2026-03-01",
+          modifiedTime: seoConfig?.articleModified || review.lastUpdated,
+          authors: [{ name: "SpicyRanked Editorial Team", url: "https://spicyranked.com/about" }],
+          section: review.category,
+          tags: seoConfig?.keywords?.split(", ").slice(0, 5) || [review.name],
+        }}
       />
 
       {/* Breadcrumb */}
