@@ -23,6 +23,7 @@ export {
   // Utilities
   estimateReadingTime,
   countWords,
+  getCanonicalUrl,
 } from "./SEOHead";
 
 export type { SEOHeadProps, Author, ArticleMeta } from "./SEOHead";
