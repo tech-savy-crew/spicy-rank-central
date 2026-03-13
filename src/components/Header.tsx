@@ -79,9 +79,15 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 glass border-b border-border/50">
-      <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center">
-          <img src={logoImg} alt="SpicyRanked" className="h-8 md:h-10 w-auto max-w-[160px] md:max-w-[200px] object-contain" />
+      <div className="container flex h-16 md:h-[72px] items-center justify-between gap-4">
+        <Link to="/" className="flex items-center shrink-0 py-2">
+          <img
+            src={logoImg}
+            alt="SpicyRanked logo"
+            width={400}
+            height={134}
+            className="h-[42px] w-[140px] sm:h-[48px] sm:w-[160px] md:h-[52px] md:w-[200px] object-contain"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
