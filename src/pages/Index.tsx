@@ -37,11 +37,12 @@ const Index = () => {
 
   return (
     <Layout>
-      <SEO
+      <SEOHead
         title="SpicyRanked — Honest Reviews & Rankings of Adult Platforms, Cam Sites & Dating Apps"
         description="Independent reviews, ratings & comparisons of 24 adult platforms. OnlyFans, Fansly, Chaturbate, Stripchat & more — ranked by real testing. Updated weekly."
         canonical="/"
-        jsonLd={[
+        keywords={["adult platform reviews", "cam site rankings", "dating app reviews", "OnlyFans review", "Chaturbate review"]}
+        structuredData={[
           websiteSchema(),
           organizationSchema(),
           itemListSchema("Featured Platform Reviews", featuredReviews.map((p, i) => ({ name: p.title, url: `/reviews/${p.slug}`, position: i + 1 }))),

@@ -148,15 +148,32 @@ const ReviewDetailPage = () => {
     faqSchema(allFaqs),
   ];
 
+  const articleWordCount = countWords(
+    ...review.overview,
+    ...review.pros,
+    ...review.cons,
+    review.finalVerdict,
+    ...(review.keyFeatures?.map(f => f.description) || []),
+  );
+
   return (
     <Layout>
-      <SEO
+      <SEOHead
         title={seoConfig?.title || `${review.name} Review 2026: ${review.verdict}`}
         description={seoConfig?.description || `${review.name} review — scored ${review.score}/10. ${review.verdict}. Pricing, features, pros & cons, and alternatives.`}
         canonical={`/reviews/${review.slug}`}
         ogType="article"
+        keywords={seoConfig?.keywords?.split(", ") || [review.name, review.category, "review"]}
         extraMeta={seoExtraMeta}
-        jsonLd={defaultJsonLd}
+        structuredData={defaultJsonLd}
+        wordCount={articleWordCount}
+        article={{
+          publishedTime: seoConfig?.articlePublished || "2026-03-01",
+          modifiedTime: seoConfig?.articleModified || review.lastUpdated,
+          authors: [{ name: "SpicyRanked Editorial Team", url: "https://spicyranked.com/about" }],
+          section: review.category,
+          tags: seoConfig?.keywords?.split(", ").slice(0, 5) || [review.name],
+        }}
       />
 
       {/* Breadcrumb */}
