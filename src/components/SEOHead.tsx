@@ -53,6 +53,34 @@ export interface SEOHeadProps {
 
 // ─── Reading time helper ─────────────────────────────────────
 
+// ─── Canonical URL utility ───────────────────────────────────
+
+/** Tracking params to strip from canonical URLs */
+const STRIP_PARAMS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "ref", "fbclid", "gclid", "msclkid"];
+
+/**
+ * Build a clean canonical URL.
+ * - Strips tracking query params
+ * - Normalizes to lowercase, no trailing slash (except root)
+ * - Always uses https and the canonical domain
+ */
+export function getCanonicalUrl(path: string, params?: URLSearchParams): string {
+  let normalized = path.toLowerCase().replace(/\/+$/, "") || "/";
+  if (params) {
+    const clean = new URLSearchParams(params);
+    STRIP_PARAMS.forEach((p) => clean.delete(p));
+    // Also strip any utm_* wildcards
+    for (const key of [...clean.keys()]) {
+      if (key.startsWith("utm_")) clean.delete(key);
+    }
+    const qs = clean.toString();
+    if (qs) normalized += `?${qs}`;
+  }
+  return `${SITE_URL}${normalized}`;
+}
+
+// ─── Reading time helpers ────────────────────────────────────
+
 /** Estimate reading time in minutes from word count (avg 200 wpm) */
 export function estimateReadingTime(wordCount: number): number {
   return Math.max(1, Math.ceil(wordCount / 200));
