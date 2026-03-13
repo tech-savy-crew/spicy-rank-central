@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Search, Menu, X, ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
-import logoImg from "@/assets/logo.png";
+import logoImg from "@/assets/logo-transparent.png";
 
 const reviewDropdown = [
   { label: "Creator Platforms", to: "/category/creator-platforms" },
