@@ -107,14 +107,16 @@ export function SEOHead({
   article,
   wordCount,
 }: SEOHeadProps) {
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
 
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
 
-  // Canonical URL resolution
+  // Canonical URL resolution — strips tracking params automatically
   const resolvedCanonical =
     canonicalUrlProp ||
-    (canonical ? `${SITE_URL}${canonical}` : `${SITE_URL}${pathname}`);
+    (canonical
+      ? getCanonicalUrl(canonical)
+      : getCanonicalUrl(pathname, new URLSearchParams(search)));
 
   // JSON-LD array
   const ldArray = structuredData
