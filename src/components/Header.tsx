@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { Search, Menu, X, Flame, ChevronDown } from "lucide-react";
+import { Search, Menu, X, ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
+import logoImg from "@/assets/logo.png";
 
 const reviewDropdown = [
   { label: "Creator Platforms", to: "/category/creator-platforms" },
@@ -79,9 +80,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 glass border-b border-border/50">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 font-extrabold text-xl tracking-tight">
-          <Flame className="h-6 w-6 text-primary" />
-          <span className="spicy-text-gradient">SpicyRanked</span>
+        <Link to="/" className="flex items-center gap-1">
+          <img src={logoImg} alt="SpicyRanked" className="h-9 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
