@@ -14,7 +14,7 @@ import {
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
 
-/* Category descriptions for SEO */
+/* Category descriptions for SEO content */
 const categoryDescriptions: Record<string, string> = {
   "AI Companion": "Compare companion apps on conversation quality, features, image generation, and pricing.",
   "Creator Platform":
@@ -22,14 +22,26 @@ const categoryDescriptions: Record<string, string> = {
   "Live Cam": "Compare streaming platforms on performer variety, quality, token pricing, and features.",
   "Dating App": "Compare dating apps on user base, matching quality, subscription pricing, and conversation quality.",
   Dating: "Compare premium platforms on privacy features, pricing models, and security.",
+  "Fetish & Niche Marketplaces":
+    "Compare niche marketplaces on buyer audience, seller earnings, fees, and content specialization.",
 };
 
-/* Rename category for display */
+/* Category display name overrides */
 const categoryDisplayNames: Record<string, string> = {
   Dating: "Dating \u2014 Premium & Discreet",
 };
 
-/* Hub page FAQs for SEO */
+/* Desired category order */
+const categoryOrder = [
+  "AI Companion",
+  "Creator Platform",
+  "Live Cam",
+  "Dating App",
+  "Dating",
+  "Fetish & Niche Marketplaces",
+];
+
+/* Hub page FAQs */
 const hubFaqs = [
   {
     question: "How do you compare platforms?",
@@ -56,16 +68,27 @@ const hubFaqs = [
     answer:
       "Yes. Many users and creators run 2\u20133 platforms at the same time for different strengths. Creators often use one for brand recognition and another for content discovery or better economics.",
   },
+  {
+    question: "How many platforms do you review?",
+    answer:
+      "We currently review and compare 24 platforms across 6 categories: AI Companions, Creator Platforms, Live Cam Sites, Dating Apps, Premium Dating, and Niche Marketplaces. Each platform is tested for 30\u201360 days before we publish.",
+  },
 ];
 
 const ComparePage = () => {
-  const categories = [...new Set(comparisons.map((c) => c.category))];
+  /* Get unique categories in preferred order */
+  const dataCategories = [...new Set(comparisons.map((c) => c.category))];
+  const categories = categoryOrder.filter((cat) => dataCategories.includes(cat));
+  /* Add any categories not in our preferred order */
+  dataCategories.forEach((cat) => {
+    if (!categories.includes(cat)) categories.push(cat);
+  });
 
   return (
     <Layout>
       <SEO
         title="Compare Platforms Side by Side \u2014 SpicyRanked 2026"
-        description="Head-to-head comparisons of the top platforms. Side-by-side pricing, features, and honest verdicts to help you choose the right platform. Updated March 2026."
+        description="Head-to-head comparisons of 24 platforms across 6 categories. Side-by-side pricing, features, and honest verdicts. Compare creator platforms, streaming sites, dating apps, AI companions, and niche marketplaces."
         canonical="/compare"
         jsonLd={[
           breadcrumbSchema([
@@ -77,7 +100,7 @@ const ComparePage = () => {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
             name: "Compare Platforms",
-            description: "Head-to-head platform comparisons with pricing, features, and verdicts",
+            description: "Head-to-head platform comparisons with pricing, features, and verdicts across 24 platforms",
             url: "https://spicyranked.com/compare",
             publisher: {
               "@type": "Organization",
@@ -115,21 +138,36 @@ const ComparePage = () => {
           Not sure which platform is right for you? Our head-to-head comparisons break down the real differences between
           the top platforms in every category. Each comparison includes side-by-side pricing, feature analysis, user
           experience evaluation, and a clear verdict based on our hands-on testing. We test every platform for 30 to 60
-          days before publishing, so these comparisons reflect real experience rather than spec-sheet analysis.
+          days before publishing, so these comparisons reflect real experience rather than spec-sheet analysis. All 24
+          platforms across 6 categories are covered.
         </p>
 
-        {/* Categories with comparison cards */}
+        {/* Quick Stats */}
+        <div className="flex flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-10">
+          <span className="text-xs sm:text-sm bg-secondary px-3 py-1.5 rounded-full font-medium">
+            {comparisons.length} Comparisons
+          </span>
+          <span className="text-xs sm:text-sm bg-secondary px-3 py-1.5 rounded-full font-medium">24 Platforms</span>
+          <span className="text-xs sm:text-sm bg-secondary px-3 py-1.5 rounded-full font-medium">6 Categories</span>
+          <span className="text-xs sm:text-sm bg-secondary px-3 py-1.5 rounded-full font-medium">
+            Updated March 2026
+          </span>
+        </div>
+
+        {/* Category sections */}
         {categories.map((cat) => {
           const catComps = comparisons.filter((c) => c.category === cat);
+          if (catComps.length === 0) return null;
           const displayName = categoryDisplayNames[cat] || cat;
           const description = categoryDescriptions[cat];
 
           return (
-            <section key={cat} className="mb-8 sm:mb-10">
-              {/* Category heading + description */}
+            <section key={cat} className="mb-8 sm:mb-12">
+              {/* Category heading */}
               <h2 className="text-lg sm:text-xl font-bold mb-1 flex items-center gap-2">
                 <Zap className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0" />
-                {displayName}
+                <span>{displayName}</span>
+                <span className="text-xs sm:text-sm font-normal text-muted-foreground ml-1">({catComps.length})</span>
               </h2>
               {description && (
                 <p className="text-xs sm:text-sm text-muted-foreground mb-4 ml-6 sm:ml-7">{description}</p>
@@ -149,7 +187,7 @@ const ComparePage = () => {
                       key={comp.slug}
                       className="bg-card rounded-xl border border-border/50 p-4 sm:p-6 card-hover group relative"
                     >
-                      {/* Our Pick badge */}
+                      {/* Our Pick / Different Strengths badge */}
                       {winner !== "tie" ? (
                         <span className="absolute top-2.5 right-2.5 sm:top-3 sm:right-3 bg-primary text-primary-foreground text-[9px] sm:text-[10px] px-1.5 sm:px-2 py-0.5 rounded-full font-bold uppercase tracking-wide whitespace-nowrap">
                           Our Pick: {winner === "A" ? a.name : b.name}
@@ -160,9 +198,9 @@ const ComparePage = () => {
                         </span>
                       )}
 
-                      {/* Card title — links to compare page */}
+                      {/* Card title */}
                       <Link to={`/compare/${comp.slug}`}>
-                        <h3 className="font-bold text-sm sm:text-base mb-3 sm:mb-4 group-hover:text-primary transition-colors pr-20 sm:pr-28">
+                        <h3 className="font-bold text-sm sm:text-base mb-3 sm:mb-4 group-hover:text-primary transition-colors pr-20 sm:pr-32 leading-snug">
                           {a.name} vs {b.name}
                         </h3>
                       </Link>
@@ -182,7 +220,6 @@ const ComparePage = () => {
                           <RatingBadge rating={a.score} size="sm" className="mx-auto mt-1" />
                         </div>
 
-                        {/* VS */}
                         <span className="text-muted-foreground font-black text-base sm:text-lg shrink-0">VS</span>
 
                         {/* Platform B */}
@@ -217,8 +254,8 @@ const ComparePage = () => {
           );
         })}
 
-        {/* FAQ Section for SEO */}
-        <section className="max-w-3xl mx-auto py-8 sm:py-12">
+        {/* FAQ Section */}
+        <section className="max-w-3xl mx-auto py-8 sm:py-12 border-t border-border/50 mt-4">
           <h2 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">Frequently Asked Questions</h2>
           <div className="space-y-4 sm:space-y-6">
             {hubFaqs.map((faq, i) => (
