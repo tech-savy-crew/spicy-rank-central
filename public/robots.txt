@@ -1,60 +1,12 @@
-# ============================================================
-# robots.txt — https://spicyranked.com
-# Last updated: 2026-03-13
-# ============================================================
-
-# ── Default rules for all crawlers ─────────────────────────
 User-agent: *
 Allow: /
-
-# Internal / framework paths
 Disallow: /api/
 Disallow: /admin/
-Disallow: /_/
 Disallow: /private/
-
-# Duplicate-content query parameters
 Disallow: /*?ref=
 Disallow: /*?utm_*
 Disallow: /*?fbclid=
 Disallow: /*?gclid=
 Disallow: /*?msclkid=
 
-# ── Google ──────────────────────────────────────────────────
-User-agent: Googlebot
-Allow: /
-
-# ── Bing ────────────────────────────────────────────────────
-User-agent: Bingbot
-Allow: /
-
-# ── AI / LLM crawlers (allowed — powers AI search results) ─
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Anthropic-ai
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Bytespider
-Crawl-delay: 10
-Allow: /
-
-User-agent: CCBot
-Crawl-delay: 10
-Allow: /
-
-# ── Sitemaps ────────────────────────────────────────────────
 Sitemap: https://spicyranked.com/sitemap.xml
-Sitemap: https://spicyranked.com/sitemap_index.xml
