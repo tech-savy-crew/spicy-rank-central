@@ -6,7 +6,14 @@ export interface ComparisonPage {
   platformB: string;
   category: string;
   verdict: string;
+  metaTitle?: string; // ← NEW optional
+  metaDescription?: string; // ← NEW optional
   detailedBreakdown: string[];
+  detailedBreakdownHeadings?: string[]; // ← NEW optional
+  prosA?: string[]; // ← NEW optional
+  consA?: string[]; // ← NEW optional
+  prosB?: string[]; // ← NEW optional
+  consB?: string[]; // ← NEW optional
   whoShouldChooseA: string[];
   whoShouldChooseB: string[];
   faqs: { question: string; answer: string }[];
