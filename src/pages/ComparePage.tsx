@@ -87,10 +87,9 @@ const ComparePage = () => {
   return (
     <Layout>
       <SEO
-        <SEO
-  title="Compare Adult Platforms Side by Side — SpicyRanked 2026"
-  description="24 head-to-head comparisons across 6 categories. Compare OnlyFans vs Fansly, Tinder vs Bumble, Chaturbate vs Stripchat and more. Pricing, features, honest verdicts."
-  canonical="/compare"
+        title="Compare Adult Platforms Side by Side — SpicyRanked 2026"
+        description="24 head-to-head comparisons across 6 categories. Compare OnlyFans vs Fansly, Tinder vs Bumble, Chaturbate vs Stripchat and more. Pricing, features, honest verdicts."
+        canonical="/compare"
         jsonLd={[
           breadcrumbSchema([
             { name: "Home", url: "/" },
